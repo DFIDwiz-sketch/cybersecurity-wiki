@@ -1,37 +1,38 @@
 ---
-title: "Kerberoasting과 RC4 티켓 탐지"
-description: "Kerberos 서비스 티켓 요청과 Windows 이벤트 4769, RC4 사용의 의미를 연결해 조사합니다."
+title: "Understanding and Detecting Kerberoasting"
+description: "Investigate Kerberos service tickets, Windows Event ID 4769, and the significance of RC4 encryption."
 category: active-directory
 tags: [Red Team, Blue Team, Active Directory, Kerberos, Detection Engineering]
 level: Intermediate
 updated: "2026-10-17"
+translation_url: /ko/wiki/kerberoasting/
 ---
-## Kerberoasting 개요
-Kerberoasting은 도메인 사용자가 SPN(Service Principal Name)에 대한 서비스 티켓을 요청한 뒤 암호화된 티켓 정보를 오프라인에서 분석하는 공격 방식입니다. 티켓 요청과 비밀번호 추측은 분리된 단계입니다.
+## What is Kerberoasting?
+Kerberoasting is a technique in which an authenticated domain user requests a Kerberos service ticket for an account associated with a Service Principal Name (SPN). The encrypted ticket material may then be examined offline to attempt password recovery. **Requesting a ticket and attempting to recover a password are separate steps.**
 
-## 조사해야 할 로그
-도메인 컨트롤러의 **이벤트 ID 4769**가 핵심 조사 지점입니다.
+## Key Windows telemetry
+Windows Security **Event ID 4769**, logged by a domain controller when a service ticket is requested, is an important source of evidence.
 
-| 필드 | 의미 |
+| Field | Meaning |
 | --- | --- |
-| Ticket Encryption Type | 0x17은 RC4-HMAC 유형 |
-| Account Name | 티켓 요청 계정 |
-| Service Name | 서비스 티켓 대상 |
-| Client Address | 요청 원본 주소 |
+| Ticket Encryption Type | A value of 0x17 represents RC4-HMAC |
+| Account Name | Account requesting the service ticket |
+| Service Name | Target service/account |
+| Client Address | IP address of the requesting client |
 
-## 탐지 아이디어
-짧은 시간에 한 계정이 다수의 서비스 티켓을 요청하고, 특히 RC4 암호화 유형이 집중된다면 추가 조사를 고려합니다.
+## Investigation approach
+If an account requests many service tickets over a short period, especially tickets using RC4, investigate whether the activity fits the account's usual behavior.
 
-1. 평소 계정의 서비스 티켓 요청량과 비교합니다.
-2. 정상 애플리케이션과 오래된 서비스의 RC4 사용을 확인합니다.
-3. 요청 원본 IP와 대상 서비스 계정의 관계를 분석합니다.
-4. 관련 인증·프로세스 실행·네트워크 이벤트를 교차 검증합니다.
+1. Compare the ticket request volume against a normal baseline.
+2. Identify legitimate applications and legacy services that still use RC4.
+3. Review the source IP, requesting identity, and targeted service accounts.
+4. Correlate authentication, process execution, and network events.
 
-RC4를 사용했다는 사실 하나만으로 침해를 확정할 수는 없습니다.
+**An RC4 ticket request alone does not prove Kerberoasting.**
 
-## 대응과 예방
-지원되는 환경에서 RC4 사용을 줄이고, 서비스 계정의 긴 무작위 암호 또는 gMSA 적용을 검토합니다.
+## Prevention and response
+Reduce RC4 where supported, use strong service account passwords, and consider group Managed Service Accounts (gMSAs) where applicable.
 
-## 참고
-- [MITRE ATT&CK T1558.003](https://attack.mitre.org/techniques/T1558/003/)
-- [Microsoft Event 4769](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4769)
+## References
+- [MITRE ATT&CK: Kerberoasting (T1558.003)](https://attack.mitre.org/techniques/T1558/003/)
+- [Microsoft: Event 4769](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4769)

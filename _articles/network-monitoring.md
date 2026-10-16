@@ -1,19 +1,20 @@
 ---
-title: "Zeek, Suricata, Arkime 비교"
-description: "네트워크 로그, 침입 탐지 경보와 패킷 세션 탐색의 역할을 비교합니다."
+title: "Comparing Zeek, Suricata, and Arkime"
+description: "Understand the complementary roles of network metadata, intrusion detection alerts, and packet session analysis."
 category: network
 tags: [Blue Team, Network Security, Zeek, Suricata, Arkime, DFIR]
 level: Beginner
 updated: "2026-10-17"
+translation_url: /ko/wiki/network-monitoring/
 ---
-## 함께 사용하는 이유
-각 도구의 강점은 서로 다릅니다.
+## Why combine these tools?
+Each tool offers a different view of network activity.
 
-| 도구 | 주요 기능 |
+| Tool | Primary purpose |
 | --- | --- |
-| Zeek | 프로토콜 메타데이터와 연결 로그 |
-| Suricata | 탐지 룰 기반 경보와 프로토콜 정보 |
-| Arkime | 세션 탐색과 패킷 검토 |
+| Zeek | Protocol metadata and connection logs |
+| Suricata | Signature-based alerts and protocol information |
+| Arkime | Session search and packet inspection |
 
-## 확인할 것
-네트워크 TAP의 위치와 트래픽 가시성, 암호화 여부, 패킷 손실 및 각 데이터의 수집 지연을 함께 점검합니다.
+## What to validate
+Review TAP placement and network visibility, encryption, packet loss, and the ingestion latency of each data source. Encrypted traffic may limit application-level inspection.

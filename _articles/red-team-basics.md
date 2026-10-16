@@ -1,20 +1,21 @@
 ---
-title: "Red Team의 목표와 실습 원칙"
-description: "공격 시뮬레이션이 왜 필요한지, 허가된 범위와 검증·기록 원칙을 설명합니다."
+title: "Red Team Fundamentals and Rules of Engagement"
+description: "Learn how authorized adversary emulation is planned, measured, documented, and used to improve defenses."
 category: red-team
 tags: [Red Team, Purple Team, ATT&CK, Lab]
 level: Beginner
 updated: "2026-10-17"
+translation_url: /ko/wiki/red-team-basics/
 ---
-## Red Team이란?
-허가된 범위에서 공격자 행동을 모방하여 조직의 예방·탐지·대응 능력을 검증하는 역할입니다.
+## What does a Red Team do?
+A Red Team simulates realistic adversary behavior **within an explicitly authorized scope** to assess how well an organization prevents, detects, and responds to threats.
 
-## 기본적인 작업 흐름
-1. 사전 승인, 테스트 범위와 종료 조건을 정의합니다.
-2. 검증할 시나리오와 성공 기준을 만듭니다.
-3. MITRE ATT&CK 기술과 연결합니다.
-4. 실습 중 관찰 가능한 로그와 증거를 기록합니다.
-5. Blue Team과 함께 탐지 공백을 검증합니다.
+## Basic workflow
+1. Obtain authorization and agree on scope, safety constraints, and stop conditions.
+2. Define the objectives, scenario, and measurable success criteria.
+3. Map the scenario to relevant MITRE ATT&CK techniques.
+4. Record the activities performed and the telemetry defenders could observe.
+5. Work with Blue Team analysts to validate and address detection gaps.
 
-## 참고
+## Further reading
 - [MITRE ATT&CK](https://attack.mitre.org/)

@@ -1,32 +1,48 @@
 - id: red-team
   title: Red Team
+  title_ko: 레드팀
   symbol: "↗"
-  desc: 공격 기법 · 검증
+  desc: Adversary emulation and security validation
+  desc_ko: 공격 시뮬레이션과 보안 검증
 - id: blue-team
   title: Blue Team
+  title_ko: 블루팀
   symbol: "◈"
-  desc: 탐지 · 헌팅
+  desc: Detection engineering and threat hunting
+  desc_ko: 탐지 엔지니어링과 위협 헌팅
 - id: dfir
   title: DFIR
+  title_ko: 디지털 포렌식·사고 대응
   symbol: "⌕"
-  desc: 포렌식 · 사고 대응
+  desc: Digital forensics and incident response
+  desc_ko: 디지털 포렌식과 침해사고 대응
 - id: active-directory
   title: Active Directory
+  title_ko: Active Directory
   symbol: "◎"
-  desc: 인증 · Kerberos
+  desc: Identity, authentication and Kerberos
+  desc_ko: 인증, 계정, Kerberos
 - id: network
   title: Network Security
+  title_ko: 네트워크 보안
   symbol: "⌁"
-  desc: 패킷 · 프로토콜
+  desc: Traffic analysis and network protocols
+  desc_ko: 패킷과 네트워크 프로토콜 분석
 - id: malware
   title: Malware Analysis
+  title_ko: 악성코드 분석
   symbol: "◇"
-  desc: 악성코드 · 분석
+  desc: Malware analysis and reverse engineering
+  desc_ko: 악성코드와 리버스 엔지니어링
 - id: cloud
   title: Cloud Security
+  title_ko: 클라우드 보안
   symbol: "☁"
-  desc: 클라우드 · IAM
+  desc: Cloud defense and identity
+  desc_ko: 클라우드 보안과 IAM
 - id: tools
   title: Tools & Labs
+  title_ko: 도구와 실습
   symbol: "⌘"
-  desc: 도구 · 실습
+  desc: Security tools and hands-on labs
+  desc_ko: 보안 도구 활용과 실습

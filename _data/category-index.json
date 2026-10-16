@@ -1,0 +1,42 @@
+[
+  {
+    "id": "red-team",
+    "en": "Red Team",
+    "ko": "레드팀"
+  },
+  {
+    "id": "blue-team",
+    "en": "Blue Team",
+    "ko": "블루팀"
+  },
+  {
+    "id": "dfir",
+    "en": "DFIR",
+    "ko": "디지털 포렌식·사고 대응"
+  },
+  {
+    "id": "active-directory",
+    "en": "Active Directory",
+    "ko": "Active Directory"
+  },
+  {
+    "id": "network",
+    "en": "Network Security",
+    "ko": "네트워크 보안"
+  },
+  {
+    "id": "malware",
+    "en": "Malware Analysis",
+    "ko": "악성코드 분석"
+  },
+  {
+    "id": "cloud",
+    "en": "Cloud Security",
+    "ko": "클라우드 보안"
+  },
+  {
+    "id": "tools",
+    "en": "Tools & Labs",
+    "ko": "도구와 실습"
+  }
+]

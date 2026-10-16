@@ -1,14 +1,24 @@
 title: Cybersecurity Wiki
-description: 한국어 사이버보안 지식 위키
+description: An open cybersecurity knowledge base covering Red Team, Blue Team and DFIR.
 url: https://dfidwiz-sketch.github.io
 baseurl: /cybersecurity-wiki
 collections:
   articles:
     output: true
     permalink: /wiki/:name/
+  ko_articles:
+    output: true
+    permalink: /ko/wiki/:name/
 defaults:
   - scope:
       path: ""
       type: articles
     values:
       layout: article
+      lang: en
+  - scope:
+      path: ""
+      type: ko_articles
+    values:
+      layout: article
+      lang: ko
