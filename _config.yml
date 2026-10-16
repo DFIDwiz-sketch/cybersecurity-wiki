@@ -1,0 +1,14 @@
+title: Cybersecurity Wiki
+description: 한국어 사이버보안 지식 위키
+url: https://dfidwiz-sketch.github.io
+baseurl: /cybersecurity-wiki
+collections:
+  articles:
+    output: true
+    permalink: /wiki/:name/
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article

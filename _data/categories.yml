@@ -1,0 +1,32 @@
+- id: red-team
+  title: Red Team
+  symbol: "↗"
+  desc: 공격 기법 · 검증
+- id: blue-team
+  title: Blue Team
+  symbol: "◈"
+  desc: 탐지 · 헌팅
+- id: dfir
+  title: DFIR
+  symbol: "⌕"
+  desc: 포렌식 · 사고 대응
+- id: active-directory
+  title: Active Directory
+  symbol: "◎"
+  desc: 인증 · Kerberos
+- id: network
+  title: Network Security
+  symbol: "⌁"
+  desc: 패킷 · 프로토콜
+- id: malware
+  title: Malware Analysis
+  symbol: "◇"
+  desc: 악성코드 · 분석
+- id: cloud
+  title: Cloud Security
+  symbol: "☁"
+  desc: 클라우드 · IAM
+- id: tools
+  title: Tools & Labs
+  symbol: "⌘"
+  desc: 도구 · 실습

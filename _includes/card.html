@@ -1,0 +1,1 @@
+{% assign d = include.doc %}<a class="card" href="{{ d.url | relative_url }}"><div class="card-top"><span>{{ d.category | upcase | replace: '-', ' ' }}</span>↗</div><h3>{{ d.title }}</h3><p>{{ d.description }}</p><div class="card-tags">{% for tag in d.tags limit: 3 %}<span>#{{ tag }}</span>{% endfor %}</div></a>
