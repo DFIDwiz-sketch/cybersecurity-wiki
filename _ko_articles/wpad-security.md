@@ -16,6 +16,10 @@ translation_url: /wiki/wpad-security/
 
 ## 정상 동작 과정
 
+![WPAD 정상 동작 흐름도]({{ '/assets/diagrams/wpad-normal-ko.svg' | relative_url }})
+
+
+
 1. 자동 프록시 검색이 활성화된 클라이언트가 주로 DHCP 또는 DNS를 통해 WPAD 위치를 찾습니다.
 2. `wpad.example.com`을 조회하고 `http://wpad.example.com/wpad.dat` 같은 주소에서 PAC 파일을 받을 수 있습니다.
 3. PAC 파일에 있는 JavaScript 규칙이 프록시 선택 방법을 지정합니다.
@@ -32,6 +36,10 @@ function FindProxyForURL(url, host) {
 모든 애플리케이션이 WPAD/PAC를 사용하는 것은 아니며, 실제 동작은 프로그램과 클라이언트 설정에 따라 다릅니다.
 
 ## 공격자는 WPAD를 어떻게 악용하나요?
+
+![WPAD 스푸핑 공격 흐름도]({{ '/assets/diagrams/wpad-attack-ko.svg' | relative_url }})
+
+
 
 공격자가 네트워크에서 WPAD 검색 결과를 조작할 수 있다면 정상 설정 서버를 사칭하여 악성 PAC 파일을 제공할 수 있습니다.
 
