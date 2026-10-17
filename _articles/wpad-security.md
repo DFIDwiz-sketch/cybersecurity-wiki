@@ -16,6 +16,10 @@ Think of WPAD as the question: *“Which proxy settings should I use on this net
 
 ## Normal workflow
 
+![Normal WPAD discovery process]({{ '/assets/diagrams/wpad-normal-en.svg' | relative_url }})
+
+
+
 1. A client with automatic proxy discovery enabled looks for a WPAD configuration location, commonly using DHCP or DNS.
 2. It may resolve a hostname such as `wpad.example.com` and fetch `http://wpad.example.com/wpad.dat`.
 3. The returned PAC file contains JavaScript proxy-selection rules.
@@ -32,6 +36,10 @@ function FindProxyForURL(url, host) {
 Not every application honors WPAD or PAC files, and proxy discovery behavior varies with the client and its settings.
 
 ## How can attackers abuse WPAD?
+
+![WPAD spoofing attack flow]({{ '/assets/diagrams/wpad-attack-en.svg' | relative_url }})
+
+
 
 When an attacker can manipulate WPAD discovery on a network, they may impersonate the configuration server and supply a malicious PAC file:
 
