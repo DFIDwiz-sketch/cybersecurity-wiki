@@ -390,4 +390,6 @@ PowerShell의 `Get-ADUser` 등에는 **RSAT ActiveDirectory 모듈**이 필요�
 - [위키: Kerberoasting 심화]({{ '/ko/wiki/kerberoasting/' | relative_url }})
 - [위키: SMB 보안]({{ '/ko/wiki/smb-security/' | relative_url }})
 
+- [다음 학습: NTLM 인증·주요 공격·탐지·방어]({{ '/ko/wiki/ntlm-authentication/' | relative_url }})
+
 **다음 주제:** NTLM 인증 완전 가이드 — NTLMv1/v2, NetNTLM, NTLM Relay, Pass-the-Hash, Responder와 Kerberos 차이.
