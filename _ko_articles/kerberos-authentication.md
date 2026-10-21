@@ -4,7 +4,7 @@ description: "Windows AD Kerberos V5의 정상 흐름, 암호화 키, 티켓 캐
 category: active-directory
 tags: [Windows Security, Active Directory, Kerberos, Authentication, TGT, TGS, SPN, PAC, NTLM, Kerberoasting, Blue Team, Red Team, DFIR, Splunk, Detection Engineering, MITRE ATT&CK]
 level: Intermediate
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /wiki/kerberos-authentication/
 ---
 
@@ -251,9 +251,12 @@ SPN 문제, IP 주소 사용, 레거시 서비스, 정책 등의 이유로 **NTL
 
 ```spl
 index=* (EventCode=4768 OR EventID=4768 OR EventCode=4769 OR EventID=4769 OR EventCode=4771 OR EventID=4771)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 | sort - count
 ```
+
+`EventCode`와 `EventID`는 수집·파서에 따라 한쪽만 존재할 수 있으므로 `coalesce`로 `event_id`에 통합한 뒤 집계합니다. 두 원본 필드를 동시에 `BY`에 지정하면 한쪽이 없는 이벤트가 집계에서 누락될 수 있습니다.
 
 ### B. 사전 인증 실패의 사용자·IP별 분포
 

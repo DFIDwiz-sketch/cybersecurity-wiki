@@ -4,7 +4,7 @@ description: "A comprehensive Windows AD Kerberos V5 guide to ticket flows, keys
 category: active-directory
 tags: [Windows Security, Active Directory, Kerberos, Authentication, TGT, TGS, SPN, PAC, NTLM, Kerberoasting, Blue Team, Red Team, DFIR, Splunk, Detection Engineering, MITRE ATT&CK]
 level: Intermediate
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /ko/wiki/kerberos-authentication/
 ---
 
@@ -73,7 +73,7 @@ Consider a new password-based sign-on (smart cards, certificates, Windows Hello 
 
 ### Kerberos preauthentication and AS-REP Roasting
 
-Preauthentication helps the KDC verify that an applicant possesses the expected key *before* sending a ticket response. Disabling **Do not require Kerberos preauthentication** may expose material that permits **AS-REP Roasting (T1558.004)**—offline password guessing against vulnerable accounts.
+Preauthentication helps the KDC verify that an applicant possesses the expected key *before* sending a ticket response. Enabling **Do not require Kerberos preauthentication** disables the account's preauthentication requirement and may expose material that permits **AS-REP Roasting (T1558.004)**—offline password guessing against vulnerable accounts.
 
 **Event 4768 with PreAuthType=0 is not conclusive proof of an attack.** Check the account's configuration, authentication mechanism and other telemetry.
 
@@ -265,9 +265,12 @@ These searches are **templates**, not production-ready detections. Confirm DC Se
 
 ```spl
 index=* (EventCode=4768 OR EventID=4768 OR EventCode=4769 OR EventID=4769 OR EventCode=4771 OR EventID=4771)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 | sort - count
 ```
+
+Depending on ingestion and parsing, an event may have only `EventCode` or `EventID`. Normalize them into `event_id` with `coalesce` before grouping; requiring both original fields in `BY` can omit events where one is absent.
 
 ### B. Examine source IPs producing preauthentication failures
 

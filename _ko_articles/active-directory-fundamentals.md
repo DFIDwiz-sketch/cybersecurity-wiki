@@ -4,7 +4,7 @@ description: "AD DS의 논리·물리 구조, 사용자 인증과 권한 부여,
 category: active-directory
 tags: [Active Directory, Windows Security, AD DS, Domain Controller, DNS, LDAP, Kerberos, NTLM, Group Policy, GPO, Windows Server, Blue Team, DFIR, Detection Engineering]
 level: Beginner
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /wiki/active-directory-fundamentals/
 ---
 
@@ -127,7 +127,7 @@ AD 객체는 **스키마(Schema)**에 정의된 클래스·속성으로 구성�
 | User | 직원 또는 서비스가 사용하는 신원 |
 | Computer | 도메인에 가입된 PC/서버의 계정(보통 이름 끝에 `$`) |
 | Group | 여러 보안 주체를 묶어 권한을 관리 |
-| `sAMAccountName` | `CORP\john` 형태의 전통적인 로그온 이름에 사용 |
+| `sAMAccountName` | 전통적인 계정 이름인 `john`; `CORP\john`은 도메인의 NetBIOS 이름과 이 속성값을 결합한 로그온 표기 |
 | `userPrincipalName`(UPN) | `john@corp.example.com` 형태의 이름 |
 | `objectSID`(SID) | 권한 판단에 쓰이는 보안 주체 식별자; 도메인 SID와 RID 등을 포함 |
 | `objectGUID` | AD 객체를 식별하는 고유 GUID |
@@ -271,7 +271,8 @@ AD는 일반적으로 여러 DC가 변경을 처리하지만 특정 작업은 �
 | **4624 / 4625** | 로그온 대상 시스템 | 로그인 성공 / 실패 |
 | **4740** | DC 등 | 계정 잠금 |
 | **4720 / 4726 / 4738** | 관련 DC Security | 사용자 생성 / 삭제 / 변경 |
-| **4728 / 4732 / 4756** | 관련 DC Security | Global / Domain Local / Universal 보안 그룹 멤버 추가 |
+| **4728 / 4756** | 관련 DC Security | Global / Universal 보안 그룹 멤버 추가 |
+| **4732** | Domain Local 그룹은 DC Security, 서버·워크스테이션의 로컬 그룹은 해당 호스트 Security | 보안 로컬 그룹 멤버 추가; 그룹을 관리하는 시스템에서 수집 |
 | **5136** | DC Security | AD 객체 속성 변경(해당 감사·SACL 등 필요) |
 | **4662** | DC Security | 감사 대상 AD 객체 작업(대상 SACL 필요) |
 | **4672** | 로그온 시스템 | 특수 권한이 할당된 로그온 |
@@ -287,9 +288,12 @@ AD는 일반적으로 여러 DC가 변경을 처리하지만 특정 작업은 �
 index=* (EventCode=4768 OR EventID=4768
          OR EventCode=4769 OR EventID=4769
          OR EventCode=5136 OR EventID=5136)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 | sort - count
 ```
+
+`EventCode`와 `EventID`는 수집·파서에 따라 한쪽만 존재할 수 있으므로 `coalesce`로 `event_id`에 통합한 뒤 집계합니다. 두 원본 필드를 동시에 `BY`에 지정하면 한쪽이 없는 이벤트가 집계에서 누락될 수 있습니다.
 
 `index=*`는 데이터 위치를 모를 때 사용하는 탐색용입니다. 운영 환경에서는 실제 인덱스와 시간 범위를 지정하고 수집된 필드명을 확인하세요.
 

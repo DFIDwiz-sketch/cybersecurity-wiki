@@ -4,7 +4,7 @@ description: "A full guide to NTLM challenge-response, NT hashes vs NetNTLMv2, R
 category: active-directory
 tags: [Windows Security, Active Directory, NTLM, NTLMv2, NetNTLMv2, Responder, LLMNR, WPAD, NTLM Relay, Pass-the-Hash, SMB, Credential Access, Lateral Movement, Blue Team, Red Team, DFIR, Splunk, Detection Engineering, MITRE ATT&CK]
 level: Intermediate
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /ko/wiki/ntlm-authentication/
 ---
 
@@ -220,9 +220,12 @@ All SPL below is a **template**. First verify Windows log ingestion, actual inde
 
 ```spl
 index=* (EventCode=4624 OR EventID=4624 OR EventCode=4776 OR EventID=4776)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 | sort - count
 ```
+
+Depending on ingestion and parsing, an event may have only `EventCode` or `EventID`. Normalize them into `event_id` with `coalesce` before grouping; requiring both original fields in `BY` can omit events where one is absent.
 
 ### B. Identify network logons that use NTLM
 
@@ -275,7 +278,8 @@ This is a **starter password-spraying hypothesis**, not proof of an attack. Chec
 ```spl
 index=* (EventCode=8001 OR EventCode=8002 OR EventCode=8003 OR EventCode=8004
          OR EventID=8001 OR EventID=8002 OR EventID=8003 OR EventID=8004)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 ```
 
 A zero-result search may mean the policy or log forwarder is not collecting the NTLM Operational channel.

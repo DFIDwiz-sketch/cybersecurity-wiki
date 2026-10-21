@@ -4,7 +4,7 @@ description: "A thorough, beginner-friendly AD DS guide covering identity archit
 category: active-directory
 tags: [Active Directory, Windows Security, AD DS, Domain Controller, DNS, LDAP, Kerberos, NTLM, Group Policy, GPO, Windows Server, Blue Team, DFIR, Detection Engineering]
 level: Beginner
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /ko/wiki/active-directory-fundamentals/
 ---
 
@@ -128,7 +128,7 @@ The AD **schema** defines object classes and their permitted attributes.
 | User | A person or user-style service identity |
 | Computer | Domain-joined device principal, commonly ending in `$` |
 | Group | Collection of principals used for access and management |
-| `sAMAccountName` | Traditional logon identity such as `CORP\john` |
+| `sAMAccountName` | Legacy account name, e.g. `john`; `CORP\john` combines the domain's NetBIOS name with this value |
 | `userPrincipalName` (UPN) | User-style sign-in string, e.g. `john@corp.example.com` |
 | `objectSID` (SID) | Security identifier used for authorization; includes domain SID/RID components |
 | `objectGUID` | Directory object's GUID identifier |
@@ -271,7 +271,8 @@ Ordinary LDAP queries, Kerberos ticket requests or remote administration are not
 | **4624 / 4625** | System processing logon | Logon success / failure |
 | **4740** | DC and related systems | Account locked out |
 | **4720 / 4726 / 4738** | DC Security | User created / deleted / changed |
-| **4728 / 4732 / 4756** | DC Security | Member added to Global / Domain Local / Universal security group |
+| **4728 / 4756** | DC Security | Member added to a Global / Universal security group |
+| **4732** | DC Security for domain-local groups; the relevant member server/workstation Security log for its local groups | Member added to a security-enabled local group; collect from the system managing the group |
 | **5136** | DC Security | Directory object attribute changed (requires applicable auditing/SACL) |
 | **4662** | DC Security | Audited AD object operation (requires appropriate object SACL) |
 | **4672** | Logon system | Special privileges assigned to a logon |
@@ -287,9 +288,12 @@ Ordinary LDAP queries, Kerberos ticket requests or remote administration are not
 index=* (EventCode=4768 OR EventID=4768
          OR EventCode=4769 OR EventID=4769
          OR EventCode=5136 OR EventID=5136)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 | sort - count
 ```
+
+Depending on ingestion and parsing, an event may have only `EventCode` or `EventID`. Normalize them into `event_id` with `coalesce` before grouping; requiring both original fields in `BY` can omit events where one is absent.
 
 `index=*` is for discovery. Replace it with your real index once known, verify extraction and select an appropriate time range.
 

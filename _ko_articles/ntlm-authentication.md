@@ -4,7 +4,7 @@ description: "NTLM 챌린지-응답 구조, NT Hash와 NetNTLMv2 차이, LLMNR/W
 category: active-directory
 tags: [Windows Security, Active Directory, NTLM, NTLMv2, NetNTLMv2, Responder, LLMNR, WPAD, NTLM Relay, Pass-the-Hash, SMB, Credential Access, Lateral Movement, Blue Team, Red Team, DFIR, Splunk, Detection Engineering, MITRE ATT&CK]
 level: Intermediate
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /wiki/ntlm-authentication/
 ---
 
@@ -216,9 +216,12 @@ Microsoft는 **NTLMv1 제거**, **NTLMv2의 장기적인 사용 중단(Deprecate
 
 ```spl
 index=* (EventCode=4624 OR EventID=4624 OR EventCode=4776 OR EventID=4776)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 | sort - count
 ```
+
+`EventCode`와 `EventID`는 수집·파서에 따라 한쪽만 존재할 수 있으므로 `coalesce`로 `event_id`에 통합한 뒤 집계합니다. 두 원본 필드를 동시에 `BY`에 지정하면 한쪽이 없는 이벤트가 집계에서 누락될 수 있습니다.
 
 검색 결과가 0건이면 **Windows Security 로그 감사·수집·인덱스·시간 범위·필드 추출**부터 확인하세요.
 
@@ -273,7 +276,8 @@ index=* (EventCode=4776 OR EventID=4776)
 ```spl
 index=* (EventCode=8001 OR EventCode=8002 OR EventCode=8003 OR EventCode=8004
          OR EventID=8001 OR EventID=8002 OR EventID=8003 OR EventID=8004)
-| stats count by host sourcetype EventCode EventID
+| eval event_id=coalesce(EventCode,EventID)
+| stats count by host sourcetype event_id
 ```
 
 로그 채널 감사 정책 활성화 여부와 Splunk 입력 설정이 중요합니다.
