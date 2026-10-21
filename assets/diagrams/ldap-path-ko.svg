@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="603" viewBox="0 0 560 603" role="img" aria-labelledby="title desc">
+<title id="title">가상 권한 경로 검토</title><desc id="desc">LAB\Alice: 사용자 / User; LAB\Helpdesk-Lab: MemberOf: 현재 소속 확인; LAB\Server-Operators-Lab: WriteDacl: 위임 권한 검토 지점; APP01: AdminTo: 실제 호스트 권한 검증</desc>
+<rect width="560" height="100%" rx="18" fill="#101c2d"/>
+<g font-family="Segoe UI, Malgun Gothic, sans-serif">
+<text x="28" y="43" font-size="25" font-weight="700" fill="#f3f7fc">가상 권한 경로 검토</text>
+<rect x="24" y="72" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="103" font-size="22" font-weight="600" fill="#f3f7fc">LAB\Alice</text>
+<text x="44" y="133" font-size="18" fill="#bfcfe2">사용자 / User</text>
+<path d="M280 162v15m-6-5 6 6 6-6" fill="none" stroke="#43cbb1" stroke-width="2"/>
+<rect x="24" y="184" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="215" font-size="22" font-weight="600" fill="#f3f7fc">LAB\Helpdesk-Lab</text>
+<text x="44" y="245" font-size="18" fill="#bfcfe2">MemberOf: 현재 소속 확인</text>
+<path d="M280 274v15m-6-5 6 6 6-6" fill="none" stroke="#43cbb1" stroke-width="2"/>
+<rect x="24" y="296" width="512" height="86" rx="12" fill="#1b2c43" stroke="#f2b65c" stroke-width="2"/>
+<text x="44" y="327" font-size="22" font-weight="600" fill="#f3f7fc">LAB\Server-Operators-Lab</text>
+<text x="44" y="357" font-size="18" fill="#bfcfe2">WriteDacl: 위임 권한 검토 지점</text>
+<path d="M280 386v15m-6-5 6 6 6-6" fill="none" stroke="#43cbb1" stroke-width="2"/>
+<rect x="24" y="408" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="439" font-size="22" font-weight="600" fill="#f3f7fc">APP01</text>
+<text x="44" y="469" font-size="18" fill="#bfcfe2">AdminTo: 실제 호스트 권한 검증</text>
+<text x="28" y="579" font-size="17" fill="#bfcfe2">가상 예시 · 각 관계를 실제 권한과 대조하세요.</text>
+</g></svg>

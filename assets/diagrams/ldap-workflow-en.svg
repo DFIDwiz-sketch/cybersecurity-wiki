@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="715" viewBox="0 0 560 715" role="img" aria-labelledby="title desc">
+<title id="title">From discovery to remediation</title><desc id="desc">01  LDAP: Objects, attributes and search scope; 02  ACL: Trustee, rights, GUIDs and inheritance; 03  BloodHound: Validate relationships and freshness; 04  Evidence: Separate discovery, change and access; 05  Remediation: Narrow delegation, then verify again</desc>
+<rect width="560" height="100%" rx="18" fill="#101c2d"/>
+<g font-family="Segoe UI, Malgun Gothic, sans-serif">
+<text x="28" y="43" font-size="25" font-weight="700" fill="#f3f7fc">From discovery to remediation</text>
+<rect x="24" y="72" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="103" font-size="22" font-weight="600" fill="#f3f7fc">01  LDAP</text>
+<text x="44" y="133" font-size="18" fill="#bfcfe2">Objects, attributes and search scope</text>
+<path d="M280 162v15m-6-5 6 6 6-6" fill="none" stroke="#43cbb1" stroke-width="2"/>
+<rect x="24" y="184" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="215" font-size="22" font-weight="600" fill="#f3f7fc">02  ACL</text>
+<text x="44" y="245" font-size="18" fill="#bfcfe2">Trustee, rights, GUIDs and inheritance</text>
+<path d="M280 274v15m-6-5 6 6 6-6" fill="none" stroke="#43cbb1" stroke-width="2"/>
+<rect x="24" y="296" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="327" font-size="22" font-weight="600" fill="#f3f7fc">03  BloodHound</text>
+<text x="44" y="357" font-size="18" fill="#bfcfe2">Validate relationships and freshness</text>
+<path d="M280 386v15m-6-5 6 6 6-6" fill="none" stroke="#43cbb1" stroke-width="2"/>
+<rect x="24" y="408" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="439" font-size="22" font-weight="600" fill="#f3f7fc">04  Evidence</text>
+<text x="44" y="469" font-size="18" fill="#bfcfe2">Separate discovery, change and access</text>
+<path d="M280 498v15m-6-5 6 6 6-6" fill="none" stroke="#43cbb1" stroke-width="2"/>
+<rect x="24" y="520" width="512" height="86" rx="12" fill="#1b2c43" stroke="#43cbb1" stroke-width="2"/>
+<text x="44" y="551" font-size="22" font-weight="600" fill="#f3f7fc">05  Remediation</text>
+<text x="44" y="581" font-size="18" fill="#bfcfe2">Narrow delegation, then verify again</text>
+<text x="28" y="691" font-size="17" fill="#bfcfe2">A possible path is not proof of an attack.</text>
+</g></svg>
