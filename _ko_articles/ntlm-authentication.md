@@ -257,7 +257,8 @@ index=* (EventCode=4624 OR EventID=4624)
 index=* (EventCode=4776 OR EventID=4776)
 | eval user=coalesce(TargetUserName,Account_Name,user)
 | eval workstation=coalesce(Workstation,WorkstationName,Source_Workstation)
-| eval status=coalesce(Status,Error_Code)
+| eval status=lower(tostring(coalesce(Status,Error_Code)))
+| where isnotnull(status) AND status!="0x0" AND status!="0"
 | bin _time span=10m
 | stats count as attempts dc(user) as users
         values(status) as status_codes by _time workstation
@@ -265,7 +266,7 @@ index=* (EventCode=4776 OR EventID=4776)
 | sort - attempts
 ```
 
-**위 쿼리는 모든 4776의 시도 수**를 세므로 실패 탐지로 사용하려면 **성공코드 `0x0`을 제외**하거나 결과의 `status_codes`를 먼저 분석해야 합니다. 4776은 정상 인증도 포함될 수 있습니다.
+**성공코드 `0x0`을 제외한 실패 이벤트**를 집계합니다. 단, 4776의 오류코드 표현은 수집 도구마다 다를 수 있으므로 원본 이벤트와 필드명, 정상 관리 작업을 반드시 교차 확인하세요.
 
 ### E. NTLM Operational 감사 이벤트 찾기
 
