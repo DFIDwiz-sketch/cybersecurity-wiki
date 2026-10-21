@@ -409,6 +409,8 @@ gpresult /r
 - [Windows logs essentials]({{ '/wiki/windows-logs/' | relative_url }})
 - [Splunk basics]({{ '/wiki/splunk-basics/' | relative_url }})
 
+- [Next: Kerberos Authentication Complete Guide]({{ '/wiki/kerberos-authentication/' | relative_url }})
+
 **Suggested next chapter:** **Kerberos Authentication** (AS-REQ, AS-REP, TGT, TGS, PAC, SPNs), followed by **NTLM Authentication and Attacks**.
 
 ## 19. Microsoft documentation and references
