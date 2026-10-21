@@ -406,4 +406,6 @@ AD queries need the **RSAT ActiveDirectory PowerShell module** and appropriate p
 - [Wiki: Kerberoasting deep dive]({{ '/wiki/kerberoasting/' | relative_url }})
 - [Wiki: SMB security]({{ '/wiki/smb-security/' | relative_url }})
 
+- [Next: NTLM Authentication and Attacks Complete Guide]({{ '/wiki/ntlm-authentication/' | relative_url }})
+
 **Next suggested guide:** **NTLM Authentication and Attacks**—NTLMv1/v2, NetNTLM, NTLM Relay, Pass-the-Hash, Responder and Kerberos comparisons.
