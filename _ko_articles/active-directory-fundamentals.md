@@ -409,6 +409,8 @@ gpresult /r
 - [Windows 로그 기초]({{ '/ko/wiki/windows-logs/' | relative_url }})
 - [Splunk 기초]({{ '/ko/wiki/splunk-basics/' | relative_url }})
 
+- [다음 학습: Kerberos 인증 완전 가이드]({{ '/ko/wiki/kerberos-authentication/' | relative_url }})
+
 **권장 다음 단계:** 이 문서를 이해한 뒤 **Kerberos Authentication 완전 가이드**로 AS-REQ/AS-REP, TGT/TGS, SPN, PAC를 심화하고, 이어 **NTLM 및 주요 공격**으로 넘어가면 자연스럽습니다.
 
 ## 19. Microsoft 공식 참고 자료
