@@ -168,3 +168,9 @@ body{min-width:0}
   .sidebar,.hero-art,.category,.card,.toc-mobile summary span{transition:none}
   html{scroll-behavior:auto}
 }
+
+/* Progressive table fallback and corrected nested wordmark styling */
+.brand span.brand-name{color:var(--text)}
+.brand span.brand-name>span{color:var(--accent)}
+.prose table{display:block;width:100%;max-width:100%;overflow-x:auto}
+.prose .table-scroll table{display:table;width:max-content;min-width:100%;max-width:none;overflow:visible}
