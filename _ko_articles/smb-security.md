@@ -4,7 +4,7 @@ description: "SMB 기본 구조부터 RDP와의 차이, PsExec 원격 명령 실
 category: network
 tags: [Windows Security, SMB, Network Security, Active Directory, NTLM, Lateral Movement, Remote Execution, PsExec, Blue Team, Red Team, DFIR, Splunk, Detection Engineering]
 level: Intermediate
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /wiki/smb-security/
 ---
 
@@ -142,6 +142,8 @@ SMB 서버에 대한 파일 공유 접근과 서비스 생성 로그는 주로 *
 | **4697** | Security, 서비스 설치 감사 | 감사 정책이 활성화된 경우 |
 | **4688** | Security, 프로세스 생성 | 감사 정책·명령줄 수집 상태 확인 |
 | **Sysmon 1/3/11/17/18** | 프로세스·연결·파일·파이프 텔레메트리 | Sysmon 구성에 따라 범위 달라짐 |
+
+**5140의 집계 단위:** Microsoft 설명상 5140은 세션에서 최초 공유 접근 시 기록됩니다. 따라서 5140 이벤트 수는 파일 열기·쓰기 횟수나 전송량이 아니며, 하나의 이벤트 뒤에 여러 파일 작업이 이어질 수 있습니다. 기존 세션의 후속 작업에서는 새 5140이 없을 수도 있습니다. 5145, 적절히 설정된 4663, EDR 파일 기록과 세션·계정·시간을 연결해 해석하세요. [5140 발생 조건](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5140).
 
 ### 5140과 5145를 구별하세요
 

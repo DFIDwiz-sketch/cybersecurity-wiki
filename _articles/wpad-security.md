@@ -4,7 +4,7 @@ description: "How Windows Proxy Auto-Discovery works, how attackers abuse it, an
 category: network
 tags: [Windows Security, WPAD, Network Security, NTLM, LLMNR, Responder, DFIR, Blue Team, Proxy Security]
 level: Beginner
-updated: "2026-10-17"
+updated: "2026-10-22"
 translation_url: /ko/wiki/wpad-security/
 ---
 
@@ -35,6 +35,8 @@ function FindProxyForURL(url, host) {
 
 Not every application honors WPAD or PAC files, and proxy discovery behavior varies with the client and its settings.
 
+**Reading the PAC example:** `PROXY proxy.example.com:8080; DIRECT` offers both a proxy and a direct route. Clients that implement this fallback may connect directly when the proxy is unavailable; this is not a proxy-enforcement policy. Retry and failover behavior varies by client. If proxy use is mandatory, verify the approved network egress controls as well as PAC behavior. [PAC return values and fallback](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file).
+
 ## How can attackers abuse WPAD?
 
 ![WPAD spoofing attack flow]({{ '/assets/diagrams/wpad-attack-en.svg' | relative_url }})
@@ -50,6 +52,10 @@ When an attacker can manipulate WPAD discovery on a network, they may impersonat
 5. Under specific authentication and client-policy conditions, the attacker may trigger or capture an NTLM challenge-response exchange.
 
 **Important:** WPAD discovery does **not** automatically expose a plaintext password, an NT hash, or credentials. Captured **NetNTLM challenge-response** data is different from an NT hash and may be susceptible to offline password guessing or certain relay scenarios under additional conditions. Modern Windows mitigations can restrict automatic credential transmission during WPAD discovery.
+
+### Can a rogue proxy read HTTPS too?
+
+Traffic redirection and TLS decryption are separate capabilities. With an ordinary HTTPS `CONNECT` tunnel and valid certificate verification, a proxy can observe connection metadata such as the destination, timing and volume without automatically reading the encrypted body. Reading content requires additional conditions, such as trusted TLS inspection, endpoint compromise or a certificate-validation failure. Distinguish plaintext HTTP, proxy authentication and application data inside HTTPS. [CONNECT and TLS tunneling](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/CONNECT).
 
 ### WPAD versus LLMNR / NBT-NS
 
@@ -96,8 +102,21 @@ This is an **exploratory search**, not a production detection rule. The index, f
 - Reduce unnecessary NTLM usage; enforce SMB signing where applicable to limit certain SMB relay scenarios. **SMB signing does not prevent every WPAD attack or every type of relay.**
 - Validate changes in a pilot group: turning off WPAD can affect networks that depend on automatic proxy configuration.
 
+### Disablement scope: user settings and WinHTTP
+
+Turning off **Automatically detect settings** in Windows is not proof that every service and application has stopped using WPAD. User proxy preferences, WinHTTP API calls and application-specific implementations have different scopes.
+
+For supported Windows 10 version 1809 / Windows Server 2019 and later environments, Microsoft documents setting the `DisableWpad` DWORD to `1` at the following location to restrict WinHTTP API discovery. The commands below inspect configuration only; they do not change it.
+
+```powershell
+Get-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp' -Name DisableWpad -ErrorAction SilentlyContinue
+netsh winhttp show proxy
+```
+
+A missing value does not establish whether an application actually uses WPAD. Nor is `netsh winhttp show proxy` a complete view of every application's automatic or per-request proxy decisions. Check user UI, application/service settings, effective policy and observed connections. Restricting WinHTTP discovery does not block direct DNS lookups such as `nslookup wpad`. Inventory dependencies before applying changes through the approved process, and test browser and service-account contexts, including direct fallback. [Microsoft disablement scope](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/disable-http-proxy-auth-features).
+
 ## References
 
 - [Microsoft: WinHTTP AutoProxy support](https://learn.microsoft.com/en-us/windows/win32/winhttp/winhttp-autoproxy-support)
-- [Microsoft: Proxy Auto-Configuration (PAC) file](https://learn.microsoft.com/en-us/windows/win32/winhttp/proxy-auto-configuration-file)
+- [MDN: Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file)
 - [Microsoft Security Bulletin MS16-077](https://learn.microsoft.com/en-us/security-updates/securitybulletins/2016/ms16-077)

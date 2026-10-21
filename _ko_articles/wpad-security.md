@@ -4,7 +4,7 @@ description: "Windows의 WPAD 동작 원리, 악용 가능성, 네트워크 조�
 category: network
 tags: [Windows Security, WPAD, Network Security, NTLM, LLMNR, Responder, DFIR, Blue Team, Proxy Security]
 level: Beginner
-updated: "2026-10-17"
+updated: "2026-10-22"
 translation_url: /wiki/wpad-security/
 ---
 
@@ -35,6 +35,8 @@ function FindProxyForURL(url, host) {
 
 모든 애플리케이션이 WPAD/PAC를 사용하는 것은 아니며, 실제 동작은 프로그램과 클라이언트 설정에 따라 다릅니다.
 
+**PAC 예제 해석:** `PROXY proxy.example.com:8080; DIRECT`는 프록시와 직접 연결 경로를 함께 제시합니다. 지원하는 클라이언트에서는 프록시 연결 실패 시 `DIRECT`로 넘어갈 수 있으므로 프록시 경유를 강제하는 설정이 아닙니다. 실제 재시도·대체 동작은 클라이언트 구현에 따라 확인해야 합니다. 프록시 경유가 필수라면 PAC뿐 아니라 승인된 네트워크 출구 정책으로도 검증하세요. [PAC 반환값과 대체 경로](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file).
+
 ## 공격자는 WPAD를 어떻게 악용하나요?
 
 ![WPAD 스푸핑 공격 흐름도]({{ '/assets/diagrams/wpad-attack-ko.svg' | relative_url }})
@@ -50,6 +52,10 @@ function FindProxyForURL(url, host) {
 5. 특정 인증 및 정책 조건에서는 NTLM 인증 시도가 발생하여 공격자가 **NetNTLM 챌린지-응답** 데이터를 관찰할 가능성이 있습니다.
 
 **중요:** WPAD를 검색했다는 사실만으로 평문 비밀번호, NT 해시 또는 인증 정보가 노출되지는 않습니다. **NetNTLM 챌린지-응답은 NT 해시 자체와 다르며**, 추가 조건에서 오프라인 비밀번호 추측 또는 릴레이 공격에 악용될 수 있습니다. 최신 Windows에는 WPAD 관련 자격 증명 자동 전송을 제한하는 보안 완화책도 있습니다.
+
+### 악성 프록시가 HTTPS도 읽을 수 있나요?
+
+프록시로 경로가 바뀌는 것과 TLS 복호화는 별개입니다. 일반적인 HTTPS `CONNECT` 터널에서 인증서 검증이 정상이라면 프록시는 연결 대상·시각·통신량 등의 정보를 볼 수 있어도 암호화된 본문을 자동으로 읽지는 못합니다. 내용을 읽으려면 별도의 신뢰된 TLS 검사 구성, 단말 침해 또는 인증서 검증 실패 같은 추가 조건이 필요합니다. 평문 HTTP, 프록시 인증 교환, HTTPS 내부의 애플리케이션 데이터는 구분해서 조사하세요. [CONNECT와 TLS 터널](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/CONNECT).
 
 ### WPAD와 LLMNR / NBT-NS의 차이
 
@@ -96,8 +102,21 @@ index=* ("wpad.dat" OR "wpad")
 - 불필요한 NTLM 사용을 줄이고 적용 가능한 환경에서는 SMB Signing을 강제하여 일부 SMB 릴레이 위험을 낮춥니다. **SMB Signing이 모든 WPAD 공격이나 모든 릴레이 공격을 차단하는 것은 아닙니다.**
 - 기존 회사 프록시가 WPAD에 의존한다면 비활성화 전에 일부 사용자 그룹에서 기능 영향을 테스트합니다.
 
+### 비활성화 범위: 사용자 설정과 WinHTTP를 따로 확인
+
+Windows 설정의 **자동으로 설정 검색**만 해제했다고 모든 서비스·애플리케이션의 WPAD가 중단되었다고 판단하면 안 됩니다. 사용자 프록시 설정, WinHTTP API 사용, 앱 자체의 프록시 구현은 적용 범위가 다릅니다.
+
+Microsoft는 지원되는 Windows 10 1809/Windows Server 2019 이후 환경에서 다음 위치의 `DisableWpad` DWORD 값을 `1`로 설정해 WinHTTP API의 WPAD 탐색을 제한하는 방법을 안내합니다. 이는 설정 위치에 대한 설명이며 아래 명령은 조회만 수행합니다.
+
+```powershell
+Get-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp' -Name DisableWpad -ErrorAction SilentlyContinue
+netsh winhttp show proxy
+```
+
+값이 없다는 사실만으로 실제 WPAD 사용 여부를 확정할 수 없습니다. `netsh winhttp show proxy` 출력 역시 모든 앱의 자동 탐색·요청별 프록시 선택을 보여주는 완전한 결과는 아닙니다. 사용자 UI와 앱·서비스별 설정, 유효 정책 및 실제 연결을 함께 확인하세요. WinHTTP 탐색을 제한해도 앱의 직접 DNS 조회나 `nslookup wpad`까지 차단하는 것은 아닙니다. 프록시 의존성을 점검한 뒤 승인된 변경 절차로 적용하고, 브라우저와 서비스 계정 문맥에서 정상 연결 및 대체 경로를 각각 시험하세요. [Microsoft 비활성화 범위](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/disable-http-proxy-auth-features).
+
 ## 참고 자료
 
 - [Microsoft: WinHTTP AutoProxy support](https://learn.microsoft.com/en-us/windows/win32/winhttp/winhttp-autoproxy-support)
-- [Microsoft: Proxy Auto-Configuration (PAC) file](https://learn.microsoft.com/en-us/windows/win32/winhttp/proxy-auto-configuration-file)
+- [MDN: Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file)
 - [Microsoft Security Bulletin MS16-077](https://learn.microsoft.com/en-us/security-updates/securitybulletins/2016/ms16-077)

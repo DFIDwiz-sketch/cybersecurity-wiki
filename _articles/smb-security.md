@@ -4,7 +4,7 @@ description: "Understand SMB file sharing, RDP versus SMB, PsExec-style remote e
 category: network
 tags: [Windows Security, SMB, Network Security, Active Directory, NTLM, Lateral Movement, Remote Execution, PsExec, Blue Team, Red Team, DFIR, Splunk, Detection Engineering]
 level: Intermediate
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /ko/wiki/smb-security/
 ---
 
@@ -132,6 +132,8 @@ SMB signing protects the **SMB target** against ordinary NTLM relay to that sign
 | **4697** | Security: service installed when audit enabled | Optional depending on audit policy |
 | **4688** | Security: process creation if auditing enabled | Stronger with command-line/process context |
 | **Sysmon 1/3/11/17/18** | Process, connection, file and pipe telemetry when configured | Collection and configuration vary |
+
+**Counting 5140 correctly:** Microsoft documents 5140 at the first share access attempt in a session. Its event count is not a count of file opens, writes or transferred bytes; many operations may follow one event. Later activity in an existing session may have no new 5140. Correlate 5145, appropriately configured 4663 and EDR file records by session, identity and time. [5140 generation conditions](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5140).
 
 **Strong investigative sequence:** `4624 Type 3` → `5140/5145 ADMIN$` → suspicious file creation → `7045/4697` → `4688/Sysmon 1`. Investigate the requesting host, account, service binary, signatures and the organization's change window before attributing it to an attacker.
 
