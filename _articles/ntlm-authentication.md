@@ -402,4 +402,4 @@ The goal is **reliable, hardened authentication**, not a misleading target of ze
 - [Wiki: WPAD Security]({{ '/wiki/wpad-security/' | relative_url }})
 - [Wiki: SMB Security and Remote Execution]({{ '/wiki/smb-security/' | relative_url }})
 
-**Next suggested guide:** **LDAP and Active Directory Enumeration**—directory search syntax, ACLs, SPN lookups, BloodHound concepts, detection and mitigations.
+**Next guide:** [LDAP & AD Enumeration]({{ '/wiki/ldap-ad-enumeration/' | relative_url }}) — normal LDAP operations, filters, ACLs, BloodHound path validation, detection and defense.
