@@ -7,9 +7,9 @@ time_utc,host,channel,event_id,process_guid,process_id,object,detail
 2026-10-22T04:01:05Z,WS01,Microsoft-Windows-Sysmon/Operational,13,{00000000-0000-0000-0000-000000000001},4100,HKU\LAB-SID\Software\Microsoft\Windows\CurrentVersion\Run\LabNote,Value set; fictional SID token; later logon execution unconfirmed
 2026-10-22T04:02:00Z,WS01,Microsoft-Windows-Sysmon/Operational,5,{00000000-0000-0000-0000-000000000001},4100,,Process A terminated
 2026-10-22T04:05:00Z,WS01,Microsoft-Windows-Sysmon/Operational,1,{00000000-0000-0000-0000-000000000002},4100,C:\Lab\inventory.exe,Process B created with reused PID; separate lifetime
+2026-10-22T04:05:00Z,WS01,Security,4688,,4100,C:\Lab\inventory.exe,Same stated creation time as process B; NewProcessId normalized to decimal; verify raw context
 2026-10-22T04:05:02Z,WS01,Microsoft-Windows-Sysmon/Operational,22,{00000000-0000-0000-0000-000000000002},4100,inventory.test,DNS belongs to process B rather than A
 2026-10-22T04:06:00Z,WS02,Microsoft-Windows-Sysmon/Operational,1,{00000000-0000-0000-0000-000000000003},4100,C:\Lab\inventory.exe,Same PID on a second host; separate process
 2026-10-22T04:07:00Z,WS01,Microsoft-Windows-Sysmon/Operational,16,,,,Configuration change observed; approved diff and effect unknown
 2026-10-22T04:08:00Z,WS01,Microsoft-Windows-Sysmon/Operational,255,,,,Synthetic error; description and scope require investigation
-2026-10-22T04:09:00Z,WS01,Security,4688,,4100,C:\Lab\inventory.exe,PID shown normalized to decimal; native GUID join unavailable
 2026-10-22T04:10:00Z,WS01,Microsoft-Windows-Sysmon/Operational,5,{00000000-0000-0000-0000-000000000002},4100,,Process B terminated; no conclusion about all host activity

@@ -176,7 +176,7 @@ Keep original `Computer`, provider, channel, event version, record ID, EventData
 | event_time | Defined parsing and clock alignment |
 | image / command_line | Full fields when collected; avoid silent truncation |
 
-Field aliases and GUID casing can be normalized consistently, but never manufacture a missing GUID. Security 4688 is complementary process evidence with its own audit prerequisites and field meanings; it does not acquire a Sysmon ProcessGuid simply because a PID is similar. Command-line capture also needs its additional policy. [Microsoft 4688](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688).
+Field aliases and GUID casing can be normalized consistently, but never manufacture a missing GUID. Security 4688 is complementary process evidence with its own audit prerequisites and field meanings; it does not acquire a Sysmon ProcessGuid simply because a PID is similar. For 4688, compare the new process field `NewProcessId`; the raw `ProcessId` field identifies the creator process. Convert hexadecimal and decimal representations deliberately rather than joining those fields by name. Command-line capture also needs its additional policy. [Microsoft 4688](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688).
 
 Assess duplicates using source identity, channel and record context. Record IDs can reset across log lifecycle changes; do not globally deduplicate by record number alone. A cryptographic hash identifies a particular file representation and algorithm, not whether execution was approved.
 
@@ -268,13 +268,13 @@ Use evidence-supported ATT&CK behavior, not event-number mappings: a registry re
 | --- | --- | --- |
 | 04:01–04:02 | WS01 process A, PID 4100, GUID ending 0001 | DNS/network/file/registry events share A's GUID |
 | 04:05–04:10 | WS01 process B, PID 4100, GUID ending 0002 | Reused PID; separate lifetime |
+| 04:05 | Security 4688 with normalized PID 4100 and inventory.exe | Same stated creation time as B; corroboration candidate, not a GUID join |
 | 04:06 | WS02 PID 4100, GUID ending 0003 | Another host, another process |
 | 04:07–04:08 | Configuration change and error on WS01 | Cause and coverage impact unconfirmed |
-| 04:09 | Security 4688 with normalized PID 4100 | Separate source; check raw event time, identity and lifetime |
 
 **Questions:** Which events belong to A? Is B responsible for A's earlier network event? Does the DNS query prove the later connection used its answer? Is the Run value evidence of a successful logon launch? Does the configuration event explain the error?
 
-**Answer guide:** A's GUID connects its supplied records on WS01. B and WS02 must remain separate despite the same PID. The worksheet does not supply DNS answers, payload content, transfer size, later logon execution, parent context or approved configuration diff. Those conclusions remain unknown. The nearby configuration and error events are leads, not a demonstrated cause. Validate the 4688 timestamp/meaning before associating it with an instance; normalized PID alone is insufficient.
+**Answer guide:** A's GUID connects its supplied records on WS01. B and WS02 must remain separate despite the same PID. The worksheet does not supply DNS answers, payload content, transfer size, later logon execution, parent context or approved configuration diff. Those conclusions remain unknown. The nearby configuration and error events are leads, not a demonstrated cause. In this worksheet, the 4688 record shares B’s stated creation time, host, PID and image, so it is a corroboration candidate for B. Verify the raw event and account/command context before association; normalized PID alone is insufficient. A new-process event at a different creation time must be investigated as a mismatch rather than silently joined to an already running instance.
 
 ## 12. Validate collection with a benign test plan
 
