@@ -272,6 +272,6 @@ Map supported behavior rather than tool names: Run/Startup → [T1547.001](https
 
 Explain the difference between registration and execution, identify the trigger and run identity for one mechanism, scope a task to its host/full path, and distinguish Security, System and Sysmon sources. State what the synthetic case cannot prove and how cleanup will be validated.
 
-Review [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}), [Splunk basics]({{ '/wiki/splunk-basics/' | relative_url }}), [Windows lateral movement]({{ '/wiki/windows-lateral-movement/' | relative_url }}) and [AD CS identity risks]({{ '/wiki/ad-cs-security/' | relative_url }}). The next planned extension is Sysmon; it is not yet a separate article link.
+Review [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}), [Splunk basics]({{ '/wiki/splunk-basics/' | relative_url }}), [Windows lateral movement]({{ '/wiki/windows-lateral-movement/' | relative_url }}) and [AD CS identity risks]({{ '/wiki/ad-cs-security/' | relative_url }}). Continue with the [Sysmon investigation guide]({{ '/wiki/sysmon-investigation/' | relative_url }}) for event coverage, filtering and process-lifetime correlation.
 
 **Source review: 22 October 2026.** Microsoft references support product behavior and event interpretation; MITRE supports technique classification. Diagrams, queries and the exercise are original educational material. No persistence was installed, unknown payload executed, host policy changed or production Splunk detection validated for this publication.
