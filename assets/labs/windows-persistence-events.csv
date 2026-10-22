@@ -1,0 +1,13 @@
+time_utc,host,channel,event_id,object_id,actor,process_ref,detail
+2026-10-22T03:00:00Z,WS01,Security,4698,\Lab\InventoryLab,LAB\deploy_lab,,Approved inventory task registration; verify change CHG-LAB-01
+2026-10-22T03:00:05Z,WS01,Microsoft-Windows-Sysmon/Operational,1,C:\Program Files\LabTools\inventory.exe,LAB\svc_inventory,LAB-PROC-A,Execution observed; task attribution needs scheduler evidence
+2026-10-22T03:10:00Z,WS01,Microsoft-Windows-Sysmon/Operational,13,HKU\LAB-SID\Software\Microsoft\Windows\CurrentVersion\Run\LabReminder,LAB\reader_lab,LAB-PROC-B,Run value set; fictional SID token; no later execution supplied
+2026-10-22T03:12:00Z,WS01,Security,4698,\Lab\UpdateCheckLab,LAB\reader_lab,,Task registered with logon trigger and user-profile action in fictional XML
+2026-10-22T03:13:00Z,WS01,Security,4702,\Lab\UpdateCheckLab,LAB\reader_lab,,Action changed; compare original and updated XML
+2026-10-22T03:15:00Z,WS01,Microsoft-Windows-Sysmon/Operational,1,C:\Users\reader_lab\AppData\Local\LabTools\check.exe,LAB\reader_lab,LAB-PROC-C,Execution observed; task linkage unconfirmed
+2026-10-22T03:16:00Z,WS02,Security,4698,\Lab\UpdateCheckLab,LAB\deploy_lab,,Same task path on another host; independent object
+2026-10-22T03:20:00Z,WS01,System,7045,LabBackupSvc,LAB\installer_lab,,Service installed; actor enriched from fictional installer record
+2026-10-22T03:22:00Z,WS01,Microsoft-Windows-Sysmon/Operational,19,LabHealthFilter,LAB\admin_lab,,WMI filter registered; query and authorization need review
+2026-10-22T03:22:01Z,WS01,Microsoft-Windows-Sysmon/Operational,20,LabHealthConsumer,LAB\admin_lab,,WMI consumer registered; destination needs review
+2026-10-22T03:22:02Z,WS01,Microsoft-Windows-Sysmon/Operational,21,LabHealthBinding,LAB\admin_lab,,Filter-consumer binding recorded; execution not supplied
+2026-10-22T03:30:00Z,WS01,Security,4699,\Lab\UpdateCheckLab,LAB\responder_lab,,Task deleted; running process and other mechanisms require separate checks

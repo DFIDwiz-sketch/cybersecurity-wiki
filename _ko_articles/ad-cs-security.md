@@ -281,6 +281,6 @@ CA 키 침해는 PKI·신원 사고 담당자가 신뢰 제거·복구/재구축
 
 공개키·개인키, 등록·인증, 템플릿 사용·제어, 발급·접근을 구분해 설명하세요. 유효 등록 경로 하나와 감사 전제조건을 검토하고, CA를 혼합하지 않고 요청을 연결하며 실습이 입증하지 못하는 사실을 명시할 수 있어야 합니다.
 
-[LDAP·ACL 분석]({{ '/ko/wiki/ldap-ad-enumeration/' | relative_url }}), [NTLM 릴레이 보호]({{ '/ko/wiki/ntlm-authentication/' | relative_url }}), [Kerberos 인증]({{ '/ko/wiki/kerberos-authentication/' | relative_url }}), [Windows 횡적 이동]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }})과 연결해 학습하세요. 다음 확장 후보는 Windows 지속성과 Sysmon입니다.
+[LDAP·ACL 분석]({{ '/ko/wiki/ldap-ad-enumeration/' | relative_url }}), [NTLM 릴레이 보호]({{ '/ko/wiki/ntlm-authentication/' | relative_url }}), [Kerberos 인증]({{ '/ko/wiki/kerberos-authentication/' | relative_url }}), [Windows 횡적 이동]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }})과 연결해 학습하세요. [Windows 지속성]({{ '/ko/wiki/windows-persistence/' | relative_url }})으로 이어서 학습하세요. 다음 확장 계획은 Sysmon입니다.
 
 **출처 검토: 2026년 10월 22일.** Microsoft·SpecterOps는 제품 동작·주요 위험 모델, MITRE는 행위 분류의 근거입니다. 도표·쿼리·실습은 직접 구성한 가상 교육 자료입니다. 필드·도구·악용 전제조건은 버전별로 달라집니다. 게시 과정에서 실제 인증서 등록·키 내보내기·릴레이·운영 정책 변경·운영 Splunk 테스트를 수행하지 않았습니다.
