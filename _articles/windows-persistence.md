@@ -274,4 +274,6 @@ Explain the difference between registration and execution, identify the trigger 
 
 Review [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}), [Splunk basics]({{ '/wiki/splunk-basics/' | relative_url }}), [Windows lateral movement]({{ '/wiki/windows-lateral-movement/' | relative_url }}) and [AD CS identity risks]({{ '/wiki/ad-cs-security/' | relative_url }}). Continue with the [Sysmon investigation guide]({{ '/wiki/sysmon-investigation/' | relative_url }}) for event coverage, filtering and process-lifetime correlation.
 
+[Next: Windows Credential Protection and Dumping Detection]({{ '/wiki/windows-credential-protection/' | relative_url }}) connects LSASS, SAM and LSA Secrets with protection state and process-access evidence.
+
 **Source review: 22 October 2026.** Microsoft references support product behavior and event interpretation; MITRE supports technique classification. Diagrams, queries and the exercise are original educational material. No persistence was installed, unknown payload executed, host policy changed or production Splunk detection validated for this publication.

@@ -274,4 +274,6 @@ PowerShell·WMI·서명된 파일·사용자 경로를 일괄 악성 또는 정�
 
 [Windows 로그]({{ '/ko/wiki/windows-logs/' | relative_url }}), [Splunk 기초]({{ '/ko/wiki/splunk-basics/' | relative_url }}), [Windows 횡적 이동]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }}), [AD CS 신원 위험]({{ '/ko/wiki/ad-cs-security/' | relative_url }})을 함께 참고하세요. [Sysmon 조사 가이드]({{ '/ko/wiki/sysmon-investigation/' | relative_url }})에서 이벤트 수집·필터·프로세스 수명 연결을 이어서 학습하세요.
 
+[다음 학습: Windows 자격 증명 보호와 덤핑 탐지]({{ '/ko/wiki/windows-credential-protection/' | relative_url }})에서 LSASS·SAM·LSA Secrets와 보호 상태·접근 증거를 연결해 분석하세요.
+
 **출처 검토: 2026년 10월 22일.** Microsoft는 제품 동작·이벤트 해석, MITRE는 행위 분류의 근거입니다. 도표·쿼리·실습은 직접 구성한 교육 자료입니다. 게시 과정에서 지속성 설치·미확인 페이로드 실행·호스트 정책 변경·운영 Splunk 탐지 검증을 수행하지 않았습니다.

@@ -301,4 +301,6 @@ PID 재사용과 부모 GUID 연결을 설명하고 필터로 제외될 활동 �
 
 [Windows 지속성]({{ '/ko/wiki/windows-persistence/' | relative_url }}), [Windows 횡적 이동]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }}), [Windows 로그]({{ '/ko/wiki/windows-logs/' | relative_url }}), [Splunk 기초]({{ '/ko/wiki/splunk-basics/' | relative_url }})로 연결해 학습하세요. 계획했던 AD·인증·원격 관리·AD CS·지속성·Sysmon 확장 순서를 마쳤습니다. 학습 단계의 완료이며 Windows 보안 전체를 다뤘다는 뜻은 아닙니다.
 
+[다음 학습: Windows 자격 증명 보호와 덤핑 탐지]({{ '/ko/wiki/windows-credential-protection/' | relative_url }})에서 LSASS·SAM·LSA Secrets와 보호 상태·접근 증거를 연결해 분석하세요.
+
 **출처 검토: 2026년 10월 22일.** Microsoft는 제품·수집 정의, 커뮤니티 저장소는 정책 관리 사례, MITRE는 행위 분류의 근거입니다. 도표·검색·필터 조각·실습은 직접 구성한 교육 자료입니다. 게시 검사는 문서 일치·구문·자료 제공을 대상으로 하며 운영 Sysmon·Splunk 검증은 각 환경에서 필요합니다.

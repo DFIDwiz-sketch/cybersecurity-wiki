@@ -301,4 +301,6 @@ Explain PID reuse, resolve a parent GUID correctly, identify one filtered-out ac
 
 Continue with [Windows persistence]({{ '/wiki/windows-persistence/' | relative_url }}), [Windows lateral movement]({{ '/wiki/windows-lateral-movement/' | relative_url }}), [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}) and [Splunk basics]({{ '/wiki/splunk-basics/' | relative_url }}). This completes the planned AD/authentication, remote-management, AD CS, persistence and Sysmon extension sequence; it is a learning milestone, not a claim of exhaustive Windows security coverage.
 
+[Next: Windows Credential Protection and Dumping Detection]({{ '/wiki/windows-credential-protection/' | relative_url }}) connects LSASS, SAM and LSA Secrets with protection state and process-access evidence.
+
 **Source review: 22 October 2026.** Microsoft supplies product/collection definitions, the linked community repository illustrates policy maintenance, and MITRE supplies behavior classification. Diagrams, searches, filter fragment and exercise are original teaching material. Checks for this publication cover document consistency, syntax and asset delivery; operational Sysmon/Splunk validation remains environment-specific.
