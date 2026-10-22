@@ -420,4 +420,6 @@ AD 애플리케이션은 디렉터리 읽기에 의존하므로 광범위한 읽
 
 다음으로 [Windows 로그]({{ '/ko/wiki/windows-logs/' | relative_url }}), [Splunk 기초]({{ '/ko/wiki/splunk-basics/' | relative_url }}), [SMB 보안]({{ '/ko/wiki/smb-security/' | relative_url }}), [Kerberoasting]({{ '/ko/wiki/kerberoasting/' | relative_url }})을 읽어보세요.
 
+**다음 학습 — 시리즈 5편:** [Windows 횡적 이동: SMB·RDP·WinRM·WMI·PsExec]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }})에서 디렉터리 권한을 실제 원격 접근·실행·로그 증거와 연결하세요.
+
 **번역 기준:** 2026년 10월 21일 영문판. **한국어판 추가:** 2026년 10월 22일. 위 출처는 프로토콜·제품 동작의 근거이며 실습 도메인·도표·임계값·조사 사례는 설명용 가상 자료입니다. 도구 옵션·이벤트 메시지·정책은 운영 버전과 대조하세요. 게시 과정에서 실제 디렉터리에 명령을 실행하지 않았습니다.

@@ -1,0 +1,13 @@
+time_utc,source_kind,event_id,host,user,src_ip,dest_host,dest_port,logon_id,detail
+2026-10-22T01:00:00Z,network,,SENSOR01,LAB\ops_lab,192.0.2.10,APP01,445,,Approved MGMT01 deployment window
+2026-10-22T01:00:01Z,Security,4624,APP01,LAB\ops_lab,192.0.2.10,APP01,,0xA101,LogonType 3 Kerberos
+2026-10-22T01:00:03Z,Security,5145,APP01,LAB\ops_lab,192.0.2.10,APP01,,0xA101,ADMIN$ access check for approved deployment
+2026-10-22T01:00:06Z,System,7045,APP01,LocalSystem,,APP01,,,ApprovedDeploySvc service installation; actor not established by this row
+2026-10-22T01:00:07Z,EDR,,APP01,NT AUTHORITY\SYSTEM,,APP01,,,Approved deployment child process
+2026-10-22T01:20:00Z,network,,SENSOR01,unknown,192.0.2.23,APP01,5985,,New WS23 management connection
+2026-10-22T01:20:01Z,Security,4624,APP01,LAB\ops_lab,192.0.2.23,APP01,,0xB202,LogonType 3 authentication package requires raw-event review
+2026-10-22T01:20:03Z,EDR,,APP01,LAB\ops_lab,,APP01,,0xB202,wsmprovhost.exe starts an unusual child process
+2026-10-22T01:20:04Z,PowerShell,4104,APP01,LAB\ops_lab,,APP01,,,Synthetic script observation; activity identifier must be checked
+2026-10-22T01:30:00Z,Security,4624,APP01,LAB\helpdesk_lab,192.0.2.11,APP01,,0xC303,LogonType 10 approved helpdesk window
+2026-10-22T01:35:00Z,Security,4779,APP01,LAB\helpdesk_lab,192.0.2.11,APP01,,0xC303,RDP session disconnected; not necessarily logged off
+2026-10-22T01:40:00Z,Security,4778,APP01,LAB\helpdesk_lab,192.0.2.11,APP01,,0xC303,RDP session reconnected

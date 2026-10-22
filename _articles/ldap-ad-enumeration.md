@@ -4,7 +4,7 @@ description: "A connected guide to normal LDAP operations, scoped directory disc
 category: active-directory
 tags: [Windows Security, Active Directory, LDAP, Enumeration, ACL, BloodHound, SharpHound, Blue Team, Red Team, DFIR, Splunk, Detection Engineering]
 level: Intermediate
-updated: "2026-10-21"
+updated: "2026-10-22"
 translation_url: /ko/wiki/ldap-ad-enumeration/
 ---
 
@@ -417,5 +417,7 @@ Inventory and remediate clients before enforcing signing or channel binding. Inc
 - Document remediation, alternate paths and verification limitations.
 
 Continue with [Windows Logs]({{ '/wiki/windows-logs/' | relative_url }}), [Splunk Basics]({{ '/wiki/splunk-basics/' | relative_url }}), [SMB Security]({{ '/wiki/smb-security/' | relative_url }}) and [Kerberoasting]({{ '/wiki/kerberoasting/' | relative_url }}).
+
+**Next — series guide 5:** [Windows Lateral Movement: SMB, RDP, WinRM, WMI and PsExec]({{ '/wiki/windows-lateral-movement/' | relative_url }}) connects directory permissions to actual remote access, execution and evidence.
 
 **Source review: 21 October 2026.** References above support protocol and product behavior; the lab domain, diagrams, proposed thresholds and investigation exercise are original illustrative material. Verify tool flags, event messages and policies against deployed versions. No commands in this document were executed against a live directory during publication.
