@@ -1,0 +1,21 @@
+case_id,evidence_id,time_utc,host,channel,event_id,account,logon_id,actor_guid,object,source_ip,detail
+IR-LAB-01,E001,2026-10-22T06:00:00Z,WS01,Microsoft-Windows-Sysmon/Operational,1,LAB\reader_lab,,{00000000-0000-0000-0000-000000000201},C:\Lab\SupportLab.exe,,Process A created; parent and launch origin not supplied
+IR-LAB-01,E002,2026-10-22T06:00:02Z,WS01,Microsoft-Windows-Sysmon/Operational,22,LAB\reader_lab,,{00000000-0000-0000-0000-000000000201},support.example.test,,DNS query; answers and malicious ownership not established
+IR-LAB-01,E003,2026-10-22T06:00:03Z,WS01,Microsoft-Windows-Sysmon/Operational,3,LAB\reader_lab,,{00000000-0000-0000-0000-000000000201},192.0.2.50:443,192.0.2.10,Network connection; no payload or transferred-byte evidence
+IR-LAB-01,E004,2026-10-22T06:03:00Z,DC01,Security,4769,LAB\reader_lab,,,FILE01$,192.0.2.10,Service ticket request with success status; full SPN and resource use not supplied
+IR-LAB-01,E005,2026-10-22T06:03:01Z,FILE01,Security,4624,LAB\reader_lab,0x7a01,,network logon,192.0.2.10,Type 3; Kerberos; normalized logon_id comes from TargetLogonId
+IR-LAB-01,E006,2026-10-22T06:03:02Z,FILE01,Security,5145,LAB\reader_lab,0x7a01,,LabShare\staging\helper.txt,192.0.2.10,Access check; logon_id from SubjectLogonId; no file contents or transfer size
+IR-LAB-01,E007,2026-10-22T06:04:00Z,FILE01,Security,4698,LAB\reader_lab,0x7a01,,\Lab\HealthCheckLab,,Task XML summary: enabled logon trigger; action C:\Lab\helper.exe; run identity reader_lab; permissions and approval unresolved
+IR-LAB-01,E008,2026-10-22T06:04:10Z,FILE01,Security,4698,LAB\deploy_lab,0x8b01,,\Lab\InventoryLab,,Approved change CHG-LAB-210; registration does not prove later execution
+IR-LAB-01,E009,2026-10-22T06:05:00Z,FILE01,Microsoft-Windows-Sysmon/Operational,1,LAB\reader_lab,,{00000000-0000-0000-0000-000000000202},C:\Lab\helper.exe,,Process B created; PID 5200; task linkage not supplied
+IR-LAB-01,E010,2026-10-22T06:05:01Z,FILE01,Microsoft-Windows-Sysmon/Operational,10,LAB\reader_lab,,{00000000-0000-0000-0000-000000000202},C:\Windows\System32\lsass.exe,,actor_guid is SourceProcessGUID; rights and extraction need raw evidence
+IR-LAB-01,E011,2026-10-22T06:05:02Z,FILE01,Defender-normalized,,LAB\reader_lab,,{00000000-0000-0000-0000-000000000202},LSASS,,AsrLsassCredentialTheftBlocked; actor GUID is fictional enrichment
+IR-LAB-01,E012,2026-10-22T06:05:03Z,FILE01,Microsoft-Windows-Sysmon/Operational,11,LAB\reader_lab,,{00000000-0000-0000-0000-000000000202},C:\Lab\helper.dmp,,File created or overwritten; content not supplied
+IR-LAB-01,E013,2026-10-22T06:06:00Z,FILE01,Microsoft-Windows-Sysmon/Operational,5,LAB\reader_lab,,{00000000-0000-0000-0000-000000000202},C:\Lab\helper.exe,,Process B terminated; no conclusion about other processes
+IR-LAB-01,E014,2026-10-22T06:08:00Z,FILE01,Microsoft-Windows-Sysmon/Operational,1,LAB\svc_inventory,,{00000000-0000-0000-0000-000000000203},C:\Lab\inventory.exe,,Process C created with reused PID 5200; task attribution requires more evidence
+IR-LAB-01,E015,2026-10-22T06:08:01Z,FILE01,Microsoft-Windows-Sysmon/Operational,22,LAB\svc_inventory,,{00000000-0000-0000-0000-000000000203},inventory.example.test,,Separate process lifetime; do not merge with B
+IR-LAB-01,E016,2026-10-22T06:08:30Z,WS02,Security,4698,LAB\deploy_lab,0x7a01,,\Lab\HealthCheckLab,,Different host and same task path/session number; separate object and session
+IR-LAB-01,E017,2026-10-22T06:12:00Z,FILE01,Security,4699,LAB\responder_lab,0x9b01,,\Lab\HealthCheckLab,,Task deleted by responder; does not prove complete eradication
+IR-LAB-01,E018,2026-10-22T06:13:00Z,FILE01,Microsoft-Windows-Sysmon/Operational,255,,,,Sysmon error,,Error scope and collection impact require investigation
+IR-LAB-01,E019,2026-10-22T06:15:00Z,APP01,Security,4624,LAB\reader_lab,0x6c01,,network logon,192.0.2.20,Type 3; NTLM; authentication-material source and malicious use unresolved
+IR-LAB-01,E020,2026-10-22T06:16:00Z,FILE01,Microsoft-Windows-Sysmon/Operational,3,LAB\svc_inventory,,{00000000-0000-0000-0000-000000000203},192.0.2.60:443,192.0.2.20,Process C connection before isolation completion; approval and payload need review

@@ -303,4 +303,6 @@ Continue with [Windows persistence]({{ '/wiki/windows-persistence/' | relative_u
 
 [Next: Windows Credential Protection and Dumping Detection]({{ '/wiki/windows-credential-protection/' | relative_url }}) connects LSASS, SAM and LSA Secrets with protection state and process-access evidence.
 
+Use the [Windows Incident Response Lab]({{ '/wiki/windows-incident-response-lab/' | relative_url }}) to combine Sysmon, authentication, task and response evidence.
+
 **Source review: 22 October 2026.** Microsoft supplies product/collection definitions, the linked community repository illustrates policy maintenance, and MITRE supplies behavior classification. Diagrams, searches, filter fragment and exercise are original teaching material. Checks for this publication cover document consistency, syntax and asset delivery; operational Sysmon/Splunk validation remains environment-specific.

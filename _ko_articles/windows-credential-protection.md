@@ -286,6 +286,6 @@ index=endpoint_protection sourcetype=defender_deviceevents_normalized
 
 LSASS·SAM·LSA Secrets·캐시 검증값을 구분하고 보호 한계 하나를 설명하세요. 설정·실행과 출발·대상 상호작용을 구분하고 추출을 과장하지 않아야 합니다. 도메인 전체 노출을 가정하지 않는 대응 범위도 제시하세요.
 
-[NTLM]({{ '/ko/wiki/ntlm-authentication/' | relative_url }}), [Kerberos]({{ '/ko/wiki/kerberos-authentication/' | relative_url }}), [AD CS]({{ '/ko/wiki/ad-cs-security/' | relative_url }}), [횡적 이동]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }}), [Sysmon]({{ '/ko/wiki/sysmon-investigation/' | relative_url }})을 함께 복습하세요. 향후 Windows 사고 대응 통합 사례로 연결할 수 있으며 아직 별도 사례 문서 링크는 없습니다.
+[NTLM]({{ '/ko/wiki/ntlm-authentication/' | relative_url }}), [Kerberos]({{ '/ko/wiki/kerberos-authentication/' | relative_url }}), [AD CS]({{ '/ko/wiki/ad-cs-security/' | relative_url }}), [횡적 이동]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }}), [Sysmon]({{ '/ko/wiki/sysmon-investigation/' | relative_url }})을 함께 복습하세요. [Windows 사고 대응 통합 실습]({{ '/ko/wiki/windows-incident-response-lab/' | relative_url }})의 가상 타임라인·증거 워크시트·대응 결정에 적용해보세요.
 
 **출처 검토: 2026년 10월 22일.** Microsoft는 제품·필드·현재 보호 지침, MITRE는 행위 범위의 근거입니다. 도표·검색·가상 실습은 직접 구성한 교육 자료입니다. 게시 검사는 문서 일치·구문·제공 상태를 확인하며 자격 증명 덤핑·보호 변경·실제 공격·운영 Splunk 시험을 수행하지 않았습니다.

@@ -1,0 +1,7 @@
+case_id,action_id,time_utc,host,action,status,evidence_ref,detail
+IR-LAB-01,R001,2026-10-22T06:09:00Z,WS01;FILE01,endpoint isolation,requested,E001;E010;E011,Request sent; no completed isolation at this time
+IR-LAB-01,R002,2026-10-22T06:10:00Z,FILE01,preserve configuration and artifact metadata,completed,E007;E012,Fictional evidence manifest recorded; file content not included in public worksheet
+IR-LAB-01,R003,2026-10-22T06:12:00Z,FILE01,remove HealthCheckLab task,completed,E017,Scoped task removal only; process/persistence/identity scope still needs review
+IR-LAB-01,R004,2026-10-22T06:20:00Z,WS01;FILE01,endpoint isolation acknowledgment,completed,E019;E020,Fictional independent acknowledgment at 06:20; management exceptions and network scope must be validated
+IR-LAB-01,R005,2026-10-22T06:25:00Z,identity,credential/session response,pending,E010;E011;E019,Trusted identity owner to scope rotation and sessions; no completed revocation claimed
+IR-LAB-01,R006,2026-10-22T06:35:00Z,FILE01,recovery and telemetry validation,planned,E018,Resolve sensor error and test recovery criteria before reconnection
