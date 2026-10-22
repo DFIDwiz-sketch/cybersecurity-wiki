@@ -1,0 +1,13 @@
+time_utc,event_id,host,ca_instance,request_id,requester,template,serial_number,detail
+2026-10-22T02:00:00Z,4886,CA01,CA01-LabIssuingCA,101,LAB\DEVICE01$,MachineAuthLab,,Approved device renewal request
+2026-10-22T02:00:01Z,4887,CA01,CA01-LabIssuingCA,101,LAB\DEVICE01$,MachineAuthLab,10AA,Issued; serial and template enriched from CA database
+2026-10-22T02:10:00Z,5136,DC01,,,LAB\operator_lab,UserAuthLab,,Synthetic template attribute change; exact values and approval require review
+2026-10-22T02:12:00Z,4886,CA01,CA01-LabIssuingCA,102,LAB\reader_lab,UserAuthLab,,New requester and unexpected template combination
+2026-10-22T02:12:01Z,4887,CA01,CA01-LabIssuingCA,102,LAB\reader_lab,UserAuthLab,10BB,Issued; private-key custody and usable identity not established
+2026-10-22T02:13:00Z,4768,DC01,,,,,,Certificate-related fields require raw XML review; link to 10BB unconfirmed
+2026-10-22T02:14:00Z,4624,APP01,,,LAB\reader_lab,,,Destination logon; authentication mechanism and certificate link unconfirmed
+2026-10-22T02:15:00Z,4886,CA01,CA01-LabIssuingCA,103,LAB\reader_lab,UserAuthLab,,Another request received
+2026-10-22T02:15:01Z,4888,CA01,CA01-LabIssuingCA,103,LAB\reader_lab,UserAuthLab,,Denied; no issued certificate demonstrated by this request
+2026-10-22T02:16:00Z,4887,CA02,CA02-LabIssuingCA,102,LAB\DEVICE02$,MachineAuthLab,20CC,Different CA and same numeric request ID; separate request
+2026-10-22T02:20:00Z,4870,CA01,CA01-LabIssuingCA,102,LAB\pki_admin_lab,UserAuthLab,10BB,Controlled revocation; acting administrator differs from requester
+2026-10-22T02:21:00Z,4872,CA01,CA01-LabIssuingCA,,LAB\pki_admin_lab,,,CRL published; client retrieval and existing sessions require separate validation

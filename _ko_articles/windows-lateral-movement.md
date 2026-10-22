@@ -267,6 +267,6 @@ Get-WinEvent -FilterHashtable @{LogName='System'; Id=7045; StartTime=$since} -Ma
 
 [LDAP·AD 열거]({{ '/ko/wiki/ldap-ad-enumeration/' | relative_url }})로 돌아가거나 [SMB 상세]({{ '/ko/wiki/smb-security/' | relative_url }}), [네트워크 증거 연결]({{ '/ko/wiki/network-monitoring/' | relative_url }})을 학습하세요. 수집·검색 문제는 [Windows 로그]({{ '/ko/wiki/windows-logs/' | relative_url }}), [Splunk 기초]({{ '/ko/wiki/splunk-basics/' | relative_url }})와 연결됩니다.
 
-이 문서로 AD·인증·원격 관리의 다섯 문서 제작 순서를 완성합니다. 다음 확장 후보는 AD CS, Windows 지속성, Sysmon이며 아직 존재하는 페이지에 대한 링크는 아닙니다.
+이 문서로 AD·인증·원격 관리의 다섯 문서 제작 순서를 완성합니다. [AD CS 보안]({{ '/ko/wiki/ad-cs-security/' | relative_url }})으로 이어서 학습하세요. 다음 확장 후보는 Windows 지속성과 Sysmon입니다.
 
 **출처 검토: 2026년 10월 22일.** 본문의 Microsoft·MITRE 링크는 제품·이벤트 동작과 기법 분류의 근거입니다. 도표·쿼리·조사 예제·CSV는 직접 구성한 교육 자료이며 버전에 따라 필드·프로세스 패턴이 달라집니다. 게시 과정에서 실제 원격 명령 실행, 디렉터리 수집, 운영 Splunk 테스트를 수행하지 않았습니다.

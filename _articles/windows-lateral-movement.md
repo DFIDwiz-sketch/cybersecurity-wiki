@@ -267,6 +267,6 @@ A single incident can have remote-service and execution mappings. Apply credenti
 
 Return to [LDAP & AD Enumeration]({{ '/wiki/ldap-ad-enumeration/' | relative_url }}), review [SMB details]({{ '/wiki/smb-security/' | relative_url }}) or practice [network evidence correlation]({{ '/wiki/network-monitoring/' | relative_url }}). [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}) and [Splunk basics]({{ '/wiki/splunk-basics/' | relative_url }}) support collection and search troubleshooting.
 
-This completes the five-document AD/authentication/remote-management sequence. Suggested future extensions are AD CS, Windows persistence and Sysmon; these are learning topics, not links to pages that already exist.
+This completes the five-document AD/authentication/remote-management sequence. Continue with [AD CS Security]({{ '/wiki/ad-cs-security/' | relative_url }}). Suggested future extensions are Windows persistence and Sysmon.
 
 **Source review: 22 October 2026.** Microsoft and MITRE links above support product/event behavior and technique classification. Diagrams, queries, triage examples and the CSV are original teaching material. Fields and process patterns vary by deployed version. No live remote execution, directory collection or production Splunk test was performed during publication.
