@@ -161,3 +161,7 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 - OpenSSL 3.5: [genpkey](https://docs.openssl.org/3.5/man1/openssl-genpkey/), [pkeyutl](https://docs.openssl.org/3.5/man1/openssl-pkeyutl/), [dgst](https://docs.openssl.org/3.5/man1/openssl-dgst/).
 - [NIST SP 800-57 Part 1 Rev. 5, 2020년 5월: 키 관리 기반](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final).
 - [NIST FIPS 203, 2024년 8월: ML-KEM](https://csrc.nist.gov/pubs/fips/203/final).
+
+## 인증서 검증 심화 연결
+
+[신뢰 체인·SAN·용도·만료를 여섯 대조 시험으로 구분하기]({{ '/ko/wiki/certificate-validation/' | relative_url }})

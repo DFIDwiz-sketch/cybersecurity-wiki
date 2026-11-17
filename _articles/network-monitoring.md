@@ -170,3 +170,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Cryptography foundation
 
 [Public keys, private keys, signatures and TLS with an offline lab]({{ '/wiki/public-key-cryptography/' | relative_url }})
+
+## Certificate validation checkpoint
+
+[Distinguish trust, SAN, purpose and expiry with six offline controls]({{ '/wiki/certificate-validation/' | relative_url }})

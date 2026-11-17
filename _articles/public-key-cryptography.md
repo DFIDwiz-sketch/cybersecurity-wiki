@@ -161,3 +161,7 @@ Finish when you can draw both key directions, explain symmetric TLS traffic keys
 - OpenSSL 3.5 manuals: [genpkey](https://docs.openssl.org/3.5/man1/openssl-genpkey/), [pkeyutl](https://docs.openssl.org/3.5/man1/openssl-pkeyutl/), [dgst](https://docs.openssl.org/3.5/man1/openssl-dgst/).
 - [NIST SP 800-57 Part 1 Rev. 5, May 2020: key-management foundation](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final).
 - [NIST FIPS 203, August 2024: ML-KEM](https://csrc.nist.gov/pubs/fips/203/final).
+
+## Certificate validation checkpoint
+
+[Distinguish trust, SAN, purpose and expiry with six offline controls]({{ '/wiki/certificate-validation/' | relative_url }})
