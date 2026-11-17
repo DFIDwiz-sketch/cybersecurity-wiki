@@ -166,3 +166,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## HTTP User-Agent
 
 [User-Agent 종합 가이드와 탐지 실습]({{ '/ko/wiki/user-agent-guide/' | relative_url }})
+
+## 암호학 기초 연결
+
+[공개키·개인키·서명·TLS 기초와 오프라인 실습]({{ '/ko/wiki/public-key-cryptography/' | relative_url }})

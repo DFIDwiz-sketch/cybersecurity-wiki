@@ -284,3 +284,7 @@ Explain public versus private key, enrollment versus authentication, template us
 Continue with [LDAP/ACL analysis]({{ '/wiki/ldap-ad-enumeration/' | relative_url }}), [NTLM relay protections]({{ '/wiki/ntlm-authentication/' | relative_url }}), [Kerberos authentication]({{ '/wiki/kerberos-authentication/' | relative_url }}) and [Windows lateral movement]({{ '/wiki/windows-lateral-movement/' | relative_url }}). Continue with [Windows Persistence]({{ '/wiki/windows-persistence/' | relative_url }}). The [Sysmon investigation guide]({{ '/wiki/sysmon-investigation/' | relative_url }}) extends endpoint evidence collection and correlation.
 
 **Source review: 22 October 2026.** Microsoft and SpecterOps references explain product behavior and selected risk models; MITRE supplies behavior classifications. Diagrams, queries and the lab are original synthetic teaching material. Field names, tools and exploit preconditions vary by version. No live certificate enrollment, key export, relay, production policy change or operational Splunk test was performed for this publication.
+
+## Cryptography foundation
+
+[Public keys, private keys, signatures and TLS with an offline lab]({{ '/wiki/public-key-cryptography/' | relative_url }})
