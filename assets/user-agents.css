@@ -4,6 +4,7 @@
 .ua-controls label{display:flex;flex:1 1 200px;flex-direction:column;gap:6px;font-size:13px}
 .ua-controls input,.ua-controls select,.ua-controls button{box-sizing:border-box;min-height:44px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--text);padding:10px;font:inherit;max-width:100%}
 .ua-controls input{width:100%}.ua-controls button{cursor:pointer}.ua-controls :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.ua-catalog th:nth-child(1){min-width:230px}.ua-catalog th:nth-child(2){min-width:235px}.ua-catalog th:nth-child(3){min-width:260px}
+.ua-catalog .table-scroll table{width:100%;min-width:760px;table-layout:fixed}
+.ua-catalog th:nth-child(1){width:31%}.ua-catalog th:nth-child(2){width:34%}.ua-catalog th:nth-child(3){width:35%}
 .ua-catalog code{white-space:normal;overflow-wrap:anywhere}.ua-catalog tr[hidden]{display:none}.ua-catalog td{vertical-align:top}
 @media(max-width:600px){.ua-series ol{grid-template-columns:1fr}.ua-controls{display:block}.ua-controls label{margin-bottom:12px}.ua-controls select{width:100%}}
