@@ -21,3 +21,7 @@ updated: "2026-10-17"
 2. 관련 계정, 호스트, IP로 탐색 범위를 좁힙니다.
 3. 전후 사건과 다른 자료를 연결합니다.
 4. 관찰한 사실과 가설을 분리하여 기록합니다.
+
+## HTTP User-Agent
+
+[User-Agent 종합 가이드와 탐지 실습]({{ '/ko/wiki/user-agent-guide/' | relative_url }})

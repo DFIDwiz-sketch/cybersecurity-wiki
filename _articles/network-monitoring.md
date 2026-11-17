@@ -162,3 +162,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 - [WPAD investigation]({{ '/wiki/wpad-security/' | relative_url }})
 
 **Review date: 22 October 2026.** Product references describe behavior; examples and the exercise are original synthetic material. Verify fields and capabilities against deployed versions. No live traffic collection or live Splunk search was performed for this publication.
+
+## HTTP User-Agent
+
+[User-Agent field guide and detection lab]({{ '/wiki/user-agent-guide/' | relative_url }})

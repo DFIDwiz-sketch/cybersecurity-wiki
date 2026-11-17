@@ -18,3 +18,7 @@ updated: "2026-10-17"
 
 ## 관련 문서
 - [Kerberoasting 탐지]({{ '/ko/wiki/kerberoasting/' | relative_url }})
+
+## HTTP User-Agent
+
+[User-Agent 종합 가이드와 탐지 실습]({{ '/ko/wiki/user-agent-guide/' | relative_url }})

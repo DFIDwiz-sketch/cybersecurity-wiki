@@ -1,0 +1,14 @@
+{% assign ua_ko = false %}{% if page.lang == 'ko' %}{% assign ua_ko = true %}{% endif %}
+<div class="ua-catalog" data-ua-catalog>
+<div class="ua-controls"><label>{% if ua_ko %}문자열·이름·악성코드 검색{% else %}Search string, client or malware{% endif %}<input type="search" data-ua-search placeholder="TeslaBrowser / Edge / Raccoon" autocomplete="off"></label>
+<label>{% if ua_ko %}분류{% else %}Category{% endif %}<select data-ua-group><option value="">{% if ua_ko %}전체{% else %}All{% endif %}</option>{% if include.kind == 'normal' %}<option value="browser">Browser</option><option value="library">Library / CLI</option><option value="bot">Crawler</option><option value="tool">Security tool</option>{% else %}<option value="malware">Reported malware association</option><option value="overlap">Legitimate / malicious overlap</option><option value="rule">Rule association only</option>{% endif %}</select></label>
+<button type="button" data-ua-reset>{% if ua_ko %}초기화{% else %}Reset{% endif %}</button></div>
+<p data-ua-count role="status" aria-live="polite"></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="User-Agent reference"><table><thead><tr><th>ID / {% if ua_ko %}문자열{% else %}Pattern{% endif %}</th><th>{% if ua_ko %}뜻·연관 제품{% else %}Meaning / association{% endif %}</th><th>{% if ua_ko %}근거·기간·주의점{% else %}Evidence / period / limits{% endif %}</th></tr></thead><tbody>
+{% for row in site.data.user_agents.entries %}{% assign is_normal = false %}{% if row.group == 'browser' or row.group == 'library' or row.group == 'bot' or row.group == 'tool' %}{% assign is_normal = true %}{% endif %}{% assign show = false %}{% if include.kind == 'normal' and is_normal %}{% assign show = true %}{% endif %}{% if include.kind == 'malware' and is_normal == false %}{% assign show = true %}{% endif %}{% if show %}
+<tr data-ua-row data-group="{{ row.group | escape }}"><td><small>{{ row.id }} · {{ row.group }} · {{ row.match }}</small><br><code>{{ row.pattern | escape }}</code></td><td><strong>{{ row.name | escape }}</strong><br>{% if ua_ko %}{{ row.meaning_ko | escape }}{% else %}{{ row.meaning_en | escape }}{% endif %}</td><td><small>{{ row.evidence }} · {{ row.source_period | escape }}</small><br><a href="{{ row.source_url | escape }}" target="_blank" rel="noopener">{{ row.source | escape }}</a><br>{% if ua_ko %}{{ row.caution_ko | escape }}{% else %}{{ row.caution_en | escape }}{% endif %}</td></tr>
+{% endif %}{% endfor %}</tbody></table></div>
+<p data-ua-empty hidden>{% if ua_ko %}일치하는 항목이 없습니다. 목록에 없다는 것은 안전하다는 뜻이 아닙니다.{% else %}No matches. Absence from this reference does not establish safety.{% endif %}</p>
+<noscript>{% if ua_ko %}검색 기능은 JavaScript가 필요합니다. 아래 전체 표와 브라우저 찾기 기능은 사용할 수 있습니다.{% else %}Filtering needs JavaScript; the full table and browser Find remain available.{% endif %}</noscript>
+</div>
+<script defer src="{{ '/assets/user-agents.js' | relative_url }}?v=20261117"></script>

@@ -1,0 +1,5 @@
+{% assign ua_lang = page.lang | default: 'en' %}{% if ua_lang == 'ko' %}{% assign ua_prefix = '/ko/wiki/' %}{% else %}{% assign ua_prefix = '/wiki/' %}{% endif %}
+<nav class="ua-series" aria-label="{% if ua_lang == 'ko' %}User-Agent 학습 순서{% else %}User-Agent learning path{% endif %}">
+<strong>User-Agent · {% if ua_lang == 'ko' %}종합 가이드{% else %}Field guide{% endif %}</strong>
+<ol>{% assign ua_slugs = 'user-agent-guide,user-agent-anatomy,user-agent-normal-reference,user-agent-malware-reference,user-agent-hunting,user-agent-lab' | split: ',' %}{% if ua_lang == 'ko' %}{% assign ua_labels = '시작·전체 목차,구조·이름의 뜻,정상 브라우저·도구 사전,악성코드 연관 문자열 사전,수집·헌팅·탐지,가상 로그 실습·해설' | split: ',' %}{% else %}{% assign ua_labels = 'Start and scope,Anatomy and token meanings,Legitimate client reference,Malware associations,Collection and hunting,Synthetic investigation lab' | split: ',' %}{% endif %}
+{% for slug in ua_slugs %}<li><a href="{{ ua_prefix | append: slug | append: '/' | relative_url }}" {% if page.url contains slug %}aria-current="page"{% endif %}>{{ ua_labels[forloop.index0] }}</a></li>{% endfor %}</ol></nav>

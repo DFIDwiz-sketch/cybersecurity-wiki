@@ -162,3 +162,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 - [WPAD 조사]({{ '/ko/wiki/wpad-security/' | relative_url }})
 
 **검토일: 2026년 10월 22일.** 제품 출처는 동작의 근거이며 예제·실습은 가상 자료입니다. 필드·기능은 운영 버전과 대조하세요. 게시 과정에서 실제 트래픽 수집이나 운영 Splunk 검색을 실행하지 않았습니다.
+
+## HTTP User-Agent
+
+[User-Agent 종합 가이드와 탐지 실습]({{ '/ko/wiki/user-agent-guide/' | relative_url }})

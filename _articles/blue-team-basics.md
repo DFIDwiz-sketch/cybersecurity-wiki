@@ -18,3 +18,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 
 ## Related article
 - [Detecting Kerberoasting]({{ '/wiki/kerberoasting/' | relative_url }})
+
+## HTTP User-Agent
+
+[User-Agent field guide and detection lab]({{ '/wiki/user-agent-guide/' | relative_url }})

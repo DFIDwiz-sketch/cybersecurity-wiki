@@ -21,3 +21,7 @@ Your results depend on access permissions and the environment's indexing configu
 2. Narrow the search using relevant user accounts, hosts, and IP addresses.
 3. Correlate events before and after the initial indicator.
 4. Record observed facts separately from hypotheses.
+
+## HTTP User-Agent
+
+[User-Agent field guide and detection lab]({{ '/wiki/user-agent-guide/' | relative_url }})
