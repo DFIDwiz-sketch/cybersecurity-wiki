@@ -210,3 +210,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 - [RFC 2782, 2000년 2월: SRV](https://www.rfc-editor.org/rfc/rfc2782.html), [RFC 3596, 2003년 10월: IPv6 DNS](https://www.rfc-editor.org/rfc/rfc3596.html), [RFC 9460, 2023년 11월: SVCB·HTTPS](https://www.rfc-editor.org/rfc/rfc9460.html).
 - [Zeek dns.log](https://docs.zeek.org/en/current/reference/logs/dns.html): 검토한 current 문서는 9.0.1로 표시됨.
 - [ISC BIND 9 dig 매뉴얼](https://bind9.readthedocs.io/en/latest/manpages.html): latest는 개발 문서이므로 설치 버전 dig -v와 비교.
+
+## TCP 연결과 패킷 증거
+
+[핸드셰이크·종료·재전송 실습]({{ '/ko/wiki/tcp-evidence/' | relative_url }})

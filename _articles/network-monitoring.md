@@ -178,3 +178,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## DNS foundations and evidence
 
 [DNS resolution, caching, response codes and a synthetic evidence lab]({{ '/wiki/dns-investigation/' | relative_url }})
+
+## TCP connections and packet evidence
+
+[Handshake, teardown and retransmission lab]({{ '/wiki/tcp-evidence/' | relative_url }})

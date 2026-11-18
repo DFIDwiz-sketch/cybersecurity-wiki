@@ -178,3 +178,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## DNS 기초와 증거 해석 연결
 
 [DNS 해석·캐시·응답 코드와 가상 로그 실습]({{ '/ko/wiki/dns-investigation/' | relative_url }})
+
+## TCP 연결과 패킷 증거
+
+[핸드셰이크·종료·재전송 실습]({{ '/ko/wiki/tcp-evidence/' | relative_url }})

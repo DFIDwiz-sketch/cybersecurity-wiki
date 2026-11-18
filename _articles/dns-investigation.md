@@ -210,3 +210,7 @@ Complete this chapter when you can draw the resolver's separate queries, disting
 - [RFC 7858, May 2016: DoT](https://www.rfc-editor.org/rfc/rfc7858.html) and [RFC 8484, October 2018: DoH](https://www.rfc-editor.org/rfc/rfc8484.html).
 - [Zeek dns.log documentation](https://docs.zeek.org/en/current/reference/logs/dns.html) (reviewed current documentation identifies version 9.0.1).
 - [ISC BIND 9 manual pages, dig](https://bind9.readthedocs.io/en/latest/manpages.html) (latest documentation is a development branch; check installed `dig -v`).
+
+## TCP connections and packet evidence
+
+[Handshake, teardown and retransmission lab]({{ '/wiki/tcp-evidence/' | relative_url }})
