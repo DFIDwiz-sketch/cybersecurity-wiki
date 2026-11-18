@@ -428,3 +428,7 @@ gpresult /r
 - [2025 도메인·포리스트 기능 수준](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/raise-domain-forest-functional-levels)
 - [LDAP 서명과 감사](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/ldap-signing)
 - [Audit Directory Service Access](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-directory-service-access)
+
+## DNS 기초와 증거 해석 연결
+
+[DNS 해석·캐시·응답 코드와 가상 로그 실습]({{ '/ko/wiki/dns-investigation/' | relative_url }})

@@ -428,3 +428,7 @@ gpresult /r
 - [Raise domain and forest functional levels](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/raise-domain-forest-functional-levels)
 - [LDAP signing](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/ldap-signing)
 - [Audit Directory Service Access](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-directory-service-access)
+
+## DNS foundations and evidence
+
+[DNS resolution, caching, response codes and a synthetic evidence lab]({{ '/wiki/dns-investigation/' | relative_url }})

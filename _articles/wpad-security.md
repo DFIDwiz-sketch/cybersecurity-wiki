@@ -120,3 +120,7 @@ A missing value does not establish whether an application actually uses WPAD. No
 - [Microsoft: WinHTTP AutoProxy support](https://learn.microsoft.com/en-us/windows/win32/winhttp/winhttp-autoproxy-support)
 - [MDN: Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file)
 - [Microsoft Security Bulletin MS16-077](https://learn.microsoft.com/en-us/security-updates/securitybulletins/2016/ms16-077)
+
+## DNS foundations and evidence
+
+[DNS resolution, caching, response codes and a synthetic evidence lab]({{ '/wiki/dns-investigation/' | relative_url }})

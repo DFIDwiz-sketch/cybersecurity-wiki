@@ -174,3 +174,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Certificate validation checkpoint
 
 [Distinguish trust, SAN, purpose and expiry with six offline controls]({{ '/wiki/certificate-validation/' | relative_url }})
+
+## DNS foundations and evidence
+
+[DNS resolution, caching, response codes and a synthetic evidence lab]({{ '/wiki/dns-investigation/' | relative_url }})

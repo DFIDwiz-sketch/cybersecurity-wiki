@@ -174,3 +174,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## 인증서 검증 심화 연결
 
 [신뢰 체인·SAN·용도·만료를 여섯 대조 시험으로 구분하기]({{ '/ko/wiki/certificate-validation/' | relative_url }})
+
+## DNS 기초와 증거 해석 연결
+
+[DNS 해석·캐시·응답 코드와 가상 로그 실습]({{ '/ko/wiki/dns-investigation/' | relative_url }})

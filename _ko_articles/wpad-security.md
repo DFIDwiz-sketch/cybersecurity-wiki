@@ -120,3 +120,7 @@ netsh winhttp show proxy
 - [Microsoft: WinHTTP AutoProxy support](https://learn.microsoft.com/en-us/windows/win32/winhttp/winhttp-autoproxy-support)
 - [MDN: Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file)
 - [Microsoft Security Bulletin MS16-077](https://learn.microsoft.com/en-us/security-updates/securitybulletins/2016/ms16-077)
+
+## DNS 기초와 증거 해석 연결
+
+[DNS 해석·캐시·응답 코드와 가상 로그 실습]({{ '/ko/wiki/dns-investigation/' | relative_url }})
