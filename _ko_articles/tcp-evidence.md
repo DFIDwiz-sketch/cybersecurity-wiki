@@ -81,3 +81,7 @@ python3 tcp-evidence.py
 - [RFC 6298, June 2011 · Retransmission timer](https://www.rfc-editor.org/rfc/rfc6298.html)
 - [Zeek · conn.log](https://docs.zeek.org/en/current/reference/logs/conn.html)
 - [Wireshark User’s Guide · TCP Analysis](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvTCPAnalysis.html)
+
+## HTTP 요청과 웹 로그 읽기
+
+[HTTP 상태 코드와 프록시·앱 기록 대조 실습]({{ '/ko/wiki/http-evidence/' | relative_url }})

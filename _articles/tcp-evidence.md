@@ -81,3 +81,7 @@ Reviewed 18 November 2026. The RFCs document TCP behavior and timing. The produc
 - [RFC 6298, June 2011 · Retransmission timer](https://www.rfc-editor.org/rfc/rfc6298.html)
 - [Zeek · conn.log](https://docs.zeek.org/en/current/reference/logs/conn.html)
 - [Wireshark User’s Guide · TCP Analysis](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvTCPAnalysis.html)
+
+## HTTP requests and web logs
+
+[HTTP status codes and proxy-to-app log correlation]({{ '/wiki/http-evidence/' | relative_url }})

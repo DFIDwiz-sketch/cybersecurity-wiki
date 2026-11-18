@@ -55,3 +55,7 @@ User-Agent(UA)는 웹 요청을 보낸 소프트웨어가 **자신을 어떻게 
 - [악성코드 사례별 원출처]({{ '/ko/wiki/user-agent-malware-reference/' | relative_url }})
 
 {% include ua-series.html %}
+
+## HTTP 요청과 웹 로그 읽기
+
+[HTTP 상태 코드와 프록시·앱 기록 대조 실습]({{ '/ko/wiki/http-evidence/' | relative_url }})

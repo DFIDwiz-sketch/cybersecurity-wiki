@@ -49,3 +49,7 @@ When adding an observation, preserve exact spelling, punctuation, whitespace and
 [RFC 9110 §10.1.5](https://www.rfc-editor.org/rfc/rfc9110.html#name-user-agent) · [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/User-Agent) · [Splunk detection updated in 2026](https://research.splunk.com/network/8c4866e4-f488-4253-8537-7dc4f954c292/)
 
 {% include ua-series.html %}
+
+## HTTP requests and web logs
+
+[HTTP status codes and proxy-to-app log correlation]({{ '/wiki/http-evidence/' | relative_url }})

@@ -1,0 +1,13 @@
+plane,request_id,method,route,status,decision,work_id,detail
+edge,r-101,GET,/catalog,200,forward,,served
+app,r-101,GET,/catalog,200,respond,,read
+edge,r-102,POST,/reports,202,forward,,accepted
+app,r-102,POST,/reports,202,enqueue,j-20,accepted
+worker,,,/reports,,fail,j-20,storage unavailable
+edge,r-103,GET,/admin,403,deny,,policy deny
+edge,r-104,GET,/catalog,504,forward,,upstream timeout
+app,r-104,GET,/catalog,200,respond,,completed after edge timeout
+edge,r-105,GET,/catalog,200,cache_hit,,served cached response
+edge,r-106,GET,/profile,404,forward,,not found
+app,r-106,GET,/profile,404,respond,,resource absent in request context
+edge,r-107,GET,/catalog,502,forward,,upstream response unavailable
