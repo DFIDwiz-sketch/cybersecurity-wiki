@@ -194,3 +194,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## TLS Handshake Evidence · From Connection to HTTP
 
 [TLS negotiation visibility and offline verification lab]({{ '/wiki/tls-handshake-evidence/' | relative_url }})
+
+## Preserving Digital Evidence · SHA-256 and Custody
+
+[Verify acquired logs and working copies in the evidence lab]({{ '/wiki/evidence-preservation/' | relative_url }})

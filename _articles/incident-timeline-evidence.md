@@ -94,3 +94,7 @@ Reviewed 20 November 2026. Apply protocol dates and product-specific field defin
 - [systemd · Journal fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - [Splunk · Event and index time](https://help.splunk.com/en/splunk-cloud-platform/search/spl2-search-manual/dates-and-time/time-modifiers)
 - [NIST SP 800-61 Rev. 3 · Incident response, April 2025](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
+
+## Preserving Digital Evidence · SHA-256 and Custody
+
+[Verify acquired logs and working copies in the evidence lab]({{ '/wiki/evidence-preservation/' | relative_url }})

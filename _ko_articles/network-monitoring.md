@@ -194,3 +194,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## TLS 핸드셰이크와 관측 증거 · 연결부터 HTTP까지
 
 [TLS 협상 가시성과 오프라인 검증 실습]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }})
+
+## 디지털 증거 보존 · SHA-256과 인계 기록
+
+[로그 원본과 작업 사본을 검증하는 실습]({{ '/ko/wiki/evidence-preservation/' | relative_url }})

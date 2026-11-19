@@ -274,3 +274,7 @@ Review [Kerberos]({{ '/wiki/kerberos-authentication/' | relative_url }}), [NTLM]
 ## Incident Timelines · UTC, Clock Skew and Log Arrival
 
 [Normalize timestamps and preserve uncertainty in the timeline lab]({{ '/wiki/incident-timeline-evidence/' | relative_url }})
+
+## Preserving Digital Evidence · SHA-256 and Custody
+
+[Verify acquired logs and working copies in the evidence lab]({{ '/wiki/evidence-preservation/' | relative_url }})

@@ -1,0 +1,2 @@
+{"utc":"2026-11-20T00:01:05Z","host":"lab-01","event":"test-login","outcome":"success"}
+{"utc":"2026-11-20T00:02:10Z","host":"lab-01","event":"test-logout","outcome":"success"}

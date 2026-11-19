@@ -274,3 +274,7 @@ APP01·WS02 차단, 신원 대응 완료, 파일 내용 검증, 텔레메트리 
 ## 사고 타임라인 입문 · UTC, 시계 오차, 로그 도착 시간
 
 [여러 로그의 시각을 정규화하고 불확실성을 표시하는 실습]({{ '/ko/wiki/incident-timeline-evidence/' | relative_url }})
+
+## 디지털 증거 보존 · SHA-256과 인계 기록
+
+[로그 원본과 작업 사본을 검증하는 실습]({{ '/ko/wiki/evidence-preservation/' | relative_url }})

@@ -94,3 +94,7 @@ python3 time-correlation.py
 - [systemd · Journal fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - [Splunk · Event and index time](https://help.splunk.com/en/splunk-cloud-platform/search/spl2-search-manual/dates-and-time/time-modifiers)
 - [NIST SP 800-61 Rev. 3 · Incident response, April 2025](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
+
+## 디지털 증거 보존 · SHA-256과 인계 기록
+
+[로그 원본과 작업 사본을 검증하는 실습]({{ '/ko/wiki/evidence-preservation/' | relative_url }})
