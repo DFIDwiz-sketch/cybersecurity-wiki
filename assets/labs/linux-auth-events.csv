@@ -1,0 +1,15 @@
+utc,host,boot,source,account,remote_ip,event,method,audit_session,target,detail
+2026-11-20T00:00:00Z,app01,b001,sshd,alex,192.0.2.10,auth_failed,password,,,typo during approved test
+2026-11-20T00:00:18Z,app01,b001,sshd,alex,192.0.2.10,auth_accepted,publickey,,,accepted key
+2026-11-20T00:00:19Z,app01,b001,pam,alex,192.0.2.10,session_open,,41,,session ID from enrichment
+2026-11-20T00:00:28Z,app01,b001,sudo,alex,,sudo_allowed,,41,root,approved id command
+2026-11-20T00:00:55Z,app01,b001,pam,alex,,session_close,,41,,session closed
+2026-11-20T00:01:00Z,app01,b001,sshd,sam,198.51.100.23,auth_failed,password,,,failure one
+2026-11-20T00:01:15Z,app01,b001,sshd,sam,198.51.100.23,auth_failed,password,,,failure two
+2026-11-20T00:01:30Z,app01,b001,sshd,sam,198.51.100.23,auth_failed,password,,,failure three
+2026-11-20T00:01:40Z,app01,b001,sshd,sam,198.51.100.23,auth_accepted,password,,,unexpected source under lab policy
+2026-11-20T00:01:41Z,app01,b001,pam,sam,198.51.100.23,session_open,,42,,session ID from enrichment
+2026-11-20T00:01:58Z,app01,b001,sudo,sam,,sudo_denied,,42,root,policy denial
+2026-11-20T00:02:05Z,app01,b001,sudo,sam,,sudo_allowed,,42,root,allowed status command
+2026-11-20T00:02:20Z,app02,b002,sudo,sam,,sudo_allowed,,42,root,same session number on another host
+2026-11-20T00:02:30Z,app01,b001,sshd,sam,203.0.113.50,auth_failed,password,,,different source no success observed

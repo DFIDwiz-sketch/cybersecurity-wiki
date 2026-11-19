@@ -14,3 +14,7 @@ updated: "2026-10-17"
 - **4769:** Kerberos 서비스 티켓 요청
 
 로그 수집 여부는 감사 설정과 정책에 영향을 받습니다. 단일 이벤트로 침해를 단정하지 마세요.
+
+## Linux 인증 로그 조사
+
+[SSH·PAM·sudo 로그와 오프라인 타임라인 실습]({{ '/ko/wiki/linux-auth-evidence/' | relative_url }})

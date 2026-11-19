@@ -22,3 +22,7 @@ updated: "2026-10-17"
 ## HTTP User-Agent
 
 [User-Agent 종합 가이드와 탐지 실습]({{ '/ko/wiki/user-agent-guide/' | relative_url }})
+
+## Linux 인증 로그 조사
+
+[SSH·PAM·sudo 로그와 오프라인 타임라인 실습]({{ '/ko/wiki/linux-auth-evidence/' | relative_url }})

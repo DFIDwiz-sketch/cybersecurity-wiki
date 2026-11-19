@@ -22,3 +22,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 ## HTTP User-Agent
 
 [User-Agent field guide and detection lab]({{ '/wiki/user-agent-guide/' | relative_url }})
+
+## Linux authentication investigation
+
+[SSH, PAM and sudo logs with an offline timeline]({{ '/wiki/linux-auth-evidence/' | relative_url }})

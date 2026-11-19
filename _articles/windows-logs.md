@@ -14,3 +14,7 @@ translation_url: /ko/wiki/windows-logs/
 - **4769:** Kerberos service ticket request
 
 Whether an event is recorded depends on the system's audit policy. Avoid drawing conclusions from a single event without corroborating evidence.
+
+## Linux authentication investigation
+
+[SSH, PAM and sudo logs with an offline timeline]({{ '/wiki/linux-auth-evidence/' | relative_url }})
