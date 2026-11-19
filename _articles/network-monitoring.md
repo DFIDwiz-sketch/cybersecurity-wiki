@@ -186,3 +186,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Correlate Firewall, NAT and Network Sensor Evidence
 
 [NAT mapping and sensor correlation lab]({{ '/wiki/firewall-nat-evidence/' | relative_url }})
+
+## Incident Timelines · UTC, Clock Skew and Log Arrival
+
+[Normalize timestamps and preserve uncertainty in the timeline lab]({{ '/wiki/incident-timeline-evidence/' | relative_url }})

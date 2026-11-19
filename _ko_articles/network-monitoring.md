@@ -186,3 +186,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## 방화벽·NAT·네트워크 센서 로그 연결하기
 
 [NAT 매핑과 센서 로그 연결 실습]({{ '/ko/wiki/firewall-nat-evidence/' | relative_url }})
+
+## 사고 타임라인 입문 · UTC, 시계 오차, 로그 도착 시간
+
+[여러 로그의 시각을 정규화하고 불확실성을 표시하는 실습]({{ '/ko/wiki/incident-timeline-evidence/' | relative_url }})

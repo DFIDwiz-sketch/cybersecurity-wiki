@@ -25,3 +25,7 @@ updated: "2026-10-17"
 ## HTTP User-Agent
 
 [User-Agent 종합 가이드와 탐지 실습]({{ '/ko/wiki/user-agent-guide/' | relative_url }})
+
+## 사고 타임라인 입문 · UTC, 시계 오차, 로그 도착 시간
+
+[여러 로그의 시각을 정규화하고 불확실성을 표시하는 실습]({{ '/ko/wiki/incident-timeline-evidence/' | relative_url }})

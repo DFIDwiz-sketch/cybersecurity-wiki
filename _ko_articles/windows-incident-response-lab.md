@@ -270,3 +270,7 @@ APP01·WS02 차단, 신원 대응 완료, 파일 내용 검증, 텔레메트리 
 [Kerberos]({{ '/ko/wiki/kerberos-authentication/' | relative_url }}), [NTLM]({{ '/ko/wiki/ntlm-authentication/' | relative_url }}), [SMB]({{ '/ko/wiki/smb-security/' | relative_url }}), [Windows 로그]({{ '/ko/wiki/windows-logs/' | relative_url }}), [지속성]({{ '/ko/wiki/windows-persistence/' | relative_url }}), [Sysmon]({{ '/ko/wiki/sysmon-investigation/' | relative_url }}), [자격 증명 보호]({{ '/ko/wiki/windows-credential-protection/' | relative_url }})를 복습하세요. 인증서·디렉터리 범위의 근거가 있으면 AD CS·LDAP도 관련되지만 이 사례는 그 침해 증거를 제공하지 않습니다.
 
 **출처 검토: 2026년 10월 22일.** NIST는 조직 대응 관점, Microsoft는 이벤트·통제 해석의 근거입니다. 환경·행·작업·도표·질문·채점은 직접 구성한 가상 교육 자료입니다. 게시 검사는 일치·검색 스키마·구문·제공 상태를 확인하며 실제 사고·호스트 차단·자격 증명 추출·운영 SIEM 실행을 수행하지 않았습니다.
+
+## 사고 타임라인 입문 · UTC, 시계 오차, 로그 도착 시간
+
+[여러 로그의 시각을 정규화하고 불확실성을 표시하는 실습]({{ '/ko/wiki/incident-timeline-evidence/' | relative_url }})

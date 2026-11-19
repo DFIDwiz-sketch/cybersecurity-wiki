@@ -1,0 +1,90 @@
+[
+  {
+    "id": "f-01",
+    "source": "firewall",
+    "host": "edge-a",
+    "kind": "decision",
+    "raw": "2026-11-20T09:30:05+09:30",
+    "indexed": "2026-11-20T00:00:06Z",
+    "clock_ahead_s": 0,
+    "uncertainty_s": 1,
+    "note": "Allowed lab flow"
+  },
+  {
+    "id": "p-01",
+    "source": "proxy",
+    "host": "proxy-a",
+    "kind": "request_start",
+    "raw": "2026-11-20T00:00:10Z",
+    "indexed": "2026-11-20T00:00:11Z",
+    "clock_ahead_s": 0,
+    "uncertainty_s": 1,
+    "note": "Synthetic request start"
+  },
+  {
+    "id": "h-01",
+    "source": "host",
+    "host": "app-a",
+    "kind": "process_start",
+    "raw": "2026-11-20T00:00:17Z",
+    "indexed": "2026-11-20T00:03:00Z",
+    "clock_ahead_s": 8,
+    "uncertainty_s": 2,
+    "note": "Clock ahead by eight seconds from a separate calibration"
+  },
+  {
+    "id": "n-01",
+    "source": "zeek",
+    "host": "sensor-a",
+    "kind": "flow_start",
+    "raw": 1795132805,
+    "indexed": "2026-11-20T00:00:25Z",
+    "clock_ahead_s": 0,
+    "uncertainty_s": 1,
+    "note": "Unix seconds in this worksheet; connection record can be emitted later"
+  },
+  {
+    "id": "h-02",
+    "source": "host",
+    "host": "app-a",
+    "kind": "service_log",
+    "raw": "2026-11-20T00:00:35Z",
+    "indexed": "2026-11-20T00:03:01Z",
+    "clock_ahead_s": 8,
+    "uncertainty_s": 2,
+    "note": "Later host observation"
+  },
+  {
+    "id": "u-01",
+    "source": "syslog",
+    "host": "old-a",
+    "kind": "service_log",
+    "raw": "2026-11-20T09:30:12",
+    "indexed": "2026-11-20T00:00:40Z",
+    "clock_ahead_s": 0,
+    "uncertainty_s": 1,
+    "note": "Timezone unknown"
+  },
+  {
+    "id": "p-01",
+    "source": "proxy",
+    "host": "proxy-a",
+    "kind": "request_start",
+    "raw": "2026-11-20T00:00:10Z",
+    "indexed": "2026-11-20T00:00:14Z",
+    "clock_ahead_s": 0,
+    "uncertainty_s": 1,
+    "note": "Synthetic request start"
+  },
+  {
+    "id": "h-03",
+    "source": "host",
+    "host": "app-b",
+    "kind": "service_log",
+    "raw": "2026-11-20T00:00:19Z",
+    "indexed": "2026-11-20T00:00:20Z",
+    "clock_ahead_s": null,
+    "uncertainty_s": 1,
+    "note": "Clock correction unknown"
+  }
+]

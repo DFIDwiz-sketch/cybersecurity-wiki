@@ -25,3 +25,7 @@ Your results depend on access permissions and the environment's indexing configu
 ## HTTP User-Agent
 
 [User-Agent field guide and detection lab]({{ '/wiki/user-agent-guide/' | relative_url }})
+
+## Incident Timelines · UTC, Clock Skew and Log Arrival
+
+[Normalize timestamps and preserve uncertainty in the timeline lab]({{ '/wiki/incident-timeline-evidence/' | relative_url }})

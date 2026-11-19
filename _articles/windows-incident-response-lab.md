@@ -270,3 +270,7 @@ Score each of the five deliverables from 0–4, for **20 points** total: timelin
 Review [Kerberos]({{ '/wiki/kerberos-authentication/' | relative_url }}), [NTLM]({{ '/wiki/ntlm-authentication/' | relative_url }}), [SMB]({{ '/wiki/smb-security/' | relative_url }}), [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}), [persistence]({{ '/wiki/windows-persistence/' | relative_url }}), [Sysmon]({{ '/wiki/sysmon-investigation/' | relative_url }}) and [credential protection]({{ '/wiki/windows-credential-protection/' | relative_url }}). AD CS/LDAP concepts remain relevant where evidence indicates certificate or directory scope; this case supplies no such compromise evidence.
 
 **Source review: 22 October 2026.** NIST supports the organizational response framing; Microsoft supports event/control interpretation. The environment, worksheet rows, actions, diagrams, questions and scoring are original synthetic teaching material. Publication checks validate consistency, query examples' stated schemas, syntax and delivery; no live incident, host containment, credential extraction or production SIEM execution occurred.
+
+## Incident Timelines · UTC, Clock Skew and Log Arrival
+
+[Normalize timestamps and preserve uncertainty in the timeline lab]({{ '/wiki/incident-timeline-evidence/' | relative_url }})
