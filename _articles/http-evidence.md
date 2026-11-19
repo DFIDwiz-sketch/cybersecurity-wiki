@@ -92,3 +92,7 @@ Reviewed 18 November 2026. Check fields and settings against your installed prod
 - [RFC 7239 · Forwarded, June 2014](https://www.rfc-editor.org/rfc/rfc7239.html)
 - [NGINX HTTP log module](https://nginx.org/en/docs/http/ngx_http_log_module.html)
 - [Zeek http.log](https://docs.zeek.org/en/current/reference/logs/http.html)
+
+## Email Sender Authentication and Phishing Investigation
+
+[SPF, DKIM and DMARC investigation lab]({{ '/wiki/mail-auth-evidence/' | relative_url }})

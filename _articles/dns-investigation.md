@@ -214,3 +214,7 @@ Complete this chapter when you can draw the resolver's separate queries, disting
 ## TCP connections and packet evidence
 
 [Handshake, teardown and retransmission lab]({{ '/wiki/tcp-evidence/' | relative_url }})
+
+## Email Sender Authentication and Phishing Investigation
+
+[SPF, DKIM and DMARC investigation lab]({{ '/wiki/mail-auth-evidence/' | relative_url }})

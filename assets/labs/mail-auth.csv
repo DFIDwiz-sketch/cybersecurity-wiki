@@ -1,0 +1,6 @@
+case,from_domain,spf,spf_domain,dkim,dkim_domain,disposition
+A,orders.example.test,pass,orders.example.test,fail,orders.example.test,deliver
+B,orders.example.test,pass,mailer.example.test,pass,mailer.example.test,quarantine
+C,orders.example.test,fail,orders.example.test,pass,orders.example.test,deliver
+D,0rders.example.test,pass,0rders.example.test,pass,0rders.example.test,deliver
+E,orders.example.test,temperror,orders.example.test,none,,defer

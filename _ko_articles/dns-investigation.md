@@ -214,3 +214,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## TCP 연결과 패킷 증거
 
 [핸드셰이크·종료·재전송 실습]({{ '/ko/wiki/tcp-evidence/' | relative_url }})
+
+## 이메일 발신자 인증과 피싱 조사
+
+[SPF·DKIM·DMARC 조사 실습]({{ '/ko/wiki/mail-auth-evidence/' | relative_url }})

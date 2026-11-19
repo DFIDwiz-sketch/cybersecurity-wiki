@@ -92,3 +92,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 - [RFC 7239 · Forwarded, June 2014](https://www.rfc-editor.org/rfc/rfc7239.html)
 - [NGINX HTTP log module](https://nginx.org/en/docs/http/ngx_http_log_module.html)
 - [Zeek http.log](https://docs.zeek.org/en/current/reference/logs/http.html)
+
+## 이메일 발신자 인증과 피싱 조사
+
+[SPF·DKIM·DMARC 조사 실습]({{ '/ko/wiki/mail-auth-evidence/' | relative_url }})
