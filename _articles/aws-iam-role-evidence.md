@@ -125,3 +125,7 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 - [IAM and STS CloudTrail examples](https://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html)
 - [Event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html) · [Data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html)
 - [Revoke IAM role sessions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html)
+
+## Microsoft Entra Sign-in Investigation · MFA and Conditional Access
+
+[Entra sign-in and resource evidence lab]({{ '/wiki/entra-signin-evidence/' | relative_url }})

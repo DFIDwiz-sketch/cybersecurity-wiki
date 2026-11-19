@@ -1,0 +1,93 @@
+[
+  {
+    "kind": "signin",
+    "id": "s-01",
+    "tenant": "lab-a",
+    "actor": "ada",
+    "flow": "interactive",
+    "status": "success",
+    "mfa": "performed",
+    "ca": "success",
+    "app": "Portal",
+    "link": "r-01"
+  },
+  {
+    "kind": "signin",
+    "id": "s-02",
+    "tenant": "lab-a",
+    "actor": "ada",
+    "flow": "noninteractive",
+    "status": "success",
+    "mfa": "prior_claim",
+    "ca": "success",
+    "app": "Portal",
+    "link": "r-02"
+  },
+  {
+    "kind": "signin",
+    "id": "s-03",
+    "tenant": "lab-a",
+    "actor": "eli",
+    "flow": "interactive",
+    "status": "failure",
+    "mfa": "unknown",
+    "ca": "failure",
+    "app": "Portal",
+    "link": "r-03"
+  },
+  {
+    "kind": "signin",
+    "id": "s-04",
+    "tenant": "lab-a",
+    "actor": "kai",
+    "flow": "interactive",
+    "status": "success",
+    "mfa": "unknown",
+    "ca": "not_applied",
+    "report_only": "would_fail",
+    "app": "Portal",
+    "link": "r-04"
+  },
+  {
+    "kind": "signin",
+    "id": "s-05",
+    "tenant": "lab-a",
+    "actor": "report-job",
+    "flow": "service_principal",
+    "status": "success",
+    "mfa": "not_user_flow",
+    "ca": "not_applied",
+    "app": "Reports",
+    "link": "r-05"
+  },
+  {
+    "kind": "signin",
+    "id": "s-06",
+    "tenant": "lab-a",
+    "actor": "eli",
+    "flow": "interactive",
+    "status": "interrupted",
+    "mfa": "unknown",
+    "ca": "unknown",
+    "app": "Portal",
+    "link": "r-06"
+  },
+  {
+    "kind": "resource",
+    "id": "a-01",
+    "tenant": "lab-a",
+    "link": "r-01",
+    "app": "Portal",
+    "action": "read_test_item",
+    "outcome": "success"
+  },
+  {
+    "kind": "resource",
+    "id": "a-02",
+    "tenant": "lab-b",
+    "link": "r-02",
+    "app": "Portal",
+    "action": "read_test_item",
+    "outcome": "success"
+  }
+]

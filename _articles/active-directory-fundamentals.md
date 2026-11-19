@@ -432,3 +432,7 @@ gpresult /r
 ## DNS foundations and evidence
 
 [DNS resolution, caching, response codes and a synthetic evidence lab]({{ '/wiki/dns-investigation/' | relative_url }})
+
+## Microsoft Entra Sign-in Investigation · MFA and Conditional Access
+
+[Entra sign-in and resource evidence lab]({{ '/wiki/entra-signin-evidence/' | relative_url }})

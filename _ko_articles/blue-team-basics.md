@@ -34,3 +34,7 @@ updated: "2026-10-17"
 ## 탐지 규칙 검증 입문 · 로그 생성부터 알림 전달까지
 
 [탐지 증거와 오프라인 검증 실습]({{ '/ko/wiki/detection-validation/' | relative_url }})
+
+## Microsoft Entra 로그인 조사 · MFA와 조건부 액세스
+
+[Entra 로그인과 실제 리소스 행위를 구분하는 실습]({{ '/ko/wiki/entra-signin-evidence/' | relative_url }})

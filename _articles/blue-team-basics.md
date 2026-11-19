@@ -34,3 +34,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 ## Detection Validation · From Event Generation to Alert Delivery
 
 [Evidence and offline detection validation lab]({{ '/wiki/detection-validation/' | relative_url }})
+
+## Microsoft Entra Sign-in Investigation · MFA and Conditional Access
+
+[Entra sign-in and resource evidence lab]({{ '/wiki/entra-signin-evidence/' | relative_url }})
