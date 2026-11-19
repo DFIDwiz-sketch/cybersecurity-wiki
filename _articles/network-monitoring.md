@@ -182,3 +182,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## TCP connections and packet evidence
 
 [Handshake, teardown and retransmission lab]({{ '/wiki/tcp-evidence/' | relative_url }})
+
+## Correlate Firewall, NAT and Network Sensor Evidence
+
+[NAT mapping and sensor correlation lab]({{ '/wiki/firewall-nat-evidence/' | relative_url }})

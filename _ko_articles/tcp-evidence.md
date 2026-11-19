@@ -85,3 +85,7 @@ python3 tcp-evidence.py
 ## HTTP 요청과 웹 로그 읽기
 
 [HTTP 상태 코드와 프록시·앱 기록 대조 실습]({{ '/ko/wiki/http-evidence/' | relative_url }})
+
+## 방화벽·NAT·네트워크 센서 로그 연결하기
+
+[NAT 매핑과 센서 로그 연결 실습]({{ '/ko/wiki/firewall-nat-evidence/' | relative_url }})

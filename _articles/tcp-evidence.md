@@ -85,3 +85,7 @@ Reviewed 18 November 2026. The RFCs document TCP behavior and timing. The produc
 ## HTTP requests and web logs
 
 [HTTP status codes and proxy-to-app log correlation]({{ '/wiki/http-evidence/' | relative_url }})
+
+## Correlate Firewall, NAT and Network Sensor Evidence
+
+[NAT mapping and sensor correlation lab]({{ '/wiki/firewall-nat-evidence/' | relative_url }})
