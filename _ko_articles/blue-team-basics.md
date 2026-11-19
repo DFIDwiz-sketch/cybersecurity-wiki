@@ -26,3 +26,7 @@ updated: "2026-10-17"
 ## Linux 인증 로그 조사
 
 [SSH·PAM·sudo 로그와 오프라인 타임라인 실습]({{ '/ko/wiki/linux-auth-evidence/' | relative_url }})
+
+## AWS IAM 역할과 CloudTrail 조사 입문
+
+[임시 역할 세션과 CloudTrail 조사 실습]({{ '/ko/wiki/aws-iam-role-evidence/' | relative_url }})

@@ -1,0 +1,218 @@
+{
+  "Records": [
+    {
+      "eventID": "lab-01",
+      "eventTime": "2026-11-20T00:00:00Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Management",
+      "userIdentity": {
+        "type": "IAMUser",
+        "accountId": "111111111111",
+        "arn": "arn:aws:iam::111111111111:user/Mina"
+      },
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::222222222222:role/ReportReader",
+        "roleSessionName": "daily-report"
+      },
+      "responseElements": {
+        "assumedRoleUser": {
+          "arn": "arn:aws:sts::222222222222:assumed-role/ReportReader/daily-report"
+        },
+        "credentials": {
+          "accessKeyId": "LAB-KEY-A",
+          "expiration": "2026-11-20T01:00:00Z"
+        }
+      }
+    },
+    {
+      "eventID": "lab-02",
+      "eventTime": "2026-11-20T00:00:15Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Management",
+      "userIdentity": {
+        "type": "IAMUser",
+        "accountId": "111111111111",
+        "arn": "arn:aws:iam::111111111111:user/NightJob"
+      },
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::222222222222:role/ReportReader",
+        "roleSessionName": "daily-report"
+      },
+      "responseElements": {
+        "assumedRoleUser": {
+          "arn": "arn:aws:sts::222222222222:assumed-role/ReportReader/daily-report"
+        },
+        "credentials": {
+          "accessKeyId": "LAB-KEY-B",
+          "expiration": "2026-11-20T01:00:00Z"
+        }
+      }
+    },
+    {
+      "eventID": "lab-03",
+      "eventTime": "2026-11-20T00:00:17Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Management",
+      "userIdentity": {
+        "type": "IAMUser",
+        "accountId": "111111111111",
+        "arn": "arn:aws:iam::111111111111:user/Contractor"
+      },
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::222222222222:role/ReportReader",
+        "roleSessionName": "daily-report"
+      },
+      "errorCode": "AccessDenied",
+      "responseElements": null
+    },
+    {
+      "eventID": "lab-04",
+      "eventTime": "2026-11-20T00:00:20Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Data",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "accountId": "222222222222",
+        "arn": "arn:aws:sts::222222222222:assumed-role/ReportReader/daily-report",
+        "accessKeyId": "LAB-KEY-A",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "arn": "arn:aws:iam::222222222222:role/ReportReader",
+            "accountId": "222222222222",
+            "userName": "ReportReader"
+          }
+        }
+      },
+      "requestParameters": {
+        "bucketName": "fictional-reports",
+        "key": "sample.txt"
+      },
+      "responseElements": null
+    },
+    {
+      "eventID": "lab-05",
+      "eventTime": "2026-11-20T00:00:21Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Data",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "accountId": "222222222222",
+        "arn": "arn:aws:sts::222222222222:assumed-role/ReportReader/daily-report",
+        "accessKeyId": "LAB-KEY-A",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "arn": "arn:aws:iam::222222222222:role/ReportReader",
+            "accountId": "222222222222",
+            "userName": "ReportReader"
+          }
+        }
+      },
+      "requestParameters": {
+        "bucketName": "fictional-reports",
+        "key": "sample.txt"
+      },
+      "errorCode": "AccessDenied",
+      "responseElements": null
+    },
+    {
+      "eventID": "lab-06",
+      "eventTime": "2026-11-20T00:00:22Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Data",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "accountId": "222222222222",
+        "arn": "arn:aws:sts::222222222222:assumed-role/ReportReader/daily-report",
+        "accessKeyId": "LAB-KEY-B",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "arn": "arn:aws:iam::222222222222:role/ReportReader",
+            "accountId": "222222222222",
+            "userName": "ReportReader"
+          }
+        }
+      },
+      "requestParameters": {
+        "bucketName": "fictional-reports",
+        "key": "sample.txt"
+      },
+      "responseElements": null
+    },
+    {
+      "eventID": "lab-07",
+      "eventTime": "2026-11-20T00:00:23Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Data",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "accountId": "222222222222",
+        "arn": "arn:aws:sts::222222222222:assumed-role/ReportReader/daily-report",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "arn": "arn:aws:iam::222222222222:role/ReportReader",
+            "accountId": "222222222222",
+            "userName": "ReportReader"
+          }
+        }
+      },
+      "requestParameters": {
+        "bucketName": "fictional-reports",
+        "key": "sample.txt"
+      },
+      "responseElements": null
+    },
+    {
+      "eventID": "lab-08",
+      "eventTime": "2026-11-20T00:00:24Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "ap-southeast-2",
+      "recipientAccountId": "222222222222",
+      "eventCategory": "Data",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "accountId": "222222222222",
+        "arn": "arn:aws:sts::222222222222:assumed-role/ReportReader/daily-report",
+        "accessKeyId": "LAB-KEY-UNKNOWN",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "arn": "arn:aws:iam::222222222222:role/ReportReader",
+            "accountId": "222222222222",
+            "userName": "ReportReader"
+          }
+        }
+      },
+      "requestParameters": {
+        "bucketName": "fictional-reports",
+        "key": "sample.txt"
+      },
+      "responseElements": null
+    }
+  ]
+}

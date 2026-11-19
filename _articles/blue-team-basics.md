@@ -26,3 +26,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 ## Linux authentication investigation
 
 [SSH, PAM and sudo logs with an offline timeline]({{ '/wiki/linux-auth-evidence/' | relative_url }})
+
+## AWS IAM Roles and CloudTrail Investigation
+
+[Temporary role sessions and the CloudTrail evidence lab]({{ '/wiki/aws-iam-role-evidence/' | relative_url }})
