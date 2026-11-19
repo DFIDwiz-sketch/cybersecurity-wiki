@@ -92,6 +92,10 @@ s-01과 s-02의 MFA 문맥과 앱 증거 차이를 한 문장씩 적고, s-04에
 
 [이전 · AD 기초]({{ '/ko/wiki/active-directory-fundamentals/' | relative_url }}) · [관련 · AWS IAM 역할과 CloudTrail]({{ '/ko/wiki/aws-iam-role-evidence/' | relative_url }})
 
+## 다음 학습
+
+[OAuth 2.0·OIDC 토큰과 API 작업 기록 조사]({{ '/ko/wiki/oauth-oidc-evidence/' | relative_url }})
+
 ## 공식 자료
 
 2026년 11월 20일 검토한 Microsoft Learn 자료입니다. 현재 테넌트의 라이선스·수집 범위·앱 동작을 확인하세요.

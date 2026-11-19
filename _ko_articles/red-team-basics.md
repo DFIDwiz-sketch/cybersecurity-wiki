@@ -23,3 +23,7 @@ updated: "2026-10-17"
 ## 탐지 규칙 검증 입문 · 로그 생성부터 알림 전달까지
 
 [탐지 증거와 오프라인 검증 실습]({{ '/ko/wiki/detection-validation/' | relative_url }})
+
+## 연결 학습
+
+[OAuth 2.0·OIDC 토큰과 API 작업 기록 조사]({{ '/ko/wiki/oauth-oidc-evidence/' | relative_url }})

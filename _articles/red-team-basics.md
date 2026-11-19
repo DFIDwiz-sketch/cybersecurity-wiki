@@ -23,3 +23,7 @@ A Red Team simulates realistic adversary behavior **within an explicitly authori
 ## Detection Validation · From Event Generation to Alert Delivery
 
 [Evidence and offline detection validation lab]({{ '/wiki/detection-validation/' | relative_url }})
+
+## Related lesson
+
+[OAuth 2.0 and OIDC tokens and API evidence]({{ '/wiki/oauth-oidc-evidence/' | relative_url }})

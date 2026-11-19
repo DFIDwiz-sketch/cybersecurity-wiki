@@ -92,6 +92,10 @@ Write one sentence each comparing s-01 and s-02 on MFA and application evidence.
 
 [Previous · AD fundamentals]({{ '/wiki/active-directory-fundamentals/' | relative_url }}) · [Related · AWS IAM roles and CloudTrail]({{ '/wiki/aws-iam-role-evidence/' | relative_url }})
 
+## Next lesson
+
+[OAuth 2.0 and OIDC tokens and API evidence]({{ '/wiki/oauth-oidc-evidence/' | relative_url }})
+
 ## Official references
 
 Microsoft Learn product documentation reviewed 20 November 2026. Verify licensing, collection and app behavior in the target tenant.

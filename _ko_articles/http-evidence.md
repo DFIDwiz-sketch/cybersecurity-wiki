@@ -100,3 +100,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## TLS 핸드셰이크와 관측 증거 · 연결부터 HTTP까지
 
 [TLS 협상 가시성과 오프라인 검증 실습]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }})
+
+## 연결 학습
+
+[OAuth 2.0·OIDC 토큰과 API 작업 기록 조사]({{ '/ko/wiki/oauth-oidc-evidence/' | relative_url }})

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 386" width="440" height="386" role="img" aria-labelledby="title description" xml:lang="ko" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">로그인부터 API 작업 기록까지</title>
+  <desc id="description">사용자가 앱을 열면 클라이언트가 인가 서버에서 로그인을 시작합니다. 서버는 브라우저 리디렉션으로 코드를 반환합니다. 클라이언트는 코드를 토큰으로 교환하고 액세스 토큰을 API에 보냅니다. API는 토큰과 권한을 확인하고 앱 감사는 작업 결과를 기록합니다.</desc>
+  <rect width="440" height="386" rx="14" fill="#0d1829"/>
+  <g transform="translate(8 10)">
+    <rect width="424" height="72" rx="10" fill="#172b45" stroke="#8db9ed" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">1. 클라이언트가 로그인 시작</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">브라우저가 인가 서버로 이동</text>
+  </g>
+  <path d="M220 86v16m-5-5 5 5 5-5" fill="none" stroke="#9cccf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 108)">
+    <rect width="424" height="72" rx="10" fill="#172b45" stroke="#8db9ed" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">2. 인가 서버가 코드 반환</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">브라우저가 등록된 콜백으로 이동</text>
+  </g>
+  <path d="M220 184v16m-5-5 5 5 5-5" fill="none" stroke="#9cccf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 206)">
+    <rect width="424" height="72" rx="10" fill="#172b45" stroke="#8db9ed" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">3. 클라이언트가 코드를 토큰과 교환</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">ID 토큰은 클라이언트 · 액세스 토큰은 API</text>
+  </g>
+  <path d="M220 282v16m-5-5 5 5 5-5" fill="none" stroke="#9cccf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 304)">
+    <rect width="424" height="72" rx="10" fill="#0e2e3a" stroke="#66e0c8" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">4. API와 앱이 요청을 처리</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">토큰 검증 · 작업 권한 확인 · 결과 감사</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 386" width="440" height="386" role="img" aria-labelledby="title description" xml:lang="en" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">From sign-in to a recorded API action</title>
+  <desc id="description">After a user opens the client, the client starts sign-in with the authorization server. The server returns a code by browser redirect. The client exchanges the code for tokens, then sends the access token to the API. The API checks the token and permissions, and app audit records the action's outcome.</desc>
+  <rect width="440" height="386" rx="14" fill="#0d1829"/>
+  <g transform="translate(8 10)">
+    <rect width="424" height="72" rx="10" fill="#172b45" stroke="#8db9ed" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">1. Client starts sign-in</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">Browser goes to the authorization server</text>
+  </g>
+  <path d="M220 86v16m-5-5 5 5 5-5" fill="none" stroke="#9cccf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 108)">
+    <rect width="424" height="72" rx="10" fill="#172b45" stroke="#8db9ed" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">2. Server returns a code</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">Browser returns to the registered callback</text>
+  </g>
+  <path d="M220 184v16m-5-5 5 5 5-5" fill="none" stroke="#9cccf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 206)">
+    <rect width="424" height="72" rx="10" fill="#172b45" stroke="#8db9ed" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">3. Client exchanges the code</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">ID token for the client · access token for the API</text>
+  </g>
+  <path d="M220 282v16m-5-5 5 5 5-5" fill="none" stroke="#9cccf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 304)">
+    <rect width="424" height="72" rx="10" fill="#0e2e3a" stroke="#66e0c8" stroke-width="2"/>
+    <text x="212" y="29" fill="#f5f8ff" font-size="21" font-weight="700">4. API and app check the request</text>
+    <text x="212" y="54" fill="#cee1f5" font-size="16">Token checks · permissions · action audit</text>
+  </g>
+</svg>

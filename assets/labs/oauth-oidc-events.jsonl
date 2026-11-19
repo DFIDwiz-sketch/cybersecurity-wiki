@@ -1,0 +1,11 @@
+{"kind":"api","time":"2030-01-15T10:00:01Z","environment":"training","service":"reports-api","request_id":"r-01","route":"GET /reports/{report_id}","stage":"authorization","reason":"permitted","status":200}
+{"kind":"app_audit","time":"2030-01-15T10:00:01Z","environment":"training","service":"reports-api","request_id":"r-01","action":"read_test_report","result":"completed"}
+{"kind":"api","time":"2030-01-15T10:00:02Z","environment":"training","service":"reports-api","request_id":"r-02","route":"GET /reports/{report_id}","stage":"token_validation","reason":"wrong_token_type","status":401}
+{"kind":"api","time":"2030-01-15T10:00:03Z","environment":"training","service":"reports-api","request_id":"r-03","route":"GET /reports/{report_id}","stage":"token_validation","reason":"audience_mismatch","status":401}
+{"kind":"api","time":"2030-01-15T10:00:04Z","environment":"training","service":"reports-api","request_id":"r-04","route":"GET /reports/{report_id}","stage":"token_validation","reason":"expired","status":401}
+{"kind":"api","time":"2030-01-15T10:00:05Z","environment":"training","service":"reports-api","request_id":"r-05","route":"GET /reports/{report_id}","stage":"scope_policy","reason":"insufficient_scope","status":403}
+{"kind":"api","time":"2030-01-15T10:00:06Z","environment":"training","service":"reports-api","request_id":"r-06","route":"GET /reports/{report_id}","stage":"authorization","reason":"queued","status":202}
+{"kind":"app_audit","time":"2030-01-15T10:00:09Z","environment":"other-training","service":"reports-api","request_id":"r-06","action":"read_test_report","result":"completed"}
+{"kind":"api","time":"2030-01-15T10:00:07Z","environment":"training","service":"reports-api","request_id":"r-07","route":"GET /reports/{report_id}","stage":"authorization","reason":"permitted","status":503}
+{"kind":"app_audit","time":"2030-01-15T10:00:07Z","environment":"training","service":"reports-api","request_id":"r-07","action":"read_test_report","result":"upstream_error"}
+{"kind":"api","time":"2030-01-15T10:00:08Z","environment":"training","service":"reports-api","request_id":"r-08","route":"GET /reports/{report_id}","stage":"object_policy","reason":"object_denied","status":403}
