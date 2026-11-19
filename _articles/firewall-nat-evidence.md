@@ -107,3 +107,7 @@ Reviewed 20 November 2026. IETF and NIST references provide the protocol and pol
 - [NIST SP 800-41 Rev. 1 · Firewalls and firewall policy, 2009](https://csrc.nist.gov/pubs/sp/800/41/r1/final)
 - [Palo Alto Networks · NGFW traffic log fields](https://docs.paloaltonetworks.com/ngfw/administration/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/traffic-log-fields)
 - [Zeek · conn.log current documentation](https://docs.zeek.org/en/current/reference/logs/conn.html)
+
+## DHCPv4 Lease Evidence and IP Address Investigation
+
+[Use lease history to narrow the device candidates behind an address]({{ '/wiki/dhcp-lease-evidence/' | relative_url }})

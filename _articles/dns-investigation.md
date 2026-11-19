@@ -218,3 +218,7 @@ Complete this chapter when you can draw the resolver's separate queries, disting
 ## Email Sender Authentication and Phishing Investigation
 
 [SPF, DKIM and DMARC investigation lab]({{ '/wiki/mail-auth-evidence/' | relative_url }})
+
+## DHCPv4 Lease Evidence and IP Address Investigation
+
+[Use lease history to narrow the device candidates behind an address]({{ '/wiki/dhcp-lease-evidence/' | relative_url }})

@@ -107,3 +107,7 @@ python3 nat-correlation.py
 - [NIST SP 800-41 Rev. 1 · Firewalls and firewall policy, 2009](https://csrc.nist.gov/pubs/sp/800/41/r1/final)
 - [Palo Alto Networks · NGFW traffic log fields](https://docs.paloaltonetworks.com/ngfw/administration/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/traffic-log-fields)
 - [Zeek · conn.log current documentation](https://docs.zeek.org/en/current/reference/logs/conn.html)
+
+## DHCPv4 임대와 IP 주소 조사
+
+[임대 이력으로 주소가 가리키는 장치 후보 좁히기]({{ '/ko/wiki/dhcp-lease-evidence/' | relative_url }})

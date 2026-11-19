@@ -198,3 +198,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Preserving Digital Evidence · SHA-256 and Custody
 
 [Verify acquired logs and working copies in the evidence lab]({{ '/wiki/evidence-preservation/' | relative_url }})
+
+## DHCPv4 Lease Evidence and IP Address Investigation
+
+[Use lease history to narrow the device candidates behind an address]({{ '/wiki/dhcp-lease-evidence/' | relative_url }})

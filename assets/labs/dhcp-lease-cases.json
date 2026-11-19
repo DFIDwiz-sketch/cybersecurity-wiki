@@ -1,0 +1,107 @@
+{
+  "leases": [
+    {
+      "id": "L1",
+      "segment": "office",
+      "ip": "192.0.2.40",
+      "client": "client-A",
+      "start": "2030-05-10T09:00:00Z",
+      "end": "2030-05-10T10:00:00Z",
+      "source": "server-a"
+    },
+    {
+      "id": "L2",
+      "segment": "office",
+      "ip": "192.0.2.40",
+      "client": "client-B",
+      "start": "2030-05-10T10:00:00Z",
+      "end": "2030-05-10T11:00:00Z",
+      "source": "server-a"
+    },
+    {
+      "id": "L3",
+      "segment": "guest",
+      "ip": "192.0.2.40",
+      "client": "client-G",
+      "start": "2030-05-10T09:00:00Z",
+      "end": "2030-05-10T11:00:00Z",
+      "source": "server-g"
+    },
+    {
+      "id": "L4",
+      "segment": "office",
+      "ip": "192.0.2.50",
+      "client": "client-X",
+      "start": "2030-05-10T09:00:00Z",
+      "end": "2030-05-10T11:00:00Z",
+      "source": "server-a"
+    },
+    {
+      "id": "L5",
+      "segment": "office",
+      "ip": "192.0.2.50",
+      "client": "client-Y",
+      "start": "2030-05-10T09:30:00Z",
+      "end": "2030-05-10T10:30:00Z",
+      "source": "server-b"
+    }
+  ],
+  "flows": [
+    {
+      "id": "F01",
+      "segment": "office",
+      "ip": "192.0.2.40",
+      "time": "2030-05-10T09:10:00Z",
+      "uncertainty_seconds": 0
+    },
+    {
+      "id": "F02",
+      "segment": "office",
+      "ip": "192.0.2.40",
+      "time": "2030-05-10T10:00:00Z",
+      "uncertainty_seconds": 0
+    },
+    {
+      "id": "F03",
+      "segment": "office",
+      "ip": "192.0.2.40",
+      "time": "2030-05-10T10:00:00Z",
+      "uncertainty_seconds": 2
+    },
+    {
+      "id": "F04",
+      "segment": "guest",
+      "ip": "192.0.2.40",
+      "time": "2030-05-10T09:10:00Z",
+      "uncertainty_seconds": 0
+    },
+    {
+      "id": "F05",
+      "segment": "office",
+      "ip": "192.0.2.50",
+      "time": "2030-05-10T10:00:00Z",
+      "uncertainty_seconds": 0
+    },
+    {
+      "id": "F06",
+      "segment": "office",
+      "ip": "192.0.2.99",
+      "time": "2030-05-10T10:00:00Z",
+      "uncertainty_seconds": 0
+    },
+    {
+      "id": "F07",
+      "segment": null,
+      "ip": "192.0.2.40",
+      "time": "2030-05-10T09:10:00Z",
+      "uncertainty_seconds": 0
+    },
+    {
+      "id": "F08",
+      "segment": "office",
+      "ip": "192.0.2.40",
+      "time": "2030-05-10T11:00:00Z",
+      "uncertainty_seconds": 2
+    }
+  ]
+}

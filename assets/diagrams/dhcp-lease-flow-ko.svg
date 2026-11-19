@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 372" width="440" height="372" role="img" aria-labelledby="title description" xml:lang="ko" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">DHCPv4 최초 임대의 정상 흐름</title>
+  <desc id="description">클라이언트가 서버를 찾으면 서버가 주소와 설정을 제안합니다. 클라이언트는 고른 제안을 요청합니다. 선택된 서버가 임대를 확인하고 클라이언트가 설정을 점검해 적용합니다.</desc>
+  <rect width="440" height="372" rx="12" fill="#0e1929"/>
+  <g transform="translate(10 10)">
+    <rect width="420" height="70" rx="10" fill="#1a2d47" stroke="#9bbff2" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">1. DISCOVER · 클라이언트 → 네트워크</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">DHCPv4 서버 찾기</text>
+  </g>
+  <path d="M220 83v17m-5-5 5 5 5-5" fill="none" stroke="#a6d0fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(10 104)">
+    <rect width="420" height="70" rx="10" fill="#1a2d47" stroke="#9bbff2" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">2. OFFER · 서버 → 클라이언트</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">주소와 설정 제안</text>
+  </g>
+  <path d="M220 177v17m-5-5 5 5 5-5" fill="none" stroke="#a6d0fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(10 198)">
+    <rect width="420" height="70" rx="10" fill="#1a2d47" stroke="#9bbff2" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">3. REQUEST · 클라이언트 → 네트워크</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">선택한 제안 요청</text>
+  </g>
+  <path d="M220 271v17m-5-5 5 5 5-5" fill="none" stroke="#a6d0fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(10 292)">
+    <rect width="420" height="70" rx="10" fill="#103a3a" stroke="#77e2cf" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">4. ACK · 선택된 서버 → 클라이언트</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">임대와 설정 확인</text>
+  </g>
+</svg>

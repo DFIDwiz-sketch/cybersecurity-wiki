@@ -198,3 +198,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## 디지털 증거 보존 · SHA-256과 인계 기록
 
 [로그 원본과 작업 사본을 검증하는 실습]({{ '/ko/wiki/evidence-preservation/' | relative_url }})
+
+## DHCPv4 임대와 IP 주소 조사
+
+[임대 이력으로 주소가 가리키는 장치 후보 좁히기]({{ '/ko/wiki/dhcp-lease-evidence/' | relative_url }})

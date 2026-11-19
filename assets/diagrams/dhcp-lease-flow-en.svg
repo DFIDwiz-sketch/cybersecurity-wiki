@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 372" width="440" height="372" role="img" aria-labelledby="title description" xml:lang="en" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">A normal DHCPv4 first lease</title>
+  <desc id="description">The client discovers servers. A server offers a candidate configuration. The client requests the selected offer. The selected server acknowledges the lease, after which the client checks and applies the configuration.</desc>
+  <rect width="440" height="372" rx="12" fill="#0e1929"/>
+  <g transform="translate(10 10)">
+    <rect width="420" height="70" rx="10" fill="#1a2d47" stroke="#9bbff2" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">1. DISCOVER · client to network</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">Find DHCPv4 servers</text>
+  </g>
+  <path d="M220 83v17m-5-5 5 5 5-5" fill="none" stroke="#a6d0fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(10 104)">
+    <rect width="420" height="70" rx="10" fill="#1a2d47" stroke="#9bbff2" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">2. OFFER · server to client</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">Propose an address and options</text>
+  </g>
+  <path d="M220 177v17m-5-5 5 5 5-5" fill="none" stroke="#a6d0fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(10 198)">
+    <rect width="420" height="70" rx="10" fill="#1a2d47" stroke="#9bbff2" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">3. REQUEST · client to network</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">Identify the selected offer</text>
+  </g>
+  <path d="M220 271v17m-5-5 5 5 5-5" fill="none" stroke="#a6d0fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(10 292)">
+    <rect width="420" height="70" rx="10" fill="#103a3a" stroke="#77e2cf" stroke-width="2"/>
+    <text x="210" y="29" fill="#f4f8ff" font-size="19" font-weight="700">4. ACK · selected server to client</text>
+    <text x="210" y="54" fill="#d4e5f9" font-size="17">Confirm the binding and configuration</text>
+  </g>
+</svg>

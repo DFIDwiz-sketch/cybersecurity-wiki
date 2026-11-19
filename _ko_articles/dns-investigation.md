@@ -218,3 +218,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## 이메일 발신자 인증과 피싱 조사
 
 [SPF·DKIM·DMARC 조사 실습]({{ '/ko/wiki/mail-auth-evidence/' | relative_url }})
+
+## DHCPv4 임대와 IP 주소 조사
+
+[임대 이력으로 주소가 가리키는 장치 후보 좁히기]({{ '/ko/wiki/dhcp-lease-evidence/' | relative_url }})
