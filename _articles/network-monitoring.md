@@ -190,3 +190,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Incident Timelines · UTC, Clock Skew and Log Arrival
 
 [Normalize timestamps and preserve uncertainty in the timeline lab]({{ '/wiki/incident-timeline-evidence/' | relative_url }})
+
+## TLS Handshake Evidence · From Connection to HTTP
+
+[TLS negotiation visibility and offline verification lab]({{ '/wiki/tls-handshake-evidence/' | relative_url }})

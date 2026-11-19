@@ -190,3 +190,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## 사고 타임라인 입문 · UTC, 시계 오차, 로그 도착 시간
 
 [여러 로그의 시각을 정규화하고 불확실성을 표시하는 실습]({{ '/ko/wiki/incident-timeline-evidence/' | relative_url }})
+
+## TLS 핸드셰이크와 관측 증거 · 연결부터 HTTP까지
+
+[TLS 협상 가시성과 오프라인 검증 실습]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }})

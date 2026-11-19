@@ -96,3 +96,7 @@ Reviewed 18 November 2026. Check fields and settings against your installed prod
 ## Email Sender Authentication and Phishing Investigation
 
 [SPF, DKIM and DMARC investigation lab]({{ '/wiki/mail-auth-evidence/' | relative_url }})
+
+## TLS Handshake Evidence · From Connection to HTTP
+
+[TLS negotiation visibility and offline verification lab]({{ '/wiki/tls-handshake-evidence/' | relative_url }})

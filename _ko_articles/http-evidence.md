@@ -96,3 +96,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## 이메일 발신자 인증과 피싱 조사
 
 [SPF·DKIM·DMARC 조사 실습]({{ '/ko/wiki/mail-auth-evidence/' | relative_url }})
+
+## TLS 핸드셰이크와 관측 증거 · 연결부터 HTTP까지
+
+[TLS 협상 가시성과 오프라인 검증 실습]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }})

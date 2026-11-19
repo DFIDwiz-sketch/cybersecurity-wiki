@@ -167,3 +167,7 @@ Complete the chapter when you can draw issuance versus verification direction, i
 - [RFC 9525, November 2023: TLS service identity](https://www.rfc-editor.org/rfc/rfc9525.html).
 - [RFC 6960, June 2013: OCSP response semantics](https://www.rfc-editor.org/rfc/rfc6960.html).
 - OpenSSL **3.5**: [verify](https://docs.openssl.org/3.5/man1/openssl-verify/), [verification options](https://docs.openssl.org/3.5/man1/openssl-verification-options/), [X.509 extensions](https://docs.openssl.org/3.5/man5/x509v3_config/), [x509](https://docs.openssl.org/3.5/man1/openssl-x509/), [req](https://docs.openssl.org/3.5/man1/openssl-req/).
+
+## TLS Handshake Evidence · From Connection to HTTP
+
+[TLS negotiation visibility and offline verification lab]({{ '/wiki/tls-handshake-evidence/' | relative_url }})

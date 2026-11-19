@@ -167,3 +167,7 @@ openssl verify -no-CApath -no-CAstore -CAfile root.pem \
 - [RFC 9525, 2023년 11월: TLS 서비스 신원](https://www.rfc-editor.org/rfc/rfc9525.html).
 - [RFC 6960, 2013년 6월: OCSP 응답 의미](https://www.rfc-editor.org/rfc/rfc6960.html).
 - OpenSSL **3.5**: [verify](https://docs.openssl.org/3.5/man1/openssl-verify/), [검증 옵션](https://docs.openssl.org/3.5/man1/openssl-verification-options/), [X.509 확장](https://docs.openssl.org/3.5/man5/x509v3_config/), [x509](https://docs.openssl.org/3.5/man1/openssl-x509/), [req](https://docs.openssl.org/3.5/man1/openssl-req/).
+
+## TLS 핸드셰이크와 관측 증거 · 연결부터 HTTP까지
+
+[TLS 협상 가시성과 오프라인 검증 실습]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }})
