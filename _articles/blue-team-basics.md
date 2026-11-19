@@ -30,3 +30,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 ## AWS IAM Roles and CloudTrail Investigation
 
 [Temporary role sessions and the CloudTrail evidence lab]({{ '/wiki/aws-iam-role-evidence/' | relative_url }})
+
+## Detection Validation · From Event Generation to Alert Delivery
+
+[Evidence and offline detection validation lab]({{ '/wiki/detection-validation/' | relative_url }})

@@ -30,3 +30,7 @@ updated: "2026-10-17"
 ## AWS IAM 역할과 CloudTrail 조사 입문
 
 [임시 역할 세션과 CloudTrail 조사 실습]({{ '/ko/wiki/aws-iam-role-evidence/' | relative_url }})
+
+## 탐지 규칙 검증 입문 · 로그 생성부터 알림 전달까지
+
+[탐지 증거와 오프라인 검증 실습]({{ '/ko/wiki/detection-validation/' | relative_url }})

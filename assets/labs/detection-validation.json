@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "id": "lab-01",
+      "expected": "delivered",
+      "source": true,
+      "indexed": true,
+      "marker": "wiki-canary",
+      "event_min": 8,
+      "arrived_min": 9,
+      "suppressed": false,
+      "notification": true
+    },
+    {
+      "id": "lab-02",
+      "expected": "no match",
+      "source": true,
+      "indexed": true,
+      "marker": "routine",
+      "event_min": 8,
+      "arrived_min": 9,
+      "suppressed": false,
+      "notification": false
+    },
+    {
+      "id": "lab-03",
+      "expected": "source missing",
+      "source": false,
+      "indexed": false,
+      "notification": false
+    },
+    {
+      "id": "lab-04",
+      "expected": "ingest missing",
+      "source": true,
+      "indexed": false,
+      "notification": false
+    },
+    {
+      "id": "lab-05",
+      "expected": "field missing",
+      "source": true,
+      "indexed": true,
+      "event_min": 8,
+      "arrived_min": 9,
+      "suppressed": false,
+      "notification": false
+    },
+    {
+      "id": "lab-06",
+      "expected": "late arrival",
+      "source": true,
+      "indexed": true,
+      "marker": "wiki-canary",
+      "event_min": 8,
+      "arrived_min": 11,
+      "suppressed": false,
+      "notification": false
+    },
+    {
+      "id": "lab-07",
+      "expected": "suppressed",
+      "source": true,
+      "indexed": true,
+      "marker": "wiki-canary",
+      "event_min": 8,
+      "arrived_min": 9,
+      "suppressed": true,
+      "notification": false
+    },
+    {
+      "id": "lab-08",
+      "expected": "delivery missing",
+      "source": true,
+      "indexed": true,
+      "marker": "wiki-canary",
+      "event_min": 8,
+      "arrived_min": 9,
+      "suppressed": false,
+      "notification": false
+    },
+    {
+      "id": "lab-09",
+      "expected": "outside event window",
+      "source": true,
+      "indexed": true,
+      "marker": "wiki-canary",
+      "event_min": 4,
+      "arrived_min": 9,
+      "suppressed": false,
+      "notification": false
+    }
+  ]
+}

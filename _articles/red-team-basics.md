@@ -19,3 +19,7 @@ A Red Team simulates realistic adversary behavior **within an explicitly authori
 
 ## Further reading
 - [MITRE ATT&CK](https://attack.mitre.org/)
+
+## Detection Validation · From Event Generation to Alert Delivery
+
+[Evidence and offline detection validation lab]({{ '/wiki/detection-validation/' | relative_url }})

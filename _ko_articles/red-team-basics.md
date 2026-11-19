@@ -19,3 +19,7 @@ updated: "2026-10-17"
 
 ## 참고
 - [MITRE ATT&CK](https://attack.mitre.org/)
+
+## 탐지 규칙 검증 입문 · 로그 생성부터 알림 전달까지
+
+[탐지 증거와 오프라인 검증 실습]({{ '/ko/wiki/detection-validation/' | relative_url }})

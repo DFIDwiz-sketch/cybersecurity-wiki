@@ -29,3 +29,7 @@ Your results depend on access permissions and the environment's indexing configu
 ## Incident Timelines · UTC, Clock Skew and Log Arrival
 
 [Normalize timestamps and preserve uncertainty in the timeline lab]({{ '/wiki/incident-timeline-evidence/' | relative_url }})
+
+## Detection Validation · From Event Generation to Alert Delivery
+
+[Evidence and offline detection validation lab]({{ '/wiki/detection-validation/' | relative_url }})

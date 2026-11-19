@@ -29,3 +29,7 @@ updated: "2026-10-17"
 ## 사고 타임라인 입문 · UTC, 시계 오차, 로그 도착 시간
 
 [여러 로그의 시각을 정규화하고 불확실성을 표시하는 실습]({{ '/ko/wiki/incident-timeline-evidence/' | relative_url }})
+
+## 탐지 규칙 검증 입문 · 로그 생성부터 알림 전달까지
+
+[탐지 증거와 오프라인 검증 실습]({{ '/ko/wiki/detection-validation/' | relative_url }})
