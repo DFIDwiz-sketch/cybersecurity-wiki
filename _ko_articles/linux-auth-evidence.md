@@ -112,6 +112,10 @@ python3 linux-auth-evidence.py
 
 관련 학습 · [블루팀 기초]({{ '/ko/wiki/blue-team-basics/' | relative_url }}) · [Windows 이벤트와 비교]({{ '/ko/wiki/windows-logs/' | relative_url }}) · [TCP 연결 증거]({{ '/ko/wiki/tcp-evidence/' | relative_url }})
 
+## 다음 학습
+
+[Linux 프로세스 조사와 PID 재사용]({{ '/ko/wiki/linux-process-evidence/' | relative_url }})
+
 ## 공식 자료
 
 2026년 11월 20일 검토. SSH 인증 표준은 2006년 문서이며, 제품 명령·로그 동작은 설치 버전과 배포판 설정을 함께 확인하세요.

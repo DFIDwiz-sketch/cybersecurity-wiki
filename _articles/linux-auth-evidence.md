@@ -112,6 +112,10 @@ To complete the lesson, write one line each for the ordinary example and the inv
 
 Related reading · [Blue-team fundamentals]({{ '/wiki/blue-team-basics/' | relative_url }}) · [Windows event comparison]({{ '/wiki/windows-logs/' | relative_url }}) · [TCP connection evidence]({{ '/wiki/tcp-evidence/' | relative_url }})
 
+## Next lesson
+
+[Linux process investigation and PID reuse]({{ '/wiki/linux-process-evidence/' | relative_url }})
+
 ## Official references
 
 Reviewed 20 November 2026. RFC 4252 documents SSH authentication (2006). Match command and logging behavior to your installed product and distribution.

@@ -85,6 +85,10 @@ Finish by writing the original and normalized values, correction grounds and tim
 
 [Foundation · Splunk searches]({{ '/wiki/splunk-basics/' | relative_url }}) · [Next · Windows incident response lab]({{ '/wiki/windows-incident-response-lab/' | relative_url }})
 
+## Related lesson
+
+[Linux process investigation and PID reuse]({{ '/wiki/linux-process-evidence/' | relative_url }})
+
 ## Official references
 
 Reviewed 20 November 2026. Apply protocol dates and product-specific field definitions to the installed version and configuration.

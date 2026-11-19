@@ -85,6 +85,10 @@ python3 time-correlation.py
 
 [기초 · Splunk 검색]({{ '/ko/wiki/splunk-basics/' | relative_url }}) · [다음 · Windows 사고 대응 실습]({{ '/ko/wiki/windows-incident-response-lab/' | relative_url }})
 
+## 연결 학습
+
+[Linux 프로세스 조사와 PID 재사용]({{ '/ko/wiki/linux-process-evidence/' | relative_url }})
+
 ## 공식 자료
 
 2026년 11월 20일 검토. 표준의 날짜와 개별 제품 필드의 의미·버전 범위를 구분해 적용하세요.

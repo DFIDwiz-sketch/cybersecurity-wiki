@@ -1,0 +1,9 @@
+observation,host,boot,pid_space,pid,start_ticks,observed_utc,image
+p01,lab-01,boot-a,host-view,4200,12000,2030-02-03T09:00:02Z,/opt/lab/report-wrapper
+p02,lab-01,boot-a,host-view,4200,12000,2030-02-03T09:00:04Z,/usr/bin/python3
+p03,lab-01,boot-a,host-view,4200,40000,2030-02-03T09:04:42Z,/usr/bin/sleep
+p04,lab-01,boot-a,container-c,4200,12000,2030-02-03T09:00:02Z,/usr/bin/worker
+p05,lab-01,boot-b,host-view,4200,12000,2030-02-03T09:12:02Z,/opt/lab/report-wrapper
+p06,lab-01,boot-a,host-view,4200,,2030-02-03T09:01:30Z,
+p07,lab-02,boot-a,host-view,4200,12000,2030-02-03T09:00:02Z,/opt/lab/report-wrapper
+p08,lab-01,boot-a,host-view,4300,12000,2030-02-03T09:00:02Z,/opt/lab/report-wrapper

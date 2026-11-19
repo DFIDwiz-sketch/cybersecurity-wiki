@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 298" width="430" height="298" role="img" aria-labelledby="title description" xml:lang="ko" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">Linux 프로세스 관측값 대조</title>
+  <desc id="description">먼저 호스트, 부팅 구간, PID를 읽은 관점을 확인합니다. 이어 PID와 프로세스 시작 틱을 비교합니다. 값이 다르면 해당 관점에서 키가 갈리고, 값이 없으면 판단을 보류합니다. 모두 일치하면 동일 실행 후보입니다.</desc>
+  <rect width="430" height="298" rx="14" fill="#0e1927"/>
+  <g transform="translate(8 12)">
+    <rect width="414" height="74" rx="10" fill="#203348" stroke="#a5ccf6" stroke-width="2"/>
+    <text x="207" y="29" font-size="20" font-weight="700" fill="#f2f8ff">1. 관측 범위 확인</text>
+    <text x="207" y="55" font-size="17" fill="#daeafa">같은 호스트·부팅 구간·PID 관점인가?</text>
+  </g>
+  <path d="M215 91v15m-5-5 5 5 5-5" fill="none" stroke="#a9d2f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 112)">
+    <rect width="414" height="74" rx="10" fill="#203348" stroke="#a5ccf6" stroke-width="2"/>
+    <text x="207" y="29" font-size="20" font-weight="700" fill="#f2f8ff">2. 프로세스 수명 대조</text>
+    <text x="207" y="55" font-size="17" fill="#daeafa">같은 PID와 시작 틱인가?</text>
+  </g>
+  <path d="M215 191v15m-5-5 5 5 5-5" fill="none" stroke="#a9d2f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(8 212)">
+    <rect width="414" height="74" rx="10" fill="#10443b" stroke="#86efd1" stroke-width="2"/>
+    <text x="207" y="29" font-size="20" font-weight="700" fill="#f2f8ff">3. 근거가 허용하는 결론</text>
+    <text x="207" y="55" font-size="17" fill="#daeafa">키 일치 · 키 불일치 · 판단 보류</text>
+  </g>
+</svg>

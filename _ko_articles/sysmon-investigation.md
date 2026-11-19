@@ -306,3 +306,7 @@ PID 재사용과 부모 GUID 연결을 설명하고 필터로 제외될 활동 �
 [Windows 사고 대응 통합 실습]({{ '/ko/wiki/windows-incident-response-lab/' | relative_url }})에서 Sysmon·인증·작업·대응 기록을 함께 분석하세요.
 
 **출처 검토: 2026년 10월 22일.** Microsoft는 제품·수집 정의, 커뮤니티 저장소는 정책 관리 사례, MITRE는 행위 분류의 근거입니다. 도표·검색·필터 조각·실습은 직접 구성한 교육 자료입니다. 게시 검사는 문서 일치·구문·자료 제공을 대상으로 하며 운영 Sysmon·Splunk 검증은 각 환경에서 필요합니다.
+
+## 연결 학습
+
+[Linux 프로세스 조사와 PID 재사용]({{ '/ko/wiki/linux-process-evidence/' | relative_url }})
