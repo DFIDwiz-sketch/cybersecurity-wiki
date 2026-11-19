@@ -1,0 +1,20 @@
+Return-Path: <returns@relay.alerts.invalid>
+Received: from relay.alerts.invalid (198.51.100.31)
+ by mx.receiver.test with ESMTPS id LAB-2042;
+ Thu, 19 Nov 2026 01:00:00 +0000
+Authentication-Results: mx.receiver.test;
+ spf=pass smtp.mailfrom=relay.alerts.invalid;
+ dkim=none;
+ dmarc=fail header.from=orders.example.test
+Authentication-Results: supplied.relay.invalid;
+ spf=pass smtp.mailfrom=orders.example.test;
+ dmarc=pass header.from=orders.example.test
+From: "Example Orders" <billing@orders.example.test>
+Reply-To: review@alerts.invalid
+To: analyst@receiver.test
+Subject: Account notice - fictional
+Date: Thu, 19 Nov 2026 01:00:00 +0000
+Message-ID: <lab-2042@sender.invalid>
+X-Training-Note: Synthetic header excerpt. No live signature or validation.
+
+Fictional account notice for header analysis. No links or attachments.

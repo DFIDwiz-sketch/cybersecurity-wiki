@@ -1,0 +1,17 @@
+Return-Path: <returns@0rders.example.invalid>
+Received: from mta.0rders.example.invalid (203.0.113.45)
+ by mx.receiver.test with ESMTPS id LAB-3042;
+ Thu, 19 Nov 2026 01:00:00 +0000
+Authentication-Results: mx.receiver.test;
+ spf=pass smtp.mailfrom=0rders.example.invalid;
+ dkim=pass header.d=0rders.example.invalid header.s=notice;
+ dmarc=pass header.from=0rders.example.invalid
+From: "Example Orders" <billing@0rders.example.invalid>
+Reply-To: billing@0rders.example.invalid
+To: analyst@receiver.test
+Subject: Payment details changed - fictional
+Date: Thu, 19 Nov 2026 01:00:00 +0000
+Message-ID: <lab-3042@sender.invalid>
+X-Training-Note: Synthetic header excerpt. No live signature or validation.
+
+Fictional payment-change claim. Contains no payment instructions or links.

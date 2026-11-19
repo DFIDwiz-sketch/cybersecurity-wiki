@@ -1,0 +1,17 @@
+Return-Path: <bounces@relay.mailer.invalid>
+Received: from relay.mailer.invalid (192.0.2.25)
+ by mx.receiver.test with ESMTPS id LAB-1042;
+ Thu, 19 Nov 2026 01:00:00 +0000
+Authentication-Results: mx.receiver.test;
+ spf=pass smtp.mailfrom=relay.mailer.invalid;
+ dkim=pass header.d=orders.example.test header.s=notice;
+ dmarc=pass header.from=orders.example.test
+From: "Example Orders" <receipts@orders.example.test>
+Reply-To: support@orders.example.test
+To: analyst@receiver.test
+Subject: Order 1042 confirmation - fictional
+Date: Thu, 19 Nov 2026 01:00:00 +0000
+Message-ID: <lab-1042@sender.invalid>
+X-Training-Note: Synthetic header excerpt. No live signature or validation.
+
+Fictional order confirmation. No action is needed.
