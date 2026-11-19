@@ -25,7 +25,7 @@ A **process lifetime** starts with creation and ends with exit. An `execve` oper
 
 **procfs** is the kernel's virtual filesystem normally mounted at `/proc`. Its per-process files report what the kernel exposes at read time. Collecting them periodically creates snapshots, which can miss a process that both starts and exits between polls.
 
-A **tick** here is a unit of process start time after boot. `os.sysconf("SC_CLK_TCK")` gives the rate on Linux. If it reports 100, 12,000 ticks are 120 seconds in that clock domain. This number is neither an epoch timestamp nor a count of CPU consumed. Keep the exact integer for comparisons. Keep UTC event and collection times separately. Journal monotonic reception timestamps and procfs start ticks serve different purposes and use different units; do not substitute one for the other.
+A **tick** here is a unit of process start time after boot. `os.sysconf("SC_CLK_TCK")` gives the rate on Linux. If it reports 100, 12,000 ticks are 120 seconds in that clock domain. This number is neither an epoch timestamp nor a count of CPU consumed. Keep the exact integer and confirm a common clock basis before comparing. On Linux kernels with time namespaces, procfs can apply a boot-time offset from the reader's time namespace independently of the PID view. Compare within one time view or establish a supported mapping first. Keep UTC event and collection times separately. Journal monotonic reception timestamps and procfs start ticks serve different purposes and use different units; do not substitute one for the other.
 
 ## 2. Build a key before you build a story
 
@@ -33,7 +33,7 @@ A **tick** here is a unit of process start time after boot. `os.sysconf("SC_CLK_
 
 1. Establish the originating host and boot. The kernel exposes a boot UUID at `/proc/sys/kernel/random/boot_id` where visible. The journal stores `_BOOT_ID` as 32 hexadecimal characters. Preserve originals and use a consistent representation when comparing the UUID forms.
 2. Establish the number space used by the source. The PID in a procfs path uses the view of that procfs instance. `/proc/<pid>/status` can expose `NStgid` (process ID across the visible namespace hierarchy) and `NSpid` (thread ID), on kernels supporting those fields. For the thread-group leader the identifiers agree in each namespace. Record the observed mapping while the task is alive. The target's own namespace identifier alone does not say which view an event's PID used.
-3. Compare PID and start ticks within that scope. Matching host, boot, PID view, PID and ticks is substantially stronger than matching PID alone. Ticks have finite resolution, and collectors can miss short lifetimes or normalize incorrectly. Use a documented process instance ID from the same sensor when available. Treat cross-sensor correlation as a separate check.
+3. Compare PID and start ticks within that scope and a common time view. Matching host, boot, PID view, PID and ticks is substantially stronger than matching PID alone. Ticks have finite resolution, and collectors can miss short lifetimes or normalize incorrectly. Use a documented process instance ID from the same sensor when available. Treat cross-sensor correlation as a separate check.
 
 **Normal example.** A report scheduler launches a wrapper. At 09:00:02 UTC it is observed as PID 4200 with start tick 12000. At 09:00:04 the same view still has 4200 and 12000, but the observed image is Python. That fits a wrapper replacing itself. An execution event or a known test workflow can corroborate it. Later, a fresh observation has PID 4200 and start tick 40000 in the same host, boot and view. The different starting point supports a different lifetime. A historical security event without a start tick cannot be assigned to the latest PID 4200 simply because it is visible now.
 
@@ -66,7 +66,7 @@ Save [the synthetic CSV]({{ '/assets/labs/linux-process-observations.csv' | rela
 python3 linux-process-evidence.py
 ```
 
-The script compares each row to `p01`. Its output judges the supplied keys. A different PID view prevents a direct match and can still describe the same underlying process if a trustworthy namespace translation is later established.
+The fixture assumes one comparable time basis for the observations. The script compares each row to `p01`. Its output judges the supplied keys. A different PID view prevents a direct match and can still describe the same underlying process if a trustworthy namespace translation is later established.
 
 | Observation | Expected result against p01 | Reason |
 | --- | --- | --- |
@@ -105,7 +105,7 @@ You are done when you can explain the differences among p02, p03 and p06, explai
 
 Reviewed November 20, 2026. Source versions below describe the documented coverage. Check the kernel, distribution and collector installed in your environment.
 
-- Linux kernel online documentation at review. Procfs lifetime semantics, view/access controls, and boot UUID. [The /proc filesystem](https://docs.kernel.org/filesystems/proc.html) · [Kernel sysctls, random](https://docs.kernel.org/admin-guide/sysctl/kernel.html#random)
-- Linux man-pages 6.19. Field 22 units, namespace PID fields, and process image replacement. [proc_pid_stat(5)](https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html) · [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html) · [pid_namespaces(7)](https://man7.org/linux/man-pages/man7/pid_namespaces.7.html) · [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
+- Linux kernel online documentation at review. Procfs lifetime semantics, view/access controls, and boot UUID. [The /proc filesystem](https://docs.kernel.org/filesystems/proc.html) · [Kernel sysctls, random](https://docs.kernel.org/admin-guide/sysctl/kernel.html#random) · [Kernel implementation, fs/proc/array.c](https://github.com/torvalds/linux/blob/master/fs/proc/array.c)
+- Linux man-pages 6.19. Field 22 units, namespace PID fields, and process image replacement. [proc_pid_stat(5)](https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html) · [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html) · [pid_namespaces(7)](https://man7.org/linux/man-pages/man7/pid_namespaces.7.html) · [time_namespaces(7)](https://man7.org/linux/man-pages/man7/time_namespaces.7.html) · [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
 - systemd 262 online manual. Origin credentials, boot identifier and journal time fields. [systemd.journal-fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - RHEL 9 product family. Linux Audit delivery, rule-based coverage and example record fields. [Red Hat Enterprise Linux 9 · Auditing the system](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/auditing-the-system_security-hardening)

@@ -25,7 +25,7 @@ translation_url: /wiki/linux-process-evidence/
 
 **procfs**는 보통 `/proc`에 마운트되는 커널의 가상 파일시스템입니다. 프로세스별 파일을 읽으면 커널이 그 시점에 제공하는 상태가 나옵니다. 주기적으로 읽어 스냅샷을 남겨도 두 관측 사이에 시작했다가 끝난 프로세스는 놓칠 수 있습니다.
 
-여기서 **틱**은 부팅 후 프로세스가 시작한 시점을 나타내는 단위입니다. Linux에서 `os.sysconf("SC_CLK_TCK")`로 초당 틱을 조회할 수 있습니다. 값이 100이면 12,000틱은 그 시계에서 120초입니다. UTC 시각이나 프로세스가 소비한 CPU 시간이 아닙니다. 대조에는 정수 원본을 쓰고, UTC 발생·수집 시각은 따로 보존하세요. 저널의 단조 증가 수신 시각과 procfs 시작 틱은 용도와 단위가 다릅니다.
+여기서 **틱**은 부팅 후 프로세스가 시작한 시점을 나타내는 단위입니다. Linux에서 `os.sysconf("SC_CLK_TCK")`로 초당 틱을 조회할 수 있습니다. 값이 100이면 12,000틱은 그 시계에서 120초입니다. UTC 시각이나 프로세스가 소비한 CPU 시간이 아닙니다. 대조에는 정수 원본을 쓰고, UTC 발생·수집 시각은 따로 보존하세요. 시간 네임스페이스를 지원하는 커널에서는 procfs가 읽는 쪽의 부팅 시계 오프셋을 적용할 수 있습니다. PID 관점이 같아도 시간 기준은 다를 수 있으므로 같은 시간 관점에서 대조하거나 먼저 변환 근거를 확보하세요. 저널의 단조 증가 수신 시각과 procfs 시작 틱은 용도와 단위가 다릅니다.
 
 ## 2. 같은 실행인지 확인하는 순서
 
@@ -33,7 +33,7 @@ translation_url: /wiki/linux-process-evidence/
 
 1. **원본 호스트와 부팅 구간을 확인합니다.** 접근 가능한 곳에서 커널 부팅 UUID는 `/proc/sys/kernel/random/boot_id`로 확인할 수 있습니다. 저널은 `_BOOT_ID`를 32자리 16진수 값으로 저장합니다. 원본을 보존한 뒤 두 값을 비교할 때만 UUID 표기를 통일하세요.
 2. **출처가 PID를 어느 관점에서 기록했는지 확인합니다.** procfs 경로의 PID는 해당 procfs 인스턴스의 관점입니다. 지원되는 커널의 `/proc/<pid>/status`에서 `NStgid`는 보이는 네임스페이스별 프로세스 ID, `NSpid`는 스레드 ID를 나타냅니다. 스레드 그룹 리더에서는 각 관점의 두 값이 일치합니다. 프로세스가 살아 있을 때 관측한 대응 관계를 남기세요. 대상 프로세스가 속한 네임스페이스만 알아서는 이벤트의 PID가 어느 관점인지 알 수 없습니다.
-3. **그 범위 안에서 PID와 시작 틱을 대조합니다.** 호스트·부팅·PID 관점·PID·시작 틱이 모두 같으면 PID만 같은 경우보다 근거가 강합니다. 틱의 시간 해상도에는 한계가 있고, 수집이 짧은 수명을 놓치거나 값을 잘못 변환할 수 있습니다. 같은 센서가 정의한 프로세스 인스턴스 ID가 있다면 문서에서 의미를 확인해 사용하고, 다른 센서끼리의 대응은 별도로 확인하세요.
+3. **그 범위와 공통 시간 기준 안에서 PID와 시작 틱을 대조합니다.** 호스트·부팅·PID 관점·PID·시작 틱이 모두 같으면 PID만 같은 경우보다 근거가 강합니다. 틱의 시간 해상도에는 한계가 있고, 수집이 짧은 수명을 놓치거나 값을 잘못 변환할 수 있습니다. 같은 센서가 정의한 프로세스 인스턴스 ID가 있다면 문서에서 의미를 확인해 사용하고, 다른 센서끼리의 대응은 별도로 확인하세요.
 
 **정상 예시.** 예약 작업이 보고서 래퍼를 실행합니다. 09:00:02 UTC에는 PID 4200, 시작 틱 12000인 래퍼가 보입니다. 09:00:04에는 같은 관점에서 PID와 시작 틱은 유지되고 실행 이미지가 Python으로 바뀝니다. 래퍼가 자신을 Python으로 교체한 정상 흐름에 들어맞습니다. 실제 실행 이벤트나 이미 확인한 시험 절차로 이를 뒷받침할 수 있습니다. 나중에 같은 호스트·부팅·관점에 PID 4200이 다시 나타나지만 시작 틱은 40000입니다. 다른 수명으로 보는 것이 타당합니다. 시작 틱이 없는 옛 보안 이벤트를 현재 보이는 PID 4200에 바로 붙이면 잘못된 실행을 지목할 수 있습니다.
 
@@ -66,7 +66,7 @@ journalctl --utc --since "$FROM_UTC" --until "$TO_UTC" \
 python3 linux-process-evidence.py
 ```
 
-각 행을 `p01`과 비교합니다. 스크립트의 결과는 제공된 키의 일치 여부입니다. PID 관점이 다르면 직접 연결할 수 없지만, 신뢰할 수 있는 변환 관계가 나중에 확인되면 같은 실제 프로세스로 해석될 수 있습니다.
+가상 자료는 관측값의 시간 기준을 서로 비교할 수 있다고 가정합니다. 각 행을 `p01`과 비교합니다. 스크립트의 결과는 제공된 키의 일치 여부입니다. PID 관점이 다르면 직접 연결할 수 없지만, 신뢰할 수 있는 변환 관계가 나중에 확인되면 같은 실제 프로세스로 해석될 수 있습니다.
 
 | 관측 행 | p01과 비교한 결과 | 이유 |
 | --- | --- | --- |
@@ -105,7 +105,7 @@ p02·p03·p06의 차이를 설명하고, p04에 관점 변환이 필요한 이�
 
 2026년 11월 20일 검토했습니다. 아래 판본과 제품 범위를 기준으로 작성했으므로 실제 환경에서는 커널, 배포판, 수집기 버전과 정책을 확인하세요.
 
-- 검토일의 Linux 커널 온라인 문서. procfs의 수명, 관점, 접근 제어와 부팅 UUID. [The /proc filesystem](https://docs.kernel.org/filesystems/proc.html) · [Kernel sysctls, random](https://docs.kernel.org/admin-guide/sysctl/kernel.html#random)
-- Linux man-pages 6.19. 22번째 필드 단위, 네임스페이스별 PID와 프로그램 이미지 교체. [proc_pid_stat(5)](https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html) · [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html) · [pid_namespaces(7)](https://man7.org/linux/man-pages/man7/pid_namespaces.7.html) · [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
+- 검토일의 Linux 커널 온라인 문서. procfs의 수명, 관점, 접근 제어와 부팅 UUID. [The /proc filesystem](https://docs.kernel.org/filesystems/proc.html) · [Kernel sysctls, random](https://docs.kernel.org/admin-guide/sysctl/kernel.html#random) · [커널 구현 fs/proc/array.c](https://github.com/torvalds/linux/blob/master/fs/proc/array.c)
+- Linux man-pages 6.19. 22번째 필드 단위, 네임스페이스별 PID와 프로그램 이미지 교체. [proc_pid_stat(5)](https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html) · [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html) · [pid_namespaces(7)](https://man7.org/linux/man-pages/man7/pid_namespaces.7.html) · [time_namespaces(7)](https://man7.org/linux/man-pages/man7/time_namespaces.7.html) · [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
 - systemd 262 온라인 설명서. 원본 자격 정보, 부팅 식별자와 저널 시간 필드. [systemd.journal-fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - RHEL 9 제품군. Linux Audit 수집 구조, 규칙에 따른 수집 범위와 기록 예시. [Red Hat Enterprise Linux 9 · Auditing the system](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/auditing-the-system_security-hardening)
