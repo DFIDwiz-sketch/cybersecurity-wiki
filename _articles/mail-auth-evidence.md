@@ -176,3 +176,7 @@ Reviewed 19 November 2026. Use standards for protocol behavior and the deployed 
 - [DMARC · RFC 9989 (2026)](https://www.rfc-editor.org/rfc/rfc9989.html) · [DMARC aggregate reporting · RFC 9990 (2026)](https://www.rfc-editor.org/rfc/rfc9990.html)
 - [Authentication-Results · RFC 8601 (2019)](https://www.rfc-editor.org/rfc/rfc8601.html)
 - [Gmail full headers](https://support.google.com/mail/answer/29436) · [Microsoft 365 message headers](https://learn.microsoft.com/en-us/defender-office-365/message-headers-eop-mdo)
+
+## Continue from Authentication to SMTP Delivery
+
+[Trace one recipient from the SMTP reply to subsequent delivery evidence.]({{ '/wiki/smtp-delivery-evidence/' | relative_url }})

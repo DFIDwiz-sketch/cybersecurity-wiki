@@ -176,3 +176,7 @@ python3 mail-auth.py
 - [DMARC · RFC 9989 (2026)](https://www.rfc-editor.org/rfc/rfc9989.html) · [DMARC 집계 보고 · RFC 9990 (2026)](https://www.rfc-editor.org/rfc/rfc9990.html)
 - [Authentication-Results · RFC 8601 (2019)](https://www.rfc-editor.org/rfc/rfc8601.html)
 - [Gmail 원본 보기](https://support.google.com/mail/answer/29436) · [Microsoft 365 메시지 헤더](https://learn.microsoft.com/en-us/defender-office-365/message-headers-eop-mdo)
+
+## 인증에서 SMTP 전달 추적으로 이어가기
+
+[수신자 한 명의 SMTP 응답부터 후속 처리 기록까지 따라갑니다.]({{ '/ko/wiki/smtp-delivery-evidence/' | relative_url }})

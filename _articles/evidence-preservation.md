@@ -114,3 +114,7 @@ Reviewed 20 November 2026. The 2006 NIST guide provides acquisition foundations.
 ## Preserve Linux File Permission Evidence
 
 [Check the path, ACL and audit record before changing access.]({{ '/wiki/linux-file-permissions-evidence/' | relative_url }})
+
+## Preserve Email Transport Evidence
+
+[Record original timestamps, scoped queue IDs and recipient-specific outcomes.]({{ '/wiki/smtp-delivery-evidence/' | relative_url }})

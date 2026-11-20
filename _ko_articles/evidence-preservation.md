@@ -114,3 +114,7 @@ python3 evidence-hash-lab.py
 ## Linux 파일 권한 증거 보존하기
 
 [권한을 바꾸기 전에 경로, ACL과 감사 기록을 확인합니다.]({{ '/ko/wiki/linux-file-permissions-evidence/' | relative_url }})
+
+## 메일 전송 증거 보존하기
+
+[원래 시각, 큐 ID의 범위와 수신자별 결과를 기록합니다.]({{ '/ko/wiki/smtp-delivery-evidence/' | relative_url }})
