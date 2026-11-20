@@ -38,7 +38,7 @@ A FIN closes the sender’s direction. The peer may continue sending for a time.
 
 1. State the claim. “Did TCP establish?” and “Did the server accept authentication?” require different evidence.
 2. Record the time zone, interface, sensor, capture boundaries, and position relative to NAT or proxies. Confirm visibility in both directions.
-3. In Zeek, locate the connection by time and tuple and record its UID. Read `conn_state`, `history` and byte counts together. S0 describes a connection attempt with no observed reply. Document coverage limits.
+3. In Zeek, locate the connection by time and tuple and record its UID. Read `conn_state`, `history` and byte counts together. S0 describes a connection attempt with no observed reply. Document coverage limits. [Read Zeek conn.log]({{ '/wiki/zeek-conn-evidence/' | relative_url }}).
 4. Check SYN, ACK, RST and sequence numbers in a matching capture. Wireshark generates its TCP analysis flags from the packets it observed and its analysis state. Account for missing or reordered packets and captures that began midway through a session.
 5. Compare firewall decisions, listener and application logs, and endpoint process context. Check changes and outage records when delay or retries increase.
 

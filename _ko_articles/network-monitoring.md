@@ -183,6 +183,10 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 
 [핸드셰이크·종료·재전송 실습]({{ '/ko/wiki/tcp-evidence/' | relative_url }})
 
+## Zeek conn.log 읽기
+
+[Zeek conn.log 읽기]({{ '/ko/wiki/zeek-conn-evidence/' | relative_url }}). 연결 상태와 바이트를 해석하고, 가상 실습에서 DNS·HTTP 기록을 연결합니다.
+
 ## 방화벽·NAT·네트워크 센서 로그 연결하기
 
 [NAT 매핑과 센서 로그 연결 실습]({{ '/ko/wiki/firewall-nat-evidence/' | relative_url }})

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="316" viewBox="0 0 360 316" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Zeek 연결 기록 읽는 순서</title>
+  <desc id="desc">흐름을 식별하고 연결 필드를 읽은 뒤 앱 로그와 독립적인 관측을 확인합니다.</desc>
+  <rect width="360" height="316" rx="12" fill="#ecf4fc"/>
+  <path d="M180 72v18m-5-6 5 6 5-6 M180 182v16H91v11m-5-6 5 6 5-6 M180 198h89v11m-5-6 5 6 5-6" fill="none" stroke="#1b5682" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#183c59">
+    <rect x="20" y="12" width="320" height="60" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="180" y="36" font-size="15" font-weight="700">흐름 식별</text>
+    <text x="180" y="56" font-size="12">출처, UID, 전송 프로토콜</text>
+    <rect x="20" y="94" width="320" height="88" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="180" y="118" font-size="15" font-weight="700">연결 관측 읽기</text>
+    <text x="180" y="138" font-size="12">상태와 방향별 기록</text>
+    <text x="180" y="158" font-size="12">페이로드, IP 바이트, 누락</text>
+    <rect x="8" y="213" width="166" height="91" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="91" y="237" font-size="15" font-weight="700">앱 결과 확인</text>
+    <text x="91" y="257" font-size="12">같은 출처와 UID</text>
+    <text x="91" y="277" font-size="12">DNS·HTTP 행 모두 유지</text>
+    <rect x="186" y="213" width="166" height="91" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="269" y="237" font-size="15" font-weight="700">수집 범위 확인</text>
+    <text x="269" y="257" font-size="12">패킷과 방화벽 기록</text>
+    <text x="269" y="277" font-size="12">센서 상태와 단말 기록</text>
+  </g>
+</svg>

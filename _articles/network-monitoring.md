@@ -183,6 +183,10 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 
 [Handshake, teardown and retransmission lab]({{ '/wiki/tcp-evidence/' | relative_url }})
 
+## Read Zeek conn.log
+
+[Read Zeek conn.log]({{ '/wiki/zeek-conn-evidence/' | relative_url }}). Interpret states and byte fields, then join related DNS and HTTP records in a synthetic exercise.
+
 ## Correlate Firewall, NAT and Network Sensor Evidence
 
 [NAT mapping and sensor correlation lab]({{ '/wiki/firewall-nat-evidence/' | relative_url }})

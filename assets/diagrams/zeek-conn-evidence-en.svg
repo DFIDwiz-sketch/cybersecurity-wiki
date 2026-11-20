@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="316" viewBox="0 0 360 316" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Reading a Zeek connection record</title>
+  <desc id="desc">Identify a flow, interpret connection fields, then check protocol logs and independent observations.</desc>
+  <rect width="360" height="316" rx="12" fill="#ecf4fc"/>
+  <path d="M180 72v18m-5-6 5 6 5-6 M180 182v16H91v11m-5-6 5 6 5-6 M180 198h89v11m-5-6 5 6 5-6" fill="none" stroke="#1b5682" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#183c59">
+    <rect x="20" y="12" width="320" height="60" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="180" y="36" font-size="15" font-weight="700">Identify the flow</text>
+    <text x="180" y="56" font-size="12">Source, UID, and transport</text>
+    <rect x="20" y="94" width="320" height="88" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="180" y="118" font-size="15" font-weight="700">Read the connection</text>
+    <text x="180" y="138" font-size="12">State and history by direction</text>
+    <text x="180" y="158" font-size="12">Payload, IP bytes, and gaps</text>
+    <rect x="8" y="213" width="166" height="91" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="91" y="237" font-size="15" font-weight="700">Check the application</text>
+    <text x="91" y="257" font-size="12">Same source and UID</text>
+    <text x="91" y="277" font-size="12">Keep all DNS and HTTP rows</text>
+    <rect x="186" y="213" width="166" height="91" rx="10" fill="#fff" stroke="#7293b0"/>
+    <text x="269" y="237" font-size="15" font-weight="700">Check the coverage</text>
+    <text x="269" y="257" font-size="12">Packet and firewall evidence</text>
+    <text x="269" y="277" font-size="12">Sensor health and endpoints</text>
+  </g>
+</svg>
