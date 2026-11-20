@@ -16,7 +16,8 @@
     <text x="24" y="223">T4 · receive</text>
   </g>
   <path d="M 152 55 V 250 M 288 55 V 250" stroke="#829bb0" stroke-width="2" stroke-dasharray="5 5"/>
-  <path d="M 152 79 L 288 121 M 288 174 L 152 216" fill="none" stroke="#5ee7c2" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 152 79 L 288 121" fill="none" stroke="#5ee7c2" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 288 174 L 152 216" fill="none" stroke="#5ee7c2" stroke-width="2.5" marker-end="url(#arrow)"/>
   <g fill="#a3f6e0" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">
     <text x="220" y="84">Request</text>
     <text x="220" y="171">Reply</text>
