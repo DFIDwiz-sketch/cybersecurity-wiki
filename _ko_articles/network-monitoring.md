@@ -218,3 +218,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## 경로 MTU와 ICMP 증거 읽기
 
 [큰 패킷이 통과하지 않을 때 송신자와 라우터의 관측을 비교합니다]({{ '/ko/wiki/pmtu-icmp-evidence/' | relative_url }})
+
+## 실제 통신 손실과 캡처 누락 구분하기
+
+[동일한 연결의 PCAP 두 개를 비교해 누락된 TCP 바이트와 ACK를 확인합니다.]({{ '/ko/wiki/capture-visibility/' | relative_url }})

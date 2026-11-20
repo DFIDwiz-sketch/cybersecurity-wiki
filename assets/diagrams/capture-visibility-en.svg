@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="332" viewBox="0 0 430 332" role="img" aria-labelledby="title desc">
+  <title id="title">Production and capture paths</title>
+  <desc id="desc">Endpoint A exchanges traffic with endpoint B. A copy travels separately from a TAP or SPAN to the sensor and capture file.</desc>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto-start-reverse"><path d="M0 0L6 3L0 6Z" fill="#275576"/></marker></defs>
+  <rect x="1" y="1" width="428" height="330" rx="16" fill="#f4f8fc" stroke="#abc2d6"/>
+  <g fill="#12324b" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19">
+    <text x="215" y="36" font-weight="bold">Production traffic</text>
+    <g fill="#daeaf7" stroke="#759ab7"><rect x="18" y="62" width="130" height="45" rx="9"/><rect x="282" y="62" width="130" height="45" rx="9"/><rect x="147" y="122" width="136" height="38" rx="9"/><rect x="147" y="211" width="136" height="37" rx="9"/><rect x="147" y="274" width="136" height="37" rx="9"/></g>
+    <text x="83" y="91">Endpoint A</text><text x="347" y="91">Endpoint B</text><text x="215" y="147">TAP / SPAN</text>
+    <text x="309" y="194" font-size="16">Copied traffic</text><text x="215" y="236">Capture sensor</text><text x="215" y="299">Capture file</text>
+  </g>
+  <g fill="none" stroke="#275576" stroke-width="2.5"><path d="M153 84H277" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M215 84V121" stroke-dasharray="4 4"/><path d="M215 161V207" marker-end="url(#arrow)"/><path d="M215 249V270" marker-end="url(#arrow)"/></g>
+</svg>

@@ -93,3 +93,7 @@ Reviewed 18 November 2026. The RFCs document TCP behavior and timing. The produc
 ## Investigate Path MTU and ICMP Feedback
 
 [Compare packet size, associated ICMP feedback and ACK progress when a TCP transfer stalls]({{ '/wiki/pmtu-icmp-evidence/' | relative_url }})
+
+## Distinguish Network Loss from Capture Gaps
+
+[Compare two captures of the same TCP connection and account for missing bytes.]({{ '/wiki/capture-visibility/' | relative_url }})

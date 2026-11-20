@@ -93,3 +93,7 @@ python3 tcp-evidence.py
 ## 경로 MTU와 ICMP 크기 통보 조사
 
 [큰 전송이 멈출 때 패킷 크기, ICMP 통보, ACK 진행을 대조합니다]({{ '/ko/wiki/pmtu-icmp-evidence/' | relative_url }})
+
+## 실제 통신 손실과 캡처 누락 구분하기
+
+[동일한 연결의 PCAP 두 개를 비교해 누락된 TCP 바이트와 ACK를 확인합니다.]({{ '/ko/wiki/capture-visibility/' | relative_url }})

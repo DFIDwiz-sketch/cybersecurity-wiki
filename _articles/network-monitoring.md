@@ -218,3 +218,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Read Path MTU and ICMP Evidence
 
 [Compare sender and router observations when large packets fail to pass]({{ '/wiki/pmtu-icmp-evidence/' | relative_url }})
+
+## Distinguish Network Loss from Capture Gaps
+
+[Compare two captures of the same TCP connection and account for missing bytes.]({{ '/wiki/capture-visibility/' | relative_url }})
