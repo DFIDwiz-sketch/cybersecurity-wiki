@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="289" viewBox="0 0 440 289" role="img" lang="ko" aria-labelledby="title desc">
+  <title id="title">SSH에서 인증이 오가는 두 방향</title>
+  <desc id="desc">서버는 호스트 키로 서명하고 클라이언트는 신뢰하는 호스트 키로 검증합니다. 이후 클라이언트가 사용자 키로 서명하면 서버가 계정 정책에 따라 검증합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#65e4c6"/>
+    </marker>
+  </defs>
+  <rect width="440" height="289" rx="16" fill="#111b27"/>
+  <path d="M 111 51 V 264 M 329 51 V 264" stroke="#8fa5b9" stroke-dasharray="4 5"/>
+  <path d="M 329 116 H 111" fill="none" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 111 220 H 329" fill="none" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <g fill="#eaf4fa" font-size="18" font-weight="650">
+      <text x="111" y="33">SSH 클라이언트</text>
+      <text x="329" y="33">SSH 서버</text>
+      <text x="220" y="78">호스트 인증</text>
+      <text x="220" y="182">사용자 인증</text>
+    </g>
+    <g fill="#a5f7e2" font-size="16">
+      <text x="220" y="105">호스트 키 서명</text>
+      <text x="220" y="209">사용자 키 서명</text>
+    </g>
+    <g fill="#c6dbe8" font-size="15">
+      <text x="117" y="145">신뢰하는 서버 신원 확인</text>
+      <text x="325" y="249">계정 정책 확인</text>
+    </g>
+  </g>
+</svg>

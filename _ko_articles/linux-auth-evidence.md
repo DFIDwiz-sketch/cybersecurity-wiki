@@ -124,3 +124,7 @@ python3 linux-auth-evidence.py
 - [OpenSSH sshd](https://man.openbsd.org/sshd.8) · [sshd_config](https://man.openbsd.org/sshd_config) · [Ubuntu OpenSSH Server](https://ubuntu.com/server/docs/openssh-server)
 - [systemd journalctl](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) · [Journal fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - [Linux-PAM pam_unix manual](https://man7.org/linux/man-pages/man8/pam_unix.8.html) · [sudoers manual source](https://github.com/sudo-project/sudo/blob/main/docs/sudoers.man.in)
+
+## 사용자 인증 전에 SSH 서버 확인하기
+
+[호스트 키 경고를 읽고 서버 신원과 로그인 증거를 구분합니다]({{ '/ko/wiki/ssh-host-key-evidence/' | relative_url }})

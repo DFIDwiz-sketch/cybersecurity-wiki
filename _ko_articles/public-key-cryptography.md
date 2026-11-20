@@ -169,3 +169,7 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 ## 패스키와 WebAuthn 로그인 증거
 
 [공개키 검증, 접근 정책과 앱 세션을 구분하는 실습]({{ '/ko/wiki/passkey-signin-evidence/' | relative_url }})
+
+## 공개키 신뢰를 SSH 서버에 적용하기
+
+[호스트와 사용자 서명을 구분하고 오프라인에서 OpenSSH 지문을 대조합니다]({{ '/ko/wiki/ssh-host-key-evidence/' | relative_url }})

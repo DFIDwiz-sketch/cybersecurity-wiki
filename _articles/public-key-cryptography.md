@@ -169,3 +169,7 @@ Finish when you can draw both key directions, explain symmetric TLS traffic keys
 ## Passkeys and WebAuthn Sign-in Evidence
 
 [Distinguish public-key verification, access policy and app sessions]({{ '/wiki/passkey-signin-evidence/' | relative_url }})
+
+## Apply Public-Key Trust to an SSH Server
+
+[Trace host and user signatures and compare OpenSSH fingerprints offline]({{ '/wiki/ssh-host-key-evidence/' | relative_url }})

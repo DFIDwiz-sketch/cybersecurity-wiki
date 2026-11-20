@@ -124,3 +124,7 @@ Reviewed 20 November 2026. RFC 4252 documents SSH authentication (2006). Match c
 - [OpenSSH sshd](https://man.openbsd.org/sshd.8) · [sshd_config](https://man.openbsd.org/sshd_config) · [Ubuntu OpenSSH Server](https://ubuntu.com/server/docs/openssh-server)
 - [systemd journalctl](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html) · [Journal fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - [Linux-PAM pam_unix manual](https://man7.org/linux/man-pages/man8/pam_unix.8.html) · [sudoers manual source](https://github.com/sudo-project/sudo/blob/main/docs/sudoers.man.in)
+
+## Verify the SSH Server Before User Authentication
+
+[Read host-key warnings and distinguish server identity from login evidence]({{ '/wiki/ssh-host-key-evidence/' | relative_url }})
