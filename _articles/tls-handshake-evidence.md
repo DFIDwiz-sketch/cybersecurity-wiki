@@ -97,3 +97,7 @@ Reviewed 20 November 2026. Match standards and analyzer behavior to the actual d
 - [Zeek · ssl.log](https://docs.zeek.org/en/current/reference/logs/ssl.html)
 - [Python 3.12 · SSL and Memory BIO](https://docs.python.org/3.12/library/ssl.html)
 - [OpenSSL 3.5 · openssl req](https://docs.openssl.org/3.5/man1/openssl-req/)
+
+## Connect a TLS Observation to Certificate Transparency
+
+[Compare the observed leaf with independently collected issuance evidence.]({{ '/wiki/certificate-transparency-evidence/' | relative_url }})

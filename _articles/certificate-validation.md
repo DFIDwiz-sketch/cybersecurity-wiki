@@ -175,3 +175,7 @@ Complete the chapter when you can draw issuance versus verification direction, i
 ## Trace DNSSEC Validation and SERVFAIL
 
 [Follow the parent DS and child DNSKEY through to the signed answer.]({{ '/wiki/dnssec-validation-evidence/' | relative_url }})
+
+## Investigate Certificate Transparency Evidence
+
+[Distinguish a log promise, inclusion proof and actual service deployment.]({{ '/wiki/certificate-transparency-evidence/' | relative_url }})

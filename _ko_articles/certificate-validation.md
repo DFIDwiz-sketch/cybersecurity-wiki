@@ -175,3 +175,7 @@ openssl verify -no-CApath -no-CAstore -CAfile root.pem \
 ## DNSSEC 검증과 SERVFAIL 조사
 
 [부모 DS와 자식 DNSKEY에서 응답 서명까지 대조하는 실습]({{ '/ko/wiki/dnssec-validation-evidence/' | relative_url }})
+
+## 인증서 투명성 증거 조사하기
+
+[로그의 약속, 포함 증명과 실제 서비스 배포를 구분합니다.]({{ '/ko/wiki/certificate-transparency-evidence/' | relative_url }})

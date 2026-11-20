@@ -97,3 +97,7 @@ python3 tls-handshake-evidence.py
 - [Zeek · ssl.log](https://docs.zeek.org/en/current/reference/logs/ssl.html)
 - [Python 3.12 · SSL and Memory BIO](https://docs.python.org/3.12/library/ssl.html)
 - [OpenSSL 3.5 · openssl req](https://docs.openssl.org/3.5/man1/openssl-req/)
+
+## TLS 관측을 인증서 투명성과 연결하기
+
+[서비스에서 본 인증서를 별도로 확보한 발급 증거와 대조합니다.]({{ '/ko/wiki/certificate-transparency-evidence/' | relative_url }})
