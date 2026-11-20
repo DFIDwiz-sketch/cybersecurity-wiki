@@ -102,3 +102,7 @@ Reviewed 20 November 2026. Apply protocol dates and product-specific field defin
 ## Preserving Digital Evidence · SHA-256 and Custody
 
 [Verify acquired logs and working copies in the evidence lab]({{ '/wiki/evidence-preservation/' | relative_url }})
+
+## Measure the Host Clock with NTP
+
+[Calculate offset from four timestamps and verify the selected time source]({{ '/wiki/ntp-clock-evidence/' | relative_url }})

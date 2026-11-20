@@ -112,3 +112,7 @@ W04·W05·W08·W10을 분류하고 마지막으로 확인된 단계와 남은 �
 - 2025년 8월에 갱신된 Microsoft WEF 설명. 구독, 북마크, 하트비트와 로그 덮어쓰기. [침입 탐지에 WEF 사용](https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/use-windows-event-forwarding-to-assist-in-intrusion-detection)
 - Windows 이벤트 수집기 구독 방식과 Win32 이벤트 스키마. [원본 시작 구독](https://learn.microsoft.com/en-us/windows/win32/wec/setting-up-a-source-initiated-subscription) · [발생 장치 스키마](https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-computer-systempropertiestype-element) · [EventRecordID 스키마](https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-eventrecordid-systempropertiestype-element)
 - Windows 11·Server 2025 등을 대상으로 한 명령 참조와 PowerShell 7.6 문서. [wecutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wecutil) · [eventcreate](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/eventcreate) · [Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.6)
+
+## 이벤트를 기록한 시계 확인하기
+
+[Windows의 시간원과 로그 시각을 보정할 근거를 확인합니다]({{ '/ko/wiki/ntp-clock-evidence/' | relative_url }})

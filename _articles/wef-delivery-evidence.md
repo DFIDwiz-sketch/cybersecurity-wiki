@@ -112,3 +112,7 @@ Reviewed November 20, 2026. Test procedures depend on the installed Windows vers
 - Microsoft WEF guidance, updated August 2025. Scope, bookmarks, heartbeat, delivery and log overwrite. [Use WEF for intrusion detection](https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/use-windows-event-forwarding-to-assist-in-intrusion-detection)
 - Windows Event Collector subscription model and Win32 event schema. [Source-initiated subscription](https://learn.microsoft.com/en-us/windows/win32/wec/setting-up-a-source-initiated-subscription) · [Event origin schema](https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-computer-systempropertiestype-element) · [EventRecordID schema](https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-eventrecordid-systempropertiestype-element)
 - Windows commands for Windows 11 and Server 2025 among other supported platforms, and PowerShell 7.6 reference. [wecutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wecutil) · [eventcreate](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/eventcreate) · [Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.6)
+
+## Check the Clock Behind an Event Timestamp
+
+[Investigate the Windows time source and decide whether clock correction is justified]({{ '/wiki/ntp-clock-evidence/' | relative_url }})

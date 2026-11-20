@@ -210,3 +210,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Correlate Zeek and Suricata with Community ID
 
 [Practise comparing shared IDs, event time and sensor scope]({{ '/wiki/community-id-evidence/' | relative_url }})
+
+## Read NTP and Clock Evidence
+
+[Check which clock a timestamp used and what a network exchange can establish]({{ '/wiki/ntp-clock-evidence/' | relative_url }})

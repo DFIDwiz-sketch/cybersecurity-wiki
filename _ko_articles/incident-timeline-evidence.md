@@ -102,3 +102,7 @@ python3 time-correlation.py
 ## 디지털 증거 보존 · SHA-256과 인계 기록
 
 [로그 원본과 작업 사본을 검증하는 실습]({{ '/ko/wiki/evidence-preservation/' | relative_url }})
+
+## NTP로 장비 시계의 오차 확인하기
+
+[시각 네 개로 오프셋을 계산하고 선택된 시간원을 확인합니다]({{ '/ko/wiki/ntp-clock-evidence/' | relative_url }})

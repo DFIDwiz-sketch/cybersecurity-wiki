@@ -210,3 +210,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## Community ID로 Zeek와 Suricata 연결하기
 
 [공통 ID, 시각과 관측 범위를 대조하는 실습]({{ '/ko/wiki/community-id-evidence/' | relative_url }})
+
+## NTP 시간 동기화와 시계 증거
+
+[패킷 시각이 어느 장비에서 기록됐는지, NTP 교환으로 어디까지 확인할 수 있는지 살펴봅니다]({{ '/ko/wiki/ntp-clock-evidence/' | relative_url }})
