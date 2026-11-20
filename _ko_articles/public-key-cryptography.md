@@ -173,3 +173,7 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 ## 공개키 신뢰를 SSH 서버에 적용하기
 
 [호스트와 사용자 서명을 구분하고 오프라인에서 OpenSSH 지문을 대조합니다]({{ '/ko/wiki/ssh-host-key-evidence/' | relative_url }})
+
+## SBOM과 VEX로 취약점 적용 범위 확인하기
+
+[서명으로 확인한 출처와 취약점 판단의 적용 범위를 함께 검토하는 실습]({{ '/ko/wiki/sbom-vex-evidence/' | relative_url }})

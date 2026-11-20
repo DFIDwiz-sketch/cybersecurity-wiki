@@ -1,0 +1,235 @@
+[
+  {
+    "id": "S01",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "not_affected",
+        "justification": "vulnerable_code_not_in_execute_path"
+      }
+    ]
+  },
+  {
+    "id": "S02",
+    "deployment": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "not_affected",
+        "justification": "vulnerable_code_not_in_execute_path"
+      }
+    ]
+  },
+  {
+    "id": "S03",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:npm/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "not_affected",
+        "justification": "vulnerable_code_not_in_execute_path"
+      }
+    ]
+  },
+  {
+    "id": "S04",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "not_affected"
+      }
+    ]
+  },
+  {
+    "id": "S05",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": false,
+        "status": "not_affected",
+        "justification": "vulnerable_code_not_in_execute_path"
+      }
+    ]
+  },
+  {
+    "id": "S06",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "not_affected"
+      }
+    ]
+  },
+  {
+    "id": "S07",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "not_affected",
+        "justification": "vulnerable_code_not_in_execute_path"
+      },
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "affected"
+      }
+    ]
+  },
+  {
+    "id": "S08",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "affected"
+      }
+    ]
+  },
+  {
+    "id": "S09",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "fixed"
+      }
+    ]
+  },
+  {
+    "id": "S10",
+    "deployment": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "inventory": {
+      "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "packages": [
+        "pkg:pypi/example-logging@2.4.1"
+      ]
+    },
+    "finding": "TRAINING-2026-001",
+    "component": "pkg:pypi/example-logging@2.4.1",
+    "statements": [
+      {
+        "artifact": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "component": "pkg:pypi/example-logging@2.4.1",
+        "finding": "TRAINING-2026-001",
+        "issuer": "release-security.example.test",
+        "source_verified": true,
+        "status": "under_investigation"
+      }
+    ]
+  }
+]

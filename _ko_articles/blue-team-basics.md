@@ -42,3 +42,7 @@ updated: "2026-10-17"
 ## 백업 복구 검증
 
 [복원 실습으로 서비스 재개를 뒷받침하는 근거를 확인합니다]({{ '/ko/wiki/backup-restore-evidence/' | relative_url }})
+
+## SBOM과 VEX로 취약점 적용 범위 확인하기
+
+[실제 배포 빌드부터 공급자 판단까지 대조하는 가상 경보 실습]({{ '/ko/wiki/sbom-vex-evidence/' | relative_url }})

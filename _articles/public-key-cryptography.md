@@ -173,3 +173,7 @@ Finish when you can draw both key directions, explain symmetric TLS traffic keys
 ## Apply Public-Key Trust to an SSH Server
 
 [Trace host and user signatures and compare OpenSSH fingerprints offline]({{ '/wiki/ssh-host-key-evidence/' | relative_url }})
+
+## Check Vulnerability Scope with SBOM and VEX
+
+[Review verified provenance and the scope of a vulnerability statement]({{ '/wiki/sbom-vex-evidence/' | relative_url }})

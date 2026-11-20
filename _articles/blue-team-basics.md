@@ -42,3 +42,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 ## Verify Backup Recovery
 
 [Test a restore and measure what it supports before reopening the service]({{ '/wiki/backup-restore-evidence/' | relative_url }})
+
+## Check Vulnerability Scope with SBOM and VEX
+
+[Match a deployed build to its inventory and investigate ten synthetic alerts]({{ '/wiki/sbom-vex-evidence/' | relative_url }})

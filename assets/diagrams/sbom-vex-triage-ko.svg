@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="308" viewBox="0 0 440 308" role="img" lang="ko" aria-labelledby="title desc">
+  <title id="title">소프트웨어 취약점 판단에 필요한 증거</title>
+  <desc id="desc">실행 중인 빌드를 식별하고 구성 요소 목록과 공급자의 적용 범위를 확인한 뒤 다음 조치를 정합니다.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#65e4c6"/></marker></defs>
+  <rect width="440" height="308" rx="17" fill="#111b27"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="35" y="12" width="370" height="54" rx="10" fill="#1d2c3d" stroke="#6e93b0"/>
+    <text x="220" y="35" fill="#eff5fb" font-size="19" font-weight="650">배포된 빌드</text>
+    <text x="220" y="55" fill="#bbd9ea" font-size="16">다이제스트와 플랫폼을 기록</text>
+    <path d="M220 67 V87" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="35" y="89" width="370" height="54" rx="10" fill="#1d2c3d" stroke="#6e93b0"/>
+    <text x="220" y="112" fill="#eff5fb" font-size="19" font-weight="650">SBOM 구성 목록</text>
+    <text x="220" y="132" fill="#bbd9ea" font-size="16">구성 요소와 버전을 확인</text>
+    <path d="M220 144 V164" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="35" y="166" width="370" height="54" rx="10" fill="#1d2c3d" stroke="#6e93b0"/>
+    <text x="220" y="189" fill="#eff5fb" font-size="19" font-weight="650">VEX 판단 기록</text>
+    <text x="220" y="209" fill="#bbd9ea" font-size="16">제품 범위·취약점·발행자를 대조</text>
+    <path d="M220 221 V241" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="35" y="243" width="370" height="54" rx="10" fill="#1d2c3d" stroke="#6e93b0"/>
+    <text x="220" y="266" fill="#eff5fb" font-size="19" font-weight="650">조치 결정</text>
+    <text x="220" y="286" fill="#bbd9ea" font-size="16">조사·수정·예외 검토 중 선택</text>
+  </g>
+</svg>
