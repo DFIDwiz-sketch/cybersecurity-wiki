@@ -50,8 +50,8 @@ Plain unauthenticated NTP lacks cryptographic proof of the replying server. **Ne
 
 ## 4. Collect first, then diagnose
 
-1. **Record clock provenance.** Save host identity, boot or VM lifecycle evidence, software and version, policy, configured and selected sources, and time of the last update. If possible, record when you took the snapshot using an independent approved clock. Keep the original output with the case.
-2. **Read the daemon's own state.** Collect the snapshot and recent time-service logs. On Linux with a running chrony daemon and local access, run the first two lines below. On supported Windows with W32Time running, use an elevated prompt for the last two. A domain-managed Windows host normally follows the AD domain hierarchy. Compare it to its expected source for its role, including the forest-root PDC emulator where relevant.
+**1. Record clock provenance.** Save host identity, boot or VM lifecycle evidence, software and version, policy, configured and selected sources, and time of the last update. If possible, record when you took the snapshot using an independent approved clock. Keep the original output with the case.
+**2. Read the daemon's own state.** Collect the snapshot and recent time-service logs. On Linux with a running chrony daemon and local access, run the first two lines below. On supported Windows with W32Time running, use an elevated prompt for the last two. A domain-managed Windows host normally follows the AD domain hierarchy. Compare it to its expected source for its role, including the forest-root PDC emulator where relevant.
 
 ~~~text
 chronyc tracking
@@ -60,8 +60,8 @@ w32tm /query /source
 w32tm /query /status /verbose
 ~~~
 
-3. **Compare the right signals.** In chrony, check `Ref time` and `Leap status` alongside the selected source. In `sources -v`, `*` marks the selected reference and `Reach 377` is octal for replies or samples on all eight recent polls. A reachable source may still fail selection. The `Last sample` sign convention is **local minus source**, the opposite of the worksheet. In Windows, review last successful synchronization and source details. Where the supported `Microsoft-Windows-Time-Service/Operational` channel is available, inspect service starts, clock adjustments and source changes with the right time window and local retention. If using WEF, confirm the subscription actually collects that channel.
-4. **Assess whether the value can support an incident finding.** In chrony 4.9, if the upstream stratum-1 clock is accurate, the documentation describes a clock error bound as the absolute `System time` offset plus `Root dispersion` plus half `Root delay`. With 2 ms, 3 ms and 20 ms respectively, the example gives **15 ms** at the snapshot. Those last two fields describe the upstream chain. Substituting the latest single packet's delay changes the meaning. This bound also cannot prove accuracy after a source change, an unobserved clock step or a long gap. Note the period the evidence supports and mark unknown periods explicitly.
+**3. Compare the right signals.** In chrony, check `Ref time` and `Leap status` alongside the selected source. In `sources -v`, `*` marks the selected reference and `Reach 377` is octal for replies or samples on all eight recent polls. A reachable source may still fail selection. The `Last sample` sign convention is **local minus source**, the opposite of the worksheet. In Windows, review last successful synchronization and source details. Where the supported `Microsoft-Windows-Time-Service/Operational` channel is available, inspect service starts, clock adjustments and source changes with the right time window and local retention. If using WEF, confirm the subscription actually collects that channel.
+**4. Assess whether the value can support an incident finding.** In chrony 4.9, if the upstream stratum-1 clock is accurate, the documentation describes a clock error bound as the absolute `System time` offset plus `Root dispersion` plus half `Root delay`. With 2 ms, 3 ms and 20 ms respectively, the example gives **15 ms** at the snapshot. Those last two fields describe the upstream chain. Substituting the latest single packet's delay changes the meaning. This bound also cannot prove accuracy after a source change, an unobserved clock step or a long gap. Note the period the evidence supports and mark unknown periods explicitly.
 
 | Observation | What to collect next | How to respond |
 | --- | --- | --- |
@@ -84,7 +84,7 @@ python3 ntp-exchanges.py
 | --- | --- | --- |
 | N01 | +16 ms, 10 ms | The reference is estimated to be ahead of the client |
 | N02 | −11 ms, 12 ms | The client is estimated to be ahead of the reference |
-| N03 | 0 ms, 10 ms | The measured offset cancels. Both clocks could share an error |
+| N03 | 0 ms, 10 ms | The estimated difference is zero. Both clocks could share an error |
 | N04 / N05 | +10 / −10 ms, 30 ms each | In the exercise, the clocks are correct and the directional delays are 25/5 and 5/25 ms. The worksheet alone cannot recover those paths |
 | N06 | Incomplete | T4 is missing. Leave the sample unresolved |
 | N07 | +0.5 ms, 13 ms | Preserve fractional precision before comparing results |
