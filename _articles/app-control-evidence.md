@@ -52,6 +52,9 @@ An unauthorized binary may be blocked, and a legitimate update can trigger the s
 
 1. **Scope the source.** Record the device, OS build, UTC time, applicable policy IDs, ring and expected operation. Confirm read access and channel availability. On builds that include it, `CiTool.exe -lp -json` lists policy inventory, including inactive policies. Compare with 3099 and deployment records for historical context. Microsoft's CiTool reference covers Windows 11 starting at 22H2 and Windows Server 2025.
 2. **Preserve the records.** Use this illustrated read-only query in PowerShell on an authorized Windows host with local log access. It queries the last two hours. Adjust to the incident window. Keep original EVTX when collecting evidence and retain XML fields before transforming the feed.
+3. **Compare source and collector.** In the exported XML, keep `Computer`, `Channel`, `Provider`, `TimeCreated`, `EventRecordID`, `EventID` and `Correlation`. Retain raw policy, file and signature fields where available. Do not interpret an empty result as protection without checking permissions, collection health, forwarding filters and timing.
+4. **Validate before a rollout.** In an authorized, disposable Windows test VM, use the already approved audit and enforcement policy fixtures and locally approved benign binaries. Test a known permitted operation and a benign operation expected to fail the policy, keeping the expected result and timestamp for each. Confirm the decision and related records at the source, then trace their delivery to the collector. Use a separate enforced pilot ring with an approved recovery plan before broad deployment. Keep audit observations and enforced blocks in separate detection conditions.
+
 
 ```powershell
 $filter = @{
@@ -62,9 +65,6 @@ $filter = @{
 $events = Get-WinEvent -FilterHashtable $filter
 $events | ForEach-Object { $_.ToXml() }
 ```
-
-3. **Compare source and collector.** In the exported XML, keep `Computer`, `Channel`, `Provider`, `TimeCreated`, `EventRecordID`, `EventID` and `Correlation`. Retain raw policy, file and signature fields where available. Do not interpret an empty result as protection without checking permissions, collection health, forwarding filters and timing.
-4. **Validate before a rollout.** In an authorized, disposable Windows test VM, use the already approved audit and enforcement policy fixtures and locally approved benign binaries. Test a known permitted operation and a benign operation expected to fail the policy, keeping the expected result and timestamp for each. Confirm the decision and related records at the source, then trace their delivery to the collector. Use a separate enforced pilot ring with an approved recovery plan before broad deployment. Keep audit observations and enforced blocks in separate detection conditions.
 
 ## 5. Offline exercise · Join seven decisions
 
