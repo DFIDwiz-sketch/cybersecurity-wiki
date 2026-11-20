@@ -310,3 +310,7 @@ Use the [Windows Incident Response Lab]({{ '/wiki/windows-incident-response-lab/
 ## Related lesson
 
 [Linux process investigation and PID reuse]({{ '/wiki/linux-process-evidence/' | relative_url }})
+
+## Verify Windows Event Forwarding Delivery
+
+[Distinguish source, subscription, collector and SIEM gaps]({{ '/wiki/wef-delivery-evidence/' | relative_url }})

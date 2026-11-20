@@ -1,0 +1,307 @@
+{
+  "cases": [
+    {
+      "id": "W01",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w01"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w01",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w01",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "wec",
+          "receipt_utc": "2030-08-21T10:01:00Z"
+        }
+      ],
+      "indexed": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w01",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "siem",
+          "receipt_utc": "2030-08-21T10:01:15Z"
+        }
+      ]
+    },
+    {
+      "id": "W02",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w02"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [],
+      "collector": [],
+      "indexed": []
+    },
+    {
+      "id": "W03",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w03"
+      },
+      "source_coverage": "verified",
+      "filter": "excluded",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w03",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [],
+      "indexed": []
+    },
+    {
+      "id": "W04",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w04"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": false,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w04",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [],
+      "indexed": []
+    },
+    {
+      "id": "W05",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w05"
+      },
+      "source_coverage": "rolled_over",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [],
+      "collector": [],
+      "indexed": []
+    },
+    {
+      "id": "W06",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w06"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "transport_error",
+      "window_closed": true,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w06",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [],
+      "indexed": []
+    },
+    {
+      "id": "W07",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w07"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w07",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w07",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "wec",
+          "receipt_utc": "2030-08-21T10:01:00Z"
+        }
+      ],
+      "indexed": []
+    },
+    {
+      "id": "W08",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w08"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w08",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w08",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "wec",
+          "receipt_utc": "2030-08-21T10:01:00Z"
+        }
+      ],
+      "indexed": [
+        {
+          "computer": "wec01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w08",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "siem",
+          "receipt_utc": "2030-08-21T10:01:15Z"
+        }
+      ]
+    },
+    {
+      "id": "W09",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w09"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w09",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w09",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "wec",
+          "receipt_utc": "2030-08-21T10:01:00Z"
+        }
+      ],
+      "indexed": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w09",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "siem",
+          "receipt_utc": "2030-08-21T10:01:15Z"
+        },
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w09",
+          "source_utc": "2030-08-21T10:00:00Z",
+          "stage": "siem",
+          "receipt_utc": "2030-08-21T10:02:40Z"
+        }
+      ]
+    },
+    {
+      "id": "W10",
+      "expected": {
+        "computer": "lab-ws01.example.test",
+        "channel": "Application",
+        "event_id": 970,
+        "marker": "wiki-wef-w10"
+      },
+      "source_coverage": "verified",
+      "filter": "included",
+      "runtime": "active",
+      "window_closed": true,
+      "source": [
+        {
+          "computer": "lab-ws01.example.test",
+          "channel": "Application",
+          "event_id": 970,
+          "marker": "wiki-wef-w10",
+          "source_utc": "2030-08-21T10:00:00Z"
+        }
+      ],
+      "collector": [],
+      "indexed": []
+    }
+  ]
+}

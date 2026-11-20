@@ -310,3 +310,7 @@ PID 재사용과 부모 GUID 연결을 설명하고 필터로 제외될 활동 �
 ## 연결 학습
 
 [Linux 프로세스 조사와 PID 재사용]({{ '/ko/wiki/linux-process-evidence/' | relative_url }})
+
+## Windows 이벤트 전달 경로 확인
+
+[원본·구독·수집기·SIEM의 공백을 구별하는 실습]({{ '/ko/wiki/wef-delivery-evidence/' | relative_url }})

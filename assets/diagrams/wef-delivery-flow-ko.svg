@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 366" width="440" height="366" role="img" aria-labelledby="title description" xml:lang="ko" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">Windows 이벤트 전달 경로 따라가기</title>
+  <desc id="description">공급자가 원본 채널에 이벤트를 기록합니다. 구독이 이벤트를 선택하면 WEF가 전달합니다. 수집기는 지정한 채널에 기록하고 후속 입력기가 파싱해 SIEM에 저장합니다.</desc>
+  <rect width="440" height="366" rx="12" fill="#0d1828"/>
+  <g transform="translate(9 12)">
+    <rect width="422" height="68" rx="10" fill="#1b3049" stroke="#a4cffa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">1. 엔드포인트 채널</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">공급자가 원본 이벤트 기록</text>
+  </g>
+  <path d="M220 85v13m-5-5 5 5 5-5" fill="none" stroke="#b1d8fb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 103)">
+    <rect width="422" height="68" rx="10" fill="#1b3049" stroke="#a4cffa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">2. WEF 구독</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">대상 범위·쿼리·전달 정책</text>
+  </g>
+  <path d="M220 176v13m-5-5 5 5 5-5" fill="none" stroke="#b1d8fb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 194)">
+    <rect width="422" height="68" rx="10" fill="#1b3049" stroke="#a4cffa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">3. Windows 이벤트 수집기</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">지정한 채널에 이벤트 도착</text>
+  </g>
+  <path d="M220 267v13m-5-5 5 5 5-5" fill="none" stroke="#b1d8fb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 285)">
+    <rect width="422" height="68" rx="10" fill="#124337" stroke="#84e7ca" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">4. SIEM 입력과 저장</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">파싱·발생 호스트·수신 확인</text>
+  </g>
+</svg>

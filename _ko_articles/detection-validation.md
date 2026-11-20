@@ -101,3 +101,7 @@ python3 detection-validation.py
 - [Sigma Rules Specification · logsource and detection](https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html)
 - [Splunk Enterprise 9.1 · Alert scheduling, updated July 2025](https://help.splunk.com/en/splunk-enterprise/alert-and-respond/alerting-manual/9.1/create-alerts/alert-scheduling-tips)
 - [util-linux · logger(1)](https://man7.org/linux/man-pages/man1/logger.1.html)
+
+## Windows 이벤트 전달 경로 확인
+
+[원본·구독·수집기·SIEM의 공백을 구별하는 실습]({{ '/ko/wiki/wef-delivery-evidence/' | relative_url }})

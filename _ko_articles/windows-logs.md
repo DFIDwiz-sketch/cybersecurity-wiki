@@ -18,3 +18,7 @@ updated: "2026-10-17"
 ## Linux 인증 로그 조사
 
 [SSH·PAM·sudo 로그와 오프라인 타임라인 실습]({{ '/ko/wiki/linux-auth-evidence/' | relative_url }})
+
+## Windows 이벤트 전달 경로 확인
+
+[원본·구독·수집기·SIEM의 공백을 구별하는 실습]({{ '/ko/wiki/wef-delivery-evidence/' | relative_url }})

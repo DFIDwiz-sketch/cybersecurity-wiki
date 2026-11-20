@@ -101,3 +101,7 @@ Reviewed 20 November 2026. Verify dashboards and scheduled searches against the 
 - [Sigma Rules Specification · logsource and detection](https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html)
 - [Splunk Enterprise 9.1 · Alert scheduling, updated July 2025](https://help.splunk.com/en/splunk-enterprise/alert-and-respond/alerting-manual/9.1/create-alerts/alert-scheduling-tips)
 - [util-linux · logger(1)](https://man7.org/linux/man-pages/man1/logger.1.html)
+
+## Verify Windows Event Forwarding Delivery
+
+[Distinguish source, subscription, collector and SIEM gaps]({{ '/wiki/wef-delivery-evidence/' | relative_url }})

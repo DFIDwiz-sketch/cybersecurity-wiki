@@ -18,3 +18,7 @@ Whether an event is recorded depends on the system's audit policy. Avoid drawing
 ## Linux authentication investigation
 
 [SSH, PAM and sudo logs with an offline timeline]({{ '/wiki/linux-auth-evidence/' | relative_url }})
+
+## Verify Windows Event Forwarding Delivery
+
+[Distinguish source, subscription, collector and SIEM gaps]({{ '/wiki/wef-delivery-evidence/' | relative_url }})

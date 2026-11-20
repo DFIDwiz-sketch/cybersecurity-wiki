@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 366" width="440" height="366" role="img" aria-labelledby="title description" xml:lang="en" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">Follow one Windows event across its delivery path</title>
+  <desc id="description">A provider generates an event in an endpoint channel. An eligible subscription selects it and Windows Event Forwarding sends it. Windows Event Collector writes it to the configured channel. A downstream input parses and stores it in the SIEM.</desc>
+  <rect width="440" height="366" rx="12" fill="#0d1828"/>
+  <g transform="translate(9 12)">
+    <rect width="422" height="68" rx="10" fill="#1b3049" stroke="#a4cffa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">1. Endpoint channel</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">Provider writes a source event</text>
+  </g>
+  <path d="M220 85v13m-5-5 5 5 5-5" fill="none" stroke="#b1d8fb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 103)">
+    <rect width="422" height="68" rx="10" fill="#1b3049" stroke="#a4cffa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">2. WEF subscription</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">Scope, query and delivery policy</text>
+  </g>
+  <path d="M220 176v13m-5-5 5 5 5-5" fill="none" stroke="#b1d8fb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 194)">
+    <rect width="422" height="68" rx="10" fill="#1b3049" stroke="#a4cffa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">3. Windows Event Collector</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">Event reaches the configured channel</text>
+  </g>
+  <path d="M220 267v13m-5-5 5 5 5-5" fill="none" stroke="#b1d8fb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 285)">
+    <rect width="422" height="68" rx="10" fill="#124337" stroke="#84e7ca" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f6f9ff">4. SIEM input and storage</text>
+    <text x="211" y="53" font-size="17" fill="#d5e7fa">Confirm parsing, origin and receipt</text>
+  </g>
+</svg>
