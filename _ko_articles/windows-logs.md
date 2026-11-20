@@ -30,3 +30,7 @@ updated: "2026-10-17"
 ## Windows 파일 공유와 NTFS 감사 증거 대조하기
 
 [공유 검사와 파일 권한 사용을 가상 이벤트 여덟 건으로 구분합니다.]({{ '/ko/wiki/smb-file-audit-evidence/' | relative_url }})
+
+## Windows App Control 이벤트 조사
+
+[감사 판정, 실제 차단과 관련 서명 기록을 구분합니다.]({{ '/ko/wiki/app-control-evidence/' | relative_url }})

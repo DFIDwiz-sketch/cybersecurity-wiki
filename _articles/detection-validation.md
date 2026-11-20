@@ -109,3 +109,7 @@ Reviewed 20 November 2026. Verify dashboards and scheduled searches against the 
 ## Validate Kubernetes API Audit Evidence
 
 [Distinguish authorization, server-side previews and completed writes in the audit stream]({{ '/wiki/kubernetes-audit-evidence/' | relative_url }})
+
+## Validate a Windows Code Integrity Signal
+
+[Compare source and forwarded App Control events by activity ID.]({{ '/wiki/app-control-evidence/' | relative_url }})

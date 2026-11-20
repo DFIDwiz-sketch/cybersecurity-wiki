@@ -30,3 +30,7 @@ Whether an event is recorded depends on the system's audit policy. Avoid drawing
 ## Distinguish Share Checks from NTFS File Evidence
 
 [Use eight synthetic cases to distinguish the share check from the access right used.]({{ '/wiki/smb-file-audit-evidence/' | relative_url }})
+
+## Investigate Windows App Control Events
+
+[Distinguish audit decisions, enforced blocks and related signature records.]({{ '/wiki/app-control-evidence/' | relative_url }})

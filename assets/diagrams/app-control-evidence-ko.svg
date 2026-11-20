@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="326" viewBox="0 0 360 326" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">App Control 이벤트 증거</title>
+  <desc id="desc">정책을 통과하지 못하면 감사 또는 실제 차단이 기록됩니다. 관련 서명과 정책 로드 기록도 확인합니다.</desc>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#325977"/></marker></defs>
+  <rect x="1" y="1" width="358" height="324" rx="15" fill="#f6f9fd" stroke="#adc6da"/>
+  <g fill="none" stroke="#325977" stroke-width="2.4" marker-end="url(#arrow)">
+    <path d="M180 60v15H90v15"/><path d="M180 60v15h90v15"/>
+    <path d="M90 155v15h90v15"/><path d="M270 155v15h-90v15"/>
+  </g>
+  <g fill="#e1effa" stroke="#7b9bb4">
+    <rect x="20" y="15" width="320" height="45" rx="9"/>
+    <rect x="15" y="91" width="150" height="64" rx="9"/>
+    <rect x="195" y="91" width="150" height="64" rx="9"/>
+    <rect x="38" y="186" width="284" height="56" rx="9"/>
+  </g>
+  <rect x="38" y="254" width="284" height="56" rx="9" fill="#e4f4eb" stroke="#759886"/>
+  <g fill="#143650" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">
+    <text x="180" y="44">파일이 정책을 통과하지 못함</text>
+    <text x="90" y="118">감사 · 3076</text><text x="270" y="118">강제 적용 · 3077</text>
+    <text x="180" y="208">관련 서명 · 3089</text><text x="180" y="276">정책 로드 · 3099</text>
+  </g>
+  <g fill="#143650" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15">
+    <text x="90" y="140">강제 적용 시 차단</text><text x="270" y="140">실제로 차단</text>
+    <text x="180" y="229">호스트와 ActivityID 일치</text><text x="180" y="297">옵션과 배포 기록 확인</text>
+  </g>
+</svg>

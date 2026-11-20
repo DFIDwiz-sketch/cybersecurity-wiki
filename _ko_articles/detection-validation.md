@@ -109,3 +109,7 @@ python3 detection-validation.py
 ## Kubernetes API 감사 로그 검증
 
 [감사 로그에서 인가, 서버 미리보기, 일반 쓰기 결과를 구분합니다]({{ '/ko/wiki/kubernetes-audit-evidence/' | relative_url }})
+
+## Windows 코드 무결성 신호 검증하기
+
+[활동 ID로 원본과 전달된 App Control 이벤트를 대조합니다.]({{ '/ko/wiki/app-control-evidence/' | relative_url }})
