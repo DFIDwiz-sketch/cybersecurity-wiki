@@ -99,3 +99,7 @@ Reviewed November 20, 2026. The workflow is based on the online manuals availabl
 - Collection across clients and expiration, and ongoing client-side event collection. [Hunting](https://docs.velociraptor.app/docs/hunting/) · [Client Monitoring](https://docs.velociraptor.app/docs/clients/monitoring/)
 - Built-in definition and client inventory/index behavior. [Generic.Client.Info](https://docs.velociraptor.app/artifact_references/pages/generic.client.info/) · [Client Interrogation](https://docs.velociraptor.app/docs/clients/interrogation/)
 - Server roles and auditing, plus release-family scope. [Security Configuration](https://docs.velociraptor.app/docs/deployment/security/) · [Velociraptor 0.77 release notes](https://docs.velociraptor.app/blog/2026/2026-05-31-release-notes-0.77/)
+
+## Correlate Zeek and Suricata with Community ID
+
+[Practise comparing shared IDs, event time and sensor scope]({{ '/wiki/community-id-evidence/' | relative_url }})

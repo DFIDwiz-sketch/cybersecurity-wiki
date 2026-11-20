@@ -99,3 +99,7 @@ C02·C05·C08을 구분하고 각 결론을 뒷받침한 출처를 설명하세�
 - 여러 클라이언트의 수집과 만료, 지속 이벤트 수집. [Hunting](https://docs.velociraptor.app/docs/hunting/) · [Client Monitoring](https://docs.velociraptor.app/docs/clients/monitoring/)
 - 기본 아티팩트와 자산 정보 색인 동작. [Generic.Client.Info](https://docs.velociraptor.app/artifact_references/pages/generic.client.info/) · [Client Interrogation](https://docs.velociraptor.app/docs/clients/interrogation/)
 - 서버 권한과 감사, 0.77 계열의 변경 범위. [Security Configuration](https://docs.velociraptor.app/docs/deployment/security/) · [Velociraptor 0.77 release notes](https://docs.velociraptor.app/blog/2026/2026-05-31-release-notes-0.77/)
+
+## Community ID로 Zeek와 Suricata 연결하기
+
+[공통 ID, 시각과 관측 범위를 대조하는 실습]({{ '/ko/wiki/community-id-evidence/' | relative_url }})

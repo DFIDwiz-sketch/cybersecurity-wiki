@@ -206,3 +206,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## Velociraptor 엔드포인트 수집
 
 [네트워크 단서에서 검증된 호스트 증거까지]({{ '/ko/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## Community ID로 Zeek와 Suricata 연결하기
+
+[공통 ID, 시각과 관측 범위를 대조하는 실습]({{ '/ko/wiki/community-id-evidence/' | relative_url }})

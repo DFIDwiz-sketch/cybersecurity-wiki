@@ -111,3 +111,7 @@ python3 nat-correlation.py
 ## DHCPv4 임대와 IP 주소 조사
 
 [임대 이력으로 주소가 가리키는 장치 후보 좁히기]({{ '/ko/wiki/dhcp-lease-evidence/' | relative_url }})
+
+## Community ID로 Zeek와 Suricata 연결하기
+
+[공통 ID, 시각과 관측 범위를 대조하는 실습]({{ '/ko/wiki/community-id-evidence/' | relative_url }})

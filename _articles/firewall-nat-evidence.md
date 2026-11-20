@@ -111,3 +111,7 @@ Reviewed 20 November 2026. IETF and NIST references provide the protocol and pol
 ## DHCPv4 Lease Evidence and IP Address Investigation
 
 [Use lease history to narrow the device candidates behind an address]({{ '/wiki/dhcp-lease-evidence/' | relative_url }})
+
+## Correlate Zeek and Suricata with Community ID
+
+[Practise comparing shared IDs, event time and sensor scope]({{ '/wiki/community-id-evidence/' | relative_url }})

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="362" viewBox="0 0 440 362" role="img" aria-labelledby="title description" xml:lang="ko" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">네트워크 기록 두 건을 연결하는 순서</title>
+  <desc id="description">경보와 플로를 읽고, Community ID와 원본 튜플을 비교합니다. 센서 범위와 시각이 맞는지 확인합니다. 센서 식별자를 보존하고, 후보가 여럿이면 패킷이나 추가 원본을 확인합니다.</desc>
+  <rect width="440" height="362" rx="12" fill="#0d1828"/>
+  <g transform="translate(9 11)">
+    <rect width="422" height="67" rx="10" fill="#1e304b" stroke="#a2c9fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">1. 경보와 플로 읽기</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">원본 필드와 센서 내부 ID 보존</text>
+  </g>
+  <path d="M220 83v14m-5-5 5 5 5-5" fill="none" stroke="#aaccf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 102)">
+    <rect width="422" height="67" rx="10" fill="#1e304b" stroke="#a2c9fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">2. 공통 ID 대조</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">튜플·버전·시드 확인</text>
+  </g>
+  <path d="M220 174v14m-5-5 5 5 5-5" fill="none" stroke="#aaccf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 193)">
+    <rect width="422" height="67" rx="10" fill="#1e304b" stroke="#a2c9fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">3. 범위와 시각 대조</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">같은 네트워크 관점 · 겹치는 구간</text>
+  </g>
+  <path d="M220 265v14m-5-5 5 5 5-5" fill="none" stroke="#aaccf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 284)">
+    <rect width="422" height="67" rx="10" fill="#10413a" stroke="#89e4ce" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">4. 후보를 독립 증거로 확인</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">패킷 또는 센서 원본 기록 확인</text>
+  </g>
+</svg>

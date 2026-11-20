@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="362" viewBox="0 0 440 362" role="img" aria-labelledby="title description" xml:lang="en" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">Review before linking two network records</title>
+  <desc id="description">Read the alert and flow records. Compare the Community ID and original tuple. Confirm sensor scope and a compatible time interval. Preserve the native IDs and use packets or further evidence to resolve multiple candidates.</desc>
+  <rect width="440" height="362" rx="12" fill="#0d1828"/>
+  <g transform="translate(9 11)">
+    <rect width="422" height="67" rx="10" fill="#1e304b" stroke="#a2c9fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">1. Read the alert and flow</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">Keep the original fields and native IDs</text>
+  </g>
+  <path d="M220 83v14m-5-5 5 5 5-5" fill="none" stroke="#aaccf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 102)">
+    <rect width="422" height="67" rx="10" fill="#1e304b" stroke="#a2c9fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">2. Compare the common ID</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">Verify tuple, version and seed</text>
+  </g>
+  <path d="M220 174v14m-5-5 5 5 5-5" fill="none" stroke="#aaccf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 193)">
+    <rect width="422" height="67" rx="10" fill="#1e304b" stroke="#a2c9fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">3. Check scope and time</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">Same network view · overlapping interval</text>
+  </g>
+  <path d="M220 265v14m-5-5 5 5 5-5" fill="none" stroke="#aaccf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 284)">
+    <rect width="422" height="67" rx="10" fill="#10413a" stroke="#89e4ce" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f4f8ff">4. Corroborate any candidate</text>
+    <text x="211" y="52" font-size="17" fill="#d9e8fc">Use packets or sensor-native evidence</text>
+  </g>
+</svg>

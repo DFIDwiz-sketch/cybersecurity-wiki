@@ -206,3 +206,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Velociraptor Endpoint Collection
 
 [Go from a network lead to reviewed host evidence]({{ '/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## Correlate Zeek and Suricata with Community ID
+
+[Practise comparing shared IDs, event time and sensor scope]({{ '/wiki/community-id-evidence/' | relative_url }})
