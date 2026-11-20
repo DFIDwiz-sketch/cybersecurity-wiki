@@ -165,3 +165,7 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 ## 인증서 검증 심화 연결
 
 [신뢰 체인·SAN·용도·만료를 여섯 대조 시험으로 구분하기]({{ '/ko/wiki/certificate-validation/' | relative_url }})
+
+## 패스키와 WebAuthn 로그인 증거
+
+[공개키 검증, 접근 정책과 앱 세션을 구분하는 실습]({{ '/ko/wiki/passkey-signin-evidence/' | relative_url }})

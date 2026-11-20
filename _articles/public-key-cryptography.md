@@ -165,3 +165,7 @@ Finish when you can draw both key directions, explain symmetric TLS traffic keys
 ## Certificate validation checkpoint
 
 [Distinguish trust, SAN, purpose and expiry with six offline controls]({{ '/wiki/certificate-validation/' | relative_url }})
+
+## Passkeys and WebAuthn Sign-in Evidence
+
+[Distinguish public-key verification, access policy and app sessions]({{ '/wiki/passkey-signin-evidence/' | relative_url }})

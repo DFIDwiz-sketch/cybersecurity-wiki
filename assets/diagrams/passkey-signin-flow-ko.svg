@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="361" viewBox="0 0 440 361" role="img" aria-labelledby="title description" xml:lang="ko" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">패스키 등록과 로그인 증거</title>
+  <desc id="description">인증기가 자격 증명을 만들고 서비스는 공개키를 저장합니다. 로그인 때 서비스가 새 챌린지를 보내면 인증기가 서명합니다. 서비스는 응답을 검증하고 접근 정책과 앱 세션 결과를 별도로 확인합니다.</desc>
+  <rect width="440" height="361" rx="12" fill="#0e1929"/>
+  <g transform="translate(9 10)">
+    <rect width="422" height="68" rx="10" fill="#1e3049" stroke="#acd1fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">자격 증명 등록</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">인증기가 생성 · 서비스는 공개키 저장</text>
+  </g>
+  <path d="M220 83v13m-5-5 5 5 5-5" fill="none" stroke="#b6d8fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 101)">
+    <rect width="422" height="68" rx="10" fill="#1e3049" stroke="#acd1fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">로그인 시작</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">서비스가 새 챌린지 발급</text>
+  </g>
+  <path d="M220 174v13m-5-5 5 5 5-5" fill="none" stroke="#b6d8fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 192)">
+    <rect width="422" height="68" rx="10" fill="#1e3049" stroke="#acd1fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">서명과 검증</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">인증기가 서명 · 서비스가 응답 검증</text>
+  </g>
+  <path d="M220 265v13m-5-5 5 5 5-5" fill="none" stroke="#b6d8fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 283)">
+    <rect width="422" height="68" rx="10" fill="#10413a" stroke="#85e4cb" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">접근 평가와 결과 기록</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">정책 판단 · 앱 세션 증거</text>
+  </g>
+</svg>

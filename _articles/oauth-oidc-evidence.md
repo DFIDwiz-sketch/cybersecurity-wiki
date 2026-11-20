@@ -111,3 +111,7 @@ Reviewed November 20, 2026. The dates below identify the editions used.
 - October 2021 JWT access token profile; February 2020 JWT BCP on algorithms, trust and explicit typing. [IETF RFC 9068, section 4](https://www.rfc-editor.org/rfc/rfc9068.html#section-4) · [IETF RFC 8725, section 3](https://www.rfc-editor.org/rfc/rfc8725.html#section-3)
 - October 2012 bearer usage and error semantics, as updated by RFC 9700; October 2015 token introspection. [IETF RFC 6750, section 3.1](https://www.rfc-editor.org/rfc/rfc6750.html#section-3.1) · [IETF RFC 7662](https://www.rfc-editor.org/rfc/rfc7662.html)
 - May 2025 vendor documentation on Microsoft identity platform access tokens, including profile and metadata considerations. [Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity-platform/access-tokens)
+
+## Passkeys and WebAuthn Sign-in Evidence
+
+[Distinguish public-key verification, access policy and app sessions]({{ '/wiki/passkey-signin-evidence/' | relative_url }})

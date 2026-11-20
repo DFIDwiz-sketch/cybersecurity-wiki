@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="361" viewBox="0 0 440 361" role="img" aria-labelledby="title description" xml:lang="en" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">Passkey registration and sign-in evidence</title>
+  <desc id="description">The authenticator creates a credential and the service stores its public key. During sign-in the service supplies a fresh challenge. The authenticator signs with its credential key. The service validates the assertion, then separately evaluates access and records the session outcome.</desc>
+  <rect width="440" height="361" rx="12" fill="#0e1929"/>
+  <g transform="translate(9 10)">
+    <rect width="422" height="68" rx="10" fill="#1e3049" stroke="#acd1fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">Register the credential</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">Authenticator key → service stores public key</text>
+  </g>
+  <path d="M220 83v13m-5-5 5 5 5-5" fill="none" stroke="#b6d8fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 101)">
+    <rect width="422" height="68" rx="10" fill="#1e3049" stroke="#acd1fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">Start an authentication</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">Service issues a fresh challenge</text>
+  </g>
+  <path d="M220 174v13m-5-5 5 5 5-5" fill="none" stroke="#b6d8fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 192)">
+    <rect width="422" height="68" rx="10" fill="#1e3049" stroke="#acd1fa" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">Sign and verify</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">Authenticator signs · service checks assertion</text>
+  </g>
+  <path d="M220 265v13m-5-5 5 5 5-5" fill="none" stroke="#b6d8fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 283)">
+    <rect width="422" height="68" rx="10" fill="#10413a" stroke="#85e4cb" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">Evaluate access and record outcome</text>
+    <text x="211" y="52" font-size="17" fill="#dceafe">Policy decision · app session evidence</text>
+  </g>
+</svg>

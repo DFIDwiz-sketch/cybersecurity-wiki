@@ -107,3 +107,7 @@ Microsoft Learn product documentation reviewed 20 November 2026. Verify licensin
 - [Audit logs](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-audit-logs)
 - [Retention](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention)
 - [Revoke user access](https://learn.microsoft.com/en-us/entra/identity/users/users-revoke-access)
+
+## Passkeys and WebAuthn Sign-in Evidence
+
+[Distinguish public-key verification, access policy and app sessions]({{ '/wiki/passkey-signin-evidence/' | relative_url }})

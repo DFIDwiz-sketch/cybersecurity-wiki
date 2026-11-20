@@ -1,0 +1,101 @@
+{
+  "attempts": [
+    {
+      "id": "A01",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "accepted",
+      "reason": "none"
+    },
+    {
+      "id": "A02",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "not_observed",
+      "reason": "client_canceled"
+    },
+    {
+      "id": "A03",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "denied",
+      "reason": "challenge_invalid"
+    },
+    {
+      "id": "A04",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "denied",
+      "reason": "origin_mismatch"
+    },
+    {
+      "id": "A05",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "denied",
+      "reason": "rp_id_hash_mismatch"
+    },
+    {
+      "id": "A06",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "denied",
+      "reason": "uv_required"
+    },
+    {
+      "id": "A07",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "accepted",
+      "reason": "counter_signal"
+    },
+    {
+      "id": "A08",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "accepted",
+      "reason": "none"
+    },
+    {
+      "id": "A09",
+      "scope": "training-login",
+      "method": "webauthn",
+      "verifier": "accepted",
+      "reason": "none"
+    },
+    {
+      "id": "A10",
+      "scope": "training-login",
+      "method": "password_otp",
+      "verifier": "not_applicable",
+      "reason": "alternate_method"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "A01",
+      "scope": "training-login",
+      "outcome": "created"
+    },
+    {
+      "id": "A07",
+      "scope": "training-login",
+      "outcome": "created"
+    },
+    {
+      "id": "A08",
+      "scope": "training-login",
+      "outcome": "policy_denied"
+    },
+    {
+      "id": "A09",
+      "scope": "other-training",
+      "outcome": "created"
+    },
+    {
+      "id": "A10",
+      "scope": "training-login",
+      "outcome": "created"
+    }
+  ]
+}

@@ -107,3 +107,7 @@ s-01과 s-02의 MFA 문맥과 앱 증거 차이를 한 문장씩 적고, s-04에
 - [Audit logs](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-audit-logs)
 - [Retention](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention)
 - [Revoke user access](https://learn.microsoft.com/en-us/entra/identity/users/users-revoke-access)
+
+## 패스키와 WebAuthn 로그인 증거
+
+[공개키 검증, 접근 정책과 앱 세션을 구분하는 실습]({{ '/ko/wiki/passkey-signin-evidence/' | relative_url }})

@@ -111,3 +111,7 @@ python3 oauth-oidc-evidence.py
 - 2021년 10월 JWT 액세스 토큰 프로필과 2020년 2월 JWT 보안 권고. 알고리즘·신뢰·토큰 유형 참조. [IETF RFC 9068, 4절](https://www.rfc-editor.org/rfc/rfc9068.html#section-4) · [IETF RFC 8725, 3절](https://www.rfc-editor.org/rfc/rfc8725.html#section-3)
 - 2012년 10월 베어러 토큰과 오류 처리(RFC 9700에서 갱신), 2015년 10월 토큰 인트로스펙션. [IETF RFC 6750, 3.1절](https://www.rfc-editor.org/rfc/rfc6750.html#section-3.1) · [IETF RFC 7662](https://www.rfc-editor.org/rfc/rfc7662.html)
 - 2025년 5월. Microsoft ID 플랫폼의 액세스 토큰 프로필과 메타데이터 동작. [Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity-platform/access-tokens)
+
+## 패스키와 WebAuthn 로그인 증거
+
+[공개키 검증, 접근 정책과 앱 세션을 구분하는 실습]({{ '/ko/wiki/passkey-signin-evidence/' | relative_url }})
