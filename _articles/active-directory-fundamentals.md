@@ -436,3 +436,7 @@ gpresult /r
 ## Microsoft Entra Sign-in Investigation · MFA and Conditional Access
 
 [Entra sign-in and resource evidence lab]({{ '/wiki/entra-signin-evidence/' | relative_url }})
+
+## Trace Security Group Changes to Access Evidence
+
+[Identify the actor and group, then verify which later session included the membership]({{ '/wiki/ad-group-membership-evidence/' | relative_url }})

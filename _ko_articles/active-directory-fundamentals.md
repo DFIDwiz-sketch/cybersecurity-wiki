@@ -436,3 +436,7 @@ gpresult /r
 ## Microsoft Entra 로그인 조사 · MFA와 조건부 액세스
 
 [Entra 로그인과 실제 리소스 행위를 구분하는 실습]({{ '/ko/wiki/entra-signin-evidence/' | relative_url }})
+
+## 보안 그룹 변경과 실제 접근 조사
+
+[행위자와 그룹을 확인한 뒤 이후 어느 세션에 멤버십이 반영됐는지 살펴봅니다]({{ '/ko/wiki/ad-group-membership-evidence/' | relative_url }})

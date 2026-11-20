@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="254" viewBox="0 0 440 254" role="img" lang="en" aria-labelledby="title desc">
+  <title id="title">Group membership evidence</title>
+  <desc id="desc">A change record identifies the acting identity, member and target group. A later logon can show group SIDs on a resource computer. Resource records provide evidence of access.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#65e4c6"/></marker></defs>
+  <rect width="440" height="254" rx="17" fill="#111b27"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+  <rect x="38" y="14" width="364" height="57" rx="10" fill="#1c2d3e" stroke="#6a92b1"/>
+  <text x="220" y="38" font-size="19" font-weight="650" fill="#f4f8fd">Membership change</text>
+  <text x="220" y="59" font-size="16" fill="#b8dbea">Actor SID, member SID, group and scope</text>
+  <path d="M 220 72 V 97" fill="none" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="38" y="98" width="364" height="57" rx="10" fill="#1c2d3e" stroke="#6a92b1"/>
+  <text x="220" y="122" font-size="19" font-weight="650" fill="#f4f8fd">Later resource logon</text>
+  <text x="220" y="143" font-size="16" fill="#b8dbea">Match the local session and group SIDs</text>
+  <path d="M 220 156 V 181" fill="none" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="38" y="182" width="364" height="57" rx="10" fill="#1c2d3e" stroke="#6a92b1"/>
+  <text x="220" y="206" font-size="19" font-weight="650" fill="#f4f8fd">Resource operation</text>
+  <text x="220" y="227" font-size="16" fill="#b8dbea">Check the authorization and access record</text>
+  </g>
+</svg>

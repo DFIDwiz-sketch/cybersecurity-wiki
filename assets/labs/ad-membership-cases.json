@@ -1,0 +1,273 @@
+[
+  {
+    "case": "G01",
+    "events": [
+      {
+        "event_id": 4728,
+        "computer": "DC01",
+        "minute": 12,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "DC01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      }
+    ],
+    "resource": null
+  },
+  {
+    "case": "G02",
+    "events": [
+      {
+        "event_id": 4728,
+        "computer": "DC01",
+        "minute": 12,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "ADMIN01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      }
+    ],
+    "resource": null
+  },
+  {
+    "case": "G03",
+    "events": [
+      {
+        "event_id": 4728,
+        "computer": "DC01",
+        "minute": 12,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "DC01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      },
+      {
+        "event_id": 4729,
+        "computer": "DC02",
+        "minute": 17,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      }
+    ],
+    "resource": null
+  },
+  {
+    "case": "G04",
+    "events": [
+      {
+        "event_id": 4732,
+        "computer": "WS01",
+        "minute": 12,
+        "group_authority": "host:WS01",
+        "group_sid": "S-1-5-32-544",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4733,
+        "computer": "WS02",
+        "minute": 17,
+        "group_authority": "host:WS02",
+        "group_sid": "S-1-5-32-544",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "WS01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      }
+    ],
+    "resource": null
+  },
+  {
+    "case": "G05",
+    "events": [
+      {
+        "event_id": 4728,
+        "computer": "DC01",
+        "minute": 12,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-2200",
+        "member_type": "group",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "DC01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      }
+    ],
+    "resource": null
+  },
+  {
+    "case": "G06",
+    "events": [
+      {
+        "event_id": 4728,
+        "computer": "DC01",
+        "minute": 12,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "DC01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "FILE01",
+        "minute": 16,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "target_logon_id": "0x84"
+      },
+      {
+        "event_id": 4627,
+        "computer": "FILE01",
+        "minute": 16,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "target_logon_id": "0x84",
+        "event_idx": 1,
+        "event_count_total": 1,
+        "group_sids": [
+          "S-1-5-21-111111111-222222222-333333333-2100"
+        ]
+      }
+    ],
+    "resource": "FILE01"
+  },
+  {
+    "case": "G07",
+    "events": [
+      {
+        "event_id": 4728,
+        "computer": "DC01",
+        "minute": 12,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "DC01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "FILE01",
+        "minute": 16,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "target_logon_id": "0x84"
+      },
+      {
+        "event_id": 4627,
+        "computer": "FILE01",
+        "minute": 16,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "target_logon_id": "0x84",
+        "event_idx": 1,
+        "event_count_total": 2,
+        "group_sids": [
+          "S-1-5-11"
+        ]
+      }
+    ],
+    "resource": "FILE01"
+  },
+  {
+    "case": "G08",
+    "events": [
+      {
+        "event_id": 4728,
+        "computer": "DC01",
+        "minute": 12,
+        "group_authority": "domain:training.example.test",
+        "group_sid": "S-1-5-21-111111111-222222222-333333333-2100",
+        "member_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "member_type": "account",
+        "actor_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "subject_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "DC01",
+        "minute": 10,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1100",
+        "target_logon_id": "0x41"
+      },
+      {
+        "event_id": 4624,
+        "computer": "FILE01",
+        "minute": 16,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "target_logon_id": "0x84"
+      },
+      {
+        "event_id": 4627,
+        "computer": "FILE01",
+        "minute": 16,
+        "target_sid": "S-1-5-21-111111111-222222222-333333333-1200",
+        "target_logon_id": "0x84",
+        "event_idx": 1,
+        "event_count_total": 1,
+        "group_sids": [
+          "S-1-5-11"
+        ]
+      }
+    ],
+    "resource": "FILE01"
+  }
+]

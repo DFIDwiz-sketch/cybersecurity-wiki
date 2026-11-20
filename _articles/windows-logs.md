@@ -22,3 +22,7 @@ Whether an event is recorded depends on the system's audit policy. Avoid drawing
 ## Verify Windows Event Forwarding Delivery
 
 [Distinguish source, subscription, collector and SIEM gaps]({{ '/wiki/wef-delivery-evidence/' | relative_url }})
+
+## Investigate Windows Security Group Changes
+
+[Compare membership, logon and resource evidence without joining unrelated hosts]({{ '/wiki/ad-group-membership-evidence/' | relative_url }})

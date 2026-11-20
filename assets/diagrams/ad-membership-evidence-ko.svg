@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="254" viewBox="0 0 440 254" role="img" lang="ko" aria-labelledby="title desc">
+  <title id="title">그룹 멤버십 조사 증거</title>
+  <desc id="desc">변경 기록은 행위자, 멤버와 그룹을 보여 줍니다. 이후 자원 호스트에 생성된 로그인에서 그룹 SID를 확인할 수 있습니다. 실제 사용 여부는 자원의 접근 기록을 확인합니다.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#65e4c6"/></marker></defs>
+  <rect width="440" height="254" rx="17" fill="#111b27"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+  <rect x="38" y="14" width="364" height="57" rx="10" fill="#1c2d3e" stroke="#6a92b1"/>
+  <text x="220" y="38" font-size="19" font-weight="650" fill="#f4f8fd">멤버십 변경</text>
+  <text x="220" y="59" font-size="16" fill="#b8dbea">행위자 SID, 멤버 SID, 그룹과 범위</text>
+  <path d="M 220 72 V 97" fill="none" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="38" y="98" width="364" height="57" rx="10" fill="#1c2d3e" stroke="#6a92b1"/>
+  <text x="220" y="122" font-size="19" font-weight="650" fill="#f4f8fd">이후 자원 호스트 로그인</text>
+  <text x="220" y="143" font-size="16" fill="#b8dbea">로컬 세션과 그룹 SID 대조</text>
+  <path d="M 220 156 V 181" fill="none" stroke="#65e4c6" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="38" y="182" width="364" height="57" rx="10" fill="#1c2d3e" stroke="#6a92b1"/>
+  <text x="220" y="206" font-size="19" font-weight="650" fill="#f4f8fd">자원에서 수행한 작업</text>
+  <text x="220" y="227" font-size="16" fill="#b8dbea">인가 결과와 접근 기록 확인</text>
+  </g>
+</svg>

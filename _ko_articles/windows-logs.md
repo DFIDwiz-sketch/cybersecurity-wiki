@@ -22,3 +22,7 @@ updated: "2026-10-17"
 ## Windows 이벤트 전달 경로 확인
 
 [원본·구독·수집기·SIEM의 공백을 구별하는 실습]({{ '/ko/wiki/wef-delivery-evidence/' | relative_url }})
+
+## Windows 보안 그룹 변경 조사
+
+[그룹 변경, 로그인과 자원 접근 기록을 같은 장비와 세션 범위에서 대조합니다]({{ '/ko/wiki/ad-group-membership-evidence/' | relative_url }})
