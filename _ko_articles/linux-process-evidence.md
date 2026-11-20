@@ -109,3 +109,7 @@ p02·p03·p06의 차이를 설명하고, p04에 관점 변환이 필요한 이�
 - Linux man-pages 6.19. 22번째 필드 단위, 네임스페이스별 PID와 프로그램 이미지 교체. [proc_pid_stat(5)](https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html) · [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html) · [pid_namespaces(7)](https://man7.org/linux/man-pages/man7/pid_namespaces.7.html) · [time_namespaces(7)](https://man7.org/linux/man-pages/man7/time_namespaces.7.html) · [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
 - systemd 262 온라인 설명서. 원본 자격 정보, 부팅 식별자와 저널 시간 필드. [systemd.journal-fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - RHEL 9 제품군. Linux Audit 수집 구조, 규칙에 따른 수집 범위와 기록 예시. [Red Hat Enterprise Linux 9 · Auditing the system](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/auditing-the-system_security-hardening)
+
+## Linux 저널의 로컬·중앙 수집 범위 확인하기
+
+[부팅·네임스페이스·커서로 저널 수집 누락을 조사하는 실습]({{ '/ko/wiki/linux-journal-coverage/' | relative_url }})

@@ -128,3 +128,7 @@ python3 linux-auth-evidence.py
 ## 사용자 인증 전에 SSH 서버 확인하기
 
 [호스트 키 경고를 읽고 서버 신원과 로그인 증거를 구분합니다]({{ '/ko/wiki/ssh-host-key-evidence/' | relative_url }})
+
+## Linux 저널의 로컬·중앙 수집 범위 확인하기
+
+[부팅·네임스페이스·커서로 저널 수집 누락을 조사하는 실습]({{ '/ko/wiki/linux-journal-coverage/' | relative_url }})

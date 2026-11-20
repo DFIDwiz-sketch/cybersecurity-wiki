@@ -109,3 +109,7 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 - Linux man-pages 6.19. Field 22 units, namespace PID fields, and process image replacement. [proc_pid_stat(5)](https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html) · [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html) · [pid_namespaces(7)](https://man7.org/linux/man-pages/man7/pid_namespaces.7.html) · [time_namespaces(7)](https://man7.org/linux/man-pages/man7/time_namespaces.7.html) · [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
 - systemd 262 online manual. Origin credentials, boot identifier and journal time fields. [systemd.journal-fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
 - RHEL 9 product family. Linux Audit delivery, rule-based coverage and example record fields. [Red Hat Enterprise Linux 9 · Auditing the system](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/auditing-the-system_security-hardening)
+
+## Verify Local and Central Linux Journal Coverage
+
+[Compare boot, namespace and cursor evidence to locate collection gaps.]({{ '/wiki/linux-journal-coverage/' | relative_url }})

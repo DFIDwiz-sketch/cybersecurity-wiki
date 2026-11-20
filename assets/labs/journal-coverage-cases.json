@@ -1,0 +1,201 @@
+{
+  "local": [
+    {
+      "case": "LAB-01",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-01",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219210000000",
+        "__MONOTONIC_TIMESTAMP": "100000000"
+      }
+    },
+    {
+      "case": "LAB-02",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-02",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete after clock step",
+        "__REALTIME_TIMESTAMP": "1795219206000000",
+        "__MONOTONIC_TIMESTAMP": "102000000"
+      }
+    },
+    {
+      "case": "LAB-03",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-03",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219212000000",
+        "__MONOTONIC_TIMESTAMP": "108000000"
+      }
+    },
+    {
+      "case": "LAB-05",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-05",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219213000000",
+        "__MONOTONIC_TIMESTAMP": "109000000"
+      }
+    },
+    {
+      "case": "LAB-07",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-07",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219218000000",
+        "__MONOTONIC_TIMESTAMP": "114000000"
+      }
+    },
+    {
+      "case": "LAB-08",
+      "namespace": "reports",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-08",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219221000000",
+        "__MONOTONIC_TIMESTAMP": "117000000"
+      }
+    }
+  ],
+  "central": [
+    {
+      "case": "LAB-01",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-01",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219210000000",
+        "__MONOTONIC_TIMESTAMP": "100000000"
+      }
+    },
+    {
+      "case": "LAB-02",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-02",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete after clock step",
+        "__REALTIME_TIMESTAMP": "1795219206000000",
+        "__MONOTONIC_TIMESTAMP": "102000000"
+      }
+    },
+    {
+      "case": "LAB-04",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "cccccccccccccccccccccccccccccccc",
+        "__CURSOR": "fictional-position-04",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795218900000000",
+        "__MONOTONIC_TIMESTAMP": "100000000"
+      }
+    },
+    {
+      "case": "LAB-05",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-05",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check failed",
+        "__REALTIME_TIMESTAMP": "1795219213000000",
+        "__MONOTONIC_TIMESTAMP": "109000000"
+      }
+    },
+    {
+      "case": "LAB-06",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219215000000",
+        "__MONOTONIC_TIMESTAMP": "111000000"
+      }
+    },
+    {
+      "case": "LAB-07",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-07",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219218000000",
+        "__MONOTONIC_TIMESTAMP": "114000000"
+      }
+    },
+    {
+      "case": "LAB-07",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-07",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219218000000",
+        "__MONOTONIC_TIMESTAMP": "114000000"
+      }
+    },
+    {
+      "case": "LAB-08",
+      "namespace": "default",
+      "journal": {
+        "_MACHINE_ID": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "_BOOT_ID": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "__CURSOR": "fictional-position-08",
+        "_SYSTEMD_UNIT": "reports.service",
+        "_PID": "412",
+        "MESSAGE": "health check complete",
+        "__REALTIME_TIMESTAMP": "1795219221000000",
+        "__MONOTONIC_TIMESTAMP": "117000000"
+      }
+    }
+  ]
+}

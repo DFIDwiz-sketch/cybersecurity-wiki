@@ -128,3 +128,7 @@ Reviewed 20 November 2026. RFC 4252 documents SSH authentication (2006). Match c
 ## Verify the SSH Server Before User Authentication
 
 [Read host-key warnings and distinguish server identity from login evidence]({{ '/wiki/ssh-host-key-evidence/' | relative_url }})
+
+## Verify Local and Central Linux Journal Coverage
+
+[Compare boot, namespace and cursor evidence to locate collection gaps.]({{ '/wiki/linux-journal-coverage/' | relative_url }})
