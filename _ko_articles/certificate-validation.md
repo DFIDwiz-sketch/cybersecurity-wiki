@@ -171,3 +171,7 @@ openssl verify -no-CApath -no-CAstore -CAfile root.pem \
 ## TLS 핸드셰이크와 관측 증거 · 연결부터 HTTP까지
 
 [TLS 협상 가시성과 오프라인 검증 실습]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }})
+
+## DNSSEC 검증과 SERVFAIL 조사
+
+[부모 DS와 자식 DNSKEY에서 응답 서명까지 대조하는 실습]({{ '/ko/wiki/dnssec-validation-evidence/' | relative_url }})

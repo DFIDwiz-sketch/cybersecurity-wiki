@@ -222,3 +222,7 @@ Complete this chapter when you can draw the resolver's separate queries, disting
 ## DHCPv4 Lease Evidence and IP Address Investigation
 
 [Use lease history to narrow the device candidates behind an address]({{ '/wiki/dhcp-lease-evidence/' | relative_url }})
+
+## Trace DNSSEC Validation and SERVFAIL
+
+[Follow the parent DS and child DNSKEY through to the signed answer.]({{ '/wiki/dnssec-validation-evidence/' | relative_url }})

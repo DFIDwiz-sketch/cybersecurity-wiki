@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="324" viewBox="0 0 440 324" role="img" aria-labelledby="title desc">
+  <title id="title">한 위임 구간에서 DNSSEC 검증하기</title>
+  <desc id="desc">인증된 부모 DS를 자식 공개키와 대조하고, 자식 DNSKEY 묶음과 응답의 서명을 검증합니다.</desc>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#2d5678"/></marker></defs>
+  <rect x="1" y="1" width="438" height="322" rx="15" fill="#f4f8fc" stroke="#abc2d6"/>
+  <g fill="#143651" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">
+    <rect x="48" y="20" width="344" height="55" rx="8" fill="#deedf8" stroke="#7799b3"/><text x="220" y="43" font-weight="bold">인증된 부모 DS</text><text x="220" y="63" font-size="15">다이제스트와 키 태그</text>
+    <path d="M220 76V93" stroke="#2d5678" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="48" y="96" width="344" height="55" rx="8" fill="#deedf8" stroke="#7799b3"/><text x="220" y="119" font-weight="bold">일치하는 자식 DNSKEY</text><text x="220" y="139" font-size="15">전체 다이제스트 대조</text>
+    <path d="M220 152V169" stroke="#2d5678" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="48" y="172" width="344" height="55" rx="8" fill="#deedf8" stroke="#7799b3"/><text x="220" y="195" font-weight="bold">서명된 DNSKEY 묶음</text><text x="220" y="215" font-size="15">영역의 공개키를 인증</text>
+    <path d="M220 228V245" stroke="#2d5678" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="48" y="248" width="344" height="55" rx="8" fill="#deedf8" stroke="#7799b3"/><text x="220" y="271" font-weight="bold">서명된 응답 묶음</text><text x="220" y="291" font-size="15">서명과 유효 시간 확인</text>
+  </g>
+</svg>

@@ -222,3 +222,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## DHCPv4 임대와 IP 주소 조사
 
 [임대 이력으로 주소가 가리키는 장치 후보 좁히기]({{ '/ko/wiki/dhcp-lease-evidence/' | relative_url }})
+
+## DNSSEC 검증과 SERVFAIL 조사
+
+[부모 DS와 자식 DNSKEY에서 응답 서명까지 대조하는 실습]({{ '/ko/wiki/dnssec-validation-evidence/' | relative_url }})

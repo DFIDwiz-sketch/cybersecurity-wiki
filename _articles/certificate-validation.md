@@ -171,3 +171,7 @@ Complete the chapter when you can draw issuance versus verification direction, i
 ## TLS Handshake Evidence · From Connection to HTTP
 
 [TLS negotiation visibility and offline verification lab]({{ '/wiki/tls-handshake-evidence/' | relative_url }})
+
+## Trace DNSSEC Validation and SERVFAIL
+
+[Follow the parent DS and child DNSKEY through to the signed answer.]({{ '/wiki/dnssec-validation-evidence/' | relative_url }})
