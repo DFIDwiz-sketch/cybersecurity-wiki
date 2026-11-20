@@ -89,3 +89,7 @@ python3 tcp-evidence.py
 ## 방화벽·NAT·네트워크 센서 로그 연결하기
 
 [NAT 매핑과 센서 로그 연결 실습]({{ '/ko/wiki/firewall-nat-evidence/' | relative_url }})
+
+## 경로 MTU와 ICMP 크기 통보 조사
+
+[큰 전송이 멈출 때 패킷 크기, ICMP 통보, ACK 진행을 대조합니다]({{ '/ko/wiki/pmtu-icmp-evidence/' | relative_url }})

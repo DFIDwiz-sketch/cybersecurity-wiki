@@ -1,0 +1,9 @@
+case,ip_version,large_ip_bytes,small_ip_bytes,feedback,matched_quote,reported_mtu,feedback_at_sender,smaller_retry_ack,large_ack,coverage
+P01,4,1500,1400,frag_needed,yes,1400,yes,yes,no,both
+P02,6,1500,1400,packet_too_big,yes,1400,yes,yes,no,both
+P03,6,1500,1380,packet_too_big,yes,1380,no,unknown,no,both
+P04,6,1500,1400,none,unknown,,unknown,unknown,no,sender_only
+P05,4,1500,1400,frag_needed,no,1400,yes,unknown,no,both
+P06,4,1500,1400,none,unknown,,unknown,unknown,yes,both
+P07,4,1500,1400,frag_needed,yes,0,yes,unknown,no,both
+P08,6,1500,1400,packet_too_big,yes,1400,yes,no,no,both

@@ -214,3 +214,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Read NTP and Clock Evidence
 
 [Check which clock a timestamp used and what a network exchange can establish]({{ '/wiki/ntp-clock-evidence/' | relative_url }})
+
+## Read Path MTU and ICMP Evidence
+
+[Compare sender and router observations when large packets fail to pass]({{ '/wiki/pmtu-icmp-evidence/' | relative_url }})

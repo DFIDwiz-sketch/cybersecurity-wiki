@@ -214,3 +214,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## NTP 시간 동기화와 시계 증거
 
 [패킷 시각이 어느 장비에서 기록됐는지, NTP 교환으로 어디까지 확인할 수 있는지 살펴봅니다]({{ '/ko/wiki/ntp-clock-evidence/' | relative_url }})
+
+## 경로 MTU와 ICMP 증거 읽기
+
+[큰 패킷이 통과하지 않을 때 송신자와 라우터의 관측을 비교합니다]({{ '/ko/wiki/pmtu-icmp-evidence/' | relative_url }})
