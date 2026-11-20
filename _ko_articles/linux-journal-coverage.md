@@ -98,3 +98,7 @@ systemd 257에서 `Storage=volatile`은 `/run/log/journal`에 저장합니다. �
 - [systemd · 저널 필드와 메타데이터](https://www.freedesktop.org/software/systemd/man/257/systemd.journal-fields.html)
 - [systemd · journald 257 입력과 네임스페이스](https://www.freedesktop.org/software/systemd/man/257/systemd-journald.service.html) · [저장 및 속도 제한](https://www.freedesktop.org/software/systemd/man/257/journald.conf.html)
 - [systemd · systemd-cat 257](https://www.freedesktop.org/software/systemd/man/257/systemd-cat.html) · [전달 구현 예시 systemd-journal-upload](https://www.freedesktop.org/software/systemd/man/257/systemd-journal-upload.service.html)
+
+## Linux systemd 타이머 조사
+
+[Linux systemd 타이머 조사]({{ '/ko/wiki/systemd-timer-evidence/' | relative_url }}). 타이머 설정, 서비스 호출, 실제 작업 결과를 구분합니다.

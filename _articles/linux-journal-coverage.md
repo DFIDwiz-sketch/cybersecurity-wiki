@@ -98,3 +98,7 @@ Reviewed 21 November 2026 against systemd 257.13 manuals. Distribution defaults,
 - [systemd · Journal fields and metadata](https://www.freedesktop.org/software/systemd/man/257/systemd.journal-fields.html)
 - [systemd · journald 257 inputs and namespaces](https://www.freedesktop.org/software/systemd/man/257/systemd-journald.service.html) · [Storage and rate limits](https://www.freedesktop.org/software/systemd/man/257/journald.conf.html)
 - [systemd · systemd-cat 257](https://www.freedesktop.org/software/systemd/man/257/systemd-cat.html) · [Example native shipper, systemd-journal-upload](https://www.freedesktop.org/software/systemd/man/257/systemd-journal-upload.service.html)
+
+## Investigate Linux systemd timers
+
+[Investigate Linux systemd timers]({{ '/wiki/systemd-timer-evidence/' | relative_url }}). Separate timer configuration, individual service runs, and application results.

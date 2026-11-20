@@ -117,3 +117,7 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 ## Investigate Linux File Permissions
 
 [Apply process credentials to a file access decision.]({{ '/wiki/linux-file-permissions-evidence/' | relative_url }})
+
+## Investigate Linux systemd timers
+
+[Investigate Linux systemd timers]({{ '/wiki/systemd-timer-evidence/' | relative_url }}). Separate timer configuration, individual service runs, and application results.

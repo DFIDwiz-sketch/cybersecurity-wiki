@@ -1,0 +1,7 @@
+case,manager,unit_file,manager_state,loaded_matches_disk,nominal_utc,last_timer_utc,service_start_utc,invocation,service_result,app_receipt,trigger_evidence,journal_coverage
+T01,system,enabled,active,true,2026-11-21T02:00:00Z,2026-11-21T02:00:42Z,2026-11-21T02:00:42Z,inv-a,success,verified,unknown,covered
+T02,system,enabled,inactive,true,2026-11-21T02:00:00Z,,,,,,,covered
+T03,system,enabled,active,true,2026-11-21T02:00:00Z,2026-11-21T02:00:39Z,2026-11-21T02:00:39Z,inv-c,exit-code,,unknown,covered
+T04,user:1001,enabled,active,true,2026-11-21T02:00:00Z,2026-11-21T02:00:10Z,,,,,,unverified
+T05,system,enabled,active,false,2026-11-21T02:00:00Z,,,,,,,covered
+T06,system,enabled,active,true,2026-11-21T02:00:00Z,2026-11-21T02:00:20Z,2026-11-21T02:00:20Z,inv-f,success,verified,independent-manual-request,covered

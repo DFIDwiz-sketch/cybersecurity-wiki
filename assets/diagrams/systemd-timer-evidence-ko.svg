@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="344" viewBox="0 0 360 344" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">systemd 타이머를 조사하는 순서</title>
+  <desc id="desc">로드된 타이머와 서비스를 확인합니다. 호출 기록이 있으면 작업 결과를, 없으면 관리자 상태와 부팅 및 저널 범위를 살핍니다.</desc>
+  <rect width="360" height="344" rx="12" fill="#ecf4fc"/>
+  <path d="M180 68v19m-5-6 5 6 5-6 M180 149v18H91v13m-5-6 5 6 5-6 M180 167h89v13m-5-6 5 6 5-6 M91 250v20m-5-6 5 6 5-6" fill="none" stroke="#245981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143a57">
+    <rect x="16" y="12" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="34" font-size="15" font-weight="700">로드된 타이머와 대상</text>
+    <text x="180" y="53" font-size="12">시스템 또는 사용자 관리자</text>
+    <rect x="16" y="91" width="328" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="113" font-size="15" font-weight="700">발동 시점과 예상 범위</text>
+    <text x="180" y="132" font-size="12">서비스 호출이 관측됐나요?</text>
+    <rect x="8" y="184" width="166" height="66" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="206" font-size="15" font-weight="700">호출 관측</text>
+    <text x="91" y="225" font-size="12">호출 ID와 결과 대조</text>
+    <rect x="186" y="184" width="166" height="66" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="206" font-size="15" font-weight="700">호출 미관측</text>
+    <text x="269" y="225" font-size="12">관리자·부팅 상태와</text>
+    <text x="269" y="241" font-size="12">저널 범위 확인</text>
+    <rect x="8" y="274" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="296" font-size="15" font-weight="700">작업 결과 확인</text>
+    <text x="91" y="315" font-size="12">수신 기록 또는 산출물</text>
+  </g>
+</svg>
