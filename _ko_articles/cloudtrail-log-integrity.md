@@ -26,7 +26,7 @@ translation_url: /wiki/cloudtrail-log-integrity/
 
 가상의 계정과 리전에서 10:14 UTC에 EC2 `DescribeInstances` 이벤트가 발생했고, 이 이벤트를 담은 압축 로그가 10:21에 S3에 도착했다고 합시다. 10:00~11:00 UTC 다이제스트에는 이 로그와 SHA-256 값이 들어갑니다. CloudTrail은 리전별 RSA 키로 다이제스트에 서명하고 현재 파일의 서명을 S3 객체 메타데이터에 넣습니다. 앞선 다이제스트가 있다면 새 다이제스트의 본문에 그 위치와 서명도 들어갑니다.
 
-<figure>
+<figure style="margin-inline: 0">
   <img src="{{ '/assets/diagrams/cloudtrail-integrity-ko.svg' | relative_url }}" alt="S3 메타데이터의 서명과 AWS 공개키로 최신 다이제스트를 검증한 뒤 로그 해시를 대조하고 이전 다이제스트로 이동합니다.">
   <figcaption>다이제스트를 검증한 다음 그 파일에 담긴 해시로 로그를 확인하고 이전 다이제스트를 따라갑니다.</figcaption>
 </figure>

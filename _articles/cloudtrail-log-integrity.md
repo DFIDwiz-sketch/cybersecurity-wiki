@@ -26,7 +26,7 @@ The file integrity workflow here applies to trail log files delivered to S3 with
 
 Consider a fictional account and Region. An EC2 `DescribeInstances` event occurs at 10:14 UTC and a compressed log containing it arrives in S3 at 10:21. The 10:00–11:00 UTC digest lists that log with its SHA-256 value. CloudTrail signs the digest using a Region-specific RSA key and places the current signature in that S3 object's metadata. When there is a previous digest, the new digest also carries its location and signature.
 
-<figure>
+<figure style="margin-inline: 0">
   <img src="{{ '/assets/diagrams/cloudtrail-integrity-en.svg' | relative_url }}" alt="Verify the newest digest using S3 signature metadata and an AWS public key, then compare referenced log hashes and follow the previous digest.">
   <figcaption>Check each digest before trusting its log hashes or following its link to the previous digest.</figcaption>
 </figure>
