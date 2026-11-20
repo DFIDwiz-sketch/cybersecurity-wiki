@@ -106,3 +106,7 @@ Reviewed 20 November 2026. The 2006 NIST guide provides acquisition foundations.
 ## Apply Integrity Checks to Backup Recovery
 
 [Follow a matching digest with database, checkpoint and service checks]({{ '/wiki/backup-restore-evidence/' | relative_url }})
+
+## Verify a CloudTrail Log Archive
+
+[Use a signed digest to check delivered logs and document collection gaps]({{ '/wiki/cloudtrail-log-integrity/' | relative_url }})

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="301" viewBox="0 0 440 301" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">CloudTrail log validation flow</title>
+  <desc id="desc">Verify the signed digest, compare log hashes, and follow the link to the previous digest.</desc>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#325977"/></marker></defs>
+  <rect x="1" y="1" width="438" height="299" rx="17" fill="#f6f9fd" stroke="#adc6da"/>
+  <g fill="none" stroke="#325977" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M220 82V101H113V121"/><path d="M220 82V101H327V121"/>
+  </g>
+  <g fill="#e1effa" stroke="#7b9bb4">
+    <rect x="57" y="17" width="326" height="65" rx="9"/>
+    <rect x="15" y="122" width="196" height="71" rx="9"/>
+    <rect x="229" y="122" width="196" height="71" rx="9"/>
+  </g>
+  <rect x="45" y="219" width="350" height="64" rx="9" fill="#e4f4eb" stroke="#759886"/>
+  <g fill="#143650" text-anchor="middle" font-family="system-ui, sans-serif">
+    <g font-size="20" font-weight="bold">
+      <text x="220" y="44">Newest digest</text>
+      <text x="113" y="150">Compare log hashes</text>
+      <text x="327" y="150">Previous digest</text>
+      <text x="220" y="245">Check event coverage separately</text>
+    </g>
+    <g font-size="16">
+      <text x="220" y="68">S3 metadata signature + AWS public key</text>
+      <text x="113" y="175">Hash uncompressed bytes</text>
+      <text x="327" y="175">Follow path and signature</text>
+      <text x="220" y="269">Selectors, account, Region and times</text>
+    </g>
+  </g>
+</svg>

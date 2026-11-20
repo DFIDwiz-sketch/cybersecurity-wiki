@@ -106,3 +106,7 @@ python3 evidence-hash-lab.py
 ## 백업 복구에 무결성 검사 적용하기
 
 [해시를 대조한 뒤 데이터베이스, 복구 시점과 서비스를 검증합니다]({{ '/ko/wiki/backup-restore-evidence/' | relative_url }})
+
+## CloudTrail 로그 보관소 검증하기
+
+[서명된 다이제스트로 전달 로그를 검증하고 수집 공백을 기록합니다]({{ '/ko/wiki/cloudtrail-log-integrity/' | relative_url }})

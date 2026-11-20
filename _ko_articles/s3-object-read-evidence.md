@@ -85,7 +85,7 @@ python3 s3-read-review.py
 
 **완료 기준.** 버킷, 키, 요청 ID, 기록에 나타난 세션, 응답 상태, S3가 보고한 전송량을 한 건의 조사 기록으로 작성하세요. 불확실한 점 한 가지와 확인할 자료를 적으면 완료입니다.
 
-[이전 · AWS IAM 역할과 CloudTrail]({{ '/ko/wiki/aws-iam-role-evidence/' | relative_url }}) · [관련 · 디지털 증거 보존]({{ '/ko/wiki/evidence-preservation/' | relative_url }})
+[이전 · AWS IAM 역할과 CloudTrail]({{ '/ko/wiki/aws-iam-role-evidence/' | relative_url }}) · [다음 · CloudTrail 로그 무결성]({{ '/ko/wiki/cloudtrail-log-integrity/' | relative_url }}) · [관련 · 디지털 증거 보존]({{ '/ko/wiki/evidence-preservation/' | relative_url }})
 
 ## 공식 참고자료
 

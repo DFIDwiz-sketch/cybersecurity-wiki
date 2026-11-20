@@ -85,7 +85,7 @@ Expect `Paired successful GET bytes in this fixture: 13312`. This is the sum for
 
 **Completion.** Write one investigation entry with the bucket, key, request ID, apparent session, response status and bytes S3 reported sending. State a remaining uncertainty and name the source you would consult to resolve it.
 
-[Previous · AWS IAM roles and CloudTrail]({{ '/wiki/aws-iam-role-evidence/' | relative_url }}) · [Related · Evidence preservation]({{ '/wiki/evidence-preservation/' | relative_url }})
+[Previous · AWS IAM roles and CloudTrail]({{ '/wiki/aws-iam-role-evidence/' | relative_url }}) · [Next · CloudTrail log integrity]({{ '/wiki/cloudtrail-log-integrity/' | relative_url }}) · [Related · Evidence preservation]({{ '/wiki/evidence-preservation/' | relative_url }})
 
 ## Official references
 
