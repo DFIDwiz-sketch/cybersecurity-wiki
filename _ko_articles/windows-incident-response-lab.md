@@ -278,3 +278,7 @@ APP01·WS02 차단, 신원 대응 완료, 파일 내용 검증, 텔레메트리 
 ## 디지털 증거 보존 · SHA-256과 인계 기록
 
 [로그 원본과 작업 사본을 검증하는 실습]({{ '/ko/wiki/evidence-preservation/' | relative_url }})
+
+## Velociraptor 엔드포인트 수집
+
+[네트워크 단서에서 검증된 호스트 증거까지]({{ '/ko/wiki/endpoint-collection-evidence/' | relative_url }})

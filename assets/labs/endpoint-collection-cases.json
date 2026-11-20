@@ -1,0 +1,220 @@
+{
+  "cases": [
+    {
+      "id": "C01",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": false,
+        "flow": "F.lab.C01"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "complete",
+        "coverage": "verified",
+        "rows": 2,
+        "files": 0,
+        "delivery": "not_required",
+        "flow": "F.lab.C01"
+      }
+    },
+    {
+      "id": "C02",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": false,
+        "flow": "F.lab.C02"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "complete",
+        "coverage": "verified",
+        "rows": 0,
+        "files": 0,
+        "delivery": "not_required",
+        "flow": "F.lab.C02"
+      }
+    },
+    {
+      "id": "C03",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": false,
+        "flow": "F.lab.C03"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "queued",
+        "coverage": "unchecked",
+        "rows": null,
+        "files": null,
+        "delivery": "not_required",
+        "flow": "F.lab.C03"
+      }
+    },
+    {
+      "id": "C04",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": false,
+        "flow": "F.lab.C04"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "complete",
+        "coverage": "precondition_skipped",
+        "rows": 0,
+        "files": 0,
+        "delivery": "not_required",
+        "flow": "F.lab.C04"
+      }
+    },
+    {
+      "id": "C05",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": false,
+        "flow": "F.lab.C05"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "timeout",
+        "coverage": "unchecked",
+        "rows": 1,
+        "files": 0,
+        "delivery": "not_required",
+        "flow": "F.lab.C05"
+      }
+    },
+    {
+      "id": "C06",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 1,
+        "require_delivery": false,
+        "flow": "F.lab.C06"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "complete",
+        "coverage": "verified",
+        "rows": 1,
+        "files": 0,
+        "delivery": "not_required",
+        "flow": "F.lab.C06"
+      }
+    },
+    {
+      "id": "C07",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": false,
+        "flow": "F.lab.C07"
+      },
+      "observed": {
+        "org": "other-training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "complete",
+        "coverage": "verified",
+        "rows": 2,
+        "files": 0,
+        "delivery": "not_required",
+        "flow": "F.lab.C07"
+      }
+    },
+    {
+      "id": "C08",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": true,
+        "flow": "F.lab.C08"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "complete",
+        "coverage": "verified",
+        "rows": 2,
+        "files": 0,
+        "delivery": "not_found",
+        "flow": "F.lab.C08"
+      }
+    },
+    {
+      "id": "C09",
+      "expected": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "historical_window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "min_files": 0,
+        "require_delivery": false,
+        "flow": "F.lab.C09"
+      },
+      "observed": {
+        "org": "training",
+        "client": "C.lab-01",
+        "source": "training-event-log",
+        "window": "2030-06-12T10:00:00Z/2030-06-12T10:05:00Z",
+        "state": "complete",
+        "coverage": "retention_gap",
+        "rows": 0,
+        "files": 0,
+        "delivery": "not_required",
+        "flow": "F.lab.C09"
+      }
+    }
+  ]
+}

@@ -278,3 +278,7 @@ Review [Kerberos]({{ '/wiki/kerberos-authentication/' | relative_url }}), [NTLM]
 ## Preserving Digital Evidence · SHA-256 and Custody
 
 [Verify acquired logs and working copies in the evidence lab]({{ '/wiki/evidence-preservation/' | relative_url }})
+
+## Velociraptor Endpoint Collection
+
+[Go from a network lead to reviewed host evidence]({{ '/wiki/endpoint-collection-evidence/' | relative_url }})

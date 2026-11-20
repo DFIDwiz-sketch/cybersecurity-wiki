@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="368" viewBox="0 0 440 368" role="img" aria-labelledby="title description" xml:lang="ko" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">네트워크 경보에서 수집 결과 검토까지</title>
+  <desc id="description">네트워크 단서와 엔드포인트 식별자를 확인합니다. 원본과 시간 범위를 정한 뒤 서버에서 수집 실행과 원본의 포함 범위를 확인합니다. 원본 보존과 SIEM 도착도 별도로 점검합니다.</desc>
+  <rect width="440" height="368" rx="12" fill="#0e1928"/>
+  <g transform="translate(9 12)">
+    <rect width="422" height="68" rx="10" fill="#1e3048" stroke="#a3ccfc" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">1. 네트워크 단서 확인</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">시각·센서·장치 후보 기록</text>
+  </g>
+  <path d="M220 85v15m-5-5 5 5 5-5" fill="none" stroke="#aecff5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 104)">
+    <rect width="422" height="68" rx="10" fill="#1e3048" stroke="#a3ccfc" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">2. 엔드포인트 수집 범위 지정</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">조직·클라이언트·아티팩트·시간</text>
+  </g>
+  <path d="M220 177v15m-5-5 5 5 5-5" fill="none" stroke="#aecff5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 196)">
+    <rect width="422" height="68" rx="10" fill="#1e3048" stroke="#a3ccfc" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">3. 수집 서버에서 결과 확인</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">실행·원본 범위·행·파일 점검</text>
+  </g>
+  <path d="M220 269v15m-5-5 5 5 5-5" fill="none" stroke="#aecff5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 288)">
+    <rect width="422" height="68" rx="10" fill="#124039" stroke="#8ce9d1" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">4. 원본 보존과 전달 확인</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">원본 저장 후 SIEM 도착 대조</text>
+  </g>
+</svg>

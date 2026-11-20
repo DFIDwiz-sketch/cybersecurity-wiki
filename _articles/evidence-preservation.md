@@ -98,3 +98,7 @@ Reviewed 20 November 2026. The 2006 NIST guide provides acquisition foundations.
 - [NIST SP 800-61 Rev. 3 · Incident response, April 2025](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
 - [NIST FIPS 180-4 · Secure Hash Standard, August 2015](https://csrc.nist.gov/pubs/fips/180-4/upd1/final)
 - [Python 3.12 · hashlib and file_digest](https://docs.python.org/3.12/library/hashlib.html)
+
+## Velociraptor Endpoint Collection
+
+[Go from a network lead to reviewed host evidence]({{ '/wiki/endpoint-collection-evidence/' | relative_url }})

@@ -202,3 +202,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## DHCPv4 임대와 IP 주소 조사
 
 [임대 이력으로 주소가 가리키는 장치 후보 좁히기]({{ '/ko/wiki/dhcp-lease-evidence/' | relative_url }})
+
+## Velociraptor 엔드포인트 수집
+
+[네트워크 단서에서 검증된 호스트 증거까지]({{ '/ko/wiki/endpoint-collection-evidence/' | relative_url }})

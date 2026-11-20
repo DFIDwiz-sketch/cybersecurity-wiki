@@ -202,3 +202,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## DHCPv4 Lease Evidence and IP Address Investigation
 
 [Use lease history to narrow the device candidates behind an address]({{ '/wiki/dhcp-lease-evidence/' | relative_url }})
+
+## Velociraptor Endpoint Collection
+
+[Go from a network lead to reviewed host evidence]({{ '/wiki/endpoint-collection-evidence/' | relative_url }})

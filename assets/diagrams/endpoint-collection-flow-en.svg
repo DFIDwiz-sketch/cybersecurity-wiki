@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="368" viewBox="0 0 440 368" role="img" aria-labelledby="title description" xml:lang="en" font-family="system-ui, sans-serif" text-anchor="middle">
+  <title id="title">From a network alert to a reviewed collection</title>
+  <desc id="description">Confirm the network lead and endpoint identity. Choose a source and time range. Check collection and source coverage on the server, then check preservation and downstream SIEM delivery separately.</desc>
+  <rect width="440" height="368" rx="12" fill="#0e1928"/>
+  <g transform="translate(9 12)">
+    <rect width="422" height="68" rx="10" fill="#1e3048" stroke="#a3ccfc" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">1. Validate the network lead</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">Record time, sensor and endpoint candidate</text>
+  </g>
+  <path d="M220 85v15m-5-5 5 5 5-5" fill="none" stroke="#aecff5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 104)">
+    <rect width="422" height="68" rx="10" fill="#1e3048" stroke="#a3ccfc" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">2. Scope endpoint collection</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">Org, client, artifact and time window</text>
+  </g>
+  <path d="M220 177v15m-5-5 5 5 5-5" fill="none" stroke="#aecff5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 196)">
+    <rect width="422" height="68" rx="10" fill="#1e3048" stroke="#a3ccfc" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">3. Review the collection on the server</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">Check execution, source, rows and files</text>
+  </g>
+  <path d="M220 269v15m-5-5 5 5 5-5" fill="none" stroke="#aecff5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(9 288)">
+    <rect width="422" height="68" rx="10" fill="#124039" stroke="#8ce9d1" stroke-width="2"/>
+    <text x="211" y="28" font-size="20" font-weight="700" fill="#f5f8ff">4. Preserve and verify delivery</text>
+    <text x="211" y="52" font-size="17" fill="#dae9fb">Save raw evidence and check SIEM receipt</text>
+  </g>
+</svg>
