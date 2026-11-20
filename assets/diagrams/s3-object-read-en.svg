@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="295" viewBox="0 0 440 295" role="img" aria-labelledby="title desc">
+  <title id="title">Correlate one S3 request</title>
+  <desc id="desc">An object request can be recorded in CloudTrail and in server access logs. Compare the request ID, scope and outcome.</desc>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#325977"/></marker></defs>
+  <rect x="1" y="1" width="438" height="293" rx="17" fill="#f6f9fd" stroke="#adc6da"/>
+  <g fill="none" stroke="#325977" stroke-width="2.7" marker-end="url(#arrow)">
+    <path d="M220 64V83H111V107"/><path d="M220 64V83H329V107"/>
+    <path d="M111 175V190H220V218"/><path d="M329 175V190H220V218"/>
+  </g>
+  <g fill="#e1effa" stroke="#7b9bb4">
+    <rect x="126" y="18" width="188" height="45" rx="9"/>
+    <rect x="19" y="109" width="184" height="64" rx="9"/>
+    <rect x="237" y="109" width="184" height="64" rx="9"/>
+    <rect x="105" y="220" width="230" height="55" rx="9"/>
+  </g>
+  <g fill="#143650" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">
+    <text x="220" y="47" font-weight="bold">S3 object request</text>
+    <text x="111" y="135" font-weight="bold">CloudTrail</text><text x="111" y="158" font-size="16">Session and API</text>
+    <text x="329" y="135" font-weight="bold">S3 access log</text><text x="329" y="158" font-size="16">Status and bytes</text>
+    <text x="220" y="242" font-weight="bold">Match request ID</text><text x="220" y="263" font-size="15">Check key, operation and time</text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+request_id,event_time_utc,bucket,object_key,operation,session_label,error_code
+LAB-01,2026-11-20T11:01:00Z,wiki-training,reports/daily.csv,GetObject,report-reader/session-a,
+LAB-02,2026-11-20T11:02:00Z,wiki-training,reports/daily.csv,GetObject,report-reader/session-a,
+LAB-03,2026-11-20T11:03:00Z,wiki-training,reports/private.csv,GetObject,report-reader/session-a,AccessDenied
+LAB-04,2026-11-20T11:04:00Z,wiki-training,reports/summary.csv,GetObject,report-reader/session-a,
+LAB-06,2026-11-20T11:06:00Z,wiki-training,reports/meta.csv,HeadObject,report-reader/session-a,
+LAB-07,2026-11-20T11:07:00Z,wiki-training,reports/weekly.csv,GetObject,report-reader/session-a,
+LAB-08,2026-11-20T11:08:00Z,wiki-training,reports/archive.csv,GetObject,report-reader/session-a,
+LAB-09,2026-11-20T11:09:00Z,wiki-training,reports/a.csv,GetObject,report-reader/session-a,
+LAB-10,2026-11-20T11:10:00Z,wiki-training,reports/empty.csv,GetObject,report-reader/session-a,

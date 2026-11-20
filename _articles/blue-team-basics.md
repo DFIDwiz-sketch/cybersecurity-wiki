@@ -46,3 +46,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 ## Check Vulnerability Scope with SBOM and VEX
 
 [Match a deployed build to its inventory and investigate ten synthetic alerts]({{ '/wiki/sbom-vex-evidence/' | relative_url }})
+
+## Investigate Amazon S3 Object Reads and Bytes Sent
+
+[Pair a role session's S3 request with the server-side response]({{ '/wiki/s3-object-read-evidence/' | relative_url }})

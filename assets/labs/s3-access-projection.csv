@@ -1,0 +1,12 @@
+request_id,request_time_utc,bucket,object_key,operation,http_status,bytes_sent,object_size
+LAB-01,2026-11-20T11:01:00Z,wiki-training,reports/daily.csv,REST.GET.OBJECT,200,8192,8192
+LAB-02,2026-11-20T11:02:00Z,wiki-training,reports/daily.csv,REST.GET.OBJECT,206,1024,8192
+LAB-03,2026-11-20T11:03:00Z,wiki-training,reports/private.csv,REST.GET.OBJECT,403,214,-
+LAB-05,2026-11-20T11:05:00Z,wiki-training,reports/summary.csv,REST.GET.OBJECT,200,2048,2048
+LAB-06,2026-11-20T11:06:00Z,wiki-training,reports/meta.csv,REST.HEAD.OBJECT,200,-,800
+LAB-07,2026-11-20T11:07:00Z,wiki-training,reports/weekly.csv,REST.GET.OBJECT,200,4096,4096
+LAB-07,2026-11-20T11:07:00Z,wiki-training,reports/weekly.csv,REST.GET.OBJECT,200,4096,4096
+LAB-08,2026-11-20T11:08:00Z,wiki-training,reports/archive.csv,REST.GET.OBJECT,200,512,512
+LAB-08,2026-11-20T11:08:00Z,wiki-training,reports/archive.csv,REST.GET.OBJECT,206,128,512
+LAB-09,2026-11-20T11:09:00Z,wiki-training,reports/b.csv,REST.GET.OBJECT,200,128,128
+LAB-10,2026-11-20T11:10:00Z,wiki-training,reports/empty.csv,REST.GET.OBJECT,200,-,0

@@ -133,3 +133,7 @@ lab-04와 lab-06의 발급 주체를 각각 찾고, lab-07을 왜 연결하지 �
 ## Kubernetes API 감사 증거
 
 [Kubernetes API 요청의 신원, 응답과 실제 객체 상태를 확인합니다]({{ '/ko/wiki/kubernetes-audit-evidence/' | relative_url }})
+
+## Amazon S3 객체 읽기와 전송 바이트 조사
+
+[역할 세션의 S3 요청을 액세스 로그와 대조하는 실습]({{ '/ko/wiki/s3-object-read-evidence/' | relative_url }})

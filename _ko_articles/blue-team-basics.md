@@ -46,3 +46,7 @@ updated: "2026-10-17"
 ## SBOM과 VEX로 취약점 적용 범위 확인하기
 
 [실제 배포 빌드부터 공급자 판단까지 대조하는 가상 경보 실습]({{ '/ko/wiki/sbom-vex-evidence/' | relative_url }})
+
+## Amazon S3 객체 읽기와 전송 바이트 조사
+
+[역할 세션의 S3 요청을 액세스 로그와 대조하는 실습]({{ '/ko/wiki/s3-object-read-evidence/' | relative_url }})

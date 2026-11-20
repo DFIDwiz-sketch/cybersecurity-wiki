@@ -133,3 +133,7 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 ## Kubernetes API Audit Evidence
 
 [Follow a Kubernetes API request from the recorded identity to the response and object state]({{ '/wiki/kubernetes-audit-evidence/' | relative_url }})
+
+## Investigate Amazon S3 Object Reads and Bytes Sent
+
+[Pair a role session's S3 request with the server-side response]({{ '/wiki/s3-object-read-evidence/' | relative_url }})
