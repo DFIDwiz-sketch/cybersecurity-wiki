@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="318" viewBox="0 0 360 318" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Linux path and permission investigation</title>
+  <desc id="desc">Start with the process. Review directory search, file rights and other policy evidence.</desc>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#325977"/></marker></defs>
+  <rect x="1" y="1" width="358" height="316" rx="16" fill="#f6f9fd" stroke="#adc6da"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143650">
+  <rect x="26" y="16" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="41" font-size="20" font-weight="bold">Identify the caller</text>
+  <text x="180" y="62" font-size="16">Filesystem IDs, groups and view</text>
+  <path d="M180 75v16" stroke="#325977" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="26" y="92" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="117" font-size="20" font-weight="bold">Check each directory</text>
+  <text x="180" y="138" font-size="16">Search permission on the path</text>
+  <path d="M180 151v16" stroke="#325977" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="26" y="168" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="193" font-size="20" font-weight="bold">Check the requested operation</text>
+  <text x="180" y="214" font-size="16">Mode, ACL entry and mask</text>
+  <path d="M180 227v16" stroke="#325977" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="26" y="244" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="269" font-size="20" font-weight="bold">Corroborate the outcome</text>
+  <text x="180" y="290" font-size="16">Other policy and audit evidence</text>
+  </g>
+</svg>

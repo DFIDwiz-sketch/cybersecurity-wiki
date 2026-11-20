@@ -110,3 +110,7 @@ Reviewed 20 November 2026. The 2006 NIST guide provides acquisition foundations.
 ## Verify a CloudTrail Log Archive
 
 [Use a signed digest to check delivered logs and document collection gaps]({{ '/wiki/cloudtrail-log-integrity/' | relative_url }})
+
+## Preserve Linux File Permission Evidence
+
+[Check the path, ACL and audit record before changing access.]({{ '/wiki/linux-file-permissions-evidence/' | relative_url }})

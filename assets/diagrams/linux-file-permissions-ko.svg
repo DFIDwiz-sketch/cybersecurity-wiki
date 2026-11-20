@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="318" viewBox="0 0 360 318" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Linux 경로와 권한 조사</title>
+  <desc id="desc">요청 프로세스를 확인하고 디렉터리 탐색, 파일 권한과 별도 정책의 증거를 확인합니다.</desc>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#325977"/></marker></defs>
+  <rect x="1" y="1" width="358" height="316" rx="16" fill="#f6f9fd" stroke="#adc6da"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143650">
+  <rect x="26" y="16" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="41" font-size="20" font-weight="bold">요청 프로세스 확인</text>
+  <text x="180" y="62" font-size="16">파일시스템 ID, 그룹, 마운트 관점</text>
+  <path d="M180 75v16" stroke="#325977" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="26" y="92" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="117" font-size="20" font-weight="bold">상위 디렉터리 확인</text>
+  <text x="180" y="138" font-size="16">경유 경로의 탐색 권한</text>
+  <path d="M180 151v16" stroke="#325977" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="26" y="168" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="193" font-size="20" font-weight="bold">요청한 작업의 권한 확인</text>
+  <text x="180" y="214" font-size="16">파일 모드, ACL 항목과 마스크</text>
+  <path d="M180 227v16" stroke="#325977" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="26" y="244" width="308" height="58" rx="10" fill="#e1effa" stroke="#7b9bb4"/>
+  <text x="180" y="269" font-size="20" font-weight="bold">작업 결과 대조</text>
+  <text x="180" y="290" font-size="16">별도 정책과 감사 증거</text>
+  </g>
+</svg>

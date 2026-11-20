@@ -113,3 +113,7 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 ## Verify Local and Central Linux Journal Coverage
 
 [Compare boot, namespace and cursor evidence to locate collection gaps.]({{ '/wiki/linux-journal-coverage/' | relative_url }})
+
+## Investigate Linux File Permissions
+
+[Apply process credentials to a file access decision.]({{ '/wiki/linux-file-permissions-evidence/' | relative_url }})

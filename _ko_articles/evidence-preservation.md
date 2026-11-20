@@ -110,3 +110,7 @@ python3 evidence-hash-lab.py
 ## CloudTrail 로그 보관소 검증하기
 
 [서명된 다이제스트로 전달 로그를 검증하고 수집 공백을 기록합니다]({{ '/ko/wiki/cloudtrail-log-integrity/' | relative_url }})
+
+## Linux 파일 권한 증거 보존하기
+
+[권한을 바꾸기 전에 경로, ACL과 감사 기록을 확인합니다.]({{ '/ko/wiki/linux-file-permissions-evidence/' | relative_url }})
