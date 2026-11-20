@@ -129,3 +129,7 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 ## Microsoft Entra Sign-in Investigation · MFA and Conditional Access
 
 [Entra sign-in and resource evidence lab]({{ '/wiki/entra-signin-evidence/' | relative_url }})
+
+## Kubernetes API Audit Evidence
+
+[Follow a Kubernetes API request from the recorded identity to the response and object state]({{ '/wiki/kubernetes-audit-evidence/' | relative_url }})

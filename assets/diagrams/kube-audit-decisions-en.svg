@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="410" viewBox="0 0 440 410" role="img" aria-labelledby="title description" lang="en">
+  <title id="title">Request decisions and audit evidence</title>
+  <desc id="description">Authentication identifies the caller. Authorization evaluates permission. Allowed writes can then be checked by admission and reach storage. A dry run returns a response without saving the object.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#5ee7c2"/>
+    </marker>
+  </defs>
+  <rect width="440" height="410" rx="18" fill="#111b27"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+  <rect x="70" y="16" width="300" height="58" rx="11" fill="#1c2b3c" stroke="#6c91ad"/>
+  <text x="220.0" y="41" font-size="19" font-weight="650" fill="#f1f6fc">Authentication</text>
+  <text x="220.0" y="62" font-size="16" fill="#b9d8e9">Who is calling?</text>
+  <rect x="70" y="103" width="300" height="58" rx="11" fill="#1c2b3c" stroke="#6c91ad"/>
+  <text x="220.0" y="128" font-size="19" font-weight="650" fill="#f1f6fc">Authorization</text>
+  <text x="220.0" y="149" font-size="16" fill="#b9d8e9">May this caller do this?</text>
+  <rect x="70" y="207" width="300" height="58" rx="11" fill="#1c2b3c" stroke="#6c91ad"/>
+  <text x="220.0" y="232" font-size="19" font-weight="650" fill="#f1f6fc">Admission and validation</text>
+  <text x="220.0" y="253" font-size="16" fill="#b9d8e9">Can the requested write proceed?</text>
+  <rect x="11" y="326" width="199" height="67" rx="11" fill="#1c2b3c" stroke="#6c91ad"/>
+  <text x="110.5" y="351" font-size="19" font-weight="650" fill="#f1f6fc">Persist to storage</text>
+  <text x="110.5" y="372" font-size="16" fill="#b9d8e9">Regular accepted write</text>
+  <rect x="230" y="326" width="199" height="67" rx="11" fill="#1c2b3c" stroke="#6c91ad"/>
+  <text x="329.5" y="351" font-size="19" font-weight="650" fill="#f1f6fc">Return a result</text>
+  <text x="329.5" y="372" font-size="16" fill="#b9d8e9">Dry run skips storage</text>
+  <text x="296" y="190" font-size="16" fill="#b3ffe9">Allowed write</text>
+  </g>
+  <g fill="none" stroke="#5ee7c2" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M 220 75 V 101"/>
+    <path d="M 220 162 V 205"/>
+    <path d="M 195 266 V 293 H 111 V 324"/>
+    <path d="M 245 266 V 293 H 329 V 324"/>
+  </g>
+</svg>

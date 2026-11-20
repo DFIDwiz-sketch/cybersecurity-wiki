@@ -129,3 +129,7 @@ lab-04와 lab-06의 발급 주체를 각각 찾고, lab-07을 왜 연결하지 �
 ## Microsoft Entra 로그인 조사 · MFA와 조건부 액세스
 
 [Entra 로그인과 실제 리소스 행위를 구분하는 실습]({{ '/ko/wiki/entra-signin-evidence/' | relative_url }})
+
+## Kubernetes API 감사 증거
+
+[Kubernetes API 요청의 신원, 응답과 실제 객체 상태를 확인합니다]({{ '/ko/wiki/kubernetes-audit-evidence/' | relative_url }})

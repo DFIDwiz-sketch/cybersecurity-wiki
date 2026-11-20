@@ -105,3 +105,7 @@ python3 detection-validation.py
 ## Windows 이벤트 전달 경로 확인
 
 [원본·구독·수집기·SIEM의 공백을 구별하는 실습]({{ '/ko/wiki/wef-delivery-evidence/' | relative_url }})
+
+## Kubernetes API 감사 로그 검증
+
+[감사 로그에서 인가, 서버 미리보기, 일반 쓰기 결과를 구분합니다]({{ '/ko/wiki/kubernetes-audit-evidence/' | relative_url }})

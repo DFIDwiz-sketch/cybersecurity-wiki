@@ -105,3 +105,7 @@ Reviewed 20 November 2026. Verify dashboards and scheduled searches against the 
 ## Verify Windows Event Forwarding Delivery
 
 [Distinguish source, subscription, collector and SIEM gaps]({{ '/wiki/wef-delivery-evidence/' | relative_url }})
+
+## Validate Kubernetes API Audit Evidence
+
+[Distinguish authorization, server-side previews and completed writes in the audit stream]({{ '/wiki/kubernetes-audit-evidence/' | relative_url }})
