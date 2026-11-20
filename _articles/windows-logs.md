@@ -26,3 +26,7 @@ Whether an event is recorded depends on the system's audit policy. Avoid drawing
 ## Investigate Windows Security Group Changes
 
 [Compare membership, logon and resource evidence without joining unrelated hosts]({{ '/wiki/ad-group-membership-evidence/' | relative_url }})
+
+## Distinguish Share Checks from NTFS File Evidence
+
+[Use eight synthetic cases to distinguish the share check from the access right used.]({{ '/wiki/smb-file-audit-evidence/' | relative_url }})

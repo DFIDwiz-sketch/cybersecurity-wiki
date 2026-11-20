@@ -264,3 +264,7 @@ Microsoft's Windows 11 24H2 and Windows Server 2025 have improved SMB signing de
 - [Microsoft: Event 5140](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5140)
 - [Related: WPAD Security]({{ '/wiki/wpad-security/' | relative_url }})
 - [Related: Kerberoasting]({{ '/wiki/kerberoasting/' | relative_url }})
+
+## Distinguish Share Checks from NTFS File Evidence
+
+[Use eight synthetic cases to distinguish the share check from the access right used.]({{ '/wiki/smb-file-audit-evidence/' | relative_url }})

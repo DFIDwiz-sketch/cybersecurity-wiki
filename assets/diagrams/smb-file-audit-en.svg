@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="302" viewBox="0 0 440 302" role="img" aria-labelledby="title desc">
+  <title id="title">Windows SMB and NTFS access evidence</title>
+  <desc id="desc">The server records network logon context. Share and file-system checks can each deny access. NTFS records audited use of a granted right.</desc>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#2c5370"/></marker></defs>
+  <rect x="1" y="1" width="438" height="300" rx="16" fill="#f4f8fc" stroke="#a9c3d8"/>
+  <g fill="none" stroke="#2c5370" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M134 62V88"/><path d="M134 133V159"/><path d="M134 204V230"/><path d="M249 111H278"/><path d="M249 182H278"/>
+  </g>
+  <g fill="#deedf8" stroke="#7299b5">
+    <rect x="20" y="20" width="228" height="41" rx="8"/><rect x="20" y="91" width="228" height="41" rx="8"/><rect x="20" y="162" width="228" height="41" rx="8"/><rect x="20" y="233" width="228" height="41" rx="8"/>
+  </g>
+  <g fill="#f5e6d9" stroke="#aa8266"><rect x="281" y="91" width="140" height="41" rx="8"/><rect x="281" y="162" width="140" height="41" rx="8"/></g>
+  <g fill="#143650" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold">
+    <text x="134" y="46">Network logon · 4624</text><text x="134" y="117">Share check · 5145</text><text x="134" y="188">Handle request · 4656</text><text x="134" y="259">Access right used · 4663</text>
+    <text x="351" y="117">Share denied</text><text x="351" y="188">NTFS denied</text>
+  </g>
+</svg>

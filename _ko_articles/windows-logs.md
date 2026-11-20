@@ -26,3 +26,7 @@ updated: "2026-10-17"
 ## Windows 보안 그룹 변경 조사
 
 [그룹 변경, 로그인과 자원 접근 기록을 같은 장비와 세션 범위에서 대조합니다]({{ '/ko/wiki/ad-group-membership-evidence/' | relative_url }})
+
+## Windows 파일 공유와 NTFS 감사 증거 대조하기
+
+[공유 검사와 파일 권한 사용을 가상 이벤트 여덟 건으로 구분합니다.]({{ '/ko/wiki/smb-file-audit-evidence/' | relative_url }})

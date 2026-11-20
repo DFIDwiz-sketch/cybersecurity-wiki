@@ -282,3 +282,7 @@ Windows 11 24H2 및 Windows Server 2025에는 Signing 관련 기본 보안 강�
 - [Microsoft: Event ID 5140](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5140)
 - [관련 문서: WPAD 보안]({{ '/ko/wiki/wpad-security/' | relative_url }})
 - [관련 문서: Kerberoasting]({{ '/ko/wiki/kerberoasting/' | relative_url }})
+
+## Windows 파일 공유와 NTFS 감사 증거 대조하기
+
+[공유 검사와 파일 권한 사용을 가상 이벤트 여덟 건으로 구분합니다.]({{ '/ko/wiki/smb-file-audit-evidence/' | relative_url }})
