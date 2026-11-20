@@ -222,3 +222,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## 실제 통신 손실과 캡처 누락 구분하기
 
 [동일한 연결의 PCAP 두 개를 비교해 누락된 TCP 바이트와 ACK를 확인합니다.]({{ '/ko/wiki/capture-visibility/' | relative_url }})
+
+## IPv6 라우터 광고와 단말 설정 대조
+
+[기본 경로, 접두사와 DNS 변경을 패킷과 단말 기록으로 확인합니다.]({{ '/ko/wiki/ipv6-router-advertisement-evidence/' | relative_url }})

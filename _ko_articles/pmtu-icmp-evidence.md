@@ -97,3 +97,7 @@ P03, P04, P08의 차이를 설명하고 한 사례에 대해 수집 지점, 관�
 - [RFC 8200 §5 · IPv6 패킷 크기, 2017년 7월](https://www.rfc-editor.org/rfc/rfc8200.html#section-5) · [RFC 9293 §3.7 · TCP 세그먼트, 2022년 8월](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.7)
 - [RFC 8899 · 데이터그램 전송의 패킷화 계층 MTU 탐색, 2020년 9월](https://www.rfc-editor.org/rfc/rfc8899.html)
 - [Wireshark 4.6.10 레퍼런스 · ICMP](https://www.wireshark.org/docs/dfref/i/icmp.html) · [ICMPv6](https://www.wireshark.org/docs/dfref/i/icmpv6.html) · [캡처 오프로딩](https://wiki.wireshark.org/CaptureSetup/Offloading)
+
+## IPv6 라우터 광고와 단말 설정 대조
+
+[기본 경로, 접두사와 DNS 변경을 패킷과 단말 기록으로 확인합니다.]({{ '/ko/wiki/ipv6-router-advertisement-evidence/' | relative_url }})

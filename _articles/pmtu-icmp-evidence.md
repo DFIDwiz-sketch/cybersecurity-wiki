@@ -97,3 +97,7 @@ Reviewed 20 November 2026. RFC 2923 documents historical failure patterns. Use t
 - [RFC 8200 §5 · IPv6 packet size, July 2017](https://www.rfc-editor.org/rfc/rfc8200.html#section-5) · [RFC 9293 §3.7 · TCP segmentation, August 2022](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.7)
 - [RFC 8899 · Datagram packetization-layer PMTU discovery, September 2020](https://www.rfc-editor.org/rfc/rfc8899.html)
 - [Wireshark 4.6.10 reference · ICMP](https://www.wireshark.org/docs/dfref/i/icmp.html) · [ICMPv6](https://www.wireshark.org/docs/dfref/i/icmpv6.html) · [Capture offloading](https://wiki.wireshark.org/CaptureSetup/Offloading)
+
+## Investigate IPv6 Router Advertisements
+
+[Compare the advertised route, prefix and DNS settings with endpoint evidence.]({{ '/wiki/ipv6-router-advertisement-evidence/' | relative_url }})
