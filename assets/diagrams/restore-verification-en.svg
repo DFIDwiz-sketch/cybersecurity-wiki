@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="332" viewBox="0 0 440 332" role="img" lang="en" aria-labelledby="title desc">
+  <title id="title">Test an isolated restore</title>
+  <desc id="desc">Choose a supported recovery point and restore into isolation. Verify the bytes and structure, then check the data and service. Approve return only if recovery criteria are met.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#65e4c6"/>
+    </marker>
+  </defs>
+  <rect width="440" height="332" rx="17" fill="#111b27"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="36" y="14" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="38" font-size="19" font-weight="650" fill="#f0f6fc">Choose a recovery point</text>
+    <text x="220" y="59" font-size="16" fill="#b8dbea">Use independent evidence</text>
+    <rect x="36" y="96" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="120" font-size="19" font-weight="650" fill="#f0f6fc">Restore in isolation</text>
+    <text x="220" y="141" font-size="16" fill="#b8dbea">Keep the original copy</text>
+    <rect x="36" y="178" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="202" font-size="19" font-weight="650" fill="#f0f6fc">Verify the restored data</text>
+    <text x="220" y="223" font-size="16" fill="#b8dbea">Bytes, structure, freshness and content</text>
+    <rect x="36" y="260" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="284" font-size="19" font-weight="650" fill="#f0f6fc">Approve service recovery</text>
+    <text x="220" y="305" font-size="16" fill="#b8dbea">Test the workflow and measure time</text>
+  </g>
+  <g stroke="#65e4c6" stroke-width="2.4" fill="none">
+    <path d="M 220 72 V 94" marker-end="url(#arrow)"/>
+    <path d="M 220 154 V 176" marker-end="url(#arrow)"/>
+    <path d="M 220 236 V 258" marker-end="url(#arrow)"/>
+  </g>
+</svg>

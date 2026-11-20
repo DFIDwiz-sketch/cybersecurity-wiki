@@ -102,3 +102,7 @@ Reviewed 20 November 2026. The 2006 NIST guide provides acquisition foundations.
 ## Velociraptor Endpoint Collection
 
 [Go from a network lead to reviewed host evidence]({{ '/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## Apply Integrity Checks to Backup Recovery
+
+[Follow a matching digest with database, checkpoint and service checks]({{ '/wiki/backup-restore-evidence/' | relative_url }})

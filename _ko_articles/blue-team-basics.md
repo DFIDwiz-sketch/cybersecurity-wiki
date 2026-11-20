@@ -38,3 +38,7 @@ updated: "2026-10-17"
 ## Microsoft Entra 로그인 조사 · MFA와 조건부 액세스
 
 [Entra 로그인과 실제 리소스 행위를 구분하는 실습]({{ '/ko/wiki/entra-signin-evidence/' | relative_url }})
+
+## 백업 복구 검증
+
+[복원 실습으로 서비스 재개를 뒷받침하는 근거를 확인합니다]({{ '/ko/wiki/backup-restore-evidence/' | relative_url }})

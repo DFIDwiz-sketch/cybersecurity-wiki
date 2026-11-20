@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="332" viewBox="0 0 440 332" role="img" lang="ko" aria-labelledby="title desc">
+  <title id="title">격리된 환경에서 복구 검증</title>
+  <desc id="desc">근거가 있는 복구 시점을 골라 격리된 환경에 복원합니다. 바이트와 구조, 데이터와 서비스를 검사한 다음 기준을 충족하면 재개를 승인합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#65e4c6"/>
+    </marker>
+  </defs>
+  <rect width="440" height="332" rx="17" fill="#111b27"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="36" y="14" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="38" font-size="19" font-weight="650" fill="#f0f6fc">복구할 시점 선택</text>
+    <text x="220" y="59" font-size="16" fill="#b8dbea">독립적인 자료로 확인</text>
+    <rect x="36" y="96" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="120" font-size="19" font-weight="650" fill="#f0f6fc">격리 환경에 복원</text>
+    <text x="220" y="141" font-size="16" fill="#b8dbea">원본 사본 보존</text>
+    <rect x="36" y="178" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="202" font-size="19" font-weight="650" fill="#f0f6fc">복원된 데이터 검증</text>
+    <text x="220" y="223" font-size="16" fill="#b8dbea">바이트·구조·최신성·내용</text>
+    <rect x="36" y="260" width="368" height="57" rx="11" fill="#1c2c3e" stroke="#7096b2"/>
+    <text x="220" y="284" font-size="19" font-weight="650" fill="#f0f6fc">서비스 재개 승인</text>
+    <text x="220" y="305" font-size="16" fill="#b8dbea">업무 흐름 시험과 소요 시간 측정</text>
+  </g>
+  <g stroke="#65e4c6" stroke-width="2.4" fill="none">
+    <path d="M 220 72 V 94" marker-end="url(#arrow)"/>
+    <path d="M 220 154 V 176" marker-end="url(#arrow)"/>
+    <path d="M 220 236 V 258" marker-end="url(#arrow)"/>
+  </g>
+</svg>

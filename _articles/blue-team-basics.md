@@ -38,3 +38,7 @@ Blue Teams protect systems through a continuous cycle: **visibility → detectio
 ## Microsoft Entra Sign-in Investigation · MFA and Conditional Access
 
 [Entra sign-in and resource evidence lab]({{ '/wiki/entra-signin-evidence/' | relative_url }})
+
+## Verify Backup Recovery
+
+[Test a restore and measure what it supports before reopening the service]({{ '/wiki/backup-restore-evidence/' | relative_url }})

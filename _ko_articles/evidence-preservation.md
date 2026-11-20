@@ -102,3 +102,7 @@ python3 evidence-hash-lab.py
 ## Velociraptor 엔드포인트 수집
 
 [네트워크 단서에서 검증된 호스트 증거까지]({{ '/ko/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## 백업 복구에 무결성 검사 적용하기
+
+[해시를 대조한 뒤 데이터베이스, 복구 시점과 서비스를 검증합니다]({{ '/ko/wiki/backup-restore-evidence/' | relative_url }})
