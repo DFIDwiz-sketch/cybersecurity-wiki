@@ -226,3 +226,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## DNSSEC 검증과 SERVFAIL 조사
 
 [부모 DS와 자식 DNSKEY에서 응답 서명까지 대조하는 실습]({{ '/ko/wiki/dnssec-validation-evidence/' | relative_url }})
+
+## 이어서 읽기
+
+[DNS 부정 캐시 입문]({{ '/ko/wiki/dns-negative-cache-evidence/' | relative_url }}) · 권한 서버의 변경이 클라이언트에 늦게 보일 때 SOA TTL과 해석 실패 기록을 비교합니다.

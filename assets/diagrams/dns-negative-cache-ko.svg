@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="396" viewBox="0 0 400 396" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">DNS 부정 캐시와 복구</title>
+  <desc id="desc">리졸버는 범위를 정해 부정 응답이나 실패를 저장합니다. 같은 범위의 질의에는 만료 전까지 저장한 결과를 반환합니다. 이후 새 질의가 수정된 응답을 받을 수 있습니다.</desc>
+  <rect width="400" height="396" rx="16" fill="#eff6ff"/>
+  <g font-family="system-ui,sans-serif" fill="#112539">
+    <rect x="13" y="14" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="42" font-size="21" font-weight="700">1. 리졸버가 업스트림에 질의</text>
+    <text x="29" y="69" font-size="18">부재 응답을 받거나 해석에 실패</text>
+    <path d="M200 93v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="115" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="143" font-size="21" font-weight="700">2. 결과를 캐시에 저장</text>
+    <text x="29" y="170" font-size="18">결과의 종류에 따라 범위가 달라짐</text>
+    <path d="M200 194v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="216" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="244" font-size="21" font-weight="700">3. 같은 범위의 질의가 도착</text>
+    <text x="29" y="271" font-size="18">만료까지 저장한 결과를 반환</text>
+    <path d="M200 295v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="317" width="374" height="73" rx="10" fill="#dcfce7" stroke="#405b75"/>
+    <text x="29" y="345" font-size="21" font-weight="700">4. 캐시 항목 만료</text>
+    <text x="29" y="372" font-size="18">새 질의가 수정된 응답을 받을 수 있음</text>
+  </g>
+</svg>

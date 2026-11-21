@@ -1,0 +1,265 @@
+{
+  "description": "Synthetic, preclassified upstream outcomes. Each scenario starts with an empty cache.",
+  "scenarios": [
+    {
+      "id": "N1-name-scope",
+      "steps": [
+        {
+          "second": 0,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "NXDOMAIN",
+            "soa": {
+              "record_ttl": 300,
+              "minimum": 60
+            }
+          },
+          "expect": [
+            "NXDOMAIN",
+            "upstream",
+            60
+          ]
+        },
+        {
+          "second": 20,
+          "name": "portal.lab.example.",
+          "type": "AAAA",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "NXDOMAIN",
+            "cache",
+            40
+          ]
+        },
+        {
+          "second": 59,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "NXDOMAIN",
+            "cache",
+            1
+          ]
+        },
+        {
+          "second": 60,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "ANSWER",
+            "upstream",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N2-type-scope",
+      "steps": [
+        {
+          "second": 0,
+          "name": "portal.lab.example.",
+          "type": "AAAA",
+          "upstream": {
+            "kind": "NODATA",
+            "soa": {
+              "record_ttl": 40,
+              "minimum": 90
+            }
+          },
+          "expect": [
+            "NODATA",
+            "upstream",
+            40
+          ]
+        },
+        {
+          "second": 10,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "ANSWER",
+            "upstream",
+            null
+          ]
+        },
+        {
+          "second": 10,
+          "name": "portal.lab.example.",
+          "type": "AAAA",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "NODATA",
+            "cache",
+            30
+          ]
+        },
+        {
+          "second": 40,
+          "name": "portal.lab.example.",
+          "type": "AAAA",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "ANSWER",
+            "upstream",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N3-failure-recovery",
+      "steps": [
+        {
+          "second": 0,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "FAILURE",
+            "failure_seconds": 5
+          },
+          "expect": [
+            "FAILURE",
+            "upstream",
+            5
+          ]
+        },
+        {
+          "second": 2,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "FAILURE",
+            "cache",
+            3
+          ]
+        },
+        {
+          "second": 2,
+          "name": "portal.lab.example.",
+          "type": "AAAA",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "ANSWER",
+            "upstream",
+            null
+          ]
+        },
+        {
+          "second": 5,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "ANSWER",
+            "upstream",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N4-missing-soa",
+      "steps": [
+        {
+          "second": 0,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "NXDOMAIN"
+          },
+          "expect": [
+            "NXDOMAIN",
+            "upstream",
+            null
+          ]
+        },
+        {
+          "second": 1,
+          "name": "portal.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "ANSWER",
+            "upstream",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N5-alias-target",
+      "steps": [
+        {
+          "second": 0,
+          "name": "alias.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "NXDOMAIN",
+            "soa": {
+              "record_ttl": 300,
+              "minimum": 60
+            },
+            "terminal_name": "missing-collector.lab.example."
+          },
+          "expect": [
+            "NXDOMAIN",
+            "upstream",
+            60
+          ]
+        },
+        {
+          "second": 1,
+          "name": "missing-collector.lab.example.",
+          "type": "AAAA",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "NXDOMAIN",
+            "cache",
+            59
+          ]
+        },
+        {
+          "second": 2,
+          "name": "alias.lab.example.",
+          "type": "A",
+          "upstream": {
+            "kind": "ANSWER"
+          },
+          "expect": [
+            "ANSWER",
+            "upstream",
+            null
+          ]
+        }
+      ]
+    }
+  ]
+}

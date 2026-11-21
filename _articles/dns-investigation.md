@@ -226,3 +226,7 @@ Complete this chapter when you can draw the resolver's separate queries, disting
 ## Trace DNSSEC Validation and SERVFAIL
 
 [Follow the parent DS and child DNSKEY through to the signed answer.]({{ '/wiki/dnssec-validation-evidence/' | relative_url }})
+
+## Investigate cached negative responses
+
+[DNS negative caching]({{ '/wiki/dns-negative-cache-evidence/' | relative_url }}) · Track SOA TTLs and resolver failures during a DNS repair.

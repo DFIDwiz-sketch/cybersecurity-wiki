@@ -95,3 +95,7 @@ Reviewed 21 November 2026. The RFC dates describe the covered standards. Use the
 - [RFC 8080 · EdDSA for DNSSEC and public vectors, February 2017](https://www.rfc-editor.org/rfc/rfc8080.html)
 - [RFC 8914 · Extended DNS Errors, October 2020](https://www.rfc-editor.org/rfc/rfc8914.html)
 - [IANA · DNSSEC trust anchors and 2025–2027 rollover milestones](https://www.iana.org/dnssec/files) · [ICANN · October 2026 status and guidance](https://www.icann.org/resources/pages/ksk-rollover-en)
+
+## Investigate cached negative responses
+
+[DNS negative caching]({{ '/wiki/dns-negative-cache-evidence/' | relative_url }}) · Track SOA TTLs and resolver failures during a DNS repair.
