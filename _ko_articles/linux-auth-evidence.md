@@ -132,3 +132,7 @@ python3 linux-auth-evidence.py
 ## Linux 저널의 로컬·중앙 수집 범위 확인하기
 
 [부팅·네임스페이스·커서로 저널 수집 누락을 조사하는 실습]({{ '/ko/wiki/linux-journal-coverage/' | relative_url }})
+
+## OpenSSH 사용자 인증서 조사
+
+[OpenSSH 사용자 인증서]({{ '/ko/wiki/ssh-user-certificate-evidence/' | relative_url }})에서 발급 CA와 일련번호, 대상의 인증·인가 설정을 대조합니다.

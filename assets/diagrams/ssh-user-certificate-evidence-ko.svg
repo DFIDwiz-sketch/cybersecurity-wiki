@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="355" viewBox="0 0 400 355" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">SSH 연결의 확인 지점</title>
+  <desc id="desc">클라이언트는 서버를 확인하고 서버는 사용자 키와 인증서, 계정 정책을 확인합니다. 이후 활동에는 세션 증거가 필요합니다.</desc>
+  <rect width="400" height="355" rx="16" fill="#10212d"/>
+  <defs>
+    <marker id="tip" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3 0 6Z" fill="#7de3ce"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#7de3ce" stroke-width="2" marker-end="url(#tip)">
+    <path d="M200 106v19"/>
+    <path d="M200 184v19"/>
+    <path d="M200 262v19"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="200" y="31" font-size="21" font-weight="700" fill="#e9f6ff">SSH 연결의 확인 지점</text>
+    <rect x="39" y="49" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="72" font-size="18" font-weight="700" fill="#e9f6ff">클라이언트가 서버 확인</text>
+    <text x="200" y="93" font-size="16" fill="#c8e0e9">호스트 키 또는 호스트 인증서</text>
+    <rect x="39" y="127" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="150" font-size="18" font-weight="700" fill="#e9f6ff">서버가 사용자 확인</text>
+    <text x="200" y="171" font-size="16" fill="#c8e0e9">사용자 키 증명과 CA 신뢰</text>
+    <rect x="39" y="205" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="228" font-size="18" font-weight="700" fill="#e9f6ff">서버가 계정 정책 확인</text>
+    <text x="200" y="249" font-size="16" fill="#c8e0e9">principal·유효기간·해지</text>
+    <rect x="39" y="283" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="306" font-size="18" font-weight="700" fill="#e9f6ff">로그인 뒤 활동 조사</text>
+    <text x="200" y="327" font-size="16" fill="#c8e0e9">세션과 프로세스 기록</text>
+  </g>
+</svg>

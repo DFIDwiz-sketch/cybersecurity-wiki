@@ -132,3 +132,7 @@ Reviewed 20 November 2026. RFC 4252 documents SSH authentication (2006). Match c
 ## Verify Local and Central Linux Journal Coverage
 
 [Compare boot, namespace and cursor evidence to locate collection gaps.]({{ '/wiki/linux-journal-coverage/' | relative_url }})
+
+## Investigate OpenSSH User Certificates
+
+Use [OpenSSH user certificate evidence]({{ '/wiki/ssh-user-certificate-evidence/' | relative_url }}) to join issuer, serial and destination policy without treating authentication as proof of commands.

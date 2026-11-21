@@ -101,3 +101,7 @@ Reviewed 20 November 2026. The 2006 RFCs explain the protocol stages. Consult up
 - [OpenBSD 8.0 · ssh_config options](https://man.openbsd.org/OpenBSD-8.0/ssh_config.5) · [sshd files and CA markers](https://man.openbsd.org/OpenBSD-8.0/sshd.8)
 - [OpenBSD 8.0 · ssh-keygen fingerprint and known_hosts lookup](https://man.openbsd.org/OpenBSD-8.0/ssh-keygen.1)
 - [OpenSSH · Release notes, including 8.8 and November 2026 maintenance releases](https://www.openssh.org/releasenotes.html)
+
+## Check an OpenSSH User Certificate
+
+Continue with [OpenSSH user certificate evidence]({{ '/wiki/ssh-user-certificate-evidence/' | relative_url }}) to see how the server verifies the client's certificate and local account policy.

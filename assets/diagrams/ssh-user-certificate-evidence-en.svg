@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="355" viewBox="0 0 400 355" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">SSH verification checkpoints</title>
+  <desc id="desc">The client authenticates the SSH host. The server authenticates the user key and checks its certificate and local rules. Later activity needs session evidence.</desc>
+  <rect width="400" height="355" rx="16" fill="#10212d"/>
+  <defs>
+    <marker id="tip" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3 0 6Z" fill="#7de3ce"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#7de3ce" stroke-width="2" marker-end="url(#tip)">
+    <path d="M200 106v19"/>
+    <path d="M200 184v19"/>
+    <path d="M200 262v19"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="200" y="31" font-size="21" font-weight="700" fill="#e9f6ff">SSH verification checkpoints</text>
+    <rect x="39" y="49" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="72" font-size="18" font-weight="700" fill="#e9f6ff">Client verifies server</text>
+    <text x="200" y="93" font-size="16" fill="#c8e0e9">Host key or host certificate</text>
+    <rect x="39" y="127" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="150" font-size="18" font-weight="700" fill="#e9f6ff">Server verifies user</text>
+    <text x="200" y="171" font-size="16" fill="#c8e0e9">Subject key proof and CA trust</text>
+    <rect x="39" y="205" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="228" font-size="18" font-weight="700" fill="#e9f6ff">Server checks account policy</text>
+    <text x="200" y="249" font-size="16" fill="#c8e0e9">Principal, time and revocation</text>
+    <rect x="39" y="283" width="322" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="306" font-size="18" font-weight="700" fill="#e9f6ff">Investigate the resulting session</text>
+    <text x="200" y="327" font-size="16" fill="#c8e0e9">Session and process records</text>
+  </g>
+</svg>

@@ -101,3 +101,7 @@ ssh-keygen -F new.lab.example.test -l -f ssh-lab-known-hosts.txt
 - [OpenBSD 8.0 · ssh_config 설정](https://man.openbsd.org/OpenBSD-8.0/ssh_config.5) · [sshd 파일과 CA 표기](https://man.openbsd.org/OpenBSD-8.0/sshd.8)
 - [OpenBSD 8.0 · ssh-keygen 지문 표시와 known_hosts 조회](https://man.openbsd.org/OpenBSD-8.0/ssh-keygen.1)
 - [OpenSSH · 8.8 및 2026년 11월 유지보수 릴리스 노트](https://www.openssh.org/releasenotes.html)
+
+## OpenSSH 사용자 인증서 확인하기
+
+[OpenSSH 사용자 인증서]({{ '/ko/wiki/ssh-user-certificate-evidence/' | relative_url }})에서 서버가 클라이언트 인증서와 로컬 계정 정책을 확인하는 과정을 살펴보세요.
