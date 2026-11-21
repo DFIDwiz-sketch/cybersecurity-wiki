@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 462" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">인증서 갱신의 단계별 증거</title>
+  <desc id="description">CSR 서명은 키 사용의 근거입니다. CA 승인과 발급은 별개입니다. 배포 준비에서 키, 체인, 이름, 만료 시각을 확인합니다. 각 리스너의 새 핸드셰이크에는 이전 지문이나 예상 지문이 나타날 수 있습니다.</desc>
+  <rect width="424" height="462" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="20" y="18" width="384" height="62" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="212" y="45" font-size="21" font-weight="700" fill="#eff6ff">서명한 CSR</text>
+    <text x="212" y="67" font-size="17" fill="#dbeafe">공개키와 요청한 이름</text>
+    <path d="M212 81v22m-6-6 6 6 6-6" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <rect x="20" y="112" width="384" height="62" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="212" y="139" font-size="21" font-weight="700" fill="#f8fafc">CA 검증과 발급</text>
+    <text x="212" y="161" font-size="17" fill="#e2e8f0">발급된 이름·키·유효 기간</text>
+    <path d="M212 175v22m-6-6 6 6 6-6" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <rect x="20" y="206" width="384" height="76" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <text x="212" y="237" font-size="21" font-weight="700" fill="#f0fdfa">배포 준비와 적용</text>
+    <text x="212" y="263" font-size="17" fill="#ccfbf1">예상하는 최종 인증서 지문 기록</text>
+    <path d="M212 283v22H107v39m-6-6 6 6 6-6m99-33h105v39m-6-6 6 6 6-6" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <text x="212" y="332" font-size="17" fill="#e2e8f0">리스너별 확인</text>
+    <rect x="18" y="355" width="178" height="85" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <rect x="228" y="355" width="178" height="85" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <text x="107" y="388" font-size="19" font-weight="700" fill="#fffbeb">이전 인증서</text>
+    <text x="107" y="416" font-size="17" fill="#fef3c7">이전 지문</text>
+    <text x="317" y="388" font-size="19" font-weight="700" fill="#f0fdfa">갱신된 인증서</text>
+    <text x="317" y="416" font-size="17" fill="#ccfbf1">예상 지문</text>
+  </g>
+</svg>

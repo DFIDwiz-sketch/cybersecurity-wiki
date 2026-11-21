@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 462" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">Certificate renewal evidence</title>
+  <desc id="description">The signed CSR shows signing-key use. CA approval and issuance are separate. Staging checks key, chain, name and expiry. After rollout a fresh handshake at each listener can yield the previous or expected fingerprint.</desc>
+  <rect width="424" height="462" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="20" y="18" width="384" height="62" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="212" y="45" font-size="21" font-weight="700" fill="#eff6ff">Signed CSR</text>
+    <text x="212" y="67" font-size="17" fill="#dbeafe">Public key and requested names</text>
+    <path d="M212 81v22m-6-6 6 6 6-6" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <rect x="20" y="112" width="384" height="62" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="212" y="139" font-size="21" font-weight="700" fill="#f8fafc">CA validation and issuance</text>
+    <text x="212" y="161" font-size="17" fill="#e2e8f0">Issued names, key and dates</text>
+    <path d="M212 175v22m-6-6 6 6 6-6" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <rect x="20" y="206" width="384" height="76" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <text x="212" y="237" font-size="21" font-weight="700" fill="#f0fdfa">Stage and deploy</text>
+    <text x="212" y="263" font-size="17" fill="#ccfbf1">Record the expected leaf fingerprint</text>
+    <path d="M212 283v22H107v39m-6-6 6 6 6-6m99-33h105v39m-6-6 6 6 6-6" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <text x="212" y="332" font-size="17" fill="#e2e8f0">Test each listener</text>
+    <rect x="18" y="355" width="178" height="85" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <rect x="228" y="355" width="178" height="85" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <text x="107" y="388" font-size="19" font-weight="700" fill="#fffbeb">Stale listener</text>
+    <text x="107" y="416" font-size="17" fill="#fef3c7">Previous fingerprint</text>
+    <text x="317" y="388" font-size="19" font-weight="700" fill="#f0fdfa">Renewed listener</text>
+    <text x="317" y="416" font-size="17" fill="#ccfbf1">Expected fingerprint</text>
+  </g>
+</svg>

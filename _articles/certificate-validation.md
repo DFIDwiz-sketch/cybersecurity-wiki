@@ -187,3 +187,7 @@ Complete the chapter when you can draw issuance versus verification direction, i
 ## Follow revocation evidence
 
 [Certificate revocation]({{ '/wiki/certificate-revocation-evidence/' | relative_url }}) · Distinguish listed, missing and expired CRL evidence in six OpenSSL controls.
+
+## Trace a Certificate Renewal
+
+[Follow the CSR, staged bundle and live leaf]({{ '/wiki/certificate-renewal-evidence/' | relative_url }}) · Verify each listener in the rollout.
