@@ -116,3 +116,7 @@ Reviewed November 20, 2026. Test procedures depend on the installed Windows vers
 ## Check the Clock Behind an Event Timestamp
 
 [Investigate the Windows time source and decide whether clock correction is justified]({{ '/wiki/ntp-clock-evidence/' | relative_url }})
+
+## Investigate missing Windows events
+
+[Windows Security log gaps]({{ '/wiki/windows-log-continuity/' | relative_url }}) · Distinguish clearing, retention, policy changes and delivery gaps.

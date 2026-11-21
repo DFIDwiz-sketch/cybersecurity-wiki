@@ -34,3 +34,7 @@ updated: "2026-10-17"
 ## Windows App Control 이벤트 조사
 
 [감사 판정, 실제 차단과 관련 서명 기록을 구분합니다.]({{ '/ko/wiki/app-control-evidence/' | relative_url }})
+
+## Windows 로그 공백 이어서 읽기
+
+[Windows 보안 로그 공백]({{ '/ko/wiki/windows-log-continuity/' | relative_url }}) · 로그 지우기와 보존 손실, 감사 정책 변경, 전달 문제를 구분합니다.

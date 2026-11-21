@@ -34,3 +34,7 @@ Whether an event is recorded depends on the system's audit policy. Avoid drawing
 ## Investigate Windows App Control Events
 
 [Distinguish audit decisions, enforced blocks and related signature records.]({{ '/wiki/app-control-evidence/' | relative_url }})
+
+## Investigate missing Windows events
+
+[Windows Security log gaps]({{ '/wiki/windows-log-continuity/' | relative_url }}) · Distinguish clearing, retention, policy changes and delivery gaps.

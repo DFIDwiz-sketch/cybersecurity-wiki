@@ -116,3 +116,7 @@ W04·W05·W08·W10을 분류하고 마지막으로 확인된 단계와 남은 �
 ## 이벤트를 기록한 시계 확인하기
 
 [Windows의 시간원과 로그 시각을 보정할 근거를 확인합니다]({{ '/ko/wiki/ntp-clock-evidence/' | relative_url }})
+
+## Windows 로그 공백 이어서 읽기
+
+[Windows 보안 로그 공백]({{ '/ko/wiki/windows-log-continuity/' | relative_url }}) · 로그 지우기와 보존 손실, 감사 정책 변경, 전달 문제를 구분합니다.
