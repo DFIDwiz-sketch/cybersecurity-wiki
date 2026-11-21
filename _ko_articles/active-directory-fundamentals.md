@@ -440,3 +440,7 @@ gpresult /r
 ## 보안 그룹 변경과 실제 접근 조사
 
 [행위자와 그룹을 확인한 뒤 이후 어느 세션에 멤버십이 반영됐는지 살펴봅니다]({{ '/ko/wiki/ad-group-membership-evidence/' | relative_url }})
+
+## 그룹 정책 적용 조사
+
+[그룹 정책 적용 조사]({{ '/ko/wiki/gpo-application-evidence/' | relative_url }}). AD와 SYSVOL 버전을 비교하고 실제 단말 적용을 확인합니다.

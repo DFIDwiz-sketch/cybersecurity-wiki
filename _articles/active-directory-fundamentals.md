@@ -440,3 +440,7 @@ gpresult /r
 ## Trace Security Group Changes to Access Evidence
 
 [Identify the actor and group, then verify which later session included the membership]({{ '/wiki/ad-group-membership-evidence/' | relative_url }})
+
+## Investigate Group Policy Application
+
+[Investigate Group Policy Application]({{ '/wiki/gpo-application-evidence/' | relative_url }}). Compare directory and SYSVOL versions and verify the client result.

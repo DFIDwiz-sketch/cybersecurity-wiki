@@ -94,3 +94,7 @@ Reviewed 20 November 2026. The Windows Server guidance covers AD group scopes an
 - [Microsoft Learn · 4732 group change fields](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4732) · [4624 logon fields](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624)
 - [Microsoft Learn · 4627 group-list fields](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4627) · [Audit Group Membership policy](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-group-membership)
 - [Microsoft Learn · Event 5136 and its SACL requirements](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5136)
+
+## Investigate Group Policy Application
+
+[Investigate Group Policy Application]({{ '/wiki/gpo-application-evidence/' | relative_url }}). Compare directory and SYSVOL versions and verify the client result.

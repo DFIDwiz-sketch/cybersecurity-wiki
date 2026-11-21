@@ -1,0 +1,18 @@
+{
+  "cases": [
+    {"id":"G01","dc_a":{"directory":196616,"sysvol":196616,"content":"B"},"dc_b":{"directory":196616,"sysvol":196616,"content":"B"},"client":"applied","link_change":false},
+    {"id":"G02","dc_a":{"directory":196616,"sysvol":196615,"content":"A"},"dc_b":{"directory":196615,"sysvol":196615,"content":"A"},"client":"unverified","link_change":false},
+    {"id":"G03","dc_a":{"directory":196616,"sysvol":196616,"content":"B"},"dc_b":{"directory":196615,"sysvol":196615,"content":"A"},"client":"unverified","link_change":false},
+    {"id":"G04","dc_a":{"directory":196616,"sysvol":null,"content":null},"dc_b":{"directory":196616,"sysvol":196616,"content":"B"},"client":"unverified","link_change":false},
+    {"id":"G05","dc_a":{"directory":196616,"sysvol":196616,"content":"B"},"dc_b":{"directory":196616,"sysvol":196616,"content":"X"},"client":"unverified","link_change":false},
+    {"id":"G06","dc_a":{"directory":196616,"sysvol":196616,"content":"B"},"dc_b":{"directory":196616,"sysvol":196616,"content":"B"},"client":"unverified","link_change":true},
+    {"id":"G07","dc_a":{"directory":196616,"sysvol":196616,"content":"B"},"dc_b":{"directory":196616,"sysvol":196616,"content":"B"},"client":"security-filtered","link_change":false},
+    {"id":"G08","dc_a":{"directory":196616,"sysvol":196616,"content":"B"},"dc_b":{"directory":196616,"sysvol":196616,"content":"B"},"client":"unverified","link_change":false}
+  ],
+  "events": [
+    {"id":"E01","dc":"dc-a.lab.example","operation":"Value Deleted","correlation":"lab-op-17","object":"OU=Workstations,DC=lab,DC=example","attribute":"gPLink","value":"Approved baseline links"},
+    {"id":"E02","dc":"dc-a.lab.example","operation":"Value Added","correlation":"lab-op-17","object":"OU=Workstations,DC=lab,DC=example","attribute":"gPLink","value":"Approved baseline links plus review GPO"},
+    {"id":"E03","dc":"dc-a.lab.example","operation":"Value Added","correlation":"lab-op-17","object":"OU=Workstations,DC=lab,DC=example","attribute":"description","value":"Workstations in pilot"},
+    {"id":"E04","dc":"dc-b.lab.example","operation":"Value Added","correlation":"lab-op-17","object":"OU=Workstations,DC=lab,DC=example","attribute":"gPLink","value":"Unrelated worksheet control"}
+  ]
+}

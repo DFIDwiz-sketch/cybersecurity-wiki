@@ -94,3 +94,7 @@ python3 ad-membership-review.py
 - [Microsoft Learn · 그룹 변경 4732 필드](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4732) · [로그인 4624 필드](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624)
 - [Microsoft Learn · 그룹 목록 4627 필드](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4627) · [그룹 멤버십 감사 정책](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-group-membership)
 - [Microsoft Learn · 이벤트 5136과 SACL 요건](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5136)
+
+## 그룹 정책 적용 조사
+
+[그룹 정책 적용 조사]({{ '/ko/wiki/gpo-application-evidence/' | relative_url }}). AD와 SYSVOL 버전을 비교하고 실제 단말 적용을 확인합니다.

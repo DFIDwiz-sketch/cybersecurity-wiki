@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="346" viewBox="0 0 360 346" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Group Policy evidence from DC to client</title>
+  <desc id="desc">Identify the GPO by GUID. Compare the directory and SYSVOL on each DC, then check scope and processing on the client.</desc>
+  <rect width="360" height="346" rx="12" fill="#ecf4fc"/>
+  <path d="M180 68v12H91v12m-5-6 5 6 5-6 M180 80h89v12m-5-6 5 6 5-6 M91 154v19h178v-19 M180 173v20m-5-6 5 6 5-6 M180 253v21m-5-6 5 6 5-6" fill="none" stroke="#245981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143a57">
+    <rect x="16" y="12" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="35" font-size="14" font-weight="700">Identify the GPO</text>
+    <text x="180" y="54" font-size="12">Domain · GUID · named DC</text>
+    <rect x="8" y="96" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="119" font-size="14" font-weight="700">AD directory</text>
+    <text x="91" y="138" font-size="12">GPC version and scope</text>
+    <rect x="186" y="96" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="119" font-size="14" font-weight="700">SYSVOL</text>
+    <text x="269" y="138" font-size="12">GPT version and files</text>
+    <rect x="16" y="197" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="220" font-size="14" font-weight="700">Client policy processing</text>
+    <text x="180" y="239" font-size="12">Target scope · RSoP · ActivityID</text>
+    <rect x="16" y="278" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="301" font-size="14" font-weight="700">Verify the local setting</text>
+    <text x="180" y="320" font-size="12">Record outcome and time</text>
+  </g>
+</svg>
