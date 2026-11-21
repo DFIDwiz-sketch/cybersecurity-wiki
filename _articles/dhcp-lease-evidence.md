@@ -90,6 +90,8 @@ To finish, work out F02, F03 and F08 by hand. Report each outcome with the IP sc
 
 [Previous · Firewall and NAT evidence]({{ '/wiki/firewall-nat-evidence/' | relative_url }}) · [Next lesson · DNS investigation]({{ '/wiki/dns-investigation/' | relative_url }}) · [Related · Network monitoring]({{ '/wiki/network-monitoring/' | relative_url }})
 
+For an on-link follow-up, [read ARP sender claims and trace them to switch ports]({{ '/wiki/arp-address-evidence/' | relative_url }}).
+
 ## Official references
 
 Reviewed November 20, 2026. Protocol documents define their respective versions. Check your installed product version and capture configuration for differences.

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="298" viewBox="0 0 400 298" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">다음 홉 IP에서 이더넷 MAC까지</title>
+  <desc id="desc">라우팅으로 로컬 목적지나 게이트웨이를 고릅니다. 캐시나 ARP에서 MAC을 찾고 프레임 목적지에 넣습니다.</desc>
+  <rect width="400" height="298" rx="14" fill="#10212d"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+  <text x="200" y="29" fill="#e9f6ff" font-size="18" font-weight="700">다음 홉 IP에서 이더넷 MAC까지</text>
+  <rect x="24" y="45" width="352" height="62" rx="10" fill="#173244" stroke="#5296ab"/>
+  <text x="200" y="69" fill="#e9f6ff" font-size="18" font-weight="700">다음 홉 선택</text>
+  <text x="200" y="91" fill="#c8e0e9" font-size="15">같은 링크의 목적지 또는 게이트웨이</text>
+  <rect x="24" y="131" width="352" height="62" rx="10" fill="#173244" stroke="#5296ab"/>
+  <text x="200" y="155" fill="#e9f6ff" font-size="18" font-weight="700">MAC 주소 확인</text>
+  <text x="200" y="177" fill="#c8e0e9" font-size="15">이웃 캐시 또는 ARP 교환</text>
+  <rect x="24" y="217" width="352" height="62" rx="10" fill="#173244" stroke="#5296ab"/>
+  <text x="200" y="241" fill="#e9f6ff" font-size="18" font-weight="700">이더넷 프레임 전송</text>
+  <text x="200" y="263" fill="#c8e0e9" font-size="15">목적지 MAC = 다음 홉</text>
+  </g>
+  <path d="M200 110v17m-5-6 5 6 5-6m-5 75v17m-5-6 5 6 5-6" fill="none" stroke="#7de3ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

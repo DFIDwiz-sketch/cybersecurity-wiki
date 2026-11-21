@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="298" viewBox="0 0 400 298" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">From next-hop IP to Ethernet MAC</title>
+  <desc id="desc">Routing picks the local target or gateway. Resolve its MAC from cache or ARP. Use that MAC in the Ethernet frame.</desc>
+  <rect width="400" height="298" rx="14" fill="#10212d"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+  <text x="200" y="29" fill="#e9f6ff" font-size="18" font-weight="700">From next-hop IP to Ethernet MAC</text>
+  <rect x="24" y="45" width="352" height="62" rx="10" fill="#173244" stroke="#5296ab"/>
+  <text x="200" y="69" fill="#e9f6ff" font-size="18" font-weight="700">Choose next hop</text>
+  <text x="200" y="91" fill="#c8e0e9" font-size="15">Local destination or gateway</text>
+  <rect x="24" y="131" width="352" height="62" rx="10" fill="#173244" stroke="#5296ab"/>
+  <text x="200" y="155" fill="#e9f6ff" font-size="18" font-weight="700">Look up its MAC</text>
+  <text x="200" y="177" fill="#c8e0e9" font-size="15">Neighbor cache or ARP</text>
+  <rect x="24" y="217" width="352" height="62" rx="10" fill="#173244" stroke="#5296ab"/>
+  <text x="200" y="241" fill="#e9f6ff" font-size="18" font-weight="700">Send Ethernet frame</text>
+  <text x="200" y="263" fill="#c8e0e9" font-size="15">Destination MAC = next hop</text>
+  </g>
+  <path d="M200 110v17m-5-6 5 6 5-6m-5 75v17m-5-6 5 6 5-6" fill="none" stroke="#7de3ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

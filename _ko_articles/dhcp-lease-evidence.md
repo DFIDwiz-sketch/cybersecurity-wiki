@@ -92,6 +92,8 @@ F02·F03·F08을 손으로 대조해 결과를 확인하세요. 판단의 근거
 
 [이전 · 방화벽과 NAT 기록]({{ '/ko/wiki/firewall-nat-evidence/' | relative_url }}) · [다음 학습 · DNS 조사]({{ '/ko/wiki/dns-investigation/' | relative_url }}) · [관련 · 네트워크 모니터링]({{ '/ko/wiki/network-monitoring/' | relative_url }})
 
+같은 링크에서 실제로 어떤 장치가 그 주소를 주장했는지 [ARP와 IPv4 주소 충돌]({{ '/ko/wiki/arp-address-evidence/' | relative_url }})에서 이어서 확인할 수 있습니다.
+
 ## 공식 참고자료
 
 2026년 11월 20일에 검토했습니다. 실제 조사에서는 설치된 제품 버전과 수집 설정을 확인하세요.
