@@ -103,3 +103,7 @@ C02·C05·C08을 구분하고 각 결론을 뒷받침한 출처를 설명하세�
 ## Community ID로 Zeek와 Suricata 연결하기
 
 [공통 ID, 시각과 관측 범위를 대조하는 실습]({{ '/ko/wiki/community-id-evidence/' | relative_url }})
+
+## Linux 소켓과 프로세스 연결해서 보기
+
+[Linux 소켓 보유 프로세스 조사하기]({{ '/ko/wiki/linux-socket-scope-evidence/' | relative_url }}) · 네임스페이스에서 보이는 목록과 프로세스별 디스크립터를 대조합니다.

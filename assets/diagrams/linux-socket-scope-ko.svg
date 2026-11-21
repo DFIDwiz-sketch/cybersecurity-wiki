@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 375" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">공유 소켓 목록과 프로세스 디스크립터</title>
+  <desc id="description">서비스 PID 842와 관측기 PID 1090은 같은 네트워크 네임스페이스에서 IPv4 리스너 하나를 봅니다. 이 스냅샷에서는 PID 842의 디스크립터만 리스너 inode를 가리킵니다.</desc>
+  <rect width="436" height="375" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="16" y="18" width="192" height="69" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <rect x="228" y="18" width="192" height="69" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="112" y="46" font-size="20" font-weight="700" fill="#eff6ff">서비스</text>
+    <text x="112" y="73" font-size="17" fill="#dbeafe">PID 842</text>
+    <text x="324" y="46" font-size="20" font-weight="700" fill="#eff6ff">관측 프로세스</text>
+    <text x="324" y="73" font-size="17" fill="#dbeafe">PID 1090</text>
+    <path d="M112 87v23h106v25m-6-6 6 6 6-6m-6-19h106V87" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <rect x="16" y="145" width="404" height="89" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="218" y="173" font-size="21" font-weight="700" fill="#f8fafc">공유 네트워크 네임스페이스</text>
+    <text x="218" y="198" font-size="17" fill="#e2e8f0">두 TCP 목록에 보이는 리스너</text>
+    <text x="218" y="221" font-size="17" fill="#e2e8f0">127.0.0.1:41802 · inode 31810</text>
+    <text x="218" y="264" font-size="17" fill="#e2e8f0">프로세스별 FD 목록 대조</text>
+    <rect x="16" y="281" width="192" height="75" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="228" y="281" width="192" height="75" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="112" y="311" font-size="19" font-weight="700" fill="#f0fdfa">PID 842 · FD 7</text>
+    <text x="112" y="337" font-size="17" fill="#ccfbf1">socket:[31810]</text>
+    <text x="324" y="311" font-size="19" font-weight="700" fill="#fffbeb">PID 1090</text>
+    <text x="324" y="337" font-size="17" fill="#fef3c7">일치하는 FD 없음</text>
+  </g>
+</svg>

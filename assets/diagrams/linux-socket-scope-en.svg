@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 375" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">Shared socket table and process descriptors</title>
+  <desc id="description">Both service PID 842 and observer PID 1090 see one IPv4 listener in their shared network namespace. In this snapshot, only PID 842 has an FD that points at its inode.</desc>
+  <rect width="436" height="375" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="16" y="18" width="192" height="69" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <rect x="228" y="18" width="192" height="69" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="112" y="46" font-size="20" font-weight="700" fill="#eff6ff">Service</text>
+    <text x="112" y="73" font-size="17" fill="#dbeafe">PID 842</text>
+    <text x="324" y="46" font-size="20" font-weight="700" fill="#eff6ff">Observer</text>
+    <text x="324" y="73" font-size="17" fill="#dbeafe">PID 1090</text>
+    <path d="M112 87v23h106v25m-6-6 6 6 6-6m-6-19h106V87" stroke="#cbd5e1" fill="none" stroke-width="3"/>
+    <rect x="16" y="145" width="404" height="89" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="218" y="173" font-size="21" font-weight="700" fill="#f8fafc">Shared network namespace</text>
+    <text x="218" y="198" font-size="17" fill="#e2e8f0">Both TCP tables show the listener</text>
+    <text x="218" y="221" font-size="17" fill="#e2e8f0">127.0.0.1:41802 · inode 31810</text>
+    <text x="218" y="264" font-size="17" fill="#e2e8f0">Compare each process FD table</text>
+    <rect x="16" y="281" width="192" height="75" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="228" y="281" width="192" height="75" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="112" y="311" font-size="19" font-weight="700" fill="#f0fdfa">PID 842 · FD 7</text>
+    <text x="112" y="337" font-size="17" fill="#ccfbf1">socket:[31810]</text>
+    <text x="324" y="311" font-size="19" font-weight="700" fill="#fffbeb">PID 1090</text>
+    <text x="324" y="337" font-size="17" fill="#fef3c7">No matching FD</text>
+  </g>
+</svg>

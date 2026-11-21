@@ -125,3 +125,7 @@ p02·p03·p06의 차이를 설명하고, p04에 관점 변환이 필요한 이�
 ## Linux 파일 접근 증거 이어서 보기
 
 [Linux Audit 파일 접근 입문]({{ '/ko/wiki/linux-audit-file-evidence/' | relative_url }}) · 시스템 호출과 파일 경로를 연결하고 열기 기록으로 어디까지 판단할 수 있는지 실습합니다.
+
+## Linux 소켓과 프로세스 연결해서 보기
+
+[Linux 소켓 보유 프로세스 조사하기]({{ '/ko/wiki/linux-socket-scope-evidence/' | relative_url }}) · 네임스페이스에서 보이는 목록과 프로세스별 디스크립터를 대조합니다.

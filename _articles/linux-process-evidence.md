@@ -125,3 +125,7 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 ## Investigate Linux file activity
 
 [Linux Audit file evidence]({{ '/wiki/linux-audit-file-evidence/' | relative_url }}) · Join system calls and paths, then test what a file-open record can establish.
+
+## Connect Linux Sockets to Processes
+
+[Investigate a Linux socket holder]({{ '/wiki/linux-socket-scope-evidence/' | relative_url }}) · Compare namespace visibility with the process's file descriptors.

@@ -103,3 +103,7 @@ Reviewed November 20, 2026. The workflow is based on the online manuals availabl
 ## Correlate Zeek and Suricata with Community ID
 
 [Practise comparing shared IDs, event time and sensor scope]({{ '/wiki/community-id-evidence/' | relative_url }})
+
+## Connect Linux Sockets to Processes
+
+[Investigate a Linux socket holder]({{ '/wiki/linux-socket-scope-evidence/' | relative_url }}) · Compare namespace visibility with the process's file descriptors.
