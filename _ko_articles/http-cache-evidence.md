@@ -102,3 +102,5 @@ python3 http-cache-review.py
 
 이전 학습 · [HTTP 증거 입문]({{ '/ko/wiki/http-evidence/' | relative_url }})  
 다음 학습 · [네트워크 관측 입문]({{ '/ko/wiki/network-monitoring/' | relative_url }})
+
+프록시가 업스트림을 호출했다면 [HTTP 프록시 응답 증거]({{ '/ko/wiki/http-proxy-response-evidence/' | relative_url }})에서 최종 응답과 시도별 기록을 대조할 수 있습니다.

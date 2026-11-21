@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="355" viewBox="0 0 400 355" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">응답을 만든 지점 찾기</title>
+  <desc id="desc">클라이언트 요청을 받은 프록시는 직접 응답하거나 업스트림에 전달합니다. 각 시도와 애플리케이션의 응답 및 작업 결과를 따로 확인합니다.</desc>
+  <rect width="400" height="355" rx="16" fill="#10212d"/>
+  <defs>
+    <marker id="tip" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3 0 6Z" fill="#7de3ce"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#7de3ce" stroke-width="2" marker-end="url(#tip)">
+    <path d="M132 106v20"/>
+    <path d="M132 185v20"/>
+    <path d="M242 156h78v49"/>
+    <path d="M132 264v20"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="200" y="31" font-size="21" font-weight="700" fill="#e9f6ff">응답을 만든 지점 찾기</text>
+    <rect x="23" y="49" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="72" font-size="18" font-weight="700" fill="#e9f6ff">클라이언트</text>
+    <text x="132.0" y="93" font-size="15" fill="#c8e0e9">사용자가 본 상태</text>
+    <rect x="23" y="128" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="151" font-size="18" font-weight="700" fill="#e9f6ff">리버스 프록시</text>
+    <text x="132.0" y="172" font-size="15" fill="#c8e0e9">이 지점의 최종 상태</text>
+    <rect x="23" y="207" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="230" font-size="18" font-weight="700" fill="#e9f6ff">업스트림 시도</text>
+    <text x="132.0" y="251" font-size="15" fill="#c8e0e9">백엔드와 시도별 결과</text>
+    <rect x="263" y="207" width="114" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="320.0" y="230" font-size="18" font-weight="700" fill="#e9f6ff">직접 응답</text>
+    <text x="320.0" y="251" font-size="15" fill="#c8e0e9">엣지의 결정</text>
+    <rect x="23" y="286" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="309" font-size="18" font-weight="700" fill="#e9f6ff">애플리케이션</text>
+    <text x="132.0" y="330" font-size="15" fill="#c8e0e9">응답과 작업 결과</text>
+  </g>
+</svg>

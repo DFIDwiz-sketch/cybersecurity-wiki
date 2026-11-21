@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="355" viewBox="0 0 400 355" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Find the response origin</title>
+  <desc id="desc">The client reaches an edge proxy. The edge records the status it sends. It either responds locally or contacts an upstream. Compare each upstream attempt and whether the application recorded an outcome.</desc>
+  <rect width="400" height="355" rx="16" fill="#10212d"/>
+  <defs>
+    <marker id="tip" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3 0 6Z" fill="#7de3ce"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#7de3ce" stroke-width="2" marker-end="url(#tip)">
+    <path d="M132 106v20"/>
+    <path d="M132 185v20"/>
+    <path d="M242 156h78v49"/>
+    <path d="M132 264v20"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="200" y="31" font-size="21" font-weight="700" fill="#e9f6ff">Find the response origin</text>
+    <rect x="23" y="49" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="72" font-size="18" font-weight="700" fill="#e9f6ff">Client</text>
+    <text x="132.0" y="93" font-size="15" fill="#c8e0e9">Visible response status</text>
+    <rect x="23" y="128" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="151" font-size="18" font-weight="700" fill="#e9f6ff">Reverse proxy</text>
+    <text x="132.0" y="172" font-size="15" fill="#c8e0e9">Final status at this hop</text>
+    <rect x="23" y="207" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="230" font-size="18" font-weight="700" fill="#e9f6ff">Upstream attempts</text>
+    <text x="132.0" y="251" font-size="15" fill="#c8e0e9">Backend and attempt result</text>
+    <rect x="263" y="207" width="114" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="320.0" y="230" font-size="18" font-weight="700" fill="#e9f6ff">Local reply</text>
+    <text x="320.0" y="251" font-size="15" fill="#c8e0e9">Edge decision</text>
+    <rect x="23" y="286" width="218" height="56" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.0" y="309" font-size="18" font-weight="700" fill="#e9f6ff">Application</text>
+    <text x="132.0" y="330" font-size="15" fill="#c8e0e9">Response and operation</text>
+  </g>
+</svg>

@@ -108,3 +108,7 @@ Reviewed 18 November 2026. Check fields and settings against your installed prod
 ## Investigate HTTP Caches
 
 [Investigate HTTP Caches]({{ '/wiki/http-cache-evidence/' | relative_url }}). Trace edge reuse, conditional responses and cache scope.
+
+## Trace a Reverse Proxy Response
+
+Use [HTTP proxy response evidence]({{ '/wiki/http-proxy-response-evidence/' | relative_url }}) to separate the final status, retries and application outcomes.

@@ -102,3 +102,5 @@ Reviewed **2026-11-21**. The IETF specifications below were published in **June 
 
 Previous · [HTTP Evidence]({{ '/wiki/http-evidence/' | relative_url }})  
 Next · [Network Monitoring]({{ '/wiki/network-monitoring/' | relative_url }})
+
+If a proxy contacted an upstream, use [HTTP proxy response evidence]({{ '/wiki/http-proxy-response-evidence/' | relative_url }}) to compare the outgoing response with its upstream attempts.
