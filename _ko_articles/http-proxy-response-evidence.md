@@ -97,3 +97,7 @@ NGINX는 처리가 끝나는 위치의 설정을 기준으로 접근 로그를 �
 - 2021년 11월 W3C 권고안. [Trace Context](https://www.w3.org/TR/trace-context/)
 - NGINX 모듈 문서. [업스트림 변수](https://nginx.org/en/docs/http/ngx_http_upstream_module.html#variables) · [접근 로그](https://nginx.org/en/docs/http/ngx_http_log_module.html) · [코어 변수](https://nginx.org/en/docs/http/ngx_http_core_module.html#variables)
 - AWS 공식 서비스 문서. [Application Load Balancer 접근 로그](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html)
+
+## QUIC과 HTTP/3 조사 이어서 읽기
+
+[QUIC과 HTTP/3 요청 증거]({{ '/ko/wiki/quic-http3-evidence/' | relative_url }}) · 발견 단서와 연결 시도, 프록시 구간별 요청 프로토콜을 대조합니다.

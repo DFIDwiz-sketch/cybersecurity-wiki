@@ -1,0 +1,77 @@
+[
+  {
+    "case": "client-used-h3",
+    "advertised_h3": true,
+    "wire": "quic-initial",
+    "client_request_protocols": [
+      "h3"
+    ],
+    "same_request_quic_attempt": null,
+    "edge_upstream_protocol": null
+  },
+  {
+    "case": "fallback-supported",
+    "advertised_h3": true,
+    "wire": "quic-initial",
+    "client_request_protocols": [
+      "h2"
+    ],
+    "same_request_quic_attempt": "failed",
+    "edge_upstream_protocol": null
+  },
+  {
+    "case": "parallel-traffic-unlinked",
+    "advertised_h3": false,
+    "wire": "quic-initial",
+    "client_request_protocols": [
+      "h2"
+    ],
+    "same_request_quic_attempt": null,
+    "edge_upstream_protocol": null
+  },
+  {
+    "case": "advertisement-only",
+    "advertised_h3": true,
+    "wire": "none",
+    "client_request_protocols": [],
+    "same_request_quic_attempt": null,
+    "edge_upstream_protocol": null
+  },
+  {
+    "case": "udp-port-only",
+    "advertised_h3": false,
+    "wire": "udp-443",
+    "client_request_protocols": [],
+    "same_request_quic_attempt": null,
+    "edge_upstream_protocol": null
+  },
+  {
+    "case": "quic-initial-only",
+    "advertised_h3": false,
+    "wire": "quic-initial",
+    "client_request_protocols": [],
+    "same_request_quic_attempt": null,
+    "edge_upstream_protocol": null
+  },
+  {
+    "case": "edge-terminates-h3",
+    "advertised_h3": true,
+    "wire": "quic-initial",
+    "client_request_protocols": [
+      "h3"
+    ],
+    "same_request_quic_attempt": null,
+    "edge_upstream_protocol": "h2"
+  },
+  {
+    "case": "conflicting-client-records",
+    "advertised_h3": true,
+    "wire": "quic-initial",
+    "client_request_protocols": [
+      "h3",
+      "h2"
+    ],
+    "same_request_quic_attempt": "failed",
+    "edge_upstream_protocol": null
+  }
+]

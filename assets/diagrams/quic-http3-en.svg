@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 470" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">From HTTP/3 discovery to request evidence</title>
+  <desc id="description">A discovery hint can lead to a QUIC attempt. Request records distinguish HTTP/3 on QUIC from HTTP/2 on TCP. If an edge terminates the client hop, it can connect to the origin separately.</desc>
+  <rect width="432" height="470" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="20" y="18" width="392" height="67" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="47" font-size="22" font-weight="700" fill="#eff6ff">Discovery hint</text>
+    <text x="216" y="71" font-size="18" fill="#dbeafe">Alt-Svc or HTTPS record</text>
+    <path d="M216 85v17H109v16m-6-6 6 6 6-6m101-10h107v16m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="128" width="186" height="58" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <rect x="230" y="128" width="186" height="58" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="109" y="162" font-size="18" font-weight="700" fill="#fffbeb">QUIC attempt</text>
+    <text x="323" y="162" font-size="18" font-weight="700" fill="#f8fafc">TCP alternative</text>
+    <path d="M109 186v28m-6-6 6 6 6-6m208-22v28m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="223" width="186" height="86" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="230" y="223" width="186" height="86" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="109" y="259" font-size="19" font-weight="700" fill="#f0fdfa">Request record</text>
+    <text x="109" y="286" font-size="18" fill="#ccfbf1">HTTP/3 · h3</text>
+    <text x="323" y="259" font-size="19" font-weight="700" fill="#f8fafc">Request record</text>
+    <text x="323" y="286" font-size="18" fill="#e2e8f0">HTTP/2 · h2</text>
+    <path d="M109 310v24h107v28m-6-6 6 6 6-6m-6-22h107v-24" stroke="#cbd5e1" stroke-width="3" fill="none" stroke-dasharray="6 3"/>
+    <rect x="20" y="373" width="392" height="78" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="405" font-size="21" font-weight="700" fill="#eff6ff">Separate upstream hop</text>
+    <text x="216" y="432" font-size="17" fill="#dbeafe">If the edge terminates the client hop</text>
+  </g>
+</svg>

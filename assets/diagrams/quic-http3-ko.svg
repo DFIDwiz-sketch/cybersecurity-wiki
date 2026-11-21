@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 470" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">HTTP/3 발견과 요청 증거</title>
+  <desc id="description">발견 단서를 보고 QUIC을 시도할 수 있습니다. 요청 기록에서 QUIC의 HTTP/3와 TCP의 HTTP/2를 구분합니다. 엣지가 클라이언트 구간을 종료하면 상위 서버에 따로 연결할 수 있습니다.</desc>
+  <rect width="432" height="470" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="20" y="18" width="392" height="67" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="47" font-size="22" font-weight="700" fill="#eff6ff">접속 지점 발견 단서</text>
+    <text x="216" y="71" font-size="18" fill="#dbeafe">Alt-Svc 또는 HTTPS 레코드</text>
+    <path d="M216 85v17H109v16m-6-6 6 6 6-6m101-10h107v16m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="128" width="186" height="58" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <rect x="230" y="128" width="186" height="58" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="109" y="162" font-size="18" font-weight="700" fill="#fffbeb">QUIC 시도</text>
+    <text x="323" y="162" font-size="18" font-weight="700" fill="#f8fafc">TCP 대안</text>
+    <path d="M109 186v28m-6-6 6 6 6-6m208-22v28m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="223" width="186" height="86" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="230" y="223" width="186" height="86" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="109" y="259" font-size="19" font-weight="700" fill="#f0fdfa">요청 기록</text>
+    <text x="109" y="286" font-size="18" fill="#ccfbf1">HTTP/3 · h3</text>
+    <text x="323" y="259" font-size="19" font-weight="700" fill="#f8fafc">요청 기록</text>
+    <text x="323" y="286" font-size="18" fill="#e2e8f0">HTTP/2 · h2</text>
+    <path d="M109 310v24h107v28m-6-6 6 6 6-6m-6-22h107v-24" stroke="#cbd5e1" stroke-width="3" fill="none" stroke-dasharray="6 3"/>
+    <rect x="20" y="373" width="392" height="78" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="405" font-size="21" font-weight="700" fill="#eff6ff">별도의 상위 서버 구간</text>
+    <text x="216" y="432" font-size="17" fill="#dbeafe">엣지가 클라이언트 구간을 종료하는 경우</text>
+  </g>
+</svg>

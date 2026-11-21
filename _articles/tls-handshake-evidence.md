@@ -105,3 +105,7 @@ Reviewed 20 November 2026. Match standards and analyzer behavior to the actual d
 ## Client authentication next
 
 [Mutual TLS (mTLS)]({{ '/wiki/mtls-client-identity-evidence/' | relative_url }}) · Follow client authentication through TLS termination and application authorization, then compare six loopback outcomes.
+
+## Follow QUIC and HTTP/3 Evidence
+
+[QUIC and HTTP/3 request evidence]({{ '/wiki/quic-http3-evidence/' | relative_url }}) · Compare discovery, QUIC startup and request protocols on each proxy hop.

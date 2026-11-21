@@ -105,3 +105,7 @@ python3 tls-handshake-evidence.py
 ## 이어서 읽기
 
 [상호 TLS(mTLS) 입문]({{ '/ko/wiki/mtls-client-identity-evidence/' | relative_url }}) · TLS 종료 지점에서 클라이언트를 인증하는 과정과 애플리케이션 권한 판단을 로컬 연결 여섯 가지로 비교하세요.
+
+## QUIC과 HTTP/3 조사 이어서 읽기
+
+[QUIC과 HTTP/3 요청 증거]({{ '/ko/wiki/quic-http3-evidence/' | relative_url }}) · 발견 단서와 연결 시도, 프록시 구간별 요청 프로토콜을 대조합니다.

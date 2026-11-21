@@ -95,3 +95,7 @@ Reviewed 2026-11-22. Use the deployed product and version's field definitions wh
 - [W3C Trace Context](https://www.w3.org/TR/trace-context/), November 2021 Recommendation.
 - NGINX documentation for [upstream variables](https://nginx.org/en/docs/http/ngx_http_upstream_module.html#variables), [access logging](https://nginx.org/en/docs/http/ngx_http_log_module.html) and [core variables](https://nginx.org/en/docs/http/ngx_http_core_module.html#variables).
 - AWS current service documentation for [Application Load Balancer access logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html).
+
+## Follow QUIC and HTTP/3 Evidence
+
+[QUIC and HTTP/3 request evidence]({{ '/wiki/quic-http3-evidence/' | relative_url }}) · Compare discovery, QUIC startup and request protocols on each proxy hop.
