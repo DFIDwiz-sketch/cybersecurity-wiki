@@ -234,3 +234,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Investigate HTTP Caches
 
 [Investigate HTTP Caches]({{ '/wiki/http-cache-evidence/' | relative_url }}). Trace edge reuse, conditional responses and cache scope.
+
+## Trace Kubernetes Pod Traffic and NetworkPolicy
+
+Use [Kubernetes NetworkPolicy evidence]({{ '/wiki/kubernetes-network-policy-evidence/' | relative_url }}) to distinguish an API change from a network verdict and application outcome.

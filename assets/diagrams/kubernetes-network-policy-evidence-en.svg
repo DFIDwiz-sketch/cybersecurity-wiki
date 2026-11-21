@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="330" viewBox="0 0 400 330" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">A new Pod connection</title>
+  <desc id="desc">Check source egress first and destination ingress next. Either can block. If both permit the connection, verify the actual path and the application separately.</desc>
+  <rect width="400" height="330" rx="16" fill="#10212d"/>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3 0 6Z" fill="#7de3ce"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#7de3ce" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M124 121v28"/>
+    <path d="M124 218v28"/>
+    <path d="M230 87h99v62"/>
+    <path d="M230 185h43"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <text x="200" y="32" font-size="21" font-weight="700" fill="#e9f6ff">A new Pod connection</text>
+    <rect x="18" y="54" width="211" height="66" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="123.5" y="80" font-size="16" font-weight="700" fill="#e9f6ff">Source Pod egress</text>
+    <text x="123.5" y="102" font-size="15" fill="#c8e0e9">Do the rules permit it?</text>
+    <rect x="18" y="151" width="211" height="66" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="123.5" y="177" font-size="16" font-weight="700" fill="#e9f6ff">Destination Pod ingress</text>
+    <text x="123.5" y="199" font-size="15" fill="#c8e0e9">Do the rules permit it?</text>
+    <rect x="18" y="248" width="211" height="66" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="123.5" y="274" font-size="16" font-weight="700" fill="#e9f6ff">Policy permits the path</text>
+    <text x="123.5" y="296" font-size="15" fill="#c8e0e9">Check actual flow and app</text>
+    <rect x="275" y="151" width="108" height="66" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="329.0" y="177" font-size="16" font-weight="700" fill="#e9f6ff">Either denies</text>
+    <text x="329.0" y="199" font-size="15" fill="#c8e0e9">Blocked</text>
+    <text x="145" y="140" font-size="14" fill="#e9f6ff">Yes</text>
+    <text x="145" y="237" font-size="14" fill="#e9f6ff">Yes</text>
+    <text x="255" y="78" font-size="14" fill="#e9f6ff">No</text>
+    <text x="252" y="175" font-size="14" fill="#e9f6ff">No</text>
+  </g>
+</svg>

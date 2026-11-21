@@ -123,3 +123,5 @@ UTC, 호출자, 컨텍스트, 대상과 결과를 기록하세요. 정책이 해
 - [Kubernetes v1.36 · 어드미션 제어](https://v1-36.docs.kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 - [Amazon EKS 사용 설명서 · 제어 영역 감사 로그를 CloudWatch Logs로 내보내기](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
 - [Kubernetes v1.36 · ConfigMap 서버 드라이런 명령](https://v1-36.docs.kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_configmap/)
+
+정책 변경 뒤 Pod 연결에서 일어난 일을 확인하려면 [Kubernetes NetworkPolicy 증거]({{ '/ko/wiki/kubernetes-network-policy-evidence/' | relative_url }})로 이어서 살펴보세요.

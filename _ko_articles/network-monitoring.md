@@ -234,3 +234,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## HTTP 캐시 조사
 
 [HTTP 캐시 조사]({{ '/ko/wiki/http-cache-evidence/' | relative_url }}). 엣지 응답 재사용, 조건부 응답과 공유 범위를 확인합니다.
+
+## Kubernetes Pod 트래픽과 NetworkPolicy 조사
+
+[Kubernetes NetworkPolicy 증거]({{ '/ko/wiki/kubernetes-network-policy-evidence/' | relative_url }})에서 API 변경, 네트워크 판정, 애플리케이션 결과를 대조하세요.
