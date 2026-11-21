@@ -1,0 +1,314 @@
+{
+  "description": "Synthetic CloudTrail field projections with independently supplied case coverage. Omitted fields are intentional. No AWS account or calls are represented.",
+  "cases": [
+    {
+      "case": "K01",
+      "caller_account": "111122223333",
+      "key_account": "111122223333",
+      "kms_read_covered": true,
+      "bucket_key_for_object": false,
+      "events": [
+        {
+          "eventID": "00000000-0000-4000-8000-000000000001",
+          "eventTime": "2026-11-21T05:00:00Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "kms.amazonaws.com",
+          "eventName": "Decrypt",
+          "eventCategory": "Management",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "111122223333",
+            "arn": "arn:aws:sts::111122223333:assumed-role/TrainingReport/example"
+          },
+          "recipientAccountId": "111122223333",
+          "readOnly": true,
+          "requestParameters": {
+            "keyId": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+            "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+            "encryptionContext": {
+              "purpose": "daily-report"
+            }
+          },
+          "responseElements": null,
+          "resources": [
+            {
+              "type": "AWS::KMS::Key",
+              "ARN": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+              "accountId": "111122223333"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "K02",
+      "caller_account": "111122223333",
+      "key_account": "111122223333",
+      "kms_read_covered": true,
+      "bucket_key_for_object": false,
+      "events": [
+        {
+          "eventID": "00000000-0000-4000-8000-000000000002",
+          "eventTime": "2026-11-21T05:01:00Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "kms.amazonaws.com",
+          "eventName": "Decrypt",
+          "eventCategory": "Management",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "111122223333",
+            "arn": "arn:aws:sts::111122223333:assumed-role/TrainingReport/example"
+          },
+          "recipientAccountId": "111122223333",
+          "readOnly": true,
+          "requestParameters": {
+            "keyId": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+            "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+            "encryptionContext": {
+              "purpose": "daily-report"
+            }
+          },
+          "responseElements": null,
+          "errorCode": "IncorrectKeyException"
+        }
+      ]
+    },
+    {
+      "case": "K03",
+      "caller_account": "444455556666",
+      "key_account": "111122223333",
+      "kms_read_covered": true,
+      "bucket_key_for_object": false,
+      "events": [
+        {
+          "eventID": "00000000-0000-4000-8000-000000000003",
+          "eventTime": "2026-11-21T05:03:00Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "kms.amazonaws.com",
+          "eventName": "Decrypt",
+          "eventCategory": "Management",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "444455556666",
+            "arn": "arn:aws:sts::444455556666:assumed-role/TrainingReport/example"
+          },
+          "recipientAccountId": "444455556666",
+          "readOnly": true,
+          "requestParameters": {
+            "keyId": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+            "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+            "encryptionContext": {
+              "purpose": "daily-report"
+            }
+          },
+          "responseElements": null,
+          "resources": [
+            {
+              "type": "AWS::KMS::Key",
+              "ARN": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+              "accountId": "111122223333"
+            }
+          ],
+          "sharedEventID": "00000000-0000-4000-8000-00000000001f"
+        },
+        {
+          "eventID": "00000000-0000-4000-8000-000000000004",
+          "eventTime": "2026-11-21T05:03:00Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "kms.amazonaws.com",
+          "eventName": "Decrypt",
+          "eventCategory": "Management",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "444455556666",
+            "arn": "arn:aws:sts::444455556666:assumed-role/TrainingReport/example"
+          },
+          "recipientAccountId": "111122223333",
+          "readOnly": true,
+          "requestParameters": {
+            "keyId": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+            "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+            "encryptionContext": {
+              "purpose": "daily-report"
+            }
+          },
+          "responseElements": null,
+          "resources": [
+            {
+              "type": "AWS::KMS::Key",
+              "ARN": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+              "accountId": "111122223333"
+            }
+          ],
+          "sharedEventID": "00000000-0000-4000-8000-00000000001f"
+        }
+      ]
+    },
+    {
+      "case": "K04",
+      "caller_account": "444455556666",
+      "key_account": "111122223333",
+      "kms_read_covered": true,
+      "bucket_key_for_object": false,
+      "events": [
+        {
+          "eventID": "00000000-0000-4000-8000-000000000005",
+          "eventTime": "2026-11-21T05:05:00Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "kms.amazonaws.com",
+          "eventName": "Decrypt",
+          "eventCategory": "Management",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "444455556666",
+            "arn": "arn:aws:sts::444455556666:assumed-role/TrainingReport/example"
+          },
+          "recipientAccountId": "444455556666",
+          "readOnly": true,
+          "requestParameters": {
+            "keyId": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+            "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+            "encryptionContext": {
+              "purpose": "daily-report"
+            }
+          },
+          "responseElements": null,
+          "errorCode": "AccessDenied"
+        }
+      ]
+    },
+    {
+      "case": "K05",
+      "caller_account": "111122223333",
+      "key_account": "111122223333",
+      "kms_read_covered": true,
+      "bucket_key_for_object": true,
+      "events": [
+        {
+          "eventID": "00000000-0000-4000-8000-000000000006",
+          "eventTime": "2026-11-21T05:08:01Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "s3.amazonaws.com",
+          "eventName": "GetObject",
+          "eventCategory": "Data",
+          "recipientAccountId": "111122223333",
+          "readOnly": true,
+          "requestID": "LAB-S3-6",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "111122223333",
+            "arn": "arn:aws:sts::111122223333:assumed-role/TrainingReport/example"
+          },
+          "requestParameters": {
+            "bucketName": "training-reports-example",
+            "key": "daily/summary.csv"
+          },
+          "responseElements": null
+        }
+      ]
+    },
+    {
+      "case": "K06",
+      "caller_account": "111122223333",
+      "key_account": "111122223333",
+      "kms_read_covered": false,
+      "bucket_key_for_object": false,
+      "events": []
+    },
+    {
+      "case": "K07",
+      "caller_account": "111122223333",
+      "key_account": "111122223333",
+      "kms_read_covered": true,
+      "bucket_key_for_object": false,
+      "events": [
+        {
+          "eventID": "00000000-0000-4000-8000-000000000007",
+          "eventTime": "2026-11-21T05:12:00Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "kms.amazonaws.com",
+          "eventName": "PutKeyPolicy",
+          "eventCategory": "Management",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "111122223333",
+            "arn": "arn:aws:sts::111122223333:assumed-role/TrainingReport/example"
+          },
+          "recipientAccountId": "111122223333",
+          "readOnly": false,
+          "requestParameters": {
+            "keyId": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555"
+          },
+          "responseElements": null,
+          "resources": [
+            {
+              "type": "AWS::KMS::Key",
+              "ARN": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+              "accountId": "111122223333"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "K08",
+      "caller_account": "111122223333",
+      "key_account": "111122223333",
+      "kms_read_covered": true,
+      "bucket_key_for_object": true,
+      "events": [
+        {
+          "eventID": "00000000-0000-4000-8000-000000000008",
+          "eventTime": "2026-11-21T05:15:00Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "kms.amazonaws.com",
+          "eventName": "Decrypt",
+          "eventCategory": "Management",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "111122223333",
+            "arn": "arn:aws:sts::111122223333:assumed-role/TrainingReport/example"
+          },
+          "recipientAccountId": "111122223333",
+          "readOnly": true,
+          "requestParameters": {
+            "keyId": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+            "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
+            "encryptionContext": {
+              "aws:s3:arn": "arn:aws:s3:::training-reports-example"
+            }
+          },
+          "responseElements": null,
+          "resources": [
+            {
+              "type": "AWS::KMS::Key",
+              "ARN": "arn:aws:kms:us-west-2:111122223333:key/11111111-2222-4333-8444-555555555555",
+              "accountId": "111122223333"
+            }
+          ]
+        },
+        {
+          "eventID": "00000000-0000-4000-8000-000000000009",
+          "eventTime": "2026-11-21T05:15:01Z",
+          "awsRegion": "us-west-2",
+          "eventSource": "s3.amazonaws.com",
+          "eventName": "GetObject",
+          "eventCategory": "Data",
+          "recipientAccountId": "111122223333",
+          "readOnly": true,
+          "requestID": "LAB-S3-9",
+          "userIdentity": {
+            "type": "AssumedRole",
+            "accountId": "111122223333",
+            "arn": "arn:aws:sts::111122223333:assumed-role/TrainingReport/example"
+          },
+          "requestParameters": {
+            "bucketName": "training-reports-example",
+            "key": "daily/other.csv"
+          },
+          "responseElements": null
+        }
+      ]
+    }
+  ]
+}

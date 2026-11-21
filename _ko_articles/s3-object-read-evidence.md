@@ -96,3 +96,7 @@ python3 s3-read-review.py
 - [AWS CloudTrail · 이벤트 레코드 필드](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html) · [신원 필드](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)
 - [Amazon S3 · 서버 액세스 로그 형식](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html) · [로그 전달 방식](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html)
 - [Amazon S3 API · GetObject와 범위 응답](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)
+
+## 이어서 읽기
+
+[AWS KMS 조사 입문]({{ '/ko/wiki/aws-kms-evidence/' | relative_url }}) · 키를 사용한 호출과 S3 객체를 읽은 요청에서 각각 어떤 증거를 얻는지 살펴보세요.

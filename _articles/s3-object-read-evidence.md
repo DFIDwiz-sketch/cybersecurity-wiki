@@ -96,3 +96,7 @@ AWS general purpose S3 and CloudTrail documentation reviewed on 20 November 2026
 - [AWS CloudTrail · Event record contents](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html) · [Identity fields](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)
 - [Amazon S3 · Server access log format](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html) · [Best-effort delivery](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html)
 - [Amazon S3 API · GetObject and range responses](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)
+
+## Follow the key evidence
+
+[AWS KMS investigation]({{ '/wiki/aws-kms-evidence/' | relative_url }}) · Trace the key operation and check what CloudTrail and S3 can each establish.

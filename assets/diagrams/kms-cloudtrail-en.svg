@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="396" viewBox="0 0 400 396" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Envelope encryption and AWS KMS evidence</title>
+  <desc id="desc">AWS KMS unwraps an encrypted data key. The caller uses the plaintext data key and separate workload records are needed to verify data use.</desc>
+  <rect width="400" height="396" rx="16" fill="#eff6ff"/>
+  <g font-family="system-ui,sans-serif" fill="#10253a">
+    <rect x="13" y="14" width="374" height="73" rx="10" fill="#ffffff" stroke="#405a73"/>
+    <text x="29" y="42" font-size="22" font-weight="700">Encrypted data key</text>
+    <text x="29" y="69" font-size="18">Stored alongside the encrypted payload</text>
+    <path d="M200 93v16m-5-5 5 5 5-5" fill="none" stroke="#405a73" stroke-width="2"/>
+    <rect x="13" y="115" width="374" height="73" rx="10" fill="#ffffff" stroke="#405a73"/>
+    <text x="29" y="143" font-size="22" font-weight="700">AWS KMS Decrypt</text>
+    <text x="29" y="170" font-size="18">Checks access, then unwraps the data key</text>
+    <path d="M200 194v16m-5-5 5 5 5-5" fill="none" stroke="#405a73" stroke-width="2"/>
+    <rect x="13" y="216" width="374" height="73" rx="10" fill="#ffffff" stroke="#405a73"/>
+    <text x="29" y="244" font-size="22" font-weight="700">Caller decrypts the payload</text>
+    <text x="29" y="271" font-size="18">Application or S3 tracks the result</text>
+    <path d="M200 295v16m-5-5 5 5 5-5" fill="none" stroke="#405a73" stroke-width="2"/>
+    <rect x="13" y="317" width="374" height="73" rx="10" fill="#dcfce7" stroke="#405a73"/>
+    <text x="29" y="345" font-size="22" font-weight="700">Investigation</text>
+    <text x="29" y="372" font-size="18">Compare KMS and workload evidence</text>
+  </g>
+</svg>

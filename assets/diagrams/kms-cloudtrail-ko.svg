@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="396" viewBox="0 0 400 396" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">봉투 암호화와 AWS KMS 증거</title>
+  <desc id="desc">AWS KMS가 암호화된 데이터 키를 복호화합니다. 호출 측이 이 키를 사용하며 데이터 사용 결과는 별도 워크로드 기록에서 확인합니다.</desc>
+  <rect width="400" height="396" rx="16" fill="#eff6ff"/>
+  <g font-family="system-ui,sans-serif" fill="#10253a">
+    <rect x="13" y="14" width="374" height="73" rx="10" fill="#ffffff" stroke="#405a73"/>
+    <text x="29" y="42" font-size="22" font-weight="700">암호화된 데이터 키</text>
+    <text x="29" y="69" font-size="18">암호화된 본문과 함께 보관</text>
+    <path d="M200 93v16m-5-5 5 5 5-5" fill="none" stroke="#405a73" stroke-width="2"/>
+    <rect x="13" y="115" width="374" height="73" rx="10" fill="#ffffff" stroke="#405a73"/>
+    <text x="29" y="143" font-size="22" font-weight="700">AWS KMS Decrypt</text>
+    <text x="29" y="170" font-size="18">권한을 확인한 뒤 데이터 키 복호화</text>
+    <path d="M200 194v16m-5-5 5 5 5-5" fill="none" stroke="#405a73" stroke-width="2"/>
+    <rect x="13" y="216" width="374" height="73" rx="10" fill="#ffffff" stroke="#405a73"/>
+    <text x="29" y="244" font-size="22" font-weight="700">호출 측이 본문 복호화</text>
+    <text x="29" y="271" font-size="18">애플리케이션 또는 S3가 결과 기록</text>
+    <path d="M200 295v16m-5-5 5 5 5-5" fill="none" stroke="#405a73" stroke-width="2"/>
+    <rect x="13" y="317" width="374" height="73" rx="10" fill="#dcfce7" stroke="#405a73"/>
+    <text x="29" y="345" font-size="22" font-weight="700">조사</text>
+    <text x="29" y="372" font-size="18">KMS 로그와 워크로드 증거 비교</text>
+  </g>
+</svg>

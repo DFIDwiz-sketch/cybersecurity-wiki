@@ -137,3 +137,7 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 ## Investigate Amazon S3 Object Reads and Bytes Sent
 
 [Pair a role session's S3 request with the server-side response]({{ '/wiki/s3-object-read-evidence/' | relative_url }})
+
+## Follow the key evidence
+
+[AWS KMS investigation]({{ '/wiki/aws-kms-evidence/' | relative_url }}) · Trace the key operation and check what CloudTrail and S3 can each establish.

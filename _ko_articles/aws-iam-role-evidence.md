@@ -137,3 +137,7 @@ lab-04와 lab-06의 발급 주체를 각각 찾고, lab-07을 왜 연결하지 �
 ## Amazon S3 객체 읽기와 전송 바이트 조사
 
 [역할 세션의 S3 요청을 액세스 로그와 대조하는 실습]({{ '/ko/wiki/s3-object-read-evidence/' | relative_url }})
+
+## 이어서 읽기
+
+[AWS KMS 조사 입문]({{ '/ko/wiki/aws-kms-evidence/' | relative_url }}) · 키를 사용한 호출과 S3 객체를 읽은 요청에서 각각 어떤 증거를 얻는지 살펴보세요.
