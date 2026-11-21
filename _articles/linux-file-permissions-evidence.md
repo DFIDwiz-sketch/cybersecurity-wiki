@@ -99,3 +99,7 @@ Reviewed 21 November 2026. Use the documentation for the installed kernel, ACL t
 - Linux man-pages online at review. [Path resolution](https://man7.org/linux/man-pages/man7/path_resolution.7.html) · [File creation mask](https://man7.org/linux/man-pages/man2/umask.2.html) · [Open and file descriptors](https://man7.org/linux/man-pages/man2/open.2.html) · [Capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html)
 - Linux ACL project, manual snapshot from its upstream source at review. [acl(5)](https://man7.org/linux/man-pages/man5/acl.5.html) · [getfacl(1)](https://man7.org/linux/man-pages/man1/getfacl.1.html)
 - Linux Audit upstream manual and RHEL 9 product documentation. [auditctl](https://man7.org/linux/man-pages/man8/auditctl.8.html) · [ausearch](https://man7.org/linux/man-pages/man8/ausearch.8.html) · [RHEL 9 audit record examples and coverage](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/auditing-the-system_security-hardening)
+
+## Investigate Linux file activity
+
+[Linux Audit file evidence]({{ '/wiki/linux-audit-file-evidence/' | relative_url }}) · Join system calls and paths, then test what a file-open record can establish.

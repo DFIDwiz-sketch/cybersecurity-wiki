@@ -121,3 +121,7 @@ p02·p03·p06의 차이를 설명하고, p04에 관점 변환이 필요한 이�
 ## Linux systemd 타이머 조사
 
 [Linux systemd 타이머 조사]({{ '/ko/wiki/systemd-timer-evidence/' | relative_url }}). 타이머 설정, 서비스 호출, 실제 작업 결과를 구분합니다.
+
+## Linux 파일 접근 증거 이어서 보기
+
+[Linux Audit 파일 접근 입문]({{ '/ko/wiki/linux-audit-file-evidence/' | relative_url }}) · 시스템 호출과 파일 경로를 연결하고 열기 기록으로 어디까지 판단할 수 있는지 실습합니다.

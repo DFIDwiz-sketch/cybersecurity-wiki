@@ -99,3 +99,7 @@ TMPDIR="$PWD" python3 linux-file-permissions-lab.py
 - 검토일의 Linux 온라인 매뉴얼. [경로 해석](https://man7.org/linux/man-pages/man7/path_resolution.7.html) · [파일 생성 마스크](https://man7.org/linux/man-pages/man2/umask.2.html) · [파일 열기와 디스크립터](https://man7.org/linux/man-pages/man2/open.2.html) · [Capability](https://man7.org/linux/man-pages/man7/capabilities.7.html)
 - 검토일의 Linux ACL 프로젝트 업스트림 매뉴얼 스냅샷. [acl(5)](https://man7.org/linux/man-pages/man5/acl.5.html) · [getfacl(1)](https://man7.org/linux/man-pages/man1/getfacl.1.html)
 - Linux Audit 업스트림 매뉴얼 및 RHEL 9 제품군 문서. [auditctl](https://man7.org/linux/man-pages/man8/auditctl.8.html) · [ausearch](https://man7.org/linux/man-pages/man8/ausearch.8.html) · [RHEL 9 감사 기록 예제와 수집 범위](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/auditing-the-system_security-hardening)
+
+## Linux 파일 접근 증거 이어서 보기
+
+[Linux Audit 파일 접근 입문]({{ '/ko/wiki/linux-audit-file-evidence/' | relative_url }}) · 시스템 호출과 파일 경로를 연결하고 열기 기록으로 어디까지 판단할 수 있는지 실습합니다.

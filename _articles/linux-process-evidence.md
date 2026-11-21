@@ -121,3 +121,7 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 ## Investigate Linux systemd timers
 
 [Investigate Linux systemd timers]({{ '/wiki/systemd-timer-evidence/' | relative_url }}). Separate timer configuration, individual service runs, and application results.
+
+## Investigate Linux file activity
+
+[Linux Audit file evidence]({{ '/wiki/linux-audit-file-evidence/' | relative_url }}) · Join system calls and paths, then test what a file-open record can establish.

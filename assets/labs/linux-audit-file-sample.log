@@ -1,0 +1,10 @@
+node=lab-a type=SYSCALL msg=audit(1795233600.110:40): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=7fff0000 a2=1 a3=0 items=1 pid=412 auid=1001 uid=0 euid=0 ses=7 comm="config-check" exe="/usr/local/bin/config-check" key="training_config"
+node=lab-b type=PATH msg=audit(1795233600.110:40): item=0 name="/srv/training/report.conf" inode=902 dev=fd:01 nametype=NORMAL
+node=lab-a type=CWD msg=audit(1795233600.110:40): cwd="/srv/training"
+node=lab-a type=PATH msg=audit(1795233600.110:40): item=0 name="report.conf" inode=402 dev=fd:01 nametype=NORMAL
+node=lab-b type=SYSCALL msg=audit(1795233600.110:40): arch=c000003e syscall=257 success=no exit=-13 a0=ffffff9c a1=7fff0000 a2=1 a3=0 items=1 pid=511 auid=1002 uid=1002 euid=1002 ses=9 comm="config-check" exe="/usr/local/bin/config-check" key="training_config"
+node=lab-a type=SYSCALL msg=audit(1795233601.220:41): arch=c000003e syscall=257 success=yes exit=4 a0=ffffff9c a1=7fff0000 a2=0 a3=0 items=1 pid=505 auid=4294967295 uid=998 euid=998 ses=4294967295 comm="health-reader" exe="/usr/local/bin/health-reader" key="training_config"
+node=lab-a type=PATH msg=audit(1795233601.220:41): item=0 name="/srv/training/report.conf" inode=402 dev=fd:01 nametype=NORMAL
+node=lab-a type=SYSCALL msg=audit(1795233603.330:42): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7fff0000 a2=1 a3=0 items=1 pid=412 auid=1001 uid=0 euid=0 ses=7 comm="config-check" exe="/usr/local/bin/config-check" key="training_config"
+node=lab-a type=CWD msg=audit(1795233603.330:42): cwd="/srv/training"
+node=lab-b type=PATH msg=audit(1795233610.010:43): item=0 name="/srv/training/other.conf" inode=903 dev=fd:01 nametype=NORMAL

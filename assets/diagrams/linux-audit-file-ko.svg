@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="408" viewBox="0 0 440 408" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">Linux Audit 파일 증거가 조사에 쓰이는 과정</title>
+  <desc id="description">커널의 규칙 매칭, 데몬의 로그 처리, 수집, 이벤트 조립은 각각 다른 단계입니다.</desc>
+  <rect width="440" height="408" rx="16" fill="#eff6ff"/>
+  <g font-family="system-ui,sans-serif" fill="#12263a">
+    <rect x="16" y="16" width="408" height="72" rx="10" fill="#ffffff" stroke="#3c5974"/>
+    <text x="32" y="43" font-size="21" font-weight="700">커널 Audit</text>
+    <text x="32" y="71" font-size="18">규칙에 맞으면 이벤트 레코드 생성</text>
+    <path d="M220 96v19m-5-5 5 5 5-5" fill="none" stroke="#3c5974" stroke-width="2"/>
+    <rect x="16" y="122" width="408" height="72" rx="10" fill="#ffffff" stroke="#3c5974"/>
+    <text x="32" y="149" font-size="21" font-weight="700">auditd</text>
+    <text x="32" y="177" font-size="18">커널 큐의 레코드를 읽어 로그 처리</text>
+    <path d="M220 202v19m-5-5 5 5 5-5" fill="none" stroke="#3c5974" stroke-width="2"/>
+    <rect x="16" y="228" width="408" height="72" rx="10" fill="#ffffff" stroke="#3c5974"/>
+    <text x="32" y="255" font-size="21" font-weight="700">수집기</text>
+    <text x="32" y="283" font-size="18">원본 호스트 정보와 레코드 전달</text>
+    <path d="M220 308v19m-5-5 5 5 5-5" fill="none" stroke="#3c5974" stroke-width="2"/>
+    <rect x="16" y="334" width="408" height="72" rx="10" fill="#dcfce7" stroke="#3c5974"/>
+    <text x="32" y="361" font-size="21" font-weight="700">조사</text>
+    <text x="32" y="389" font-size="18">이벤트별로 SYSCALL·CWD·PATH 결합</text>
+  </g>
+</svg>
