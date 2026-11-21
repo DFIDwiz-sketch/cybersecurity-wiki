@@ -82,6 +82,8 @@ B, C, D가 서로 다른 이유로 실패하는지 설명하세요. 한 사례�
 
 [이전 · 디지털 증거 보존]({{ '/ko/wiki/evidence-preservation/' | relative_url }}) · [관련 · 블루팀 기초]({{ '/ko/wiki/blue-team-basics/' | relative_url }})
 
+[S3 버전 복구 증거]({{ '/ko/wiki/s3-version-recovery-evidence/' | relative_url }}) · 삭제 마커와 영구 삭제를 구별하고 복구 후보 버전을 확인하세요.
+
 ## 공식 참고자료
 
 2026년 11월 20일 검토. NIST는 복구 계획과 측정, CISA는 랜섬웨어에 대비한 백업을 설명합니다. SQLite와 Python 자료는 이 실습에서 사용한 기능을 설명합니다.

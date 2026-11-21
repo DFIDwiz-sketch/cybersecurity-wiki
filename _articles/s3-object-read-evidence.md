@@ -100,3 +100,5 @@ AWS general purpose S3 and CloudTrail documentation reviewed on 20 November 2026
 ## Follow the key evidence
 
 [AWS KMS investigation]({{ '/wiki/aws-kms-evidence/' | relative_url }}) · Trace the key operation and check what CloudTrail and S3 can each establish.
+
+[S3 object deletion and recovery evidence]({{ '/wiki/s3-version-recovery-evidence/' | relative_url }}) · Distinguish a delete marker from permanent deletion and verify a candidate version.

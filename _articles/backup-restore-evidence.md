@@ -82,6 +82,8 @@ Finish by explaining why B, C and D fail for different reasons. Write a go or ho
 
 [Previous · Digital evidence preservation]({{ '/wiki/evidence-preservation/' | relative_url }}) · [Related · Blue Team fundamentals]({{ '/wiki/blue-team-basics/' | relative_url }})
 
+[S3 version recovery evidence]({{ '/wiki/s3-version-recovery-evidence/' | relative_url }}) · Distinguish a delete marker from permanent deletion and verify a candidate version.
+
 ## Official references
 
 Reviewed 20 November 2026. NIST provides recovery planning and metrics. CISA covers ransomware resilience. SQLite and Python references describe the lab interfaces rather than the behavior of other backup products.

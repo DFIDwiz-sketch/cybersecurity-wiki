@@ -100,3 +100,5 @@ python3 s3-read-review.py
 ## 이어서 읽기
 
 [AWS KMS 조사 입문]({{ '/ko/wiki/aws-kms-evidence/' | relative_url }}) · 키를 사용한 호출과 S3 객체를 읽은 요청에서 각각 어떤 증거를 얻는지 살펴보세요.
+
+[S3 객체 삭제와 복구 증거]({{ '/ko/wiki/s3-version-recovery-evidence/' | relative_url }}) · 삭제 마커와 영구 삭제를 구별하고 복구 후보 버전을 확인하세요.
