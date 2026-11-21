@@ -95,3 +95,7 @@ Reviewed November 20, 2026. The baseline is the Community ID v1 public reference
 - Community ID v1, design, seed and binary layout. [Corelight specification](https://github.com/corelight/community-id-spec) · [Reference baselines](https://github.com/corelight/community-id-spec/tree/master/baseline)
 - Zeek 9.0.1 online documentation at review. [Community ID policy](https://docs.zeek.org/en/current/scripts/policy/protocols/conn/community-id-logging.zeek.html) · [Connection log fields](https://docs.zeek.org/en/current/scripts/base/protocols/conn/main.zeek.html)
 - Suricata 8.0.2 reference, with the EVE settings also checked in the online development manual. [EVE JSON · Community Flow ID](https://docs.suricata.io/en/suricata-8.0.2/output/eve/eve-json-output.html#community-flow-id)
+
+## Investigate the HTTP Transaction Behind an EVE Alert
+
+[Trace a Suricata EVE alert]({{ '/wiki/suricata-eve-transaction-evidence/' | relative_url }}) · Compare scoped flow and transaction IDs, then inspect packet verdicts.

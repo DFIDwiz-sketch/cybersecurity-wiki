@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 466" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">Suricata 경보에서 결과 증거까지</title>
+  <desc id="description">센서와 실행을 포함해 경보의 플로를 찾습니다. 트랜잭션 후보가 정확히 하나면 HTTP 기록을 연결할 수 있습니다. 그 외에는 연결을 미확정으로 남기고 프록시, 앱 또는 인라인 경로의 독립된 근거에서 결과를 확인합니다.</desc>
+  <rect width="436" height="466" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="18" y="18" width="400" height="64" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="218" y="46" font-size="22" font-weight="700" fill="#eff6ff">EVE 경보</text>
+    <text x="218" y="70" font-size="18" fill="#dbeafe">룰·시각·패킷 방향</text>
+    <path d="M218 82v20m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="18" y="112" width="400" height="68" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="218" y="141" font-size="21" font-weight="700" fill="#f8fafc">플로 범위 좁히기</text>
+    <text x="218" y="166" font-size="17" fill="#e2e8f0">센서 + 실행 + flow_id</text>
+    <path d="M218 180v25H108v21m-6-6 6 6 6-6m104-15h110v21m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="235" width="184" height="98" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="236" y="235" width="184" height="98" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="108" y="269" font-size="19" font-weight="700" fill="#f0fdfa">tx_id 한 건 일치</text>
+    <text x="108" y="302" font-size="17" fill="#ccfbf1">HTTP 교환 확인</text>
+    <text x="328" y="269" font-size="19" font-weight="700" fill="#fffbeb">일치 기록 미확정</text>
+    <text x="328" y="302" font-size="17" fill="#fef3c7">요청 연결 보류</text>
+    <path d="M108 333v23h110v23m-6-6 6 6 6-6m-6-17h110v-23" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="18" y="389" width="400" height="60" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="218" y="416" font-size="21" font-weight="700" fill="#eff6ff">결과를 독립적으로 대조</text>
+    <text x="218" y="438" font-size="17" fill="#dbeafe">프록시·앱·정책 집행 근거</text>
+  </g>
+</svg>

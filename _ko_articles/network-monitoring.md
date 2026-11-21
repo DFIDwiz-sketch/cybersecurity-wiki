@@ -238,3 +238,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## Kubernetes Pod 트래픽과 NetworkPolicy 조사
 
 [Kubernetes NetworkPolicy 증거]({{ '/ko/wiki/kubernetes-network-policy-evidence/' | relative_url }})에서 API 변경, 네트워크 판정, 애플리케이션 결과를 대조하세요.
+
+## EVE 경보가 가리키는 HTTP 트랜잭션 조사
+
+[Suricata EVE 경보 추적하기]({{ '/ko/wiki/suricata-eve-transaction-evidence/' | relative_url }}) · 플로와 트랜잭션 ID의 범위를 맞춘 뒤 패킷 판정을 확인합니다.

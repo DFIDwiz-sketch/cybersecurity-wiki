@@ -238,3 +238,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Trace Kubernetes Pod Traffic and NetworkPolicy
 
 Use [Kubernetes NetworkPolicy evidence]({{ '/wiki/kubernetes-network-policy-evidence/' | relative_url }}) to distinguish an API change from a network verdict and application outcome.
+
+## Investigate the HTTP Transaction Behind an EVE Alert
+
+[Trace a Suricata EVE alert]({{ '/wiki/suricata-eve-transaction-evidence/' | relative_url }}) · Compare scoped flow and transaction IDs, then inspect packet verdicts.

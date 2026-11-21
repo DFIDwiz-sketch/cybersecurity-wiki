@@ -95,3 +95,7 @@ Z01·Z02·Z07에 대해 원본 ID, 발생 시각, 관측 지점과 남은 불확
 - Community ID v1의 설계, 시드, 이진 값 순서. [Corelight 명세](https://github.com/corelight/community-id-spec) · [비교용 기준 데이터](https://github.com/corelight/community-id-spec/tree/master/baseline)
 - 검토 당시 Zeek 9.0.1 온라인 문서. [Community ID 정책](https://docs.zeek.org/en/current/scripts/policy/protocols/conn/community-id-logging.zeek.html) · [연결 로그 필드](https://docs.zeek.org/en/current/scripts/base/protocols/conn/main.zeek.html)
 - Suricata 8.0.2 문서와 검토 당시 개발 문서의 EVE 설정을 확인했습니다. [EVE JSON · Community Flow ID](https://docs.suricata.io/en/suricata-8.0.2/output/eve/eve-json-output.html#community-flow-id)
+
+## EVE 경보가 가리키는 HTTP 트랜잭션 조사
+
+[Suricata EVE 경보 추적하기]({{ '/ko/wiki/suricata-eve-transaction-evidence/' | relative_url }}) · 플로와 트랜잭션 ID의 범위를 맞춘 뒤 패킷 판정을 확인합니다.

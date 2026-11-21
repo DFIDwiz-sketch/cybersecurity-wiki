@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 466" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">From the Suricata alert to outcome evidence</title>
+  <desc id="description">Scope the alert flow by sensor and run. Exactly one matching HTTP transaction supports attribution. Otherwise keep the transaction unresolved. Use independent evidence from the proxy, app or inline path to assess the outcome.</desc>
+  <rect width="436" height="466" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="18" y="18" width="400" height="64" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="218" y="46" font-size="22" font-weight="700" fill="#eff6ff">EVE alert</text>
+    <text x="218" y="70" font-size="18" fill="#dbeafe">Rule, time and packet direction</text>
+    <path d="M218 82v20m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="18" y="112" width="400" height="68" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="218" y="141" font-size="21" font-weight="700" fill="#f8fafc">Scope the flow</text>
+    <text x="218" y="166" font-size="17" fill="#e2e8f0">Sensor + run + flow_id</text>
+    <path d="M218 180v25H108v21m-6-6 6 6 6-6m104-15h110v21m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="235" width="184" height="98" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="236" y="235" width="184" height="98" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="108" y="269" font-size="19" font-weight="700" fill="#f0fdfa">One exact tx_id</text>
+    <text x="108" y="302" font-size="17" fill="#ccfbf1">HTTP exchange found</text>
+    <text x="328" y="269" font-size="19" font-weight="700" fill="#fffbeb">No unique match</text>
+    <text x="328" y="302" font-size="17" fill="#fef3c7">Request unresolved</text>
+    <path d="M108 333v23h110v23m-6-6 6 6 6-6m-6-17h110v-23" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="18" y="389" width="400" height="60" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="218" y="416" font-size="21" font-weight="700" fill="#eff6ff">Corroborate the outcome</text>
+    <text x="218" y="438" font-size="17" fill="#dbeafe">Proxy, application or enforcement</text>
+  </g>
+</svg>
