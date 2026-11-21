@@ -18,7 +18,7 @@ A **neighbor cache** holds mappings so a machine can send consecutive frames wit
 
 ## 2. Read a normal exchange
 
-<figure>
+<figure style="margin-inline: 0">
 <img src="{{ '/assets/diagrams/arp-address-evidence-en.svg' | relative_url }}" alt="A route chooses an on-link destination or gateway. Its IPv4 address leads to a cached MAC or an ARP exchange, then to the Ethernet destination.">
 <figcaption>ARP resolves the next hop chosen by routing. The remote IP address stays in the IP packet.</figcaption>
 </figure>

@@ -18,7 +18,7 @@ translation_url: /wiki/arp-address-evidence/
 
 ## 2. 정상 요청과 응답을 읽어 보기
 
-<figure>
+<figure style="margin-inline: 0">
 <img src="{{ '/assets/diagrams/arp-address-evidence-ko.svg' | relative_url }}" alt="라우팅이 같은 링크의 목적지나 게이트웨이를 고릅니다. 다음 홉의 IPv4 주소에 대응하는 MAC을 캐시나 ARP 교환에서 얻어 이더넷 목적지에 넣습니다.">
 <figcaption>ARP는 라우팅이 선택한 다음 홉을 해석합니다. 원격 목적지 IP는 패킷에 그대로 남습니다.</figcaption>
 </figure>
