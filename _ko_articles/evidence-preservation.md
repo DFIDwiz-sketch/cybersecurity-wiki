@@ -118,3 +118,7 @@ python3 evidence-hash-lab.py
 ## 메일 전송 증거 보존하기
 
 [원래 시각, 큐 ID의 범위와 수신자별 결과를 기록합니다.]({{ '/ko/wiki/smtp-delivery-evidence/' | relative_url }})
+
+## NTFS USN 변경 저널 조사
+
+[NTFS USN 변경 저널 조사]({{ '/ko/wiki/ntfs-usn-evidence/' | relative_url }}). 파일 이름 변경을 추적하고 저널 공백과 미관측을 구분합니다.

@@ -118,3 +118,7 @@ Reviewed 20 November 2026. The 2006 NIST guide provides acquisition foundations.
 ## Preserve Email Transport Evidence
 
 [Record original timestamps, scoped queue IDs and recipient-specific outcomes.]({{ '/wiki/smtp-delivery-evidence/' | relative_url }})
+
+## Investigate the NTFS USN Journal
+
+[Investigate the NTFS USN Journal]({{ '/wiki/ntfs-usn-evidence/' | relative_url }}). Follow file renames and distinguish journal gaps from missing changes.

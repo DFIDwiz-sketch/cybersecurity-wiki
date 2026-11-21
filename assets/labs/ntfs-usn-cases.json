@@ -1,0 +1,21 @@
+{
+  "continuity": [
+    {"case":"K01","saved_id":"lab-J1","cursor":"0x1080","current_id":"lab-J1","first":"0x1000","lowest_valid":"0x0800","next":"0x1500"},
+    {"case":"K02","saved_id":"lab-J1","cursor":"0x0F80","current_id":"lab-J1","first":"0x1000","lowest_valid":"0x0800","next":"0x1500"},
+    {"case":"K03","saved_id":"lab-J1","cursor":"0x1080","current_id":"lab-J2","first":"0x1000","lowest_valid":"0x1100","next":"0x1500"},
+    {"case":"K04","saved_id":"lab-J1","cursor":"0x1600","current_id":"lab-J1","first":"0x1000","lowest_valid":"0x0800","next":"0x1500"},
+    {"case":"K05","saved_id":"lab-J2","cursor":"0x1080","current_id":"lab-J2","first":"0x1000","lowest_valid":"0x1100","next":"0x1500"},
+    {"case":"K06","saved_id":"lab-J1","cursor":"0x1500","current_id":"lab-J1","first":"0x1000","lowest_valid":"0x0800","next":"0x1500"}
+  ],
+  "records": [
+    {"row":"R01","volume":"lab-V1","journal":"lab-J1","usn":"0x1100","file":"0x0009000000000042","parent":"0x0001000000000018","name":"draft.csv","reason":"0x00001000"},
+    {"row":"R02","volume":"lab-V1","journal":"lab-J1","usn":"0x1180","file":"0x0009000000000042","parent":"0x0002000000000021","name":"report.csv","reason":"0x00002000"},
+    {"row":"R03","volume":"lab-V2","journal":"lab-J1","usn":"0x1140","file":"0x0009000000000042","parent":"0x0001000000000018","name":"different-volume.csv","reason":"0x00001000"},
+    {"row":"R04","volume":"lab-V1","journal":"lab-J2","usn":"0x1140","file":"0x0009000000000042","parent":"0x0001000000000018","name":"different-journal.csv","reason":"0x00001000"},
+    {"row":"R05","volume":"lab-V1","journal":"lab-J1","usn":"0x11D0","file":"0x000A000000000042","parent":"0x0002000000000021","name":"report.csv","reason":"0x00002000"},
+    {"row":"R06","volume":"lab-V1","journal":"lab-J1","usn":"0x12A0","file":"0x0009000000000043","parent":"0x0002000000000021","name":"totals.csv","reason":"0x80000003"},
+    {"row":"R07","volume":"lab-V1","journal":"lab-J1","usn":"0x1310","file":"0x0009000000000044","parent":"0x0001000000000018","name":"first.csv","reason":"0x00001000"},
+    {"row":"R08","volume":"lab-V1","journal":"lab-J1","usn":"0x1370","file":"0x0009000000000044","parent":"0x0001000000000018","name":"second.csv","reason":"0x00001000"},
+    {"row":"R09","volume":"lab-V1","journal":"lab-J1","usn":"0x13D0","file":"0x0009000000000044","parent":"0x0002000000000021","name":"third.csv","reason":"0x00002000"}
+  ]
+}

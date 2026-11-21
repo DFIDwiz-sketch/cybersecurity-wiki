@@ -88,3 +88,7 @@ SMB는 이름이 붙은 **공유**를 네트워크에 제공합니다. 클라이
 - [Microsoft Learn · Windows Server 고급 감사 정책](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/advanced-audit-policy-configuration)
 - [Microsoft Learn · 4624](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624) · [5140](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5140) · [5145](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5145)
 - [Microsoft Learn · 파일 시스템 감사](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-file-system) · [4656](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656) · [4663](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663)
+
+## NTFS USN 변경 저널 조사
+
+[NTFS USN 변경 저널 조사]({{ '/ko/wiki/ntfs-usn-evidence/' | relative_url }}). 파일 이름 변경을 추적하고 저널 공백과 미관측을 구분합니다.

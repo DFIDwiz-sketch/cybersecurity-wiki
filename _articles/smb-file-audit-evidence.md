@@ -88,3 +88,7 @@ Reviewed 21 November 2026. Microsoft's individual event schemas are Windows 10-e
 - [Microsoft Learn · Advanced Audit Policy for Windows Server](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/advanced-audit-policy-configuration)
 - [Microsoft Learn · 4624](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624) · [5140](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5140) · [5145](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5145)
 - [Microsoft Learn · Audit File System](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-file-system) · [4656](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656) · [4663](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663)
+
+## Investigate the NTFS USN Journal
+
+[Investigate the NTFS USN Journal]({{ '/wiki/ntfs-usn-evidence/' | relative_url }}). Follow file renames and distinguish journal gaps from missing changes.
