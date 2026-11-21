@@ -16,7 +16,7 @@ translation_url: /wiki/quic-http3-evidence/
 
 클라이언트는 `Alt-Svc: h3=":443"` 같은 **Alt-Svc** 헤더나, 클라이언트가 지원한다면 DNS HTTPS 레코드 등으로 HTTP/3 접속 지점을 알 수 있습니다. 이런 정보는 사용할 수 있는 대안이 있다는 뜻입니다. 실제 사용 여부는 협상 결과와 요청 기록에서 확인합니다.
 
-<figure>
+<figure style="margin-inline: 0">
   <img src="{{ '/assets/diagrams/quic-http3-ko.svg' | relative_url }}" alt="HTTP/3 발견 단서가 QUIC 시도로 이어질 수 있습니다. 요청 기록에는 QUIC에서의 h3 또는 TCP에서의 h2가 나타날 수 있습니다. 프록시에서 원본 서버로 가는 구간에는 별도의 HTTP 버전이 쓰일 수 있습니다.">
   <figcaption>발견 단서, 연결 결과, 실제 요청 프로토콜을 각각 기록하세요. 엣지가 TLS를 종료한다면 엣지에서 원본 서버까지는 별도의 구간입니다.</figcaption>
 </figure>

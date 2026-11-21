@@ -16,7 +16,7 @@ translation_url: /ko/wiki/quic-http3-evidence/
 
 A client can learn about an HTTP/3 endpoint through an **Alt-Svc** advertisement, such as `Alt-Svc: h3=":443"`, or supported endpoint discovery such as a DNS HTTPS record. An advertisement describes an available alternative. Observe the negotiated protocol and the request to tell whether the client used it.
 
-<figure>
+<figure style="margin-inline: 0">
   <img src="{{ '/assets/diagrams/quic-http3-en.svg' | relative_url }}" alt="An HTTP/3 discovery hint can lead to a QUIC attempt. A request record can show h3 on QUIC or h2 on TCP. A separately terminated edge-to-origin hop may use another HTTP version.">
   <figcaption>Record the discovery hint, connection result and request protocol separately. If an edge terminates TLS, its origin connection is a separate hop.</figcaption>
 </figure>
