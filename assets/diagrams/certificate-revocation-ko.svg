@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="396" viewBox="0 0 400 396" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">CA의 해지 처리에서 검증자의 판단까지</title>
+  <desc id="desc">CA가 해지를 기록하고 서명한 상태를 배포합니다. 검증자는 적용 범위와 유효한 시각을 확인하고 정책을 적용합니다.</desc>
+  <rect width="400" height="396" rx="16" fill="#eff6ff"/>
+  <g font-family="system-ui,sans-serif" fill="#12263a">
+    <rect x="13" y="14" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="42" font-size="21" font-weight="700">1. CA에 해지 기록</text>
+    <text x="29" y="69" font-size="18">발급자와 인증서 일련번호로 식별</text>
+    <path d="M200 93v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="115" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="143" font-size="21" font-weight="700">2. 서명한 상태 게시</text>
+    <text x="29" y="170" font-size="18">대상 범위와 갱신 시각 확인</text>
+    <path d="M200 194v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="216" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="244" font-size="21" font-weight="700">3. 검증자가 상태 확보</text>
+    <text x="29" y="271" font-size="18">로컬 캐시 또는 배포 경로 이용</text>
+    <path d="M200 295v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="317" width="374" height="73" rx="10" fill="#dcfce7" stroke="#405b75"/>
+    <text x="29" y="345" font-size="21" font-weight="700">4. 정책에 따라 판단</text>
+    <text x="29" y="372" font-size="18">검증 결과와 적용 정책을 대조</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="396" viewBox="0 0 400 396" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Revocation from CA action to relying-party decision</title>
+  <desc id="desc">The CA records the status and publishes signed evidence. The consumer obtains it and applies its validation policy.</desc>
+  <rect width="400" height="396" rx="16" fill="#eff6ff"/>
+  <g font-family="system-ui,sans-serif" fill="#12263a">
+    <rect x="13" y="14" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="42" font-size="21" font-weight="700">1. CA records the revocation</text>
+    <text x="29" y="69" font-size="18">Issuer and certificate serial identify it</text>
+    <path d="M200 93v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="115" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="143" font-size="21" font-weight="700">2. Signed status published</text>
+    <text x="29" y="170" font-size="18">Check scope and the update window</text>
+    <path d="M200 194v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="216" width="374" height="73" rx="10" fill="#ffffff" stroke="#405b75"/>
+    <text x="29" y="244" font-size="21" font-weight="700">3. Consumer obtains status</text>
+    <text x="29" y="271" font-size="18">Local cache or distribution path</text>
+    <path d="M200 295v16m-5-5 5 5 5-5" fill="none" stroke="#405b75" stroke-width="2"/>
+    <rect x="13" y="317" width="374" height="73" rx="10" fill="#dcfce7" stroke="#405b75"/>
+    <text x="29" y="345" font-size="21" font-weight="700">4. Verification decision</text>
+    <text x="29" y="372" font-size="18">Compare the result with local policy</text>
+  </g>
+</svg>

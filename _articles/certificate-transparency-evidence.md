@@ -94,3 +94,7 @@ Reviewed 21 November 2026. Protocol scope and vendor policy are tracked separate
 - [Chrome · Browser CT policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html) · [Chrome · CT log operator policy](https://googlechrome.github.io/CertificateTransparency/log_policy.html) · [C2SP · Static CT API v1.1.0](https://c2sp.org/static-ct-api@v1.1.0)
 - [CT project · How monitoring fits into the Web PKI](https://certificate.transparency.dev/howctworks/) · [RFC 8659 · CAA, November 2019](https://www.rfc-editor.org/info/rfc8659/)
 - [OpenSSL 3.5 · openssl x509 command reference](https://docs.openssl.org/3.5/man1/openssl-x509/)
+
+## Follow revocation evidence
+
+[Certificate revocation]({{ '/wiki/certificate-revocation-evidence/' | relative_url }}) · Distinguish listed, missing and expired CRL evidence in six OpenSSL controls.

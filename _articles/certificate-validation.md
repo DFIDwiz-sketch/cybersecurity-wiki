@@ -183,3 +183,7 @@ Complete the chapter when you can draw issuance versus verification direction, i
 ## Client authentication next
 
 [Mutual TLS (mTLS)]({{ '/wiki/mtls-client-identity-evidence/' | relative_url }}) · Follow client authentication through TLS termination and application authorization, then compare six loopback outcomes.
+
+## Follow revocation evidence
+
+[Certificate revocation]({{ '/wiki/certificate-revocation-evidence/' | relative_url }}) · Distinguish listed, missing and expired CRL evidence in six OpenSSL controls.

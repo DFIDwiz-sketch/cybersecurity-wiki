@@ -183,3 +183,7 @@ openssl verify -no-CApath -no-CAstore -CAfile root.pem \
 ## 이어서 읽기
 
 [상호 TLS(mTLS) 입문]({{ '/ko/wiki/mtls-client-identity-evidence/' | relative_url }}) · TLS 종료 지점에서 클라이언트를 인증하는 과정과 애플리케이션 권한 판단을 로컬 연결 여섯 가지로 비교하세요.
+
+## 해지 검증 이어서 보기
+
+[인증서 해지 입문]({{ '/ko/wiki/certificate-revocation-evidence/' | relative_url }}) · OpenSSL 대조 실습으로 목록의 해지 항목, 누락, 만료를 구분합니다.
