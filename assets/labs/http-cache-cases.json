@@ -1,0 +1,8 @@
+[
+  {"id":"H01","status":200,"cache_status":"edge; hit; ttl=100","age":20,"scope":"public","cache_control":"public, max-age=60, s-maxage=120","upstream_status":null,"vary_matches":true},
+  {"id":"H02","status":200,"cache_status":"edge; fwd=stale; fwd-status=304","age":null,"scope":"public","cache_control":"public, max-age=60","upstream_status":304,"vary_matches":true},
+  {"id":"H03","status":200,"cache_status":"edge; fwd=vary-miss","age":null,"scope":"public","cache_control":"public, max-age=60","upstream_status":200,"vary_matches":false},
+  {"id":"H04","status":200,"cache_status":null,"age":null,"scope":"public","cache_control":"public, max-age=60","upstream_status":null,"vary_matches":null},
+  {"id":"H05","status":200,"cache_status":"edge; hit","age":12,"scope":"personalized","cache_control":"public, s-maxage=300","upstream_status":null,"vary_matches":true},
+  {"id":"H06","status":200,"cache_status":"edge; fwd=bypass","age":null,"scope":"personalized","cache_control":"private, no-store","upstream_status":200,"vary_matches":null}
+]

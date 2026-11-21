@@ -104,3 +104,7 @@ Reviewed 18 November 2026. Check fields and settings against your installed prod
 ## Related lesson
 
 [OAuth 2.0 and OIDC tokens and API evidence]({{ '/wiki/oauth-oidc-evidence/' | relative_url }})
+
+## Investigate HTTP Caches
+
+[Investigate HTTP Caches]({{ '/wiki/http-cache-evidence/' | relative_url }}). Trace edge reuse, conditional responses and cache scope.

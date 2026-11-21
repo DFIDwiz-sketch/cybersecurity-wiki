@@ -230,3 +230,7 @@ Record the question, UTC window, clock offsets, sensor location, original IDs, f
 ## Investigate IPv6 Router Advertisements
 
 [Compare the advertised route, prefix and DNS settings with endpoint evidence.]({{ '/wiki/ipv6-router-advertisement-evidence/' | relative_url }})
+
+## Investigate HTTP Caches
+
+[Investigate HTTP Caches]({{ '/wiki/http-cache-evidence/' | relative_url }}). Trace edge reuse, conditional responses and cache scope.

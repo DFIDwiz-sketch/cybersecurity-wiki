@@ -104,3 +104,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## 연결 학습
 
 [OAuth 2.0·OIDC 토큰과 API 작업 기록 조사]({{ '/ko/wiki/oauth-oidc-evidence/' | relative_url }})
+
+## HTTP 캐시 조사
+
+[HTTP 캐시 조사]({{ '/ko/wiki/http-cache-evidence/' | relative_url }}). 엣지 응답 재사용, 조건부 응답과 공유 범위를 확인합니다.

@@ -230,3 +230,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## IPv6 라우터 광고와 단말 설정 대조
 
 [기본 경로, 접두사와 DNS 변경을 패킷과 단말 기록으로 확인합니다.]({{ '/ko/wiki/ipv6-router-advertisement-evidence/' | relative_url }})
+
+## HTTP 캐시 조사
+
+[HTTP 캐시 조사]({{ '/ko/wiki/http-cache-evidence/' | relative_url }}). 엣지 응답 재사용, 조건부 응답과 공유 범위를 확인합니다.

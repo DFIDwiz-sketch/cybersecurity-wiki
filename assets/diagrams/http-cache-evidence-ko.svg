@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="353" viewBox="0 0 360 353" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">HTTP 캐시 응답 경로</title>
+  <desc id="desc">일반 GET을 받은 엣지는 신선한 표현을 재사용하거나 상위 서버에 요청을 전달합니다. 상위 304는 저장 본문을 검증하고 200은 본문을 담아 보낼 수 있습니다.</desc>
+  <rect width="360" height="353" rx="12" fill="#ecf4fc"/>
+  <path d="M180 68v19m-5-6 5 6 5-6 M180 148v20H91v12m-5-6 5 6 5-6 M180 168h89v12m-5-6 5 6 5-6 M269 242v19m-5-6 5 6 5-6" fill="none" stroke="#245981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143a57">
+    <rect x="16" y="12" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="35" font-size="14" font-weight="700">클라이언트의 일반 GET</text>
+    <text x="180" y="54" font-size="11">표현 하나를 요청</text>
+    <rect x="16" y="91" width="328" height="57" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="114" font-size="14" font-weight="700">공유 엣지가 캐시 확인</text>
+    <text x="180" y="133" font-size="11">캐시 키 · Vary · 신선도</text>
+    <rect x="8" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="207" font-size="14" font-weight="700">신선한 일치 항목</text>
+    <text x="91" y="226" font-size="11">저장한 응답 재사용</text>
+    <rect x="186" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="207" font-size="14" font-weight="700">상위 서버 요청 필요</text>
+    <text x="269" y="226" font-size="11">재검증 또는 다시 받기</text>
+    <rect x="186" y="265" width="166" height="76" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="288" font-size="14" font-weight="700">상위 서버 응답</text>
+    <text x="269" y="307" font-size="11">304는 저장 본문 검증</text>
+    <text x="269" y="323" font-size="11">200은 새 본문 전달 가능</text>
+  </g>
+</svg>

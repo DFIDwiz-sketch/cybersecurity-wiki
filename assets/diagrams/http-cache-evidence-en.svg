@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="353" viewBox="0 0 360 353" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">HTTP cache response path</title>
+  <desc id="desc">For an ordinary GET, an edge can reuse a fresh matching response or forward to its upstream. An upstream 304 validates the stored body, while 200 can carry a body.</desc>
+  <rect width="360" height="353" rx="12" fill="#ecf4fc"/>
+  <path d="M180 68v19m-5-6 5 6 5-6 M180 148v20H91v12m-5-6 5 6 5-6 M180 168h89v12m-5-6 5 6 5-6 M269 242v19m-5-6 5 6 5-6" fill="none" stroke="#245981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143a57">
+    <rect x="16" y="12" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="35" font-size="14" font-weight="700">Client sends ordinary GET</text>
+    <text x="180" y="54" font-size="11">Requests one representation</text>
+    <rect x="16" y="91" width="328" height="57" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="114" font-size="14" font-weight="700">Shared edge checks cache</text>
+    <text x="180" y="133" font-size="11">Cache key · Vary · freshness</text>
+    <rect x="8" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="207" font-size="14" font-weight="700">Fresh match</text>
+    <text x="91" y="226" font-size="11">Use the stored response</text>
+    <rect x="186" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="207" font-size="14" font-weight="700">Needs upstream</text>
+    <text x="269" y="226" font-size="11">Validate or fetch</text>
+    <rect x="186" y="265" width="166" height="76" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="288" font-size="14" font-weight="700">Upstream responds</text>
+    <text x="269" y="307" font-size="11">304 validates stored body</text>
+    <text x="269" y="323" font-size="11">200 can carry a new body</text>
+  </g>
+</svg>
