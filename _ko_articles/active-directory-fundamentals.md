@@ -444,3 +444,7 @@ gpresult /r
 ## 그룹 정책 적용 조사
 
 [그룹 정책 적용 조사]({{ '/ko/wiki/gpo-application-evidence/' | relative_url }}). AD와 SYSVOL 버전을 비교하고 실제 단말 적용을 확인합니다.
+
+## Active Directory 계정 잠금 조사
+
+[계정 잠금 증거 추적하기]({{ '/ko/wiki/ad-account-lockout-evidence/' | relative_url }}) · 4740을 기준으로 앞선 인증 실패와 잠금 이후의 거절을 대조합니다.

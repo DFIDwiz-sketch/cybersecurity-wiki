@@ -42,3 +42,7 @@ Whether an event is recorded depends on the system's audit policy. Avoid drawing
 ## Reconstruct an RDP Session
 
 Follow [RDP session evidence]({{ '/wiki/rdp-session-evidence/' | relative_url }}) to distinguish a disconnect, reconnect and logoff.
+
+## Investigate Active Directory Account Lockouts
+
+[Trace account lockout evidence]({{ '/wiki/ad-account-lockout-evidence/' | relative_url }}) · Correlate 4740 with earlier authentication failures and later locked-account rejections.

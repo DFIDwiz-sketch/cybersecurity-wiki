@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 474" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">Account lockout evidence across hosts</title>
+  <desc id="description">The destination may log 4625 and a domain controller may log 4771 or 4776. If lockout is reached, anchor the timeline at 4740 and check later rejections.</desc>
+  <rect width="440" height="474" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="34" y="18" width="372" height="64" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="220" y="57" font-weight="700" font-size="22" fill="#eff6ff">Failed domain sign-in</text>
+    <path d="M220 82v28H110v18m-6-6 6 6 6-6m104-12h110v18m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="14" y="138" width="192" height="113" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <rect x="234" y="138" width="192" height="113" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="110" y="172" font-size="19" font-weight="700" fill="#f8fafc">Destination host</text>
+    <text x="110" y="207" font-size="21" fill="#e2e8f0">4625 · Logon failure</text>
+    <text x="330" y="172" font-size="19" font-weight="700" fill="#f8fafc">Domain controller</text>
+    <text x="330" y="202" font-size="17" fill="#e2e8f0">4771 · Kerberos</text>
+    <text x="330" y="229" font-size="17" fill="#e2e8f0">4776 · NTLM</text>
+    <path d="M220 255v28m-6-6 6 6 6-6" stroke="#fbbf24" stroke-width="3" fill="none"/>
+    <rect x="34" y="294" width="372" height="68" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="220" y="335" font-weight="700" font-size="21" fill="#fffbeb">If lockout occurs · 4740</text>
+    <path d="M220 362v22m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="34" y="394" width="372" height="62" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <text x="220" y="431" font-size="20" fill="#f0fdfa">Later · rejections while locked</text>
+  </g>
+</svg>

@@ -444,3 +444,7 @@ gpresult /r
 ## Investigate Group Policy Application
 
 [Investigate Group Policy Application]({{ '/wiki/gpo-application-evidence/' | relative_url }}). Compare directory and SYSVOL versions and verify the client result.
+
+## Investigate Active Directory Account Lockouts
+
+[Trace account lockout evidence]({{ '/wiki/ad-account-lockout-evidence/' | relative_url }}) · Correlate 4740 with earlier authentication failures and later locked-account rejections.

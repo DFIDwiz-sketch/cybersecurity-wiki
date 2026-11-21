@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 474" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">호스트별 계정 잠금 증거</title>
+  <desc id="description">대상 호스트에는 4625, 도메인 컨트롤러에는 4771 또는 4776이 남을 수 있습니다. 잠금이 발생하면 4740을 기준으로 이후 거절을 확인합니다.</desc>
+  <rect width="440" height="474" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="34" y="18" width="372" height="64" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="220" y="57" font-weight="700" font-size="22" fill="#eff6ff">도메인 로그인 실패</text>
+    <path d="M220 82v28H110v18m-6-6 6 6 6-6m104-12h110v18m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="14" y="138" width="192" height="113" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <rect x="234" y="138" width="192" height="113" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="110" y="172" font-size="19" font-weight="700" fill="#f8fafc">접속 대상 호스트</text>
+    <text x="110" y="207" font-size="21" fill="#e2e8f0">4625 · 로그온 실패</text>
+    <text x="330" y="172" font-size="19" font-weight="700" fill="#f8fafc">도메인 컨트롤러</text>
+    <text x="330" y="202" font-size="17" fill="#e2e8f0">4771 · Kerberos</text>
+    <text x="330" y="229" font-size="17" fill="#e2e8f0">4776 · NTLM</text>
+    <path d="M220 255v28m-6-6 6 6 6-6" stroke="#fbbf24" stroke-width="3" fill="none"/>
+    <rect x="34" y="294" width="372" height="68" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="220" y="335" font-weight="700" font-size="21" fill="#fffbeb">잠금 발생 시 · 4740</text>
+    <path d="M220 362v22m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="34" y="394" width="372" height="62" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <text x="220" y="431" font-size="20" fill="#f0fdfa">이후 · 잠긴 계정 거절</text>
+  </g>
+</svg>

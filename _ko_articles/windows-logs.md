@@ -42,3 +42,7 @@ updated: "2026-10-17"
 ## RDP 세션 타임라인 조사
 
 [RDP 세션 증거]({{ '/ko/wiki/rdp-session-evidence/' | relative_url }})에서 연결 해제, 재연결, 로그오프를 구분합니다.
+
+## Active Directory 계정 잠금 조사
+
+[계정 잠금 증거 추적하기]({{ '/ko/wiki/ad-account-lockout-evidence/' | relative_url }}) · 4740을 기준으로 앞선 인증 실패와 잠금 이후의 거절을 대조합니다.
