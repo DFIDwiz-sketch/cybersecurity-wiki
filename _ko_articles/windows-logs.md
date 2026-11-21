@@ -38,3 +38,7 @@ updated: "2026-10-17"
 ## Windows 로그 공백 이어서 읽기
 
 [Windows 보안 로그 공백]({{ '/ko/wiki/windows-log-continuity/' | relative_url }}) · 로그 지우기와 보존 손실, 감사 정책 변경, 전달 문제를 구분합니다.
+
+## RDP 세션 타임라인 조사
+
+[RDP 세션 증거]({{ '/ko/wiki/rdp-session-evidence/' | relative_url }})에서 연결 해제, 재연결, 로그오프를 구분합니다.

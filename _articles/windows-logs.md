@@ -38,3 +38,7 @@ Whether an event is recorded depends on the system's audit policy. Avoid drawing
 ## Investigate missing Windows events
 
 [Windows Security log gaps]({{ '/wiki/windows-log-continuity/' | relative_url }}) · Distinguish clearing, retention, policy changes and delivery gaps.
+
+## Reconstruct an RDP Session
+
+Follow [RDP session evidence]({{ '/wiki/rdp-session-evidence/' | relative_url }}) to distinguish a disconnect, reconnect and logoff.

@@ -60,6 +60,8 @@ RDP creates or reconnects an interactive session. On the destination, **4624 Log
 
 Remote Credential Guard can reduce credential exposure in supported Kerberos-based RDP scenarios. It differs from Credential Guard and Restricted Admin mode; validate deployment requirements and helpdesk use cases rather than treating these names as interchangeable. Disconnecting a session is also different from logging off. [Remote Credential Guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard), [4778 reconnect event](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4778).
 
+Use the [RDP session evidence guide]({{ '/wiki/rdp-session-evidence/' | relative_url }}) to reconstruct disconnect and logoff from destination records.
+
 ## 6. WinRM and PowerShell Remoting
 
 WinRM implements WS-Management. A listener can support administrative operations and configured PowerShell session endpoints; access depends on the endpoint and account. Default endpoints commonly require administrators, but delegated/JEA endpoints can intentionally allow narrower access.

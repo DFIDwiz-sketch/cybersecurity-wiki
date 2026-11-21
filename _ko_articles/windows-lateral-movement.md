@@ -60,6 +60,8 @@ RDP는 대화형 세션을 만들거나 기존 세션에 다시 연결합니다.
 
 Remote Credential Guard는 지원되는 Kerberos 기반 RDP 시나리오에서 자격 증명 노출을 줄입니다. Credential Guard·Restricted Admin과 목적·조건이 다르므로 같은 기능처럼 설명하면 안 됩니다. 지원 OS·헬프데스크 요구사항을 확인하세요. **세션 연결 해제와 로그오프도 다릅니다.** [Remote Credential Guard](https://learn.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard), [4778 재연결](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4778).
 
+[RDP 세션 증거]({{ '/ko/wiki/rdp-session-evidence/' | relative_url }})에서 대상 이벤트를 연결해 연결 해제와 로그오프를 구분해 보세요.
+
 ## 6. WinRM과 PowerShell Remoting
 
 WinRM은 WS-Management를 구현합니다. Listener와 구성된 PowerShell 세션 엔드포인트의 권한에 따라 관리 작업을 허용합니다. 기본 엔드포인트는 보통 관리자 권한을 요구하지만 위임·JEA 엔드포인트로 좁은 역할만 허용하도록 설계할 수 있습니다.

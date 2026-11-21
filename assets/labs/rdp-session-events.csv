@@ -1,0 +1,14 @@
+record,time_utc,computer,boot,event_id,logon_type,target_logon_id,logon_id,account,session_name,client_address
+1,2026-11-21T01:00:00Z,rdsh-a.example.invalid,A1,4625,10,,,labadmin,,192.0.2.10
+2,2026-11-21T01:01:00Z,rdsh-a.example.invalid,A1,4624,10,0x2a1,,labadmin,,192.0.2.10
+3,2026-11-21T01:02:00Z,rdsh-a.example.invalid,A1,4624,3,0x311,,labadmin,,192.0.2.10
+4,2026-11-21T01:05:00Z,rdsh-a.example.invalid,A1,4779,,,0x2A1,labadmin,RDP-Tcp#4,192.0.2.10
+5,2026-11-21T01:06:00Z,rdsh-b.example.invalid,B1,4624,10,0x2a1,,labadmin,,192.0.2.10
+6,2026-11-21T01:08:00Z,rdsh-a.example.invalid,A1,4778,,,0x2a1,labadmin,RDP-Tcp#4,192.0.2.11
+7,2026-11-21T01:09:00Z,rdsh-a.example.invalid,A1,4778,,,0x119,localuser,Console,LOCAL
+8,2026-11-21T01:10:00Z,rdsh-a.example.invalid,A1,4647,,0x2a1,,labadmin,,
+9,2026-11-21T01:10:01Z,rdsh-a.example.invalid,A1,4634,10,0x2a1,,labadmin,,
+10,2026-11-21T01:11:00Z,rdsh-a.example.invalid,A1,4634,3,0x311,,labadmin,,
+11,2026-11-21T02:00:00Z,rdsh-a.example.invalid,A2,4624,10,0x2a1,,labadmin,,192.0.2.10
+12,2026-11-21T02:05:00Z,rdsh-a.example.invalid,A2,4779,,,0x2a1,labadmin,RDP-Tcp#2,192.0.2.10
+13,2026-11-21T02:06:00Z,rdsh-a.example.invalid,A2,4778,,,0x404,opsuser,RDP-Tcp#3,192.0.2.12
