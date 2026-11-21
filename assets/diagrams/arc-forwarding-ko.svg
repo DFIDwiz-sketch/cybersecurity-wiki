@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 433" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">메일 전달 과정의 ARC와 수신 정책</title>
+  <desc id="description">전달 서버는 이전 인증 결과를 기록하고 발송할 버전을 서명합니다. 최종 수신기는 직접 DMARC와 ARC 체인을 각각 검증하고 정책에 따라 처리 결과를 기록합니다.</desc>
+  <rect width="432" height="433" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="16" y="18" width="400" height="57" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="53" font-weight="700" font-size="22" fill="#eff6ff">원래 발신자</text>
+    <path d="M216 75v22m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="106" width="400" height="77" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="216" y="137" font-weight="700" font-size="21" fill="#f8fafc">전달 서버</text>
+    <text x="216" y="163" font-size="16" fill="#e2e8f0">앞선 검사를 기록하고 전달할 메일에 서명</text>
+    <path d="M216 183v20H108v29m-6-6 6 6 6-6m102-23h108v29m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <text x="216" y="222" font-size="16" fill="#e2e8f0">최종 수신기</text>
+    <rect x="16" y="241" width="184" height="71" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="232" y="241" width="184" height="71" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="108" y="271" font-weight="700" font-size="20" fill="#f0fdfa">직접 DMARC</text>
+    <text x="108" y="295" font-size="16" fill="#ccfbf1">수신기의 정렬 검사</text>
+    <text x="324" y="271" font-weight="700" font-size="20" fill="#fffbeb">ARC 검증</text>
+    <text x="324" y="295" font-size="16" fill="#fef3c7">도착한 체인</text>
+    <path d="M108 312v17h108v24m-6-6 6 6 6-6m-6-18h108v-17" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="361" width="400" height="55" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="384" font-weight="700" font-size="19" fill="#eff6ff">수신 정책에 따른 처리</text>
+    <text x="216" y="405" font-size="16" fill="#dbeafe">서명자 신뢰·정책 사유·배달 결과</text>
+  </g>
+</svg>

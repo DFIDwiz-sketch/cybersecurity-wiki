@@ -180,3 +180,7 @@ python3 mail-auth.py
 ## 인증에서 SMTP 전달 추적으로 이어가기
 
 [수신자 한 명의 SMTP 응답부터 후속 처리 기록까지 따라갑니다.]({{ '/ko/wiki/smtp-delivery-evidence/' | relative_url }})
+
+## ARC와 전달 메일 이어서 조사하기
+
+[ARC 체인과 배달 증거 확인하기]({{ '/ko/wiki/arc-forwarding-evidence/' | relative_url }}) · 직접 인증과 수신 정책, 실제 배달을 구분합니다.

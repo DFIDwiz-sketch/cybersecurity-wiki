@@ -1,0 +1,8 @@
+{"id":"A","evidence_source":"receiver_log","local_dmarc":"fail","chain":"pass","sealer_trust":"trusted","prior_aligned":true,"decision_reason":"arc_override","disposition":"delivered"}
+{"id":"B","evidence_source":"receiver_log","local_dmarc":"fail","chain":"pass","sealer_trust":"unknown","prior_aligned":true,"decision_reason":"other","disposition":"quarantined"}
+{"id":"C","evidence_source":"receiver_log","local_dmarc":"fail","chain":"fail","sealer_trust":"trusted","prior_aligned":true,"decision_reason":"other","disposition":"rejected"}
+{"id":"D","evidence_source":"message_claim","local_dmarc":"pass","chain":"pass","sealer_trust":"trusted","prior_aligned":true,"decision_reason":"arc_override","disposition":"delivered"}
+{"id":"E","evidence_source":"receiver_log","local_dmarc":"fail","chain":"pass","sealer_trust":"trusted","prior_aligned":true,"decision_reason":"unknown","disposition":"delivered"}
+{"id":"F","evidence_source":"receiver_log","local_dmarc":"pass","chain":"none","sealer_trust":"unknown","prior_aligned":null,"decision_reason":"other","disposition":"unknown"}
+{"id":"G","evidence_source":"receiver_log","local_dmarc":"fail","chain":"pass","sealer_trust":"trusted","prior_aligned":false,"decision_reason":"other","disposition":"quarantined"}
+{"id":"H","evidence_source":"receiver_log","local_dmarc":"fail","chain":"fail","sealer_trust":"trusted","prior_aligned":true,"decision_reason":"arc_override","disposition":"unknown"}

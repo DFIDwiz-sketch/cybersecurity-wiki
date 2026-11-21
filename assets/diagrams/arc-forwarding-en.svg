@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 433" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">ARC forwarding and receiver policy</title>
+  <desc id="description">The forwarder records earlier authentication and seals its outgoing version. The final receiver checks direct DMARC and the ARC chain separately. It uses local trust policy and records a disposition.</desc>
+  <rect width="432" height="433" rx="18" fill="#0f172a"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <rect x="16" y="18" width="400" height="57" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="53" font-weight="700" font-size="22" fill="#eff6ff">Original sender</text>
+    <path d="M216 75v22m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="106" width="400" height="77" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="216" y="137" font-weight="700" font-size="21" fill="#f8fafc">Forwarding relay</text>
+    <text x="216" y="163" font-size="16" fill="#e2e8f0">Records earlier checks and seals outgoing mail</text>
+    <path d="M216 183v20H108v29m-6-6 6 6 6-6m102-23h108v29m-6-6 6 6 6-6" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <text x="216" y="222" font-size="16" fill="#e2e8f0">Final receiver</text>
+    <rect x="16" y="241" width="184" height="71" rx="12" fill="#134e4a" stroke="#5eead4"/>
+    <rect x="232" y="241" width="184" height="71" rx="12" fill="#422006" stroke="#fbbf24"/>
+    <text x="108" y="271" font-weight="700" font-size="20" fill="#f0fdfa">Direct DMARC</text>
+    <text x="108" y="295" font-size="16" fill="#ccfbf1">Local alignment</text>
+    <text x="324" y="271" font-weight="700" font-size="20" fill="#fffbeb">ARC validation</text>
+    <text x="324" y="295" font-size="16" fill="#fef3c7">Received chain</text>
+    <path d="M108 312v17h108v24m-6-6 6 6 6-6m-6-18h108v-17" stroke="#cbd5e1" stroke-width="3" fill="none"/>
+    <rect x="16" y="361" width="400" height="55" rx="12" fill="#172554" stroke="#93c5fd"/>
+    <text x="216" y="384" font-weight="700" font-size="19" fill="#eff6ff">Receiver policy decision</text>
+    <text x="216" y="405" font-size="16" fill="#dbeafe">Sealer trust, reason and disposition</text>
+  </g>
+</svg>

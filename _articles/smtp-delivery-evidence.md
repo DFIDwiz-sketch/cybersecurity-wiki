@@ -92,3 +92,7 @@ Reviewed 21 November 2026. Internet standards below describe the SMTP exchange a
 - [RFC 3464 · Delivery status notification format, 2003](https://www.rfc-editor.org/info/rfc3464/)
 - [Postfix · postqueue manual, JSON queue format and queue ID scope](https://www.postfix.org/postqueue.1.html) · [Debian · Postfix package manual](https://manpages.debian.org/bookworm/postfix/postqueue.1.en.html)
 - [Microsoft · Exchange Online message trace FAQ](https://learn.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/message-trace-faq) · [Get-MessageTraceV2](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-messagetracev2) · [Get-MessageTraceDetailV2](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-messagetracedetailv2)
+
+## Investigate ARC and Forwarding
+
+[Read ARC chain and delivery evidence]({{ '/wiki/arc-forwarding-evidence/' | relative_url }}) · Separate direct authentication from receiver policy and delivery.

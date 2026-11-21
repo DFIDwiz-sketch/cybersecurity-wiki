@@ -180,3 +180,7 @@ Reviewed 19 November 2026. Use standards for protocol behavior and the deployed 
 ## Continue from Authentication to SMTP Delivery
 
 [Trace one recipient from the SMTP reply to subsequent delivery evidence.]({{ '/wiki/smtp-delivery-evidence/' | relative_url }})
+
+## Investigate ARC and Forwarding
+
+[Read ARC chain and delivery evidence]({{ '/wiki/arc-forwarding-evidence/' | relative_url }}) · Separate direct authentication from receiver policy and delivery.

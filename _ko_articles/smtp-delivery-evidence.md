@@ -92,3 +92,7 @@ translation_url: /wiki/smtp-delivery-evidence/
 - [RFC 3464 · 배달 상태 알림 형식, 2003](https://www.rfc-editor.org/info/rfc3464/)
 - [Postfix · postqueue 매뉴얼, JSON 큐 형식과 큐 ID 범위](https://www.postfix.org/postqueue.1.html) · [Debian · Postfix 패키지 매뉴얼](https://manpages.debian.org/bookworm/postfix/postqueue.1.en.html)
 - [Microsoft · Exchange Online 메시지 추적 FAQ](https://learn.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/message-trace-faq) · [Get-MessageTraceV2](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-messagetracev2) · [Get-MessageTraceDetailV2](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-messagetracedetailv2)
+
+## ARC와 전달 메일 이어서 조사하기
+
+[ARC 체인과 배달 증거 확인하기]({{ '/ko/wiki/arc-forwarding-evidence/' | relative_url }}) · 직접 인증과 수신 정책, 실제 배달을 구분합니다.
