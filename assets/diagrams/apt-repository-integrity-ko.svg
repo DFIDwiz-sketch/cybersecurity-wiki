@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="296" viewBox="0 0 400 296" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">APT 저장소 검증 순서</title>
+  <desc id="desc">허용된 공개키로 Release를 검증합니다. Release는 Packages의 해시를, Packages는 Debian 패키지의 해시를 제공합니다.</desc>
+  <rect width="400" height="296" rx="14" fill="#10212d"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="200" y="29" fill="#e9f6ff" font-size="19" font-weight="700">APT 저장소 검증 순서</text>
+    <rect x="18" y="44" width="364" height="62" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="68" fill="#e9f6ff" font-size="19" font-weight="700">Release 서명 확인</text>
+    <text x="200" y="91" fill="#c8e0e9" font-size="17">저장소에 허용된 공개키 사용</text>
+    <rect x="18" y="131" width="364" height="62" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="155" fill="#e9f6ff" font-size="19" font-weight="700">Packages 인덱스 확인</text>
+    <text x="200" y="178" fill="#c8e0e9" font-size="17">Release의 SHA-256과 대조</text>
+    <rect x="18" y="218" width="364" height="62" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="200" y="242" fill="#e9f6ff" font-size="19" font-weight="700">내려받은 .deb 확인</text>
+    <text x="200" y="265" fill="#c8e0e9" font-size="17">Packages의 SHA-256과 대조</text>
+  </g>
+  <path d="M200 110v17m-5-6 5 6 5-6 M200 197v17m-5-6 5 6 5-6" fill="none" stroke="#7de3ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

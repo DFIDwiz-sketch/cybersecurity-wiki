@@ -93,3 +93,5 @@ Reviewed 20 November 2026. Compare the actual document version and format before
 - [Ecma · ECMA-427 Package URL, first edition December 2025](https://ecma-international.org/publications-and-standards/standards/ecma-427/)
 - [OpenVEX · Project specification and status fields](https://github.com/openvex/spec/blob/main/OPENVEX-SPEC.md)
 - [Open Containers Initiative · Image descriptor and digest, November 2025](https://specs.opencontainers.org/image-spec/descriptor/) · [Image index and platform descriptors](https://specs.opencontainers.org/image-spec/image-index/)
+
+For Debian package downloads, [trace the archive signature and hashes first]({{ '/wiki/apt-repository-integrity/' | relative_url }}) to establish which file the archive published.

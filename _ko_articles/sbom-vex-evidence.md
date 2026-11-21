@@ -93,3 +93,5 @@ S02, S05, S07이 왜 서로 다른 문제인지 설명하세요. 실제 배포 �
 - [Ecma · ECMA-427 Package URL, 2025년 12월 초판](https://ecma-international.org/publications-and-standards/standards/ecma-427/)
 - [OpenVEX · 프로젝트 규격과 상태 필드](https://github.com/openvex/spec/blob/main/OPENVEX-SPEC.md)
 - [Open Containers Initiative · 이미지 디스크립터와 다이제스트, 2025년 11월](https://specs.opencontainers.org/image-spec/descriptor/) · [이미지 인덱스와 플랫폼 정보](https://specs.opencontainers.org/image-spec/image-index/)
+
+Debian 패키지를 조사한다면 [APT 저장소 서명과 해시 검증]({{ '/ko/wiki/apt-repository-integrity/' | relative_url }})으로 저장소가 어떤 파일을 게시했는지 먼저 확인할 수 있습니다.

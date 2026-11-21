@@ -177,3 +177,5 @@ Finish when you can draw both key directions, explain symmetric TLS traffic keys
 ## Check Vulnerability Scope with SBOM and VEX
 
 [Review verified provenance and the scope of a vulnerability statement]({{ '/wiki/sbom-vex-evidence/' | relative_url }})
+
+Apply signatures to software distribution in [APT repository integrity]({{ '/wiki/apt-repository-integrity/' | relative_url }}).
