@@ -101,3 +101,7 @@ Reviewed 20 November 2026. Match standards and analyzer behavior to the actual d
 ## Connect a TLS Observation to Certificate Transparency
 
 [Compare the observed leaf with independently collected issuance evidence.]({{ '/wiki/certificate-transparency-evidence/' | relative_url }})
+
+## Client authentication next
+
+[Mutual TLS (mTLS)]({{ '/wiki/mtls-client-identity-evidence/' | relative_url }}) · Follow client authentication through TLS termination and application authorization, then compare six loopback outcomes.

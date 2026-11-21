@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="376" viewBox="0 0 420 376" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">상호 TLS 인증과 애플리케이션 인가</title>
+  <desc id="description">클라이언트는 서비스 신원을 확인하고 TLS 종료 지점은 클라이언트를 인증합니다. 애플리케이션은 확인된 신원의 권한을 검사합니다.</desc>
+  <rect width="420" height="376" rx="16" fill="#f1f5f9"/>
+  <g font-family="system-ui, sans-serif" fill="#10243a">
+    <rect x="16" y="16" width="388" height="98" rx="12" fill="#e0f2fe" stroke="#3d5973"/>
+    <text x="31" y="44" font-size="19" font-weight="700">1. 클라이언트가 서버 검증</text>
+    <text x="31" y="71" font-size="17">신뢰 체인과 요청한 서비스 이름 확인</text>
+    <text x="31" y="94" font-size="17">서버가 개인키 보유를 증명</text>
+    <path d="M210 117v19m-5-5 5 5 5-5" fill="none" stroke="#3d5973" stroke-width="2"/>
+    <rect x="16" y="139" width="388" height="98" rx="12" fill="#e0f2fe" stroke="#3d5973"/>
+    <text x="31" y="167" font-size="19" font-weight="700">2. TLS 종료 지점이 클라이언트 검증</text>
+    <text x="31" y="194" font-size="17">클라이언트 인증서를 요청하고 확인</text>
+    <text x="31" y="217" font-size="17">클라이언트가 개인키 보유를 증명</text>
+    <path d="M210 240v19m-5-5 5 5 5-5" fill="none" stroke="#3d5973" stroke-width="2"/>
+    <rect x="16" y="262" width="388" height="98" rx="12" fill="#dcfce7" stroke="#3d5973"/>
+    <text x="31" y="290" font-size="19" font-weight="700">3. 애플리케이션이 권한 검사</text>
+    <text x="31" y="317" font-size="17">검증한 신원을 권한 판단용 주체로 연결</text>
+    <text x="31" y="340" font-size="17">요청한 동작의 허용 또는 거부 결정</text>
+  </g>
+</svg>

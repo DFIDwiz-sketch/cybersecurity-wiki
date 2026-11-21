@@ -179,3 +179,7 @@ openssl verify -no-CApath -no-CAstore -CAfile root.pem \
 ## 인증서 투명성 증거 조사하기
 
 [로그의 약속, 포함 증명과 실제 서비스 배포를 구분합니다.]({{ '/ko/wiki/certificate-transparency-evidence/' | relative_url }})
+
+## 이어서 읽기
+
+[상호 TLS(mTLS) 입문]({{ '/ko/wiki/mtls-client-identity-evidence/' | relative_url }}) · TLS 종료 지점에서 클라이언트를 인증하는 과정과 애플리케이션 권한 판단을 로컬 연결 여섯 가지로 비교하세요.

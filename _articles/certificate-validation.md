@@ -179,3 +179,7 @@ Complete the chapter when you can draw issuance versus verification direction, i
 ## Investigate Certificate Transparency Evidence
 
 [Distinguish a log promise, inclusion proof and actual service deployment.]({{ '/wiki/certificate-transparency-evidence/' | relative_url }})
+
+## Client authentication next
+
+[Mutual TLS (mTLS)]({{ '/wiki/mtls-client-identity-evidence/' | relative_url }}) · Follow client authentication through TLS termination and application authorization, then compare six loopback outcomes.
