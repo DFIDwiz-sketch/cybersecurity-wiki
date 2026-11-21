@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="336" viewBox="0 0 360 336" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Reading a VPC flow record</title>
+  <desc id="desc">Identify the observation point. For a normal traffic record, compare direction and addresses. For a missing or skipped record, check collection coverage.</desc>
+  <rect width="360" height="336" rx="12" fill="#ecf4fc"/>
+  <path d="M180 68v19m-5-6 5 6 5-6 M180 149v18H91v13m-5-6 5 6 5-6 M180 167h89v13m-5-6 5 6 5-6 M91 242v20m-5-6 5 6 5-6" fill="none" stroke="#245981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143a57">
+    <rect x="16" y="12" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="35" font-size="12" font-weight="700">Identify the observation</text>
+    <text x="180" y="54" font-size="12">Account · Region · ENI · time</text>
+    <rect x="16" y="91" width="328" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="114" font-size="12" font-weight="700">Read log-status first</text>
+    <text x="180" y="133" font-size="12">Traffic record or coverage signal?</text>
+    <rect x="8" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="207" font-size="14" font-weight="700">OK + traffic fields</text>
+    <text x="91" y="226" font-size="12">Check action and direction</text>
+    <rect x="186" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="207" font-size="14" font-weight="700">NODATA or SKIPDATA</text>
+    <text x="269" y="226" font-size="12">Check collection coverage</text>
+    <rect x="8" y="266" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="289" font-size="12" font-weight="700">Corroborate the result</text>
+    <text x="91" y="308" font-size="12">Endpoint or service logs</text>
+  </g>
+</svg>

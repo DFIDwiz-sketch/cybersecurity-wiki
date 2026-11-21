@@ -115,3 +115,7 @@ python3 nat-correlation.py
 ## Community ID로 Zeek와 Suricata 연결하기
 
 [공통 ID, 시각과 관측 범위를 대조하는 실습]({{ '/ko/wiki/community-id-evidence/' | relative_url }})
+
+## AWS VPC Flow Logs 조사
+
+[AWS VPC Flow Logs 조사]({{ '/ko/wiki/vpc-flow-log-evidence/' | relative_url }}). 클라우드 흐름을 관측 지점별로 읽고 네트워크 처리 결과와 기록 누락을 구분합니다.

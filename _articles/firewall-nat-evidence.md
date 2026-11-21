@@ -115,3 +115,7 @@ Reviewed 20 November 2026. IETF and NIST references provide the protocol and pol
 ## Correlate Zeek and Suricata with Community ID
 
 [Practise comparing shared IDs, event time and sensor scope]({{ '/wiki/community-id-evidence/' | relative_url }})
+
+## Investigate AWS VPC Flow Logs
+
+[Investigate AWS VPC Flow Logs]({{ '/wiki/vpc-flow-log-evidence/' | relative_url }}). Read cloud flow records by observation point and distinguish network decisions from logging gaps.

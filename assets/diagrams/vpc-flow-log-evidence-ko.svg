@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="336" viewBox="0 0 360 336" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">VPC 흐름 기록 해석 순서</title>
+  <desc id="desc">관측 지점을 확인합니다. 정상 트래픽 기록은 방향과 주소를 대조하고, 누락이나 빈 관측은 수집 범위를 확인합니다.</desc>
+  <rect width="360" height="336" rx="12" fill="#ecf4fc"/>
+  <path d="M180 68v19m-5-6 5 6 5-6 M180 149v18H91v13m-5-6 5 6 5-6 M180 167h89v13m-5-6 5 6 5-6 M91 242v20m-5-6 5 6 5-6" fill="none" stroke="#245981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#143a57">
+    <rect x="16" y="12" width="328" height="56" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="35" font-size="14" font-weight="700">관측 식별</text>
+    <text x="180" y="54" font-size="12">계정 · 리전 · ENI · 시간</text>
+    <rect x="16" y="91" width="328" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="180" y="114" font-size="14" font-weight="700">log-status 먼저 확인</text>
+    <text x="180" y="133" font-size="12">트래픽 관측인가요, 수집 상태인가요?</text>
+    <rect x="8" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="207" font-size="14" font-weight="700">OK와 트래픽 필드</text>
+    <text x="91" y="226" font-size="12">처리 결과와 방향 대조</text>
+    <rect x="186" y="184" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="269" y="207" font-size="14" font-weight="700">NODATA 또는 SKIPDATA</text>
+    <text x="269" y="226" font-size="12">수집 범위 확인</text>
+    <rect x="8" y="266" width="166" height="58" rx="10" fill="#fff" stroke="#7898b3"/>
+    <text x="91" y="289" font-size="14" font-weight="700">작업 결과 대조</text>
+    <text x="91" y="308" font-size="12">단말 또는 서비스 로그</text>
+  </g>
+</svg>

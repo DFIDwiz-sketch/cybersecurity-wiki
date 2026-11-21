@@ -104,3 +104,7 @@ aws cloudtrail validate-logs \
 - [CloudTrail · 자체 검증 구현 및 오프라인 보존 요건](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-custom-validation.html)
 - [AWS CLI v2 · validate-logs](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/validate-logs.html), [get-trail-status](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html), [list-public-keys](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-public-keys.html)
 - [CloudTrail · 이벤트 종류와 추적 범위](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html)
+
+## AWS VPC Flow Logs 조사
+
+[AWS VPC Flow Logs 조사]({{ '/ko/wiki/vpc-flow-log-evidence/' | relative_url }}). 클라우드 흐름을 관측 지점별로 읽고 네트워크 처리 결과와 기록 누락을 구분합니다.

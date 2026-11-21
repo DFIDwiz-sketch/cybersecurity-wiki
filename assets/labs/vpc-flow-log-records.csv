@@ -1,0 +1,13 @@
+id,account,region,interface-id,flow-direction,srcaddr,dstaddr,srcport,dstport,protocol,packets,bytes,start,end,action,log-status,tcp-flags,pkt-srcaddr,pkt-dstaddr
+A01,lab-a,lab-region,eni-client,egress,10.10.1.25,10.10.2.80,52344,443,6,3,180,1795221000,1795221009,ACCEPT,OK,2,10.10.1.25,10.10.2.80
+A02,lab-a,lab-region,eni-client,ingress,10.10.2.80,10.10.1.25,443,52344,6,3,220,1795221001,1795221010,ACCEPT,OK,18,10.10.2.80,10.10.1.25
+A03,lab-a,lab-region,eni-client,ingress,10.10.2.80,10.10.1.25,443,52344,6,3,220,1795220690,1795220698,ACCEPT,OK,18,10.10.2.80,10.10.1.25
+A04,lab-b,lab-region,eni-peer,ingress,10.10.2.80,10.10.1.25,443,52344,6,3,220,1795221001,1795221010,ACCEPT,OK,18,10.10.2.80,10.10.1.25
+A05,lab-a,lab-region,eni-server,egress,10.10.2.80,10.10.1.25,443,52344,6,3,220,1795221001,1795221010,ACCEPT,OK,18,10.10.2.80,10.10.1.25
+B01,lab-a,lab-region,eni-server,ingress,10.10.1.25,10.10.2.80,52401,443,6,2,104,1795221020,1795221023,REJECT,OK,2,10.10.1.25,10.10.2.80
+B02,lab-a,lab-region,eni-idle,-,-,-,-,-,-,-,-,1795221060,1795221119,-,NODATA,-,-,-
+B03,lab-a,lab-region,eni-client,-,-,-,-,-,-,-,-,1795221120,1795221179,-,SKIPDATA,-,-,-
+C01,lab-a,lab-region,eni-zonal-nat,ingress,10.10.1.25,10.10.0.9,52400,443,6,5,500,1795221002,1795221012,ACCEPT,OK,3,10.10.1.25,203.0.113.80
+C02,lab-a,lab-region,eni-zonal-nat,egress,10.10.0.9,203.0.113.80,61120,443,6,5,500,1795221003,1795221013,ACCEPT,OK,3,10.10.0.9,203.0.113.80
+D01,lab-a,lab-region,eni-client,egress,10.10.1.25,10.10.1.53,55123,53,17,1,70,1795221008,1795221008,ACCEPT,OK,-,10.10.1.25,10.10.1.53
+E01,lab-a,lab-region,eni-client,egress,10.10.1.25,10.10.2.80,52550,443,6,2,120,1795221140,1795221145,ACCEPT,OK,2,10.10.1.25,10.10.2.80

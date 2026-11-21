@@ -104,3 +104,7 @@ Reviewed 21 November 2026. These sources cover S3 delivery by AWS CloudTrail tra
 - [CloudTrail · Custom validation and offline preservation requirements](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-custom-validation.html)
 - [AWS CLI v2 · validate-logs](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/validate-logs.html), [get-trail-status](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) and [list-public-keys](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/list-public-keys.html)
 - [CloudTrail · Event categories and trail scope](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html)
+
+## Investigate AWS VPC Flow Logs
+
+[Investigate AWS VPC Flow Logs]({{ '/wiki/vpc-flow-log-evidence/' | relative_url }}). Read cloud flow records by observation point and distinguish network decisions from logging gaps.
