@@ -66,6 +66,8 @@ Security **4697**은 Audit Security System Extension, System **7045**는 Service
 
 서비스 기반 원격 관리는 [횡적 이동]({{ '/ko/wiki/windows-lateral-movement/' | relative_url }})과 겹칠 수 있습니다. 원격 출발지·인증·존속 기간을 따로 확인하세요. 짧은 원격 실행이 반복 가능한 지속성을 곧바로 증명하지는 않습니다.
 
+시작 상태에서 프로세스 식별과 실제 기능 확인까지 이어서 보려면 [Windows 서비스 실행 증거]({{ '/ko/wiki/windows-service-runtime-evidence/' | relative_url }})를 참고하세요.
+
 ## 7. 영구 WMI 이벤트 구독
 
 영구 구독은 이벤트 필터와 Consumer를 Binding으로 연결합니다. 세 객체, 필터의 이벤트 Namespace·Query, Consumer의 실제 동작·대상, 보안 문맥을 확인하세요. WMI 쿼리·`WmiPrvSE.exe`·일반 원격 WMI 실행만으로 영구 구독을 입증하지 못합니다. [Microsoft 영구 Consumer](https://learn.microsoft.com/en-us/windows/win32/wmisdk/receiving-events-at-all-times), [MITRE T1546.003](https://attack.mitre.org/techniques/T1546/003/).

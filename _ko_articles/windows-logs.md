@@ -46,3 +46,7 @@ updated: "2026-10-17"
 ## Active Directory 계정 잠금 조사
 
 [계정 잠금 증거 추적하기]({{ '/ko/wiki/ad-account-lockout-evidence/' | relative_url }}) · 4740을 기준으로 앞선 인증 실패와 잠금 이후의 거절을 대조합니다.
+
+## Windows 서비스 실행 증거 확인
+
+[Windows 서비스 실행 증거]({{ '/ko/wiki/windows-service-runtime-evidence/' | relative_url }})에서 서비스 설치, 시작 상태, 프로세스 증거와 실제 기능을 확인하는 방법을 살펴봅니다.

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="432" viewBox="0 0 660 432" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Windows 서비스 설정부터 기능 확인까지</title>
+  <desc id="desc">서비스 설정 · 시작 정책. SCM · 현재 상태 보고. 시작 대기 또는 실패. 오류와 수집 범위 확인. 실행 중 보고. 프로세스 또는 모듈 대조. 업무 증거로 실제 기능 확인.</desc>
+  <rect width="660" height="432" rx="14" fill="#101b2a"/>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b7cce3"/></marker></defs>
+  <g fill="none" stroke="#b7cce3" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M330 74V102"/>
+    <path d="M330 160V179H163V200"/>
+    <path d="M330 160V179H497V200"/>
+    <path d="M163 256V278"/>
+    <path d="M497 256V278"/>
+    <path d="M497 334V356"/>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="22" fill="#f3f8ff">
+  <rect x="120" y="18" width="420" height="56" rx="10" fill="#172b42" stroke="#82b6ee"/>
+  <text x="330" y="54" text-anchor="middle">서비스 설정 · 시작 정책</text>
+  <rect x="120" y="104" width="420" height="56" rx="10" fill="#172b42" stroke="#82b6ee"/>
+  <text x="330" y="140" text-anchor="middle">SCM · 현재 상태 보고</text>
+  <rect x="12" y="202" width="302" height="56" rx="10" fill="#172b42" stroke="#82b6ee"/>
+  <text x="163" y="238" text-anchor="middle">시작 대기 또는 실패</text>
+  <rect x="346" y="202" width="302" height="56" rx="10" fill="#172b42" stroke="#82b6ee"/>
+  <text x="497" y="238" text-anchor="middle">실행 중 보고</text>
+  <rect x="12" y="280" width="302" height="56" rx="10" fill="#172b42" stroke="#82b6ee"/>
+  <text x="163" y="316" text-anchor="middle">오류와 수집 범위 확인</text>
+  <rect x="346" y="280" width="302" height="56" rx="10" fill="#172b42" stroke="#82b6ee"/>
+  <text x="497" y="316" text-anchor="middle">프로세스 또는 모듈 대조</text>
+  <rect x="346" y="358" width="302" height="56" rx="10" fill="#172b42" stroke="#82b6ee"/>
+  <text x="497" y="394" text-anchor="middle">업무 증거로 실제 기능 확인</text>
+  </g>
+</svg>

@@ -46,3 +46,7 @@ Follow [RDP session evidence]({{ '/wiki/rdp-session-evidence/' | relative_url }}
 ## Investigate Active Directory Account Lockouts
 
 [Trace account lockout evidence]({{ '/wiki/ad-account-lockout-evidence/' | relative_url }}) · Correlate 4740 with earlier authentication failures and later locked-account rejections.
+
+## Verify Windows service runtime
+
+Follow [Windows Service Runtime]({{ '/wiki/windows-service-runtime-evidence/' | relative_url }}) to distinguish installation, startup state, process evidence and workload health.

@@ -66,6 +66,8 @@ Security **4697** belongs to Audit Security System Extension; System **7045** is
 
 Service-based remote administration can overlap with the [lateral movement guide]({{ '/wiki/windows-lateral-movement/' | relative_url }}). Establish remote source, authentication and duration separately. Short-lived remote execution is not proof of a recurring persistence arrangement.
 
+For a deeper investigation, follow [Windows Service Runtime]({{ '/wiki/windows-service-runtime-evidence/' | relative_url }}) from startup status through process identity and workload health.
+
 ## 7. Permanent WMI event subscriptions
 
 A permanent subscription links an event filter to a consumer through a binding. Review all three objects, the filter's event namespace/query, the consumer's actual action/destination and relevant security context. A WMI query, `WmiPrvSE.exe` process or ordinary remote WMI execution alone does not prove a permanent subscription. [Microsoft permanent event consumers](https://learn.microsoft.com/en-us/windows/win32/wmisdk/receiving-events-at-all-times), [MITRE T1546.003](https://attack.mitre.org/techniques/T1546/003/).
