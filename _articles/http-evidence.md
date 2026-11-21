@@ -112,3 +112,7 @@ Reviewed 18 November 2026. Check fields and settings against your installed prod
 ## Trace a Reverse Proxy Response
 
 Use [HTTP proxy response evidence]({{ '/wiki/http-proxy-response-evidence/' | relative_url }}) to separate the final status, retries and application outcomes.
+
+## Investigate Authenticated Webhook Deliveries
+
+Use [Webhook HMAC evidence]({{ '/wiki/webhook-hmac-evidence/' | relative_url }}) to separate a successful HTTP receipt from verified bytes and a completed action.

@@ -179,3 +179,5 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 [서명으로 확인한 출처와 취약점 판단의 적용 범위를 함께 검토하는 실습]({{ '/ko/wiki/sbom-vex-evidence/' | relative_url }})
 
 소프트웨어 배포에서 전자서명이 쓰이는 방식은 [APT 저장소 무결성]({{ '/ko/wiki/apt-repository-integrity/' | relative_url }})에서 이어서 살펴보세요.
+
+공유 비밀을 쓰는 메시지 인증은 [웹훅 HMAC 증거]({{ '/ko/wiki/webhook-hmac-evidence/' | relative_url }})에서 이어서 살펴보세요.

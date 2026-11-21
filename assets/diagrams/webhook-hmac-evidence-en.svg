@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="366" viewBox="0 0 400 366" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Webhook evidence path</title>
+  <desc id="desc">Check the original bytes and policy. Reject invalid deliveries. Record accepted events durably and confirm the effect.</desc>
+  <rect width="400" height="366" rx="16" fill="#10212d"/>
+  <defs>
+    <marker id="tip" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3 0 6Z" fill="#7de3ce"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#7de3ce" stroke-width="2" marker-end="url(#tip)">
+    <path d="M132 109v18"/>
+    <path d="M132 190v18"/>
+    <path d="M246 159h78v49"/>
+    <path d="M132 271v18"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <text x="200" y="31" font-size="21" font-weight="700" fill="#e9f6ff">Webhook evidence path</text>
+    <rect x="20" y="48" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="72" font-size="18" font-weight="700" fill="#e9f6ff">Webhook arrival</text>
+    <text x="132.5" y="94" font-size="15" fill="#c8e0e9">Keep exact body bytes</text>
+    <rect x="20" y="129" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="153" font-size="18" font-weight="700" fill="#e9f6ff">Check MAC and policy</text>
+    <text x="132.5" y="175" font-size="15" fill="#c8e0e9">Secret, scope and time</text>
+    <rect x="20" y="210" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="234" font-size="18" font-weight="700" fill="#e9f6ff">Durable intake</text>
+    <text x="132.5" y="256" font-size="15" fill="#c8e0e9">Find or claim event ID</text>
+    <rect x="267" y="210" width="114" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="324" y="234" font-size="18" font-weight="700" fill="#e9f6ff">Reject</text>
+    <text x="324" y="256" font-size="15" fill="#c8e0e9">Record reason</text>
+    <rect x="20" y="291" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="315" font-size="18" font-weight="700" fill="#e9f6ff">Confirm effect</text>
+    <text x="132.5" y="337" font-size="15" fill="#c8e0e9">Worker and business record</text>
+  </g>
+</svg>

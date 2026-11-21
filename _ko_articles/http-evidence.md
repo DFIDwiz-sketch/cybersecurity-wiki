@@ -112,3 +112,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## HTTP 프록시 응답 출처 조사
 
 [HTTP 프록시 응답 증거]({{ '/ko/wiki/http-proxy-response-evidence/' | relative_url }})에서 최종 상태, 재시도, 애플리케이션 결과를 대조하세요.
+
+## 인증된 웹훅 전송 조사
+
+[웹훅 HMAC 증거]({{ '/ko/wiki/webhook-hmac-evidence/' | relative_url }})에서 HTTP 수신 응답, 바이트 검증, 작업 완료를 구분하세요.

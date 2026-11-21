@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="366" viewBox="0 0 400 366" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">웹훅의 증거 흐름</title>
+  <desc id="desc">원본 바이트와 정책을 확인합니다. 실패한 전송은 거부하고 수용한 전송은 영속 수신 뒤 작업 결과를 확인합니다.</desc>
+  <rect width="400" height="366" rx="16" fill="#10212d"/>
+  <defs>
+    <marker id="tip" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3 0 6Z" fill="#7de3ce"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#7de3ce" stroke-width="2" marker-end="url(#tip)">
+    <path d="M132 109v18"/>
+    <path d="M132 190v18"/>
+    <path d="M246 159h78v49"/>
+    <path d="M132 271v18"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif">
+    <text x="200" y="31" font-size="21" font-weight="700" fill="#e9f6ff">웹훅의 증거 흐름</text>
+    <rect x="20" y="48" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="72" font-size="18" font-weight="700" fill="#e9f6ff">웹훅 도착</text>
+    <text x="132.5" y="94" font-size="15" fill="#c8e0e9">원본 본문 바이트 확보</text>
+    <rect x="20" y="129" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="153" font-size="18" font-weight="700" fill="#e9f6ff">MAC과 정책 확인</text>
+    <text x="132.5" y="175" font-size="15" fill="#c8e0e9">비밀·범위·시각</text>
+    <rect x="20" y="210" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="234" font-size="18" font-weight="700" fill="#e9f6ff">영속 수신</text>
+    <text x="132.5" y="256" font-size="15" fill="#c8e0e9">이벤트 ID로 중복 확인</text>
+    <rect x="267" y="210" width="114" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="324" y="234" font-size="18" font-weight="700" fill="#e9f6ff">거부</text>
+    <text x="324" y="256" font-size="15" fill="#c8e0e9">사유 기록</text>
+    <rect x="20" y="291" width="225" height="60" rx="9" fill="#173244" stroke="#5296ab"/>
+    <text x="132.5" y="315" font-size="18" font-weight="700" fill="#e9f6ff">작업 결과 확인</text>
+    <text x="132.5" y="337" font-size="15" fill="#c8e0e9">작업자 기록과 업무 상태</text>
+  </g>
+</svg>

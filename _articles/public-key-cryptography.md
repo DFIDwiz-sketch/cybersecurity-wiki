@@ -179,3 +179,5 @@ Finish when you can draw both key directions, explain symmetric TLS traffic keys
 [Review verified provenance and the scope of a vulnerability statement]({{ '/wiki/sbom-vex-evidence/' | relative_url }})
 
 Apply signatures to software distribution in [APT repository integrity]({{ '/wiki/apt-repository-integrity/' | relative_url }}).
+
+Apply message authentication to an integration in [Webhook HMAC evidence]({{ '/wiki/webhook-hmac-evidence/' | relative_url }}).
