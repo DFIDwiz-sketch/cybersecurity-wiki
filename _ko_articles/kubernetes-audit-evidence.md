@@ -125,3 +125,7 @@ UTC, 호출자, 컨텍스트, 대상과 결과를 기록하세요. 정책이 해
 - [Kubernetes v1.36 · ConfigMap 서버 드라이런 명령](https://v1-36.docs.kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_configmap/)
 
 정책 변경 뒤 Pod 연결에서 일어난 일을 확인하려면 [Kubernetes NetworkPolicy 증거]({{ '/ko/wiki/kubernetes-network-policy-evidence/' | relative_url }})로 이어서 살펴보세요.
+
+## 워크로드 신원과 토큰 수명 확인
+
+[Kubernetes 서비스 계정 토큰 증거]({{ '/ko/wiki/kubernetes-service-account-evidence/' | relative_url }})에서 Pod의 자격 증명 발급과 API 인증·인가를 따라갑니다.

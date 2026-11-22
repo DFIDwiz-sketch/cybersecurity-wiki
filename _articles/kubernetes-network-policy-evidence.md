@@ -119,3 +119,7 @@ Reviewed 2026-11-21. Kubernetes policy and EndpointSlice behaviour was checked a
 - Kubernetes v1.36 [Network Policies](https://v1-36.docs.kubernetes.io/docs/concepts/services-networking/network-policies/) and [EndpointSlices](https://v1-36.docs.kubernetes.io/docs/concepts/services-networking/endpoint-slices/).
 - Kubernetes official [Debug Services](https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/) and [kubectl get](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/) for read-only investigation.
 - Cilium 1.20 documentation on [network observability with Hubble](https://docs.cilium.io/en/stable/observability/hubble/index.html), an implementation-specific example.
+
+## Follow workload identity and token lifecycle
+
+Follow [Kubernetes Service Account Evidence]({{ '/wiki/kubernetes-service-account-evidence/' | relative_url }}) from Pod credential issuance through API authentication and authorization.

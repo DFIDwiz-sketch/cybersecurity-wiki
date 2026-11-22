@@ -125,3 +125,7 @@ Reviewed 20 November 2026. The core scenarios use the Kubernetes v1.36 documenta
 - [Kubernetes v1.36 · ConfigMap server-side dry-run syntax](https://v1-36.docs.kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_configmap/)
 
 For a policy change, continue with [Kubernetes NetworkPolicy evidence]({{ '/wiki/kubernetes-network-policy-evidence/' | relative_url }}) to confirm what happened to Pod connections.
+
+## Follow workload identity and token lifecycle
+
+Follow [Kubernetes Service Account Evidence]({{ '/wiki/kubernetes-service-account-evidence/' | relative_url }}) from Pod credential issuance through API authentication and authorization.

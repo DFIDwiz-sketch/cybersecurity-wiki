@@ -119,3 +119,7 @@ kubectl -n shop get endpointslices -l kubernetes.io/service-name=orders -o yaml
 - Kubernetes v1.36 [Network Policies](https://v1-36.docs.kubernetes.io/docs/concepts/services-networking/network-policies/)와 [EndpointSlices](https://v1-36.docs.kubernetes.io/docs/concepts/services-networking/endpoint-slices/).
 - Kubernetes 공식 [Service 디버깅](https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/)과 조회 명령 [kubectl get](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/).
 - Cilium 1.20의 구현별 관측 예시인 [Hubble 네트워크 관측성](https://docs.cilium.io/en/stable/observability/hubble/index.html).
+
+## 워크로드 신원과 토큰 수명 확인
+
+[Kubernetes 서비스 계정 토큰 증거]({{ '/ko/wiki/kubernetes-service-account-evidence/' | relative_url }})에서 Pod의 자격 증명 발급과 API 인증·인가를 따라갑니다.
