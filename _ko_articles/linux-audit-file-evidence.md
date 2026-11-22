@@ -108,3 +108,7 @@ python3 linux-audit-file-review.py linux-audit-file-sample.log --check
 ## sudo 허용 이후의 명령 증거 확인하기
 
 [Linux sudo 명령 조사]({{ '/ko/wiki/linux-sudo-command-evidence/' | relative_url }})에서 허용 기록, 프로세스 실행, 종료 상태와 작업 결과를 연결합니다.
+
+## SELinux 접근 거부 조사
+
+[SELinux AVC 조사]({{ '/ko/wiki/selinux-avc-evidence/' | relative_url }})에서 DAC와 SELinux 검사를 구분하고 같은 이벤트의 AVC와 시스템 호출을 연결하세요.

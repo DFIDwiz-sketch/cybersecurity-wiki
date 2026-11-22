@@ -103,3 +103,7 @@ Reviewed 21 November 2026. Use the documentation for the installed kernel, ACL t
 ## Investigate Linux file activity
 
 [Linux Audit file evidence]({{ '/wiki/linux-audit-file-evidence/' | relative_url }}) · Join system calls and paths, then test what a file-open record can establish.
+
+## Investigate an SELinux denial
+
+Use [SELinux AVC evidence]({{ '/wiki/selinux-avc-evidence/' | relative_url }}) to distinguish DAC from SELinux checks and join AVC with syscall evidence.

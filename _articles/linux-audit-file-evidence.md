@@ -108,3 +108,7 @@ Reviewed 2026-11-21. Check your installed Audit and kernel versions when applyin
 ## Trace a sudo decision to an observed command outcome
 
 Use [Linux sudo Command Evidence]({{ '/wiki/linux-sudo-command-evidence/' | relative_url }}) to connect an allow record, process execution, exit status and resource effect.
+
+## Investigate an SELinux denial
+
+Use [SELinux AVC evidence]({{ '/wiki/selinux-avc-evidence/' | relative_url }}) to distinguish DAC from SELinux checks and join AVC with syscall evidence.

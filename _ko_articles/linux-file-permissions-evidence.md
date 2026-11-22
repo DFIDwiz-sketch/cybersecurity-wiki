@@ -103,3 +103,7 @@ TMPDIR="$PWD" python3 linux-file-permissions-lab.py
 ## Linux 파일 접근 증거 이어서 보기
 
 [Linux Audit 파일 접근 입문]({{ '/ko/wiki/linux-audit-file-evidence/' | relative_url }}) · 시스템 호출과 파일 경로를 연결하고 열기 기록으로 어디까지 판단할 수 있는지 실습합니다.
+
+## SELinux 접근 거부 조사
+
+[SELinux AVC 조사]({{ '/ko/wiki/selinux-avc-evidence/' | relative_url }})에서 DAC와 SELinux 검사를 구분하고 같은 이벤트의 AVC와 시스템 호출을 연결하세요.

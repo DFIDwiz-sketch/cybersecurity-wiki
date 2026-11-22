@@ -1,0 +1,52 @@
+[
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=AVC msg=audit(1730120000.010:101): avc: denied { read } for pid=420 comm=\"httpd\" path=\"/var/www/html/guide.html\" scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=0"
+  },
+  {
+    "host": "lab-b",
+    "boot": "boot-2",
+    "record": "type=SYSCALL msg=audit(1730120000.010:101): arch=c000003e syscall=257 success=yes exit=5 pid=420 comm=\"httpd\""
+  },
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=SYSCALL msg=audit(1730120000.011:102): arch=c000003e syscall=257 success=no exit=-13 pid=420 comm=\"httpd\""
+  },
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=AVC msg=audit(1730120000.012:103): avc: denied { read } for pid=420 comm=\"httpd\" path=\"/var/www/html/guide.html\" scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=0"
+  },
+  {
+    "host": "lab-b",
+    "boot": "boot-2",
+    "record": "type=AVC msg=audit(1730120000.010:101): avc: denied { read } for pid=420 comm=\"httpd\" path=\"/var/www/html/guide.html\" scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=1"
+  },
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=SYSCALL msg=audit(1730120000.010:101): arch=c000003e syscall=257 success=no exit=-13 pid=420 comm=\"httpd\""
+  },
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=AVC msg=audit(1730120000.013:104): avc: denied { read } for pid=420 comm=\"httpd\" path=\"/var/www/html/guide.html\" scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file permissive=1"
+  },
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=SYSCALL msg=audit(1730120000.014:105): arch=c000003e syscall=257 success=yes exit=5 pid=420 comm=\"httpd\""
+  },
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=SYSCALL msg=audit(1730120000.013:104): arch=c000003e syscall=257 success=no exit=-13 pid=420 comm=\"httpd\""
+  },
+  {
+    "host": "lab-a",
+    "boot": "boot-1",
+    "record": "type=AVC msg=audit(1730120000.015:106): avc: denied { read } for pid=420 comm=\"httpd\" path=\"/var/www/html/guide.html\" scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:user_home_t:s0 tclass=file"
+  }
+]
