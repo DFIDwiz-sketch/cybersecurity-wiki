@@ -99,3 +99,7 @@ Reviewed 2026-11-22. Use the deployed product and version's field definitions wh
 ## Follow QUIC and HTTP/3 Evidence
 
 [QUIC and HTTP/3 request evidence]({{ '/wiki/quic-http3-evidence/' | relative_url }}) · Compare discovery, QUIC startup and request protocols on each proxy hop.
+
+## Trace an HSTS upgrade
+
+Use [HSTS evidence]({{ '/wiki/http-hsts-evidence/' | relative_url }}) to distinguish a client-side upgrade before transmission from a redirect sent by the server.

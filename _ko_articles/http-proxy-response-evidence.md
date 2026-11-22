@@ -101,3 +101,7 @@ NGINX는 처리가 끝나는 위치의 설정을 기준으로 접근 로그를 �
 ## QUIC과 HTTP/3 조사 이어서 읽기
 
 [QUIC과 HTTP/3 요청 증거]({{ '/ko/wiki/quic-http3-evidence/' | relative_url }}) · 발견 단서와 연결 시도, 프록시 구간별 요청 프로토콜을 대조합니다.
+
+## HSTS 전환과 서버 리디렉션 확인
+
+[HSTS 전환 조사]({{ '/ko/wiki/http-hsts-evidence/' | relative_url }})에서 브라우저가 전송 전에 HTTPS로 바꾼 요청과 서버가 응답한 리디렉션을 구분합니다.

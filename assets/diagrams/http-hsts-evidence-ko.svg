@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 328" width="420" height="328" role="img" aria-labelledby="title desc">
+  <title id="title">HSTS 전환과 서버 리디렉션</title><desc id="desc">HTTP URL을 받으면 브라우저가 HSTS 적용 범위를 확인합니다. 정책이 있으면 전송 전에 HTTPS로 바뀝니다. 정책이 없고 다른 전환 설정이 없다면 HTTP가 서버로 가고 서버에서 리디렉션할 수 있습니다.</desc>
+  <rect width="420" height="328" rx="18" fill="#122431"/>
+  <g fill="#192f40" stroke="#79e1c2" stroke-width="2">
+    <rect x="85" y="20" width="250" height="42" rx="9"/>
+    <rect x="85" y="94" width="250" height="42" rx="9"/>
+    <rect x="14" y="195" width="188" height="57" rx="9"/>
+    <rect x="218" y="195" width="188" height="57" rx="9"/>
+    <rect x="85" y="281" width="250" height="35" rx="9"/>
+  </g>
+  <g fill="none" stroke="#79e1c2" stroke-width="2" stroke-linejoin="round">
+    <path d="M210 63v26m-4-4 4 4 4-4M210 137v32H108v21m-4-4 4 4 4-4M210 169h102v21m-4-4 4 4 4-4M108 253v12h102v11m-4-4 4 4 4-4M312 253v12H210"/>
+  </g>
+  <g fill="#f2f8fc" text-anchor="middle" font-family="system-ui,sans-serif" font-size="17">
+    <text x="210" y="47">HTTP URL</text><text x="210" y="121">활성 HSTS 정책?</text>
+    <text x="143" y="160">적용됨</text><text x="277" y="160">미적용</text>
+    <text x="108" y="218" font-weight="700">클라이언트 전환</text><text x="312" y="218" font-weight="700">서버에 HTTP 전송</text>
+    <text x="108" y="240" font-size="15">전송 전에 HTTPS</text><text x="312" y="240" font-size="15">3xx가 HTTPS로 안내</text>
+    <text x="210" y="304">HTTPS 및 TLS 검증</text>
+  </g>
+</svg>

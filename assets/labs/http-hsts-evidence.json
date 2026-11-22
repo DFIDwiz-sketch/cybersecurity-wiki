@@ -1,0 +1,161 @@
+{
+  "first_and_later": [
+    {
+      "at": 0,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    },
+    {
+      "at": 1,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 300,
+      "include_subdomains": true,
+      "tls_ok": true
+    },
+    {
+      "at": 60,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    }
+  ],
+  "plaintext_header": [
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "http://learn.example.test/",
+      "max_age": 300,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 1,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    }
+  ],
+  "invalid_tls": [
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 300,
+      "include_subdomains": false,
+      "tls_ok": false
+    },
+    {
+      "at": 1,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    }
+  ],
+  "expiry": [
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 100,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 99,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    },
+    {
+      "at": 100,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    }
+  ],
+  "child_removal": [
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 300,
+      "include_subdomains": true,
+      "tls_ok": true
+    },
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "https://media.learn.example.test/",
+      "max_age": 300,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 60,
+      "kind": "response",
+      "url": "https://media.learn.example.test/",
+      "max_age": 0,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 61,
+      "kind": "navigation",
+      "url": "http://media.learn.example.test:80/"
+    }
+  ],
+  "port_preserved": [
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 300,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 1,
+      "kind": "navigation",
+      "url": "http://learn.example.test:8080/notes?view=basic#results"
+    }
+  ],
+  "no_subdomains": [
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 300,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 1,
+      "kind": "navigation",
+      "url": "http://media.learn.example.test:80/"
+    }
+  ],
+  "refresh": [
+    {
+      "at": 0,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 100,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 80,
+      "kind": "response",
+      "url": "https://learn.example.test/",
+      "max_age": 100,
+      "include_subdomains": false,
+      "tls_ok": true
+    },
+    {
+      "at": 120,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    },
+    {
+      "at": 180,
+      "kind": "navigation",
+      "url": "http://learn.example.test/"
+    }
+  ]
+}

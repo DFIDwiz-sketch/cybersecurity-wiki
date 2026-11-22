@@ -121,3 +121,7 @@ Use [MTA-STS and TLS-RPT evidence]({{ '/wiki/smtp-mta-sts-evidence/' | relative_
 ## Investigate Encrypted Client Hello
 
 Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relative_url }}) to distinguish the visible name, ECH acceptance and the resulting application request.
+
+## Trace an HSTS upgrade
+
+Use [HSTS evidence]({{ '/wiki/http-hsts-evidence/' | relative_url }}) to distinguish a client-side upgrade before transmission from a redirect sent by the server.

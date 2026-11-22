@@ -121,3 +121,7 @@ python3 tls-handshake-evidence.py
 ## Encrypted Client Hello 조사 이어가기
 
 [TLS Encrypted Client Hello 조사]({{ '/ko/wiki/tls-ech-evidence/' | relative_url }})에서 패킷에 보이는 이름, ECH 수락 여부와 실제 애플리케이션 요청을 구분합니다.
+
+## HSTS 전환과 서버 리디렉션 확인
+
+[HSTS 전환 조사]({{ '/ko/wiki/http-hsts-evidence/' | relative_url }})에서 브라우저가 전송 전에 HTTPS로 바꾼 요청과 서버가 응답한 리디렉션을 구분합니다.
