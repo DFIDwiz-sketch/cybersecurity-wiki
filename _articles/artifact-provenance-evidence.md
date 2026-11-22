@@ -104,3 +104,7 @@ Reviewed 2026-11-22. The SLSA references are pinned to approved specification v1
 - Offline trust roots, bundle import and stable repository IDs. [GitHub Docs · Verifying attestations offline](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline)
 
 [Previous · Public keys and signatures]({{ '/wiki/public-key-cryptography/' | relative_url }}) · [Next · SBOM and VEX]({{ '/wiki/sbom-vex-evidence/' | relative_url }}) · [Related · APT repository integrity]({{ '/wiki/apt-repository-integrity/' | relative_url }})
+
+## Verify a Git commit’s SSH signature
+
+Use [Git SSH commit signature evidence]({{ '/wiki/git-ssh-commit-signature-evidence/' | relative_url }}) to check the commit object, public-key trust, revocation and change approval with real offline signatures.

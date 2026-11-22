@@ -185,3 +185,7 @@ Apply message authentication to an integration in [Webhook HMAC evidence]({{ '/w
 ## Verify build provenance
 
 Use [Build Provenance Evidence]({{ '/wiki/artifact-provenance-evidence/' | relative_url }}) to compare the received artifact's digest, signer identity and release policy.
+
+## Verify a Git commit’s SSH signature
+
+Use [Git SSH commit signature evidence]({{ '/wiki/git-ssh-commit-signature-evidence/' | relative_url }}) to check the commit object, public-key trust, revocation and change approval with real offline signatures.

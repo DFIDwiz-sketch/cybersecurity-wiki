@@ -185,3 +185,7 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 ## 빌드 출처 증명 검증하기
 
 [빌드 출처 증명]({{ '/ko/wiki/artifact-provenance-evidence/' | relative_url }})에서 받은 파일의 해시, 서명자 신원과 배포 정책을 대조합니다.
+
+## Git 커밋의 SSH 서명 조사
+
+[Git 커밋 SSH 서명 조사]({{ '/ko/wiki/git-ssh-commit-signature-evidence/' | relative_url }})에서 실제 서명으로 커밋 객체, 공개키 신뢰, 폐기 상태와 변경 승인 증거를 대조하세요.

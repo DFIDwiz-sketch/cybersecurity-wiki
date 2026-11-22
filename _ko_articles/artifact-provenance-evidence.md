@@ -104,3 +104,7 @@ vulnerability_hold: release_hold
 - 오프라인 신뢰 기준점, 번들 반입과 불변 저장소 ID. [GitHub Docs · Verifying attestations offline](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline)
 
 [이전 · 공개키와 전자서명]({{ '/ko/wiki/public-key-cryptography/' | relative_url }}) · [다음 · SBOM과 VEX]({{ '/ko/wiki/sbom-vex-evidence/' | relative_url }}) · [관련 · APT 저장소 무결성]({{ '/ko/wiki/apt-repository-integrity/' | relative_url }})
+
+## Git 커밋의 SSH 서명 조사
+
+[Git 커밋 SSH 서명 조사]({{ '/ko/wiki/git-ssh-commit-signature-evidence/' | relative_url }})에서 실제 서명으로 커밋 객체, 공개키 신뢰, 폐기 상태와 변경 승인 증거를 대조하세요.

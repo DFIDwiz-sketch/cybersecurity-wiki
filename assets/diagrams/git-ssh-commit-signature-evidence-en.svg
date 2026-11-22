@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" lang="en" width="440" height="258" viewBox="0 0 440 258">
+  <title id="title">Git commit signature evidence</title>
+  <desc id="desc">Verification combines the exact commit object with an independent trust and revocation policy. A passing check permits separate change review.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#bee0e8"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="256" rx="14" fill="#101f2b"/>
+  <g fill="none" stroke="#bee0e8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M118 64 V80 H187 V96"/>
+    <path d="M322 64 V80 H253 V96"/>
+    <path d="M220 140 V157 H118 V194"/>
+    <path d="M220 140 V157 H322 V194"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#f0f7fc">
+    <rect x="15" y="22" width="206" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="118" y="49" font-size="15">Exact commit ID</text>
+    <rect x="229" y="22" width="186" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="322" y="49" font-size="14">Approved keys and revocations</text>
+    <rect x="63" y="98" width="314" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="220" y="125" font-size="17">Verify SSH signature with Git</text>
+    <text x="70" y="180" font-size="14" fill="#bcf8cd">Accepted</text>
+    <text x="365" y="180" font-size="14" fill="#ffd5b7">Rejected</text>
+    <rect x="19" y="196" width="198" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="118" y="223" font-size="15">Check change approval</text>
+    <rect x="223" y="196" width="198" height="42" rx="8" fill="#4c3028" stroke="#7dc5cf"/>
+    <text x="322" y="223" font-size="15">Preserve the failure</text>
+  </g>
+</svg>

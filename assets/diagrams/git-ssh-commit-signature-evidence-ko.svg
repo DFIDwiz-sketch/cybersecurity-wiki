@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" lang="ko" width="440" height="258" viewBox="0 0 440 258">
+  <title id="title">Git 커밋 서명 검증</title>
+  <desc id="desc">정확한 커밋 객체와 독립적인 키·폐기 정책을 사용합니다. 검증을 통과하면 변경 승인 근거를 별도로 확인합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#bee0e8"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="256" rx="14" fill="#101f2b"/>
+  <g fill="none" stroke="#bee0e8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M118 64 V80 H187 V96"/>
+    <path d="M322 64 V80 H253 V96"/>
+    <path d="M220 140 V157 H118 V194"/>
+    <path d="M220 140 V157 H322 V194"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#f0f7fc">
+    <rect x="15" y="22" width="206" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="118" y="49" font-size="15">정확한 커밋 ID</text>
+    <rect x="229" y="22" width="186" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="322" y="49" font-size="14">승인 키와 폐기 자료</text>
+    <rect x="63" y="98" width="314" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="220" y="125" font-size="17">Git에서 SSH 서명 검증</text>
+    <text x="70" y="180" font-size="14" fill="#bcf8cd">검증 통과</text>
+    <text x="365" y="180" font-size="14" fill="#ffd5b7">검증 실패</text>
+    <rect x="19" y="196" width="198" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="118" y="223" font-size="15">변경 승인 확인</text>
+    <rect x="223" y="196" width="198" height="42" rx="8" fill="#4c3028" stroke="#7dc5cf"/>
+    <text x="322" y="223" font-size="15">실패 근거 보존</text>
+  </g>
+</svg>
