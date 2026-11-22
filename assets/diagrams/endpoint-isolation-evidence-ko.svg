@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="380" viewBox="0 0 440 380" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">엔드포인트 격리 검증에 필요한 증거</title>
+  <desc id="desc">격리 요청과 장치 ID. 격리 제품의 완료 보고. 대기 또는 실패. 성공 상태. 장치 연결 확인. 경로와 이벤트 시각 대조. 확인 범위와 공백 기록.</desc>
+  <rect width="440" height="380" rx="14" fill="#101b2a"/>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b0c8e0"/></marker></defs>
+  <g fill="none" stroke="#b0c8e0" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M220 60v19"/><path d="M220 129v19H112.5v24"/><path d="M220 129v19h107.5v24"/>
+    <path d="M112.5 222v21"/><path d="M327.5 222v21"/><path d="M327.5 293v21"/>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="20" fill="#f1f7ff">
+    <rect x="30" y="12" width="380" height="48" rx="10" fill="#182e48" stroke="#85bfed"/>
+    <text x="220" y="42" text-anchor="middle">격리 요청과 장치 ID</text>
+    <rect x="30" y="81" width="380" height="48" rx="10" fill="#182e48" stroke="#85bfed"/>
+    <text x="220" y="111" text-anchor="middle">격리 제품의 완료 보고</text>
+    <rect x="10" y="174" width="205" height="48" rx="10" fill="#182e48" stroke="#85bfed"/>
+    <text x="112.5" y="204" text-anchor="middle">대기 또는 실패</text>
+    <rect x="225" y="174" width="205" height="48" rx="10" fill="#182e48" stroke="#85bfed"/>
+    <text x="327.5" y="204" text-anchor="middle">성공 상태</text>
+    <rect x="10" y="245" width="205" height="48" rx="10" fill="#182e48" stroke="#85bfed"/>
+    <text x="112.5" y="275" text-anchor="middle">장치 연결 확인</text>
+    <rect x="225" y="245" width="205" height="48" rx="10" fill="#182e48" stroke="#85bfed"/>
+    <text x="327.5" y="275" text-anchor="middle">경로와 이벤트 시각 대조</text>
+    <rect x="225" y="316" width="205" height="48" rx="10" fill="#182e48" stroke="#85bfed"/>
+    <text x="327.5" y="346" text-anchor="middle">확인 범위와 공백 기록</text>
+  </g>
+</svg>

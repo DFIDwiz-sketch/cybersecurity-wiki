@@ -1,0 +1,10 @@
+{"case":"blocked_in_scope","device":"D-17","status":"Succeeded","action_updated":120,"match":true,"observed_at":130,"received_at":135,"expected":"block","result":"blocked","observer_ok":true}
+{"case":"offline_pending","device":"D-17","status":"Pending","action_updated":120,"match":true,"observed_at":null,"received_at":135,"expected":"block","result":null,"observer_ok":true}
+{"case":"timed_out","device":"D-17","status":"TimeOut","action_updated":120,"match":true,"observed_at":130,"received_at":135,"expected":"block","result":null,"observer_ok":true}
+{"case":"permitted_management","device":"D-17","status":"Succeeded","action_updated":120,"match":true,"observed_at":130,"received_at":135,"expected":"allow","result":"completed","observer_ok":true}
+{"case":"late_ingest","device":"D-17","status":"Succeeded","action_updated":120,"match":true,"observed_at":108,"received_at":145,"expected":"block","result":"completed","observer_ok":true}
+{"case":"other_device","device":"D-17","status":"Succeeded","action_updated":120,"match":false,"observed_at":130,"received_at":135,"expected":"block","result":"completed","observer_ok":true}
+{"case":"unexpected_success","device":"D-17","status":"Succeeded","action_updated":120,"match":true,"observed_at":130,"received_at":135,"expected":"block","result":"completed","observer_ok":true}
+{"case":"observer_blind","device":"D-17","status":"Succeeded","action_updated":120,"match":true,"observed_at":130,"received_at":135,"expected":"block","result":null,"observer_ok":false}
+{"case":"time_boundary","device":"D-17","status":"Succeeded","action_updated":120,"match":true,"observed_at":120,"received_at":135,"expected":"block","result":"completed","observer_ok":true}
+{"case":"release_afterward","device":"D-17","status":"Succeeded","action_updated":120,"match":true,"observed_at":130,"received_at":135,"expected":"block","result":"completed","observer_ok":true,"released_at":126}

@@ -113,3 +113,7 @@ Reviewed 20 November 2026. Verify dashboards and scheduled searches against the 
 ## Validate a Windows Code Integrity Signal
 
 [Compare source and forwarded App Control events by activity ID.]({{ '/wiki/app-control-evidence/' | relative_url }})
+
+## Verify endpoint isolation
+
+Use [Endpoint Isolation Evidence]({{ '/wiki/endpoint-isolation-evidence/' | relative_url }}) to compare the product's completion report with what the network actually observed.

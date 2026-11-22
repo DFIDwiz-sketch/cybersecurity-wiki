@@ -282,3 +282,7 @@ Review [Kerberos]({{ '/wiki/kerberos-authentication/' | relative_url }}), [NTLM]
 ## Velociraptor Endpoint Collection
 
 [Go from a network lead to reviewed host evidence]({{ '/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## Verify endpoint isolation
+
+Use [Endpoint Isolation Evidence]({{ '/wiki/endpoint-isolation-evidence/' | relative_url }}) to compare the product's completion report with what the network actually observed.

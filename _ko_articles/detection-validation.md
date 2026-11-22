@@ -113,3 +113,7 @@ python3 detection-validation.py
 ## Windows 코드 무결성 신호 검증하기
 
 [활동 ID로 원본과 전달된 App Control 이벤트를 대조합니다.]({{ '/ko/wiki/app-control-evidence/' | relative_url }})
+
+## 실제 엔드포인트 격리 확인하기
+
+[엔드포인트 격리 증거]({{ '/ko/wiki/endpoint-isolation-evidence/' | relative_url }})에서 제품의 완료 보고와 실제 통신 차단을 대조합니다.

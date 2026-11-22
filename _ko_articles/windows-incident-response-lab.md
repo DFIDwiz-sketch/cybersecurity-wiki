@@ -282,3 +282,7 @@ APP01·WS02 차단, 신원 대응 완료, 파일 내용 검증, 텔레메트리 
 ## Velociraptor 엔드포인트 수집
 
 [네트워크 단서에서 검증된 호스트 증거까지]({{ '/ko/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## 실제 엔드포인트 격리 확인하기
+
+[엔드포인트 격리 증거]({{ '/ko/wiki/endpoint-isolation-evidence/' | relative_url }})에서 제품의 완료 보고와 실제 통신 차단을 대조합니다.
