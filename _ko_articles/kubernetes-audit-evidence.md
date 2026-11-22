@@ -129,3 +129,7 @@ UTC, 호출자, 컨텍스트, 대상과 결과를 기록하세요. 정책이 해
 ## 워크로드 신원과 토큰 수명 확인
 
 [Kubernetes 서비스 계정 토큰 증거]({{ '/ko/wiki/kubernetes-service-account-evidence/' | relative_url }})에서 Pod의 자격 증명 발급과 API 인증·인가를 따라갑니다.
+
+## Pod 생성 단계의 보안 정책 조사
+
+[Kubernetes Pod Security Admission 조사]({{ '/ko/wiki/kubernetes-pod-security-admission-evidence/' | relative_url }})에서 워크로드 템플릿의 수락, 컨트롤러의 Pod 생성 요청, 실제 실행 상태를 구분하는 방법을 익힙니다.

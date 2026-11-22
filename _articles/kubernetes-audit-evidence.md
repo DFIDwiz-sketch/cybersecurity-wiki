@@ -129,3 +129,7 @@ For a policy change, continue with [Kubernetes NetworkPolicy evidence]({{ '/wiki
 ## Follow workload identity and token lifecycle
 
 Follow [Kubernetes Service Account Evidence]({{ '/wiki/kubernetes-service-account-evidence/' | relative_url }}) from Pod credential issuance through API authentication and authorization.
+
+## Follow Pod admission evidence
+
+Trace [Kubernetes Pod Security Admission]({{ '/wiki/kubernetes-pod-security-admission-evidence/' | relative_url }}) to distinguish a workload template from the controller's Pod creation request and the resulting runtime state.

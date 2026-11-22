@@ -1,0 +1,91 @@
+[
+  {
+    "name": "template_warning",
+    "resource": "deployments",
+    "stage": "ResponseComplete",
+    "responseStatus": {
+      "code": 201
+    },
+    "annotations": {
+      "pod-security.kubernetes.io/audit-violations": "would violate PodSecurity restricted:v1.36: allowPrivilegeEscalation != false"
+    },
+    "warning": "would violate PodSecurity restricted:v1.36: allowPrivilegeEscalation != false"
+  },
+  {
+    "name": "pod_denied",
+    "resource": "pods",
+    "stage": "ResponseComplete",
+    "responseStatus": {
+      "code": 403
+    },
+    "annotations": {
+      "pod-security.kubernetes.io/enforce-policy": "restricted:v1.36"
+    },
+    "denialSource": "pod-security"
+  },
+  {
+    "name": "audit_only",
+    "resource": "pods",
+    "stage": "ResponseComplete",
+    "responseStatus": {
+      "code": 201
+    },
+    "annotations": {
+      "pod-security.kubernetes.io/enforce-policy": "baseline:v1.36",
+      "pod-security.kubernetes.io/audit-violations": "would violate PodSecurity restricted:v1.36: allowPrivilegeEscalation != false"
+    },
+    "storedPodUid": "fictional-pod-a"
+  },
+  {
+    "name": "other_403",
+    "resource": "pods",
+    "stage": "ResponseComplete",
+    "responseStatus": {
+      "code": 403
+    },
+    "annotations": {
+      "pod-security.kubernetes.io/enforce-policy": "baseline:v1.36"
+    }
+  },
+  {
+    "name": "exemption",
+    "resource": "pods",
+    "stage": "ResponseComplete",
+    "responseStatus": {
+      "code": 201
+    },
+    "annotations": {
+      "pod-security.kubernetes.io/exempt": "namespace"
+    },
+    "storedPodUid": "fictional-pod-b"
+  },
+  {
+    "name": "server_dry_run",
+    "resource": "pods",
+    "stage": "ResponseComplete",
+    "responseStatus": {
+      "code": 201
+    },
+    "annotations": {
+      "pod-security.kubernetes.io/enforce-policy": "restricted:v1.36"
+    },
+    "dryRun": true
+  },
+  {
+    "name": "pod_stored",
+    "resource": "pods",
+    "stage": "ResponseComplete",
+    "responseStatus": {
+      "code": 201
+    },
+    "annotations": {
+      "pod-security.kubernetes.io/enforce-policy": "restricted:v1.36"
+    },
+    "storedPodUid": "fictional-pod-c"
+  },
+  {
+    "name": "partial_event",
+    "resource": "pods",
+    "stage": "RequestReceived"
+  }
+]
