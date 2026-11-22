@@ -85,3 +85,7 @@ Reviewed 20 November 2026. Check installed versions and capture backend before i
 - [Wireshark User’s Guide · TCP analysis](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvTCPAnalysis.html) and [TCP display filter reference · the two analysis fields through 4.6.10](https://www.wireshark.org/docs/dfref/t/tcp.html)
 - [Zeek 9.0.1 LTS · capture-loss policy and log fields](https://docs.zeek.org/en/v9.0.1/scripts/policy/misc/capture-loss.zeek.html)
 - [The Tcpdump Group · libpcap pcap_stats manual, live counter semantics and platform differences](https://man7.org/linux/man-pages/man3/pcap_stats.3pcap.html)
+
+## IPFIX export evidence
+
+When a router or firewall exports flow records, use [IPFIX export evidence]({{ '/wiki/ipfix-export-evidence/' | relative_url }}) to distinguish metering scope, transport continuity, template decoding and indexing.

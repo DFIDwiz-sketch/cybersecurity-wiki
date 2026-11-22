@@ -242,3 +242,7 @@ Use [Kubernetes NetworkPolicy evidence]({{ '/wiki/kubernetes-network-policy-evid
 ## Investigate the HTTP Transaction Behind an EVE Alert
 
 [Trace a Suricata EVE alert]({{ '/wiki/suricata-eve-transaction-evidence/' | relative_url }}) · Compare scoped flow and transaction IDs, then inspect packet verdicts.
+
+## IPFIX export evidence
+
+When a router or firewall exports flow records, use [IPFIX export evidence]({{ '/wiki/ipfix-export-evidence/' | relative_url }}) to distinguish metering scope, transport continuity, template decoding and indexing.

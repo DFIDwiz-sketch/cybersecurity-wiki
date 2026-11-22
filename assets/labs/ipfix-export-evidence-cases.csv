@@ -1,0 +1,11 @@
+case,version,previous_scope,current_scope,previous_sequence,previous_data_records,current_sequence
+normal,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,100,4,104
+template_only,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,108,0,108
+gap,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,100,4,107
+wrap,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,4294967294,2,0
+unknown_count,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,315,,322
+other_domain,10,edge-a/domain-7/epoch-1,edge-a/domain-8/epoch-1,315,7,2
+restart,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-2,315,7,0
+older_arrival,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,104,4,102
+options_data,10,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,500,3,503
+netflow_v9,9,edge-a/domain-7/epoch-1,edge-a/domain-7/epoch-1,800,3,801

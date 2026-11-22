@@ -85,3 +85,7 @@ Wireshark의 TCP 분석은 파일의 패킷 순서와 시퀀스 번호 분석 �
 - [Wireshark 사용자 가이드 · TCP 분석](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvTCPAnalysis.html) · [TCP 표시 필터 · 두 분석 필드의 4.6.10까지 지원 범위](https://www.wireshark.org/docs/dfref/t/tcp.html)
 - [Zeek 9.0.1 LTS · 캡처 손실 정책과 로그 필드](https://docs.zeek.org/en/v9.0.1/scripts/policy/misc/capture-loss.zeek.html)
 - [The Tcpdump Group · libpcap pcap_stats, 실시간 카운터와 플랫폼 차이](https://man7.org/linux/man-pages/man3/pcap_stats.3pcap.html)
+
+## IPFIX 흐름 기록 조사
+
+라우터나 방화벽이 흐름 레코드를 보내는 환경은 [IPFIX 흐름 기록 조사]({{ '/ko/wiki/ipfix-export-evidence/' | relative_url }})에서 이어서 학습하세요. 계측 범위, 전송 연속성, 템플릿 해석, 색인 단계를 구분합니다.

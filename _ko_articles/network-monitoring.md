@@ -242,3 +242,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## EVE 경보가 가리키는 HTTP 트랜잭션 조사
 
 [Suricata EVE 경보 추적하기]({{ '/ko/wiki/suricata-eve-transaction-evidence/' | relative_url }}) · 플로와 트랜잭션 ID의 범위를 맞춘 뒤 패킷 판정을 확인합니다.
+
+## IPFIX 흐름 기록 조사
+
+라우터나 방화벽이 흐름 레코드를 보내는 환경은 [IPFIX 흐름 기록 조사]({{ '/ko/wiki/ipfix-export-evidence/' | relative_url }})에서 이어서 학습하세요. 계측 범위, 전송 연속성, 템플릿 해석, 색인 단계를 구분합니다.
