@@ -314,3 +314,7 @@ PID 재사용과 부모 GUID 연결을 설명하고 필터로 제외될 활동 �
 ## Windows 이벤트 전달 경로 확인
 
 [원본·구독·수집기·SIEM의 공백을 구별하는 실습]({{ '/ko/wiki/wef-delivery-evidence/' | relative_url }})
+
+## PowerShell 스크립트 블록 조사
+
+[PowerShell 스크립트 블록 조사]({{ '/ko/wiki/powershell-script-block-evidence/' | relative_url }})에서 4104의 조각을 복원하고 프로세스와 실제 결과를 대조합니다.

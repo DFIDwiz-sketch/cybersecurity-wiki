@@ -50,3 +50,7 @@ Follow [RDP session evidence]({{ '/wiki/rdp-session-evidence/' | relative_url }}
 ## Verify Windows service runtime
 
 Follow [Windows Service Runtime]({{ '/wiki/windows-service-runtime-evidence/' | relative_url }}) to distinguish installation, startup state, process evidence and workload health.
+
+## Investigate PowerShell script blocks
+
+[PowerShell Script Block Evidence]({{ '/wiki/powershell-script-block-evidence/' | relative_url }}) explains how to reconstruct 4104 fragments and connect the text to process and outcome evidence.

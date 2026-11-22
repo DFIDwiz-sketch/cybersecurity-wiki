@@ -314,3 +314,7 @@ Use the [Windows Incident Response Lab]({{ '/wiki/windows-incident-response-lab/
 ## Verify Windows Event Forwarding Delivery
 
 [Distinguish source, subscription, collector and SIEM gaps]({{ '/wiki/wef-delivery-evidence/' | relative_url }})
+
+## Investigate PowerShell script blocks
+
+[PowerShell Script Block Evidence]({{ '/wiki/powershell-script-block-evidence/' | relative_url }}) explains how to reconstruct 4104 fragments and connect the text to process and outcome evidence.

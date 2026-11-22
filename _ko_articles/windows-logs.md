@@ -50,3 +50,7 @@ updated: "2026-10-17"
 ## Windows 서비스 실행 증거 확인
 
 [Windows 서비스 실행 증거]({{ '/ko/wiki/windows-service-runtime-evidence/' | relative_url }})에서 서비스 설치, 시작 상태, 프로세스 증거와 실제 기능을 확인하는 방법을 살펴봅니다.
+
+## PowerShell 스크립트 블록 조사
+
+[PowerShell 스크립트 블록 조사]({{ '/ko/wiki/powershell-script-block-evidence/' | relative_url }})에서 4104의 조각을 복원하고 프로세스와 실제 결과를 대조합니다.
