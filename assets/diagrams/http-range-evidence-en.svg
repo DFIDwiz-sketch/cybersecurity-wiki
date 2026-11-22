@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 408" width="420" height="408" role="img" aria-labelledby="title desc">
+  <title id="title">Range requests at edge and origin</title><desc id="desc">The edge responds from cache or queries the origin. The union of completed intervals for the same version is offsets 0 through 999.</desc>
+  <rect width="420" height="408" rx="18" fill="#122431"/>
+  <g fill="#192f40" stroke="#79e1c2" stroke-width="2">
+    <rect x="100" y="20" width="220" height="44" rx="9"/>
+    <rect x="100" y="103" width="220" height="44" rx="9"/>
+    <rect x="100" y="186" width="220" height="44" rx="9"/>
+  </g>
+  <g fill="none" stroke="#79e1c2" stroke-width="2" stroke-linejoin="round">
+    <path d="M135 66v32m-5-5 5 5 5-5M135 149v32m-5-5 5 5 5-5"/>
+  </g>
+  <g fill="#f2f8fc" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18">
+    <text x="210" y="48">Client</text><text x="210" y="131">Edge / cache</text><text x="210" y="214">Origin</text>
+    <text x="223" y="88">Range request</text><text x="223" y="171">Fetch if needed</text>
+    <text x="210" y="260">Three responses · same strong ETag</text><text x="210" y="390">1,100 B sent / 1,000 B distinct</text>
+  </g>
+  <g fill="#80e1c2">
+    <rect x="30" y="276" width="144" height="23" rx="4"/>
+    <rect x="138" y="305" width="144" height="23" rx="4"/>
+    <rect x="282" y="334" width="108" height="23" rx="4"/>
+  </g>
+  <g fill="#102631" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="700">
+    <text x="102" y="293">0–399</text><text x="210" y="322">300–699</text><text x="336" y="351">700–999</text>
+  </g>
+</svg>

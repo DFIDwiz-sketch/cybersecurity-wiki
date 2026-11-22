@@ -104,3 +104,7 @@ Previous · [HTTP Evidence]({{ '/wiki/http-evidence/' | relative_url }})
 Next · [Network Monitoring]({{ '/wiki/network-monitoring/' | relative_url }})
 
 If a proxy contacted an upstream, use [HTTP proxy response evidence]({{ '/wiki/http-proxy-response-evidence/' | relative_url }}) to compare the outgoing response with its upstream attempts.
+
+## Investigate HTTP partial downloads
+
+Use [HTTP Range Requests and Partial Download Evidence]({{ '/wiki/http-range-evidence/' | relative_url }}) to correlate 206 responses, file revisions and distinct byte coverage.

@@ -1,0 +1,144 @@
+{
+  "overlap_complete": [
+    {
+      "status": 206,
+      "content_range": "bytes 0-399/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 206,
+      "content_range": "bytes 300-699/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 206,
+      "content_range": "bytes 700-999/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 300,
+      "completed": true
+    }
+  ],
+  "gap": [
+    {
+      "status": 206,
+      "content_range": "bytes 0-399/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 206,
+      "content_range": "bytes 600-999/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    }
+  ],
+  "version_switch": [
+    {
+      "status": 206,
+      "content_range": "bytes 0-399/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 206,
+      "content_range": "bytes 400-999/1000",
+      "etag": "\"r2\"",
+      "encoding": "identity",
+      "body_bytes": 600,
+      "completed": true
+    }
+  ],
+  "interrupted": [
+    {
+      "status": 206,
+      "content_range": "bytes 0-399/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 206,
+      "content_range": "bytes 400-999/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 200,
+      "completed": false
+    }
+  ],
+  "weak_etag": [
+    {
+      "status": 206,
+      "content_range": "bytes 0-399/1000",
+      "etag": "W/\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 206,
+      "content_range": "bytes 400-999/1000",
+      "etag": "W/\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 600,
+      "completed": true
+    }
+  ],
+  "full_fallback": [
+    {
+      "status": 206,
+      "content_range": "bytes 0-399/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 200,
+      "etag": "\"r2\"",
+      "encoding": "identity",
+      "body_bytes": 1000,
+      "completed": true
+    }
+  ],
+  "unsatisfied": [
+    {
+      "status": 416,
+      "content_range": "bytes */1000",
+      "encoding": "identity",
+      "body_bytes": 25,
+      "completed": true
+    }
+  ],
+  "different_encoding": [
+    {
+      "status": 206,
+      "content_range": "bytes 0-399/1000",
+      "etag": "\"r1\"",
+      "encoding": "identity",
+      "body_bytes": 400,
+      "completed": true
+    },
+    {
+      "status": 206,
+      "content_range": "bytes 400-999/1000",
+      "etag": "\"r1\"",
+      "encoding": "gzip",
+      "body_bytes": 600,
+      "completed": true
+    }
+  ]
+}

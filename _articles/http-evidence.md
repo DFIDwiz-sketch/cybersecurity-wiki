@@ -116,3 +116,7 @@ Use [HTTP proxy response evidence]({{ '/wiki/http-proxy-response-evidence/' | re
 ## Investigate Authenticated Webhook Deliveries
 
 Use [Webhook HMAC evidence]({{ '/wiki/webhook-hmac-evidence/' | relative_url }}) to separate a successful HTTP receipt from verified bytes and a completed action.
+
+## Investigate HTTP partial downloads
+
+Use [HTTP Range Requests and Partial Download Evidence]({{ '/wiki/http-range-evidence/' | relative_url }}) to correlate 206 responses, file revisions and distinct byte coverage.

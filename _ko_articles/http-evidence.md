@@ -116,3 +116,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## 인증된 웹훅 전송 조사
 
 [웹훅 HMAC 증거]({{ '/ko/wiki/webhook-hmac-evidence/' | relative_url }})에서 HTTP 수신 응답, 바이트 검증, 작업 완료를 구분하세요.
+
+## HTTP 부분 다운로드 조사
+
+[HTTP Range 요청과 부분 다운로드]({{ '/ko/wiki/http-range-evidence/' | relative_url }})에서 206 응답, 파일 버전, 중복을 제외한 전송 범위를 대조하세요.
