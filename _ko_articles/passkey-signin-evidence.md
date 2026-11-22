@@ -95,3 +95,7 @@ A02·A07·A08·A09에 대해 출처, 확인된 사실, 추가로 필요한 증�
 - 2026년 8월 25일 W3C WebAuthn Level 3 권고안. 등록과 응답 검증, 자격 증명 백업 플래그 및 카운터 해석. [WebAuthn Level 3](https://www.w3.org/TR/2026/REC-webauthn-3-20260825/) · [이전 2021년 4월 Level 2 권고안](https://www.w3.org/TR/webauthn-2/)
 - 2025년 NIST SP 800-63B-4. 피싱 저항성, 인증 보증 수준과 동기화 가능한 인증기 요건. [Authentication and Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b.html)
 - Microsoft Entra의 구현·정책과 2026년 11월 17일 갱신된 패스키 개요. [Microsoft Entra 패스키](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-passkeys-fido2) · [패스키 사용 설정](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-passkeys-fido2)
+
+## 비밀번호 검증값 저장과 비교하기
+
+[비밀번호 저장과 검증 조사]({{ '/ko/wiki/password-storage-evidence/' | relative_url }})에서 저장된 비밀번호 검증값과 공개키 자격 증명의 차이를 확인합니다.

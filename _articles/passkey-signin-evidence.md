@@ -95,3 +95,7 @@ Reviewed November 20, 2026. Verify deployed browser, authenticator and provider 
 - W3C WebAuthn Level 3 Recommendation, August 25, 2026. Registration, assertion verification, credential backup flags and counter interpretation. [WebAuthn Level 3](https://www.w3.org/TR/2026/REC-webauthn-3-20260825/). Earlier behavior is documented in the [April 2021 Level 2 Recommendation](https://www.w3.org/TR/webauthn-2/).
 - NIST SP 800-63B-4, 2025 edition. Phishing resistance, assurance levels and syncable authenticators. [Authentication and Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b.html)
 - Microsoft Entra implementation and policy, including the November 17, 2026 method overview. [Passkeys in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-passkeys-fido2) · [Enable passkeys](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-passkeys-fido2)
+
+## Compare password verifier storage
+
+Read [Password Storage Evidence]({{ '/wiki/password-storage-evidence/' | relative_url }}) to distinguish stored password verifiers from public-key credentials.

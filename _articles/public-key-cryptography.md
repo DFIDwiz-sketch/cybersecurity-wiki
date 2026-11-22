@@ -189,3 +189,7 @@ Use [Build Provenance Evidence]({{ '/wiki/artifact-provenance-evidence/' | relat
 ## Verify a Git commit’s SSH signature
 
 Use [Git SSH commit signature evidence]({{ '/wiki/git-ssh-commit-signature-evidence/' | relative_url }}) to check the commit object, public-key trust, revocation and change approval with real offline signatures.
+
+## Compare password verifier storage
+
+Read [Password Storage Evidence]({{ '/wiki/password-storage-evidence/' | relative_url }}) to distinguish stored password verifiers from public-key credentials.
