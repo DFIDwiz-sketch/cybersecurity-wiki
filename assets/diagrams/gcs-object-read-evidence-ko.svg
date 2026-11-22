@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="322" viewBox="0 0 440 322" xml:lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">권한부터 수신까지</title>
+  <desc id="desc">같은 요청의 저장소 감사 로그와 응답·클라이언트 증거를 연결합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4 0 8Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="440" height="322" rx="12" fill="#f8fafc"/>
+  <g fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)">
+    <path d="M220 89v23H112v23"/>
+    <path d="M220 89v23h108v23"/>
+    <path d="M112 222v16l108 16"/>
+    <path d="M328 222v16l-108 16"/>
+  </g>
+  <g stroke-width="1.2">
+    <rect x="50" y="42" width="340" height="47" rx="8" fill="#e0f2fe" stroke="#0369a1"/>
+    <rect x="11" y="138" width="202" height="84" rx="8" fill="#fef3c7" stroke="#92400e"/>
+    <rect x="227" y="138" width="202" height="84" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <rect x="45" y="254" width="350" height="57" rx="8" fill="#e0f2fe" stroke="#0369a1"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#0f172a">
+    <g font-size="17" font-weight="700">
+      <text x="220" y="28">권한부터 수신까지</text>
+      <text x="220" y="71">Cloud Storage 요청</text>
+      <text x="112" y="161">감사 기록</text>
+      <text x="328" y="161">전송 증거</text>
+      <text x="220" y="277">같은 요청의 자료 연결</text>
+    </g>
+    <g font-size="15">
+      <text x="112" y="184">호출 신원과 권한</text>
+      <text x="112" y="205">작업 처리 결과</text>
+      <text x="328" y="184">요청 유형과 응답</text>
+      <text x="328" y="205">클라이언트 수신 검증</text>
+      <text x="220" y="298">실제로 확인한 결과 기록</text>
+    </g>
+  </g>
+</svg>

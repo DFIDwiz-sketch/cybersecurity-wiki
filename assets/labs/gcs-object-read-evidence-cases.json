@@ -1,0 +1,55 @@
+[
+  {
+    "name": "listing",
+    "operation": "list",
+    "outcome": "success"
+  },
+  {
+    "name": "metadata",
+    "operation": "metadata",
+    "outcome": "success"
+  },
+  {
+    "name": "get_without_detail",
+    "operation": "unknown_get",
+    "outcome": "success",
+    "permission_granted": true
+  },
+  {
+    "name": "partial_response",
+    "operation": "content",
+    "outcome": "success",
+    "same_request": true,
+    "range_response": true,
+    "response_bytes": 128
+  },
+  {
+    "name": "full_receipt",
+    "operation": "content",
+    "outcome": "success",
+    "same_request": true,
+    "full_object_verified": true
+  },
+  {
+    "name": "denied_request",
+    "operation": "content",
+    "outcome": "denied",
+    "permission_granted": false
+  },
+  {
+    "name": "other_connection",
+    "operation": "content",
+    "outcome": "success",
+    "same_request": false,
+    "full_object_verified": true
+  },
+  {
+    "name": "public_read_gap",
+    "outcome": "no_event",
+    "coverage_gap": "public_grant"
+  },
+  {
+    "name": "no_matching_entry",
+    "outcome": "no_event"
+  }
+]

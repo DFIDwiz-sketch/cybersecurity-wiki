@@ -108,3 +108,7 @@ Reviewed 21 November 2026. These sources cover S3 delivery by AWS CloudTrail tra
 ## Investigate AWS VPC Flow Logs
 
 [Investigate AWS VPC Flow Logs]({{ '/wiki/vpc-flow-log-evidence/' | relative_url }}). Read cloud flow records by observation point and distinguish network decisions from logging gaps.
+
+## Compare Google Cloud Storage read evidence
+
+[Google Cloud Storage object read evidence]({{ '/wiki/gcs-object-read-evidence/' | relative_url }}) compares listing, metadata, actual content delivery and audit coverage in Google Cloud.

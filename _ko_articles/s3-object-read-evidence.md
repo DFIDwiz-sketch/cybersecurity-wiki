@@ -102,3 +102,7 @@ python3 s3-read-review.py
 [AWS KMS 조사 입문]({{ '/ko/wiki/aws-kms-evidence/' | relative_url }}) · 키를 사용한 호출과 S3 객체를 읽은 요청에서 각각 어떤 증거를 얻는지 살펴보세요.
 
 [S3 객체 삭제와 복구 증거]({{ '/ko/wiki/s3-version-recovery-evidence/' | relative_url }}) · 삭제 마커와 영구 삭제를 구별하고 복구 후보 버전을 확인하세요.
+
+## Google Cloud Storage 읽기 증거와 비교하기
+
+[Google Cloud Storage 객체 읽기 조사]({{ '/ko/wiki/gcs-object-read-evidence/' | relative_url }})에서 목록·메타데이터·본문 전송과 감사 로그 수집 범위를 비교합니다.

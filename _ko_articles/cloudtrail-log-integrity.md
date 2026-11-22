@@ -108,3 +108,7 @@ aws cloudtrail validate-logs \
 ## AWS VPC Flow Logs 조사
 
 [AWS VPC Flow Logs 조사]({{ '/ko/wiki/vpc-flow-log-evidence/' | relative_url }}). 클라우드 흐름을 관측 지점별로 읽고 네트워크 처리 결과와 기록 누락을 구분합니다.
+
+## Google Cloud Storage 읽기 증거와 비교하기
+
+[Google Cloud Storage 객체 읽기 조사]({{ '/ko/wiki/gcs-object-read-evidence/' | relative_url }})에서 목록·메타데이터·본문 전송과 감사 로그 수집 범위를 비교합니다.
