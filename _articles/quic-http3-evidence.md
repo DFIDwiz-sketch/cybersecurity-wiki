@@ -101,3 +101,7 @@ Reviewed 2026-11-22. The RFCs identify their publication dates. curl and Chrome 
 - [curl manual · HTTP/3 options](https://curl.se/docs/manpage.html#--http3) · [Chrome DevTools · Network reference](https://developer.chrome.com/docs/devtools/network/reference#columns)
 
 [Previous · TLS handshake evidence]({{ '/wiki/tls-handshake-evidence/' | relative_url }}) · [Next · HTTP proxy response evidence]({{ '/wiki/http-proxy-response-evidence/' | relative_url }})
+
+## Investigate Encrypted Client Hello
+
+Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relative_url }}) to distinguish the visible name, ECH acceptance and the resulting application request.

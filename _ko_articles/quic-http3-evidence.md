@@ -101,3 +101,7 @@ curl --http3 --max-time 15 --silent --show-error --output /dev/null \
 - [curl 매뉴얼 · HTTP/3 옵션](https://curl.se/docs/manpage.html#--http3) · [Chrome DevTools · Network 참고자료](https://developer.chrome.com/docs/devtools/network/reference#columns)
 
 [이전 · TLS 핸드셰이크 증거]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }}) · [다음 · HTTP 프록시 응답 증거]({{ '/ko/wiki/http-proxy-response-evidence/' | relative_url }})
+
+## Encrypted Client Hello 조사 이어가기
+
+[TLS Encrypted Client Hello 조사]({{ '/ko/wiki/tls-ech-evidence/' | relative_url }})에서 패킷에 보이는 이름, ECH 수락 여부와 실제 애플리케이션 요청을 구분합니다.

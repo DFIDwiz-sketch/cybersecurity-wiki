@@ -1,0 +1,50 @@
+[
+  {
+    "name": "dns_only",
+    "https_ech_advertised": true
+  },
+  {
+    "name": "wire_only",
+    "outer_sni": "edge.example",
+    "wire_ech_extension": true
+  },
+  {
+    "name": "lab_grease",
+    "outer_sni": "reports.example",
+    "wire_ech_extension": true,
+    "client_ech_result": "grease"
+  },
+  {
+    "name": "accepted_tls",
+    "wire_ech_extension": true,
+    "client_ech_result": "accepted",
+    "origin_authenticated": true
+  },
+  {
+    "name": "accepted_http",
+    "wire_ech_extension": true,
+    "client_ech_result": "accepted",
+    "origin_authenticated": true,
+    "matching_http_request": true
+  },
+  {
+    "name": "rotation_retry",
+    "outer_sni": "edge.example",
+    "client_ech_result": "rejected",
+    "public_name_authenticated": true,
+    "recovery_handshake_complete": true,
+    "replacement_supported": true
+  },
+  {
+    "name": "untrusted_outer",
+    "outer_sni": "edge.example",
+    "client_ech_result": "rejected",
+    "public_name_authenticated": false,
+    "recovery_handshake_complete": false,
+    "replacement_supported": true
+  },
+  {
+    "name": "capture_gap",
+    "capture_complete": false
+  }
+]

@@ -92,3 +92,7 @@ correlated_retry: linked_system_retry
 - Firefox 사용자 설정 모드와 대체 경로 동작. [Mozilla · DoH protection levels](https://support.mozilla.org/en-US/kb/dns-over-https)
 
 [이전 · DNS 기초]({{ '/ko/wiki/dns-investigation/' | relative_url }}) · [관련 · TLS 핸드셰이크]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }}) · [관련 · DNS 부정 캐시]({{ '/ko/wiki/dns-negative-cache-evidence/' | relative_url }})
+
+## Encrypted Client Hello 조사 이어가기
+
+[TLS Encrypted Client Hello 조사]({{ '/ko/wiki/tls-ech-evidence/' | relative_url }})에서 패킷에 보이는 이름, ECH 수락 여부와 실제 애플리케이션 요청을 구분합니다.

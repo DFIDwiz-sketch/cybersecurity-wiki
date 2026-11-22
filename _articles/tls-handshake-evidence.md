@@ -117,3 +117,7 @@ Use [DNS over HTTPS Evidence]({{ '/wiki/doh-resolution-evidence/' | relative_url
 ## Investigate SMTP transport policy and reporting
 
 Use [MTA-STS and TLS-RPT evidence]({{ '/wiki/smtp-mta-sts-evidence/' | relative_url }}) to correlate MX selection, certificate checks and TLS failure reports on an SMTP hop.
+
+## Investigate Encrypted Client Hello
+
+Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relative_url }}) to distinguish the visible name, ECH acceptance and the resulting application request.

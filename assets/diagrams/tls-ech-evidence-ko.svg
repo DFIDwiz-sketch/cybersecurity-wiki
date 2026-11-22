@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="402" viewBox="0 0 440 402" xml:lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">ECH 설정 발견과 관측</title>
+  <desc id="desc">DNS가 ECH 설정을 광고할 수 있습니다. 바깥 TLS 메시지에는 공개 이름과 암호화된 안쪽 메시지가 들어갑니다. TLS 종단과 애플리케이션 기록은 서로 다른 결과를 확인합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4 0 8Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="440" height="402" rx="12" fill="#f8fafc"/>
+  <g fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)">
+    <path d="M220 100v18"/>
+    <path d="M220 237v18"/>
+    <path d="M220 315v18"/>
+  </g>
+  <g stroke-width="1.2">
+    <rect x="36" y="44" width="368" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1"/>
+    <rect x="36" y="120" width="368" height="117" rx="8" fill="#fef3c7" stroke="#92400e"/>
+    <rect x="65" y="187" width="310" height="35" rx="6" fill="#fffbeb" stroke="#92400e" stroke-dasharray="4 4"/>
+    <rect x="36" y="257" width="368" height="58" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <rect x="36" y="335" width="368" height="58" rx="8" fill="#dcfce7" stroke="#166534"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#0f172a">
+    <g font-size="18" font-weight="700">
+      <text x="220" y="29">ECH 설정 발견과 관측</text>
+      <text x="220" y="67">설정 발견</text>
+      <text x="220" y="148">패킷에서 보이는 부분</text>
+      <text x="220" y="281">TLS 종단 또는 클라이언트</text>
+      <text x="220" y="359">애플리케이션</text>
+    </g>
+    <g font-size="16">
+      <text x="220" y="89">HTTPS DNS 레코드로 ECH 광고 가능</text>
+      <text x="220" y="173">바깥 ClientHello · 공개 이름</text>
+      <text x="220" y="210">암호화된 안쪽 · 오리진 이름</text>
+      <text x="220" y="303">ECH 수락 증거</text>
+      <text x="220" y="381">같은 연결의 HTTP 요청</text>
+    </g>
+  </g>
+</svg>

@@ -92,3 +92,7 @@ Reviewed 2026-11-22. The RFCs define interoperable behavior. Verify vendor contr
 - Firefox user-facing modes and fallback behavior. [Mozilla · DoH protection levels](https://support.mozilla.org/en-US/kb/dns-over-https)
 
 [Previous · DNS fundamentals]({{ '/wiki/dns-investigation/' | relative_url }}) · [Related · TLS handshake evidence]({{ '/wiki/tls-handshake-evidence/' | relative_url }}) · [Related · DNS negative caching]({{ '/wiki/dns-negative-cache-evidence/' | relative_url }})
+
+## Investigate Encrypted Client Hello
+
+Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relative_url }}) to distinguish the visible name, ECH acceptance and the resulting application request.
