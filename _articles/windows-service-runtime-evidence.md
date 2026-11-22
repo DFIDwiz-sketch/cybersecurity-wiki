@@ -108,3 +108,7 @@ Reviewed 2026-11-22. The Win32 API pages describe Windows service mechanics. Val
 ## Verify scheduled task execution
 
 Use [Windows scheduled task runtime evidence]({{ '/wiki/windows-scheduled-task-runtime-evidence/' | relative_url }}) to track an executable action from the task definition to its scheduler instance, process and observed result.
+
+## Investigate group managed service accounts
+
+[Active Directory gMSA Evidence]({{ '/wiki/ad-gmsa-evidence/' | relative_url }}) connects retrieval eligibility to actual service logon and workload health.

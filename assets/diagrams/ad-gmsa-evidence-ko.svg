@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="270" viewBox="0 0 440 270" xml:lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">gMSA 정책에서 서비스 상태까지</title>
+  <desc id="desc">디렉터리, 대상 호스트, 애플리케이션 기록으로 관리 서비스 계정에 관한 서로 다른 질문에 답합니다.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4 0 8Z" fill="#475569"/></marker></defs>
+  <rect width="440" height="270" rx="12" fill="#f8fafc"/>
+  <g fill="none" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"><path d="M220 100v20"/><path d="M220 179v20"/></g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#0f172a">
+    <text x="220" y="28" font-size="18" font-weight="700">gMSA 정책에서 서비스 상태까지</text>
+    <rect x="35" y="44" width="370" height="56" rx="8" fill="#e0f2fe" stroke="#0369a1"/>
+    <text x="220" y="67" font-size="17" font-weight="700">Active Directory</text>
+    <text x="220" y="88" font-size="15">어떤 호스트가 조회할 수 있나요?</text>
+    <rect x="35" y="123" width="370" height="56" rx="8" fill="#fef3c7" stroke="#92400e"/>
+    <text x="220" y="146" font-size="17" font-weight="700">대상 호스트</text>
+    <text x="220" y="167" font-size="15">서비스 신원이 로그온했나요?</text>
+    <rect x="35" y="202" width="370" height="56" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <text x="220" y="225" font-size="17" font-weight="700">워크로드 또는 리소스</text>
+    <text x="220" y="246" font-size="15">기대한 작업을 끝냈나요?</text>
+  </g>
+</svg>

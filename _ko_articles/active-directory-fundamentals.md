@@ -452,3 +452,7 @@ gpresult /r
 ## DC별 속성 변경과 복제 확인
 
 [Active Directory 복제 조사]({{ '/ko/wiki/ad-replication-change-evidence/' | relative_url }})에서 단일값 속성의 원본 변경, DC별 상태, Security 5136의 해석 범위를 비교하세요.
+
+## 그룹 관리 서비스 계정 조사하기
+
+[Active Directory gMSA 조사]({{ '/ko/wiki/ad-gmsa-evidence/' | relative_url }})에서 조회 자격을 실제 서비스 로그온과 워크로드 상태에 연결합니다.

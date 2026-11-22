@@ -108,3 +108,7 @@ registration_only: registration_only
 ## 예약 작업 실행 확인하기
 
 [Windows 예약 작업 실행 조사]({{ '/ko/wiki/windows-scheduled-task-runtime-evidence/' | relative_url }})에서 작업 정의부터 스케줄러 인스턴스, 실행 프로세스와 실제 결과까지 이어서 확인하세요.
+
+## 그룹 관리 서비스 계정 조사하기
+
+[Active Directory gMSA 조사]({{ '/ko/wiki/ad-gmsa-evidence/' | relative_url }})에서 조회 자격을 실제 서비스 로그온과 워크로드 상태에 연결합니다.

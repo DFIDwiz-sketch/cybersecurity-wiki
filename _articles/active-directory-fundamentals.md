@@ -452,3 +452,7 @@ gpresult /r
 ## Investigate replicated attribute changes
 
 Use [Active Directory replication evidence]({{ '/wiki/ad-replication-change-evidence/' | relative_url }}) to compare an originating change, the observed state of each replica, and the scope of Security event 5136.
+
+## Investigate group managed service accounts
+
+[Active Directory gMSA Evidence]({{ '/wiki/ad-gmsa-evidence/' | relative_url }}) connects retrieval eligibility to actual service logon and workload health.

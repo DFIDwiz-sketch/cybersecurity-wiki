@@ -1,0 +1,105 @@
+[
+  {
+    "id": "healthy_service",
+    "audit_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+    "approved_hosts": [
+      "REPORT01",
+      "REPORT02"
+    ],
+    "logon": {
+      "host": "REPORT01",
+      "sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "type": 5
+    },
+    "service_process": {
+      "host": "REPORT01",
+      "sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "instance": "instance-1"
+    },
+    "health": {
+      "host": "REPORT01",
+      "sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "instance": "instance-1",
+      "result": "ok"
+    }
+  },
+  {
+    "id": "policy_change",
+    "audit_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+    "approved_hosts": [
+      "REPORT01",
+      "REPORT02"
+    ],
+    "eligibility_change": "direct"
+  },
+  {
+    "id": "group_change",
+    "audit_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+    "approved_hosts": [
+      "REPORT01",
+      "REPORT02"
+    ],
+    "eligibility_change": "group"
+  },
+  {
+    "id": "readiness_only",
+    "audit_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+    "approved_hosts": [
+      "REPORT01",
+      "REPORT02"
+    ],
+    "readiness": {
+      "host": "REPORT01",
+      "result": "ok"
+    }
+  },
+  {
+    "id": "ticket_only",
+    "audit_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+    "approved_hosts": [
+      "REPORT01",
+      "REPORT02"
+    ],
+    "ticket": {
+      "target_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "status": "0x0"
+    }
+  },
+  {
+    "id": "unexpected_logon",
+    "audit_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+    "approved_hosts": [
+      "REPORT01",
+      "REPORT02"
+    ],
+    "logon": {
+      "host": "REPORT09",
+      "sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "type": 5
+    }
+  },
+  {
+    "id": "incomplete_join",
+    "audit_sid": "S-1-5-21-111111111-222222222-333333333-3501",
+    "approved_hosts": [
+      "REPORT01",
+      "REPORT02"
+    ],
+    "logon": {
+      "host": "REPORT01",
+      "sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "type": 5
+    },
+    "service_process": {
+      "host": "REPORT01",
+      "sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "instance": "instance-1"
+    },
+    "health": {
+      "host": "REPORT01",
+      "sid": "S-1-5-21-111111111-222222222-333333333-3501",
+      "instance": "instance-2",
+      "result": "ok"
+    }
+  }
+]
