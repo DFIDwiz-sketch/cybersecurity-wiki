@@ -95,3 +95,7 @@ Reviewed 20 November 2026. Compare the actual document version and format before
 - [Open Containers Initiative · Image descriptor and digest, November 2025](https://specs.opencontainers.org/image-spec/descriptor/) · [Image index and platform descriptors](https://specs.opencontainers.org/image-spec/image-index/)
 
 For Debian package downloads, [trace the archive signature and hashes first]({{ '/wiki/apt-repository-integrity/' | relative_url }}) to establish which file the archive published.
+
+## Verify build provenance
+
+Use [Build Provenance Evidence]({{ '/wiki/artifact-provenance-evidence/' | relative_url }}) to compare the received artifact's digest, signer identity and release policy.

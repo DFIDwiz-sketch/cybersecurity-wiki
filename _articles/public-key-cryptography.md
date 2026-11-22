@@ -181,3 +181,7 @@ Finish when you can draw both key directions, explain symmetric TLS traffic keys
 Apply signatures to software distribution in [APT repository integrity]({{ '/wiki/apt-repository-integrity/' | relative_url }}).
 
 Apply message authentication to an integration in [Webhook HMAC evidence]({{ '/wiki/webhook-hmac-evidence/' | relative_url }}).
+
+## Verify build provenance
+
+Use [Build Provenance Evidence]({{ '/wiki/artifact-provenance-evidence/' | relative_url }}) to compare the received artifact's digest, signer identity and release policy.

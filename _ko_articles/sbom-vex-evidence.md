@@ -95,3 +95,7 @@ S02, S05, S07이 왜 서로 다른 문제인지 설명하세요. 실제 배포 �
 - [Open Containers Initiative · 이미지 디스크립터와 다이제스트, 2025년 11월](https://specs.opencontainers.org/image-spec/descriptor/) · [이미지 인덱스와 플랫폼 정보](https://specs.opencontainers.org/image-spec/image-index/)
 
 Debian 패키지를 조사한다면 [APT 저장소 서명과 해시 검증]({{ '/ko/wiki/apt-repository-integrity/' | relative_url }})으로 저장소가 어떤 파일을 게시했는지 먼저 확인할 수 있습니다.
+
+## 빌드 출처 증명 검증하기
+
+[빌드 출처 증명]({{ '/ko/wiki/artifact-provenance-evidence/' | relative_url }})에서 받은 파일의 해시, 서명자 신원과 배포 정책을 대조합니다.

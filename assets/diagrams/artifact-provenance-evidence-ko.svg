@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="340" viewBox="0 0 440 340" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">빌드 출처 증명 검증</title>
+  <desc id="desc">받은 산출물의 해시 계산. 출처 증명의 서명 검증. 증명 대상 해시와 비교. 서명자·소스 정책 확인. 별도의 배포 정책 적용.</desc>
+  <rect width="440" height="340" rx="14" fill="#101b2a"/>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a3bed7"/></marker></defs>
+  <g font-family="system-ui,sans-serif" font-size="21" fill="#f1f7ff">
+    <rect x="15" y="12" width="410" height="48" rx="10" fill="#172c48" stroke="#8ac2e0"/>
+    <text x="220" y="43" text-anchor="middle">받은 산출물의 해시 계산</text>
+    <path d="M220 60v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="79" width="410" height="48" rx="10" fill="#172c48" stroke="#8ac2e0"/>
+    <text x="220" y="110" text-anchor="middle">출처 증명의 서명 검증</text>
+    <path d="M220 127v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="146" width="410" height="48" rx="10" fill="#172c48" stroke="#8ac2e0"/>
+    <text x="220" y="177" text-anchor="middle">증명 대상 해시와 비교</text>
+    <path d="M220 194v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="213" width="410" height="48" rx="10" fill="#153647" stroke="#8ac2e0"/>
+    <text x="220" y="244" text-anchor="middle">서명자·소스 정책 확인</text>
+    <path d="M220 261v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="280" width="410" height="48" rx="10" fill="#153647" stroke="#8ac2e0"/>
+    <text x="220" y="311" text-anchor="middle">별도의 배포 정책 적용</text>
+  </g>
+</svg>

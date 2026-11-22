@@ -1,0 +1,101 @@
+{
+  "policy": {
+    "repo_id": "41001",
+    "signer": "demo-org/release-build/.github/workflows/publish.yml",
+    "source_ref": "refs/tags/v1.0.0",
+    "predicate": "https://slsa.dev/provenance/v1"
+  },
+  "cases": [
+    {
+      "id": "release_match",
+      "verification": "verified",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "different_bytes",
+      "verification": "verified",
+      "subject_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "bad_signature",
+      "verification": "rejected",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "unverified_bundle",
+      "verification": "missing",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "reused_repo_name",
+      "verification": "verified",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "91999",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "unexpected_workflow",
+      "verification": "verified",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/test.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "branch_not_release",
+      "verification": "verified",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/heads/main",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "sbom_only",
+      "verification": "verified",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://spdx.dev/Document"
+    },
+    {
+      "id": "repository_id_missing",
+      "verification": "verified",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": null,
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1"
+    },
+    {
+      "id": "vulnerability_hold",
+      "verification": "verified",
+      "subject_sha256": "f8a84417d558909417afc5c7de436d77fe9b25651addd77aafab8c5de0c555ca",
+      "repo_id": "41001",
+      "signer": "demo-org/release-build/.github/workflows/publish.yml",
+      "source_ref": "refs/tags/v1.0.0",
+      "predicate": "https://slsa.dev/provenance/v1",
+      "release_hold": true
+    }
+  ]
+}

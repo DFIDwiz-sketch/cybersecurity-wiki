@@ -181,3 +181,7 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 소프트웨어 배포에서 전자서명이 쓰이는 방식은 [APT 저장소 무결성]({{ '/ko/wiki/apt-repository-integrity/' | relative_url }})에서 이어서 살펴보세요.
 
 공유 비밀을 쓰는 메시지 인증은 [웹훅 HMAC 증거]({{ '/ko/wiki/webhook-hmac-evidence/' | relative_url }})에서 이어서 살펴보세요.
+
+## 빌드 출처 증명 검증하기
+
+[빌드 출처 증명]({{ '/ko/wiki/artifact-provenance-evidence/' | relative_url }})에서 받은 파일의 해시, 서명자 신원과 배포 정책을 대조합니다.
