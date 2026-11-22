@@ -279,3 +279,7 @@ Review [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}), [Splunk basic
 [Next: Windows Credential Protection and Dumping Detection]({{ '/wiki/windows-credential-protection/' | relative_url }}) connects LSASS, SAM and LSA Secrets with protection state and process-access evidence.
 
 **Source review: 22 October 2026.** Microsoft references support product behavior and event interpretation; MITRE supports technique classification. Diagrams, queries and the exercise are original educational material. No persistence was installed, unknown payload executed, host policy changed or production Splunk detection validated for this publication.
+
+## Verify scheduled task execution
+
+Use [Windows scheduled task runtime evidence]({{ '/wiki/windows-scheduled-task-runtime-evidence/' | relative_url }}) to track an executable action from the task definition to its scheduler instance, process and observed result.

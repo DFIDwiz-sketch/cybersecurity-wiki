@@ -1,0 +1,366 @@
+[
+  {
+    "case": "normal",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "kind": "configuration",
+        "event_id": 4702,
+        "second": 1
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 15,
+        "result": 0
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "effect",
+        "second": 14
+      }
+    ]
+  },
+  {
+    "case": "registration_only",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "kind": "configuration",
+        "event_id": 4702,
+        "second": 1
+      }
+    ]
+  },
+  {
+    "case": "start_only",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      }
+    ]
+  },
+  {
+    "case": "launch_only",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      }
+    ]
+  },
+  {
+    "case": "nonzero",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 15,
+        "result": 1
+      }
+    ]
+  },
+  {
+    "case": "zero_only",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 15,
+        "result": 0
+      }
+    ]
+  },
+  {
+    "case": "other_host",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      },
+      {
+        "host": "WK-02",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 15,
+        "result": 0
+      }
+    ]
+  },
+  {
+    "case": "other_instance",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-b",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 15,
+        "result": 0
+      }
+    ]
+  },
+  {
+    "case": "early_effect",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 15,
+        "result": 0
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "effect",
+        "second": 9
+      }
+    ]
+  },
+  {
+    "case": "duplicate_completion",
+    "target": {
+      "host": "WK-01",
+      "task": "\\Training\\InventoryReport",
+      "instance": "run-a",
+      "action": "inventory-action"
+    },
+    "events": [
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "kind": "instance_start",
+        "event_id": 100,
+        "second": 10
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_start",
+        "event_id": 200,
+        "second": 11
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 15,
+        "result": 0
+      },
+      {
+        "host": "WK-01",
+        "task": "\\Training\\InventoryReport",
+        "instance": "run-a",
+        "action": "inventory-action",
+        "kind": "action_end",
+        "event_id": 201,
+        "second": 16,
+        "result": 1
+      }
+    ]
+  }
+]

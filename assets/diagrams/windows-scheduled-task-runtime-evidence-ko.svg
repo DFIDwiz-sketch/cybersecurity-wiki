@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" lang="ko" width="440" height="390" viewBox="0 0 440 390">
+  <title id="title">Windows 예약 작업 실행 증거</title>
+  <desc id="desc">작업 정의와 트리거 뒤에 실행이 이어집니다. 시작을 관찰했다면 반환 값과 독립적인 결과 증거를 확인합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#bee0e8"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="388" rx="14" fill="#101f2b"/>
+  <g fill="none" stroke="#bee0e8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M220 64 V87"/>
+    <path d="M220 130 V148 H116 V184"/>
+    <path d="M220 130 V148 H322 V184"/>
+    <path d="M116 228 V251"/>
+    <path d="M116 295 V318"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#f0f7fc">
+    <rect x="53" y="22" width="334" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="220" y="50" font-size="18">등록된 작업 정의 확인</text>
+    <rect x="53" y="88" width="334" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="220" y="116" font-size="18">트리거와 실행 조건 평가</text>
+    <text x="70" y="175" font-size="14" fill="#bcf8cd">실행 관찰</text>
+    <text x="353" y="175" font-size="14" fill="#ffd5b7">시작 미관찰</text>
+    <rect x="18" y="186" width="196" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="116" y="214" font-size="15">인스턴스 및 동작 시작</text>
+    <rect x="224" y="186" width="196" height="42" rx="8" fill="#4c3028" stroke="#7dc5cf"/>
+    <text x="322" y="214" font-size="15">수집 범위와 설정 확인</text>
+    <rect x="18" y="253" width="196" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="116" y="281" font-size="15">동작 반환 값 기록</text>
+    <rect x="18" y="320" width="196" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="116" y="348" font-size="15">파일 또는 앱 결과 확인</text>
+  </g>
+</svg>

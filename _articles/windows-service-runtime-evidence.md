@@ -104,3 +104,7 @@ Reviewed 2026-11-22. The Win32 API pages describe Windows service mechanics. Val
 - Windows Sysmon event definitions and collection prerequisites. [Microsoft Learn · Sysmon events](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
 
 [Previous · Windows persistence]({{ '/wiki/windows-persistence/' | relative_url }}) · [Next · Sysmon investigation]({{ '/wiki/sysmon-investigation/' | relative_url }})
+
+## Verify scheduled task execution
+
+Use [Windows scheduled task runtime evidence]({{ '/wiki/windows-scheduled-task-runtime-evidence/' | relative_url }}) to track an executable action from the task definition to its scheduler instance, process and observed result.

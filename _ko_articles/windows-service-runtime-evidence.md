@@ -104,3 +104,7 @@ registration_only: registration_only
 - Windows Sysmon 이벤트 정의와 수집 전제조건. [Microsoft Learn · Sysmon 이벤트](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
 
 [이전 · Windows 지속성]({{ '/ko/wiki/windows-persistence/' | relative_url }}) · [다음 · Sysmon 조사]({{ '/ko/wiki/sysmon-investigation/' | relative_url }})
+
+## 예약 작업 실행 확인하기
+
+[Windows 예약 작업 실행 조사]({{ '/ko/wiki/windows-scheduled-task-runtime-evidence/' | relative_url }})에서 작업 정의부터 스케줄러 인스턴스, 실행 프로세스와 실제 결과까지 이어서 확인하세요.
