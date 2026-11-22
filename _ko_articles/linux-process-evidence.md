@@ -129,3 +129,7 @@ p02·p03·p06의 차이를 설명하고, p04에 관점 변환이 필요한 이�
 ## Linux 소켓과 프로세스 연결해서 보기
 
 [Linux 소켓 보유 프로세스 조사하기]({{ '/ko/wiki/linux-socket-scope-evidence/' | relative_url }}) · 네임스페이스에서 보이는 목록과 프로세스별 디스크립터를 대조합니다.
+
+## 선언된 의존성과 실제 매핑 비교하기
+
+[Linux ELF와 런타임 조사]({{ '/ko/wiki/linux-elf-runtime-evidence/' | relative_url }})에서 ELF에 선언된 의존성과 실행 중인 프로세스의 매핑을 구분합니다.

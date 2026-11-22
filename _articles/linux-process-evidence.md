@@ -129,3 +129,7 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 ## Connect Linux Sockets to Processes
 
 [Investigate a Linux socket holder]({{ '/wiki/linux-socket-scope-evidence/' | relative_url }}) · Compare namespace visibility with the process's file descriptors.
+
+## Compare declared and mapped libraries
+
+[Linux ELF Runtime Evidence]({{ '/wiki/linux-elf-runtime-evidence/' | relative_url }}) shows how to separate static ELF declarations from live process mappings.

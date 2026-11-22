@@ -90,3 +90,7 @@ Reviewed 2026-11-22. The Linux man-pages and kernel documentation describe the i
 - [iproute2 ss manual](https://man7.org/linux/man-pages/man8/ss.8.html) · [Linux kernel TCP procfs interface](https://docs.kernel.org/networking/proc_net_tcp.html) · [Linux socket diagnostics](https://man7.org/linux/man-pages/man7/sock_diag.7.html)
 
 [Previous · Linux process evidence]({{ '/wiki/linux-process-evidence/' | relative_url }}) · [Next · Endpoint collection evidence]({{ '/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## Compare declared and mapped libraries
+
+[Linux ELF Runtime Evidence]({{ '/wiki/linux-elf-runtime-evidence/' | relative_url }}) shows how to separate static ELF declarations from live process mappings.

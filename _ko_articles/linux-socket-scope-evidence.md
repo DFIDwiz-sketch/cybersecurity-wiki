@@ -90,3 +90,7 @@ python3 linux-socket-scope-lab.py
 - [iproute2 ss 매뉴얼](https://man7.org/linux/man-pages/man8/ss.8.html) · [Linux 커널 TCP procfs 인터페이스](https://docs.kernel.org/networking/proc_net_tcp.html) · [Linux 소켓 진단](https://man7.org/linux/man-pages/man7/sock_diag.7.html)
 
 [이전 · Linux 프로세스 증거]({{ '/ko/wiki/linux-process-evidence/' | relative_url }}) · [다음 · 엔드포인트 수집 증거]({{ '/ko/wiki/endpoint-collection-evidence/' | relative_url }})
+
+## 선언된 의존성과 실제 매핑 비교하기
+
+[Linux ELF와 런타임 조사]({{ '/ko/wiki/linux-elf-runtime-evidence/' | relative_url }})에서 ELF에 선언된 의존성과 실행 중인 프로세스의 매핑을 구분합니다.
