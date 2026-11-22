@@ -90,3 +90,7 @@ Reviewed 2026-11-22. The projected bound token mechanism has been stable since v
 - Audit stages, levels and backend requirements. [Kubernetes · Auditing](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
 
 [Previous · Kubernetes API audit logs]({{ '/wiki/kubernetes-audit-evidence/' | relative_url }}) · [Related · OAuth and OpenID Connect]({{ '/wiki/oauth-oidc-evidence/' | relative_url }}) · [Related · Kubernetes NetworkPolicy]({{ '/wiki/kubernetes-network-policy-evidence/' | relative_url }})
+
+## Trace the RBAC grant
+
+Use [Kubernetes RBAC evidence]({{ '/wiki/kubernetes-rbac-evidence/' | relative_url }}) to trace binding scope, subresource rules, and historical evidence of use.

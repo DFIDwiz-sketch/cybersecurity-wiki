@@ -133,3 +133,7 @@ Follow [Kubernetes Service Account Evidence]({{ '/wiki/kubernetes-service-accoun
 ## Follow Pod admission evidence
 
 Trace [Kubernetes Pod Security Admission]({{ '/wiki/kubernetes-pod-security-admission-evidence/' | relative_url }}) to distinguish a workload template from the controller's Pod creation request and the resulting runtime state.
+
+## Trace the RBAC grant
+
+Use [Kubernetes RBAC evidence]({{ '/wiki/kubernetes-rbac-evidence/' | relative_url }}) to trace binding scope, subresource rules, and historical evidence of use.

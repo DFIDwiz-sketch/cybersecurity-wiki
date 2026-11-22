@@ -90,3 +90,7 @@ incomplete_binding: insufficient_evidence
 - 감사 단계와 수준, 로그 저장 설정. [Kubernetes · 감사](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
 
 [이전 · Kubernetes API 감사 로그]({{ '/ko/wiki/kubernetes-audit-evidence/' | relative_url }}) · [관련 · OAuth와 OpenID Connect]({{ '/ko/wiki/oauth-oidc-evidence/' | relative_url }}) · [관련 · Kubernetes NetworkPolicy]({{ '/ko/wiki/kubernetes-network-policy-evidence/' | relative_url }})
+
+## RBAC 권한이 생긴 경로 확인
+
+[Kubernetes RBAC 조사]({{ '/ko/wiki/kubernetes-rbac-evidence/' | relative_url }})에서 네임스페이스의 바인딩, 하위 리소스 규칙, 과거 사용 증거를 대조합니다.

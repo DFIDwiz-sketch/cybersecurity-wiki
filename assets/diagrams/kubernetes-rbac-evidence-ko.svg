@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 338" width="420" height="338" role="img" aria-labelledby="title desc">
+  <title id="title">Kubernetes RBAC 권한 조사</title><desc id="desc">요청의 주체, 적용 범위와 참조 규칙을 대조한 뒤 현재 판단과 과거 결과를 구분합니다.</desc>
+  <rect width="420" height="338" rx="18" fill="#122431"/>
+  <g fill="#192f40" stroke="#79e1c2" stroke-width="2">
+    <rect x="69" y="20" width="282" height="64" rx="10"/>
+    <rect x="69" y="123" width="282" height="64" rx="10"/>
+    <rect x="19" y="246" width="185" height="70" rx="10"/>
+    <rect x="216" y="246" width="185" height="70" rx="10"/>
+  </g>
+  <g fill="none" stroke="#79e1c2" stroke-width="2" stroke-linejoin="round">
+    <path d="M210 85v34m-5-5 5 5 5-5M210 188v28H112v25m-5-5 5 5 5-5M210 216h98v25m-5-5 5 5 5-5"/>
+  </g>
+  <g fill="#f2f8fc" text-anchor="middle" font-family="system-ui,sans-serif" font-size="17">
+    <text x="210" y="47" font-weight="700">API 요청</text><text x="210" y="70">신원 · 동작 · 대상</text>
+    <text x="210" y="150" font-weight="700">바인딩과 참조 규칙</text><text x="210" y="173">주체 → 범위 → 규칙</text>
+    <text x="112" y="275" font-weight="700">현재 인가 판단</text><text x="112" y="300">접근 검토 결과</text>
+    <text x="308" y="275" font-weight="700">과거 API 결과</text><text x="308" y="300">감사 응답과 맥락</text>
+  </g>
+</svg>

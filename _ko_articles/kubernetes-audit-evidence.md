@@ -133,3 +133,7 @@ UTC, 호출자, 컨텍스트, 대상과 결과를 기록하세요. 정책이 해
 ## Pod 생성 단계의 보안 정책 조사
 
 [Kubernetes Pod Security Admission 조사]({{ '/ko/wiki/kubernetes-pod-security-admission-evidence/' | relative_url }})에서 워크로드 템플릿의 수락, 컨트롤러의 Pod 생성 요청, 실제 실행 상태를 구분하는 방법을 익힙니다.
+
+## RBAC 권한이 생긴 경로 확인
+
+[Kubernetes RBAC 조사]({{ '/ko/wiki/kubernetes-rbac-evidence/' | relative_url }})에서 네임스페이스의 바인딩, 하위 리소스 규칙, 과거 사용 증거를 대조합니다.

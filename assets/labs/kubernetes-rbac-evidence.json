@@ -1,0 +1,181 @@
+{
+  "rules": {
+    "ClusterRole/pod-inventory": [
+      {
+        "api_group": "",
+        "resources": [
+          "pods"
+        ],
+        "verbs": [
+          "get",
+          "list"
+        ],
+        "names": []
+      }
+    ],
+    "Role/reports/public-config": [
+      {
+        "api_group": "",
+        "resources": [
+          "configmaps"
+        ],
+        "verbs": [
+          "get"
+        ],
+        "names": [
+          "public-settings"
+        ]
+      }
+    ],
+    "ClusterRole/node-inventory": [
+      {
+        "api_group": "",
+        "resources": [
+          "nodes"
+        ],
+        "verbs": [
+          "get"
+        ],
+        "names": []
+      }
+    ],
+    "Role/reports/support-read": [
+      {
+        "api_group": "",
+        "resources": [
+          "pods"
+        ],
+        "verbs": [
+          "get"
+        ],
+        "names": []
+      }
+    ]
+  },
+  "bindings": [
+    {
+      "id": "reports/pod-inventory",
+      "namespace": "reports",
+      "role": "ClusterRole/pod-inventory",
+      "subjects": [
+        {
+          "kind": "ServiceAccount",
+          "name": "summarizer",
+          "namespace": "reports"
+        }
+      ]
+    },
+    {
+      "id": "reports/public-config",
+      "namespace": "reports",
+      "role": "Role/reports/public-config",
+      "subjects": [
+        {
+          "kind": "ServiceAccount",
+          "name": "summarizer",
+          "namespace": "reports"
+        }
+      ]
+    },
+    {
+      "id": "node-inventory",
+      "namespace": null,
+      "role": "ClusterRole/node-inventory",
+      "subjects": [
+        {
+          "kind": "Group",
+          "name": "support"
+        }
+      ]
+    },
+    {
+      "id": "reports/support-read",
+      "namespace": "reports",
+      "role": "Role/reports/support-read",
+      "subjects": [
+        {
+          "kind": "Group",
+          "name": "support"
+        }
+      ]
+    }
+  ],
+  "requests": {
+    "pod_in_reports": {
+      "namespace": "reports",
+      "username": "system:serviceaccount:reports:summarizer",
+      "groups": [],
+      "api_group": "",
+      "resource": "pods",
+      "verb": "get",
+      "name": "daily"
+    },
+    "pod_in_archive": {
+      "namespace": "archive",
+      "username": "system:serviceaccount:reports:summarizer",
+      "groups": [],
+      "api_group": "",
+      "resource": "pods",
+      "verb": "get",
+      "name": "daily"
+    },
+    "pod_log": {
+      "namespace": "reports",
+      "username": "system:serviceaccount:reports:summarizer",
+      "groups": [],
+      "api_group": "",
+      "resource": "pods/log",
+      "verb": "get",
+      "name": "daily"
+    },
+    "wrong_serviceaccount_namespace": {
+      "namespace": "reports",
+      "username": "system:serviceaccount:archive:summarizer",
+      "groups": [],
+      "api_group": "",
+      "resource": "pods",
+      "verb": "get",
+      "name": "daily"
+    },
+    "named_configmap": {
+      "namespace": "reports",
+      "username": "system:serviceaccount:reports:summarizer",
+      "groups": [],
+      "api_group": "",
+      "resource": "configmaps",
+      "verb": "get",
+      "name": "public-settings"
+    },
+    "different_configmap": {
+      "namespace": "reports",
+      "username": "system:serviceaccount:reports:summarizer",
+      "groups": [],
+      "api_group": "",
+      "resource": "configmaps",
+      "verb": "get",
+      "name": "other-settings"
+    },
+    "group_cluster_read": {
+      "namespace": null,
+      "username": "trainee",
+      "groups": [
+        "support"
+      ],
+      "api_group": "",
+      "resource": "nodes",
+      "verb": "get",
+      "name": "lab-node"
+    },
+    "overlapping_grants": {
+      "namespace": "reports",
+      "username": "system:serviceaccount:reports:summarizer",
+      "groups": [
+        "support"
+      ],
+      "api_group": "",
+      "resource": "pods",
+      "verb": "get",
+      "name": "daily"
+    }
+  }
+}
