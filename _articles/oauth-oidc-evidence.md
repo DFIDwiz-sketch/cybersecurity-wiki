@@ -119,3 +119,7 @@ Reviewed November 20, 2026. The dates below identify the editions used.
 ## Trace Entra consent to resource activity
 
 Use [Microsoft Entra App Consent Evidence]({{ '/wiki/entra-app-consent-evidence/' | relative_url }}) to distinguish delegated consent, app-only grants and resource API use.
+
+## SAML single sign-on evidence
+
+For browser SSO with a SAML assertion, follow the [SAML SSO investigation guide]({{ '/wiki/saml-sso-evidence/' | relative_url }}) to check the service provider’s decision, session creation and app authorization.

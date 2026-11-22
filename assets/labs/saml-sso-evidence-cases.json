@@ -1,0 +1,285 @@
+[
+  {
+    "case": "normal",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "accepted",
+        "second": 11
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "session",
+        "transaction": "txn-47",
+        "session": "session-42",
+        "outcome": "created",
+        "second": 12
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "action",
+        "session": "session-42",
+        "outcome": "allowed",
+        "second": 13
+      }
+    ]
+  },
+  {
+    "case": "idp_only",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      }
+    ]
+  },
+  {
+    "case": "wrong_audience",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "rejected",
+        "second": 11,
+        "reason": "audience"
+      }
+    ]
+  },
+  {
+    "case": "session_missing",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "accepted",
+        "second": 11
+      }
+    ]
+  },
+  {
+    "case": "duplicate",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "rejected",
+        "second": 11,
+        "reason": "replay"
+      }
+    ]
+  },
+  {
+    "case": "action_denied",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "accepted",
+        "second": 11
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "session",
+        "transaction": "txn-47",
+        "session": "session-42",
+        "outcome": "created",
+        "second": 12
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "action",
+        "session": "session-42",
+        "outcome": "denied",
+        "second": 13
+      }
+    ]
+  },
+  {
+    "case": "other_connection",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "accepted",
+        "second": 11
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-staging",
+        "kind": "session",
+        "transaction": "txn-47",
+        "session": "session-42",
+        "outcome": "created",
+        "second": 12
+      }
+    ]
+  },
+  {
+    "case": "early_action",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "accepted",
+        "second": 11
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "session",
+        "transaction": "txn-47",
+        "session": "session-42",
+        "outcome": "created",
+        "second": 12
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "action",
+        "session": "session-42",
+        "outcome": "allowed",
+        "second": 11
+      }
+    ]
+  },
+  {
+    "case": "mapping_denied",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-17",
+        "transaction": "txn-47",
+        "outcome": "accepted",
+        "second": 11
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "session",
+        "transaction": "txn-47",
+        "session": null,
+        "outcome": "denied",
+        "second": 12,
+        "reason": "role_mapping"
+      }
+    ]
+  },
+  {
+    "case": "wrong_request",
+    "events": [
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "idp",
+        "request": "req-17",
+        "outcome": "success",
+        "second": 10
+      },
+      {
+        "tenant": "training",
+        "connection": "expenses-prod",
+        "kind": "acs",
+        "request": "req-19",
+        "transaction": "txn-47",
+        "outcome": "accepted",
+        "second": 11
+      }
+    ]
+  }
+]

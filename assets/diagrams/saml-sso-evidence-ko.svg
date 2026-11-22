@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" lang="ko" width="440" height="400" viewBox="0 0 440 400">
+  <title id="title">SAML 로그인 증거</title>
+  <desc id="desc">SP의 검사에서 경로가 나뉩니다. 수락하면 세션 생성과 작업 인가로 이어집니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#b5d7df"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="398" rx="14" fill="#10232f"/>
+  <g fill="none" stroke="#b5d7df" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M220 66 V89"/>
+    <path d="M220 132 V155"/>
+    <path d="M220 198 V218 H150 V254"/>
+    <path d="M220 198 V218 H354 V254"/>
+    <path d="M150 298 V329"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#f0f7fc">
+  <rect x="65" y="24" width="310" height="42" rx="8" fill="#143643" stroke="#77c0c9"/>
+  <text x="220" y="51" font-size="18">SP가 로그인 요청 전송</text>
+  <rect x="65" y="90" width="310" height="42" rx="8" fill="#143643" stroke="#77c0c9"/>
+  <text x="220" y="117" font-size="18">IdP가 SAML 응답 발급</text>
+  <rect x="65" y="156" width="310" height="42" rx="8" fill="#143643" stroke="#77c0c9"/>
+  <text x="220" y="183" font-size="18">SP가 ACS에서 검사</text>
+    <text x="112" y="241" font-size="16" fill="#b3f8c9">수락</text>
+    <text x="392" y="241" font-size="16" fill="#ffd0c8">거부</text>
+  <rect x="22" y="256" width="256" height="42" rx="8" fill="#174335" stroke="#77c0c9"/>
+  <text x="150" y="283" font-size="16">계정 연결 및 세션 생성</text>
+  <rect x="292" y="256" width="124" height="42" rx="8" fill="#512c31" stroke="#77c0c9"/>
+  <text x="354" y="283" font-size="15">이 로그인 중단</text>
+  <rect x="22" y="331" width="256" height="42" rx="8" fill="#174335" stroke="#77c0c9"/>
+  <text x="150" y="358" font-size="16">앱에서 보호된 작업 인가</text>
+  </g>
+</svg>

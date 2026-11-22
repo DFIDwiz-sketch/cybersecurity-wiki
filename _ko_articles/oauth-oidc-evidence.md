@@ -119,3 +119,7 @@ python3 oauth-oidc-evidence.py
 ## Entra에서 앱 동의와 API 사용 대조하기
 
 [Microsoft Entra 앱 동의 조사]({{ '/ko/wiki/entra-app-consent-evidence/' | relative_url }})에서 위임 동의, 앱 전용 권한과 실제 리소스 요청을 구분합니다.
+
+## SAML 싱글 사인온 조사
+
+SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/ko/wiki/saml-sso-evidence/' | relative_url }})에서 이어서 학습하세요. 서비스 제공자의 판정, 세션 발급, 앱 인가를 구분합니다.
