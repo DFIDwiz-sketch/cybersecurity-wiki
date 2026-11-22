@@ -104,3 +104,7 @@ Reviewed 2026-11-21. Check your installed Audit and kernel versions when applyin
 - [Linux Audit userspace upstream](https://github.com/linux-audit/audit-userspace) and [release history](https://github.com/linux-audit/audit-userspace/releases), reviewed for the 4.x documentation and event assembly behavior.
 - [Upstream `auditctl(8)` manual](https://man7.org/linux/man-pages/man8/auditctl.8.html) and [upstream `ausearch(8)` manual](https://man7.org/linux/man-pages/man8/ausearch.8.html), current online manual snapshots for status, rule syntax and searches.
 - [Linux kernel x86 syscall table](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl) and [Linux `open(2)` manual](https://man7.org/linux/man-pages/man2/open.2.html), current source and Linux man-pages for the x86-64 mapping and `openat` semantics.
+
+## Trace a sudo decision to an observed command outcome
+
+Use [Linux sudo Command Evidence]({{ '/wiki/linux-sudo-command-evidence/' | relative_url }}) to connect an allow record, process execution, exit status and resource effect.

@@ -104,3 +104,7 @@ python3 linux-audit-file-review.py linux-audit-file-sample.log --check
 - [Linux Audit 사용자 공간 도구 upstream](https://github.com/linux-audit/audit-userspace) 및 [릴리스 이력](https://github.com/linux-audit/audit-userspace/releases). 4.x 문서와 이벤트 조립 방식을 검토했습니다.
 - [upstream `auditctl(8)` 매뉴얼](https://man7.org/linux/man-pages/man8/auditctl.8.html) 및 [upstream `ausearch(8)` 매뉴얼](https://man7.org/linux/man-pages/man8/ausearch.8.html). 상태, 규칙 구문, 로그 검색에 관한 온라인 매뉴얼입니다.
 - [Linux 커널 x86 시스템 호출 표](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl) 및 [Linux `open(2)` 매뉴얼](https://man7.org/linux/man-pages/man2/open.2.html). x86-64 호출 번호와 `openat`의 동작을 확인할 수 있습니다.
+
+## sudo 허용 이후의 명령 증거 확인하기
+
+[Linux sudo 명령 조사]({{ '/ko/wiki/linux-sudo-command-evidence/' | relative_url }})에서 허용 기록, 프로세스 실행, 종료 상태와 작업 결과를 연결합니다.

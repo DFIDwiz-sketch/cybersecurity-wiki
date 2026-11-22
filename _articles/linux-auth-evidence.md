@@ -136,3 +136,7 @@ Reviewed 20 November 2026. RFC 4252 documents SSH authentication (2006). Match c
 ## Investigate OpenSSH User Certificates
 
 Use [OpenSSH user certificate evidence]({{ '/wiki/ssh-user-certificate-evidence/' | relative_url }}) to join issuer, serial and destination policy without treating authentication as proof of commands.
+
+## Trace a sudo decision to an observed command outcome
+
+Use [Linux sudo Command Evidence]({{ '/wiki/linux-sudo-command-evidence/' | relative_url }}) to connect an allow record, process execution, exit status and resource effect.

@@ -136,3 +136,7 @@ python3 linux-auth-evidence.py
 ## OpenSSH 사용자 인증서 조사
 
 [OpenSSH 사용자 인증서]({{ '/ko/wiki/ssh-user-certificate-evidence/' | relative_url }})에서 발급 CA와 일련번호, 대상의 인증·인가 설정을 대조합니다.
+
+## sudo 허용 이후의 명령 증거 확인하기
+
+[Linux sudo 명령 조사]({{ '/ko/wiki/linux-sudo-command-evidence/' | relative_url }})에서 허용 기록, 프로세스 실행, 종료 상태와 작업 결과를 연결합니다.
