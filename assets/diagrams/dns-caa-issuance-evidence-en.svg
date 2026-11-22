@@ -18,9 +18,9 @@
     <text x="75" y="188" font-size="12">Evaluate issuer tags</text>
     <rect x="153" y="147" width="134" height="51" rx="8" fill="#e0f2fe" stroke="#0369a1"/>
     <text x="220" y="168" font-size="16" font-weight="700">Empty result</text>
-    <text x="220" y="188" font-size="12">Query the original parent</text>
+    <text x="220" y="188" font-size="12">Check query parent</text>
     <rect x="298" y="147" width="134" height="51" rx="8" fill="#fef3c7" stroke="#92400e"/>
     <text x="365" y="168" font-size="16" font-weight="700">Lookup error</text>
-    <text x="365" y="188" font-size="12">Preserve and investigate</text>
+    <text x="365" y="188" font-size="12">Preserve evidence</text>
   </g>
 </svg>
