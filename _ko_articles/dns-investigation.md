@@ -234,3 +234,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## HTTPS로 보호된 DNS 질의 조사하기
 
 [DNS over HTTPS 조사]({{ '/ko/wiki/doh-resolution-evidence/' | relative_url }})에서 연결, HTTP 상태, DNS 응답과 실제 리졸버 선택을 구분합니다.
+
+## DNS CAA 발급 정책 확인하기
+
+[DNS CAA 발급 조사]({{ '/ko/wiki/dns-caa-issuance-evidence/' | relative_url }})에서 인증기관이 어느 DNS 레코드 집합을 발급 정책으로 보는지 확인합니다.

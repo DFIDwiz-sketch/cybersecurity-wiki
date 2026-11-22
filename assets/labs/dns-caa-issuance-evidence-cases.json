@@ -1,0 +1,195 @@
+[
+  {
+    "id": "parent",
+    "name": "api.example",
+    "issuer": "ca-a.example",
+    "complete": true,
+    "lookups": [
+      {
+        "name": "api.example",
+        "status": "ok",
+        "records": []
+      },
+      {
+        "name": "example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": "ca-a.example",
+            "flags": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wildcard",
+    "name": "*.apps.example",
+    "issuer": "ca-a.example",
+    "complete": true,
+    "lookups": [
+      {
+        "name": "apps.example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": "ca-a.example",
+            "flags": 0
+          },
+          {
+            "tag": "issuewild",
+            "value": ";",
+            "flags": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alias_target",
+    "name": "portal.example",
+    "issuer": "ca-a.example",
+    "complete": true,
+    "lookups": [
+      {
+        "name": "portal.example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": "ca-b.example",
+            "flags": 0
+          }
+        ],
+        "returned_owner": "edge.example.net"
+      },
+      {
+        "name": "example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": "ca-a.example",
+            "flags": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "empty_and_allowed",
+    "name": "api.example",
+    "issuer": "ca-a.example",
+    "complete": true,
+    "lookups": [
+      {
+        "name": "api.example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": ";",
+            "flags": 0
+          },
+          {
+            "tag": "issue",
+            "value": "ca-a.example",
+            "flags": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "critical",
+    "name": "api.example",
+    "issuer": "ca-a.example",
+    "complete": true,
+    "lookups": [
+      {
+        "name": "api.example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": "ca-a.example",
+            "flags": 0
+          },
+          {
+            "tag": "customtag",
+            "value": "example",
+            "flags": 128
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "report_only",
+    "name": "api.example",
+    "issuer": "ca-a.example",
+    "complete": true,
+    "lookups": [
+      {
+        "name": "api.example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "iodef",
+            "value": "mailto:security@example",
+            "flags": 0
+          }
+        ]
+      },
+      {
+        "name": "example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": ";",
+            "flags": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lookup_error",
+    "name": "api.example",
+    "issuer": "ca-a.example",
+    "complete": true,
+    "lookups": [
+      {
+        "name": "api.example",
+        "status": "servfail"
+      },
+      {
+        "name": "example",
+        "status": "ok",
+        "records": [
+          {
+            "tag": "issue",
+            "value": "ca-a.example",
+            "flags": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "missing_parent",
+    "name": "api.example",
+    "issuer": "ca-a.example",
+    "complete": false,
+    "lookups": [
+      {
+        "name": "api.example",
+        "status": "ok",
+        "records": []
+      }
+    ]
+  }
+]

@@ -104,3 +104,7 @@ Reviewed 2026-11-22. The RFC dates identify the specification versions. The Open
 - [Python 3.12 · TLS Memory BIO support](https://docs.python.org/3.12/library/ssl.html#memory-bio-support)
 
 [Previous · Certificate validation]({{ '/wiki/certificate-validation/' | relative_url }}) · [Next · Certificate Transparency evidence]({{ '/wiki/certificate-transparency-evidence/' | relative_url }})
+
+## Investigate CAA issuance policy
+
+[DNS CAA Issuance Evidence]({{ '/wiki/dns-caa-issuance-evidence/' | relative_url }}) traces which DNS record set a certificate authority evaluates during issuance.

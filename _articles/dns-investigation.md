@@ -234,3 +234,7 @@ Complete this chapter when you can draw the resolver's separate queries, disting
 ## Investigate DNS carried over HTTPS
 
 Use [DNS over HTTPS Evidence]({{ '/wiki/doh-resolution-evidence/' | relative_url }}) to distinguish the connection, HTTP status, DNS response and actual resolver selection.
+
+## Investigate CAA issuance policy
+
+[DNS CAA Issuance Evidence]({{ '/wiki/dns-caa-issuance-evidence/' | relative_url }}) traces which DNS record set a certificate authority evaluates during issuance.

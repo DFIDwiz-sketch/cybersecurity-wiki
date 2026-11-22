@@ -104,3 +104,7 @@ python3 certificate-renewal-lab.py
 - [Python 3.12 · TLS Memory BIO](https://docs.python.org/3.12/library/ssl.html#memory-bio-support)
 
 [이전 · 인증서 검증]({{ '/ko/wiki/certificate-validation/' | relative_url }}) · [다음 · 인증서 투명성 증거]({{ '/ko/wiki/certificate-transparency-evidence/' | relative_url }})
+
+## DNS CAA 발급 정책 확인하기
+
+[DNS CAA 발급 조사]({{ '/ko/wiki/dns-caa-issuance-evidence/' | relative_url }})에서 인증기관이 어느 DNS 레코드 집합을 발급 정책으로 보는지 확인합니다.
