@@ -111,3 +111,7 @@ Microsoft Learn product documentation reviewed 20 November 2026. Verify licensin
 ## Passkeys and WebAuthn Sign-in Evidence
 
 [Distinguish public-key verification, access policy and app sessions]({{ '/wiki/passkey-signin-evidence/' | relative_url }})
+
+## Trace Entra consent to resource activity
+
+Use [Microsoft Entra App Consent Evidence]({{ '/wiki/entra-app-consent-evidence/' | relative_url }}) to distinguish delegated consent, app-only grants and resource API use.

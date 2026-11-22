@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="340" viewBox="0 0 440 340" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Microsoft Entra 앱 동의 증거</title>
+  <desc id="desc">테넌트와 서비스 주체 식별. 감사 로그와 권한 객체 확인. 토큰과 로그인 기록 확인. 대상 API 응답 찾기. 리소스 로그에서 영향 확인.</desc>
+  <rect width="440" height="340" rx="14" fill="#101b2a"/>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a3bed7"/></marker></defs>
+  <g font-family="system-ui,sans-serif" font-size="20" fill="#f1f7ff">
+    <rect x="15" y="12" width="410" height="48" rx="10" fill="#172c48" stroke="#8ac2e0"/>
+    <text x="220" y="43" text-anchor="middle">테넌트와 서비스 주체 식별</text>
+    <path d="M220 60v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="79" width="410" height="48" rx="10" fill="#172c48" stroke="#8ac2e0"/>
+    <text x="220" y="110" text-anchor="middle">감사 로그와 권한 객체 확인</text>
+    <path d="M220 127v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="146" width="410" height="48" rx="10" fill="#153647" stroke="#8ac2e0"/>
+    <text x="220" y="177" text-anchor="middle">토큰과 로그인 기록 확인</text>
+    <path d="M220 194v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="213" width="410" height="48" rx="10" fill="#153647" stroke="#8ac2e0"/>
+    <text x="220" y="244" text-anchor="middle">대상 API 응답 찾기</text>
+    <path d="M220 261v16" stroke="#a3bed7" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="15" y="280" width="410" height="48" rx="10" fill="#153647" stroke="#8ac2e0"/>
+    <text x="220" y="311" text-anchor="middle">리소스 로그에서 영향 확인</text>
+  </g>
+</svg>

@@ -115,3 +115,7 @@ python3 oauth-oidc-evidence.py
 ## 패스키와 WebAuthn 로그인 증거
 
 [공개키 검증, 접근 정책과 앱 세션을 구분하는 실습]({{ '/ko/wiki/passkey-signin-evidence/' | relative_url }})
+
+## Entra에서 앱 동의와 API 사용 대조하기
+
+[Microsoft Entra 앱 동의 조사]({{ '/ko/wiki/entra-app-consent-evidence/' | relative_url }})에서 위임 동의, 앱 전용 권한과 실제 리소스 요청을 구분합니다.
