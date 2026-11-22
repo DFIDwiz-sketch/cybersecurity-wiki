@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" lang="en" width="440" height="324" viewBox="0 0 440 324">
+  <title id="title">Domain controller replication and audit evidence</title>
+  <desc id="desc">An originating write creates a replication stamp. When auditing applies, it also leaves change evidence. A replica can show the same originating stamp with its own local sequence number.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#bee0e8"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="322" rx="14" fill="#101f2b"/>
+  <g fill="none" stroke="#bee0e8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M220 64 V84 H104 V127"/>
+    <path d="M220 64 V84 H320 V127"/>
+    <path d="M320 171 V196"/>
+    <path d="M320 240 V264"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#f0f7fc">
+    <rect x="53" y="22" width="334" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="220" y="49" font-size="17">Approved attribute write on DC A</text>
+    <text x="62" y="112" font-size="13" fill="#ffd5b7">Audit evidence</text>
+    <text x="365" y="112" font-size="13" fill="#bcf8cd">Replication evidence</text>
+    <rect x="12" y="129" width="184" height="42" rx="8" fill="#4c3028" stroke="#7dc5cf"/>
+    <text x="104" y="156" font-size="15">Security 5136 if audited</text>
+    <rect x="210" y="129" width="220" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="320" y="156" font-size="14">DC A records origin stamp</text>
+    <rect x="210" y="198" width="220" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="320" y="225" font-size="14">DC B applies replicated update</text>
+    <rect x="210" y="266" width="220" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="320" y="293" font-size="14">Same origin, separate local USNs</text>
+  </g>
+</svg>

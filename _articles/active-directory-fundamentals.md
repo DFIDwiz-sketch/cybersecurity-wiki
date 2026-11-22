@@ -448,3 +448,7 @@ gpresult /r
 ## Investigate Active Directory Account Lockouts
 
 [Trace account lockout evidence]({{ '/wiki/ad-account-lockout-evidence/' | relative_url }}) · Correlate 4740 with earlier authentication failures and later locked-account rejections.
+
+## Investigate replicated attribute changes
+
+Use [Active Directory replication evidence]({{ '/wiki/ad-replication-change-evidence/' | relative_url }}) to compare an originating change, the observed state of each replica, and the scope of Security event 5136.

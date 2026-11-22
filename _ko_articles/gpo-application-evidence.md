@@ -113,3 +113,7 @@ python3 gpo-evidence-review.py
 
 이전 학습 · [Active Directory 입문]({{ '/ko/wiki/active-directory-fundamentals/' | relative_url }})  
 다음 학습 · [AD 그룹 구성원 변경 조사]({{ '/ko/wiki/ad-group-membership-evidence/' | relative_url }})
+
+## DC별 속성 변경과 복제 확인
+
+[Active Directory 복제 조사]({{ '/ko/wiki/ad-replication-change-evidence/' | relative_url }})에서 단일값 속성의 원본 변경, DC별 상태, Security 5136의 해석 범위를 비교하세요.

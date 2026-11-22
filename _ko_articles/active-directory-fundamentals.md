@@ -448,3 +448,7 @@ gpresult /r
 ## Active Directory 계정 잠금 조사
 
 [계정 잠금 증거 추적하기]({{ '/ko/wiki/ad-account-lockout-evidence/' | relative_url }}) · 4740을 기준으로 앞선 인증 실패와 잠금 이후의 거절을 대조합니다.
+
+## DC별 속성 변경과 복제 확인
+
+[Active Directory 복제 조사]({{ '/ko/wiki/ad-replication-change-evidence/' | relative_url }})에서 단일값 속성의 원본 변경, DC별 상태, Security 5136의 해석 범위를 비교하세요.

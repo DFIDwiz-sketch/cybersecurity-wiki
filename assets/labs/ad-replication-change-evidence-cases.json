@@ -1,0 +1,210 @@
+[
+  {
+    "name": "converged",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 91100,
+      "value_ref": "new-description"
+    }
+  },
+  {
+    "name": "pending",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 3,
+      "origin_time": "2026-11-21T15:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48050,
+      "local_usn": 91000,
+      "value_ref": "old-description"
+    }
+  },
+  {
+    "name": "competing_writes",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:01:00Z",
+      "origin_invocation": "inv-b1",
+      "origin_usn": 91100,
+      "local_usn": 91100,
+      "value_ref": "alternative-description"
+    }
+  },
+  {
+    "name": "read_denied",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "read_ok": false
+    }
+  },
+  {
+    "name": "other_object",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "object": "computer-02",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 91100,
+      "value_ref": "new-description"
+    }
+  },
+  {
+    "name": "other_attribute",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "object": "computer-01",
+      "attribute": "location",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 91100,
+      "value_ref": "new-description"
+    }
+  },
+  {
+    "name": "same_stamp_different_value",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 91100,
+      "value_ref": "different-description"
+    }
+  },
+  {
+    "name": "incomplete_stamp",
+    "first": {
+      "replica": "dc-a",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": 48200,
+      "local_usn": 48200,
+      "value_ref": "new-description"
+    },
+    "second": {
+      "replica": "dc-b",
+      "object": "computer-01",
+      "attribute": "description",
+      "read_ok": true,
+      "version": 4,
+      "origin_time": "2026-11-22T09:00:00Z",
+      "origin_invocation": "inv-a1",
+      "origin_usn": null,
+      "local_usn": 91100,
+      "value_ref": "new-description"
+    }
+  }
+]

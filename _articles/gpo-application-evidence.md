@@ -113,3 +113,7 @@ Reviewed **2026-11-21**. The architecture and processing guidance covers Windows
 
 Previous · [Active Directory Fundamentals]({{ '/wiki/active-directory-fundamentals/' | relative_url }})  
 Next · [AD Group Membership Evidence]({{ '/wiki/ad-group-membership-evidence/' | relative_url }})
+
+## Investigate replicated attribute changes
+
+Use [Active Directory replication evidence]({{ '/wiki/ad-replication-change-evidence/' | relative_url }}) to compare an originating change, the observed state of each replica, and the scope of Security event 5136.
