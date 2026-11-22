@@ -96,3 +96,7 @@ translation_url: /wiki/smtp-delivery-evidence/
 ## ARC와 전달 메일 이어서 조사하기
 
 [ARC 체인과 배달 증거 확인하기]({{ '/ko/wiki/arc-forwarding-evidence/' | relative_url }}) · 직접 인증과 수신 정책, 실제 배달을 구분합니다.
+
+## 메일 서버 간 TLS 정책 확인하기
+
+[MTA-STS와 TLS-RPT 조사]({{ '/ko/wiki/smtp-mta-sts-evidence/' | relative_url }})에서 SMTP의 MX 선택, 인증서 검사와 TLS 실패 보고를 연결해 보세요.

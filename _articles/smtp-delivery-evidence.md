@@ -96,3 +96,7 @@ Reviewed 21 November 2026. Internet standards below describe the SMTP exchange a
 ## Investigate ARC and Forwarding
 
 [Read ARC chain and delivery evidence]({{ '/wiki/arc-forwarding-evidence/' | relative_url }}) · Separate direct authentication from receiver policy and delivery.
+
+## Investigate SMTP transport policy and reporting
+
+Use [MTA-STS and TLS-RPT evidence]({{ '/wiki/smtp-mta-sts-evidence/' | relative_url }}) to correlate MX selection, certificate checks and TLS failure reports on an SMTP hop.

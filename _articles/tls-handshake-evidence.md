@@ -113,3 +113,7 @@ Reviewed 20 November 2026. Match standards and analyzer behavior to the actual d
 ## Investigate DNS carried over HTTPS
 
 Use [DNS over HTTPS Evidence]({{ '/wiki/doh-resolution-evidence/' | relative_url }}) to distinguish the connection, HTTP status, DNS response and actual resolver selection.
+
+## Investigate SMTP transport policy and reporting
+
+Use [MTA-STS and TLS-RPT evidence]({{ '/wiki/smtp-mta-sts-evidence/' | relative_url }}) to correlate MX selection, certificate checks and TLS failure reports on an SMTP hop.

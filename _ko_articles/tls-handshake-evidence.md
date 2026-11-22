@@ -113,3 +113,7 @@ python3 tls-handshake-evidence.py
 ## HTTPS로 보호된 DNS 질의 조사하기
 
 [DNS over HTTPS 조사]({{ '/ko/wiki/doh-resolution-evidence/' | relative_url }})에서 연결, HTTP 상태, DNS 응답과 실제 리졸버 선택을 구분합니다.
+
+## 메일 서버 간 TLS 정책 확인하기
+
+[MTA-STS와 TLS-RPT 조사]({{ '/ko/wiki/smtp-mta-sts-evidence/' | relative_url }})에서 SMTP의 MX 선택, 인증서 검사와 TLS 실패 보고를 연결해 보세요.

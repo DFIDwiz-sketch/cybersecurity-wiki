@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "name": "normal",
+      "live_mode": "enforce",
+      "cache_mode": null,
+      "cache_unexpired": false,
+      "mx_matches": true,
+      "starttls_offered": true,
+      "tls_negotiated": true,
+      "mx_certificate_valid": true
+    },
+    {
+      "name": "backup_outside_policy",
+      "live_mode": "enforce",
+      "cache_mode": null,
+      "cache_unexpired": false,
+      "mx_matches": false,
+      "starttls_offered": true,
+      "tls_negotiated": true,
+      "mx_certificate_valid": true
+    },
+    {
+      "name": "no_starttls",
+      "live_mode": "enforce",
+      "cache_mode": null,
+      "cache_unexpired": false,
+      "mx_matches": true,
+      "starttls_offered": false,
+      "tls_negotiated": false,
+      "mx_certificate_valid": null
+    },
+    {
+      "name": "testing_bad_certificate",
+      "live_mode": "testing",
+      "cache_mode": null,
+      "cache_unexpired": false,
+      "mx_matches": true,
+      "starttls_offered": true,
+      "tls_negotiated": true,
+      "mx_certificate_valid": false
+    },
+    {
+      "name": "cache_outage",
+      "live_mode": null,
+      "cache_mode": "enforce",
+      "cache_unexpired": true,
+      "mx_matches": false,
+      "starttls_offered": true,
+      "tls_negotiated": true,
+      "mx_certificate_valid": true
+    },
+    {
+      "name": "expired_cache",
+      "live_mode": null,
+      "cache_mode": "enforce",
+      "cache_unexpired": false,
+      "mx_matches": false,
+      "starttls_offered": true,
+      "tls_negotiated": true,
+      "mx_certificate_valid": true
+    },
+    {
+      "name": "retired_policy",
+      "live_mode": "none",
+      "cache_mode": null,
+      "cache_unexpired": false,
+      "mx_matches": true,
+      "starttls_offered": false,
+      "tls_negotiated": false,
+      "mx_certificate_valid": null
+    },
+    {
+      "name": "handshake_failed",
+      "live_mode": null,
+      "cache_mode": "enforce",
+      "cache_unexpired": true,
+      "mx_matches": true,
+      "starttls_offered": true,
+      "tls_negotiated": false,
+      "mx_certificate_valid": null
+    }
+  ],
+  "tls-report": {
+    "organization-name": "Training Sender",
+    "date-range": {
+      "start-datetime": "2026-11-21T00:00:00Z",
+      "end-datetime": "2026-11-21T23:59:59Z"
+    },
+    "contact-info": "mailto:postmaster@sender.example",
+    "report-id": "TrainingReport-20261121",
+    "policies": [
+      {
+        "policy": {
+          "policy-type": "sts",
+          "policy-string": [
+            "version: STSv1",
+            "mode: enforce",
+            "mx: mx1.mail-lab.example",
+            "max_age: 86400"
+          ],
+          "policy-domain": "mail-lab.example",
+          "mx-host": [
+            "mx1.mail-lab.example"
+          ]
+        },
+        "summary": {
+          "total-successful-session-count": 17,
+          "total-failure-session-count": 3
+        },
+        "failure-details": [
+          {
+            "result-type": "certificate-expired",
+            "receiving-mx-hostname": "mx1.mail-lab.example",
+            "failed-session-count": 2
+          },
+          {
+            "result-type": "certificate-host-mismatch",
+            "receiving-mx-hostname": "mx1.mail-lab.example",
+            "failed-session-count": 2
+          }
+        ]
+      }
+    ]
+  }
+}

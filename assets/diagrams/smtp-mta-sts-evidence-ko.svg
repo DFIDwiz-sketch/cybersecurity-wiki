@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" lang="ko" width="440" height="330" viewBox="0 0 440 330">
+  <title id="title">MTA-STS 검사와 TLS 보고</title>
+  <desc id="desc">발신 서버가 적용 정책과 후보 MX를 검사합니다. enforce에서 실패하면 해당 MX를 건너뛰며 TLS 결과는 별도 경로로 집계합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#bee0e8"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="328" rx="14" fill="#101f2b"/>
+  <g fill="none" stroke="#bee0e8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M220 64 V87"/>
+    <path d="M220 130 V145 H116 V184"/>
+    <path d="M220 130 V145 H322 V184"/>
+    <path d="M116 228 V256 H155 V275" stroke-dasharray="5 4"/>
+    <path d="M322 228 V256 H285 V275" stroke-dasharray="5 4"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#f0f7fc">
+    <rect x="53" y="22" width="334" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="220" y="49" font-size="17">MX와 적용 정책 확인</text>
+    <rect x="53" y="88" width="334" height="42" rx="8" fill="#153744" stroke="#7dc5cf"/>
+    <text x="220" y="115" font-size="17">MX 일치 및 TLS 검증</text>
+    <text x="63" y="171" font-size="14" fill="#bcf8cd">검사 통과</text>
+    <text x="373" y="171" font-size="14" fill="#ffd5b7">enforce 검사 실패</text>
+    <rect x="18" y="186" width="196" height="42" rx="8" fill="#184338" stroke="#7dc5cf"/>
+    <text x="116" y="213" font-size="15">SMTP 전송 시도</text>
+    <rect x="224" y="186" width="196" height="42" rx="8" fill="#4c3028" stroke="#7dc5cf"/>
+    <text x="322" y="213" font-size="15">이 MX로 배달하지 않음</text>
+    <rect x="18" y="277" width="404" height="42" rx="8" fill="#233651" stroke="#7dc5cf"/>
+    <text x="220" y="304" font-size="15">참여 발신 서버가 TLS 결과를 집계</text>
+  </g>
+</svg>
