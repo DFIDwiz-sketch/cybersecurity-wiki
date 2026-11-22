@@ -109,3 +109,7 @@ python3 tls-handshake-evidence.py
 ## QUIC과 HTTP/3 조사 이어서 읽기
 
 [QUIC과 HTTP/3 요청 증거]({{ '/ko/wiki/quic-http3-evidence/' | relative_url }}) · 발견 단서와 연결 시도, 프록시 구간별 요청 프로토콜을 대조합니다.
+
+## HTTPS로 보호된 DNS 질의 조사하기
+
+[DNS over HTTPS 조사]({{ '/ko/wiki/doh-resolution-evidence/' | relative_url }})에서 연결, HTTP 상태, DNS 응답과 실제 리졸버 선택을 구분합니다.

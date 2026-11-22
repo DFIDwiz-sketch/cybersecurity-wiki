@@ -1,0 +1,10 @@
+{"case":"answer","http":200,"media":"application/dns-message","wire":"00008180000100010000000003617070076578616d706c6504746573740000010001c00c00010001000000780004c000020a","rr_ttl":120,"age":35}
+{"case":"name_error","http":200,"media":"application/dns-message","wire":"00008183000100000000000003617070076578616d706c6504746573740000010001"}
+{"case":"resolution_failure","http":200,"media":"application/dns-message","wire":"00008182000100000000000003617070076578616d706c6504746573740000010001"}
+{"case":"empty_answer","http":200,"media":"application/dns-message","wire":"00008180000100000000000003617070076578616d706c6504746573740000010001"}
+{"case":"upstream_gateway_error","http":502,"media":"text/html"}
+{"case":"html_success","http":200,"media":"text/html"}
+{"case":"short_dns_body","http":200,"media":"application/dns-message","wire":"00008180"}
+{"case":"dns_query_body","http":200,"media":"application/dns-message","wire":"00000100000100000000000003617070076578616d706c6504746573740000010001"}
+{"case":"passive_tls_only","connection":"TLS observed"}
+{"case":"correlated_retry","connection":"TLS failed","same_lookup_confirmed":true,"retry_resolver":"system"}

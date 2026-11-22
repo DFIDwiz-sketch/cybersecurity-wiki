@@ -230,3 +230,7 @@ Complete this chapter when you can draw the resolver's separate queries, disting
 ## Investigate cached negative responses
 
 [DNS negative caching]({{ '/wiki/dns-negative-cache-evidence/' | relative_url }}) · Track SOA TTLs and resolver failures during a DNS repair.
+
+## Investigate DNS carried over HTTPS
+
+Use [DNS over HTTPS Evidence]({{ '/wiki/doh-resolution-evidence/' | relative_url }}) to distinguish the connection, HTTP status, DNS response and actual resolver selection.

@@ -109,3 +109,7 @@ Reviewed 20 November 2026. Match standards and analyzer behavior to the actual d
 ## Follow QUIC and HTTP/3 Evidence
 
 [QUIC and HTTP/3 request evidence]({{ '/wiki/quic-http3-evidence/' | relative_url }}) · Compare discovery, QUIC startup and request protocols on each proxy hop.
+
+## Investigate DNS carried over HTTPS
+
+Use [DNS over HTTPS Evidence]({{ '/wiki/doh-resolution-evidence/' | relative_url }}) to distinguish the connection, HTTP status, DNS response and actual resolver selection.
