@@ -97,3 +97,7 @@ python3 tcp-evidence.py
 ## 실제 통신 손실과 캡처 누락 구분하기
 
 [동일한 연결의 PCAP 두 개를 비교해 누락된 TCP 바이트와 ACK를 확인합니다.]({{ '/ko/wiki/capture-visibility/' | relative_url }})
+
+## UDP 데이터그램의 송신과 수신 확인하기
+
+[UDP 데이터그램 조사]({{ '/ko/wiki/udp-datagram-evidence/' | relative_url }})에서 패킷 캡처와 실제 수신을 구분하고, 작은 버퍼에서 데이터그램이 잘리는 과정을 루프백으로 확인하세요.

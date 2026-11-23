@@ -1,0 +1,7 @@
+"case","observation_en","interpretation_en","observation_ko","interpretation_ko"
+"sender_only","Local send returned 20. No receiver records were collected.","Local send accepted. Delivery is unverified.","로컬 송신 반환값은 20. 수신 기록을 수집하지 않음.","로컬 송신이 받아들여졌으며 전달 여부는 미확인."
+"short_capture","Capture saved 60 bytes of a frame with original length 98.","Capture is truncated. Check receiver evidence for application outcome.","원래 98바이트 프레임의 60바이트를 캡처함.","캡처가 잘림. 앱 결과는 수신 쪽 증거를 확인."
+"short_receive","Receiver logged 5 bytes and MSG_TRUNC.","The socket received a datagram that did not fit the supplied buffer.","수신 앱이 5바이트와 MSG_TRUNC를 기록함.","소켓에 도착한 데이터그램이 호출 버퍼에 들어가지 않았음."
+"quoted_error","An IPv4 ICMP type 3 code 3 quotes the request tuple and time window.","Port unreachable was reported for the matching datagram. Verify source and route before any broader conclusion.","IPv4 ICMP 유형 3 코드 3이 요청의 튜플을 인용했고 같은 시간대에 관측됨.","대응하는 데이터그램의 포트 도달 불가 통보. 더 넓은 결론 전에 출처와 경로 확인."
+"request_queued","The receiver records A17 as queued. No job result has been collected.","The application observed and queued the request. Completion is unverified.","수신 앱이 A17을 대기열에 넣었다고 기록했으며 작업 결과는 수집되지 않음.","앱이 요청을 관측하고 대기열에 넣었음. 완료 여부는 미확인."
+"timeout","Client timed out with no usable response or ICMP record.","Timeout is observed. Listener, path, policy and collection remain possible explanations.","클라이언트가 시간 초과됐으며 대응하는 응답이나 ICMP 기록이 없음.","시간 초과 관측. 리스너, 경로, 정책, 수집 상태를 따로 확인."

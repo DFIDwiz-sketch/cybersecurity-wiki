@@ -97,3 +97,7 @@ Reviewed 18 November 2026. The RFCs document TCP behavior and timing. The produc
 ## Distinguish Network Loss from Capture Gaps
 
 [Compare two captures of the same TCP connection and account for missing bytes.]({{ '/wiki/capture-visibility/' | relative_url }})
+
+## Trace UDP datagram delivery
+
+Use [UDP datagram evidence]({{ '/wiki/udp-datagram-evidence/' | relative_url }}) to distinguish packet capture from application receipt and verify a short receive buffer on loopback.

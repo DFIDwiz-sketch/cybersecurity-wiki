@@ -105,3 +105,7 @@ curl --http3 --max-time 15 --silent --show-error --output /dev/null \
 ## Encrypted Client Hello 조사 이어가기
 
 [TLS Encrypted Client Hello 조사]({{ '/ko/wiki/tls-ech-evidence/' | relative_url }})에서 패킷에 보이는 이름, ECH 수락 여부와 실제 애플리케이션 요청을 구분합니다.
+
+## UDP 데이터그램의 송신과 수신 확인하기
+
+[UDP 데이터그램 조사]({{ '/ko/wiki/udp-datagram-evidence/' | relative_url }})에서 패킷 캡처와 실제 수신을 구분하고, 작은 버퍼에서 데이터그램이 잘리는 과정을 루프백으로 확인하세요.

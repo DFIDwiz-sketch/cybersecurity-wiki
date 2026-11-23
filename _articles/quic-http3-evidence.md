@@ -105,3 +105,7 @@ Reviewed 2026-11-22. The RFCs identify their publication dates. curl and Chrome 
 ## Investigate Encrypted Client Hello
 
 Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relative_url }}) to distinguish the visible name, ECH acceptance and the resulting application request.
+
+## Trace UDP datagram delivery
+
+Use [UDP datagram evidence]({{ '/wiki/udp-datagram-evidence/' | relative_url }}) to distinguish packet capture from application receipt and verify a short receive buffer on loopback.

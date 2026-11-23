@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 375" width="420" height="375" role="img" aria-labelledby="title desc">
+  <title id="title">UDP datagram observation points</title><desc id="desc">A sensor can observe a datagram sent by an app. At the receiver, the read can return a whole message or truncate it. Check the application outcome separately.</desc>
+  <rect width="420" height="375" rx="18" fill="#122431"/>
+  <g fill="#192f40" stroke="#79e1c2" stroke-width="2">
+    <rect x="66" y="18" width="288" height="42" rx="9"/>
+    <rect x="66" y="87" width="288" height="42" rx="9"/>
+    <rect x="66" y="156" width="288" height="42" rx="9"/>
+    <rect x="15" y="251" width="188" height="50" rx="9"/>
+    <rect x="217" y="251" width="188" height="50" rx="9"/>
+    <rect x="51" y="321" width="318" height="38" rx="9" stroke-dasharray="5 4"/>
+  </g>
+  <g stroke="#79e1c2" stroke-width="2" fill="none" stroke-linejoin="round">
+    <path d="M210 61v21m-4-4 4 4 4-4M210 130v21m-4-4 4 4 4-4M210 199v33H109v13m-4-4 4 4 4-4M210 232h101v13m-4-4 4 4 4-4"/>
+  </g>
+  <g fill="#f2f8fc" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16">
+    <text x="210" y="44">Sending app · sendto()</text><text x="210" y="113">Network sensor</text>
+    <text x="210" y="182">Receiving socket · recvmsg()</text><text x="127" y="223">Fits buffer</text><text x="298" y="223">Buffer too small</text>
+    <text x="109" y="281">Whole message</text><text x="311" y="281" font-size="15">Prefix and MSG_TRUNC</text>
+    <text x="210" y="345">Separate evidence · App result</text>
+  </g>
+</svg>
