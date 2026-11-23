@@ -54,3 +54,7 @@ updated: "2026-10-17"
 ## PowerShell 스크립트 블록 조사
 
 [PowerShell 스크립트 블록 조사]({{ '/ko/wiki/powershell-script-block-evidence/' | relative_url }})에서 4104의 조각을 복원하고 프로세스와 실제 결과를 대조합니다.
+
+## Windows 특권 로그온 이어서 조사하기
+
+[Windows 특권 로그온 조사]({{ '/ko/wiki/windows-privileged-logon-evidence/' | relative_url }})에서 호스트와 부팅을 기준으로 특권 부여, 프로세스 토큰, 특권 사용 감사를 구분하세요.

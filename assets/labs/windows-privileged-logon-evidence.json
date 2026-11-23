@@ -1,0 +1,298 @@
+{
+  "assignment_only": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 5
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    }
+  ],
+  "elevated_without_use": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 2
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    },
+    {
+      "id": 4688,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "creator": {
+        "sid": "S-1-5-18",
+        "logon_id": "0x3e7"
+      },
+      "target": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "token_type": "type_2"
+    }
+  ],
+  "same_session_audit_success": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 5
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    },
+    {
+      "id": 4688,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "creator": {
+        "sid": "S-1-5-18",
+        "logon_id": "0x3e7"
+      },
+      "target": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "token_type": "type_1"
+    },
+    {
+      "id": 4674,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x000004D2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ],
+      "outcome": "audit_success"
+    }
+  ],
+  "same_session_audit_failure": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 5
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    },
+    {
+      "id": 4673,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x000004D2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ],
+      "outcome": "audit_failure"
+    }
+  ],
+  "different_host": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 5
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    },
+    {
+      "id": 4674,
+      "host": "lab-ws-b",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x000004D2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ],
+      "outcome": "audit_success"
+    }
+  ],
+  "different_boot": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 5
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    },
+    {
+      "id": 4674,
+      "host": "lab-ws-a",
+      "boot": "boot-2",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x000004D2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ],
+      "outcome": "audit_success"
+    }
+  ],
+  "creator_only": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 5
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    },
+    {
+      "id": 4688,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "creator": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "target": null,
+      "token_type": "type_1"
+    }
+  ],
+  "different_privilege": [
+    {
+      "id": 4624,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "logon_type": 5
+    },
+    {
+      "id": 4672,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x4d2"
+      },
+      "privileges": [
+        "SeSecurityPrivilege"
+      ]
+    },
+    {
+      "id": 4674,
+      "host": "lab-ws-a",
+      "boot": "boot-1",
+      "subject": {
+        "sid": "S-1-5-21-110-220-330-1042",
+        "logon_id": "0x000004D2"
+      },
+      "privileges": [
+        "SeBackupPrivilege"
+      ],
+      "outcome": "audit_success"
+    }
+  ]
+}

@@ -54,3 +54,7 @@ Follow [Windows Service Runtime]({{ '/wiki/windows-service-runtime-evidence/' | 
 ## Investigate PowerShell script blocks
 
 [PowerShell Script Block Evidence]({{ '/wiki/powershell-script-block-evidence/' | relative_url }}) explains how to reconstruct 4104 fragments and connect the text to process and outcome evidence.
+
+## Trace a privileged logon
+
+Use [Windows privileged logon evidence]({{ '/wiki/windows-privileged-logon-evidence/' | relative_url }}) to distinguish assignment, process token and audited use on the original host and boot.

@@ -103,3 +103,7 @@ Get-WinEvent -FilterHashtable $filter |
 - Microsoft Security 이벤트 스키마. [4624](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624) · [4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625) · [4778](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4778) · [4779](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4779) · [4647](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4647) · [4634](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4634)
 - Windows Server RDS 세션 상태·시간 제한과 현재 상태 조회. [Windows Server 세션 잠금·연결 해제](https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/troubleshoot-unexpected-rds-session-locks-or-disconnections) · [quser](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/quser)
 - Windows에서의 PowerShell 이벤트 조회, 7.5 문서. [Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.5)
+
+## Windows 특권 로그온 이어서 조사하기
+
+[Windows 특권 로그온 조사]({{ '/ko/wiki/windows-privileged-logon-evidence/' | relative_url }})에서 호스트와 부팅을 기준으로 특권 부여, 프로세스 토큰, 특권 사용 감사를 구분하세요.

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 328" width="440" height="328" role="img" aria-labelledby="title desc">
+  <title id="title">Windows 특권 로그온 증거</title><desc id="desc">같은 호스트와 부팅에서 로그온과 특권 부여를 연결합니다. 프로세스 토큰과 특권 작업, 작업 결과는 별도 기록입니다.</desc>
+  <rect width="440" height="328" rx="18" fill="#122431"/>
+  <g fill="#192f40" stroke="#79e1c2" stroke-width="2">
+    <rect x="70" y="18" width="300" height="42" rx="9"/>
+    <rect x="70" y="92" width="300" height="42" rx="9"/>
+    <rect x="13" y="192" width="201" height="50" rx="9"/>
+    <rect x="226" y="192" width="201" height="50" rx="9"/>
+    <rect x="70" y="276" width="300" height="36" rx="9"/>
+  </g>
+  <g fill="none" stroke="#79e1c2" stroke-width="2" stroke-linejoin="round">
+    <path d="M220 61v26m-4-4 4 4 4-4M220 156v13H113v17m-4-4 4 4 4-4M220 169h106v17m-4-4 4 4 4-4M326 243v15H220v13m-4-4 4 4 4-4"/>
+  </g>
+  <g fill="#f2f8fc" text-anchor="middle" font-family="system-ui,sans-serif" font-size="17">
+    <text x="220" y="45">4624 · 성공한 로그온</text><text x="220" y="119">4672 · 특권 부여</text>
+    <text x="220" y="151" font-size="14">같은 호스트 · 부팅 · SID · Logon ID</text>
+    <text x="113" y="223">4688 · 프로세스 토큰</text><text x="327" y="223">4673 / 4674 · 작업 시도</text>
+    <text x="220" y="300">독립적인 작업·객체 결과</text>
+  </g>
+</svg>
