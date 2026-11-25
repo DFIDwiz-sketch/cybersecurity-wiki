@@ -79,3 +79,7 @@ python3 udp-datagram-evidence.py
 - [Linux · udp(7)](https://man7.org/linux/man-pages/man7/udp.7.html) 및 [Python socket.recvmsg](https://docs.python.org/3/library/socket.html#socket.socket.recvmsg)
 
 [이전 · TCP 연결과 패킷 증거]({{ '/ko/wiki/tcp-evidence/' | relative_url }}) · [다음 · QUIC과 HTTP/3 증거]({{ '/ko/wiki/quic-http3-evidence/' | relative_url }})
+
+## DNS의 TCP 재질의를 따라가기
+
+[DNS 응답 잘림과 TCP 재질의 조사]({{ '/ko/wiki/dns-tcp-fallback-evidence/' | relative_url }})에서 DNS 응답의 TC 플래그, TCP 전환과 최종 이름 해석 결과를 대조합니다.

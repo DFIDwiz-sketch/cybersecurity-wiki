@@ -238,3 +238,7 @@ Use [DNS over HTTPS Evidence]({{ '/wiki/doh-resolution-evidence/' | relative_url
 ## Investigate CAA issuance policy
 
 [DNS CAA Issuance Evidence]({{ '/wiki/dns-caa-issuance-evidence/' | relative_url }}) traces which DNS record set a certificate authority evaluates during issuance.
+
+## Follow a DNS retry over TCP
+
+[Investigate DNS Truncation and TCP Fallback]({{ '/wiki/dns-tcp-fallback-evidence/' | relative_url }}) traces a truncation signal through the TCP exchange to the caller's result.

@@ -79,3 +79,7 @@ Reviewed November 23, 2026. RFC 768 defines the wire header (1980). RFC 8085 pro
 - [Linux · udp(7)](https://man7.org/linux/man-pages/man7/udp.7.html) and [Python socket.recvmsg](https://docs.python.org/3/library/socket.html#socket.socket.recvmsg)
 
 [Previous · TCP connections and packet evidence]({{ '/wiki/tcp-evidence/' | relative_url }}) · [Next · QUIC and HTTP/3 evidence]({{ '/wiki/quic-http3-evidence/' | relative_url }})
+
+## Follow a DNS retry over TCP
+
+[Investigate DNS Truncation and TCP Fallback]({{ '/wiki/dns-tcp-fallback-evidence/' | relative_url }}) traces a truncation signal through the TCP exchange to the caller's result.

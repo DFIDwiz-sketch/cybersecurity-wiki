@@ -238,3 +238,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## DNS CAA 발급 정책 확인하기
 
 [DNS CAA 발급 조사]({{ '/ko/wiki/dns-caa-issuance-evidence/' | relative_url }})에서 인증기관이 어느 DNS 레코드 집합을 발급 정책으로 보는지 확인합니다.
+
+## DNS의 TCP 재질의를 따라가기
+
+[DNS 응답 잘림과 TCP 재질의 조사]({{ '/ko/wiki/dns-tcp-fallback-evidence/' | relative_url }})에서 DNS 응답의 TC 플래그, TCP 전환과 최종 이름 해석 결과를 대조합니다.
