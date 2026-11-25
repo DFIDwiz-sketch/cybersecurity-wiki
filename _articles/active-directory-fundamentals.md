@@ -456,3 +456,7 @@ Use [Active Directory replication evidence]({{ '/wiki/ad-replication-change-evid
 ## Investigate group managed service accounts
 
 [Active Directory gMSA Evidence]({{ '/wiki/ad-gmsa-evidence/' | relative_url }}) connects retrieval eligibility to actual service logon and workload health.
+
+## Read LDAP bind evidence on a domain controller
+
+Continue with [AD LDAP signing and channel binding evidence]({{ '/wiki/ad-ldap-session-evidence/' | relative_url }}) to distinguish a policy rejection, a compatibility audit event and a later directory permission decision.

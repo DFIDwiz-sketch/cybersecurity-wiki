@@ -456,3 +456,7 @@ gpresult /r
 ## 그룹 관리 서비스 계정 조사하기
 
 [Active Directory gMSA 조사]({{ '/ko/wiki/ad-gmsa-evidence/' | relative_url }})에서 조회 자격을 실제 서비스 로그온과 워크로드 상태에 연결합니다.
+
+## 도메인 컨트롤러의 LDAP bind 증거 읽기
+
+[AD LDAP 서명과 채널 바인딩 조사]({{ '/ko/wiki/ad-ldap-session-evidence/' | relative_url }})에서 정책으로 인한 거부, 호환성 감사 이벤트와 후속 디렉터리 권한 판정을 구분합니다.

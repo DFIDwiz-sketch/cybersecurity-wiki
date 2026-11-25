@@ -1,0 +1,307 @@
+{
+  "scope": "Fictional, normalized observations, no Windows event XML or captures.",
+  "connection": "Training correlation key added by a hypothetical collector. It is not a native AD DS event field.",
+  "time": "Seconds from one synthetic clock per case. The five-second interval applies only to this drill.",
+  "cases": [
+    {
+      "id": "A",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "clear",
+        "tls_status": "not-used",
+        "auth": "simple",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "accepted",
+        "result_code": 0
+      },
+      "events": [
+        {
+          "id": 2889,
+          "dc": "dc-a",
+          "connection": "flow-01",
+          "time": 100,
+          "binding_type": 1
+        }
+      ],
+      "expected": "clear-simple-accepted"
+    },
+    {
+      "id": "B",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "clear",
+        "tls_status": "not-used",
+        "auth": "sasl",
+        "signed": true,
+        "cbt": "unknown",
+        "result": "accepted",
+        "result_code": 0
+      },
+      "events": [],
+      "expected": "signed-sasl-without-tls"
+    },
+    {
+      "id": "C",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "simple",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "accepted",
+        "result_code": 0
+      },
+      "events": [],
+      "expected": "tls-simple-cbt-not-applicable"
+    },
+    {
+      "id": "D",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "verified",
+        "result": "accepted",
+        "result_code": 0
+      },
+      "events": [],
+      "expected": "tls-sasl-cbt-verified"
+    },
+    {
+      "id": "E",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "rejected",
+        "result_code": 49
+      },
+      "events": [
+        {
+          "id": 3039,
+          "dc": "dc-a",
+          "connection": "flow-01",
+          "time": 100
+        }
+      ],
+      "expected": "cbt-rejection-corroborated"
+    },
+    {
+      "id": "F",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "accepted",
+        "result_code": 0
+      },
+      "events": [
+        {
+          "id": 3075,
+          "dc": "dc-a",
+          "connection": "flow-01",
+          "time": 100
+        }
+      ],
+      "expected": "accepted-with-cbt-audit"
+    },
+    {
+      "id": "G",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "unknown",
+        "result_code": null
+      },
+      "events": [
+        {
+          "id": 3074,
+          "dc": "dc-a",
+          "connection": "flow-01",
+          "time": 100
+        }
+      ],
+      "expected": "cbt-audit-result-unknown"
+    },
+    {
+      "id": "H",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "failed",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "unknown",
+        "result_code": null
+      },
+      "events": [],
+      "expected": "tls-failed-before-bind"
+    },
+    {
+      "id": "I",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "clear",
+        "tls_status": "not-used",
+        "auth": "sasl",
+        "signed": false,
+        "cbt": "unknown",
+        "result": "rejected",
+        "result_code": 8
+      },
+      "events": [
+        {
+          "id": 2889,
+          "dc": "dc-a",
+          "connection": "flow-01",
+          "time": 100,
+          "binding_type": 0
+        }
+      ],
+      "expected": "signing-rejection-corroborated"
+    },
+    {
+      "id": "J",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "unknown",
+        "result_code": null
+      },
+      "events": [
+        {
+          "id": 2888,
+          "dc": "dc-a",
+          "time": 100,
+          "summary_count": 18
+        }
+      ],
+      "expected": "bind-result-unknown"
+    },
+    {
+      "id": "K",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "rejected",
+        "result_code": 49
+      },
+      "events": [
+        {
+          "id": 3039,
+          "dc": "dc-b",
+          "connection": "flow-01",
+          "time": 100
+        },
+        {
+          "id": 3039,
+          "dc": "dc-a",
+          "connection": "flow-01",
+          "time": 130
+        },
+        {
+          "id": 3039,
+          "dc": "dc-a",
+          "connection": "flow-02",
+          "time": 100
+        }
+      ],
+      "expected": "bind-rejected-cause-open"
+    },
+    {
+      "id": "L",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "tls",
+        "tls_status": "established",
+        "auth": "sasl",
+        "signed": null,
+        "cbt": "unknown",
+        "result": "accepted",
+        "result_code": 0
+      },
+      "events": [
+        {
+          "id": 3040,
+          "dc": "dc-a",
+          "connection": null,
+          "time": 100,
+          "summary_count": 7
+        }
+      ],
+      "expected": "accepted-cbt-unconfirmed"
+    },
+    {
+      "id": "M",
+      "session": {
+        "dc": "dc-a",
+        "connection": "flow-01",
+        "time": 100,
+        "transport": "clear",
+        "tls_status": "not-used",
+        "auth": "sasl",
+        "signed": false,
+        "cbt": "unknown",
+        "result": "accepted",
+        "result_code": 0
+      },
+      "events": [
+        {
+          "id": 2889,
+          "dc": "dc-a",
+          "connection": "flow-01",
+          "time": 100,
+          "binding_type": 0
+        }
+      ],
+      "expected": "unsigned-sasl-accepted"
+    }
+  ]
+}

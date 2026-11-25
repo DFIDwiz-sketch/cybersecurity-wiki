@@ -421,3 +421,7 @@ Continue with [Windows Logs]({{ '/wiki/windows-logs/' | relative_url }}), [Splun
 **Next — series guide 5:** [Windows Lateral Movement: SMB, RDP, WinRM, WMI and PsExec]({{ '/wiki/windows-lateral-movement/' | relative_url }}) connects directory permissions to actual remote access, execution and evidence.
 
 **Source review: 21 October 2026.** References above support protocol and product behavior; the lab domain, diagrams, proposed thresholds and investigation exercise are original illustrative material. Verify tool flags, event messages and policies against deployed versions. No commands in this document were executed against a live directory during publication.
+
+## Investigate LDAP session protection
+
+Use [AD LDAP signing and channel binding evidence]({{ '/wiki/ad-ldap-session-evidence/' | relative_url }}) to trace transport, bind method, effective DC policy and result before interpreting a search failure.

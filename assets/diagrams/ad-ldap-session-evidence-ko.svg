@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="384" viewBox="0 0 480 384" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">LDAP 전송, bind, 작업 권한</title>
+  <desc id="desc">실제 전송 방식을 확인하고 bind 종류를 구분합니다. 단순 bind는 전송 보호에 의존합니다. 적용되는 TLS 위 SASL에서는 채널 바인딩을 확인합니다. bind가 수락되면 작업 권한을 판단합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2c496a"/>
+    </marker>
+  </defs>
+  <rect width="480" height="384" rx="18" fill="#f5f8fe"/>
+  <g fill="#e7effc" stroke="#395884" stroke-width="2">
+    <rect x="79" y="18" width="322" height="58" rx="10"/>
+    <rect x="16" y="118" width="205" height="62" rx="10"/>
+    <rect x="259" y="118" width="205" height="62" rx="10"/>
+    <rect x="79" y="306" width="322" height="61" rx="10"/>
+  </g>
+  <rect x="249" y="217" width="225" height="61" rx="10" fill="#e5f3ea" stroke="#34684e" stroke-width="2"/>
+  <g fill="none" stroke="#2c496a" stroke-width="2.5">
+    <path d="M240 76 V95 H118 V113" marker-end="url(#arrow)"/>
+    <path d="M240 95 H361 V113" marker-end="url(#arrow)"/>
+    <path d="M118 180 V291 H180 V301" marker-end="url(#arrow)"/>
+    <path d="M361 180 V212" marker-end="url(#arrow)"/>
+    <path d="M361 278 V291 H300 V301" marker-end="url(#arrow)"/>
+    <path d="M259 150 H239 V301" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#152942">
+    <g font-weight="700" font-size="20">
+      <text x="240" y="43">클라이언트가 DC에 연결</text>
+      <text x="118" y="143">단순 bind</text>
+      <text x="361" y="143">SASL bind</text>
+      <text x="361" y="241" font-size="17">TLS 위 적용 대상 SASL</text>
+      <text x="240" y="331">bind 수락</text>
+    </g>
+    <g font-size="16">
+      <text x="240" y="64">LDAP 전송 또는 TLS</text>
+      <text x="118" y="165">전송 보호에 의존</text>
+      <text x="361" y="165">협상된 메시지 보호</text>
+      <text x="361" y="263" font-size="14">CBT 정책과 검증 결과 확인</text>
+      <text x="240" y="353">디렉터리 작업 권한 확인</text>
+    </g>
+  </g>
+</svg>
