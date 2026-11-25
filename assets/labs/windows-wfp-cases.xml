@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lab>
+  <!-- Synthetic, simplified cases. No real host or application records. -->
+  <Case id="01" decision="PERMITTED" process="p-914" service="CORROBORATED">
+    <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+      <System>
+        <Provider Name="Microsoft-Windows-Security-Auditing" />
+        <EventID>5156</EventID>
+        <Version>1</Version>
+        <TimeCreated SystemTime="2026-11-25T09:02:08Z" />
+        <EventRecordID>4101</EventRecordID>
+        <Execution ProcessID="4" />
+        <Channel>Security</Channel>
+        <Computer>ws-12.example.test</Computer>
+      </System>
+      <EventData>
+        <Data Name="ProcessID">914</Data>
+        <Data Name="Application">\device\harddiskvolume2\example\status-agent.exe</Data>
+        <Data Name="Direction">%%14593</Data>
+        <Data Name="SourceAddress">192.0.2.12</Data>
+        <Data Name="SourcePort">50811</Data>
+        <Data Name="DestAddress">198.51.100.20</Data>
+        <Data Name="DestPort">443</Data>
+        <Data Name="Protocol">6</Data>
+        <Data Name="FilterRTID">7001</Data>
+        <Data Name="LayerName">%%14611</Data>
+        <Data Name="LayerRTID">48</Data>
+      </EventData>
+    </Event>
+    <Process instance="p-914" host="ws-12.example.test" pid="914" image="\device\harddiskvolume2\example\status-agent.exe" start="2026-11-25T09:02:05Z" end="2026-11-25T09:02:10Z" />
+    <Service clientHost="ws-12.example.test" time="2026-11-25T09:02:09Z" SourceAddress="192.0.2.12" SourcePort="50811" DestAddress="198.51.100.20" DestPort="443" Protocol="6" />
+  </Case>
+  <Case id="02" decision="BLOCKED" process="p-914" service="UNCONFIRMED">
+    <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+      <System>
+        <Provider Name="Microsoft-Windows-Security-Auditing" />
+        <EventID>5157</EventID>
+        <Version>0</Version>
+        <TimeCreated SystemTime="2026-11-25T09:02:08Z" />
+        <EventRecordID>4102</EventRecordID>
+        <Execution ProcessID="4" />
+        <Channel>Security</Channel>
+        <Computer>ws-12.example.test</Computer>
+      </System>
+      <EventData>
+        <Data Name="ProcessID">914</Data>
+        <Data Name="Application">\device\harddiskvolume2\example\status-agent.exe</Data>
+        <Data Name="Direction">%%14593</Data>
+        <Data Name="SourceAddress">192.0.2.12</Data>
+        <Data Name="SourcePort">50812</Data>
+        <Data Name="DestAddress">198.51.100.20</Data>
+        <Data Name="DestPort">443</Data>
+        <Data Name="Protocol">6</Data>
+        <Data Name="FilterRTID">8001</Data>
+        <Data Name="LayerName">%%14611</Data>
+        <Data Name="LayerRTID">48</Data>
+      </EventData>
+    </Event>
+    <Process instance="p-914" host="ws-12.example.test" pid="914" image="\device\harddiskvolume2\example\status-agent.exe" start="2026-11-25T09:02:05Z" end="2026-11-25T09:02:20Z" />
+    <Service clientHost="ws-12.example.test" time="2026-11-25T09:02:09Z" SourceAddress="192.0.2.12" SourcePort="50813" DestAddress="198.51.100.20" DestPort="443" Protocol="6" />
+  </Case>
+  <Case id="03" decision="PERMITTED" process="UNRESOLVED" service="UNCONFIRMED">
+    <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+      <System>
+        <Provider Name="Microsoft-Windows-Security-Auditing" />
+        <EventID>5156</EventID>
+        <Version>1</Version>
+        <TimeCreated SystemTime="2026-11-25T09:02:08Z" />
+        <EventRecordID>4103</EventRecordID>
+        <Execution ProcessID="4" />
+        <Channel>Security</Channel>
+        <Computer>ws-12.example.test</Computer>
+      </System>
+      <EventData>
+        <Data Name="ProcessID">914</Data>
+        <Data Name="Application">\device\harddiskvolume2\example\status-agent.exe</Data>
+        <Data Name="Direction">%%14593</Data>
+        <Data Name="SourceAddress">192.0.2.12</Data>
+        <Data Name="SourcePort">50813</Data>
+        <Data Name="DestAddress">198.51.100.20</Data>
+        <Data Name="DestPort">443</Data>
+        <Data Name="Protocol">6</Data>
+        <Data Name="FilterRTID">7001</Data>
+        <Data Name="LayerName">%%14611</Data>
+        <Data Name="LayerRTID">48</Data>
+      </EventData>
+    </Event>
+    <Process instance="p-914" host="ws-12.example.test" pid="914" image="\device\harddiskvolume2\example\status-agent.exe" start="2026-11-25T09:02:05Z" end="2026-11-25T09:02:06Z" />
+  </Case>
+  <Case id="04" decision="PERMITTED" process="p-914" service="UNCONFIRMED">
+    <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+      <System>
+        <Provider Name="Microsoft-Windows-Security-Auditing" />
+        <EventID>5156</EventID>
+        <Version>1</Version>
+        <TimeCreated SystemTime="2026-11-25T09:02:08Z" />
+        <EventRecordID>4104</EventRecordID>
+        <Execution ProcessID="4" />
+        <Channel>Security</Channel>
+        <Computer>ws-12.example.test</Computer>
+      </System>
+      <EventData>
+        <Data Name="ProcessID">914</Data>
+        <Data Name="Application">\device\harddiskvolume2\example\status-agent.exe</Data>
+        <Data Name="Direction">%%14593</Data>
+        <Data Name="SourceAddress">192.0.2.12</Data>
+        <Data Name="SourcePort">50814</Data>
+        <Data Name="DestAddress">198.51.100.20</Data>
+        <Data Name="DestPort">443</Data>
+        <Data Name="Protocol">6</Data>
+        <Data Name="FilterRTID">7001</Data>
+        <Data Name="LayerName">%%14611</Data>
+        <Data Name="LayerRTID">48</Data>
+      </EventData>
+    </Event>
+    <Process instance="p-914" host="ws-12.example.test" pid="914" image="\device\harddiskvolume2\example\status-agent.exe" start="2026-11-25T09:02:05Z" end="2026-11-25T09:02:20Z" />
+    <Service clientHost="ws-99.example.test" time="2026-11-25T09:02:09Z" SourceAddress="192.0.2.12" SourcePort="50814" DestAddress="198.51.100.20" DestPort="443" Protocol="6" />
+  </Case>
+  <Case id="05" decision="BLOCKED" process="UNRESOLVED" service="UNCONFIRMED">
+    <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+      <System>
+        <Provider Name="Microsoft-Windows-Security-Auditing" />
+        <EventID>5157</EventID>
+        <Version>0</Version>
+        <TimeCreated SystemTime="2026-11-25T09:02:08Z" />
+        <EventRecordID>4105</EventRecordID>
+        <Execution ProcessID="4" />
+        <Channel>Security</Channel>
+        <Computer>ws-12.example.test</Computer>
+      </System>
+      <EventData>
+        <Data Name="ProcessID">914</Data>
+        <Data Name="Application">\device\harddiskvolume2\example\status-agent.exe</Data>
+        <Data Name="Direction">%%14593</Data>
+        <Data Name="SourceAddress">192.0.2.12</Data>
+        <Data Name="SourcePort">50815</Data>
+        <Data Name="DestAddress">198.51.100.20</Data>
+        <Data Name="DestPort">443</Data>
+        <Data Name="Protocol">6</Data>
+        <Data Name="FilterRTID">8001</Data>
+        <Data Name="LayerName">%%14611</Data>
+        <Data Name="LayerRTID">48</Data>
+      </EventData>
+    </Event>
+    <Process instance="p-914" host="ws-12.example.test" pid="914" image="\device\harddiskvolume2\example\previous-agent.exe" start="2026-11-25T09:02:05Z" end="2026-11-25T09:02:20Z" />
+  </Case>
+</Lab>

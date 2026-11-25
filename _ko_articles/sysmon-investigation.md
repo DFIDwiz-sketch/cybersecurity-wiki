@@ -318,3 +318,7 @@ PID 재사용과 부모 GUID 연결을 설명하고 필터로 제외될 활동 �
 ## PowerShell 스크립트 블록 조사
 
 [PowerShell 스크립트 블록 조사]({{ '/ko/wiki/powershell-script-block-evidence/' | relative_url }})에서 4104의 조각을 복원하고 프로세스와 실제 결과를 대조합니다.
+
+## Windows WFP 연결 감사 조사
+
+[Windows WFP 연결 허용·차단 조사]({{ '/ko/wiki/windows-wfp-connection-evidence/' | relative_url }})에서 Security 5156·5157의 로컬 판단을 프로세스와 서비스 증거에 대조합니다.

@@ -58,3 +58,7 @@ updated: "2026-10-17"
 ## Windows 특권 로그온 이어서 조사하기
 
 [Windows 특권 로그온 조사]({{ '/ko/wiki/windows-privileged-logon-evidence/' | relative_url }})에서 호스트와 부팅을 기준으로 특권 부여, 프로세스 토큰, 특권 사용 감사를 구분하세요.
+
+## Windows WFP 연결 감사 조사
+
+[Windows WFP 연결 허용·차단 조사]({{ '/ko/wiki/windows-wfp-connection-evidence/' | relative_url }})에서 Security 5156·5157의 로컬 판단을 프로세스와 서비스 증거에 대조합니다.

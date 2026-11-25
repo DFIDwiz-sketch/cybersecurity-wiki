@@ -58,3 +58,7 @@ Follow [Windows Service Runtime]({{ '/wiki/windows-service-runtime-evidence/' | 
 ## Trace a privileged logon
 
 Use [Windows privileged logon evidence]({{ '/wiki/windows-privileged-logon-evidence/' | relative_url }}) to distinguish assignment, process token and audited use on the original host and boot.
+
+## Investigate Windows WFP connection audits
+
+[Investigate Windows WFP Connection Decisions]({{ '/wiki/windows-wfp-connection-evidence/' | relative_url }}) traces local 5156 and 5157 decisions alongside process and service evidence.
