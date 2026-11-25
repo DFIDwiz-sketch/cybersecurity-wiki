@@ -127,3 +127,7 @@ kubectl -n shop get endpointslices -l kubernetes.io/service-name=orders -o yaml
 ## Pod 생성 단계의 보안 정책 조사
 
 [Kubernetes Pod Security Admission 조사]({{ '/ko/wiki/kubernetes-pod-security-admission-evidence/' | relative_url }})에서 워크로드 템플릿의 수락, 컨트롤러의 Pod 생성 요청, 실제 실행 상태를 구분하는 방법을 익힙니다.
+
+## Service 엔드포인트가 준비 상태를 잃었을 때
+
+[Kubernetes 프로브 조사]({{ '/ko/wiki/kubernetes-probe-evidence/' | relative_url }})에서 준비 상태 변경과 컨테이너 재시작을 구분한 뒤 연결 실패가 네트워크 정책과 관련 있는지 좁혀 보세요.

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="496" viewBox="0 0 480 496" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Kubernetes 프로브의 판단 흐름</title>
+  <desc id="desc">시작 상태가 성공하면 나머지 두 검사가 시작됩니다. 준비 상태는 엔드포인트 선택에 영향을 줍니다. 시작 상태 또는 활성 상태의 연속 실패가 기준에 도달하면 컨테이너가 종료되고 재시작 정책이 적용됩니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#314763"/>
+    </marker>
+    <marker id="stop-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#9b3d22"/>
+    </marker>
+  </defs>
+  <rect width="480" height="496" rx="18" fill="#f5f8fe"/>
+  <g fill="#e7eefc" stroke="#2a4675" stroke-width="2">
+    <rect x="125" y="24" width="206" height="68" rx="10"/>
+    <rect x="19" y="184" width="202" height="68" rx="10"/>
+    <rect x="238" y="184" width="202" height="68" rx="10"/>
+    <rect x="19" y="340" width="202" height="112" rx="10"/>
+  </g>
+  <rect x="238" y="340" width="202" height="112" rx="10" fill="#fff0e8" stroke="#9b3d22" stroke-width="2"/>
+  <g fill="none" stroke="#314763" stroke-width="2.5">
+    <path d="M228 92 V151 H120 V179" marker-end="url(#arrow)"/>
+    <path d="M228 151 H339 V179" marker-end="url(#arrow)"/>
+    <path d="M120 252 V335" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="none" stroke="#9b3d22" stroke-width="2.5" stroke-dasharray="6 5">
+    <path d="M331 58 H459 V396 H444" marker-end="url(#stop-arrow)"/>
+    <path d="M339 252 V335" marker-end="url(#stop-arrow)"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-weight="700" font-size="20" fill="#172642" text-anchor="middle">
+    <text x="228" y="65">시작 상태 검사</text>
+    <text x="120" y="225">준비 상태 검사</text>
+    <text x="339" y="225">활성 상태 검사</text>
+    <text x="120" y="389">Pod와 엔드포인트</text>
+    <text x="120" y="417">상태 갱신</text>
+    <text x="339" y="389">컨테이너 종료</text>
+    <text x="339" y="417">재시작 정책 적용</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">
+    <rect x="125" y="106" width="206" height="29" rx="5" fill="#f5f8fe"/>
+    <text x="228" y="127" fill="#314763">시작 상태 성공</text>
+    <rect x="24" y="281" width="192" height="30" rx="5" fill="#f5f8fe"/>
+    <text x="120" y="302" fill="#314763">준비 상태 결과</text>
+    <rect x="243" y="281" width="192" height="30" rx="5" fill="#f5f8fe"/>
+    <text x="339" y="302" fill="#822e1a">실패 기준 도달</text>
+    <text x="388" y="48" fill="#822e1a" font-size="16">실패 기준 도달</text>
+  </g>
+</svg>

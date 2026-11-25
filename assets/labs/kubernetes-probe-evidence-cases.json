@@ -1,0 +1,476 @@
+{
+  "schema": "training snapshots, not Kubernetes API objects",
+  "time_unit": "seconds on one synthetic clock",
+  "scope": "one fictional cluster, namespace, Service and Pod name per independent case",
+  "cases": [
+    {
+      "id": "A",
+      "note": "The same instance warms up and changes from unready to ready.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": false,
+        "container_ready": false,
+        "pod_ready": false,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": true,
+        "serving": true,
+        "terminating": false
+      },
+      "probe_events": [],
+      "publish_not_ready": false,
+      "expected": [
+        "same-instance",
+        "none-observed",
+        "ready-endpoint"
+      ]
+    },
+    {
+      "id": "B",
+      "note": "A readiness failure coincides with endpoint withdrawal from normal traffic.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": false,
+        "pod_ready": false,
+        "previous": null
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": false,
+        "serving": false,
+        "terminating": false
+      },
+      "probe_events": [
+        {
+          "time": 18,
+          "pod_uid": "pod-u1",
+          "container": "api",
+          "instance_id": "runtime://a",
+          "probe": "readiness",
+          "action": "probe-failed"
+        }
+      ],
+      "publish_not_ready": false,
+      "expected": [
+        "same-instance",
+        "none-observed",
+        "unready-endpoint"
+      ]
+    },
+    {
+      "id": "C",
+      "note": "A kubelet stop observation matches the old API container instance and time.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://b",
+        "restart_count": 1,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": {
+          "container_id": "runtime://a",
+          "finished_at": 19,
+          "reason": "Error"
+        }
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": true,
+        "serving": true,
+        "terminating": false
+      },
+      "probe_events": [
+        {
+          "time": 18,
+          "pod_uid": "pod-u1",
+          "container": "api",
+          "instance_id": "runtime://a",
+          "probe": "liveness",
+          "action": "kubelet-probe-stop"
+        }
+      ],
+      "publish_not_ready": false,
+      "expected": [
+        "new-container-instance",
+        "liveness-stop-correlated",
+        "ready-endpoint"
+      ]
+    },
+    {
+      "id": "D",
+      "note": "Startup fails on the first instance. The replacement has not started yet.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": false,
+        "container_ready": false,
+        "pod_ready": false,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://b",
+        "restart_count": 1,
+        "started": false,
+        "container_ready": false,
+        "pod_ready": false,
+        "previous": {
+          "container_id": "runtime://a",
+          "finished_at": 19,
+          "reason": "Error"
+        }
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": false,
+        "serving": false,
+        "terminating": false
+      },
+      "probe_events": [
+        {
+          "time": 18,
+          "pod_uid": "pod-u1",
+          "container": "api",
+          "instance_id": "runtime://a",
+          "probe": "startup",
+          "action": "kubelet-probe-stop"
+        }
+      ],
+      "publish_not_ready": false,
+      "expected": [
+        "new-container-instance",
+        "startup-stop-correlated",
+        "unready-endpoint"
+      ]
+    },
+    {
+      "id": "E",
+      "note": "The terminated instance reports OOMKilled. Readiness also failed.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://b",
+        "restart_count": 1,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": {
+          "container_id": "runtime://a",
+          "finished_at": 19,
+          "reason": "OOMKilled"
+        }
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": true,
+        "serving": true,
+        "terminating": false
+      },
+      "probe_events": [
+        {
+          "time": 18,
+          "pod_uid": "pod-u1",
+          "container": "api",
+          "instance_id": "runtime://a",
+          "probe": "readiness",
+          "action": "probe-failed"
+        }
+      ],
+      "publish_not_ready": false,
+      "expected": [
+        "new-container-instance",
+        "oom-reported",
+        "ready-endpoint"
+      ]
+    },
+    {
+      "id": "F",
+      "note": "The API container is ready. A custom readiness gate is false.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": false,
+        "previous": null,
+        "readiness_gate": false
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": false,
+        "serving": false,
+        "terminating": false
+      },
+      "probe_events": [],
+      "publish_not_ready": false,
+      "expected": [
+        "same-instance",
+        "none-observed",
+        "unready-endpoint"
+      ]
+    },
+    {
+      "id": "G",
+      "note": "The Service publishes endpoints even while the Pod is unready.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": false,
+        "pod_ready": false,
+        "previous": null
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": true,
+        "serving": true,
+        "terminating": false
+      },
+      "probe_events": [],
+      "publish_not_ready": true,
+      "expected": [
+        "same-instance",
+        "none-observed",
+        "published-unready"
+      ]
+    },
+    {
+      "id": "H",
+      "note": "The same Pod name was reused. The retained Event and endpoint refer to the old UID.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u2",
+        "container": "api",
+        "container_id": "runtime://c",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": true,
+        "serving": true,
+        "terminating": false
+      },
+      "probe_events": [
+        {
+          "time": 18,
+          "pod_uid": "pod-u1",
+          "container": "api",
+          "instance_id": "runtime://a",
+          "probe": "liveness",
+          "action": "kubelet-probe-stop"
+        }
+      ],
+      "publish_not_ready": false,
+      "expected": [
+        "replacement-pod",
+        "different-pod-uid",
+        "no-matching-endpoint-evidence"
+      ]
+    },
+    {
+      "id": "I",
+      "note": "A terminating endpoint still reports serving and normally receives no new traffic.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": false,
+        "serving": true,
+        "terminating": true
+      },
+      "probe_events": [],
+      "publish_not_ready": false,
+      "expected": [
+        "same-instance",
+        "none-observed",
+        "terminating-endpoint"
+      ]
+    },
+    {
+      "id": "J",
+      "note": "The restart is supported, but both kubelet records fail instance or time matching.",
+      "before": {
+        "time": 0,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://a",
+        "restart_count": 0,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": null
+      },
+      "after": {
+        "time": 30,
+        "uid": "pod-u1",
+        "container": "api",
+        "container_id": "runtime://b",
+        "restart_count": 1,
+        "started": true,
+        "container_ready": true,
+        "pod_ready": true,
+        "previous": {
+          "container_id": "runtime://a",
+          "finished_at": 19,
+          "reason": "Error"
+        }
+      },
+      "endpoint": {
+        "target_uid": "pod-u1",
+        "ready": true,
+        "serving": true,
+        "terminating": false
+      },
+      "probe_events": [
+        {
+          "time": 18,
+          "pod_uid": "pod-u1",
+          "container": "api",
+          "instance_id": "runtime://older",
+          "probe": "liveness",
+          "action": "kubelet-probe-stop"
+        },
+        {
+          "time": 22,
+          "pod_uid": "pod-u1",
+          "container": "api",
+          "instance_id": "runtime://a",
+          "probe": "liveness",
+          "action": "kubelet-probe-stop"
+        }
+      ],
+      "publish_not_ready": false,
+      "expected": [
+        "new-container-instance",
+        "restart-cause-open",
+        "ready-endpoint"
+      ]
+    }
+  ]
+}

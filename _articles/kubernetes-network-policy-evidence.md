@@ -127,3 +127,7 @@ Follow [Kubernetes Service Account Evidence]({{ '/wiki/kubernetes-service-accoun
 ## Follow Pod admission evidence
 
 Trace [Kubernetes Pod Security Admission]({{ '/wiki/kubernetes-pod-security-admission-evidence/' | relative_url }}) to distinguish a workload template from the controller's Pod creation request and the resulting runtime state.
+
+## Explain a Service endpoint becoming unready
+
+Use [Kubernetes probe evidence]({{ '/wiki/kubernetes-probe-evidence/' | relative_url }}) to tell a readiness change from a container restart before attributing a failed connection to policy.

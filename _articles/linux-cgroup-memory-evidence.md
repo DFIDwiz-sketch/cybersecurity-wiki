@@ -111,3 +111,7 @@ Reviewed November 26, 2026. The chapter covers the current documented cgroup v2 
 - Container memory requests, limits and status. [Kubernetes container resources](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 
 [Previous · Linux process identity]({{ '/wiki/linux-process-evidence/' | relative_url }}) · [Related · Linux journal coverage]({{ '/wiki/linux-journal-coverage/' | relative_url }})
+
+## Correlate OOM with Kubernetes restarts
+
+Use [Kubernetes probe evidence]({{ '/wiki/kubernetes-probe-evidence/' | relative_url }}) to compare an OOM termination with a kubelet stop on the same container instance.

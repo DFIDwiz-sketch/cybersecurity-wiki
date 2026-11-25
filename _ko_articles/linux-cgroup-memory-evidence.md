@@ -111,3 +111,7 @@ python3 linux-cgroup-memory-evidence.py linux-cgroup-memory-cases.json
 - 컨테이너 메모리 요청, 한도, 종료 상태. [Kubernetes 컨테이너 자원](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 
 [이전 글 · Linux 프로세스 수명 식별]({{ '/ko/wiki/linux-process-evidence/' | relative_url }}) · [관련 글 · Linux 저널 수집 조사]({{ '/ko/wiki/linux-journal-coverage/' | relative_url }})
+
+## Kubernetes 재시작에서 OOM 대조하기
+
+[Kubernetes 프로브 조사]({{ '/ko/wiki/kubernetes-probe-evidence/' | relative_url }})에서 같은 컨테이너 인스턴스의 OOM 종료 기록과 kubelet 종료 조치를 대조하는 방법을 확인하세요.
