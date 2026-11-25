@@ -85,3 +85,5 @@ Router Lifetime은 기본 라우터에 적용됩니다. PIO와 RDNSS에는 별�
 - [RFC 8106 · RA의 DNS 설정 옵션, 2017년 3월](https://www.rfc-editor.org/rfc/rfc8106.html) · [RFC 9915 · DHCPv6, 2026년 1월](https://www.rfc-editor.org/rfc/rfc9915.html)
 - [RFC 9099 · IPv6 운영 보안, 2021년 8월](https://www.rfc-editor.org/rfc/rfc9099.html) · [RFC 7113 · RA-Guard 구현 지침, 2014년 2월](https://www.rfc-editor.org/rfc/rfc7113.html)
 - [Wireshark · ICMPv6 표시 필드, 4.6.10까지](https://www.wireshark.org/docs/dfref/i/icmpv6.html)
+
+[다음 글 · IPv6 이웃 요청과 광고 조사]({{ '/ko/wiki/ipv6-neighbor-discovery-evidence/' | relative_url }})

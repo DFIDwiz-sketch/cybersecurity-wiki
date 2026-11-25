@@ -94,3 +94,5 @@ MAC이 세 개 나오면 구간 필터를 확인하세요. Probe가 주소 사�
 ## VLAN 태그와 센서 가시성 이어서 읽기
 
 [VLAN 태그와 센서 가시성 조사]({{ '/ko/wiki/vlan-capture-evidence/' | relative_url }})에서 트렁크 태그와 캡처 사본의 차이를 비교합니다.
+
+[비교 · IPv6 이웃 탐색 조사]({{ '/ko/wiki/ipv6-neighbor-discovery-evidence/' | relative_url }})

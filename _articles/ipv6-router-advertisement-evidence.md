@@ -85,3 +85,5 @@ Reviewed 21 November 2026. Match product features to deployed hardware and softw
 - [RFC 8106 · DNS configuration in RAs, March 2017](https://www.rfc-editor.org/rfc/rfc8106.html) · [RFC 9915 · DHCPv6, January 2026](https://www.rfc-editor.org/rfc/rfc9915.html)
 - [RFC 9099 · IPv6 operations security, August 2021](https://www.rfc-editor.org/rfc/rfc9099.html) · [RFC 7113 · RA-Guard implementation guidance, February 2014](https://www.rfc-editor.org/rfc/rfc7113.html)
 - [Wireshark · ICMPv6 display fields through 4.6.10](https://www.wireshark.org/docs/dfref/i/icmpv6.html)
+
+[Next · Investigate IPv6 Neighbor Solicitations and Advertisements]({{ '/wiki/ipv6-neighbor-discovery-evidence/' | relative_url }})

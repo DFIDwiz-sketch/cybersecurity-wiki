@@ -94,3 +94,5 @@ Reviewed 2026-11-21. The early ARP specification describes Ethernet resolution. 
 ## Follow VLAN tags across capture points
 
 [Investigate VLAN Tags and Sensor Visibility]({{ '/wiki/vlan-capture-evidence/' | relative_url }}) compares link encapsulation with sensor copies.
+
+[Compare · IPv6 Neighbor Discovery]({{ '/wiki/ipv6-neighbor-discovery-evidence/' | relative_url }})

@@ -1,0 +1,332 @@
+[
+  {
+    "id": "normal_resolution",
+    "link": "vlan20",
+    "target": "fe80::1",
+    "packets": [
+      {
+        "kind": "NS",
+        "link": "vlan20",
+        "target": "fe80::1",
+        "source": "fe80::c",
+        "destination": "ff02::1:ff00:1",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:0c",
+        "source_lladdr": "02:00:00:20:00:0c"
+      },
+      {
+        "kind": "NA",
+        "link": "vlan20",
+        "target": "fe80::1",
+        "source": "fe80::1",
+        "destination": "fe80::c",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:01",
+        "target_lladdr": "02:00:00:20:00:01",
+        "solicited": true,
+        "override": true,
+        "router": true
+      }
+    ],
+    "before": {
+      "state": "INCOMPLETE",
+      "mac": null
+    },
+    "after": {
+      "state": "REACHABLE",
+      "mac": "02:00:00:20:00:01"
+    },
+    "address_state": "not_sampled",
+    "expected": {
+      "packets": [
+        "solicitation_observed",
+        "advertisement_observed"
+      ],
+      "endpoint": {
+        "neighbor": "mapping_observed",
+        "neighbor_state": "REACHABLE"
+      },
+      "address_state": "not_sampled"
+    }
+  },
+  {
+    "id": "normal_dad",
+    "link": "vlan20",
+    "target": "2001:db8:20::c",
+    "packets": [
+      {
+        "kind": "NS",
+        "link": "vlan20",
+        "target": "2001:db8:20::c",
+        "source": "::",
+        "destination": "ff02::1:ff00:c",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:0c",
+        "source_lladdr": null
+      }
+    ],
+    "before": null,
+    "after": null,
+    "address_state": "assigned",
+    "expected": {
+      "packets": [
+        "dad_probe_observed"
+      ],
+      "endpoint": {
+        "neighbor": "unknown",
+        "neighbor_state": null
+      },
+      "address_state": "assigned"
+    }
+  },
+  {
+    "id": "dad_conflict",
+    "link": "vlan20",
+    "target": "2001:db8:20::c",
+    "packets": [
+      {
+        "kind": "NS",
+        "link": "vlan20",
+        "target": "2001:db8:20::c",
+        "source": "::",
+        "destination": "ff02::1:ff00:c",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:0c",
+        "source_lladdr": null
+      },
+      {
+        "kind": "NA",
+        "link": "vlan20",
+        "target": "2001:db8:20::c",
+        "source": "2001:db8:20::c",
+        "destination": "ff02::1",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:02",
+        "target_lladdr": "02:00:00:20:00:02",
+        "solicited": false,
+        "override": true,
+        "router": false
+      }
+    ],
+    "before": null,
+    "after": null,
+    "address_state": "dadfailed",
+    "expected": {
+      "packets": [
+        "dad_probe_observed",
+        "advertisement_observed"
+      ],
+      "endpoint": {
+        "neighbor": "unknown",
+        "neighbor_state": null
+      },
+      "address_state": "dadfailed"
+    }
+  },
+  {
+    "id": "wrong_hop_limit",
+    "link": "vlan20",
+    "target": "fe80::1",
+    "packets": [
+      {
+        "kind": "NA",
+        "link": "vlan20",
+        "target": "fe80::1",
+        "source": "fe80::1",
+        "destination": "fe80::c",
+        "hop_limit": 64,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:02",
+        "target_lladdr": "02:00:00:20:00:02",
+        "solicited": true,
+        "override": true,
+        "router": true
+      }
+    ],
+    "before": {
+      "state": "STALE",
+      "mac": "02:00:00:20:00:01"
+    },
+    "after": {
+      "state": "STALE",
+      "mac": "02:00:00:20:00:01"
+    },
+    "address_state": "not_sampled",
+    "expected": {
+      "packets": [
+        "header_check_failed"
+      ],
+      "endpoint": {
+        "neighbor": "unchanged",
+        "neighbor_state": "STALE"
+      },
+      "address_state": "not_sampled"
+    }
+  },
+  {
+    "id": "capture_only",
+    "link": "vlan20",
+    "target": "fe80::1",
+    "packets": [
+      {
+        "kind": "NA",
+        "link": "vlan20",
+        "target": "fe80::1",
+        "source": "fe80::1",
+        "destination": "fe80::c",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:01",
+        "target_lladdr": "02:00:00:20:00:01",
+        "solicited": true,
+        "override": true,
+        "router": true
+      }
+    ],
+    "before": null,
+    "after": null,
+    "address_state": "not_sampled",
+    "expected": {
+      "packets": [
+        "advertisement_observed"
+      ],
+      "endpoint": {
+        "neighbor": "unknown",
+        "neighbor_state": null
+      },
+      "address_state": "not_sampled"
+    }
+  },
+  {
+    "id": "separate_link",
+    "link": "vlan20",
+    "target": "fe80::1",
+    "packets": [
+      {
+        "kind": "NA",
+        "link": "vlan30",
+        "target": "fe80::1",
+        "source": "fe80::1",
+        "destination": "fe80::c",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:30:00:01",
+        "target_lladdr": "02:00:00:30:00:01",
+        "solicited": true,
+        "override": true,
+        "router": true
+      }
+    ],
+    "before": {
+      "state": "REACHABLE",
+      "mac": "02:00:00:20:00:01"
+    },
+    "after": {
+      "state": "STALE",
+      "mac": "02:00:00:20:00:01"
+    },
+    "address_state": "not_sampled",
+    "expected": {
+      "packets": [
+        "outside_scope"
+      ],
+      "endpoint": {
+        "neighbor": "unchanged",
+        "neighbor_state": "STALE"
+      },
+      "address_state": "not_sampled"
+    }
+  },
+  {
+    "id": "changed_binding",
+    "link": "vlan20",
+    "target": "fe80::1",
+    "packets": [
+      {
+        "kind": "NA",
+        "link": "vlan20",
+        "target": "fe80::1",
+        "source": "fe80::1",
+        "destination": "ff02::1",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:02",
+        "target_lladdr": "02:00:00:20:00:02",
+        "solicited": false,
+        "override": true,
+        "router": true
+      }
+    ],
+    "before": {
+      "state": "STALE",
+      "mac": "02:00:00:20:00:01"
+    },
+    "after": {
+      "state": "STALE",
+      "mac": "02:00:00:20:00:02"
+    },
+    "address_state": "not_sampled",
+    "expected": {
+      "packets": [
+        "advertisement_observed"
+      ],
+      "endpoint": {
+        "neighbor": "changed",
+        "neighbor_state": "STALE"
+      },
+      "address_state": "not_sampled"
+    }
+  },
+  {
+    "id": "failed_without_reply",
+    "link": "vlan20",
+    "target": "fe80::1",
+    "packets": [
+      {
+        "kind": "NS",
+        "link": "vlan20",
+        "target": "fe80::1",
+        "source": "fe80::c",
+        "destination": "ff02::1:ff00:1",
+        "hop_limit": 255,
+        "code": 0,
+        "fragment_header": false,
+        "ethernet_source": "02:00:00:20:00:0c",
+        "source_lladdr": "02:00:00:20:00:0c"
+      }
+    ],
+    "before": {
+      "state": "INCOMPLETE",
+      "mac": null
+    },
+    "after": {
+      "state": "FAILED",
+      "mac": null
+    },
+    "address_state": "not_sampled",
+    "expected": {
+      "packets": [
+        "solicitation_observed"
+      ],
+      "endpoint": {
+        "neighbor": "failed",
+        "neighbor_state": "FAILED"
+      },
+      "address_state": "not_sampled"
+    }
+  }
+]
