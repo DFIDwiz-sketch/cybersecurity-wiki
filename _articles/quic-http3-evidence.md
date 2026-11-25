@@ -109,3 +109,7 @@ Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relati
 ## Trace UDP datagram delivery
 
 Use [UDP datagram evidence]({{ '/wiki/udp-datagram-evidence/' | relative_url }}) to distinguish packet capture from application receipt and verify a short receive buffer on loopback.
+
+## Follow TLS resumption and early data
+
+[Investigate TLS 1.3 Resumption and 0-RTT]({{ '/wiki/tls-resumption-evidence/' | relative_url }}) distinguishes PSK offers, successful resumption and evidence of application processing.

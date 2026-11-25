@@ -109,3 +109,7 @@ curl --http3 --max-time 15 --silent --show-error --output /dev/null \
 ## UDP 데이터그램의 송신과 수신 확인하기
 
 [UDP 데이터그램 조사]({{ '/ko/wiki/udp-datagram-evidence/' | relative_url }})에서 패킷 캡처와 실제 수신을 구분하고, 작은 버퍼에서 데이터그램이 잘리는 과정을 루프백으로 확인하세요.
+
+## TLS 세션 재개와 조기 데이터 이어서 읽기
+
+[TLS 1.3 세션 재개와 0-RTT 조사]({{ '/ko/wiki/tls-resumption-evidence/' | relative_url }})에서 PSK 제안, 재개 수락과 앱 요청 처리에 필요한 증거를 구분합니다.

@@ -125,3 +125,7 @@ python3 tls-handshake-evidence.py
 ## HSTS 전환과 서버 리디렉션 확인
 
 [HSTS 전환 조사]({{ '/ko/wiki/http-hsts-evidence/' | relative_url }})에서 브라우저가 전송 전에 HTTPS로 바꾼 요청과 서버가 응답한 리디렉션을 구분합니다.
+
+## TLS 세션 재개와 조기 데이터 이어서 읽기
+
+[TLS 1.3 세션 재개와 0-RTT 조사]({{ '/ko/wiki/tls-resumption-evidence/' | relative_url }})에서 PSK 제안, 재개 수락과 앱 요청 처리에 필요한 증거를 구분합니다.

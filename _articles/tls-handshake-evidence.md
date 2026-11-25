@@ -125,3 +125,7 @@ Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relati
 ## Trace an HSTS upgrade
 
 Use [HSTS evidence]({{ '/wiki/http-hsts-evidence/' | relative_url }}) to distinguish a client-side upgrade before transmission from a redirect sent by the server.
+
+## Follow TLS resumption and early data
+
+[Investigate TLS 1.3 Resumption and 0-RTT]({{ '/wiki/tls-resumption-evidence/' | relative_url }}) distinguishes PSK offers, successful resumption and evidence of application processing.
