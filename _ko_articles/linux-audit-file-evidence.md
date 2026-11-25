@@ -112,3 +112,7 @@ python3 linux-audit-file-review.py linux-audit-file-sample.log --check
 ## SELinux 접근 거부 조사
 
 [SELinux AVC 조사]({{ '/ko/wiki/selinux-avc-evidence/' | relative_url }})에서 DAC와 SELinux 검사를 구분하고 같은 이벤트의 AVC와 시스템 호출을 연결하세요.
+
+## 열린 파일과 삭제된 경로 조사
+
+[Linux에서 열린 파일과 삭제된 경로 조사]({{ '/ko/wiki/linux-open-file-evidence/' | relative_url }})에서 경로 이름과 실제로 열린 객체가 다른 경우를 확인합니다.

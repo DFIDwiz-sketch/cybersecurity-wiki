@@ -133,3 +133,7 @@ p02·p03·p06의 차이를 설명하고, p04에 관점 변환이 필요한 이�
 ## 선언된 의존성과 실제 매핑 비교하기
 
 [Linux ELF와 런타임 조사]({{ '/ko/wiki/linux-elf-runtime-evidence/' | relative_url }})에서 ELF에 선언된 의존성과 실행 중인 프로세스의 매핑을 구분합니다.
+
+## 열린 파일과 삭제된 경로 조사
+
+[Linux에서 열린 파일과 삭제된 경로 조사]({{ '/ko/wiki/linux-open-file-evidence/' | relative_url }})에서 경로 이름과 실제로 열린 객체가 다른 경우를 확인합니다.

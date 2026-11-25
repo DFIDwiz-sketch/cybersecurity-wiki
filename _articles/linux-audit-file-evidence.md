@@ -112,3 +112,7 @@ Use [Linux sudo Command Evidence]({{ '/wiki/linux-sudo-command-evidence/' | rela
 ## Investigate an SELinux denial
 
 Use [SELinux AVC evidence]({{ '/wiki/selinux-avc-evidence/' | relative_url }}) to distinguish DAC from SELinux checks and join AVC with syscall evidence.
+
+## Investigate open files and deleted paths
+
+[Investigate Linux Open Files and Deleted Paths]({{ '/wiki/linux-open-file-evidence/' | relative_url }}) follows an open descriptor across rotation and unlink.
