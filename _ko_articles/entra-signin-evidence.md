@@ -119,3 +119,7 @@ s-01과 s-02의 MFA 문맥과 앱 증거 차이를 한 문장씩 적고, s-04에
 ## SAML 싱글 사인온 조사
 
 SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/ko/wiki/saml-sso-evidence/' | relative_url }})에서 이어서 학습하세요. 서비스 제공자의 판정, 세션 발급, 앱 인가를 구분합니다.
+
+## 리소스 API의 판정까지 따라가기
+
+후속 API가 JWT를 검증하는 환경에서는 [JWT 서명 키 교체 조사]({{ '/ko/wiki/jwt-key-rotation-evidence/' | relative_url }})로 로그인 기록과 별개인 API의 발급자 설정, 키 캐시, 판정 단계를 확인하세요.

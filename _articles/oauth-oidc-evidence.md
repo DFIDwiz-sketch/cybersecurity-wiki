@@ -123,3 +123,7 @@ Use [Microsoft Entra App Consent Evidence]({{ '/wiki/entra-app-consent-evidence/
 ## SAML single sign-on evidence
 
 For browser SSO with a SAML assertion, follow the [SAML SSO investigation guide]({{ '/wiki/saml-sso-evidence/' | relative_url }}) to check the service provider’s decision, session creation and app authorization.
+
+## Trace a signing-key rollover
+
+Continue with [JWT key rotation evidence]({{ '/wiki/jwt-key-rotation-evidence/' | relative_url }}) to locate which verifier rejected a token and separate a cache miss from a cryptographic or token-policy failure.

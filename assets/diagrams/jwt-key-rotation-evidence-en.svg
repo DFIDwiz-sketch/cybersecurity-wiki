@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="434" viewBox="0 0 480 434" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">JWT key lookup and validation</title>
+  <desc id="desc">Configured issuer, then cached lookup. A cache miss can cause a trusted JWKS refresh and one new lookup. When a trusted key is available, verify the signature, claims and operation permissions.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#244467"/>
+    </marker>
+    <marker id="refresh-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#66521c"/>
+    </marker>
+  </defs>
+  <rect width="480" height="434" rx="18" fill="#f5f8fe"/>
+  <g stroke="#294873" stroke-width="2" fill="#e5eefc">
+    <rect x="22" y="22" width="314" height="60" rx="10"/>
+    <rect x="22" y="112" width="231" height="54" rx="10"/>
+    <rect x="22" y="231" width="231" height="48" rx="10"/>
+    <rect x="22" y="297" width="231" height="48" rx="10"/>
+    <rect x="22" y="363" width="231" height="48" rx="10"/>
+  </g>
+  <rect x="285" y="214" width="174" height="96" rx="10" stroke="#75602a" stroke-width="2" fill="#fff2cb"/>
+  <g fill="none" stroke="#244467" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M137 82 V107"/>
+    <path d="M137 166 V226"/>
+    <path d="M137 279 V292"/>
+    <path d="M137 345 V358"/>
+  </g>
+  <g fill="none" stroke="#66521c" stroke-width="2.5" marker-end="url(#refresh-arrow)">
+    <path d="M253 144 H373 V209"/>
+    <path d="M285 255 H258" stroke-dasharray="5 3"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" font-size="20" font-weight="700" fill="#182c48">
+    <text x="179" y="60">Trusted issuer configuration</text>
+    <text x="137" y="146">Look up cached key</text>
+    <text x="137" y="262">Check signature</text>
+    <text x="137" y="328">Verify token claims</text>
+    <text x="137" y="394">Authorize operation</text>
+    <text x="372" y="246" font-size="17">Refresh trusted JWKS</text>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" font-size="16" font-weight="600">
+    <rect x="65" y="184" width="144" height="27" rx="4" fill="#f5f8fe"/>
+    <text x="137" y="204" fill="#244467">known key</text>
+    <text x="322" y="132" fill="#594515">cache miss</text>
+    <text x="372" y="272" fill="#594515">Retry lookup once</text>
+    <text x="372" y="293" font-size="14" fill="#594515">Continue only if found</text>
+  </g>
+</svg>

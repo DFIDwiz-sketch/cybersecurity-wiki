@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="434" viewBox="0 0 480 434" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">JWT 키 조회와 검증</title>
+  <desc id="desc">승인된 발급자 설정을 확인하고 캐시에서 키를 찾습니다. 미스가 나면 승인된 JWKS 갱신 후 한 번 더 찾을 수 있습니다. 신뢰하는 키를 찾으면 서명, 클레임, 작업 권한을 차례로 확인합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#244467"/>
+    </marker>
+    <marker id="refresh-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#66521c"/>
+    </marker>
+  </defs>
+  <rect width="480" height="434" rx="18" fill="#f5f8fe"/>
+  <g stroke="#294873" stroke-width="2" fill="#e5eefc">
+    <rect x="22" y="22" width="314" height="60" rx="10"/>
+    <rect x="22" y="112" width="231" height="54" rx="10"/>
+    <rect x="22" y="231" width="231" height="48" rx="10"/>
+    <rect x="22" y="297" width="231" height="48" rx="10"/>
+    <rect x="22" y="363" width="231" height="48" rx="10"/>
+  </g>
+  <rect x="285" y="214" width="174" height="96" rx="10" stroke="#75602a" stroke-width="2" fill="#fff2cb"/>
+  <g fill="none" stroke="#244467" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M137 82 V107"/>
+    <path d="M137 166 V226"/>
+    <path d="M137 279 V292"/>
+    <path d="M137 345 V358"/>
+  </g>
+  <g fill="none" stroke="#66521c" stroke-width="2.5" marker-end="url(#refresh-arrow)">
+    <path d="M253 144 H373 V209"/>
+    <path d="M285 255 H258" stroke-dasharray="5 3"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" font-size="20" font-weight="700" fill="#182c48">
+    <text x="179" y="60">신뢰하는 발급자 설정</text>
+    <text x="137" y="146">캐시에서 키 조회</text>
+    <text x="137" y="262">서명 확인</text>
+    <text x="137" y="328">토큰 클레임 검증</text>
+    <text x="137" y="394">작업 권한 판정</text>
+    <text x="372" y="246" font-size="17">승인된 JWKS 갱신</text>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" font-size="16" font-weight="600">
+    <rect x="65" y="184" width="144" height="27" rx="4" fill="#f5f8fe"/>
+    <text x="137" y="204" fill="#244467">키를 찾음</text>
+    <text x="322" y="132" fill="#594515">캐시 미스</text>
+    <text x="372" y="272" fill="#594515">한 번 다시 조회</text>
+    <text x="372" y="293" font-size="14" fill="#594515">찾은 경우에만 진행</text>
+  </g>
+</svg>

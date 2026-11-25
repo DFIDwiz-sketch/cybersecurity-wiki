@@ -1,0 +1,303 @@
+{
+  "scope": "Fictional normalized evidence. No serialized JWT, public keys, or HTTP requests. Times use one simulated clock.",
+  "verifier": {
+    "issuer": "https://identity.example.invalid/tenant-a",
+    "jwks_uri": "https://identity.example.invalid/tenant-a/keys",
+    "audience": "https://orders.example.invalid",
+    "algorithms": [
+      "RS256"
+    ],
+    "types": [
+      "at+jwt",
+      "application/at+jwt"
+    ]
+  },
+  "cases": [
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "valid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "A",
+      "expected": "accepted-from-cache"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1"
+      ],
+      "refresh": {
+        "status": "completed",
+        "source": "https://identity.example.invalid/tenant-a/keys",
+        "kids": [
+          "k1",
+          "k2"
+        ]
+      },
+      "signature": "valid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "B",
+      "expected": "accepted-after-refresh"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1"
+      ],
+      "refresh": {
+        "status": "failed",
+        "source": "https://identity.example.invalid/tenant-a/keys",
+        "failure": "timeout"
+      },
+      "signature": "unobserved",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "C",
+      "expected": "trusted-refresh-failed"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "retired-or-foreign",
+      "cached_kids": [
+        "k1"
+      ],
+      "refresh": {
+        "status": "completed",
+        "source": "https://identity.example.invalid/tenant-a/keys",
+        "kids": [
+          "k1",
+          "k2"
+        ]
+      },
+      "signature": "unobserved",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "D",
+      "expected": "key-absent-after-refresh"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-b",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "valid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "E",
+      "expected": "issuer-out-of-policy"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "JWT",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "valid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "F",
+      "expected": "wrong-token-profile"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "valid",
+      "aud": [
+        "https://reports.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "G",
+      "expected": "wrong-audience"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "valid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 120,
+      "id": "H",
+      "expected": "expired"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "invalid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "I",
+      "expected": "signature-invalid-or-unconfirmed"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1"
+      ],
+      "refresh": {
+        "status": "cooldown"
+      },
+      "signature": "unobserved",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "J",
+      "expected": "cache-miss-without-refresh"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1"
+      ],
+      "refresh": {
+        "status": "completed",
+        "source": "https://other.example.invalid/keys",
+        "kids": [
+          "k1",
+          "k2"
+        ]
+      },
+      "signature": "valid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "K",
+      "expected": "untrusted-refresh-source"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "RS256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "unobserved",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "L",
+      "expected": "ambiguous-key-selection"
+    },
+    {
+      "candidate_issuer": "https://identity.example.invalid/tenant-a",
+      "alg": "ES256",
+      "typ": "at+jwt",
+      "kid": "k2",
+      "cached_kids": [
+        "k1",
+        "k2"
+      ],
+      "refresh": {
+        "status": "not-attempted"
+      },
+      "signature": "valid",
+      "aud": [
+        "https://orders.example.invalid"
+      ],
+      "now": 120,
+      "exp": 300,
+      "id": "M",
+      "expected": "algorithm-out-of-policy"
+    }
+  ]
+}

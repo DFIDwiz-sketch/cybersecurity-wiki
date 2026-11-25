@@ -119,3 +119,7 @@ Use [Microsoft Entra App Consent Evidence]({{ '/wiki/entra-app-consent-evidence/
 ## SAML single sign-on evidence
 
 For browser SSO with a SAML assertion, follow the [SAML SSO investigation guide]({{ '/wiki/saml-sso-evidence/' | relative_url }}) to check the service provider’s decision, session creation and app authorization.
+
+## Follow the decision at the resource API
+
+When a downstream API validates JWTs, use [JWT key rotation evidence]({{ '/wiki/jwt-key-rotation-evidence/' | relative_url }}) to examine the API's issuer, key cache and decision stage independently of the identity platform sign-in record.

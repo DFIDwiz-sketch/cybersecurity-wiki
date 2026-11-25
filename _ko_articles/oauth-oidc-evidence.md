@@ -123,3 +123,7 @@ python3 oauth-oidc-evidence.py
 ## SAML 싱글 사인온 조사
 
 SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/ko/wiki/saml-sso-evidence/' | relative_url }})에서 이어서 학습하세요. 서비스 제공자의 판정, 세션 발급, 앱 인가를 구분합니다.
+
+## JWT 서명 키 교체를 추적하기
+
+[JWT 서명 키 교체 조사]({{ '/ko/wiki/jwt-key-rotation-evidence/' | relative_url }})에서 어느 검증기가 토큰을 거부했는지 찾고 캐시 미스와 서명·토큰 정책 오류를 구분합니다.
