@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="400" viewBox="0 0 480 400" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">Process lifetime evidence on one Windows host</title>
+  <desc id="description">A creation, subsequent child creation, and an exit separate a PID lifetime from later reuse.</desc>
+  <rect width="480" height="400" rx="16" fill="#101b2b"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 8 5 1 9" fill="none" stroke="#81e6d9" stroke-width="2"/></marker></defs>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="46" fill="#a2fff1" font-size="22" font-weight="700">1  08:00 · Creator starts</text>
+    <text x="32" y="75" fill="#eff6ff" font-size="18">4688: new PID 0x410</text>
+    <text x="32" y="100" fill="#eff6ff" font-size="18">Record source host, boot and image.</text>
+    <path d="M240 125v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="146" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="178" fill="#a2fff1" font-size="22" font-weight="700">2  08:02 · Child starts</text>
+    <text x="32" y="207" fill="#eff6ff" font-size="18">4688: recorded creator PID 0x410</text>
+    <text x="32" y="232" fill="#eff6ff" font-size="18">New PID 0x5b0. Check both contexts.</text>
+    <path d="M240 257v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="278" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="310" fill="#a2fff1" font-size="22" font-weight="700">3  08:04 · Child exits</text>
+    <text x="32" y="339" fill="#eff6ff" font-size="18">4689: PID 0x5b0. Close that lifetime.</text>
+    <text x="32" y="364" fill="#eff6ff" font-size="18">A later 0x5b0 start is a separate process.</text>
+  </g>
+</svg>

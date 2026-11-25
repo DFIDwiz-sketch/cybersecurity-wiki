@@ -62,3 +62,5 @@ Use [Windows privileged logon evidence]({{ '/wiki/windows-privileged-logon-evide
 ## Investigate Windows WFP connection audits
 
 [Investigate Windows WFP Connection Decisions]({{ '/wiki/windows-wfp-connection-evidence/' | relative_url }}) traces local 5156 and 5157 decisions alongside process and service evidence.
+
+[Related · Investigate process creation with 4688 and 4689]({{ '/wiki/windows-process-creation-evidence/' | relative_url }})

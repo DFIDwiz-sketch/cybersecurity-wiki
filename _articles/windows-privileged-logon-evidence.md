@@ -100,3 +100,5 @@ Reviewed November 23, 2026. Microsoft's event schemas below are Windows 10-era r
 - [Windows Server advanced audit policy](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/advanced-audit-policy-configuration), [Audit Sensitive Privilege Use](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-sensitive-privilege-use) and [PowerShell Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent)
 
 [Previous · Windows security event analysis]({{ '/wiki/windows-logs/' | relative_url }}) · [Next · RDP session evidence]({{ '/wiki/rdp-session-evidence/' | relative_url }})
+
+[Related · Investigate process creation with 4688 and 4689]({{ '/wiki/windows-process-creation-evidence/' | relative_url }})

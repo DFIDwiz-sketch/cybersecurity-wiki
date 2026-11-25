@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ProcessCreationLab>
+  <Case name="routine_creator" inspect="102">
+    <Expected>{"pid": 1456, "creator": "candidate", "creator_record": 101, "target_context": "not_recorded", "command": "recorded"}</Expected>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>101</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:00:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>102</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine">status-worker.exe --mode observe</Data>
+          <Data Name="ParentProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+  <Case name="reuse_after_exit" inspect="204">
+    <Expected>{"pid": 1456, "creator": "candidate", "creator_record": 203, "target_context": "not_recorded", "command": "empty"}</Expected>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>201</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:00:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\editor.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4689</EventID>
+          <Version>0</Version>
+          <EventRecordID>202</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:01:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="ProcessName">C:\Lab\editor.exe</Data>
+          <Data Name="Status">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>203</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>204</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:03:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+  <Case name="different_target" inspect="302">
+    <Expected>{"pid": 1456, "creator": "candidate", "creator_record": 301, "target_context": "distinct", "command": "empty"}</Expected>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>301</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:00:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>302</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-5-21-1001-1002-1003-1005</Data>
+          <Data Name="TargetLogonId">0x201</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+  <Case name="blank_command" inspect="401">
+    <Expected>{"pid": 1456, "creator": "no_candidate", "creator_record": null, "target_context": "not_recorded", "command": "empty"}</Expected>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>401</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+  <Case name="older_schema" inspect="501">
+    <Expected>{"pid": 1456, "creator": "no_candidate", "creator_record": null, "target_context": "not_recorded", "command": "absent"}</Expected>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>0</Version>
+          <EventRecordID>501</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+  <Case name="different_boot" inspect="602">
+    <Expected>{"pid": 1456, "creator": "no_candidate", "creator_record": null, "target_context": "not_recorded", "command": "empty"}</Expected>
+    <Record boot="boot-before">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>601</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:00:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>602</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+  <Case name="reuse_without_exit" inspect="703">
+    <Expected>{"pid": 1456, "creator": "candidate", "creator_record": 702, "target_context": "not_recorded", "command": "empty"}</Expected>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>701</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:00:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\editor.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>702</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:01:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>703</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+  <Case name="creator_image_mismatch" inspect="802">
+    <Expected>{"pid": 1456, "creator": "creator_image_mismatch", "creator_record": null, "target_context": "not_recorded", "command": "empty"}</Expected>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>801</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:00:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x410</Data>
+          <Data Name="NewProcessName">C:\Lab\editor.exe</Data>
+          <Data Name="ProcessId">0x100</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName" />
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+    <Record boot="boot-a">
+      <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+          <Provider Name="Microsoft-Windows-Security-Auditing" />
+          <EventID>4688</EventID>
+          <Version>2</Version>
+          <EventRecordID>802</EventRecordID>
+          <Channel>Security</Channel>
+          <Computer>workstation-a.example</Computer>
+          <TimeCreated SystemTime="2026-11-24T08:02:00.000Z" />
+          <Execution ProcessID="4" ThreadID="40" />
+        </System>
+        <EventData>
+          <Data Name="SubjectUserSid">S-1-5-21-1001-1002-1003-1004</Data>
+          <Data Name="SubjectLogonId">0x101</Data>
+          <Data Name="NewProcessId">0x5b0</Data>
+          <Data Name="NewProcessName">C:\Lab\status-worker.exe</Data>
+          <Data Name="ProcessId">0x410</Data>
+          <Data Name="TokenElevationType">%%1938</Data>
+          <Data Name="CommandLine" />
+          <Data Name="ParentProcessName">C:\Lab\report-launcher.exe</Data>
+          <Data Name="MandatoryLabel">S-1-16-8192</Data>
+          <Data Name="TargetUserSid">S-1-0-0</Data>
+          <Data Name="TargetLogonId">0x0</Data>
+        </EventData>
+      </Event>
+    </Record>
+  </Case>
+</ProcessCreationLab>

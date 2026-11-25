@@ -100,3 +100,5 @@ python3 windows-privileged-logon-evidence.py windows-privileged-logon-evidence.j
 - [Windows Server 고급 감사 정책](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/advanced-audit-policy-configuration), [민감한 특권 사용 감사](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-sensitive-privilege-use), [PowerShell Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent)
 
 [이전 · Windows 보안 이벤트 조사]({{ '/ko/wiki/windows-logs/' | relative_url }}) · [다음 · RDP 세션 증거]({{ '/ko/wiki/rdp-session-evidence/' | relative_url }})
+
+[관련 글 · 4688과 4689로 프로세스 생성 조사]({{ '/ko/wiki/windows-process-creation-evidence/' | relative_url }})

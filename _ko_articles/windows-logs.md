@@ -62,3 +62,5 @@ updated: "2026-10-17"
 ## Windows WFP 연결 감사 조사
 
 [Windows WFP 연결 허용·차단 조사]({{ '/ko/wiki/windows-wfp-connection-evidence/' | relative_url }})에서 Security 5156·5157의 로컬 판단을 프로세스와 서비스 증거에 대조합니다.
+
+[관련 글 · 4688과 4689로 프로세스 생성 조사]({{ '/ko/wiki/windows-process-creation-evidence/' | relative_url }})
