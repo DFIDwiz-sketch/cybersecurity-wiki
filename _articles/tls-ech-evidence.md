@@ -101,3 +101,5 @@ Reviewed November 23, 2026.
 - Provider-specific outer-name example and deployment scope, updated April 17, 2026. [Cloudflare · ECH Protocol](https://developers.cloudflare.com/ssl/edge-certificates/ech/)
 
 [Previous · TLS handshake evidence]({{ '/wiki/tls-handshake-evidence/' | relative_url }}) · [Next · DNS over HTTPS investigation]({{ '/wiki/doh-resolution-evidence/' | relative_url }}) · [Related · QUIC and HTTP/3]({{ '/wiki/quic-http3-evidence/' | relative_url }})
+
+[Related · Trace DNS HTTPS records to actual connections]({{ '/wiki/dns-https-record-evidence/' | relative_url }})

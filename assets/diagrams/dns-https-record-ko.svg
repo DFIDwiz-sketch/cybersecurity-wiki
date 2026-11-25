@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="400" viewBox="0 0 480 400" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">DNS HTTPS 바인딩과 요청 증거</title>
+  <desc id="description">DNS 조회, 접속 후보 선택, 독립 기록으로 확인한 연결과 요청.</desc>
+  <rect width="480" height="400" rx="16" fill="#101b2b"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 8 5 1 9" fill="none" stroke="#81e6d9" stroke-width="2"/></marker></defs>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="46" fill="#a2fff1" font-size="22" font-weight="700">1  HTTPS 레코드 조회</text>
+    <text x="32" y="75" fill="#eff6ff" font-size="18">별칭이 있으면 DNS 조회를 계속합니다.</text>
+    <text x="32" y="100" fill="#eff6ff" font-size="18">원래 웹 오리진은 유지합니다.</text>
+    <path d="M240 125v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="146" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="178" fill="#a2fff1" font-size="22" font-weight="700">2  접속 후보 평가</text>
+    <text x="32" y="207" fill="#eff6ff" font-size="18">필수 키와 ALPN 지원 여부를 확인합니다.</text>
+    <text x="32" y="232" fill="#eff6ff" font-size="18">대상의 주소와 접속 포트를 확인합니다.</text>
+    <path d="M240 257v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="278" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="310" fill="#a2fff1" font-size="22" font-weight="700">3  실제 사용 경로 확인</text>
+    <text x="32" y="339" fill="#eff6ff" font-size="18">소켓, TLS, HTTP 기록을 맞춥니다.</text>
+    <text x="32" y="364" fill="#eff6ff" font-size="18">요청이 원래 오리진과 일치하는지 봅니다.</text>
+  </g>
+</svg>

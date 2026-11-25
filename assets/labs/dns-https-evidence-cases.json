@@ -1,0 +1,537 @@
+[
+  {
+    "id": "alias_offer_only",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 0,
+            "target": "routes.example.",
+            "params": {}
+          }
+        ]
+      },
+      "routes.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 1,
+            "target": "edge-a.example.",
+            "params": {
+              "alpn": [
+                "h3"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "addresses": {
+      "edge-a.example.": [
+        "192.0.2.20"
+      ]
+    },
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "h2",
+        "h3"
+      ]
+    },
+    "client_observation": null,
+    "expected": {
+      "names": [
+        "reports.example.",
+        "routes.example."
+      ],
+      "answer": "service_mode",
+      "candidates": [
+        {
+          "priority": 1,
+          "target": "edge-a.example.",
+          "port": 443,
+          "alpns": [
+            "h3"
+          ],
+          "resolved": [
+            "192.0.2.20"
+          ],
+          "hints": []
+        }
+      ],
+      "use": "not_observed",
+      "observed_endpoint": null
+    }
+  },
+  {
+    "id": "priority_and_dot",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 1,
+            "target": ".",
+            "params": {
+              "alpn": [
+                "h2"
+              ]
+            }
+          },
+          {
+            "priority": 2,
+            "target": "edge-b.example.",
+            "params": {
+              "alpn": [
+                "h3"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "addresses": {},
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "h2",
+        "h3"
+      ]
+    },
+    "client_observation": null,
+    "expected": {
+      "names": [
+        "reports.example."
+      ],
+      "answer": "service_mode",
+      "candidates": [
+        {
+          "priority": 1,
+          "target": "reports.example.",
+          "port": 443,
+          "alpns": [
+            "h2"
+          ],
+          "resolved": [],
+          "hints": []
+        },
+        {
+          "priority": 2,
+          "target": "edge-b.example.",
+          "port": 443,
+          "alpns": [
+            "h3"
+          ],
+          "resolved": [],
+          "hints": []
+        }
+      ],
+      "use": "not_observed",
+      "observed_endpoint": null
+    }
+  },
+  {
+    "id": "unknown_mandatory",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 1,
+            "target": "edge-a.example.",
+            "params": {
+              "alpn": [
+                "h3"
+              ],
+              "mandatory": [
+                "key65400"
+              ],
+              "key65400": "opaque"
+            }
+          },
+          {
+            "priority": 2,
+            "target": "edge-b.example.",
+            "params": {
+              "alpn": [
+                "h2"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "addresses": {},
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "h2",
+        "h3"
+      ]
+    },
+    "client_observation": null,
+    "expected": {
+      "names": [
+        "reports.example."
+      ],
+      "answer": "service_mode",
+      "candidates": [
+        {
+          "priority": 2,
+          "target": "edge-b.example.",
+          "port": 443,
+          "alpns": [
+            "h2"
+          ],
+          "resolved": [],
+          "hints": []
+        }
+      ],
+      "use": "not_observed",
+      "observed_endpoint": null
+    }
+  },
+  {
+    "id": "missing_mandatory_value",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 1,
+            "target": "edge-a.example.",
+            "params": {
+              "alpn": [
+                "h3"
+              ],
+              "mandatory": [
+                "port"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "addresses": {},
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "h2",
+        "h3"
+      ]
+    },
+    "client_observation": null,
+    "expected": {
+      "names": [
+        "reports.example."
+      ],
+      "answer": "no_compatible_record",
+      "candidates": [],
+      "use": "not_observed",
+      "observed_endpoint": null
+    }
+  },
+  {
+    "id": "hint_and_port",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 1,
+            "target": "edge-a.example.",
+            "params": {
+              "alpn": [
+                "h2"
+              ],
+              "port": 9443,
+              "ipv4hint": [
+                "192.0.2.22"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "addresses": {
+      "edge-a.example.": [
+        "192.0.2.20"
+      ]
+    },
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "h2",
+        "h3"
+      ]
+    },
+    "client_observation": {
+      "connected": true,
+      "destination": "192.0.2.20",
+      "port": 9443,
+      "alpn": "h2",
+      "http_authority": "reports.example",
+      "tls_origin_verified": true
+    },
+    "expected": {
+      "names": [
+        "reports.example."
+      ],
+      "answer": "service_mode",
+      "candidates": [
+        {
+          "priority": 1,
+          "target": "edge-a.example.",
+          "port": 9443,
+          "alpns": [
+            "h2"
+          ],
+          "resolved": [
+            "192.0.2.20"
+          ],
+          "hints": [
+            "192.0.2.22"
+          ]
+        }
+      ],
+      "use": "request_h2",
+      "observed_endpoint": {
+        "destination": "192.0.2.20",
+        "port": 9443
+      }
+    }
+  },
+  {
+    "id": "default_alpn",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 1,
+            "target": "edge-a.example.",
+            "params": {
+              "alpn": [
+                "h3"
+              ],
+              "no-default-alpn": true
+            }
+          },
+          {
+            "priority": 2,
+            "target": "edge-b.example.",
+            "params": {
+              "alpn": [
+                "h3"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "addresses": {},
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "http/1.1"
+      ]
+    },
+    "client_observation": null,
+    "expected": {
+      "names": [
+        "reports.example."
+      ],
+      "answer": "service_mode",
+      "candidates": [
+        {
+          "priority": 2,
+          "target": "edge-b.example.",
+          "port": 443,
+          "alpns": [
+            "http/1.1"
+          ],
+          "resolved": [],
+          "hints": []
+        }
+      ],
+      "use": "not_observed",
+      "observed_endpoint": null
+    }
+  },
+  {
+    "id": "no_https_answer",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": []
+      }
+    },
+    "addresses": {},
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "h2",
+        "h3"
+      ]
+    },
+    "client_observation": {
+      "connected": true,
+      "destination": "192.0.2.22",
+      "port": 443,
+      "alpn": "h2",
+      "http_authority": "reports.example",
+      "tls_origin_verified": true
+    },
+    "expected": {
+      "names": [
+        "reports.example."
+      ],
+      "answer": "nodata",
+      "candidates": [],
+      "use": "request_h2",
+      "observed_endpoint": {
+        "destination": "192.0.2.22",
+        "port": 443
+      }
+    }
+  },
+  {
+    "id": "attempt_without_request",
+    "question": "reports.example.",
+    "origin_authority": "reports.example",
+    "origin_port": 443,
+    "answers": {
+      "reports.example.": {
+        "rcode": "NOERROR",
+        "records": [
+          {
+            "priority": 1,
+            "target": "edge-a.example.",
+            "params": {
+              "alpn": [
+                "h3"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "addresses": {},
+    "client": {
+      "keys": [
+        "alpn",
+        "no-default-alpn",
+        "mandatory",
+        "port",
+        "ipv4hint",
+        "ipv6hint"
+      ],
+      "alpns": [
+        "h2",
+        "h3"
+      ]
+    },
+    "client_observation": {
+      "connected": false,
+      "destination": "192.0.2.20",
+      "port": 443,
+      "alpn": null,
+      "http_authority": null,
+      "tls_origin_verified": false
+    },
+    "expected": {
+      "names": [
+        "reports.example."
+      ],
+      "answer": "service_mode",
+      "candidates": [
+        {
+          "priority": 1,
+          "target": "edge-a.example.",
+          "port": 443,
+          "alpns": [
+            "h3"
+          ],
+          "resolved": [],
+          "hints": []
+        }
+      ],
+      "use": "attempt_observed",
+      "observed_endpoint": {
+        "destination": "192.0.2.20",
+        "port": 443
+      }
+    }
+  }
+]

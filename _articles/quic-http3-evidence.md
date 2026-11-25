@@ -113,3 +113,5 @@ Use [UDP datagram evidence]({{ '/wiki/udp-datagram-evidence/' | relative_url }})
 ## Follow TLS resumption and early data
 
 [Investigate TLS 1.3 Resumption and 0-RTT]({{ '/wiki/tls-resumption-evidence/' | relative_url }}) distinguishes PSK offers, successful resumption and evidence of application processing.
+
+[Related · Trace DNS HTTPS records to actual connections]({{ '/wiki/dns-https-record-evidence/' | relative_url }})

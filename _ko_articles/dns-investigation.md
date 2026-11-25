@@ -242,3 +242,5 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## DNS의 TCP 재질의를 따라가기
 
 [DNS 응답 잘림과 TCP 재질의 조사]({{ '/ko/wiki/dns-tcp-fallback-evidence/' | relative_url }})에서 DNS 응답의 TC 플래그, TCP 전환과 최종 이름 해석 결과를 대조합니다.
+
+[관련 글 · DNS HTTPS 레코드와 실제 접속 경로]({{ '/ko/wiki/dns-https-record-evidence/' | relative_url }})

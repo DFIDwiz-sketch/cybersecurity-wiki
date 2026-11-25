@@ -113,3 +113,5 @@ curl --http3 --max-time 15 --silent --show-error --output /dev/null \
 ## TLS 세션 재개와 조기 데이터 이어서 읽기
 
 [TLS 1.3 세션 재개와 0-RTT 조사]({{ '/ko/wiki/tls-resumption-evidence/' | relative_url }})에서 PSK 제안, 재개 수락과 앱 요청 처리에 필요한 증거를 구분합니다.
+
+[관련 글 · DNS HTTPS 레코드와 실제 접속 경로]({{ '/ko/wiki/dns-https-record-evidence/' | relative_url }})

@@ -101,3 +101,5 @@ capture_gap: insufficient_evidence
 - 공급자의 바깥 이름 예시와 적용 범위. 2026년 4월 17일 갱신. [Cloudflare · ECH Protocol](https://developers.cloudflare.com/ssl/edge-certificates/ech/)
 
 [이전 · TLS 핸드셰이크 증거]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }}) · [다음 · DNS over HTTPS 조사]({{ '/ko/wiki/doh-resolution-evidence/' | relative_url }}) · [관련 · QUIC과 HTTP/3]({{ '/ko/wiki/quic-http3-evidence/' | relative_url }})
+
+[관련 글 · DNS HTTPS 레코드와 실제 접속 경로]({{ '/ko/wiki/dns-https-record-evidence/' | relative_url }})
