@@ -101,3 +101,7 @@ Reviewed 20 November 2026. RFC 2923 documents historical failure patterns. Use t
 ## Investigate IPv6 Router Advertisements
 
 [Compare the advertised route, prefix and DNS settings with endpoint evidence.]({{ '/wiki/ipv6-router-advertisement-evidence/' | relative_url }})
+
+## Separate hop expiry from packet size feedback
+
+Use [Traceroute and ICMP evidence]({{ '/wiki/icmp-hop-evidence/' | relative_url }}) to distinguish forwarding expiry and fragment reassembly timeout from size-related ICMP messages.

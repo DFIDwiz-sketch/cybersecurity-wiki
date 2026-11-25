@@ -101,3 +101,7 @@ P03, P04, P08의 차이를 설명하고 한 사례에 대해 수집 지점, 관�
 ## IPv6 라우터 광고와 단말 설정 대조
 
 [기본 경로, 접두사와 DNS 변경을 패킷과 단말 기록으로 확인합니다.]({{ '/ko/wiki/ipv6-router-advertisement-evidence/' | relative_url }})
+
+## 홉 만료와 패킷 크기 오류 구분하기
+
+[Traceroute와 ICMP 조사]({{ '/ko/wiki/icmp-hop-evidence/' | relative_url }})에서 전달 홉 만료와 조각 재조립 시간 초과를 패킷 크기 관련 ICMP 오류와 구분합니다.

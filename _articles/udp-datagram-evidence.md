@@ -83,3 +83,7 @@ Reviewed November 23, 2026. RFC 768 defines the wire header (1980). RFC 8085 pro
 ## Follow a DNS retry over TCP
 
 [Investigate DNS Truncation and TCP Fallback]({{ '/wiki/dns-tcp-fallback-evidence/' | relative_url }}) traces a truncation signal through the TCP exchange to the caller's result.
+
+## Investigate ICMP errors that quote a datagram
+
+Continue with [Traceroute and ICMP evidence]({{ '/wiki/icmp-hop-evidence/' | relative_url }}) to compare original and quoted UDP packets in an IPv4 and IPv6 capture.

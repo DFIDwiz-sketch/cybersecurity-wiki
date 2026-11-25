@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Identify a probe from its ICMP quote</title>
+  <desc id="desc">A TTL 1 probe expires at the first router. The outer IP header shows who sent the error. The quoted client, target and UDP ports can be compared with the original probe.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#28496c"/>
+    </marker>
+  </defs>
+  <rect width="480" height="360" rx="18" fill="#f5f8fe"/>
+  <g fill="#e8effc" stroke="#36557b" stroke-width="2">
+    <rect x="20" y="49" width="103" height="55" rx="9"/>
+    <rect x="190" y="49" width="103" height="55" rx="9"/>
+    <rect x="356" y="49" width="103" height="55" rx="9" stroke-dasharray="5 4"/>
+  </g>
+  <g fill="none" stroke="#28496c" stroke-width="2.5">
+    <path d="M123 77 H185" marker-end="url(#arrow)"/>
+    <path d="M293 77 H328" stroke-dasharray="5 4"/>
+    <path d="M321 70 L333 84 M333 70 L321 84"/>
+    <path d="M241 104 V155 H72 V109" marker-end="url(#arrow)"/>
+  </g>
+  <rect x="20" y="177" width="440" height="160" rx="10" fill="#e7f0fc" stroke="#36557b" stroke-width="2"/>
+  <rect x="41" y="252" width="398" height="68" rx="9" fill="#e3f3ea" stroke="#30674f" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#152b45">
+    <g font-weight="700" font-size="20">
+      <text x="71" y="84">Sender</text>
+      <text x="241" y="84">Router</text>
+      <text x="407" y="84">Target</text>
+      <text x="240" y="208">Outer IP + ICMP error</text>
+      <text x="240" y="279">Quoted original probe</text>
+    </g>
+    <g font-size="17">
+      <text x="153" y="34">TTL 1 probe</text>
+      <text x="328" y="34">TTL expires</text>
+      <text x="240" y="234">Router → sender · Type 11 / Code 0</text>
+      <text x="240" y="304">Sender → target · UDP ports</text>
+    </g>
+  </g>
+</svg>

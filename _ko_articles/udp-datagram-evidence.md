@@ -83,3 +83,7 @@ python3 udp-datagram-evidence.py
 ## DNS의 TCP 재질의를 따라가기
 
 [DNS 응답 잘림과 TCP 재질의 조사]({{ '/ko/wiki/dns-tcp-fallback-evidence/' | relative_url }})에서 DNS 응답의 TC 플래그, TCP 전환과 최종 이름 해석 결과를 대조합니다.
+
+## 데이터그램을 인용한 ICMP 오류 조사하기
+
+[Traceroute와 ICMP 조사]({{ '/ko/wiki/icmp-hop-evidence/' | relative_url }})에서 IPv4·IPv6 캡처의 UDP 원본과 인용 패킷을 대조합니다.
