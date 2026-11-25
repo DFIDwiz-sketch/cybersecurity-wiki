@@ -102,3 +102,5 @@ Reviewed November 23, 2026. These references describe the current Google Cloud s
 - Time-limited bearer access to a Cloud Storage resource. [Signed URLs](https://docs.cloud.google.com/storage/docs/access-control/signed-urls)
 
 [Compare · Amazon S3 object reads]({{ '/wiki/s3-object-read-evidence/' | relative_url }}) · [Related · Investigate audit log gaps]({{ '/wiki/cloudtrail-log-integrity/' | relative_url }})
+
+[Previous · Investigate service account impersonation]({{ '/wiki/gcp-service-account-impersonation-evidence/' | relative_url }})

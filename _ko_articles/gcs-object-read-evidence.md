@@ -102,3 +102,5 @@ no_matching_entry: no_event_observed
 - 정해진 시간 동안 URL 소지자에게 주는 접근 권한. [서명 URL](https://docs.cloud.google.com/storage/docs/access-control/signed-urls)
 
 [비교 · Amazon S3 객체 읽기]({{ '/ko/wiki/s3-object-read-evidence/' | relative_url }}) · [관련 · 감사 로그 공백 조사]({{ '/ko/wiki/cloudtrail-log-integrity/' | relative_url }})
+
+[이전 글 · 서비스 계정 위임 조사]({{ '/ko/wiki/gcp-service-account-impersonation-evidence/' | relative_url }})
