@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" role="img" aria-labelledby="title desc" lang="ko">
+ <title id="title">VLAN 태그와 센서 가시성 조사</title><desc id="desc">액세스 링크에서는 태그 없이 들어오고 스위치는 VLAN 20으로 분류합니다. 트렁크에는 태그가 붙지만 센서 사본은 설정에 따라 달라집니다.</desc>
+ <rect width="440" height="340" rx="14" fill="#0f172a"/>
+ <path d="M220 94v25m-4-5 4 5 4-5 M220 198v19h-105v27m-4-5 4 5 4-5 M220 217h105v27m-4-5 4 5 4-5" fill="none" stroke="#93c5fd" stroke-width="2"/>
+ <g font-family="system-ui, sans-serif">
+  <rect x="75" y="16" width="290" height="78" rx="10" fill="#172554" stroke="#60a5fa"/>
+  <text x="87" y="46" font-size="18" font-weight="700" fill="#f8fafc">액세스 링크</text>
+  <text x="87" y="71" font-size="14" fill="#dbeafe">태그 없는 프레임</text>
+  <rect x="75" y="120" width="290" height="78" rx="10" fill="#172554" stroke="#60a5fa"/>
+  <text x="87" y="150" font-size="18" font-weight="700" fill="#f8fafc">스위치 수신 분류</text>
+  <text x="87" y="175" font-size="14" fill="#dbeafe">포트 설정으로 VLAN 20 선택</text>
+  <rect x="16" y="245" width="198" height="78" rx="10" fill="#172554" stroke="#60a5fa"/>
+  <text x="28" y="275" font-size="18" font-weight="700" fill="#f8fafc">트렁크 관측</text>
+  <text x="28" y="300" font-size="14" fill="#dbeafe">C-태그 VID 20</text>
+  <rect x="226" y="245" width="198" height="78" rx="10" fill="#172554" stroke="#60a5fa"/>
+  <text x="238" y="275" font-size="18" font-weight="700" fill="#f8fafc">센서 사본</text>
+  <text x="238" y="300" font-size="14" fill="#dbeafe">태그 보존 여부 확인</text>
+ </g>
+</svg>

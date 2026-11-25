@@ -90,3 +90,7 @@ MAC이 세 개 나오면 구간 필터를 확인하세요. Probe가 주소 사�
 - [Wireshark ARP 표시 필드](https://www.wireshark.org/docs/dfref/a/arp.html) (Wireshark 4.6.10까지의 필드 문서).
 - [iproute2 이웃 테이블 매뉴얼](https://man7.org/linux/man-pages/man8/ip-neighbour.8.html) (Linux `ip neigh` 명령과 상태).
 - [Cisco Catalyst 9000 Dynamic ARP Inspection](https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/sec-crypto/fhs-sisf/fhs-and-sisf-configuration-guide/dynamic-arp-inspection.html) (IOS XE 17 계열).
+
+## VLAN 태그와 센서 가시성 이어서 읽기
+
+[VLAN 태그와 센서 가시성 조사]({{ '/ko/wiki/vlan-capture-evidence/' | relative_url }})에서 트렁크 태그와 캡처 사본의 차이를 비교합니다.

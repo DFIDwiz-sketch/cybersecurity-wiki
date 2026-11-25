@@ -90,3 +90,7 @@ Reviewed 2026-11-21. The early ARP specification describes Ethernet resolution. 
 - [Wireshark ARP display fields](https://www.wireshark.org/docs/dfref/a/arp.html) (reference through Wireshark 4.6.10).
 - [iproute2 neighbor table manual](https://man7.org/linux/man-pages/man8/ip-neighbour.8.html) (Linux `ip neigh` commands and states).
 - [Cisco Catalyst 9000 Dynamic ARP Inspection](https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/sec-crypto/fhs-sisf/fhs-and-sisf-configuration-guide/dynamic-arp-inspection.html) (IOS XE 17 family).
+
+## Follow VLAN tags across capture points
+
+[Investigate VLAN Tags and Sensor Visibility]({{ '/wiki/vlan-capture-evidence/' | relative_url }}) compares link encapsulation with sensor copies.

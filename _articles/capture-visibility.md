@@ -89,3 +89,7 @@ Reviewed 20 November 2026. Check installed versions and capture backend before i
 ## IPFIX export evidence
 
 When a router or firewall exports flow records, use [IPFIX export evidence]({{ '/wiki/ipfix-export-evidence/' | relative_url }}) to distinguish metering scope, transport continuity, template decoding and indexing.
+
+## Follow VLAN tags across capture points
+
+[Investigate VLAN Tags and Sensor Visibility]({{ '/wiki/vlan-capture-evidence/' | relative_url }}) compares link encapsulation with sensor copies.

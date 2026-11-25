@@ -89,3 +89,7 @@ Wireshark의 TCP 분석은 파일의 패킷 순서와 시퀀스 번호 분석 �
 ## IPFIX 흐름 기록 조사
 
 라우터나 방화벽이 흐름 레코드를 보내는 환경은 [IPFIX 흐름 기록 조사]({{ '/ko/wiki/ipfix-export-evidence/' | relative_url }})에서 이어서 학습하세요. 계측 범위, 전송 연속성, 템플릿 해석, 색인 단계를 구분합니다.
+
+## VLAN 태그와 센서 가시성 이어서 읽기
+
+[VLAN 태그와 센서 가시성 조사]({{ '/ko/wiki/vlan-capture-evidence/' | relative_url }})에서 트렁크 태그와 캡처 사본의 차이를 비교합니다.
