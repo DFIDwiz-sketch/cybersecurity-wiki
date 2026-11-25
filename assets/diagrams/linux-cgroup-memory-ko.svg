@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="400" viewBox="0 0 480 400" role="img" aria-labelledby="title description" xml:lang="ko">
+  <title id="title">메모리 압박과 종료 증거</title>
+  <desc id="description">워크로드를 식별하고 자원 상태를 비교한 뒤 독립 기록에서 종료 원인을 확인합니다.</desc>
+  <rect width="480" height="400" rx="16" fill="#101b2b"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 8 5 1 9" fill="none" stroke="#81e6d9" stroke-width="2"/></marker></defs>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="46" fill="#a2fff1" font-size="22" font-weight="700">1  워크로드 식별</text>
+    <text x="32" y="75" fill="#eff6ff" font-size="18">호스트, 부팅, cgroup 인스턴스를 기록합니다.</text>
+    <text x="32" y="100" fill="#eff6ff" font-size="18">말단 그룹과 상위 그룹의 한도를 확인합니다.</text>
+    <path d="M240 125v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="146" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="178" fill="#a2fff1" font-size="22" font-weight="700">2  메모리 압박 측정</text>
+    <text x="32" y="207" fill="#eff6ff" font-size="18">같은 범위의 카운터를 비교합니다.</text>
+    <text x="32" y="232" fill="#eff6ff" font-size="18">서비스 영향은 PSI와 응답 시간으로 살핍니다.</text>
+    <path d="M240 257v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="278" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="310" fill="#a2fff1" font-size="22" font-weight="700">3  종료 주체 확인</text>
+    <text x="32" y="339" fill="#eff6ff" font-size="18">대상과 커널·oomd 로그를 대조합니다.</text>
+    <text x="32" y="364" fill="#eff6ff" font-size="18">종료 상태와 종료 주체는 별도로 기록합니다.</text>
+  </g>
+</svg>

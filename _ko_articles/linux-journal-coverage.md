@@ -102,3 +102,5 @@ systemd 257에서 `Storage=volatile`은 `/run/log/journal`에 저장합니다. �
 ## Linux systemd 타이머 조사
 
 [Linux systemd 타이머 조사]({{ '/ko/wiki/systemd-timer-evidence/' | relative_url }}). 타이머 설정, 서비스 호출, 실제 작업 결과를 구분합니다.
+
+[관련 글 · cgroup 메모리 압박과 OOM 조사]({{ '/ko/wiki/linux-cgroup-memory-evidence/' | relative_url }})

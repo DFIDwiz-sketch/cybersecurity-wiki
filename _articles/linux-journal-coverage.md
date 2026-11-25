@@ -102,3 +102,5 @@ Reviewed 21 November 2026 against systemd 257.13 manuals. Distribution defaults,
 ## Investigate Linux systemd timers
 
 [Investigate Linux systemd timers]({{ '/wiki/systemd-timer-evidence/' | relative_url }}). Separate timer configuration, individual service runs, and application results.
+
+[Related · Investigate cgroup memory pressure and OOM kills]({{ '/wiki/linux-cgroup-memory-evidence/' | relative_url }})

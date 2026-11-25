@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="400" viewBox="0 0 480 400" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">Memory pressure and termination evidence</title>
+  <desc id="description">Workload, cgroup resource conditions, and independently correlated termination evidence.</desc>
+  <rect width="480" height="400" rx="16" fill="#101b2b"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 8 5 1 9" fill="none" stroke="#81e6d9" stroke-width="2"/></marker></defs>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="46" fill="#a2fff1" font-size="22" font-weight="700">1  Identify the workload</text>
+    <text x="32" y="75" fill="#eff6ff" font-size="18">Record host, boot and cgroup instance.</text>
+    <text x="32" y="100" fill="#eff6ff" font-size="18">Read the leaf and its ancestor limits.</text>
+    <path d="M240 125v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="146" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="178" fill="#a2fff1" font-size="22" font-weight="700">2  Measure memory pressure</text>
+    <text x="32" y="207" fill="#eff6ff" font-size="18">Compare counters in the same scope.</text>
+    <text x="32" y="232" fill="#eff6ff" font-size="18">Use PSI and service timing for impact.</text>
+    <path d="M240 257v17" stroke="#81e6d9" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="14" y="278" width="452" height="108" rx="12" fill="#1e3046" stroke="#5f7996"/>
+    <text x="32" y="310" fill="#a2fff1" font-size="22" font-weight="700">3  Attribute a termination</text>
+    <text x="32" y="339" fill="#eff6ff" font-size="18">Match kernel or oomd logs to the victim.</text>
+    <text x="32" y="364" fill="#eff6ff" font-size="18">Keep exit status and source separate.</text>
+  </g>
+</svg>

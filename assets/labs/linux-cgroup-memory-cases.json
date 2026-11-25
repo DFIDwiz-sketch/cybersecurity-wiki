@@ -1,0 +1,233 @@
+[
+  {
+    "id": "high_reclaim",
+    "before": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 5\nmax 0\noom 0\noom_kill 0\n"
+    },
+    "after": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 18\nmax 0\noom 0\noom_kill 0\n"
+    },
+    "observation": "The same process continues after a slow batch.",
+    "correlated_source": null,
+    "exit_status": null,
+    "expected": {
+      "comparison": "memory.events.local",
+      "delta": {
+        "high": 13,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "source": "unresolved"
+    }
+  },
+  {
+    "id": "max_without_kill",
+    "before": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\n"
+    },
+    "after": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 3\noom 0\noom_kill 0\n"
+    },
+    "observation": "The hard-boundary counter changed. No victim was correlated.",
+    "correlated_source": null,
+    "exit_status": null,
+    "expected": {
+      "comparison": "memory.events.local",
+      "delta": {
+        "high": 0,
+        "max": 3,
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "source": "unresolved"
+    }
+  },
+  {
+    "id": "memcg_kill",
+    "before": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\n"
+    },
+    "after": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 2\noom 1\noom_kill 1\n"
+    },
+    "observation": "Kernel record identifies the worker and the cgroup constraint.",
+    "correlated_source": "kernel_memcg",
+    "exit_status": 137,
+    "expected": {
+      "comparison": "memory.events.local",
+      "delta": {
+        "high": 0,
+        "max": 2,
+        "oom": 1,
+        "oom_kill": 1
+      },
+      "source": "kernel_memcg"
+    }
+  },
+  {
+    "id": "system_oom_kill",
+    "before": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\n"
+    },
+    "after": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 1\n"
+    },
+    "observation": "Kernel record identifies the worker as a victim of system-wide OOM.",
+    "correlated_source": "kernel_system",
+    "exit_status": 137,
+    "expected": {
+      "comparison": "memory.events.local",
+      "delta": {
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 1
+      },
+      "source": "kernel_system"
+    }
+  },
+  {
+    "id": "oomd_userspace",
+    "before": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\n"
+    },
+    "after": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\n"
+    },
+    "observation": "Matched oomd unit journal describes the selected group. Kill counter was not captured.",
+    "correlated_source": "oomd",
+    "exit_status": 137,
+    "expected": {
+      "comparison": "memory.events.local",
+      "delta": {
+        "high": 0,
+        "max": 0,
+        "oom": 0
+      },
+      "source": "oomd"
+    }
+  },
+  {
+    "id": "parent_only",
+    "before": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice",
+      "instance": "slice-a",
+      "file": "memory.events",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\n"
+    },
+    "after": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice",
+      "instance": "slice-a",
+      "file": "memory.events",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 1\n"
+    },
+    "observation": "Parent aggregate rose; no child sample or victim record.",
+    "correlated_source": null,
+    "exit_status": null,
+    "expected": {
+      "comparison": "memory.events",
+      "delta": {
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 1
+      },
+      "source": "unresolved"
+    }
+  },
+  {
+    "id": "instance_recreated",
+    "before": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-a",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 1\n"
+    },
+    "after": {
+      "node": "node-a",
+      "boot": "boot-1",
+      "group": "/report.slice/report-worker.service",
+      "instance": "worker-b",
+      "file": "memory.events.local",
+      "events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\n"
+    },
+    "observation": "The same path belongs to a new instance after restart.",
+    "correlated_source": null,
+    "exit_status": null,
+    "expected": {
+      "comparison": "different_scope",
+      "delta": {},
+      "source": "unresolved"
+    }
+  },
+  {
+    "id": "status_137_only",
+    "before": null,
+    "after": null,
+    "observation": "Only the runtime exit status was collected.",
+    "correlated_source": null,
+    "exit_status": 137,
+    "expected": {
+      "comparison": "missing_snapshot",
+      "delta": {},
+      "source": "unresolved"
+    }
+  }
+]

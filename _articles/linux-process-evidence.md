@@ -137,3 +137,5 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 ## Investigate open files and deleted paths
 
 [Investigate Linux Open Files and Deleted Paths]({{ '/wiki/linux-open-file-evidence/' | relative_url }}) follows an open descriptor across rotation and unlink.
+
+[Related · Investigate cgroup memory pressure and OOM kills]({{ '/wiki/linux-cgroup-memory-evidence/' | relative_url }})
