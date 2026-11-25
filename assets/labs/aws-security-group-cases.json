@@ -1,0 +1,204 @@
+[
+  {
+    "id": "01",
+    "expected": "AUTHORIZED_REQUEST",
+    "api": "accepted",
+    "attachment": "present",
+    "approved": true,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": [
+      {
+        "eni": "eni-app",
+        "direction": "ingress",
+        "protocol": 6,
+        "src": "10.20.8.24",
+        "sport": 51540,
+        "dst": "10.20.2.18",
+        "dport": 8443,
+        "window": "10:16Z",
+        "action": "ACCEPT",
+        "status": "OK"
+      }
+    ],
+    "corroborated_app_request": true
+  },
+  {
+    "id": "02",
+    "expected": "API_FAILED",
+    "api": "failed",
+    "attachment": "unknown",
+    "approved": false,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": []
+  },
+  {
+    "id": "03",
+    "expected": "UNATTACHED_IN_SCOPE",
+    "api": "accepted",
+    "attachment": "absent_in_complete_scope",
+    "approved": false,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": []
+  },
+  {
+    "id": "04",
+    "expected": "TARGET_TRAFFIC_UNRESOLVED",
+    "api": "accepted",
+    "attachment": "present",
+    "approved": false,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": [],
+    "coverage": "incomplete"
+  },
+  {
+    "id": "05",
+    "expected": "TRAFFIC_OBSERVED",
+    "api": "accepted",
+    "attachment": "present",
+    "approved": false,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": [
+      {
+        "eni": "eni-app",
+        "direction": "ingress",
+        "protocol": 6,
+        "src": "10.20.8.24",
+        "sport": 51540,
+        "dst": "10.20.2.18",
+        "dport": 8443,
+        "window": "10:16Z",
+        "action": "ACCEPT",
+        "status": "OK"
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "expected": "TARGET_TRAFFIC_UNRESOLVED",
+    "api": "accepted",
+    "attachment": "present",
+    "approved": false,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": [
+      {
+        "eni": "eni-other",
+        "direction": "ingress",
+        "protocol": 6,
+        "src": "10.20.8.24",
+        "sport": 51540,
+        "dst": "10.20.2.18",
+        "dport": 8443,
+        "window": "10:16Z",
+        "action": "ACCEPT",
+        "status": "OK"
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "expected": "ALTERNATE_ALLOW",
+    "api": "accepted",
+    "attachment": "present",
+    "approved": false,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": [],
+    "operation": "revoke",
+    "alternate_allow": true
+  },
+  {
+    "id": "08",
+    "expected": "TRACKED_FLOW_OBSERVED",
+    "api": "accepted",
+    "attachment": "present",
+    "approved": false,
+    "expected_flow": {
+      "eni": "eni-app",
+      "direction": "ingress",
+      "protocol": 6,
+      "src": "10.20.8.24",
+      "sport": 51540,
+      "dst": "10.20.2.18",
+      "dport": 8443,
+      "window": "10:16Z"
+    },
+    "flows": [
+      {
+        "eni": "eni-app",
+        "direction": "ingress",
+        "protocol": 6,
+        "src": "10.20.8.24",
+        "sport": 51540,
+        "dst": "10.20.2.18",
+        "dport": 8443,
+        "window": "10:16Z",
+        "action": "ACCEPT",
+        "status": "OK"
+      }
+    ],
+    "operation": "revoke",
+    "corroborated_existing_tracked_flow": true
+  }
+]

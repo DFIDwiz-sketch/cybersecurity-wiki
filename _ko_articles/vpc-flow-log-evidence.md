@@ -109,3 +109,7 @@ CSV를 찾지 못하면 파일 이름과 저장 위치를 확인합니다. 이�
 
 이전 학습 · [방화벽·NAT·네트워크 센서 증거 연결하기]({{ '/ko/wiki/firewall-nat-evidence/' | relative_url }})  
 다음 학습 · [Zeek conn.log 읽기]({{ '/ko/wiki/zeek-conn-evidence/' | relative_url }})
+
+## AWS 보안 그룹 조사
+
+[AWS 보안 그룹 조사 · 규칙 변경부터 실제 통신까지]({{ '/ko/wiki/aws-security-group-evidence/' | relative_url }})에서 규칙 변경, ENI 연결, 실제 트래픽 증거를 대조하는 방법을 실습합니다.

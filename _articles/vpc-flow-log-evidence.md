@@ -109,3 +109,7 @@ Reviewed **2026-11-21**. The field semantics refer to the Amazon VPC documentati
 
 Previous · [Firewall, NAT, and Network Sensor Evidence]({{ '/wiki/firewall-nat-evidence/' | relative_url }})  
 Next · [Zeek Connection Evidence]({{ '/wiki/zeek-conn-evidence/' | relative_url }})
+
+## AWS security group investigation
+
+[AWS Security Group Evidence · From Rule Change to Traffic]({{ '/wiki/aws-security-group-evidence/' | relative_url }}) shows how to tie the API decision to ENI attachment and corroborate network activity.

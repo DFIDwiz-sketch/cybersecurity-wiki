@@ -141,3 +141,7 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 ## Follow the key evidence
 
 [AWS KMS investigation]({{ '/wiki/aws-kms-evidence/' | relative_url }}) · Trace the key operation and check what CloudTrail and S3 can each establish.
+
+## AWS security group investigation
+
+[AWS Security Group Evidence · From Rule Change to Traffic]({{ '/wiki/aws-security-group-evidence/' | relative_url }}) shows how to tie the API decision to ENI attachment and corroborate network activity.

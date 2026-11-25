@@ -141,3 +141,7 @@ lab-04와 lab-06의 발급 주체를 각각 찾고, lab-07을 왜 연결하지 �
 ## 이어서 읽기
 
 [AWS KMS 조사 입문]({{ '/ko/wiki/aws-kms-evidence/' | relative_url }}) · 키를 사용한 호출과 S3 객체를 읽은 요청에서 각각 어떤 증거를 얻는지 살펴보세요.
+
+## AWS 보안 그룹 조사
+
+[AWS 보안 그룹 조사 · 규칙 변경부터 실제 통신까지]({{ '/ko/wiki/aws-security-group-evidence/' | relative_url }})에서 규칙 변경, ENI 연결, 실제 트래픽 증거를 대조하는 방법을 실습합니다.
