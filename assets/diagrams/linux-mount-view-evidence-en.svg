@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="388" viewBox="0 0 480 388" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">A path resolves in the process view</title>
+  <desc id="desc">The host and service resolve the same path through different mounts. Match the service's open file descriptor to a captured mount row using its mount ID.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#314763"/>
+    </marker>
+  </defs>
+  <rect width="480" height="388" rx="18" fill="#f5f8fe"/>
+  <rect x="74" y="18" width="332" height="48" rx="10" fill="#e6eefc" stroke="#365685" stroke-width="2"/>
+  <g fill="none" stroke="#314763" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M240 66 V88 H124 V110"/>
+    <path d="M240 88 H355 V110"/>
+    <path d="M124 191 V220"/>
+    <path d="M355 191 V220"/>
+    <path d="M355 285 V263" stroke-dasharray="5 3"/>
+  </g>
+  <g fill="#eef2f7" stroke="#48617f" stroke-width="2">
+    <rect x="18" y="114" width="212" height="77" rx="10"/>
+    <rect x="18" y="224" width="212" height="34" rx="8"/>
+  </g>
+  <g fill="#e3f4ed" stroke="#246548" stroke-width="2">
+    <rect x="249" y="114" width="212" height="77" rx="10"/>
+    <rect x="249" y="224" width="212" height="34" rx="8"/>
+    <rect x="249" y="285" width="212" height="77" rx="10"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" font-size="20" font-weight="700" fill="#172943">
+    <text x="240" y="49" font-family="monospace" font-size="18">/app/current/config.json</text>
+    <text x="124" y="146">Host view</text>
+    <text x="355" y="146">Service view</text>
+    <text x="124" y="247" font-size="17">Host file object</text>
+    <text x="355" y="247" font-size="17">Release file object</text>
+    <text x="355" y="318">Service FD</text>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" font-size="17" fill="#233e5e">
+    <text x="124" y="173">Host mount</text>
+    <text x="355" y="173">Release bind mount</text>
+    <text x="355" y="344" font-size="14">Match mnt_id to mountinfo</text>
+  </g>
+</svg>

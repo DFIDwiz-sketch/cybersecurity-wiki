@@ -107,3 +107,7 @@ TMPDIR="$PWD" python3 linux-file-permissions-lab.py
 ## SELinux 접근 거부 조사
 
 [SELinux AVC 조사]({{ '/ko/wiki/selinux-avc-evidence/' | relative_url }})에서 DAC와 SELinux 검사를 구분하고 같은 이벤트의 AVC와 시스템 호출을 연결하세요.
+
+## 권한 검사가 어느 객체에 적용됐는지 확인하기
+
+호스트와 서비스가 서로 다른 경로나 객체를 보는 경우 [Linux 마운트 네임스페이스 조사]({{ '/ko/wiki/linux-mount-view-evidence/' | relative_url }})로 프로세스의 뷰를 확인한 뒤 권한을 비교하세요.

@@ -1,0 +1,114 @@
+{
+  "scope": "Independent fictional snapshots. mnt_id represents a separately observed FD value.",
+  "cases": [
+    {
+      "id": "A",
+      "mnt_id": 31,
+      "mountinfo": [
+        "21 9 8:1 / / rw - ext4 /dev/example rw",
+        "31 21 8:1 /srv/releases/v2 /app/current ro shared:12 - ext4 /dev/example rw"
+      ],
+      "expected": {
+        "parent": 21,
+        "device": "8:1",
+        "root": "/srv/releases/v2",
+        "target": "/app/current",
+        "fstype": "ext4"
+      },
+      "note": "The filesystem root and visible mount point are different."
+    },
+    {
+      "id": "B",
+      "mnt_id": 40,
+      "mountinfo": [
+        "21 9 8:1 / / rw - ext4 /dev/example rw",
+        "90 21 8:1 /srv/base /data ro - ext4 /dev/example rw",
+        "40 90 0:42 / /data rw - tmpfs tmpfs rw"
+      ],
+      "expected": {
+        "parent": 90,
+        "device": "0:42",
+        "root": "/",
+        "target": "/data",
+        "fstype": "tmpfs"
+      },
+      "note": "An FD matches the upper mount. Its ID is smaller than the covered mount's ID."
+    },
+    {
+      "id": "C",
+      "mnt_id": 90,
+      "mountinfo": [
+        "21 9 8:1 / / rw - ext4 /dev/example rw",
+        "90 21 8:1 /srv/base /data ro - ext4 /dev/example rw",
+        "40 90 0:42 / /data rw - tmpfs tmpfs rw"
+      ],
+      "expected": {
+        "parent": 21,
+        "device": "8:1",
+        "root": "/srv/base",
+        "target": "/data",
+        "fstype": "ext4"
+      },
+      "note": "Another FD still refers to the covered mount in this snapshot."
+    },
+    {
+      "id": "D",
+      "mnt_id": 77,
+      "mountinfo": [
+        "21 9 8:1 / / rw - ext4 /dev/example rw",
+        "90 21 8:1 /srv/base /data ro - ext4 /dev/example rw",
+        "40 90 0:42 / /data rw - tmpfs tmpfs rw"
+      ],
+      "expected": null,
+      "note": "No corresponding row was visible when mountinfo was captured."
+    },
+    {
+      "id": "E",
+      "mnt_id": 55,
+      "mountinfo": [
+        "21 9 8:1 / / rw - ext4 /dev/example rw",
+        "55 21 8:1 /srv/build\\040area /work\\040dir ro - ext4 /dev/example rw"
+      ],
+      "expected": {
+        "parent": 21,
+        "device": "8:1",
+        "root": "/srv/build area",
+        "target": "/work dir",
+        "fstype": "ext4"
+      },
+      "note": "Decode escaped spaces after splitting fields."
+    },
+    {
+      "id": "F",
+      "mnt_id": 81,
+      "mountinfo": [
+        "21 9 8:1 / / rw - ext4 /dev/example rw",
+        "81 21 0:51 / /merged rw - overlay overlay rw"
+      ],
+      "expected": {
+        "parent": 21,
+        "device": "0:51",
+        "root": "/",
+        "target": "/merged",
+        "fstype": "overlay"
+      },
+      "note": "The exposed view is overlay. The row by itself identifies no backing object."
+    },
+    {
+      "id": "G",
+      "mnt_id": 31,
+      "mountinfo": [
+        "21 9 8:1 / / rw - ext4 /dev/example rw",
+        "31 21 0:53 / /app/current rw - tmpfs tmpfs rw"
+      ],
+      "expected": {
+        "parent": 21,
+        "device": "0:53",
+        "root": "/",
+        "target": "/app/current",
+        "fstype": "tmpfs"
+      },
+      "note": "A separate fictional snapshot reuses the numeric ID and path for a different mount."
+    }
+  ]
+}

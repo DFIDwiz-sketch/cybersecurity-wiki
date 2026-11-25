@@ -102,3 +102,7 @@ Reviewed **2026-11-25**. Linux man-pages 6.19 and current kernel documentation d
 
 Previous · [Linux process evidence]({{ '/wiki/linux-process-evidence/' | relative_url }})  
 Next · [Linux Audit file evidence]({{ '/wiki/linux-audit-file-evidence/' | relative_url }}) · [ELF runtime and mappings]({{ '/wiki/linux-elf-runtime-evidence/' | relative_url }})
+
+## Trace the directory view behind an open file
+
+Use [Linux mount namespace evidence]({{ '/wiki/linux-mount-view-evidence/' | relative_url }}) to compare the process root, mountinfo and the mount ID of an open descriptor.

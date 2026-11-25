@@ -102,3 +102,7 @@ python3 linux-open-file-lab.py
 
 이전 학습 · [Linux 프로세스 증거]({{ '/ko/wiki/linux-process-evidence/' | relative_url }})  
 다음 학습 · [Linux Audit 파일 증거]({{ '/ko/wiki/linux-audit-file-evidence/' | relative_url }}) · [ELF와 실행 중 매핑]({{ '/ko/wiki/linux-elf-runtime-evidence/' | relative_url }})
+
+## 열린 파일 뒤의 마운트 뷰 확인하기
+
+[Linux 마운트 네임스페이스 조사]({{ '/ko/wiki/linux-mount-view-evidence/' | relative_url }})에서 프로세스 루트, mountinfo, 열린 FD의 마운트 ID를 대조합니다.

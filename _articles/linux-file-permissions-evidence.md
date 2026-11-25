@@ -107,3 +107,7 @@ Reviewed 21 November 2026. Use the documentation for the installed kernel, ACL t
 ## Investigate an SELinux denial
 
 Use [SELinux AVC evidence]({{ '/wiki/selinux-avc-evidence/' | relative_url }}) to distinguish DAC from SELinux checks and join AVC with syscall evidence.
+
+## Check which object received the permission check
+
+When the service and host see different paths or objects, use [Linux mount namespace evidence]({{ '/wiki/linux-mount-view-evidence/' | relative_url }}) to establish the process view before comparing permissions.
