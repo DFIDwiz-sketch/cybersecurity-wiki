@@ -1,0 +1,312 @@
+{
+  "scope": "Fictional already-correlated telemetry, independent cases. Bodies are harmless text used to model digest comparisons. No Windows filesystem or network access. In F, text stands in for the bytes of a fictional executable.",
+  "lifetime": "Hypothetical collector-added key, not a native Sysmon field.",
+  "image_matched": "Independent, simulated process-image observation. A file start must not be inferred from a stream writer.",
+  "equal_body_controls": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "A",
+      "H"
+    ]
+  ],
+  "cases": [
+    {
+      "id": "A",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://download.example.invalid/report.txt\n"
+      },
+      "events": [
+        {
+          "id": 15,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 15,
+          "body_sha256": "32f72eb7af20a3737b41d66f149af80f6434c405e27514365da4f909e89a5c39",
+          "target": "C:\\Users\\analyst\\Downloads\\report.txt:Zone.Identifier"
+        }
+      ],
+      "expected": [
+        "internet",
+        "stream-create-observed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "B",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-B",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "absent",
+        "stream": null
+      },
+      "events": [],
+      "expected": [
+        "absent-at-collection",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "C",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "absent",
+        "stream": null
+      },
+      "events": [
+        {
+          "id": 15,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 15,
+          "body_sha256": "32f72eb7af20a3737b41d66f149af80f6434c405e27514365da4f909e89a5c39",
+          "target": "C:\\Users\\analyst\\Downloads\\report.txt:Zone.Identifier"
+        }
+      ],
+      "expected": [
+        "absent-at-collection",
+        "stream-create-observed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "D",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://download.example.invalid/report.txt\n"
+      },
+      "events": [
+        {
+          "id": 15,
+          "host": "fixture-a",
+          "lifetime": "file-old",
+          "time": 15,
+          "body_sha256": "32f72eb7af20a3737b41d66f149af80f6434c405e27514365da4f909e89a5c39",
+          "target": "C:\\Users\\analyst\\Downloads\\report.txt:Zone.Identifier"
+        }
+      ],
+      "expected": [
+        "internet",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "E",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "unavailable",
+        "stream": null
+      },
+      "events": [],
+      "expected": [
+        "unavailable",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "F",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Stand-in bytes for a fictional executable.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=4\n"
+      },
+      "events": [
+        {
+          "id": 15,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 18,
+          "body_sha256": "020acc6858528ec0eb5d61a7b5cfa4c6ed6a6c1f67008ec640edd5f0a0d2e25e",
+          "target": "C:\\Users\\analyst\\Downloads\\demo.exe:Zone.Identifier"
+        },
+        {
+          "id": 1,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 30,
+          "body_sha256": "020acc6858528ec0eb5d61a7b5cfa4c6ed6a6c1f67008ec640edd5f0a0d2e25e",
+          "image_matched": true
+        }
+      ],
+      "expected": [
+        "restricted",
+        "stream-create-observed",
+        "process-start-observed"
+      ]
+    },
+    {
+      "id": "G",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=3\nZoneId=2\n"
+      },
+      "events": [],
+      "expected": [
+        "uninterpretable",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "H",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=2\n"
+      },
+      "events": [],
+      "expected": [
+        "trusted",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "I",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://download.example.invalid/report.txt\n"
+      },
+      "events": [
+        {
+          "id": 15,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 15,
+          "body_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+          "target": "C:\\Users\\analyst\\Downloads\\report.txt:Zone.Identifier"
+        }
+      ],
+      "expected": [
+        "internet",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "J",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nHostUrl=https://download.example.invalid/report.txt\n"
+      },
+      "events": [],
+      "expected": [
+        "uninterpretable",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "K",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://download.example.invalid/report.txt\n"
+      },
+      "events": [
+        {
+          "id": 15,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 9,
+          "body_sha256": "32f72eb7af20a3737b41d66f149af80f6434c405e27514365da4f909e89a5c39",
+          "target": "C:\\Users\\analyst\\Downloads\\report.txt:Zone.Identifier"
+        }
+      ],
+      "expected": [
+        "internet",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    },
+    {
+      "id": "L",
+      "artifact": {
+        "host": "fixture-a",
+        "lifetime": "file-A",
+        "born": 10,
+        "collected": 90,
+        "body": "Example training report. No executable content.\n",
+        "capture": "read",
+        "stream": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://download.example.invalid/report.txt\n"
+      },
+      "events": [
+        {
+          "id": 15,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 15,
+          "body_sha256": "32f72eb7af20a3737b41d66f149af80f6434c405e27514365da4f909e89a5c39",
+          "target": "C:\\Users\\analyst\\Downloads\\report.txt:other"
+        },
+        {
+          "id": 1,
+          "host": "fixture-a",
+          "lifetime": "file-A",
+          "time": 30,
+          "body_sha256": "32f72eb7af20a3737b41d66f149af80f6434c405e27514365da4f909e89a5c39",
+          "image_matched": false
+        }
+      ],
+      "expected": [
+        "internet",
+        "stream-create-unconfirmed",
+        "process-start-unconfirmed"
+      ]
+    }
+  ]
+}

@@ -324,3 +324,7 @@ Use the [Windows Incident Response Lab]({{ '/wiki/windows-incident-response-lab/
 [Investigate Windows WFP Connection Decisions]({{ '/wiki/windows-wfp-connection-evidence/' | relative_url }}) traces local 5156 and 5157 decisions alongside process and service evidence.
 
 [Related · Investigate process creation with 4688 and 4689]({{ '/wiki/windows-process-creation-evidence/' | relative_url }})
+
+## Interpret stream creation and download markers
+
+Use [Windows Mark of the Web evidence]({{ '/wiki/windows-motw-evidence/' | relative_url }}) to connect Sysmon 15 to the correct file lifetime and corroborate execution separately.

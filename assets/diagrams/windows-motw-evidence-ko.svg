@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="378" viewBox="0 0 480 378" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Windows 파일과 스트림 증거</title>
+  <desc id="desc">NTFS 파일에는 본문과 Zone.Identifier 스트림이 있습니다. 본문 해시로 바이트를 비교합니다. Sysmon 15는 이름 있는 스트림의 생성을 기록할 수 있습니다. 이후 실행은 별도로 검증합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#304968"/>
+    </marker>
+  </defs>
+  <rect width="480" height="378" rx="18" fill="#f5f8fe"/>
+  <g fill="#e8effb" stroke="#395981" stroke-width="2">
+    <rect x="89" y="25" width="302" height="58" rx="10"/>
+    <rect x="16" y="124" width="216" height="82" rx="10"/>
+    <rect x="248" y="124" width="216" height="82" rx="10"/>
+  </g>
+  <g fill="#e2f2e9" stroke="#35694f" stroke-width="2">
+    <rect x="16" y="281" width="216" height="72" rx="10"/>
+    <rect x="248" y="281" width="216" height="72" rx="10"/>
+  </g>
+  <g fill="none" stroke="#304968" stroke-width="2.5">
+    <path d="M240 83 V100 H124 V119" marker-end="url(#arrow)"/>
+    <path d="M240 100 H356 V119" marker-end="url(#arrow)"/>
+    <path d="M356 206 V276" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#183252">
+    <g font-weight="700" font-size="20">
+      <text x="240" y="61">수집한 NTFS 파일</text>
+      <text x="124" y="156">이름 없는 스트림</text>
+      <text x="356" y="156">이름 있는 스트림</text>
+      <text x="124" y="311" font-size="15">독립적인 실행 증거</text>
+      <text x="356" y="311">Sysmon 이벤트 15</text>
+    </g>
+    <g font-size="16">
+      <text x="124" y="181">본문 SHA-256</text>
+      <text x="356" y="181">Zone.Identifier</text>
+      <text x="124" y="335">프로세스가 시작됐다면</text>
+      <text x="356" y="335" font-size="14">스트림 생성이 기록됐다면</text>
+    </g>
+  </g>
+</svg>

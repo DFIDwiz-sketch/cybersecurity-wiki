@@ -324,3 +324,7 @@ PID 재사용과 부모 GUID 연결을 설명하고 필터로 제외될 활동 �
 [Windows WFP 연결 허용·차단 조사]({{ '/ko/wiki/windows-wfp-connection-evidence/' | relative_url }})에서 Security 5156·5157의 로컬 판단을 프로세스와 서비스 증거에 대조합니다.
 
 [관련 글 · 4688과 4689로 프로세스 생성 조사]({{ '/ko/wiki/windows-process-creation-evidence/' | relative_url }})
+
+## 스트림 생성과 다운로드 표시 해석하기
+
+[Windows Mark of the Web 조사]({{ '/ko/wiki/windows-motw-evidence/' | relative_url }})에서 Sysmon 이벤트 15를 정확한 파일 수명과 대조하고 실행 여부는 별도 근거로 확인합니다.

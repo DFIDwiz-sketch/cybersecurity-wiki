@@ -110,3 +110,7 @@ Reviewed **2026-11-21**. The command reference covers Windows 10/11 and Windows 
 
 Previous · [Windows File Share Auditing]({{ '/wiki/smb-file-audit-evidence/' | relative_url }})  
 Next · [Preserving Digital Evidence]({{ '/wiki/evidence-preservation/' | relative_url }})
+
+## Distinguish file contents from zone metadata
+
+Continue with [Windows Mark of the Web evidence]({{ '/wiki/windows-motw-evidence/' | relative_url }}) to compare the unnamed file stream, Zone.Identifier and named-stream creation telemetry.

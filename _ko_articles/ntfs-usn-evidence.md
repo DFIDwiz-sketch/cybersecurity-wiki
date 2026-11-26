@@ -110,3 +110,7 @@ python3 ntfs-usn-review.py
 
 이전 학습 · [Windows 파일 공유 감사]({{ '/ko/wiki/smb-file-audit-evidence/' | relative_url }})  
 다음 학습 · [디지털 증거 보존]({{ '/ko/wiki/evidence-preservation/' | relative_url }})
+
+## 파일 본문과 영역 메타데이터 구분하기
+
+[Windows Mark of the Web 조사]({{ '/ko/wiki/windows-motw-evidence/' | relative_url }})에서 이름 없는 파일 스트림, Zone.Identifier, 이름 있는 스트림 생성 기록을 비교합니다.
