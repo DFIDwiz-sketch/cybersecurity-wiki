@@ -1,0 +1,249 @@
+{
+  "description": "Fictional observations. Surface and session labels have been correlated for this exercise. No tokens or Entra log exports.",
+  "cases": [
+    {
+      "id": "A",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "refresh",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "refresh",
+        "session": "old-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "expected": "refresh-revoked"
+    },
+    {
+      "id": "B",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "allowed",
+        "reason": null
+      },
+      "expected": "old-resource-access-observed"
+    },
+    {
+      "id": "C",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "app-session",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "app-session",
+        "session": "old-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "allowed",
+        "reason": null
+      },
+      "expected": "app-session-access-observed"
+    },
+    {
+      "id": "D",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "challenged",
+        "reason": "insufficient-claims"
+      },
+      "expected": "challenge-only"
+    },
+    {
+      "id": "E",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "denied",
+        "reason": "revoked"
+      },
+      "expected": "resource-denial-linked"
+    },
+    {
+      "id": "F",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": null,
+      "expected": "downstream-unobserved"
+    },
+    {
+      "id": "G",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "refresh",
+        "session": "old-session",
+        "external_user": true
+      },
+      "action": {
+        "tenant": "lab-resource",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "refresh",
+        "session": "old-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "allowed",
+        "reason": null
+      },
+      "expected": "home-tenant-outside-scope"
+    },
+    {
+      "id": "H",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "new-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "allowed",
+        "reason": null
+      },
+      "expected": "different-session"
+    },
+    {
+      "id": "I",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "success"
+      },
+      "observation": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "time": "2026-11-27T09:14:00Z",
+        "outcome": "denied",
+        "reason": null
+      },
+      "expected": "denial-reason-unconfirmed"
+    },
+    {
+      "id": "J",
+      "scope": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "surface": "resource",
+        "session": "old-session",
+        "external_user": false
+      },
+      "action": {
+        "tenant": "lab-home",
+        "user": "lab-user",
+        "time": "2026-11-27T09:10:00Z",
+        "result": "failure"
+      },
+      "observation": null,
+      "expected": "action-failed"
+    }
+  ]
+}

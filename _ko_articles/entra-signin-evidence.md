@@ -127,3 +127,7 @@ SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/
 ## 인증된 주체의 Key Vault 응답 확인하기
 
 [Azure Key Vault 비밀 조회 조사]({{ '/ko/wiki/azure-key-vault-read-evidence/' | relative_url }})에서 신원 기록을 볼트 데이터 작업, 결과와 비밀 버전 증거에 연결합니다.
+
+## Entra 세션 취소가 적용됐는지 확인하기
+
+[Entra 세션 취소 증거]({{ '/ko/wiki/entra-session-revocation-evidence/' | relative_url }})에서는 관리 작업 기록 이후에 토큰 서비스와 리소스, 앱 세션을 각각 확인합니다.

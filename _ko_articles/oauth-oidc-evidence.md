@@ -127,3 +127,7 @@ SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/
 ## JWT 서명 키 교체를 추적하기
 
 [JWT 서명 키 교체 조사]({{ '/ko/wiki/jwt-key-rotation-evidence/' | relative_url }})에서 어느 검증기가 토큰을 거부했는지 찾고 캐시 미스와 서명·토큰 정책 오류를 구분합니다.
+
+## Entra 세션 취소가 적용됐는지 확인하기
+
+[Entra 세션 취소 증거]({{ '/ko/wiki/entra-session-revocation-evidence/' | relative_url }})에서는 관리 작업 기록 이후에 토큰 서비스와 리소스, 앱 세션을 각각 확인합니다.

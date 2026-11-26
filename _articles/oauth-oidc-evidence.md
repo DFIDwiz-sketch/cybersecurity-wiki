@@ -127,3 +127,7 @@ For browser SSO with a SAML assertion, follow the [SAML SSO investigation guide]
 ## Trace a signing-key rollover
 
 Continue with [JWT key rotation evidence]({{ '/wiki/jwt-key-rotation-evidence/' | relative_url }}) to locate which verifier rejected a token and separate a cache miss from a cryptographic or token-policy failure.
+
+## Verify an Entra session revocation
+
+[Entra session revocation evidence]({{ '/wiki/entra-session-revocation-evidence/' | relative_url }}) separates the administrative action from token service, resource and application-session outcomes.

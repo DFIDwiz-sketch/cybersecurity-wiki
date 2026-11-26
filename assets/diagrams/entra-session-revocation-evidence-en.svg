@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="306" viewBox="0 0 420 306" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Three checks after Entra revocation</title>
+  <desc id="desc">The directory records the revocation. Check whether the issuer rejects refresh, whether the resource still accepts the existing access token, and whether the application ends its own session.</desc>
+  <rect x="1" y="1" width="418" height="304" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0l10 5-10 5Z" fill="#475569"/></marker></defs>
+  <g stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M210 53v18"/><path d="M210 107v15H74v15"/><path d="M210 107v30"/><path d="M210 107v15h136v15"/>
+    <path d="M74 209v17h55v14"/><path d="M210 209v31"/><path d="M346 209v17h-55v14"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <rect x="49" y="17" width="322" height="36" rx="8" fill="#e2e8f0" stroke="#475569"/>
+    <text x="210" y="40" font-size="17" font-weight="700">Directory revocation</text>
+    <rect x="49" y="72" width="322" height="35" rx="8" fill="#e2e8f0" stroke="#475569"/>
+    <text x="210" y="95" font-size="16" font-weight="700">Check each enforcement path</text>
+    <rect x="10" y="138" width="128" height="71" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <text x="74" y="166" font-size="15" font-weight="700">Token issuer</text>
+    <text x="74" y="190" font-size="13">Refresh result</text>
+    <rect x="146" y="138" width="128" height="71" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="166" font-size="15" font-weight="700">Resource API</text>
+    <text x="210" y="190" font-size="13">Access decision</text>
+    <rect x="282" y="138" width="128" height="71" rx="8" fill="#fef3c7" stroke="#92400e"/>
+    <text x="346" y="166" font-size="15" font-weight="700">Application</text>
+    <text x="346" y="190" font-size="13">Session result</text>
+    <rect x="49" y="241" width="322" height="42" rx="8" fill="#e2e8f0" stroke="#475569"/>
+    <text x="210" y="268" font-size="16" font-weight="700">Record the evidence and scope</text>
+  </g>
+</svg>

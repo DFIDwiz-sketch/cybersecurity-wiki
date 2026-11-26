@@ -127,3 +127,7 @@ When a downstream API validates JWTs, use [JWT key rotation evidence]({{ '/wiki/
 ## Follow an authenticated principal to a Key Vault response
 
 Use [Azure Key Vault secret-read evidence]({{ '/wiki/azure-key-vault-read-evidence/' | relative_url }}) to compare the identity observation with a vault data-plane operation, result and secret-version evidence.
+
+## Verify an Entra session revocation
+
+[Entra session revocation evidence]({{ '/wiki/entra-session-revocation-evidence/' | relative_url }}) separates the administrative action from token service, resource and application-session outcomes.
