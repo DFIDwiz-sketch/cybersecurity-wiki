@@ -102,3 +102,5 @@ python3 s3-block-public-access-evidence.py
 ## AWS Organizations 정책 경로 확인하기
 
 [AWS 서비스 제어 정책 증거]({{ '/ko/wiki/aws-scp-evaluation-evidence/' | relative_url }})에서 실제 호출자 계정의 조직 경로와 SCP 거부를 조사하는 방법을 살펴보세요.
+
+[심화 학습. S3 사전 서명 URL의 발급, 사용, 만료를 추적합니다.]({{ '/ko/wiki/s3-presigned-url-evidence/' | relative_url }})

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 362" width="560" height="362" lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">Presigned GET evidence</title>
+  <desc id="desc">S3 checks the holder’s signed GET. CloudTrail and access logs are joined by S3 request ID. Correlate app issuance by signer, scope and time.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#83dbc8"/>
+    </marker>
+  </defs>
+  <rect width="560" height="362" rx="14" fill="#101a29"/>
+  <g fill="#172a3c" stroke="#83dbc8" stroke-width="1.5">
+    <rect x="20" y="18" width="250" height="68" rx="10"/>
+    <rect x="290" y="18" width="250" height="68" rx="10"/>
+    <rect x="142" y="114" width="276" height="66" rx="10"/>
+    <rect x="20" y="211" width="250" height="62" rx="10"/>
+    <rect x="290" y="211" width="250" height="62" rx="10"/>
+    <rect x="80" y="300" width="400" height="45" rx="10"/>
+  </g>
+  <g fill="none" stroke="#83dbc8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M271 52H287"/>
+    <path d="M415 86L350 111"/>
+    <path d="M220 180L147 208"/>
+    <path d="M340 180L413 208"/>
+    <path d="M145 273L223 297"/>
+    <path d="M415 273L337 297"/>
+  </g>
+  <path d="M60 86H12V321H77" fill="none" stroke="#83dbc8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+  <g fill="#f3f7fc" font-family="system-ui, sans-serif" text-anchor="middle">
+    <g font-size="19" font-weight="700">
+      <text x="145" y="44">Application</text>
+      <text x="415" y="44">Link holder</text>
+      <text x="280" y="140">S3 evaluates the request</text>
+      <text x="145" y="235">CloudTrail data event</text>
+      <text x="415" y="235">S3 access log</text>
+    </g>
+    <g font-size="15">
+      <text x="145" y="68">Logs intended recipient and issuance</text>
+      <text x="415" y="68">Presents signed GET to S3</text>
+      <text x="280" y="163">Signature, expiry and permissions</text>
+      <text x="145" y="257">Request ID and signing session</text>
+      <text x="415" y="257">Request ID, status and bytes</text>
+      <text x="280" y="319">Join the S3 records by request ID</text>
+      <text x="280" y="337">Correlate issuance by signer, scope and time</text>
+    </g>
+  </g>
+</svg>

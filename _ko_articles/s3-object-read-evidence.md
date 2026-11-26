@@ -110,3 +110,5 @@ python3 s3-read-review.py
 ## S3 퍼블릭 액세스 설정 조사
 
 [S3 퍼블릭 액세스 차단]({{ '/ko/wiki/s3-block-public-access-evidence/' | relative_url }})에서 적용된 제한과 버킷 직접 요청의 증거를 대조하세요.
+
+[심화 학습. S3 사전 서명 URL의 발급, 사용, 만료를 추적합니다.]({{ '/ko/wiki/s3-presigned-url-evidence/' | relative_url }})

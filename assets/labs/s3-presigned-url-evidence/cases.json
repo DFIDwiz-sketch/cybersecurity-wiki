@@ -1,0 +1,400 @@
+{
+  "description": "Fictional normalized evidence. No AWS request or credential material.",
+  "cases": [
+    {
+      "id": "unique-issuance-full-response",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "GetObject",
+        "eventTime": "2026-11-27T10:02:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-1",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "X-Amz-Expires": "300"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "QueryString"
+        }
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": {
+        "account": "111122223333",
+        "bucket": "fictional-wiki-reports",
+        "key": "reports/demo.txt",
+        "operation": "GetObject",
+        "request_id": "FICTIONAL-REQUEST-1",
+        "status": 200,
+        "bytes_sent": 8192
+      },
+      "expected": {
+        "kind": "presigned-get-candidate",
+        "issuance_matches": 1,
+        "response": 200,
+        "object_bytes": 8192
+      }
+    },
+    {
+      "id": "query-auth-without-expiry-marker",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "GetObject",
+        "eventTime": "2026-11-27T10:02:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-2",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "QueryString"
+        }
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": {
+        "account": "111122223333",
+        "bucket": "fictional-wiki-reports",
+        "key": "reports/demo.txt",
+        "operation": "GetObject",
+        "request_id": "FICTIONAL-REQUEST-2",
+        "status": 200,
+        "bytes_sent": 8192
+      },
+      "expected": {
+        "kind": "query-signed-uncertain",
+        "issuance_matches": null,
+        "response": null,
+        "object_bytes": null
+      }
+    },
+    {
+      "id": "denied-after-session-expiry",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "GetObject",
+        "eventTime": "2026-11-27T10:04:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-3",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "X-Amz-Expires": "300"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "QueryString"
+        },
+        "errorCode": "AccessDenied"
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": {
+        "account": "111122223333",
+        "bucket": "fictional-wiki-reports",
+        "key": "reports/demo.txt",
+        "operation": "GetObject",
+        "request_id": "FICTIONAL-REQUEST-3",
+        "status": 403,
+        "bytes_sent": 187
+      },
+      "expected": {
+        "kind": "presigned-get-candidate",
+        "issuance_matches": 0,
+        "response": 403,
+        "object_bytes": null
+      }
+    },
+    {
+      "id": "missing-access-log",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "GetObject",
+        "eventTime": "2026-11-27T10:02:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-4",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "X-Amz-Expires": "300"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "QueryString"
+        }
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": null,
+      "expected": {
+        "kind": "presigned-get-candidate",
+        "issuance_matches": 1,
+        "response": null,
+        "object_bytes": null
+      }
+    },
+    {
+      "id": "overlap-partial-response",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "GetObject",
+        "eventTime": "2026-11-27T10:02:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-5",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "X-Amz-Expires": "300"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "QueryString"
+        }
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        },
+        {
+          "id": "fictional-issuance-b",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:01:00Z",
+          "url_expires_at": "2026-11-27T10:06:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": {
+        "account": "111122223333",
+        "bucket": "fictional-wiki-reports",
+        "key": "reports/demo.txt",
+        "operation": "GetObject",
+        "request_id": "FICTIONAL-REQUEST-5",
+        "status": 206,
+        "bytes_sent": 1024
+      },
+      "expected": {
+        "kind": "presigned-get-candidate",
+        "issuance_matches": 2,
+        "response": 206,
+        "object_bytes": 1024
+      }
+    },
+    {
+      "id": "other-bucket-same-request-id",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "GetObject",
+        "eventTime": "2026-11-27T10:02:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-6",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "X-Amz-Expires": "300"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "QueryString"
+        }
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": {
+        "account": "111122223333",
+        "bucket": "fictional-unrelated-bucket",
+        "key": "reports/demo.txt",
+        "operation": "GetObject",
+        "request_id": "FICTIONAL-REQUEST-6",
+        "status": 200,
+        "bytes_sent": 8192
+      },
+      "expected": {
+        "kind": "presigned-get-candidate",
+        "issuance_matches": 1,
+        "response": null,
+        "object_bytes": null
+      }
+    },
+    {
+      "id": "header-auth-with-expiry-marker",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "GetObject",
+        "eventTime": "2026-11-27T10:02:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-7",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "X-Amz-Expires": "300"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "AuthHeader"
+        }
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": {
+        "account": "111122223333",
+        "bucket": "fictional-wiki-reports",
+        "key": "reports/demo.txt",
+        "operation": "GetObject",
+        "request_id": "FICTIONAL-REQUEST-7",
+        "status": 200,
+        "bytes_sent": 8192
+      },
+      "expected": {
+        "kind": "outside-scope",
+        "issuance_matches": null,
+        "response": null,
+        "object_bytes": null
+      }
+    },
+    {
+      "id": "metadata-read",
+      "event": {
+        "eventSource": "s3.amazonaws.com",
+        "eventCategory": "Data",
+        "eventName": "HeadObject",
+        "eventTime": "2026-11-27T10:02:00Z",
+        "recipientAccountId": "111122223333",
+        "userIdentity": {
+          "arn": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab"
+        },
+        "requestID": "FICTIONAL-REQUEST-8",
+        "requestParameters": {
+          "bucketName": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "X-Amz-Expires": "300"
+        },
+        "additionalEventData": {
+          "AuthenticationMethod": "QueryString"
+        }
+      },
+      "issuances": [
+        {
+          "id": "fictional-issuance-a",
+          "account": "111122223333",
+          "bucket": "fictional-wiki-reports",
+          "key": "reports/demo.txt",
+          "operation": "GetObject",
+          "signer": "arn:aws:sts::111122223333:assumed-role/FictionalReports/writing-lab",
+          "issued_at": "2026-11-27T10:00:00Z",
+          "url_expires_at": "2026-11-27T10:05:00Z",
+          "credential_expires_at": "2026-11-27T10:03:00Z"
+        }
+      ],
+      "access": null,
+      "expected": {
+        "kind": "outside-scope",
+        "issuance_matches": null,
+        "response": null,
+        "object_bytes": null
+      }
+    }
+  ]
+}

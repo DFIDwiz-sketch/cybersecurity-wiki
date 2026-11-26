@@ -110,3 +110,5 @@ AWS general purpose S3 and CloudTrail documentation reviewed on 20 November 2026
 ## Investigate S3 public-access settings
 
 [Follow S3 Block Public Access]({{ '/wiki/s3-block-public-access-evidence/' | relative_url }}) to compare effective restrictions with direct-bucket request evidence.
+
+[Follow-up: trace S3 presigned URL issuance, use, and expiry.]({{ '/wiki/s3-presigned-url-evidence/' | relative_url }})

@@ -102,3 +102,5 @@ Reviewed 2026-11-26. The 2023 default change is historical context. Product beha
 ## Investigate the AWS Organizations policy path
 
 [AWS SCP evaluation evidence]({{ '/wiki/aws-scp-evaluation-evidence/' | relative_url }}) follows the caller's account through the organization and explains how to confirm an SCP denial.
+
+[Follow-up: trace S3 presigned URL issuance, use, and expiry.]({{ '/wiki/s3-presigned-url-evidence/' | relative_url }})
