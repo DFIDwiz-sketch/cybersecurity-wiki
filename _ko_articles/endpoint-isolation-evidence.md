@@ -94,3 +94,7 @@ release_afterward: after_release
 - Defender 선택적 격리의 예외와 적용된 정책 이력. [Microsoft Learn · Network isolation exclusions](https://learn.microsoft.com/en-us/defender-endpoint/network-isolation-exclusions)
 
 [이전 · Windows 사고 대응]({{ '/ko/wiki/windows-incident-response-lab/' | relative_url }}) · [관련 · 엔드포인트 수집]({{ '/ko/wiki/endpoint-collection-evidence/' | relative_url }}) · [관련 · 탐지 검증]({{ '/ko/wiki/detection-validation/' | relative_url }})
+
+## Defender Antivirus의 탐지와 조치 연결하기
+
+[Defender Antivirus 탐지와 조치]({{ '/ko/wiki/windows-defender-remediation-evidence/' | relative_url }})에서 리소스별 조치 결과를 확인하고 기기 전체의 대응 여부를 판단하는 방법을 살펴보세요.

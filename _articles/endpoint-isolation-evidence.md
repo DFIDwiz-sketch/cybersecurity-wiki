@@ -94,3 +94,7 @@ Reviewed 2026-11-22. Microsoft references apply to the documented Defender plans
 - Defender selective isolation exclusions and applied policy history. [Microsoft Learn · Network isolation exclusions](https://learn.microsoft.com/en-us/defender-endpoint/network-isolation-exclusions)
 
 [Previous · Windows incident response]({{ '/wiki/windows-incident-response-lab/' | relative_url }}) · [Related · Endpoint collection]({{ '/wiki/endpoint-collection-evidence/' | relative_url }}) · [Related · Detection validation]({{ '/wiki/detection-validation/' | relative_url }})
+
+## Follow Defender Antivirus detection and remediation
+
+[Defender Antivirus detection and remediation evidence]({{ '/wiki/windows-defender-remediation-evidence/' | relative_url }}) explains how to find each resource outcome and verify whether the endpoint still needs investigation.

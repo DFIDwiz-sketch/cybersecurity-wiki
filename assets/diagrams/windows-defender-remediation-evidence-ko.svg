@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 330" width="420" height="330" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">탐지 후 조치 확인</title>
+  <desc id="desc">기기와 개별 탐지를 연결한 뒤 관련 조치와 상태를 읽습니다. 기기의 다른 증거로 실행 여부와 추가 대응을 판단합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0l10 5-10 5Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="418" height="328" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <g fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M210 61v17"/>
+    <path d="M210 121v15H107v16"/>
+    <path d="M210 121v15h103v16"/>
+    <path d="M210 121v108"/>
+    <path d="M107 208v57h48v15"/>
+    <path d="M313 208v57h-48v15"/>
+    <path d="M210 265v15"/>
+  </g>
+  <g stroke-width="1.5">
+    <rect x="49" y="18" width="322" height="42" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <rect x="49" y="79" width="322" height="42" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <rect x="12" y="153" width="190" height="55" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <rect x="218" y="153" width="190" height="55" rx="8" fill="#ffedd5" stroke="#9a3412"/>
+    <rect x="67" y="230" width="286" height="35" rx="8" fill="#fef3c7" stroke="#92400e"/>
+    <rect x="49" y="281" width="322" height="32" rx="8" fill="#e0f2fe" stroke="#075985"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="210" y="44" font-size="17" font-weight="700">1116 · 탐지</text>
+    <text x="210" y="105" font-size="17" font-weight="700">기기와 탐지 식별자 대조</text>
+    <text x="107" y="175" font-size="17" font-weight="700">1117 · 조치</text>
+    <text x="107" y="195" font-size="13">결과와 상태 확인</text>
+    <text x="313" y="175" font-size="17" font-weight="700">1118 / 1119 · 오류</text>
+    <text x="313" y="195" font-size="13">재시도와 후속 상태 확인</text>
+    <text x="210" y="252" font-size="15" font-weight="700">조치 기록 없음 · 수집 확인</text>
+    <text x="210" y="302" font-size="16" font-weight="700">기기의 다른 활동 대조</text>
+  </g>
+</svg>

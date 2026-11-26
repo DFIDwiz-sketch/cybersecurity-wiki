@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 330" width="420" height="330" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Read the action after detection</title>
+  <desc id="desc">Correlate the detection to an endpoint and read the corresponding action. A separate set of host evidence establishes execution and further response.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0l10 5-10 5Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="418" height="328" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <g fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M210 61v17"/>
+    <path d="M210 121v15H107v16"/>
+    <path d="M210 121v15h103v16"/>
+    <path d="M210 121v108"/>
+    <path d="M107 208v57h48v15"/>
+    <path d="M313 208v57h-48v15"/>
+    <path d="M210 265v15"/>
+  </g>
+  <g stroke-width="1.5">
+    <rect x="49" y="18" width="322" height="42" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <rect x="49" y="79" width="322" height="42" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <rect x="12" y="153" width="190" height="55" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <rect x="218" y="153" width="190" height="55" rx="8" fill="#ffedd5" stroke="#9a3412"/>
+    <rect x="67" y="230" width="286" height="35" rx="8" fill="#fef3c7" stroke="#92400e"/>
+    <rect x="49" y="281" width="322" height="32" rx="8" fill="#e0f2fe" stroke="#075985"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="210" y="44" font-size="17" font-weight="700">1116 · Detection</text>
+    <text x="210" y="105" font-size="17" font-weight="700">Match endpoint and detection</text>
+    <text x="107" y="175" font-size="17" font-weight="700">1117 · Action</text>
+    <text x="107" y="195" font-size="13">Read result and status</text>
+    <text x="313" y="175" font-size="17" font-weight="700">1118 / 1119 · Error</text>
+    <text x="313" y="195" font-size="13">Check retry and status</text>
+    <text x="210" y="252" font-size="15" font-weight="700">Action missing · check coverage</text>
+    <text x="210" y="302" font-size="16" font-weight="700">Corroborate host activity</text>
+  </g>
+</svg>
