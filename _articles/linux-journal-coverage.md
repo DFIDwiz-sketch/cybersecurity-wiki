@@ -104,3 +104,7 @@ Reviewed 21 November 2026 against systemd 257.13 manuals. Distribution defaults,
 [Investigate Linux systemd timers]({{ '/wiki/systemd-timer-evidence/' | relative_url }}). Separate timer configuration, individual service runs, and application results.
 
 [Related · Investigate cgroup memory pressure and OOM kills]({{ '/wiki/linux-cgroup-memory-evidence/' | relative_url }})
+
+## Find a Linux Audit loss or delivery gap
+
+[Linux Audit loss evidence]({{ '/wiki/linux-audit-loss-evidence/' | relative_url }}) compares kernel counters, auditd state, and event presence at the local and central checkpoints.

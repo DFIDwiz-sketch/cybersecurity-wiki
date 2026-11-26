@@ -1,0 +1,350 @@
+{
+  "description": "Fictional ordered snapshots. daemon combines PID and process start. Plugin counters from stale reports are represented by null.",
+  "cases": [
+    {
+      "id": "A",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "complete",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "plugin": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "delivery": "collector-confirmed"
+      }
+    },
+    {
+      "id": "B",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 12,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "absent",
+        "collector": "absent",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "increased",
+          "delta": 5
+        },
+        "plugin": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "delivery": "local-unconfirmed"
+      }
+    },
+    {
+      "id": "C",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 4
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "absent",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "plugin": {
+          "state": "increased",
+          "delta": 4
+        },
+        "delivery": "missing-at-collector"
+      }
+    },
+    {
+      "id": "D",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "absent",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "plugin": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "delivery": "missing-at-collector"
+      }
+    },
+    {
+      "id": "E",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "absent",
+        "window_elapsed": false
+      },
+      "expected": {
+        "kernel": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "plugin": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "delivery": "pending-window"
+      }
+    },
+    {
+      "id": "F",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-b",
+        "daemon": "pid-501/start-b",
+        "known_kernel_reset": false,
+        "kernel_lost": 0,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "complete",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "host-or-boot-boundary"
+        },
+        "plugin": {
+          "state": "host-or-boot-boundary"
+        },
+        "delivery": "collector-confirmed"
+      }
+    },
+    {
+      "id": "G",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 2,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "complete",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "counter-decreased"
+        },
+        "plugin": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "delivery": "collector-confirmed"
+      }
+    },
+    {
+      "id": "H",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-c",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "complete",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "plugin": {
+          "state": "daemon-boundary"
+        },
+        "delivery": "collector-confirmed"
+      }
+    },
+    {
+      "id": "I",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": null
+      },
+      "delivery": {
+        "local": "complete",
+        "collector": "complete",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "plugin": {
+          "state": "unavailable"
+        },
+        "delivery": "collector-confirmed"
+      }
+    },
+    {
+      "id": "J",
+      "before": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "after": {
+        "host": "lab-audit",
+        "boot": "boot-a",
+        "daemon": "pid-501/start-a",
+        "known_kernel_reset": false,
+        "kernel_lost": 7,
+        "plugin_dropped": 0
+      },
+      "delivery": {
+        "local": "partial",
+        "collector": "absent",
+        "window_elapsed": true
+      },
+      "expected": {
+        "kernel": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "plugin": {
+          "state": "unchanged",
+          "delta": 0
+        },
+        "delivery": "local-incomplete"
+      }
+    }
+  ]
+}

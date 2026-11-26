@@ -120,3 +120,7 @@ python3 linux-audit-file-review.py linux-audit-file-sample.log --check
 ## 실행 중인 스레드의 권한 확인하기
 
 [Linux capability]({{ '/ko/wiki/linux-capability-evidence/' | relative_url }})에서 실행 파일 메타데이터, 실행 시 제한, 스레드 권한을 작업 기록과 연결하는 방법을 살펴보세요.
+
+## Linux Audit 유실과 전달 공백 확인하기
+
+[Linux Audit 유실 조사]({{ '/ko/wiki/linux-audit-loss-evidence/' | relative_url }})에서 커널 대기열과 auditd 상태를 읽고 로컬 및 수집기의 이벤트를 대조하는 방법을 익힙니다.

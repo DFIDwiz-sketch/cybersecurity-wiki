@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="322" viewBox="0 0 420 322" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Linux Audit checkpoints</title>
+  <desc id="desc">Records move from the kernel queue to auditd, then reach the collector through an enabled plugin or through a shipper reading the local audit log.</desc>
+  <rect x="1" y="1" width="418" height="320" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0l10 5-10 5Z" fill="#475569"/></marker></defs>
+  <g stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M210 52v16"/><path d="M210 105v16H106v16"/><path d="M210 105v16h104v16"/>
+    <path d="M106 175v23"/><path d="M106 237v18h54v14"/><path d="M314 175v80h-54v14"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" text-anchor="middle" font-size="16" font-weight="700">
+    <rect x="48" y="16" width="324" height="36" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="39">Kernel Audit queue</text>
+    <rect x="48" y="69" width="324" height="36" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="92">auditd</text>
+    <rect x="13" y="138" width="186" height="37" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <text x="106" y="162">Local audit log</text>
+    <rect x="221" y="138" width="186" height="37" rx="8" fill="#ffedd5" stroke="#9a3412"/>
+    <text x="314" y="162">Audit plugin</text>
+    <rect x="13" y="199" width="186" height="38" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <text x="106" y="223">File shipper</text>
+    <rect x="48" y="270" width="324" height="36" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="293">Central collector</text>
+  </g>
+</svg>
