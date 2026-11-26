@@ -116,3 +116,7 @@ Use [SELinux AVC evidence]({{ '/wiki/selinux-avc-evidence/' | relative_url }}) t
 ## Investigate open files and deleted paths
 
 [Investigate Linux Open Files and Deleted Paths]({{ '/wiki/linux-open-file-evidence/' | relative_url }}) follows an open descriptor across rotation and unlink.
+
+## Identify the privilege available to a running thread
+
+Follow [Linux capabilities]({{ '/wiki/linux-capability-evidence/' | relative_url }}) to compare executable metadata, launch restrictions and the thread state used to interpret an operation.

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="310" viewBox="0 0 480 310" xml:lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">Linux capability 증거의 흐름</title>
+  <desc id="desc">실행 파일 속성과 실행 주체의 상태가 exec 권한 계산에 들어갑니다. 이후 스레드 상태를 확인하고, 점선은 별도 작업 기록과의 대조를 나타냅니다.</desc>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" viewBox="0 0 8 8" orient="auto"><path d="M0 0 8 4 0 8z" fill="#4a6c84"/></marker></defs>
+  <rect width="480" height="310" rx="16" fill="#edf5fb"/>
+  <g fill="none" stroke="#4a6c84" stroke-width="2" marker-end="url(#arr)">
+    <path d="M120 74v20h120v19"/><path d="M360 74v20H240v19"/><path d="M240 156v25"/><path d="M240 224v25" stroke-dasharray="5 3"/>
+  </g>
+  <g stroke="#4a6c84" stroke-width="1.5" fill="#fff">
+    <rect x="23" y="28" width="194" height="46" rx="8"/>
+    <rect x="263" y="28" width="194" height="46" rx="8"/>
+    <rect x="60" y="113" width="360" height="43" rx="8" fill="#dceafb"/>
+    <rect x="60" y="181" width="360" height="43" rx="8"/>
+    <rect x="60" y="249" width="360" height="43" rx="8" fill="#dff3e9"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#193044">
+    <text x="120" y="57">실행 파일 확장 속성</text>
+    <text x="360" y="57">실행 주체의 상태</text>
+    <text x="240" y="141">exec 시 권한 계산과 제한</text>
+    <text x="240" y="209">스레드의 capability 집합</text>
+    <text x="240" y="277">실제 작업과 결과 대조</text>
+  </g>
+</svg>

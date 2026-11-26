@@ -111,3 +111,7 @@ Use [SELinux AVC evidence]({{ '/wiki/selinux-avc-evidence/' | relative_url }}) t
 ## Check which object received the permission check
 
 When the service and host see different paths or objects, use [Linux mount namespace evidence]({{ '/wiki/linux-mount-view-evidence/' | relative_url }}) to establish the process view before comparing permissions.
+
+## Identify the privilege available to a running thread
+
+Follow [Linux capabilities]({{ '/wiki/linux-capability-evidence/' | relative_url }}) to compare executable metadata, launch restrictions and the thread state used to interpret an operation.

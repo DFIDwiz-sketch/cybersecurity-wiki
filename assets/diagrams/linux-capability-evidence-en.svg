@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="310" viewBox="0 0 480 310" xml:lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">Linux capability evidence</title>
+  <desc id="desc">Executable metadata and launch state feed the exec calculation. Inspect thread state next. The final dashed arrow represents investigation through a separate operation record.</desc>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" viewBox="0 0 8 8" orient="auto"><path d="M0 0 8 4 0 8z" fill="#4a6c84"/></marker></defs>
+  <rect width="480" height="310" rx="16" fill="#edf5fb"/>
+  <g fill="none" stroke="#4a6c84" stroke-width="2" marker-end="url(#arr)">
+    <path d="M120 74v20h120v19"/><path d="M360 74v20H240v19"/><path d="M240 156v25"/><path d="M240 224v25" stroke-dasharray="5 3"/>
+  </g>
+  <g stroke="#4a6c84" stroke-width="1.5" fill="#fff">
+    <rect x="23" y="28" width="194" height="46" rx="8"/>
+    <rect x="263" y="28" width="194" height="46" rx="8"/>
+    <rect x="60" y="113" width="360" height="43" rx="8" fill="#dceafb"/>
+    <rect x="60" y="181" width="360" height="43" rx="8"/>
+    <rect x="60" y="249" width="360" height="43" rx="8" fill="#dff3e9"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#193044">
+    <text x="120" y="57">Executable xattr</text>
+    <text x="360" y="57">Launcher state</text>
+    <text x="240" y="141">exec and restrictions</text>
+    <text x="240" y="209">Thread capability sets</text>
+    <text x="240" y="277">Correlate operation and outcome</text>
+  </g>
+</svg>

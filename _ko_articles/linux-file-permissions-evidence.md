@@ -111,3 +111,7 @@ TMPDIR="$PWD" python3 linux-file-permissions-lab.py
 ## 권한 검사가 어느 객체에 적용됐는지 확인하기
 
 호스트와 서비스가 서로 다른 경로나 객체를 보는 경우 [Linux 마운트 네임스페이스 조사]({{ '/ko/wiki/linux-mount-view-evidence/' | relative_url }})로 프로세스의 뷰를 확인한 뒤 권한을 비교하세요.
+
+## 실행 중인 스레드의 권한 확인하기
+
+[Linux capability]({{ '/ko/wiki/linux-capability-evidence/' | relative_url }})에서 실행 파일 메타데이터, 실행 시 제한, 스레드 권한을 작업 기록과 연결하는 방법을 살펴보세요.
