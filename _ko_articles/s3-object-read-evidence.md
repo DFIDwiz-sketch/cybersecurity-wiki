@@ -106,3 +106,7 @@ python3 s3-read-review.py
 ## Google Cloud Storage 읽기 증거와 비교하기
 
 [Google Cloud Storage 객체 읽기 조사]({{ '/ko/wiki/gcs-object-read-evidence/' | relative_url }})에서 목록·메타데이터·본문 전송과 감사 로그 수집 범위를 비교합니다.
+
+## S3 퍼블릭 액세스 설정 조사
+
+[S3 퍼블릭 액세스 차단]({{ '/ko/wiki/s3-block-public-access-evidence/' | relative_url }})에서 적용된 제한과 버킷 직접 요청의 증거를 대조하세요.

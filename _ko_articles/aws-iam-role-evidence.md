@@ -147,3 +147,7 @@ lab-04와 lab-06의 발급 주체를 각각 찾고, lab-07을 왜 연결하지 �
 [AWS 보안 그룹 조사 · 규칙 변경부터 실제 통신까지]({{ '/ko/wiki/aws-security-group-evidence/' | relative_url }})에서 규칙 변경, ENI 연결, 실제 트래픽 증거를 대조하는 방법을 실습합니다.
 
 [비교 · Google Cloud 서비스 계정 위임]({{ '/ko/wiki/gcp-service-account-impersonation-evidence/' | relative_url }})
+
+## S3 퍼블릭 액세스 설정 조사
+
+[S3 퍼블릭 액세스 차단]({{ '/ko/wiki/s3-block-public-access-evidence/' | relative_url }})에서 적용된 제한과 버킷 직접 요청의 증거를 대조하세요.

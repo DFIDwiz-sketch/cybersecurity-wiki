@@ -1,0 +1,175 @@
+[
+  {
+    "id": "A",
+    "kind": "public-acl-write",
+    "bucket": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "effective_account": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "acl_disabled": false,
+    "expected": "public-acl-write-blocked"
+  },
+  {
+    "id": "B",
+    "kind": "public-acl-read",
+    "bucket": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "effective_account": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "acl_disabled": false,
+    "expected": "public-acl-grant-ignored"
+  },
+  {
+    "id": "C",
+    "kind": "public-policy-write",
+    "bucket": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "effective_account": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": false
+    },
+    "expected": "public-policy-write-blocked"
+  },
+  {
+    "id": "D",
+    "kind": "policy-read",
+    "bucket": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": false
+    },
+    "effective_account": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "policy_public": true,
+    "requester": "unauthenticated",
+    "expected": "no-block-from-modeled-controls"
+  },
+  {
+    "id": "E",
+    "kind": "policy-read",
+    "bucket": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "effective_account": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": true
+    },
+    "policy_public": true,
+    "requester": "external-account",
+    "expected": "public-policy-access-restricted"
+  },
+  {
+    "id": "F",
+    "kind": "public-acl-read",
+    "bucket": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "effective_account": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "acl_disabled": true,
+    "expected": "acl-path-disabled"
+  },
+  {
+    "id": "G",
+    "kind": "observed-read",
+    "operation": "REST.GET.OBJECT",
+    "status": 206,
+    "auth_type": "-",
+    "bytes_sent": 128,
+    "expected": "unauthenticated-body-response"
+  },
+  {
+    "id": "H",
+    "kind": "observed-read",
+    "operation": "REST.GET.OBJECT",
+    "status": 200,
+    "auth_type": "QueryString",
+    "bytes_sent": 256,
+    "expected": "query-signed-body-response"
+  },
+  {
+    "id": "I",
+    "kind": "observed-read",
+    "operation": "REST.GET.OBJECT",
+    "status": 403,
+    "auth_type": "-",
+    "bytes_sent": 230,
+    "expected": "request-denied"
+  },
+  {
+    "id": "J",
+    "kind": "observed-read",
+    "operation": "REST.HEAD.OBJECT",
+    "status": 200,
+    "auth_type": "-",
+    "bytes_sent": 0,
+    "expected": "metadata-response"
+  },
+  {
+    "id": "K",
+    "kind": "observed-read",
+    "operation": "REST.GET.OBJECT",
+    "status": 200,
+    "auth_type": "-",
+    "bytes_sent": null,
+    "expected": "positive-body-bytes-unconfirmed"
+  },
+  {
+    "id": "L",
+    "kind": "policy-read",
+    "bucket": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": true
+    },
+    "effective_account": {
+      "BlockPublicAcls": false,
+      "IgnorePublicAcls": false,
+      "BlockPublicPolicy": false,
+      "RestrictPublicBuckets": false
+    },
+    "policy_public": false,
+    "requester": "external-account",
+    "expected": "no-block-from-modeled-controls"
+  }
+]

@@ -106,3 +106,7 @@ AWS general purpose S3 and CloudTrail documentation reviewed on 20 November 2026
 ## Compare Google Cloud Storage read evidence
 
 [Google Cloud Storage object read evidence]({{ '/wiki/gcs-object-read-evidence/' | relative_url }}) compares listing, metadata, actual content delivery and audit coverage in Google Cloud.
+
+## Investigate S3 public-access settings
+
+[Follow S3 Block Public Access]({{ '/wiki/s3-block-public-access-evidence/' | relative_url }}) to compare effective restrictions with direct-bucket request evidence.

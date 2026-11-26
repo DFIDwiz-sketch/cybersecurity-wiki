@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="310" viewBox="0 0 480 310" xml:lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">S3 버킷 직접 접근의 증거</title><desc id="desc">유효 계정 설정과 버킷 설정을 비교합니다. 설정이 인가에 적용되며, 응답은 요청 로그에서 확인합니다.</desc>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" viewBox="0 0 8 8" orient="auto"><path d="M0 0 8 4 0 8z" fill="#4e6e84"/></marker></defs>
+  <rect width="480" height="310" rx="16" fill="#eff5fb"/>
+  <g fill="none" stroke="#4e6e84" stroke-width="2" marker-end="url(#a)">
+    <path d="M119 66v19h121v19"/><path d="M361 66v19H240v19"/><path d="M240 149v24"/><path d="M240 218v24" stroke-dasharray="5 3"/>
+  </g>
+  <g stroke="#4e6e84" stroke-width="1.5" fill="#fff">
+    <rect x="19" y="22" width="200" height="44" rx="8" fill="#dfeafa"/>
+    <rect x="261" y="22" width="200" height="44" rx="8" fill="#dfeafa"/>
+    <rect x="60" y="105" width="360" height="44" rx="8"/>
+    <rect x="60" y="174" width="360" height="44" rx="8"/>
+    <rect x="60" y="243" width="360" height="44" rx="8" fill="#dcf1e6"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="18" text-anchor="middle" fill="#192f44">
+    <text x="119" y="50">버킷 설정</text><text x="361" y="50">유효 계정 설정</text>
+    <text x="240" y="133">적용되는 차단 확인</text><text x="240" y="202">요청 인가 판단</text><text x="240" y="271">응답 상태와 전송 바이트 확인</text>
+  </g>
+</svg>

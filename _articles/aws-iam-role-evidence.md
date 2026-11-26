@@ -147,3 +147,7 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 [AWS Security Group Evidence · From Rule Change to Traffic]({{ '/wiki/aws-security-group-evidence/' | relative_url }}) shows how to tie the API decision to ENI attachment and corroborate network activity.
 
 [Compare · Google Cloud service account impersonation]({{ '/wiki/gcp-service-account-impersonation-evidence/' | relative_url }})
+
+## Investigate S3 public-access settings
+
+[Follow S3 Block Public Access]({{ '/wiki/s3-block-public-access-evidence/' | relative_url }}) to compare effective restrictions with direct-bucket request evidence.
