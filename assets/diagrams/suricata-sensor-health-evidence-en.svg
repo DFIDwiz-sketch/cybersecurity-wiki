@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 384" width="430" height="384" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Suricata observation checkpoints</title>
+  <desc id="desc">Follow a packet copy from the network to Suricata and an EVE record from local output to the collector. The diagram names evidence to check at each step.</desc>
+  <rect x="1" y="1" width="428" height="382" rx="16" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <g stroke="#475569" stroke-width="2" fill="none">
+    <path d="M215 80v14m-5-5 5 5 5-5 M215 152v14m-5-5 5 5 5-5 M215 224v14m-5-5 5 5 5-5 M215 296v14m-5-5 5 5 5-5"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <rect x="22" y="24" width="386" height="56" rx="10" fill="#e0f2fe" stroke="#075985"/>
+    <text x="215" y="47" fill="#0f172a" font-size="18" font-weight="700">TAP or mirror</text>
+    <text x="215" y="67" fill="#334155" font-size="15">Port scope, direction and counters</text>
+    <rect x="22" y="96" width="386" height="56" rx="10" fill="#e0f2fe" stroke="#075985"/>
+    <text x="215" y="119" fill="#0f172a" font-size="18" font-weight="700">NIC and capture backend</text>
+    <text x="215" y="139" fill="#334155" font-size="15">Driver and capture counters</text>
+    <rect x="22" y="168" width="386" height="56" rx="10" fill="#e0f2fe" stroke="#075985"/>
+    <text x="215" y="191" fill="#0f172a" font-size="18" font-weight="700">Suricata processing</text>
+    <text x="215" y="211" fill="#334155" font-size="15">Decode, reassembly and alerts</text>
+    <rect x="22" y="240" width="386" height="56" rx="10" fill="#dcfce7" stroke="#166534"/>
+    <text x="215" y="263" fill="#0f172a" font-size="18" font-weight="700">Local EVE output</text>
+    <text x="215" y="283" fill="#334155" font-size="15">Source file and event timestamp</text>
+    <rect x="22" y="312" width="386" height="56" rx="10" fill="#dcfce7" stroke="#166534"/>
+    <text x="215" y="335" fill="#0f172a" font-size="18" font-weight="700">Forwarder and collector</text>
+    <text x="215" y="355" fill="#334155" font-size="15">Queue, receipt and ingest timestamp</text>
+  </g>
+</svg>

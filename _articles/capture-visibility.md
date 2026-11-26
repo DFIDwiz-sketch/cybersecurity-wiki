@@ -93,3 +93,7 @@ When a router or firewall exports flow records, use [IPFIX export evidence]({{ '
 ## Follow VLAN tags across capture points
 
 [Investigate VLAN Tags and Sensor Visibility]({{ '/wiki/vlan-capture-evidence/' | relative_url }}) compares link encapsulation with sensor copies.
+
+## Find missing evidence on a Suricata sensor
+
+[Suricata sensor health]({{ '/wiki/suricata-sensor-health-evidence/' | relative_url }}) traces capture drops, TCP reassembly gaps, and missing events between local EVE and the collector.

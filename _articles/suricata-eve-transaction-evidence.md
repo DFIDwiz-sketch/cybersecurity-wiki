@@ -90,3 +90,7 @@ Reviewed 2026-11-22. The field examples and deployment behavior below refer to O
 - IETF [RFC 8259 §6 · JSON numeric precision, December 2017](https://www.rfc-editor.org/rfc/rfc8259.html#section-6)
 
 [Previous · Network monitoring tools]({{ '/wiki/network-monitoring/' | relative_url }}) · [Next · Community ID correlation]({{ '/wiki/community-id-evidence/' | relative_url }})
+
+## Find missing evidence on a Suricata sensor
+
+[Suricata sensor health]({{ '/wiki/suricata-sensor-health-evidence/' | relative_url }}) traces capture drops, TCP reassembly gaps, and missing events between local EVE and the collector.

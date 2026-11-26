@@ -90,3 +90,7 @@ python3 suricata-eve-review.py
 - IETF [RFC 8259 §6 · JSON 숫자 정밀도, 2017년 12월](https://www.rfc-editor.org/rfc/rfc8259.html#section-6)
 
 [이전 · 네트워크 관측 도구]({{ '/ko/wiki/network-monitoring/' | relative_url }}) · [다음 · Community ID 대조]({{ '/ko/wiki/community-id-evidence/' | relative_url }})
+
+## Suricata 센서에서 빠진 증거 찾기
+
+[Suricata 센서 관측]({{ '/ko/wiki/suricata-sensor-health-evidence/' | relative_url }})에서는 캡처 드롭, TCP 재조립 공백, 로컬 EVE와 수집기 사이의 전달 장애를 구분합니다.

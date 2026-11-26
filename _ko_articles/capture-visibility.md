@@ -93,3 +93,7 @@ Wireshark의 TCP 분석은 파일의 패킷 순서와 시퀀스 번호 분석 �
 ## VLAN 태그와 센서 가시성 이어서 읽기
 
 [VLAN 태그와 센서 가시성 조사]({{ '/ko/wiki/vlan-capture-evidence/' | relative_url }})에서 트렁크 태그와 캡처 사본의 차이를 비교합니다.
+
+## Suricata 센서에서 빠진 증거 찾기
+
+[Suricata 센서 관측]({{ '/ko/wiki/suricata-sensor-health-evidence/' | relative_url }})에서는 캡처 드롭, TCP 재조립 공백, 로컬 EVE와 수집기 사이의 전달 장애를 구분합니다.

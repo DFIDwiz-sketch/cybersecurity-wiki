@@ -1,0 +1,281 @@
+{
+  "description": "Fictional sensor totals and delivery facts. time_s is UTC seconds since midnight and uptime_s is process uptime in seconds.",
+  "cases": [
+    {
+      "id": "A",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 80000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "expected": "no-observed-counter-increment"
+    },
+    {
+      "id": "B",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 80000,
+        "capture_drops": 320,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "expected": "capture-drops-increased"
+    },
+    {
+      "id": "C",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 80000,
+        "capture_drops": 200,
+        "reassembly_gaps": 21,
+        "alert_overflow": 0
+      },
+      "expected": "reassembly-gaps-increased"
+    },
+    {
+      "id": "D",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 80000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 4
+      },
+      "expected": "alert-queue-overflow-increased"
+    },
+    {
+      "id": "E",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 80000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36020,
+        "uptime_s": 1220,
+        "decoder_packets": 90000,
+        "capture_drops": 320,
+        "reassembly_gaps": 21,
+        "alert_overflow": 0
+      },
+      "expected": "capture-drops-increased+reassembly-gaps-increased"
+    },
+    {
+      "id": "F",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "expected": "no-decoder-progress"
+    },
+    {
+      "id": "G",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 80000,
+        "capture_drops": null,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "expected": "counter-unknown"
+    },
+    {
+      "id": "H",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@10:00:07Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 3,
+        "decoder_packets": 40,
+        "capture_drops": 1,
+        "reassembly_gaps": 0,
+        "alert_overflow": 0
+      },
+      "expected": "baseline-changed"
+    },
+    {
+      "id": "I",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36010,
+        "uptime_s": 1210,
+        "decoder_packets": 80000,
+        "capture_drops": 10,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "expected": "counter-discontinuity"
+    },
+    {
+      "id": "J",
+      "kind": "interval",
+      "expected_interval_s": 10,
+      "before": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36000,
+        "uptime_s": 1200,
+        "decoder_packets": 70000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "after": {
+        "instance": "lab-01@09:40:00Z",
+        "scope": "lab-01 / sensor totals",
+        "time_s": 36040,
+        "uptime_s": 1240,
+        "decoder_packets": 80000,
+        "capture_drops": 200,
+        "reassembly_gaps": 15,
+        "alert_overflow": 0
+      },
+      "expected": "sampling-gap"
+    },
+    {
+      "id": "K",
+      "kind": "delivery",
+      "local_seen": true,
+      "collector_seen": false,
+      "delivery_window_elapsed": true,
+      "expected": "collector-event-missing-after-window"
+    },
+    {
+      "id": "L",
+      "kind": "delivery",
+      "local_seen": false,
+      "collector_seen": false,
+      "delivery_window_elapsed": true,
+      "expected": "local-event-missing"
+    }
+  ]
+}

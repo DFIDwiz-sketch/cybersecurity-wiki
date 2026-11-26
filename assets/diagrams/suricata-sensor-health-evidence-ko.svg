@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 384" width="430" height="384" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">Suricata 관측 단계와 확인할 근거</title>
+  <desc id="desc">트래픽 복사본이 Suricata에 도착하고, 로컬 EVE 기록이 로그 수집기로 전달되는 과정입니다. 단계마다 확인할 근거가 표시됩니다.</desc>
+  <rect x="1" y="1" width="428" height="382" rx="16" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <g stroke="#475569" stroke-width="2" fill="none">
+    <path d="M215 80v14m-5-5 5 5 5-5 M215 152v14m-5-5 5 5 5-5 M215 224v14m-5-5 5 5 5-5 M215 296v14m-5-5 5 5 5-5"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <rect x="22" y="24" width="386" height="56" rx="10" fill="#e0f2fe" stroke="#075985"/>
+    <text x="215" y="47" fill="#0f172a" font-size="18" font-weight="700">TAP 또는 포트 미러</text>
+    <text x="215" y="67" fill="#334155" font-size="15">포트 범위, 방향, 카운터</text>
+    <rect x="22" y="96" width="386" height="56" rx="10" fill="#e0f2fe" stroke="#075985"/>
+    <text x="215" y="119" fill="#0f172a" font-size="18" font-weight="700">NIC와 캡처 백엔드</text>
+    <text x="215" y="139" fill="#334155" font-size="15">드라이버 및 캡처 카운터</text>
+    <rect x="22" y="168" width="386" height="56" rx="10" fill="#e0f2fe" stroke="#075985"/>
+    <text x="215" y="191" fill="#0f172a" font-size="18" font-weight="700">Suricata 처리</text>
+    <text x="215" y="211" fill="#334155" font-size="15">패킷 해석, 재조립, 경보</text>
+    <rect x="22" y="240" width="386" height="56" rx="10" fill="#dcfce7" stroke="#166534"/>
+    <text x="215" y="263" fill="#0f172a" font-size="18" font-weight="700">로컬 EVE 출력</text>
+    <text x="215" y="283" fill="#334155" font-size="15">원본 파일과 이벤트 시각</text>
+    <rect x="22" y="312" width="386" height="56" rx="10" fill="#dcfce7" stroke="#166534"/>
+    <text x="215" y="335" fill="#0f172a" font-size="18" font-weight="700">전달 에이전트와 수집기</text>
+    <text x="215" y="355" fill="#334155" font-size="15">대기열, 도착 여부, 수집 시각</text>
+  </g>
+</svg>
