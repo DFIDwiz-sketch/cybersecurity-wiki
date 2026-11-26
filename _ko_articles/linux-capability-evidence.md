@@ -91,3 +91,7 @@ python3 linux-capability-evidence.py
 - Linux man-pages 6.19의 [capabilities(7)](https://man7.org/linux/man-pages/man7/capabilities.7.html), [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html), [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
 - Linux 커널 사용자 공간 API의 [No New Privileges 플래그](https://docs.kernel.org/userspace-api/no_new_privs.html)와 [IP sysctl 포트 경계](https://docs.kernel.org/networking/ip-sysctl.html#ip-variables)
 - libcap과 systemd의 [getcap(8)](https://man7.org/linux/man-pages/man8/getcap.8.html), [systemd.exec](https://www.freedesktop.org/software/systemd/man/262/systemd.exec.html)
+
+## 시스템 호출 필터 증거 확인하기
+
+[Linux seccomp 조사]({{ '/ko/wiki/linux-seccomp-evidence/' | relative_url }})에서 스레드 권한과 시스템 호출 필터의 판단을 구분하는 방법을 확인하세요.

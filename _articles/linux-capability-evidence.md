@@ -91,3 +91,7 @@ Reviewed 2026-11-26. The man-pages edition covers the Linux interfaces, the syst
 - Linux man-pages 6.19. [capabilities(7)](https://man7.org/linux/man-pages/man7/capabilities.7.html), [proc_pid_status(5)](https://man7.org/linux/man-pages/man5/proc_pid_status.5.html), [execve(2)](https://man7.org/linux/man-pages/man2/execve.2.html)
 - Linux kernel user-space API. [No New Privileges Flag](https://docs.kernel.org/userspace-api/no_new_privs.html), [IP sysctl port threshold](https://docs.kernel.org/networking/ip-sysctl.html#ip-variables)
 - libcap and systemd. [getcap(8)](https://man7.org/linux/man-pages/man8/getcap.8.html), [systemd.exec](https://www.freedesktop.org/software/systemd/man/262/systemd.exec.html)
+
+## Follow syscall filter evidence
+
+Continue with [Linux seccomp evidence]({{ '/wiki/linux-seccomp-evidence/' | relative_url }}) to distinguish thread privilege from a syscall filter's decision.

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">From system call to application and audit evidence</title>
+  <desc id="desc">A thread submits a call. The kernel evaluates all attached filters. The chosen action drives the syscall result, and audit logging also depends on audit settings and collection.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#a7f3d0"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#a7f3d0" stroke-width="2" marker-end="url(#arrow)" fill="none">
+    <path d="M270 84v28"/>
+    <path d="M270 184v39H135v39"/>
+    <path d="M270 184v39H405v39"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <g fill="#1e293b" stroke="#44736c">
+      <rect x="18" y="16" width="504" height="68" rx="9"/>
+      <rect x="18" y="114" width="504" height="70" rx="9"/>
+      <rect x="18" y="264" width="234" height="86" rx="9"/>
+      <rect x="288" y="264" width="234" height="86" rx="9"/>
+    </g>
+    <g font-size="21" font-weight="700" fill="#ecfdf5">
+      <text x="32" y="43">Thread submits a syscall</text>
+      <text x="32" y="142">Kernel evaluates attached filters</text>
+      <text x="32" y="292">Application result</text>
+      <text x="302" y="292">Audit evidence</text>
+    </g>
+    <g font-size="16" fill="#bbf7d0">
+      <text x="32" y="68">ABI, call number and arguments</text>
+      <text x="32" y="168">The highest-precedence action applies</text>
+      <text x="32" y="316">Proceed, return errno,</text>
+      <text x="32" y="336">signal or terminate</text>
+      <text x="302" y="316">Kernel logging decision</text>
+      <text x="302" y="336">and collector coverage</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">시스템 호출에서 프로그램·감사 증거까지</title>
+  <desc id="desc">스레드가 호출을 제출하면 커널이 적용된 필터를 평가합니다. 선택한 동작은 호출 결과에 영향을 주며 감사 기록은 설정과 수집 범위에도 좌우됩니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#a7f3d0"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#a7f3d0" stroke-width="2" marker-end="url(#arrow)" fill="none">
+    <path d="M270 84v28"/>
+    <path d="M270 184v39H135v39"/>
+    <path d="M270 184v39H405v39"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <g fill="#1e293b" stroke="#44736c">
+      <rect x="18" y="16" width="504" height="68" rx="9"/>
+      <rect x="18" y="114" width="504" height="70" rx="9"/>
+      <rect x="18" y="264" width="234" height="86" rx="9"/>
+      <rect x="288" y="264" width="234" height="86" rx="9"/>
+    </g>
+    <g font-size="21" font-weight="700" fill="#ecfdf5">
+      <text x="32" y="43">스레드의 시스템 호출</text>
+      <text x="32" y="142">커널의 필터 평가</text>
+      <text x="32" y="292">프로그램의 결과</text>
+      <text x="302" y="292">감사 증거</text>
+    </g>
+    <g font-size="16" fill="#bbf7d0">
+      <text x="32" y="68">ABI, 호출 번호, 인자</text>
+      <text x="32" y="168">우선순위가 가장 높은 동작을 적용</text>
+      <text x="32" y="316">호출 진행, 오류 반환,</text>
+      <text x="32" y="336">신호 전송 또는 종료</text>
+      <text x="302" y="316">커널의 기록 여부 판단과</text>
+      <text x="302" y="336">수집기의 관측 범위</text>
+    </g>
+  </g>
+</svg>

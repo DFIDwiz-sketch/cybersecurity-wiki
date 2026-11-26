@@ -124,3 +124,7 @@ python3 linux-audit-file-review.py linux-audit-file-sample.log --check
 ## Linux Audit 유실과 전달 공백 확인하기
 
 [Linux Audit 유실 조사]({{ '/ko/wiki/linux-audit-loss-evidence/' | relative_url }})에서 커널 대기열과 auditd 상태를 읽고 로컬 및 수집기의 이벤트를 대조하는 방법을 익힙니다.
+
+## 시스템 호출 필터 증거 확인하기
+
+[Linux seccomp 조사]({{ '/ko/wiki/linux-seccomp-evidence/' | relative_url }})에서 필터가 호출 결과를 바꾸는 경우와 SECCOMP 기록이 남는 조건을 확인하세요.

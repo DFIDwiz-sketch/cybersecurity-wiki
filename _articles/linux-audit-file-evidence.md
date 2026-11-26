@@ -124,3 +124,7 @@ Follow [Linux capabilities]({{ '/wiki/linux-capability-evidence/' | relative_url
 ## Find a Linux Audit loss or delivery gap
 
 [Linux Audit loss evidence]({{ '/wiki/linux-audit-loss-evidence/' | relative_url }}) compares kernel counters, auditd state, and event presence at the local and central checkpoints.
+
+## Follow syscall filter evidence
+
+For syscall filtering, [Linux seccomp evidence]({{ '/wiki/linux-seccomp-evidence/' | relative_url }}) explains when a filter action changes the result and when SECCOMP records are optional.
