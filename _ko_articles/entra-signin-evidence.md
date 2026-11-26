@@ -135,3 +135,7 @@ SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/
 ## BitLocker 복구 조회와 실제 사용 구분하기
 
 [BitLocker 복구 조사]({{ '/ko/wiki/windows-bitlocker-recovery-evidence/' | relative_url }})에서 Entra의 비밀 조회 기록과 기기의 복구, 보호기 교체와 백업을 대조합니다.
+
+## Azure 관리 ID의 호출 근거 확인하기
+
+워크로드 신원을 조사할 때는 [Azure 관리 ID 조사]({{ '/ko/wiki/azure-managed-identity-evidence/' | relative_url }})에서 ID 연결, 로그인, 실제 리소스 요청을 대조하세요.

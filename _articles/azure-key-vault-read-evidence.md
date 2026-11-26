@@ -120,3 +120,7 @@ Reviewed 2026-11-26. REST behavior follows Microsoft Key Vault Secrets API versi
 ## Compare BitLocker recovery evidence
 
 [BitLocker recovery evidence]({{ '/wiki/windows-bitlocker-recovery-evidence/' | relative_url }}) compares Entra secret-read records with volume recovery and confirmed protector replacement.
+
+## Trace an Azure managed identity
+
+If the caller is a managed identity, trace its workload assignments and match the proper principal using [Azure managed identity evidence]({{ '/wiki/azure-managed-identity-evidence/' | relative_url }}).

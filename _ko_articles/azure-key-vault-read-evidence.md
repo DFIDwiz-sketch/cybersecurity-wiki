@@ -120,3 +120,7 @@ python3 azure-key-vault-read-evidence.py
 ## BitLocker 복구 조회와 실제 사용 구분하기
 
 [BitLocker 복구 조사]({{ '/ko/wiki/windows-bitlocker-recovery-evidence/' | relative_url }})에서 Entra의 비밀 조회 기록과 기기의 복구, 보호기 교체와 백업을 대조합니다.
+
+## Azure 관리 ID의 호출 근거 확인하기
+
+호출자가 관리 ID라면 [Azure 관리 ID 조사]({{ '/ko/wiki/azure-managed-identity-evidence/' | relative_url }})에서 워크로드 연결 이력과 올바른 주체 식별자를 대조하는 방법을 확인하세요.

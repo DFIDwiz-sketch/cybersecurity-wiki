@@ -1,0 +1,345 @@
+{
+  "description": "Fictional normalized evidence from one analysis window per case. All IDs, names and request labels are for training. Missing records describe coverage in the fixture only.",
+  "cases": [
+    {
+      "id": "correlated-success",
+      "scope": {
+        "tenant": "00000000-0000-4000-8000-000000000010",
+        "principal": "00000000-0000-4000-8000-000000000042",
+        "api": "key-vault-api",
+        "target": "training-vault-a",
+        "operation": "SecretGet"
+      },
+      "attachments": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "workload": "report-vm-a"
+        }
+      ],
+      "signins": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "api": "key-vault-api",
+          "outcome": "success"
+        },
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "api": "another-api",
+          "outcome": "success"
+        },
+        {
+          "tenant": "another-tenant",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "api": "key-vault-api",
+          "outcome": "success"
+        }
+      ],
+      "operations": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "target": "training-vault-a",
+          "operation": "SecretGet",
+          "request_id": "request-a01",
+          "outcome": "success"
+        },
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "target": "another-vault",
+          "operation": "SecretGet",
+          "request_id": "request-a01",
+          "outcome": "success"
+        },
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "target": "training-vault-a",
+          "operation": "SecretList",
+          "request_id": "request-a01",
+          "outcome": "success"
+        }
+      ],
+      "traces": [
+        {
+          "target": "training-vault-a",
+          "request_id": "request-a01",
+          "workload": "report-vm-a"
+        },
+        {
+          "target": "another-vault",
+          "request_id": "request-a01",
+          "workload": "report-vm-a"
+        }
+      ],
+      "expected": {
+        "successful_signins": 1,
+        "failed_signins": 0,
+        "successful_operations": 1,
+        "denied_operations": 0,
+        "attached_workloads": [
+          "report-vm-a"
+        ],
+        "workloads_with_matching_trace": [
+          "report-vm-a"
+        ]
+      }
+    },
+    {
+      "id": "sign-in-only",
+      "scope": {
+        "tenant": "00000000-0000-4000-8000-000000000010",
+        "principal": "00000000-0000-4000-8000-000000000042",
+        "api": "key-vault-api",
+        "target": "training-vault-a",
+        "operation": "SecretGet"
+      },
+      "attachments": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "workload": "report-vm-a"
+        }
+      ],
+      "signins": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "api": "key-vault-api",
+          "outcome": "success"
+        }
+      ],
+      "operations": [],
+      "traces": [],
+      "expected": {
+        "successful_signins": 1,
+        "failed_signins": 0,
+        "successful_operations": 0,
+        "denied_operations": 0,
+        "attached_workloads": [
+          "report-vm-a"
+        ],
+        "workloads_with_matching_trace": []
+      }
+    },
+    {
+      "id": "resource-without-fresh-sign-in",
+      "scope": {
+        "tenant": "00000000-0000-4000-8000-000000000010",
+        "principal": "00000000-0000-4000-8000-000000000042",
+        "api": "key-vault-api",
+        "target": "training-vault-a",
+        "operation": "SecretGet"
+      },
+      "attachments": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "workload": "report-vm-a"
+        }
+      ],
+      "signins": [],
+      "operations": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "target": "training-vault-a",
+          "operation": "SecretGet",
+          "request_id": "request-a01",
+          "outcome": "success"
+        }
+      ],
+      "traces": [],
+      "expected": {
+        "successful_signins": 0,
+        "failed_signins": 0,
+        "successful_operations": 1,
+        "denied_operations": 0,
+        "attached_workloads": [
+          "report-vm-a"
+        ],
+        "workloads_with_matching_trace": []
+      }
+    },
+    {
+      "id": "shared-identity",
+      "scope": {
+        "tenant": "00000000-0000-4000-8000-000000000010",
+        "principal": "00000000-0000-4000-8000-000000000042",
+        "api": "key-vault-api",
+        "target": "training-vault-a",
+        "operation": "SecretGet"
+      },
+      "attachments": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "workload": "report-vm-a"
+        },
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "workload": "report-vm-b"
+        }
+      ],
+      "signins": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "api": "key-vault-api",
+          "outcome": "success"
+        }
+      ],
+      "operations": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "target": "training-vault-a",
+          "operation": "SecretGet",
+          "request_id": "request-a01",
+          "outcome": "success"
+        }
+      ],
+      "traces": [
+        {
+          "target": "training-vault-a",
+          "request_id": "another-request",
+          "workload": "report-vm-a"
+        }
+      ],
+      "expected": {
+        "successful_signins": 1,
+        "failed_signins": 0,
+        "successful_operations": 1,
+        "denied_operations": 0,
+        "attached_workloads": [
+          "report-vm-a",
+          "report-vm-b"
+        ],
+        "workloads_with_matching_trace": []
+      }
+    },
+    {
+      "id": "target-denies",
+      "scope": {
+        "tenant": "00000000-0000-4000-8000-000000000010",
+        "principal": "00000000-0000-4000-8000-000000000042",
+        "api": "key-vault-api",
+        "target": "training-vault-a",
+        "operation": "SecretGet"
+      },
+      "attachments": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "workload": "report-vm-a"
+        }
+      ],
+      "signins": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "api": "key-vault-api",
+          "outcome": "success"
+        },
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "api": "key-vault-api",
+          "outcome": "failure"
+        }
+      ],
+      "operations": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "display_name": "report-worker",
+          "target": "training-vault-a",
+          "operation": "SecretGet",
+          "request_id": "request-a01",
+          "outcome": "denied"
+        }
+      ],
+      "traces": [],
+      "expected": {
+        "successful_signins": 1,
+        "failed_signins": 1,
+        "successful_operations": 0,
+        "denied_operations": 1,
+        "attached_workloads": [
+          "report-vm-a"
+        ],
+        "workloads_with_matching_trace": []
+      }
+    },
+    {
+      "id": "reused-display-name",
+      "scope": {
+        "tenant": "00000000-0000-4000-8000-000000000010",
+        "principal": "00000000-0000-4000-8000-000000000042",
+        "api": "key-vault-api",
+        "target": "training-vault-a",
+        "operation": "SecretGet"
+      },
+      "attachments": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000042",
+          "workload": "report-vm-a"
+        }
+      ],
+      "signins": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000043",
+          "display_name": "report-worker",
+          "api": "key-vault-api",
+          "outcome": "success"
+        }
+      ],
+      "operations": [
+        {
+          "tenant": "00000000-0000-4000-8000-000000000010",
+          "principal": "00000000-0000-4000-8000-000000000043",
+          "display_name": "report-worker",
+          "target": "training-vault-a",
+          "operation": "SecretGet",
+          "request_id": "request-a01",
+          "outcome": "success"
+        }
+      ],
+      "traces": [
+        {
+          "target": "training-vault-a",
+          "request_id": "request-a01",
+          "workload": "report-vm-a"
+        }
+      ],
+      "expected": {
+        "successful_signins": 0,
+        "failed_signins": 0,
+        "successful_operations": 0,
+        "denied_operations": 0,
+        "attached_workloads": [
+          "report-vm-a"
+        ],
+        "workloads_with_matching_trace": []
+      }
+    }
+  ]
+}

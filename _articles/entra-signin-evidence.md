@@ -135,3 +135,7 @@ Use [Azure Key Vault secret-read evidence]({{ '/wiki/azure-key-vault-read-eviden
 ## Compare BitLocker recovery evidence
 
 [BitLocker recovery evidence]({{ '/wiki/windows-bitlocker-recovery-evidence/' | relative_url }}) compares Entra secret-read records with volume recovery and confirmed protector replacement.
+
+## Trace an Azure managed identity
+
+For machine identities, continue with [Azure managed identity evidence]({{ '/wiki/azure-managed-identity-evidence/' | relative_url }}) to connect assignments, sign-ins and resource requests.

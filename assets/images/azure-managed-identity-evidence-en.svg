@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">Managed identity evidence sources</title>
+  <desc id="desc">Link assignment, authentication and target operation by identity. Use a resource request ID to connect a workload trace to the operation.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#a5b4fc"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#a5b4fc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M270 80v24"/>
+    <path d="M270 172v24"/>
+    <path d="M270 264v24"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="512" height="66" rx="9" fill="#1e293b" stroke="#536391"/>
+    <text x="28" y="41" font-size="22" font-weight="700" fill="#eef2ff">Azure assignment</text>
+    <text x="28" y="65" font-size="17" fill="#c7d2fe">Workload resource ID, tenant and principal</text>
+    <rect x="14" y="106" width="512" height="66" rx="9" fill="#1e293b" stroke="#536391"/>
+    <text x="28" y="133" font-size="22" font-weight="700" fill="#eef2ff">Entra sign-in</text>
+    <text x="28" y="157" font-size="17" fill="#c7d2fe">Caller principal, target API and outcome</text>
+    <rect x="14" y="198" width="512" height="66" rx="9" fill="#1e293b" stroke="#536391"/>
+    <text x="28" y="225" font-size="22" font-weight="700" fill="#eef2ff">Target resource operation</text>
+    <text x="28" y="249" font-size="17" fill="#c7d2fe">Resource ID, request ID and authorization result</text>
+    <rect x="14" y="290" width="512" height="66" rx="9" fill="#1e293b" stroke="#536391"/>
+    <text x="28" y="317" font-size="22" font-weight="700" fill="#eef2ff">Workload request trace</text>
+    <text x="28" y="341" font-size="17" fill="#c7d2fe">Match the service request ID for attribution</text>
+  </g>
+</svg>
