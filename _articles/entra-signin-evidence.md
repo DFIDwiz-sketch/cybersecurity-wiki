@@ -131,3 +131,7 @@ Use [Azure Key Vault secret-read evidence]({{ '/wiki/azure-key-vault-read-eviden
 ## Verify an Entra session revocation
 
 [Entra session revocation evidence]({{ '/wiki/entra-session-revocation-evidence/' | relative_url }}) separates the administrative action from token service, resource and application-session outcomes.
+
+## Compare BitLocker recovery evidence
+
+[BitLocker recovery evidence]({{ '/wiki/windows-bitlocker-recovery-evidence/' | relative_url }}) compares Entra secret-read records with volume recovery and confirmed protector replacement.

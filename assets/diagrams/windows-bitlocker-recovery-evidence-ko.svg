@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="261" viewBox="0 0 420 261" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">BitLocker 복구 증거</title>
+  <desc id="desc">테넌트·기기·볼륨·보호기를 연결합니다. 백업 저장소의 조회, 기기 복구, 새 보호기 활성화와 같은 백업을 각각 확인합니다.</desc>
+  <rect x="1" y="1" width="418" height="259" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0l10 5-10 5Z" fill="#475569"/></marker></defs>
+  <g stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M210 59v18H74v19"/><path d="M210 59v37"/><path d="M210 59v18h136v19"/>
+    <path d="M74 168v18h55v19"/><path d="M210 168v37"/><path d="M346 168v18h-55v19"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <rect x="30" y="17" width="360" height="42" rx="8" fill="#e2e8f0" stroke="#475569"/>
+    <text x="210" y="43" font-size="16" font-weight="700">테넌트·기기·볼륨·보호기</text>
+    <rect x="10" y="97" width="128" height="71" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="74" y="125" font-size="14" font-weight="700">조회 증거</text>
+    <text x="74" y="149" font-size="12">백업 저장소</text>
+    <rect x="146" y="97" width="128" height="71" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <text x="210" y="125" font-size="14" font-weight="700">복구 증거</text>
+    <text x="210" y="149" font-size="12">엔드포인트</text>
+    <rect x="282" y="97" width="128" height="71" rx="8" fill="#fef3c7" stroke="#92400e"/>
+    <text x="346" y="125" font-size="14" font-weight="700">교체 증거</text>
+    <text x="346" y="149" font-size="12">기기와 백업</text>
+    <rect x="49" y="206" width="322" height="38" rx="8" fill="#e2e8f0" stroke="#475569"/>
+    <text x="210" y="230" font-size="16" font-weight="700">확인된 결과 기록</text>
+  </g>
+</svg>

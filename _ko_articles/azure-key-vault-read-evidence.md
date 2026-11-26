@@ -116,3 +116,7 @@ python3 azure-key-vault-read-evidence.py
 - 권한과 관리 이력. [Key Vault RBAC 지침](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide) · [Azure 활동 로그](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/activity-log) · [관리 ID](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview)
 
 [이전 · Entra 로그인 조사]({{ '/ko/wiki/entra-signin-evidence/' | relative_url }}) · [다음 · AWS KMS 조사]({{ '/ko/wiki/aws-kms-evidence/' | relative_url }})
+
+## BitLocker 복구 조회와 실제 사용 구분하기
+
+[BitLocker 복구 조사]({{ '/ko/wiki/windows-bitlocker-recovery-evidence/' | relative_url }})에서 Entra의 비밀 조회 기록과 기기의 복구, 보호기 교체와 백업을 대조합니다.

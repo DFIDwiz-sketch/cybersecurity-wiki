@@ -131,3 +131,7 @@ SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/
 ## Entra 세션 취소가 적용됐는지 확인하기
 
 [Entra 세션 취소 증거]({{ '/ko/wiki/entra-session-revocation-evidence/' | relative_url }})에서는 관리 작업 기록 이후에 토큰 서비스와 리소스, 앱 세션을 각각 확인합니다.
+
+## BitLocker 복구 조회와 실제 사용 구분하기
+
+[BitLocker 복구 조사]({{ '/ko/wiki/windows-bitlocker-recovery-evidence/' | relative_url }})에서 Entra의 비밀 조회 기록과 기기의 복구, 보호기 교체와 백업을 대조합니다.

@@ -1,0 +1,338 @@
+{
+  "description": "Fictional normalized observations for a single joint device and volume scope. No secret material.",
+  "cases": [
+    {
+      "id": "A",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "confirmed": true
+      },
+      "rotation": null,
+      "expected": {
+        "read": "approved-read-recorded",
+        "recovery": "recovery-correlated",
+        "rotation": "rotation-unobserved"
+      }
+    },
+    {
+      "id": "B",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "metadata",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": null,
+      "rotation": null,
+      "expected": {
+        "read": "metadata-only",
+        "recovery": "recovery-unobserved",
+        "rotation": "rotation-unobserved"
+      }
+    },
+    {
+      "id": "C",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "failure",
+        "approved": true
+      },
+      "recovery": null,
+      "rotation": null,
+      "expected": {
+        "read": "read-failed",
+        "recovery": "recovery-unobserved",
+        "rotation": "rotation-unobserved"
+      }
+    },
+    {
+      "id": "D",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": false
+      },
+      "recovery": null,
+      "rotation": null,
+      "expected": {
+        "read": "read-needs-review",
+        "recovery": "recovery-unobserved",
+        "rotation": "rotation-unobserved"
+      }
+    },
+    {
+      "id": "E",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-b",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-b",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "confirmed": true
+      },
+      "rotation": null,
+      "expected": {
+        "read": "scope-mismatch",
+        "recovery": "scope-mismatch",
+        "rotation": "rotation-unobserved"
+      }
+    },
+    {
+      "id": "F",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "confirmed": true
+      },
+      "rotation": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "active_replacement_id": null,
+        "old_protector_present": null,
+        "backup_id": null,
+        "action_result": "accepted"
+      },
+      "expected": {
+        "read": "approved-read-recorded",
+        "recovery": "recovery-correlated",
+        "rotation": "rotation-request-only"
+      }
+    },
+    {
+      "id": "G",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "confirmed": true
+      },
+      "rotation": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "active_replacement_id": "new-lab-id",
+        "old_protector_present": false,
+        "backup_id": "new-lab-id"
+      },
+      "expected": {
+        "read": "approved-read-recorded",
+        "recovery": "recovery-correlated",
+        "rotation": "replacement-and-backup-verified"
+      }
+    },
+    {
+      "id": "H",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "confirmed": true
+      },
+      "rotation": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "active_replacement_id": "new-lab-id",
+        "old_protector_present": false,
+        "backup_id": "different-lab-id"
+      },
+      "expected": {
+        "read": "approved-read-recorded",
+        "recovery": "recovery-correlated",
+        "rotation": "backup-id-mismatch"
+      }
+    },
+    {
+      "id": "I",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "confirmed": true
+      },
+      "rotation": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "active_replacement_id": "new-lab-id",
+        "old_protector_present": true,
+        "backup_id": "new-lab-id"
+      },
+      "expected": {
+        "read": "approved-read-recorded",
+        "recovery": "recovery-correlated",
+        "rotation": "old-protector-still-present"
+      }
+    },
+    {
+      "id": "J",
+      "scope": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id"
+      },
+      "audit": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "type": "recovery-read",
+        "result": "success",
+        "approved": true
+      },
+      "recovery": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "confirmed": true
+      },
+      "rotation": {
+        "tenant": "lab-tenant",
+        "device": "lab-device-a",
+        "volume": "lab-os-volume",
+        "protector": "old-lab-id",
+        "active_replacement_id": "new-lab-id",
+        "old_protector_present": false,
+        "backup_id": null
+      },
+      "expected": {
+        "read": "approved-read-recorded",
+        "recovery": "recovery-correlated",
+        "rotation": "backup-unobserved"
+      }
+    }
+  ]
+}

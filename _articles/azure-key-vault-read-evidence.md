@@ -116,3 +116,7 @@ Reviewed 2026-11-26. REST behavior follows Microsoft Key Vault Secrets API versi
 - Access and management history. [Key Vault RBAC guide](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide) · [Azure Activity Log](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/activity-log) · [Managed identities](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview)
 
 [Previous · Entra sign-in evidence]({{ '/wiki/entra-signin-evidence/' | relative_url }}) · [Next · AWS KMS evidence]({{ '/wiki/aws-kms-evidence/' | relative_url }})
+
+## Compare BitLocker recovery evidence
+
+[BitLocker recovery evidence]({{ '/wiki/windows-bitlocker-recovery-evidence/' | relative_url }}) compares Entra secret-read records with volume recovery and confirmed protector replacement.
