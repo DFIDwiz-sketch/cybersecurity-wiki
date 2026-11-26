@@ -98,3 +98,7 @@ Reviewed 2026-11-26. The 2023 default change is historical context. Product beha
 - [Object Ownership](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) and [AWS notice for the April 2023 defaults](https://aws.amazon.com/about-aws/whats-new/2022/12/amazon-s3-automatically-enable-block-public-access-disable-access-control-lists-buckets-april-2023/)
 - [Effective account configuration in AWS CLI v2](https://docs.aws.amazon.com/cli/latest/reference/s3control/get-public-access-block.html), [bucket policy status](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicyStatus.html) and [IAM Access Analyzer for S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-analyzer.html)
 - [S3 CloudTrail events](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html), [server access logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html) and [S3 log fields](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html)
+
+## Investigate the AWS Organizations policy path
+
+[AWS SCP evaluation evidence]({{ '/wiki/aws-scp-evaluation-evidence/' | relative_url }}) follows the caller's account through the organization and explains how to confirm an SCP denial.

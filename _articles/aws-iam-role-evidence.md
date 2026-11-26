@@ -151,3 +151,7 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 ## Investigate S3 public-access settings
 
 [Follow S3 Block Public Access]({{ '/wiki/s3-block-public-access-evidence/' | relative_url }}) to compare effective restrictions with direct-bucket request evidence.
+
+## Investigate the AWS Organizations policy path
+
+[AWS SCP evaluation evidence]({{ '/wiki/aws-scp-evaluation-evidence/' | relative_url }}) follows the caller's account through the organization and explains how to confirm an SCP denial.

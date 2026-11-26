@@ -98,3 +98,7 @@ python3 s3-block-public-access-evidence.py
 - [Object Ownership](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html), [2023년 4월 기본값 변경 공지](https://aws.amazon.com/about-aws/whats-new/2022/12/amazon-s3-automatically-enable-block-public-access-disable-access-control-lists-buckets-april-2023/)
 - [AWS CLI v2의 유효 계정 설정 조회](https://docs.aws.amazon.com/cli/latest/reference/s3control/get-public-access-block.html), [버킷 정책 상태](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicyStatus.html), [S3용 IAM Access Analyzer](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-analyzer.html)
 - [S3 CloudTrail 이벤트](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html), [서버 액세스 로그 수집](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html), [로그 필드](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html)
+
+## AWS Organizations 정책 경로 확인하기
+
+[AWS 서비스 제어 정책 증거]({{ '/ko/wiki/aws-scp-evaluation-evidence/' | relative_url }})에서 실제 호출자 계정의 조직 경로와 SCP 거부를 조사하는 방법을 살펴보세요.

@@ -1,0 +1,579 @@
+{
+  "description": "Fictional SCP root-to-account paths with statement matches already computed for one synthetic request. IDs are labels.",
+  "cases": [
+    {
+      "id": "A",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "scp-path-permits"
+      }
+    },
+    {
+      "id": "B",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "different-context",
+              "effect": "Allow",
+              "matches": false
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "missing-allow",
+        "at": [
+          "production"
+        ]
+      }
+    },
+    {
+      "id": "C",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            },
+            {
+              "policy": "region-guardrail",
+              "effect": "Deny",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "explicit-deny",
+        "at": [
+          "root/region-guardrail"
+        ]
+      }
+    },
+    {
+      "id": "D",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            },
+            {
+              "policy": "approved-guardrail",
+              "effect": "Deny",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "explicit-deny",
+        "at": [
+          "workloads/approved-guardrail"
+        ]
+      }
+    },
+    {
+      "id": "E",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "unrelated",
+              "effect": "Allow",
+              "matches": false
+            },
+            {
+              "policy": "service-inventory",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "scp-path-permits"
+      }
+    },
+    {
+      "id": "F",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            },
+            {
+              "policy": "another-region",
+              "effect": "Deny",
+              "matches": false
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "scp-path-permits"
+      }
+    },
+    {
+      "id": "G",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": []
+        }
+      ],
+      "expected": {
+        "result": "missing-allow",
+        "at": [
+          "inventory-account"
+        ]
+      }
+    },
+    {
+      "id": "H",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "another-action",
+              "effect": "Allow",
+              "matches": false
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "missing-allow",
+        "at": [
+          "root"
+        ]
+      }
+    },
+    {
+      "id": "I",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "root",
+          "id": "root",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            },
+            {
+              "policy": "account-guardrail",
+              "effect": "Deny",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "explicit-deny",
+        "at": [
+          "inventory-account/account-guardrail"
+        ]
+      }
+    },
+    {
+      "id": "J",
+      "principal": "management-account",
+      "levels": [],
+      "expected": {
+        "result": "outside-scp-scope",
+        "reason": "management-account"
+      }
+    },
+    {
+      "id": "K",
+      "principal": "service-linked-role",
+      "levels": [],
+      "expected": {
+        "result": "outside-scp-scope",
+        "reason": "service-linked-role"
+      }
+    },
+    {
+      "id": "L",
+      "principal": "member-role",
+      "levels": [
+        {
+          "kind": "ou",
+          "id": "workloads",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "ou",
+          "id": "production",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "kind": "account",
+          "id": "inventory-account",
+          "statements": [
+            {
+              "policy": "baseline",
+              "effect": "Allow",
+              "matches": true
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "result": "insufficient-path"
+      }
+    }
+  ]
+}

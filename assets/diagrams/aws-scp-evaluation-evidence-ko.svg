@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="345" viewBox="0 0 420 345" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">SCP 경로와 평가</title>
+  <desc id="desc">조직 루트와 각 상위 OU를 거쳐 호출자 계정으로 이어집니다. 계층마다 허용이 필요하며 일치하는 거부 하나가 우선합니다. SCP 통과 뒤 다른 권한 제어를 확인합니다.</desc>
+  <rect x="1" y="1" width="418" height="343" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0l10 5-10 5Z" fill="#475569"/></marker></defs>
+  <g fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M210 53v17"/><path d="M210 106v17"/><path d="M210 159v17"/>
+    <path d="M210 212v16H107v17"/><path d="M210 212v16h103v17"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <rect x="54" y="18" width="312" height="35" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="41" font-size="17" font-weight="700">조직 루트</text>
+    <rect x="54" y="71" width="312" height="35" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="94" font-size="17" font-weight="700">각 상위 OU</text>
+    <rect x="54" y="124" width="312" height="35" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="147" font-size="17" font-weight="700">호출자의 멤버 계정</text>
+    <rect x="54" y="177" width="312" height="35" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="200" font-size="17" font-weight="700">각 계층 확인</text>
+    <rect x="12" y="246" width="190" height="74" rx="8" fill="#ffedd5" stroke="#9a3412"/>
+    <rect x="218" y="246" width="190" height="74" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <text x="107" y="274" font-size="12">거부 일치 또는 허용 누락</text>
+    <text x="313" y="274" font-size="12">전 계층 허용 및 거부 없음</text>
+    <text x="107" y="301" font-size="14" font-weight="700">SCP에서 요청 거부 가능</text>
+    <text x="313" y="301" font-size="14" font-weight="700">다른 권한 제어 확인</text>
+  </g>
+</svg>

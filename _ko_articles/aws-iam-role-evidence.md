@@ -151,3 +151,7 @@ lab-04와 lab-06의 발급 주체를 각각 찾고, lab-07을 왜 연결하지 �
 ## S3 퍼블릭 액세스 설정 조사
 
 [S3 퍼블릭 액세스 차단]({{ '/ko/wiki/s3-block-public-access-evidence/' | relative_url }})에서 적용된 제한과 버킷 직접 요청의 증거를 대조하세요.
+
+## AWS Organizations 정책 경로 확인하기
+
+[AWS 서비스 제어 정책 증거]({{ '/ko/wiki/aws-scp-evaluation-evidence/' | relative_url }})에서 실제 호출자 계정의 조직 경로와 SCP 거부를 조사하는 방법을 살펴보세요.
