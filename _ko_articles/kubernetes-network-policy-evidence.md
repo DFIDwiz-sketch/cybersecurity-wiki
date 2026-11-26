@@ -131,3 +131,7 @@ kubectl -n shop get endpointslices -l kubernetes.io/service-name=orders -o yaml
 ## Service 엔드포인트가 준비 상태를 잃었을 때
 
 [Kubernetes 프로브 조사]({{ '/ko/wiki/kubernetes-probe-evidence/' | relative_url }})에서 준비 상태 변경과 컨테이너 재시작을 구분한 뒤 연결 실패가 네트워크 정책과 관련 있는지 좁혀 보세요.
+
+## Service 백엔드 확인하기
+
+정책 판정이 보이기 전에 연결이 실패했다면 [EndpointSlice 증거]({{ '/ko/wiki/kubernetes-endpointslice-routing-evidence/' | relative_url }})에서 후보 포트와 노드별 선택 범위를 확인하세요.

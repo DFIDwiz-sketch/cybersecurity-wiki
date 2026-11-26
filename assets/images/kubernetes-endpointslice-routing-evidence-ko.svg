@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">Service 설정에서 백엔드 전달 증거까지</title>
+  <desc id="desc">연결된 모든 Slice의 주소와 숫자 포트를 해석하고, 전달 조건과 클라이언트·백엔드 관측을 대조합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#a5f3fc"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#a5f3fc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M270 80v24"/>
+    <path d="M270 172v24"/>
+    <path d="M270 264v24"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="41" font-size="22" font-weight="700" fill="#ecfeff">Service</text>
+    <text x="28" y="65" font-size="17" fill="#cffafe">네임스페이스, Service UID, 포트 이름과 프로토콜</text>
+    <rect x="14" y="106" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="133" font-size="22" font-weight="700" fill="#ecfeff">EndpointSlice</text>
+    <text x="28" y="157" font-size="17" fill="#cffafe">연결된 모든 Slice의 관리자와 소유자 확인</text>
+    <rect x="14" y="198" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="225" font-size="22" font-weight="700" fill="#ecfeff">백엔드 후보</text>
+    <text x="28" y="249" font-size="17" fill="#cffafe">주소, 숫자 포트, 준비 상태, 노드</text>
+    <rect x="14" y="290" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="317" font-size="22" font-weight="700" fill="#ecfeff">실제 전달 증거</text>
+    <text x="28" y="341" font-size="17" fill="#cffafe">클라이언트 또는 전달 노드와 백엔드 요청 기록</text>
+  </g>
+</svg>

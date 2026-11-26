@@ -117,3 +117,7 @@ Reviewed 2026-11-26 against current upstream Kubernetes v1.37 documentation. Che
 ## Check quota and scheduling evidence
 
 If a rollout stalls, use [Kubernetes ResourceQuota]({{ '/wiki/kubernetes-quota-evidence/' | relative_url }}) to locate policy refusals and distinguish them from scheduler fit.
+
+## Trace the Service backend
+
+To map that ready Pod to a numeric Service backend and check delivery, continue with [EndpointSlice evidence]({{ '/wiki/kubernetes-endpointslice-routing-evidence/' | relative_url }}).

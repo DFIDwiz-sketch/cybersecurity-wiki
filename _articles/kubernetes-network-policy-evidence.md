@@ -131,3 +131,7 @@ Trace [Kubernetes Pod Security Admission]({{ '/wiki/kubernetes-pod-security-admi
 ## Explain a Service endpoint becoming unready
 
 Use [Kubernetes probe evidence]({{ '/wiki/kubernetes-probe-evidence/' | relative_url }}) to tell a readiness change from a container restart before attributing a failed connection to policy.
+
+## Trace the Service backend
+
+If a connection fails before a policy verdict is visible, use [EndpointSlice evidence]({{ '/wiki/kubernetes-endpointslice-routing-evidence/' | relative_url }}) to confirm the candidate backend port and node locality.

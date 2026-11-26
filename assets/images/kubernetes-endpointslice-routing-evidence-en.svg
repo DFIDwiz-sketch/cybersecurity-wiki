@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">Service to backend evidence</title>
+  <desc id="desc">A Service is matched to all associated slices. Resolve the address and numeric port per slice. Apply the forwarding context and check client and backend evidence.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#a5f3fc"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#a5f3fc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M270 80v24"/>
+    <path d="M270 172v24"/>
+    <path d="M270 264v24"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="41" font-size="22" font-weight="700" fill="#ecfeff">Service</text>
+    <text x="28" y="65" font-size="17" fill="#cffafe">Namespace, Service UID, port name and protocol</text>
+    <rect x="14" y="106" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="133" font-size="22" font-weight="700" fill="#ecfeff">EndpointSlices</text>
+    <text x="28" y="157" font-size="17" fill="#cffafe">All associated slices, manager and owner identity</text>
+    <rect x="14" y="198" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="225" font-size="22" font-weight="700" fill="#ecfeff">Backend candidates</text>
+    <text x="28" y="249" font-size="17" fill="#cffafe">Address, numeric port, readiness and node</text>
+    <rect x="14" y="290" width="512" height="66" rx="9" fill="#1e293b" stroke="#406479"/>
+    <text x="28" y="317" font-size="22" font-weight="700" fill="#ecfeff">Observed delivery</text>
+    <text x="28" y="341" font-size="17" fill="#cffafe">Client or forwarding node and backend request records</text>
+  </g>
+</svg>

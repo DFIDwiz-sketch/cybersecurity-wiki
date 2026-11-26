@@ -117,3 +117,7 @@ python3 kubernetes-probe-evidence.py
 ## 할당량과 배치 증거 확인하기
 
 배포가 멈췄다면 [Kubernetes 리소스 할당량]({{ '/ko/wiki/kubernetes-quota-evidence/' | relative_url }})에서 정책에 따른 생성 거부와 노드 배치 실패를 구분해 보세요.
+
+## Service 백엔드 확인하기
+
+준비된 Pod가 어느 Service 백엔드 포트에 연결되는지 확인하려면 [EndpointSlice 증거]({{ '/ko/wiki/kubernetes-endpointslice-routing-evidence/' | relative_url }})로 이어서 학습하세요.

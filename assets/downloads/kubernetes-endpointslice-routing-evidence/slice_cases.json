@@ -1,0 +1,644 @@
+{
+  "description": "Fictional training data resembling Kubernetes API fields. Names, UIDs and IP addresses are illustrative.",
+  "cases": [
+    {
+      "id": "two-port-generations",
+      "client_node": "worker-a",
+      "service": {
+        "metadata": {
+          "name": "checkout",
+          "namespace": "checkout",
+          "uid": "service-lifetime-2"
+        },
+        "spec": {
+          "clusterIP": "203.0.113.42",
+          "ports": [
+            {
+              "name": "https",
+              "port": 443,
+              "targetPort": "app-tls",
+              "protocol": "TCP"
+            }
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "selector": {
+            "app": "checkout"
+          }
+        }
+      },
+      "slices": [
+        {
+          "metadata": {
+            "name": "checkout-blue",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 8443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.10"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              },
+              "nodeName": "worker-a",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-blue",
+                "namespace": "checkout",
+                "uid": "pod-blue"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "checkout-green",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 9443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.11"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              },
+              "nodeName": "worker-b",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-green",
+                "namespace": "checkout",
+                "uid": "pod-green"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "checkout-udp",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "UDP",
+              "port": 9443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.11"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              },
+              "nodeName": "worker-b",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-green",
+                "namespace": "checkout",
+                "uid": "pod-green"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "checkout-other",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "another-service",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 9443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.11"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              },
+              "nodeName": "worker-b",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-green",
+                "namespace": "checkout",
+                "uid": "pod-green"
+              }
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "candidates": [
+          "192.0.2.10:8443/TCP",
+          "192.0.2.11:9443/TCP"
+        ],
+        "findings": []
+      }
+    },
+    {
+      "id": "duplicate-entry",
+      "client_node": "worker-a",
+      "service": {
+        "metadata": {
+          "name": "checkout",
+          "namespace": "checkout",
+          "uid": "service-lifetime-2"
+        },
+        "spec": {
+          "clusterIP": "203.0.113.42",
+          "ports": [
+            {
+              "name": "https",
+              "port": 443,
+              "targetPort": "app-tls",
+              "protocol": "TCP"
+            }
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "selector": {
+            "app": "checkout"
+          }
+        }
+      },
+      "slices": [
+        {
+          "metadata": {
+            "name": "checkout-blue",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 8443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.10"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              },
+              "nodeName": "worker-a",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-blue",
+                "namespace": "checkout",
+                "uid": "pod-blue"
+              }
+            }
+          ]
+        },
+        {
+          "metadata": {
+            "name": "checkout-duplicate",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 8443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.10"
+              ],
+              "conditions": {},
+              "nodeName": "worker-a",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-blue",
+                "namespace": "checkout",
+                "uid": "pod-blue"
+              }
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "candidates": [
+          "192.0.2.10:8443/TCP"
+        ],
+        "findings": [
+          "duplicate-address-port"
+        ]
+      }
+    },
+    {
+      "id": "recreated-service",
+      "client_node": "worker-a",
+      "service": {
+        "metadata": {
+          "name": "checkout",
+          "namespace": "checkout",
+          "uid": "service-lifetime-2"
+        },
+        "spec": {
+          "clusterIP": "203.0.113.42",
+          "ports": [
+            {
+              "name": "https",
+              "port": 443,
+              "targetPort": "app-tls",
+              "protocol": "TCP"
+            }
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "selector": {
+            "app": "checkout"
+          }
+        }
+      },
+      "slices": [
+        {
+          "metadata": {
+            "name": "checkout-stale-owner",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-1"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 8443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.10"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              },
+              "nodeName": "worker-a",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-blue",
+                "namespace": "checkout",
+                "uid": "pod-blue"
+              }
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "candidates": [
+          "192.0.2.10:8443/TCP"
+        ],
+        "findings": [
+          "service-owner-uid-mismatch"
+        ]
+      }
+    },
+    {
+      "id": "local-policy",
+      "client_node": "worker-a",
+      "service": {
+        "metadata": {
+          "name": "checkout",
+          "namespace": "checkout",
+          "uid": "service-lifetime-2"
+        },
+        "spec": {
+          "clusterIP": "203.0.113.42",
+          "ports": [
+            {
+              "name": "https",
+              "port": 443,
+              "targetPort": "app-tls",
+              "protocol": "TCP"
+            }
+          ],
+          "internalTrafficPolicy": "Local",
+          "selector": {
+            "app": "checkout"
+          }
+        }
+      },
+      "slices": [
+        {
+          "metadata": {
+            "name": "checkout-green",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 9443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.11"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              },
+              "nodeName": "worker-b",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-green",
+                "namespace": "checkout",
+                "uid": "pod-green"
+              }
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "candidates": [],
+        "findings": [
+          "node-local-filter"
+        ]
+      }
+    },
+    {
+      "id": "draining-endpoint",
+      "client_node": "worker-a",
+      "service": {
+        "metadata": {
+          "name": "checkout",
+          "namespace": "checkout",
+          "uid": "service-lifetime-2"
+        },
+        "spec": {
+          "clusterIP": "203.0.113.42",
+          "ports": [
+            {
+              "name": "https",
+              "port": 443,
+              "targetPort": "app-tls",
+              "protocol": "TCP"
+            }
+          ],
+          "internalTrafficPolicy": "Cluster",
+          "selector": {
+            "app": "checkout"
+          }
+        }
+      },
+      "slices": [
+        {
+          "metadata": {
+            "name": "checkout-draining",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io"
+            },
+            "ownerReferences": [
+              {
+                "apiVersion": "v1",
+                "kind": "Service",
+                "name": "checkout",
+                "uid": "service-lifetime-2"
+              }
+            ]
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 8443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "192.0.2.10"
+              ],
+              "conditions": {
+                "ready": false,
+                "serving": true,
+                "terminating": true
+              },
+              "nodeName": "worker-a",
+              "targetRef": {
+                "kind": "Pod",
+                "name": "checkout-blue",
+                "namespace": "checkout",
+                "uid": "pod-blue"
+              }
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "candidates": [],
+        "findings": [
+          "terminating-serving"
+        ]
+      }
+    },
+    {
+      "id": "selectorless-service",
+      "client_node": "worker-a",
+      "service": {
+        "metadata": {
+          "name": "checkout",
+          "namespace": "checkout",
+          "uid": "service-lifetime-2"
+        },
+        "spec": {
+          "clusterIP": "203.0.113.42",
+          "ports": [
+            {
+              "name": "https",
+              "port": 443,
+              "targetPort": 443,
+              "protocol": "TCP"
+            }
+          ],
+          "internalTrafficPolicy": "Cluster"
+        }
+      },
+      "slices": [
+        {
+          "metadata": {
+            "name": "checkout-external",
+            "namespace": "checkout",
+            "labels": {
+              "kubernetes.io/service-name": "checkout",
+              "endpointslice.kubernetes.io/managed-by": "inventory.example.com"
+            }
+          },
+          "addressType": "IPv4",
+          "ports": [
+            {
+              "name": "https",
+              "protocol": "TCP",
+              "port": 9443
+            }
+          ],
+          "endpoints": [
+            {
+              "addresses": [
+                "198.51.100.40"
+              ],
+              "conditions": {
+                "ready": true,
+                "serving": true,
+                "terminating": false
+              }
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "candidates": [
+          "198.51.100.40:9443/TCP"
+        ],
+        "findings": [
+          "selectorless-service"
+        ]
+      }
+    }
+  ]
+}
