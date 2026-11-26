@@ -115,3 +115,7 @@ python3 dns-negative-cache-review.py dns-negative-cache-cases.json --check
 - [RFC 8914 §§ 3–4](https://www.rfc-editor.org/rfc/rfc8914.html), 2020년 10월. EDE와 응답 코드.
 - [RFC 9520 §§ 2–3](https://www.rfc-editor.org/rfc/rfc9520.html), 2023년 12월. 해석 실패 캐싱과 재시도 요건.
 - [ISC BIND 9.20 안정 버전 매뉴얼](https://bind9.readthedocs.io/en/stable/manpages.html#dig-dns-lookup-utility)과 [설정 문서](https://bind9.readthedocs.io/en/stable/reference.html#namedconf-statement-servfail-ttl). 9.20.31 문서에서 플래그와 `servfail-ttl`을 확인했습니다.
+
+## 확장 DNS 오류로 필터링과 질의 거부 구분하기
+
+[확장 DNS 오류 조사]({{ '/ko/wiki/dns-extended-error-evidence/' | relative_url }})에서는 같은 응답 코드에 담긴 EDE를 비교하고 정책과 클라이언트 접근 제어를 각각 확인합니다.

@@ -244,3 +244,7 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 [DNS 응답 잘림과 TCP 재질의 조사]({{ '/ko/wiki/dns-tcp-fallback-evidence/' | relative_url }})에서 DNS 응답의 TC 플래그, TCP 전환과 최종 이름 해석 결과를 대조합니다.
 
 [관련 글 · DNS HTTPS 레코드와 실제 접속 경로]({{ '/ko/wiki/dns-https-record-evidence/' | relative_url }})
+
+## 확장 DNS 오류로 필터링과 질의 거부 구분하기
+
+[확장 DNS 오류 조사]({{ '/ko/wiki/dns-extended-error-evidence/' | relative_url }})에서는 같은 응답 코드에 담긴 EDE를 비교하고 정책과 클라이언트 접근 제어를 각각 확인합니다.

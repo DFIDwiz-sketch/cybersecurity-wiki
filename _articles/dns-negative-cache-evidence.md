@@ -115,3 +115,7 @@ Reviewed 2026-11-21. The standards have different publication dates and scopes. 
 - [RFC 8914 §§ 3–4](https://www.rfc-editor.org/rfc/rfc8914.html), October 2020, EDE and its relationship to the response code.
 - [RFC 9520 §§ 2–3](https://www.rfc-editor.org/rfc/rfc9520.html), December 2023, resolution failure caching and retry requirements.
 - [ISC BIND 9.20 stable manual pages](https://bind9.readthedocs.io/en/stable/manpages.html#dig-dns-lookup-utility) and [configuration reference](https://bind9.readthedocs.io/en/stable/reference.html#namedconf-statement-servfail-ttl), checked in the 9.20.31 documentation for flags and `servfail-ttl`.
+
+## Distinguish filtering from request refusal with Extended DNS Errors
+
+[Extended DNS Errors evidence]({{ '/wiki/dns-extended-error-evidence/' | relative_url }}) compares optional EDE codes on the same response code and traces reported reasons to resolver policy or client access controls.

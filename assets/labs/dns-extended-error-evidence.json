@@ -1,0 +1,207 @@
+{
+  "description": "Fictional DNS observations, with hex only for the EDNS option sequence.",
+  "cases": [
+    {
+      "id": "A",
+      "rcode": "NOERROR",
+      "tc": false,
+      "answers": 1,
+      "opt_hex": "",
+      "expected": {
+        "rcode": "NOERROR",
+        "tc": false,
+        "answers": 1,
+        "state": "opt-without-ede",
+        "ede": []
+      }
+    },
+    {
+      "id": "B",
+      "rcode": "REFUSED",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": "000f0002000f",
+      "expected": {
+        "rcode": "REFUSED",
+        "tc": false,
+        "answers": 0,
+        "state": "ede",
+        "ede": [
+          {
+            "code": 15,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "C",
+      "rcode": "REFUSED",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": "000f00020012",
+      "expected": {
+        "rcode": "REFUSED",
+        "tc": false,
+        "answers": 0,
+        "state": "ede",
+        "ede": [
+          {
+            "code": 18,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "D",
+      "rcode": "NXDOMAIN",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": "000f00020011",
+      "expected": {
+        "rcode": "NXDOMAIN",
+        "tc": false,
+        "answers": 0,
+        "state": "ede",
+        "ede": [
+          {
+            "code": 17,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "E",
+      "rcode": "SERVFAIL",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": "000f00020006000f0002000d",
+      "expected": {
+        "rcode": "SERVFAIL",
+        "tc": false,
+        "answers": 0,
+        "state": "ede",
+        "ede": [
+          {
+            "code": 6,
+            "text": ""
+          },
+          {
+            "code": 13,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "F",
+      "rcode": "NOERROR",
+      "tc": false,
+      "answers": 1,
+      "opt_hex": "000f000c00046c616220706f6c696379",
+      "expected": {
+        "rcode": "NOERROR",
+        "tc": false,
+        "answers": 1,
+        "state": "ede",
+        "ede": [
+          {
+            "code": 4,
+            "text": "lab policy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "G",
+      "rcode": "NXDOMAIN",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": null,
+      "expected": {
+        "rcode": "NXDOMAIN",
+        "tc": false,
+        "answers": 0,
+        "state": "no-opt"
+      }
+    },
+    {
+      "id": "H",
+      "rcode": null,
+      "tc": null,
+      "answers": null,
+      "opt_hex": null,
+      "expected": {
+        "state": "no-response"
+      }
+    },
+    {
+      "id": "I",
+      "rcode": "SERVFAIL",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": "000f00040006",
+      "expected": {
+        "rcode": "SERVFAIL",
+        "tc": false,
+        "answers": 0,
+        "state": "malformed-opt",
+        "error": "option extends beyond OPT data"
+      }
+    },
+    {
+      "id": "J",
+      "rcode": "REFUSED",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": "000f0002c000",
+      "expected": {
+        "rcode": "REFUSED",
+        "tc": false,
+        "answers": 0,
+        "state": "ede",
+        "ede": [
+          {
+            "code": 49152,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "K",
+      "rcode": "NOERROR",
+      "tc": true,
+      "answers": 0,
+      "opt_hex": "",
+      "expected": {
+        "rcode": "NOERROR",
+        "tc": true,
+        "answers": 0,
+        "state": "opt-without-ede",
+        "ede": []
+      }
+    },
+    {
+      "id": "L",
+      "rcode": "REFUSED",
+      "tc": false,
+      "answers": 0,
+      "opt_hex": "000c00020000000f00020010",
+      "expected": {
+        "rcode": "REFUSED",
+        "tc": false,
+        "answers": 0,
+        "state": "ede",
+        "ede": [
+          {
+            "code": 16,
+            "text": ""
+          }
+        ]
+      }
+    }
+  ]
+}
