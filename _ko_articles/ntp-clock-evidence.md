@@ -114,3 +114,7 @@ N01의 부호를 설명하고 N04와 N05가 서로 반대 방향으로 계산된
 - [chrony · chronyc 4.9 매뉴얼, 2026년 8월 릴리스](https://chrony-project.org/doc/4.9/chronyc.html)
 - [Microsoft · Windows Time 서비스 도구와 설정, 2025년 9월 갱신](https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings)
 - [Microsoft · Windows Time 추적을 위한 이벤트, 2021년 11월 갱신](https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-for-traceability)
+
+## 함께 읽기
+
+[NTS로 시간원 인증 확인하기]({{ '/ko/wiki/nts-time-source-evidence/' | relative_url }})에서 키 설정, 인증된 측정값, 실제 시간원 선택을 확인하는 방법을 연습하세요.

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">NTS from key establishment to clock evidence</title>
+  <desc id="desc">Key establishment yields keys and cookies. Authenticated UDP NTP measurements feed source selection, which feeds clock correction.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#93c5fd"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#93c5fd" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M270 80v24"/>
+    <path d="M270 172v24"/>
+    <path d="M270 264v24"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="41" font-size="22" font-weight="700" fill="#eff6ff">NTS-KE · TCP 4460 by default</text>
+    <text x="28" y="65" font-size="17" fill="#bfdbfe">Validate the TLS certificate and obtain keys and cookies</text>
+    <rect x="14" y="106" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="133" font-size="22" font-weight="700" fill="#eff6ff">NTP · UDP 123 by default</text>
+    <text x="28" y="157" font-size="17" fill="#bfdbfe">Authenticate the response and check the measurement</text>
+    <rect x="14" y="198" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="225" font-size="22" font-weight="700" fill="#eff6ff">Source selection</text>
+    <text x="28" y="249" font-size="17" fill="#bfdbfe">Identify the chosen source and combined sources</text>
+    <rect x="14" y="290" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="317" font-size="22" font-weight="700" fill="#eff6ff">Clock evidence</text>
+    <text x="28" y="341" font-size="17" fill="#bfdbfe">Check the reference time and estimated clock error</text>
+  </g>
+</svg>

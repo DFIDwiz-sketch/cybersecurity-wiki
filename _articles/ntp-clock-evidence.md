@@ -114,3 +114,7 @@ Reviewed 20 November 2026. For operational checks, match the version installed o
 - [chrony · chronyc 4.9 manual, August 2026 release](https://chrony-project.org/doc/4.9/chronyc.html)
 - [Microsoft · Windows Time service tools and settings, updated September 2025](https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings)
 - [Microsoft · Windows Time for Traceability, updated November 2021](https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-for-traceability)
+
+## Related learning
+
+Continue with [Network Time Security and chrony evidence]({{ '/wiki/nts-time-source-evidence/' | relative_url }}) to distinguish key establishment, authenticated measurements and source selection.

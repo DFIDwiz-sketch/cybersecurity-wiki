@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">NTS 키 설정에서 시계 증거까지</title>
+  <desc id="desc">키 설정에서 키와 쿠키를 받습니다. UDP에서 인증한 NTP 측정값으로 시간원을 선택하고 시계를 보정합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#93c5fd"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#93c5fd" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M270 80v24"/>
+    <path d="M270 172v24"/>
+    <path d="M270 264v24"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="41" font-size="22" font-weight="700" fill="#eff6ff">NTS-KE · 기본 TCP 4460</text>
+    <text x="28" y="65" font-size="17" fill="#bfdbfe">TLS 인증서를 확인하고 키와 쿠키 획득</text>
+    <rect x="14" y="106" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="133" font-size="22" font-weight="700" fill="#eff6ff">NTP · 기본 UDP 123</text>
+    <text x="28" y="157" font-size="17" fill="#bfdbfe">응답을 인증하고 측정값 검사</text>
+    <rect x="14" y="198" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="225" font-size="22" font-weight="700" fill="#eff6ff">시간원 선택</text>
+    <text x="28" y="249" font-size="17" fill="#bfdbfe">기준 시간원과 계산에 합친 시간원 확인</text>
+    <rect x="14" y="290" width="512" height="66" rx="9" fill="#1e293b" stroke="#456286"/>
+    <text x="28" y="317" font-size="22" font-weight="700" fill="#eff6ff">시계 증거</text>
+    <text x="28" y="341" font-size="17" fill="#bfdbfe">기준 시각과 시계 오차 추정치 확인</text>
+  </g>
+</svg>

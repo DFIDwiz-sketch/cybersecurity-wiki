@@ -191,3 +191,7 @@ openssl verify -no-CApath -no-CAstore -CAfile root.pem \
 ## 인증서 갱신 이어서 조사하기
 
 [CSR·배포 준비 파일·실제 제시 인증서 대조하기]({{ '/ko/wiki/certificate-renewal-evidence/' | relative_url }}) · 배포한 리스너마다 관측한 인증서를 확인합니다.
+
+## 함께 읽기
+
+인증서 유효기간 검사와 시계 동기화가 서로 영향을 주는 사례는 [NTS와 chrony 증거]({{ '/ko/wiki/nts-time-source-evidence/' | relative_url }})에서 볼 수 있습니다.

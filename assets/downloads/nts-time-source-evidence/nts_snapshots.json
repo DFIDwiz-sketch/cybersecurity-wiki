@@ -1,0 +1,139 @@
+{
+  "note": "Fictional observations, normalized from a same-daemon window for each source. A null value means missing evidence. Clock estimates and budget use milliseconds.",
+  "budget_ms": 10,
+  "cases": [
+    {
+      "id": "healthy",
+      "expected_source": "192.0.2.10",
+      "selected_source": "192.0.2.10",
+      "sources": {
+        "192.0.2.10": {
+          "mode": "NTS",
+          "good_before": 17,
+          "good_after": 20,
+          "last_auth": true,
+          "ke_observed": false
+        }
+      },
+      "estimated_error_ms": 2.1,
+      "expected_flags": [
+        "fresh-nts-evidence",
+        "clock-estimate-within-budget"
+      ]
+    },
+    {
+      "id": "key-exchange-only",
+      "expected_source": "192.0.2.10",
+      "selected_source": null,
+      "sources": {
+        "192.0.2.10": {
+          "mode": "NTS",
+          "good_before": null,
+          "good_after": null,
+          "last_auth": null,
+          "ke_observed": true
+        }
+      },
+      "estimated_error_ms": null,
+      "expected_flags": [
+        "no-source-selected",
+        "measurement-evidence-missing",
+        "key-establishment-observed",
+        "clock-estimate-missing"
+      ]
+    },
+    {
+      "id": "cached-report",
+      "expected_source": "192.0.2.10",
+      "selected_source": "192.0.2.10",
+      "sources": {
+        "192.0.2.10": {
+          "mode": "NTS",
+          "good_before": 20,
+          "good_after": 20,
+          "last_auth": true,
+          "ke_observed": false
+        }
+      },
+      "estimated_error_ms": 3,
+      "expected_flags": [
+        "no-new-accepted-sample",
+        "clock-estimate-within-budget"
+      ]
+    },
+    {
+      "id": "different-selected-source",
+      "expected_source": "192.0.2.10",
+      "selected_source": "192.0.2.20",
+      "sources": {
+        "192.0.2.10": {
+          "mode": "NTS",
+          "good_before": 17,
+          "good_after": 20,
+          "last_auth": true,
+          "ke_observed": false
+        },
+        "192.0.2.20": {
+          "mode": "NTS",
+          "good_before": 8,
+          "good_after": 11,
+          "last_auth": true,
+          "ke_observed": false
+        }
+      },
+      "estimated_error_ms": 3.2,
+      "expected_flags": [
+        "different-source-selected",
+        "fresh-nts-evidence",
+        "clock-estimate-within-budget"
+      ]
+    },
+    {
+      "id": "unauthenticated-selection",
+      "expected_source": "192.0.2.10",
+      "selected_source": "192.0.2.20",
+      "sources": {
+        "192.0.2.10": {
+          "mode": "NTS",
+          "good_before": 22,
+          "good_after": 22,
+          "last_auth": true,
+          "ke_observed": false
+        },
+        "192.0.2.20": {
+          "mode": "plain",
+          "good_before": 12,
+          "good_after": 15,
+          "last_auth": false,
+          "ke_observed": false
+        }
+      },
+      "estimated_error_ms": 2.8,
+      "expected_flags": [
+        "different-source-selected",
+        "selected-source-unauthenticated",
+        "no-new-accepted-sample",
+        "clock-estimate-within-budget"
+      ]
+    },
+    {
+      "id": "clock-quality-alert",
+      "expected_source": "192.0.2.10",
+      "selected_source": "192.0.2.10",
+      "sources": {
+        "192.0.2.10": {
+          "mode": "NTS",
+          "good_before": 20,
+          "good_after": 23,
+          "last_auth": true,
+          "ke_observed": false
+        }
+      },
+      "estimated_error_ms": 32,
+      "expected_flags": [
+        "fresh-nts-evidence",
+        "clock-estimate-over-budget"
+      ]
+    }
+  ]
+}

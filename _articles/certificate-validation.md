@@ -191,3 +191,7 @@ Complete the chapter when you can draw issuance versus verification direction, i
 ## Trace a Certificate Renewal
 
 [Follow the CSR, staged bundle and live leaf]({{ '/wiki/certificate-renewal-evidence/' | relative_url }}) · Verify each listener in the rollout.
+
+## Related learning
+
+For an example of how certificate time checks interact with clock synchronization, see [Network Time Security and chrony evidence]({{ '/wiki/nts-time-source-evidence/' | relative_url }}).
