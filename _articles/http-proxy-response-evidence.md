@@ -103,3 +103,7 @@ Reviewed 2026-11-22. Use the deployed product and version's field definitions wh
 ## Trace an HSTS upgrade
 
 Use [HSTS evidence]({{ '/wiki/http-hsts-evidence/' | relative_url }}) to distinguish a client-side upgrade before transmission from a redirect sent by the server.
+
+## Trace the layer that sent HTTP 429
+
+[HTTP rate limit evidence]({{ '/wiki/http-rate-limit-evidence/' | relative_url }}) compares gateway and origin throttles and explains how to interpret Retry-After.

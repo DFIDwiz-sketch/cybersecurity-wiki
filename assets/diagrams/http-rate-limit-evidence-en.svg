@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="341" viewBox="0 0 420 341" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Two possible sources of HTTP 429</title>
+  <desc id="desc">The gateway can produce 429 before calling the origin, or relay the origin's response. Correlate the gateway decision and origin request.</desc>
+  <rect x="1" y="1" width="418" height="339" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0l10 5-10 5Z" fill="#475569"/></marker></defs>
+  <g fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M210 52v17"/><path d="M210 106v14H107v17"/><path d="M210 106v14h103v17"/>
+    <path d="M107 196v42h43v16"/><path d="M313 196v42h-43v16"/><path d="M210 291v8"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <rect x="49" y="16" width="322" height="36" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="39" font-size="17" font-weight="700">Client request</text>
+    <rect x="49" y="70" width="322" height="36" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="93" font-size="17" font-weight="700">Gateway</text>
+    <rect x="12" y="138" width="190" height="58" rx="8" fill="#ffedd5" stroke="#9a3412"/>
+    <text x="107" y="161" font-size="14">Local decision</text>
+    <text x="107" y="183" font-size="16" font-weight="700">Gateway 429</text>
+    <rect x="218" y="138" width="190" height="58" rx="8" fill="#dcfce7" stroke="#166534"/>
+    <text x="313" y="161" font-size="14">Forwarded request</text>
+    <text x="313" y="183" font-size="16" font-weight="700">Origin response</text>
+    <rect x="49" y="255" width="322" height="36" rx="8" fill="#e0f2fe" stroke="#075985"/>
+    <text x="210" y="278" font-size="16" font-weight="700">Gateway response</text>
+    <text x="210" y="323" font-size="14">Compare IDs and actions</text>
+  </g>
+</svg>

@@ -124,3 +124,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## HTTP/2 연결 재사용 조사
 
 [HTTP/2 요청 대상과 스트림, 421 응답]({{ '/ko/wiki/http2-connection-reuse-evidence/' | relative_url }})에서 연결의 TLS 정보와 개별 요청의 경로 결정 증거를 비교하세요.
+
+## HTTP 429를 보낸 계층 찾기
+
+[HTTP 요청 제한 증거]({{ '/ko/wiki/http-rate-limit-evidence/' | relative_url }})에서 게이트웨이 자체 제한과 원본 응답 전달을 구분하고 Retry-After를 해석합니다.

@@ -124,3 +124,7 @@ Use [HTTP Range Requests and Partial Download Evidence]({{ '/wiki/http-range-evi
 ## Trace HTTP/2 connection reuse
 
 [Follow HTTP/2 authority, stream IDs and 421]({{ '/wiki/http2-connection-reuse-evidence/' | relative_url }}) to compare connection-level TLS evidence with per-request routing.
+
+## Trace the layer that sent HTTP 429
+
+[HTTP rate limit evidence]({{ '/wiki/http-rate-limit-evidence/' | relative_url }}) compares gateway and origin throttles and explains how to interpret Retry-After.
