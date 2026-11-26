@@ -283,3 +283,7 @@ Review [Windows logs]({{ '/wiki/windows-logs/' | relative_url }}), [Splunk basic
 ## Verify scheduled task execution
 
 Use [Windows scheduled task runtime evidence]({{ '/wiki/windows-scheduled-task-runtime-evidence/' | relative_url }}) to track an executable action from the task definition to its scheduler instance, process and observed result.
+
+## Correlate a registry write with its writer
+
+Read [Windows registry change evidence]({{ '/wiki/windows-registry-change-evidence/' | relative_url }}) to compare Security 4657 with Sysmon registry and process-lifetime records.

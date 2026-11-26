@@ -106,3 +106,7 @@ Reviewed November 26, 2026. Event versions and fields follow Microsoft's Windows
 - Supplementary telemetry and filtered queries. [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) · [Get-WinEvent FilterHashtable](https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-get-winevent-queries-with-filterhashtable)
 
 [Previous · Windows security event analysis]({{ '/wiki/windows-logs/' | relative_url }}) · [Next · Sysmon process investigation]({{ '/wiki/sysmon-investigation/' | relative_url }}) · [Related · Privileged logon evidence]({{ '/wiki/windows-privileged-logon-evidence/' | relative_url }})
+
+## Correlate a registry write with its writer
+
+Read [Windows registry change evidence]({{ '/wiki/windows-registry-change-evidence/' | relative_url }}) to compare Security 4657 with Sysmon registry and process-lifetime records.

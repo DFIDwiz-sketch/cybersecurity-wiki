@@ -283,3 +283,7 @@ PowerShell·WMI·서명된 파일·사용자 경로를 일괄 악성 또는 정�
 ## 예약 작업 실행 확인하기
 
 [Windows 예약 작업 실행 조사]({{ '/ko/wiki/windows-scheduled-task-runtime-evidence/' | relative_url }})에서 작업 정의부터 스케줄러 인스턴스, 실행 프로세스와 실제 결과까지 이어서 확인하세요.
+
+## 레지스트리 쓰기와 변경한 프로세스 연결하기
+
+[Windows 레지스트리 변경 조사]({{ '/ko/wiki/windows-registry-change-evidence/' | relative_url }})에서 Security 4657과 Sysmon의 레지스트리·프로세스 수명 기록을 대조하는 방법을 확인하세요.

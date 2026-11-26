@@ -106,3 +106,7 @@ python3 windows-process-creation-evidence.py windows-process-creation-cases.xml
 - 보완 기록과 필터 조회. [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) · [Get-WinEvent FilterHashtable](https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-get-winevent-queries-with-filterhashtable)
 
 [이전 글 · Windows 보안 이벤트 조사 입문]({{ '/ko/wiki/windows-logs/' | relative_url }}) · [다음 글 · Sysmon 프로세스 조사]({{ '/ko/wiki/sysmon-investigation/' | relative_url }}) · [관련 글 · Windows 특권 로그온 조사]({{ '/ko/wiki/windows-privileged-logon-evidence/' | relative_url }})
+
+## 레지스트리 쓰기와 변경한 프로세스 연결하기
+
+[Windows 레지스트리 변경 조사]({{ '/ko/wiki/windows-registry-change-evidence/' | relative_url }})에서 Security 4657과 Sysmon의 레지스트리·프로세스 수명 기록을 대조하는 방법을 확인하세요.
