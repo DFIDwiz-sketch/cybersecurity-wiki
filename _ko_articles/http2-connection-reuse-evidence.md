@@ -89,3 +89,7 @@ node http2-connection-reuse-evidence.cjs
 - [RFC 9113(2022) HTTP/2 제5절, 제8.3.1절, 제9.1.1절](https://www.rfc-editor.org/rfc/rfc9113.html)과 [RFC 9110(2022) 421 응답](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.20)
 - [RFC 7301(2014) ALPN](https://www.rfc-editor.org/rfc/rfc7301.html), [RFC 8446(2018) TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html), [RFC 8336(2018) 선택 기능인 HTTP/2 ORIGIN 프레임](https://www.rfc-editor.org/rfc/rfc8336.html)
 - [Node.js v24 HTTP/2 API](https://nodejs.org/download/release/v24.22.1/docs/api/http2.html)
+
+## TLS에서 프로토콜을 어떻게 골랐는지 확인하기
+
+개별 스트림을 조사하기 전에 [TLS ALPN 조사]({{ '/ko/wiki/tls-alpn-evidence/' | relative_url }})에서 해당 연결의 `h2` 선택을 확인하세요.

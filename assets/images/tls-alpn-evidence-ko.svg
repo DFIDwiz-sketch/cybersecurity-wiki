@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 330" width="540" height="330" role="img" aria-labelledby="title desc">
+  <title id="title">두 TLS 연결에서 독립적으로 협상하는 ALPN</title>
+  <desc id="desc">클라이언트와 TLS 엣지가 h2를 선택합니다. 엣지는 원본에 별도 TLS를 열고 http/1.1을 협상합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#a5f3fc"/>
+    </marker>
+  </defs>
+  <rect width="540" height="330" rx="16" fill="#0f172a"/>
+  <g font-family="system-ui, sans-serif">
+    <g fill="#1e293b" stroke="#406477">
+      <rect x="18" y="18" width="504" height="52" rx="9"/>
+      <rect x="18" y="139" width="504" height="52" rx="9"/>
+      <rect x="18" y="260" width="504" height="52" rx="9"/>
+    </g>
+    <g fill="#ecfeff" font-size="22" font-weight="700">
+      <text x="32" y="51">클라이언트</text>
+      <text x="32" y="172">TLS를 종료하는 엣지 프록시</text>
+      <text x="32" y="293">원본 서버</text>
+    </g>
+    <g stroke="#a5f3fc" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)">
+      <path d="M42 81v47"/>
+      <path d="M42 202v47"/>
+    </g>
+    <g fill="#a5f3fc" font-size="17">
+      <text x="62" y="102">클라이언트가 h2와 http/1.1 제안</text>
+      <text x="62" y="125">이 구간에서 엣지가 h2 선택</text>
+      <text x="62" y="223">새 연결에서 엣지가 http/1.1 제안</text>
+      <text x="62" y="246">그 구간에서 원본이 http/1.1 선택</text>
+    </g>
+  </g>
+</svg>

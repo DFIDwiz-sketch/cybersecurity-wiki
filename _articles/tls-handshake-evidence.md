@@ -133,3 +133,7 @@ Use [HSTS evidence]({{ '/wiki/http-hsts-evidence/' | relative_url }}) to disting
 ## Trace HTTP/2 connection reuse
 
 [Follow HTTP/2 authority, stream IDs and 421]({{ '/wiki/http2-connection-reuse-evidence/' | relative_url }}) to compare connection-level TLS evidence with per-request routing.
+
+## Follow ALPN negotiation evidence
+
+Continue with [TLS ALPN evidence]({{ '/wiki/tls-alpn-evidence/' | relative_url }}) to compare offers, selections and proxy legs. The newer TLS 1.3 specification, [RFC 9846 (July 2026)](https://www.rfc-editor.org/rfc/rfc9846.html), supersedes RFC 8446 and retains ALPN in EncryptedExtensions.

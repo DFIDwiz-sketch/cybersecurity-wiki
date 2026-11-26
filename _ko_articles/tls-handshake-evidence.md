@@ -133,3 +133,7 @@ python3 tls-handshake-evidence.py
 ## HTTP/2 연결 재사용 조사
 
 [HTTP/2 요청 대상과 스트림, 421 응답]({{ '/ko/wiki/http2-connection-reuse-evidence/' | relative_url }})에서 연결의 TLS 정보와 개별 요청의 경로 결정 증거를 비교하세요.
+
+## TLS에서 프로토콜을 어떻게 골랐는지 확인하기
+
+[TLS ALPN 조사]({{ '/ko/wiki/tls-alpn-evidence/' | relative_url }})에서 제안과 선택, 프록시 구간을 대조하세요. [RFC 9846(2026년 7월)](https://www.rfc-editor.org/rfc/rfc9846.html)이 초기 TLS 1.3 명세인 RFC 8446을 대체했으며, ALPN 선택은 계속 EncryptedExtensions에 들어갑니다.

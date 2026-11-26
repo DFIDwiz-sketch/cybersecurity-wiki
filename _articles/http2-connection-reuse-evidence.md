@@ -89,3 +89,7 @@ Reviewed 2026-11-26. RFC years mark the standards editions. The lab uses the Nod
 - [RFC 9113 (2022), HTTP/2 sections 5, 8.3.1 and 9.1.1](https://www.rfc-editor.org/rfc/rfc9113.html) and [RFC 9110 (2022), 421 semantics](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.20)
 - [RFC 7301 (2014), ALPN](https://www.rfc-editor.org/rfc/rfc7301.html), [RFC 8446 (2018), TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) and [RFC 8336 (2018), optional HTTP/2 ORIGIN frames](https://www.rfc-editor.org/rfc/rfc8336.html)
 - [Node.js v24 HTTP/2 API](https://nodejs.org/download/release/v24.22.1/docs/api/http2.html)
+
+## Follow ALPN negotiation evidence
+
+Use [TLS ALPN evidence]({{ '/wiki/tls-alpn-evidence/' | relative_url }}) to check how `h2` was selected on the relevant connection before investigating individual streams.

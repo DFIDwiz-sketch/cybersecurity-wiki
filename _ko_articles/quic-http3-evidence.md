@@ -115,3 +115,7 @@ curl --http3 --max-time 15 --silent --show-error --output /dev/null \
 [TLS 1.3 세션 재개와 0-RTT 조사]({{ '/ko/wiki/tls-resumption-evidence/' | relative_url }})에서 PSK 제안, 재개 수락과 앱 요청 처리에 필요한 증거를 구분합니다.
 
 [관련 글 · DNS HTTPS 레코드와 실제 접속 경로]({{ '/ko/wiki/dns-https-record-evidence/' | relative_url }})
+
+## TLS에서 프로토콜을 어떻게 골랐는지 확인하기
+
+[TLS ALPN 조사]({{ '/ko/wiki/tls-alpn-evidence/' | relative_url }})에서 전송 방식에 따른 협상 증거를 비교하세요. 해당 루프백 실습은 TCP 위의 TLS를 다룹니다.
