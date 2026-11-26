@@ -123,3 +123,7 @@ SAML 어설션을 사용하는 브라우저 로그인은 [SAML SSO 조사]({{ '/
 ## 리소스 API의 판정까지 따라가기
 
 후속 API가 JWT를 검증하는 환경에서는 [JWT 서명 키 교체 조사]({{ '/ko/wiki/jwt-key-rotation-evidence/' | relative_url }})로 로그인 기록과 별개인 API의 발급자 설정, 키 캐시, 판정 단계를 확인하세요.
+
+## 인증된 주체의 Key Vault 응답 확인하기
+
+[Azure Key Vault 비밀 조회 조사]({{ '/ko/wiki/azure-key-vault-read-evidence/' | relative_url }})에서 신원 기록을 볼트 데이터 작업, 결과와 비밀 버전 증거에 연결합니다.

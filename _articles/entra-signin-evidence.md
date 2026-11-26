@@ -123,3 +123,7 @@ For browser SSO with a SAML assertion, follow the [SAML SSO investigation guide]
 ## Follow the decision at the resource API
 
 When a downstream API validates JWTs, use [JWT key rotation evidence]({{ '/wiki/jwt-key-rotation-evidence/' | relative_url }}) to examine the API's issuer, key cache and decision stage independently of the identity platform sign-in record.
+
+## Follow an authenticated principal to a Key Vault response
+
+Use [Azure Key Vault secret-read evidence]({{ '/wiki/azure-key-vault-read-evidence/' | relative_url }}) to compare the identity observation with a vault data-plane operation, result and secret-version evidence.

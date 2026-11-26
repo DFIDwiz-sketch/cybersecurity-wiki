@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="384" viewBox="0 0 480 384" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">단계별 Key Vault 증거</title>
+  <desc id="desc">워크로드가 인증한 뒤 볼트에 요청합니다. 볼트는 유효 권한을 평가하고 데이터 평면 감사 기록을 남깁니다. 이후 사용은 앱이나 의존 서비스에서 별도로 관측합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#365171"/>
+    </marker>
+  </defs>
+  <rect width="480" height="384" rx="18" fill="#f5f8fe"/>
+  <g fill="#e7effc" stroke="#3c5a85" stroke-width="2">
+    <rect x="24" y="22" width="258" height="68" rx="10"/>
+    <rect x="24" y="148" width="309" height="77" rx="10"/>
+    <rect x="24" y="281" width="368" height="75" rx="10"/>
+  </g>
+  <rect x="308" y="22" width="148" height="68" rx="10" fill="#e3f2e9" stroke="#376951" stroke-width="2"/>
+  <g fill="none" stroke="#365171" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M153 90 V143"/>
+    <path d="M178 225 V276"/>
+    <path d="M380 90 V181 H338" stroke-dasharray="5 3"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#18314f">
+    <g font-size="18" font-weight="700">
+      <text x="153" y="51">워크로드 인증</text>
+      <text x="382" y="51" font-size="16">볼트 관리</text>
+      <text x="178" y="180">Key Vault 요청과 응답</text>
+      <text x="208" y="311">애플리케이션과 의존 서비스</text>
+    </g>
+    <g font-size="15">
+      <text x="153" y="74">Entra 신원 기록</text>
+      <text x="382" y="74">활동 로그</text>
+      <text x="378" y="128" font-size="14">유효 접근 권한</text>
+      <text x="178" y="206">AuditEvent: 작업과 상태</text>
+      <text x="208" y="336">수신 또는 사용의 별도 증거</text>
+    </g>
+  </g>
+</svg>

@@ -117,3 +117,7 @@ Reviewed 2026-11-21. The links describe current AWS cloud-service documentation 
 - [KMS CloudTrail logging](https://docs.aws.amazon.com/kms/latest/developerguide/logging-using-cloudtrail.html), [Decrypt records](https://docs.aws.amazon.com/kms/latest/developerguide/ct-decrypt.html), and [CloudTrail record fields](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html). Older management records may lack resource attributes that AWS added in December 2022.
 - [S3 SSE-KMS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html) and [S3 Bucket Keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html).
 - [CloudTrail management event collection](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.html), [Event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events-console.html), and AWS CLI v2 [lookup-events](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/lookup-events.html) and [get-event-selectors](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-event-selectors.html).
+
+## Compare a cloud secret value response
+
+Continue with [Azure Key Vault secret-read evidence]({{ '/wiki/azure-key-vault-read-evidence/' | relative_url }}) to investigate secret values and metadata through the vault API and its audit trail.

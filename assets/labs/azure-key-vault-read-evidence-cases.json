@@ -1,0 +1,223 @@
+{
+  "scope": "Fictional normalized audit and management observations. No secret bodies, access tokens, cloud requests or native event schema.",
+  "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+  "cases": [
+    {
+      "id": "A",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": 200,
+        "token_id": "fixture-workload-a",
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "get-secret-value-response",
+        "explicit-version",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "B",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": 200,
+        "token_id": "fixture-workload-a",
+        "requested_version": null
+      },
+      "expected": [
+        "get-secret-value-response",
+        "latest-request-exact-version-unknown",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "C",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": 403,
+        "token_id": "fixture-workload-a",
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "access-denied-response",
+        "no-version-established",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "D",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretList",
+        "http_status": 200,
+        "token_id": "fixture-workload-a",
+        "requested_version": null
+      },
+      "expected": [
+        "metadata-list-response",
+        "no-version-established",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "E",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretListVersions",
+        "http_status": 200,
+        "token_id": "fixture-workload-a",
+        "requested_version": null
+      },
+      "expected": [
+        "metadata-list-response",
+        "no-version-established",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "F",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": 401,
+        "token_id": null,
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "authentication-response",
+        "no-version-established",
+        "token-identity-unresolved"
+      ]
+    },
+    {
+      "id": "G",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": 404,
+        "token_id": "fixture-workload-a",
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "not-found-response",
+        "no-version-established",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "H",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": 429,
+        "token_id": "fixture-workload-a",
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "throttled-response",
+        "no-version-established",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "I",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": null,
+        "token_id": "fixture-workload-a",
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "http-status-unavailable",
+        "no-version-established",
+        "token-identity-observed"
+      ]
+    },
+    {
+      "id": "J",
+      "row": null,
+      "expected": [
+        "coverage-unknown",
+        "no-version-established",
+        "no-token-identity"
+      ]
+    },
+    {
+      "id": "K",
+      "row": {
+        "source": "activity",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "roleAssignments/write",
+        "http_status": 200,
+        "token_id": null,
+        "requested_version": null
+      },
+      "expected": [
+        "management-operation",
+        "no-version-established",
+        "no-token-identity"
+      ]
+    },
+    {
+      "id": "L",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "SecretGet",
+        "http_status": 200,
+        "token_id": null,
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "get-secret-value-response",
+        "explicit-version",
+        "token-identity-unresolved"
+      ]
+    },
+    {
+      "id": "M",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-b",
+        "operation": "SecretGet",
+        "http_status": 200,
+        "token_id": "fixture-workload-a",
+        "requested_version": "fixture-v1"
+      },
+      "expected": [
+        "different-vault",
+        "no-version-established",
+        "no-token-identity"
+      ]
+    },
+    {
+      "id": "N",
+      "row": {
+        "source": "audit",
+        "vault": "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/training/providers/Microsoft.KeyVault/vaults/vault-training-a",
+        "operation": "VaultGet",
+        "http_status": 200,
+        "token_id": "fixture-workload-a",
+        "requested_version": null
+      },
+      "expected": [
+        "other-successful-operation",
+        "no-version-established",
+        "token-identity-observed"
+      ]
+    }
+  ]
+}

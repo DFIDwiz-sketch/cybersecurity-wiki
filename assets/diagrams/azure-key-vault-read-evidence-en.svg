@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="384" viewBox="0 0 480 384" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Key Vault evidence by stage</title>
+  <desc id="desc">Authentication is followed by a vault request. The vault evaluates effective access and emits a data-plane audit observation. A separate application or service observation is needed for later use.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#365171"/>
+    </marker>
+  </defs>
+  <rect width="480" height="384" rx="18" fill="#f5f8fe"/>
+  <g fill="#e7effc" stroke="#3c5a85" stroke-width="2">
+    <rect x="24" y="22" width="258" height="68" rx="10"/>
+    <rect x="24" y="148" width="309" height="77" rx="10"/>
+    <rect x="24" y="281" width="368" height="75" rx="10"/>
+  </g>
+  <rect x="308" y="22" width="148" height="68" rx="10" fill="#e3f2e9" stroke="#376951" stroke-width="2"/>
+  <g fill="none" stroke="#365171" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M153 90 V143"/>
+    <path d="M178 225 V276"/>
+    <path d="M380 90 V181 H338" stroke-dasharray="5 3"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#18314f">
+    <g font-size="18" font-weight="700">
+      <text x="153" y="51">Workload authentication</text>
+      <text x="382" y="51" font-size="16">Vault management</text>
+      <text x="178" y="180">Key Vault request and response</text>
+      <text x="208" y="311">Application and dependent service</text>
+    </g>
+    <g font-size="15">
+      <text x="153" y="74">Entra identity evidence</text>
+      <text x="382" y="74">Activity Log</text>
+      <text x="378" y="128" font-size="14">Effective access</text>
+      <text x="178" y="206">AuditEvent: operation and status</text>
+      <text x="208" y="336">Independent receipt or use</text>
+    </g>
+  </g>
+</svg>

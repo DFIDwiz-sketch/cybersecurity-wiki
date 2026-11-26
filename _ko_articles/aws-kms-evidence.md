@@ -117,3 +117,7 @@ python3 kms-cloudtrail-review.py kms-cloudtrail-cases.json --check
 - [KMS CloudTrail 로깅](https://docs.aws.amazon.com/kms/latest/developerguide/logging-using-cloudtrail.html), [Decrypt 기록 예시](https://docs.aws.amazon.com/kms/latest/developerguide/ct-decrypt.html), [CloudTrail 필드](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html). 일부 과거 관리 기록에는 2022년 12월에 추가된 리소스 속성이 빠질 수 있습니다.
 - [S3 SSE-KMS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html)와 [S3 Bucket Key](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html).
 - [CloudTrail 관리 이벤트 수집](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.html), [이벤트 기록](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events-console.html), AWS CLI v2의 [lookup-events](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/lookup-events.html)와 [get-event-selectors](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-event-selectors.html).
+
+## 클라우드 비밀 값 응답 조사하기
+
+[Azure Key Vault 비밀 조회 조사]({{ '/ko/wiki/azure-key-vault-read-evidence/' | relative_url }})에서 볼트 API와 감사 기록으로 비밀 값 응답과 메타데이터 조회를 구분합니다.
