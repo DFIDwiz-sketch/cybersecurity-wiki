@@ -97,3 +97,7 @@ When a router or firewall exports flow records, use [IPFIX export evidence]({{ '
 ## Find missing evidence on a Suricata sensor
 
 [Suricata sensor health]({{ '/wiki/suricata-sensor-health-evidence/' | relative_url }}) traces capture drops, TCP reassembly gaps, and missing events between local EVE and the collector.
+
+## Verify an Arkime export
+
+If a packet file was exported from Arkime, [Arkime PCAP export evidence]({{ '/wiki/arkime-pcap-export-evidence/' | relative_url }}) helps distinguish capture slicing from damage to the exported file.

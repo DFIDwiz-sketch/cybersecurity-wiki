@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="540" height="370" role="img" aria-labelledby="title desc">
+  <title id="title">Arkime 세션에서 내보내기 증거까지</title>
+  <desc id="desc">검색한 세션의 원본 노드에서 패킷 가용성을 확인합니다. 캡처 형식으로 내보내고 레코드와 수집 범위를 검증합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#bae6fd"/>
+    </marker>
+  </defs>
+  <rect width="540" height="370" rx="16" fill="#0f172a"/>
+  <g stroke="#bae6fd" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M270 80v24"/>
+    <path d="M270 172v24"/>
+    <path d="M270 264v24"/>
+  </g>
+  <g font-family="system-ui, sans-serif">
+    <rect x="14" y="14" width="512" height="66" rx="9" fill="#1e293b" stroke="#456983"/>
+    <text x="28" y="41" font-size="22" font-weight="700" fill="#f0f9ff">1. 세션 검색</text>
+    <text x="28" y="65" font-size="17" fill="#bae6fd">시각, 양쪽 주소·포트, 프로토콜, 캡처 노드</text>
+    <rect x="14" y="106" width="512" height="66" rx="9" fill="#1e293b" stroke="#456983"/>
+    <text x="28" y="133" font-size="22" font-weight="700" fill="#f0f9ff">2. 패킷 보존 확인</text>
+    <text x="28" y="157" font-size="17" fill="#bae6fd">원본 저장소, 권한과 보존 상태 점검</text>
+    <rect x="14" y="198" width="512" height="66" rx="9" fill="#1e293b" stroke="#456983"/>
+    <text x="28" y="225" font-size="22" font-weight="700" fill="#f0f9ff">3. 캡처 내보내기</text>
+    <text x="28" y="249" font-size="17" fill="#bae6fd">지원 형식 선택, 세션 선택 범위 확인</text>
+    <rect x="14" y="290" width="512" height="66" rx="9" fill="#1e293b" stroke="#456983"/>
+    <text x="28" y="317" font-size="22" font-weight="700" fill="#f0f9ff">4. 파일 검증</text>
+    <text x="28" y="341" font-size="17" fill="#bae6fd">레코드와 길이를 확인하고 SHA-256 기록</text>
+  </g>
+</svg>

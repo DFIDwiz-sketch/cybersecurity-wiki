@@ -246,3 +246,7 @@ Use [Kubernetes NetworkPolicy evidence]({{ '/wiki/kubernetes-network-policy-evid
 ## IPFIX export evidence
 
 When a router or firewall exports flow records, use [IPFIX export evidence]({{ '/wiki/ipfix-export-evidence/' | relative_url }}) to distinguish metering scope, transport continuity, template decoding and indexing.
+
+## Verify an Arkime export
+
+After finding an Arkime session, use [Arkime PCAP export evidence]({{ '/wiki/arkime-pcap-export-evidence/' | relative_url }}) to distinguish Raw data from a usable capture and verify the download.

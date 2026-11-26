@@ -246,3 +246,7 @@ index=network_lab src_ip="192.0.2.10" dest_ip="203.0.113.20"
 ## IPFIX 흐름 기록 조사
 
 라우터나 방화벽이 흐름 레코드를 보내는 환경은 [IPFIX 흐름 기록 조사]({{ '/ko/wiki/ipfix-export-evidence/' | relative_url }})에서 이어서 학습하세요. 계측 범위, 전송 연속성, 템플릿 해석, 색인 단계를 구분합니다.
+
+## Arkime 내보내기 파일 확인하기
+
+Arkime 세션을 찾았다면 [Arkime PCAP 내보내기 조사]({{ '/ko/wiki/arkime-pcap-export-evidence/' | relative_url }})에서 Raw 데이터와 캡처 파일을 구분하고 다운로드를 검증하세요.
