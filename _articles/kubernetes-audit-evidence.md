@@ -137,3 +137,7 @@ Trace [Kubernetes Pod Security Admission]({{ '/wiki/kubernetes-pod-security-admi
 ## Trace the RBAC grant
 
 Use [Kubernetes RBAC evidence]({{ '/wiki/kubernetes-rbac-evidence/' | relative_url }}) to trace binding scope, subresource rules, and historical evidence of use.
+
+## Check quota and scheduling evidence
+
+If a rollout stalls, use [Kubernetes ResourceQuota]({{ '/wiki/kubernetes-quota-evidence/' | relative_url }}) to locate policy refusals and distinguish them from scheduler fit.

@@ -113,3 +113,7 @@ python3 kubernetes-probe-evidence.py
 - 이벤트 보존과 자료 수집 명령. [Kubernetes Event API](https://kubernetes.io/docs/reference/kubernetes-api/core/event-v1/), [kubectl events](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/) 및 [kubectl logs](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/)
 
 [이전 · Kubernetes NetworkPolicy 조사]({{ '/ko/wiki/kubernetes-network-policy-evidence/' | relative_url }}) · [다음 · Linux cgroup 메모리 조사]({{ '/ko/wiki/linux-cgroup-memory-evidence/' | relative_url }}) · [관련 · Kubernetes API 감사 로그]({{ '/ko/wiki/kubernetes-audit-evidence/' | relative_url }})
+
+## 할당량과 배치 증거 확인하기
+
+배포가 멈췄다면 [Kubernetes 리소스 할당량]({{ '/ko/wiki/kubernetes-quota-evidence/' | relative_url }})에서 정책에 따른 생성 거부와 노드 배치 실패를 구분해 보세요.

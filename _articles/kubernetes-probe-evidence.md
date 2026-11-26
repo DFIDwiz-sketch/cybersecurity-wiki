@@ -113,3 +113,7 @@ Reviewed 2026-11-26 against current upstream Kubernetes v1.37 documentation. Che
 - Event retention and evidence collection commands. [Kubernetes Event API](https://kubernetes.io/docs/reference/kubernetes-api/core/event-v1/), [kubectl events](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/) and [kubectl logs](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/)
 
 [Previous · Kubernetes NetworkPolicy evidence]({{ '/wiki/kubernetes-network-policy-evidence/' | relative_url }}) · [Next · Linux cgroup memory evidence]({{ '/wiki/linux-cgroup-memory-evidence/' | relative_url }}) · [Related · Kubernetes API audit evidence]({{ '/wiki/kubernetes-audit-evidence/' | relative_url }})
+
+## Check quota and scheduling evidence
+
+If a rollout stalls, use [Kubernetes ResourceQuota]({{ '/wiki/kubernetes-quota-evidence/' | relative_url }}) to locate policy refusals and distinguish them from scheduler fit.

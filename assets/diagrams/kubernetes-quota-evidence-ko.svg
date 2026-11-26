@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="348" viewBox="0 0 480 348" xml:lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">Kubernetes Pod 생성 단계별 증거</title>
+  <desc id="desc">Deployment 뒤에 별도의 Pod 생성 요청이 있습니다. 거부 응답이나 컨트롤러 이벤트를 살피고, Pod가 저장된 경우 배치와 실행을 구분합니다.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" viewBox="0 0 8 8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8z" fill="#55728b"/></marker></defs>
+  <rect width="480" height="348" rx="16" fill="#eef5fb"/>
+  <g fill="none" stroke="#55728b" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M240 60v24"/><path d="M240 126v21H119v22"/><path d="M240 126v21h121v22"/><path d="M119 211v19"/><path d="M361 211v19"/><path d="M361 272v19"/>
+  </g>
+  <g stroke="#55728b" stroke-width="1.5" fill="#fff">
+    <rect x="86" y="18" width="308" height="42" rx="8"/>
+    <rect x="86" y="84" width="308" height="42" rx="8" fill="#dceafb"/>
+    <rect x="19" y="169" width="200" height="42" rx="8" fill="#ffe9d8"/>
+    <rect x="261" y="169" width="200" height="42" rx="8" fill="#dff2e7"/>
+    <rect x="19" y="230" width="200" height="42" rx="8"/>
+    <rect x="261" y="230" width="200" height="42" rx="8"/>
+    <rect x="261" y="291" width="200" height="42" rx="8"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="18" fill="#192e42" text-anchor="middle">
+    <text x="240" y="45">Deployment 생성 성공</text><text x="240" y="111">컨트롤러가 Pod 생성 요청</text>
+    <text x="119" y="196">생성 거부</text><text x="361" y="196">Pod 저장</text>
+    <text x="119" y="257">응답 또는 이벤트</text><text x="361" y="257">스케줄러가 노드 확인</text>
+    <text x="361" y="318">kubelet이 Pod 실행</text>
+  </g>
+</svg>

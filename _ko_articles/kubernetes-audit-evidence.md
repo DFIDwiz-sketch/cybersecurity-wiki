@@ -137,3 +137,7 @@ UTC, 호출자, 컨텍스트, 대상과 결과를 기록하세요. 정책이 해
 ## RBAC 권한이 생긴 경로 확인
 
 [Kubernetes RBAC 조사]({{ '/ko/wiki/kubernetes-rbac-evidence/' | relative_url }})에서 네임스페이스의 바인딩, 하위 리소스 규칙, 과거 사용 증거를 대조합니다.
+
+## 할당량과 배치 증거 확인하기
+
+배포가 멈췄다면 [Kubernetes 리소스 할당량]({{ '/ko/wiki/kubernetes-quota-evidence/' | relative_url }})에서 정책에 따른 생성 거부와 노드 배치 실패를 구분해 보세요.

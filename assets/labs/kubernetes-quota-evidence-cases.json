@@ -1,0 +1,81 @@
+[
+  {
+    "id": "A",
+    "pod_create_code": 403,
+    "refusal": "quota-exceeded",
+    "accounting": {
+      "unit": "millicores",
+      "used": 1500,
+      "requested": 750,
+      "hard": 2000
+    },
+    "expected": "quota-exceeded"
+  },
+  {
+    "id": "B",
+    "pod_create_code": 403,
+    "refusal": "quota-exceeded",
+    "accounting": {
+      "unit": "objects",
+      "used": 5,
+      "requested": 1,
+      "hard": 5
+    },
+    "expected": "quota-exceeded"
+  },
+  {
+    "id": "C",
+    "pod_create_code": 403,
+    "refusal": "quota-missing-request",
+    "expected": "missing-resource-request"
+  },
+  {
+    "id": "D",
+    "pod_create_code": 403,
+    "refusal": "limit-range",
+    "expected": "per-object-limit"
+  },
+  {
+    "id": "E",
+    "pod_uid": "synthetic-pod-e",
+    "pod_scheduled": false,
+    "event": "FailedScheduling",
+    "expected": "scheduling-failure"
+  },
+  {
+    "id": "F",
+    "pod_uid": "synthetic-pod-f",
+    "pod_scheduled": true,
+    "container_reason": "OOMKilled",
+    "expected": "runtime-oom-observed"
+  },
+  {
+    "id": "G",
+    "pod_create_code": 403,
+    "event": "FailedCreate",
+    "expected": "forbidden-cause-unresolved"
+  },
+  {
+    "id": "H",
+    "pod_create_code": 201,
+    "dry_run": true,
+    "expected": "dry-run-not-persisted"
+  },
+  {
+    "id": "I",
+    "deployment_create_code": 201,
+    "expected": "deployment-only"
+  },
+  {
+    "id": "J",
+    "pod_create_code": 403,
+    "refusal": "quota-exceeded",
+    "accounting": {
+      "unit": "millicores",
+      "used": 1500,
+      "requested": 250,
+      "hard": 2000
+    },
+    "expected": "quota-refusal-numbers-conflict"
+  }
+]
