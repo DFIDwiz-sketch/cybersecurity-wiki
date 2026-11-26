@@ -99,3 +99,7 @@ Reviewed 2026-11-22. RFC 3207 defines the SMTP extension, the 2018 standards def
 - Inbound/outbound behavior and portal reporting. [Microsoft Learn · MTA-STS](https://learn.microsoft.com/en-us/exchange/security-and-compliance/enhance-mail-flow-using-strict-transport-security) · [Outbound transit security](https://learn.microsoft.com/en-us/exchange/monitoring/mail-flow-reports/outbound-messages-in-transit-security-report)
 
 [Previous · SMTP delivery evidence]({{ '/wiki/smtp-delivery-evidence/' | relative_url }}) · [Next · TLS handshake evidence]({{ '/wiki/tls-handshake-evidence/' | relative_url }})
+
+## SMTP DANE and TLSA
+
+Compare the sending resolver’s DNSSEC result with the MX certificate association in [SMTP DANE and TLSA]({{ '/wiki/smtp-dane-evidence/' | relative_url }}).

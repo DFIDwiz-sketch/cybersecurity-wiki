@@ -99,3 +99,7 @@ python3 dnssec-delegation-lab.py
 ## 이어서 읽기
 
 [DNS 부정 캐시 입문]({{ '/ko/wiki/dns-negative-cache-evidence/' | relative_url }}) · 권한 서버의 변경이 클라이언트에 늦게 보일 때 SOA TTL과 해석 실패 기록을 비교합니다.
+
+## SMTP DANE과 TLSA
+
+[SMTP DANE과 TLSA]({{ '/ko/wiki/smtp-dane-evidence/' | relative_url }})에서 발신 리졸버의 DNSSEC 결과와 수신 MX의 인증서 연결 값을 비교하세요.

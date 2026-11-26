@@ -99,3 +99,7 @@ tls_report: failures=3 detail_sum=4
 - 인바운드·아웃바운드 동작과 포털 보고. [Microsoft Learn · MTA-STS](https://learn.microsoft.com/en-us/exchange/security-and-compliance/enhance-mail-flow-using-strict-transport-security) · [아웃바운드 전송 보안](https://learn.microsoft.com/en-us/exchange/monitoring/mail-flow-reports/outbound-messages-in-transit-security-report)
 
 [이전 학습 · SMTP 전송 증거]({{ '/ko/wiki/smtp-delivery-evidence/' | relative_url }}) · [다음 학습 · TLS 핸드셰이크 증거]({{ '/ko/wiki/tls-handshake-evidence/' | relative_url }})
+
+## SMTP DANE과 TLSA
+
+[SMTP DANE과 TLSA]({{ '/ko/wiki/smtp-dane-evidence/' | relative_url }})에서 발신 리졸버의 DNSSEC 결과와 수신 MX의 인증서 연결 값을 비교하세요.

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="428" viewBox="0 0 480 428" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">SMTP DANE 증거 확인 순서</title>
+  <desc id="desc">발신 서버가 MX와 TLSA를 검증하고 TLS 인증을 확인합니다. SMTP 수락은 뒤에 별도로 확인합니다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 8 4 0 8z" fill="#55718b"/></marker>
+  </defs>
+  <rect width="480" height="428" rx="16" fill="#eef5fc"/>
+  <g fill="none" stroke="#55718b" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M240 67v18"/><path d="M240 127v18"/><path d="M240 187v18"/>
+    <path d="M240 253v19H120v39"/><path d="M240 253v19h120v39"/><path d="M120 353v21"/>
+  </g>
+  <g stroke="#507a9a" stroke-width="1.5" fill="#fff">
+    <rect x="82" y="25" width="316" height="42" rx="8"/>
+    <rect x="82" y="85" width="316" height="42" rx="8"/>
+    <rect x="82" y="145" width="316" height="42" rx="8"/>
+    <rect x="82" y="205" width="316" height="48" rx="8" fill="#ddeafd"/>
+    <rect x="24" y="312" width="192" height="41" rx="8" fill="#dcf3e7"/>
+    <rect x="264" y="312" width="192" height="41" rx="8" fill="#ffe9da"/>
+    <rect x="24" y="374" width="192" height="41" rx="8"/>
+  </g>
+  <g fill="#192e43" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">
+    <text x="240" y="53">수신 도메인의 MX 검증</text>
+    <text x="240" y="113">선택한 호스트의 TLSA 검증</text>
+    <text x="240" y="173">STARTTLS 협상</text>
+    <text x="240" y="236">TLS 성공 및 TLSA 일치?</text>
+    <text x="168" y="296" font-size="15">성공</text>
+    <text x="308" y="296" font-size="15">실패</text>
+    <text x="120" y="339">SMTP 계속</text>
+    <text x="360" y="339">다음 MX 또는 지연</text>
+    <text x="120" y="402">최종 SMTP 응답 확인</text>
+  </g>
+</svg>

@@ -99,3 +99,7 @@ Reviewed 21 November 2026. The RFC dates describe the covered standards. Use the
 ## Investigate cached negative responses
 
 [DNS negative caching]({{ '/wiki/dns-negative-cache-evidence/' | relative_url }}) · Track SOA TTLs and resolver failures during a DNS repair.
+
+## SMTP DANE and TLSA
+
+Compare the sending resolver’s DNSSEC result with the MX certificate association in [SMTP DANE and TLSA]({{ '/wiki/smtp-dane-evidence/' | relative_url }}).
