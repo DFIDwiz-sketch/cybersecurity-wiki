@@ -1,0 +1,125 @@
+{
+  "description": "Fictional training data. The rendering messages are illustrative. All fields and host names are synthetic.",
+  "cases": [
+    {
+      "id": "localized-messages",
+      "start": "2026-01-01T10:14:00Z",
+      "end": "2026-01-01T10:15:00Z",
+      "computer": "LAB-WS01",
+      "image": "C:\\Windows\\System32\\cmd.exe",
+      "marker": "SYSMON-LAB-44a6d09d071249bebcb446297c235ac1",
+      "local_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>1042</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>A training process started.</Message></RenderingInfo></Event>"
+      ],
+      "forwarded_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>2011</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>실습용 프로세스가 시작됐습니다.</Message></RenderingInfo></Event>"
+      ],
+      "indexed": [
+        {
+          "provider": "Microsoft-Windows-Sysmon",
+          "event_id": 1,
+          "computer": "LAB-WS01",
+          "time": "2026-01-01T10:14:15Z",
+          "process_guid": "{77330000-0000-4000-8000-000000000042}",
+          "image": "C:\\Windows\\System32\\cmd.exe",
+          "command_line": "C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1"
+        }
+      ],
+      "expected": "verified"
+    },
+    {
+      "id": "config-change-only",
+      "start": "2026-01-01T10:14:00Z",
+      "end": "2026-01-01T10:15:00Z",
+      "computer": "LAB-WS01",
+      "image": "C:\\Windows\\System32\\cmd.exe",
+      "marker": "SYSMON-LAB-44a6d09d071249bebcb446297c235ac1",
+      "local_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>16</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:14Z\"/><EventRecordID>1041</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System></Event>"
+      ],
+      "forwarded_xml": [],
+      "indexed": [],
+      "expected": "no-local-canary"
+    },
+    {
+      "id": "delivery-gap",
+      "start": "2026-01-01T10:14:00Z",
+      "end": "2026-01-01T10:15:00Z",
+      "computer": "LAB-WS01",
+      "image": "C:\\Windows\\System32\\cmd.exe",
+      "marker": "SYSMON-LAB-44a6d09d071249bebcb446297c235ac1",
+      "local_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>1042</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>A training process started.</Message></RenderingInfo></Event>"
+      ],
+      "forwarded_xml": [],
+      "indexed": [],
+      "expected": "no-collector-match"
+    },
+    {
+      "id": "field-lost-at-index",
+      "start": "2026-01-01T10:14:00Z",
+      "end": "2026-01-01T10:15:00Z",
+      "computer": "LAB-WS01",
+      "image": "C:\\Windows\\System32\\cmd.exe",
+      "marker": "SYSMON-LAB-44a6d09d071249bebcb446297c235ac1",
+      "local_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>1042</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>A training process started.</Message></RenderingInfo></Event>"
+      ],
+      "forwarded_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>2011</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>실습용 프로세스가 시작됐습니다.</Message></RenderingInfo></Event>"
+      ],
+      "indexed": [
+        {
+          "provider": "Microsoft-Windows-Sysmon",
+          "event_id": 1,
+          "computer": "LAB-WS01",
+          "time": "2026-01-01T10:14:15Z",
+          "process_guid": "{77330000-0000-4000-8000-000000000042}",
+          "image": "C:\\Windows\\System32\\cmd.exe",
+          "command_line": ""
+        }
+      ],
+      "expected": "missing-index-fields"
+    },
+    {
+      "id": "provider-collision",
+      "start": "2026-01-01T10:14:00Z",
+      "end": "2026-01-01T10:15:00Z",
+      "computer": "LAB-WS01",
+      "image": "C:\\Windows\\System32\\cmd.exe",
+      "marker": "SYSMON-LAB-44a6d09d071249bebcb446297c235ac1",
+      "local_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Example-Other-Provider\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>1042</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>A training process started.</Message></RenderingInfo></Event>"
+      ],
+      "forwarded_xml": [],
+      "indexed": [],
+      "expected": "no-local-canary"
+    },
+    {
+      "id": "stale-indexed-copy",
+      "start": "2026-01-01T10:14:00Z",
+      "end": "2026-01-01T10:15:00Z",
+      "computer": "LAB-WS01",
+      "image": "C:\\Windows\\System32\\cmd.exe",
+      "marker": "SYSMON-LAB-44a6d09d071249bebcb446297c235ac1",
+      "local_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>1042</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>A training process started.</Message></RenderingInfo></Event>"
+      ],
+      "forwarded_xml": [
+        "<Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\"><System><Provider Name=\"Microsoft-Windows-Sysmon\"/><EventID>1</EventID><TimeCreated SystemTime=\"2026-01-01T10:14:15Z\"/><EventRecordID>2011</EventRecordID><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>LAB-WS01</Computer></System><EventData><Data Name=\"Image\">C:\\Windows\\System32\\cmd.exe</Data><Data Name=\"ProcessGuid\">{77330000-0000-4000-8000-000000000042}</Data><Data Name=\"CommandLine\">C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1</Data></EventData><RenderingInfo><Message>실습용 프로세스가 시작됐습니다.</Message></RenderingInfo></Event>"
+      ],
+      "indexed": [
+        {
+          "provider": "Microsoft-Windows-Sysmon",
+          "event_id": 1,
+          "computer": "LAB-WS01",
+          "time": "2026-01-01T10:13:59Z",
+          "process_guid": "{77330000-0000-4000-8000-000000000042}",
+          "image": "C:\\Windows\\System32\\cmd.exe",
+          "command_line": "C:\\Windows\\System32\\cmd.exe /d /c echo SYSMON-LAB-44a6d09d071249bebcb446297c235ac1"
+        }
+      ],
+      "expected": "no-index-match"
+    }
+  ]
+}

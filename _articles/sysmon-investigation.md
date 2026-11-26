@@ -328,3 +328,7 @@ Use the [Windows Incident Response Lab]({{ '/wiki/windows-incident-response-lab/
 ## Interpret stream creation and download markers
 
 Use [Windows Mark of the Web evidence]({{ '/wiki/windows-motw-evidence/' | relative_url }}) to connect Sysmon 15 to the correct file lifetime and corroborate execution separately.
+
+## Verify a built-in Sysmon migration
+
+If your estate is adopting the Windows optional feature, [built-in Sysmon migration evidence]({{ '/wiki/sysmon-built-in-migration-evidence/' | relative_url }}) shows how to check field parity despite localized messages.

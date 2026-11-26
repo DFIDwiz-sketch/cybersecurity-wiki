@@ -120,3 +120,7 @@ Reviewed November 20, 2026. Test procedures depend on the installed Windows vers
 ## Investigate missing Windows events
 
 [Windows Security log gaps]({{ '/wiki/windows-log-continuity/' | relative_url }}) · Distinguish clearing, retention, policy changes and delivery gaps.
+
+## Verify a built-in Sysmon migration
+
+When a source is migrating from standalone to built-in Sysmon, see [built-in Sysmon migration evidence]({{ '/wiki/sysmon-built-in-migration-evidence/' | relative_url }}) to follow one canary from local XML to the SIEM.

@@ -120,3 +120,7 @@ W04·W05·W08·W10을 분류하고 마지막으로 확인된 단계와 남은 �
 ## Windows 로그 공백 이어서 읽기
 
 [Windows 보안 로그 공백]({{ '/ko/wiki/windows-log-continuity/' | relative_url }}) · 로그 지우기와 보존 손실, 감사 정책 변경, 전달 문제를 구분합니다.
+
+## 내장형 Sysmon 전환 검증
+
+독립 설치형에서 내장형으로 옮기는 호스트는 [내장형 Sysmon 전환]({{ '/ko/wiki/sysmon-built-in-migration-evidence/' | relative_url }})에서 로컬 XML부터 SIEM까지 표식 하나를 따라가 보세요.

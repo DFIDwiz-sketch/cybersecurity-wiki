@@ -328,3 +328,7 @@ PID 재사용과 부모 GUID 연결을 설명하고 필터로 제외될 활동 �
 ## 스트림 생성과 다운로드 표시 해석하기
 
 [Windows Mark of the Web 조사]({{ '/ko/wiki/windows-motw-evidence/' | relative_url }})에서 Sysmon 이벤트 15를 정확한 파일 수명과 대조하고 실행 여부는 별도 근거로 확인합니다.
+
+## 내장형 Sysmon 전환 검증
+
+Windows 선택적 기능을 도입한다면 [내장형 Sysmon 전환]({{ '/ko/wiki/sysmon-built-in-migration-evidence/' | relative_url }})에서 표시 언어가 달라져도 필드 값을 비교하는 방법을 확인하세요.
