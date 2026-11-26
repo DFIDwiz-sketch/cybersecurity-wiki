@@ -105,3 +105,7 @@ python3 http-range-evidence.py http-range-evidence.json
 - [NGINX 접근 로그](https://nginx.org/en/docs/http/ngx_http_log_module.html)와 [HTTP 변수](https://nginx.org/en/docs/http/ngx_http_core_module.html#variables)에서 수집 필드를 확인할 수 있습니다.
 
 [이전 · HTTP 요청·응답]({{ '/ko/wiki/http-evidence/' | relative_url }}) · [다음 · HTTP 캐시 조사]({{ '/ko/wiki/http-cache-evidence/' | relative_url }})
+
+## 범위 응답의 다이제스트가 가리키는 바이트 확인하기
+
+[HTTP 다이제스트 조사]({{ '/ko/wiki/http-digest-evidence/' | relative_url }})에서 받은 범위와 선택된 전체 표현을 구분하고 콘텐츠 인코딩까지 확인합니다.

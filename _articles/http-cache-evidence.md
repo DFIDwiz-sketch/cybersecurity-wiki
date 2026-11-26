@@ -108,3 +108,7 @@ If a proxy contacted an upstream, use [HTTP proxy response evidence]({{ '/wiki/h
 ## Investigate HTTP partial downloads
 
 Use [HTTP Range Requests and Partial Download Evidence]({{ '/wiki/http-range-evidence/' | relative_url }}) to correlate 206 responses, file revisions and distinct byte coverage.
+
+## Compare digests across representation variants
+
+Continue with [HTTP digest evidence]({{ '/wiki/http-digest-evidence/' | relative_url }}) to distinguish a content-coding or export difference from an actual mismatch at the same observation point.

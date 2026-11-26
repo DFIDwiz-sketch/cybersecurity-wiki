@@ -105,3 +105,7 @@ Reviewed November 23, 2026. The IETF standards below were published in June 2022
 - [NGINX access logging](https://nginx.org/en/docs/http/ngx_http_log_module.html) and [HTTP variables](https://nginx.org/en/docs/http/ngx_http_core_module.html#variables) describe the proposed collection fields.
 
 [Previous · HTTP requests and responses]({{ '/wiki/http-evidence/' | relative_url }}) · [Next · HTTP cache investigation]({{ '/wiki/http-cache-evidence/' | relative_url }})
+
+## Verify the byte scope of a range digest
+
+Use [HTTP digest evidence]({{ '/wiki/http-digest-evidence/' | relative_url }}) to compare the received range with the complete selected representation, including the content coding.

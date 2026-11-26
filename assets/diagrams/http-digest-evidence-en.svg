@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="384" viewBox="0 0 480 384" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">HTTP digest byte scopes</title>
+  <desc id="desc">Encode the source data to select a representation. Repr-Digest covers the complete coded representation. A message sends all, a slice, or no content. Content-Digest covers those message bytes before HTTP/1.1 transfer framing.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#314965"/>
+    </marker>
+  </defs>
+  <rect width="480" height="384" rx="18" fill="#f5f8fe"/>
+  <g fill="#e9effb" stroke="#3e5a80" stroke-width="2">
+    <rect x="25" y="18" width="284" height="48" rx="9"/>
+    <rect x="25" y="102" width="284" height="51" rx="9"/>
+    <rect x="25" y="190" width="284" height="70" rx="9"/>
+    <rect x="25" y="298" width="284" height="59" rx="9"/>
+  </g>
+  <g fill="#e2f2e9" stroke="#3b6953" stroke-width="2">
+    <rect x="325" y="106" width="137" height="43" rx="9"/>
+    <rect x="325" y="202" width="137" height="45" rx="9"/>
+  </g>
+  <g fill="none" stroke="#314965" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M167 66 V98"/>
+    <path d="M167 153 V186"/>
+    <path d="M167 260 V294"/>
+  </g>
+  <g fill="none" stroke="#3b6953" stroke-width="2" stroke-dasharray="4 3">
+    <path d="M309 128 H325"/>
+    <path d="M309 224 H325"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#183151">
+    <g font-weight="700" font-size="18">
+      <text x="167" y="49">Source JSON</text>
+      <text x="167" y="135" font-size="17">Complete coded representation</text>
+      <text x="167" y="218">Select message content</text>
+      <text x="167" y="322">HTTP/1.1 transmission</text>
+      <text x="394" y="134" font-size="15">Repr-Digest</text>
+      <text x="394" y="230" font-size="15">Content-Digest</text>
+    </g>
+    <g font-size="15">
+      <text x="258" y="87">Apply gzip coding</text>
+      <text x="167" y="242">All, a slice, or empty</text>
+      <text x="263" y="282">Apply chunk framing</text>
+      <text x="167" y="343" font-size="13">Neither digest hashes chunk delimiters</text>
+    </g>
+  </g>
+</svg>

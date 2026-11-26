@@ -108,3 +108,7 @@ python3 http-cache-review.py
 ## HTTP 부분 다운로드 조사
 
 [HTTP Range 요청과 부분 다운로드]({{ '/ko/wiki/http-range-evidence/' | relative_url }})에서 206 응답, 파일 버전, 중복을 제외한 전송 범위를 대조하세요.
+
+## 표현별로 응답의 다이제스트 비교하기
+
+[HTTP 다이제스트 조사]({{ '/ko/wiki/http-digest-evidence/' | relative_url }})에서 인코딩이나 내보내기 방식으로 생긴 차이와 같은 관측 지점의 실제 바이트 차이를 구분합니다.
