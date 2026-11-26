@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" xml:lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">HTTP/2 request routes</title><desc id="desc">The first connection uses alpha SNI. Its alpha stream receives 200 and its beta stream receives 421. The client retries on a new connection with beta SNI and receives 200.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" viewBox="0 0 8 8" orient="auto"><path d="M0 0 8 4 0 8z" fill="#52738c"/></marker></defs>
+  <rect width="480" height="320" rx="16" fill="#eef5fb"/>
+  <g fill="none" stroke="#52738c" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M240 61v23H118v20"/><path d="M240 61v23h122v20"/>
+    <path d="M362 150v27H240v21" stroke-dasharray="5 3"/><path d="M240 242v18"/>
+  </g>
+  <g stroke="#52738c" stroke-width="1.5">
+    <rect x="79" y="17" width="322" height="44" rx="8" fill="#dceafb"/>
+    <rect x="18" y="105" width="200" height="45" rx="8" fill="#dff2e7"/>
+    <rect x="262" y="105" width="200" height="45" rx="8" fill="#ffe9da"/>
+    <rect x="79" y="199" width="322" height="43" rx="8" fill="#dceafb"/>
+    <rect x="79" y="261" width="322" height="42" rx="8" fill="#dff2e7"/>
+  </g>
+  <g text-anchor="middle" fill="#1b3043" font-family="system-ui, sans-serif" font-size="18">
+    <text x="240" y="45">Connection 1 · SNI alpha · h2</text><text x="118" y="134">Stream 1 · alpha · 200</text><text x="362" y="134">Stream 3 · beta · 421</text><text x="240" y="227">Connection 2 · SNI beta · h2</text><text x="240" y="289">Stream 1 · beta · 200</text>
+  </g>
+</svg>

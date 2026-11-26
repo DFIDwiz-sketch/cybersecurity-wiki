@@ -120,3 +120,7 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## HTTP 부분 다운로드 조사
 
 [HTTP Range 요청과 부분 다운로드]({{ '/ko/wiki/http-range-evidence/' | relative_url }})에서 206 응답, 파일 버전, 중복을 제외한 전송 범위를 대조하세요.
+
+## HTTP/2 연결 재사용 조사
+
+[HTTP/2 요청 대상과 스트림, 421 응답]({{ '/ko/wiki/http2-connection-reuse-evidence/' | relative_url }})에서 연결의 TLS 정보와 개별 요청의 경로 결정 증거를 비교하세요.

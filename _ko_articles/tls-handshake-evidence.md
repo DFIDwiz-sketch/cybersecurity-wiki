@@ -129,3 +129,7 @@ python3 tls-handshake-evidence.py
 ## TLS 세션 재개와 조기 데이터 이어서 읽기
 
 [TLS 1.3 세션 재개와 0-RTT 조사]({{ '/ko/wiki/tls-resumption-evidence/' | relative_url }})에서 PSK 제안, 재개 수락과 앱 요청 처리에 필요한 증거를 구분합니다.
+
+## HTTP/2 연결 재사용 조사
+
+[HTTP/2 요청 대상과 스트림, 421 응답]({{ '/ko/wiki/http2-connection-reuse-evidence/' | relative_url }})에서 연결의 TLS 정보와 개별 요청의 경로 결정 증거를 비교하세요.

@@ -120,3 +120,7 @@ Use [Webhook HMAC evidence]({{ '/wiki/webhook-hmac-evidence/' | relative_url }})
 ## Investigate HTTP partial downloads
 
 Use [HTTP Range Requests and Partial Download Evidence]({{ '/wiki/http-range-evidence/' | relative_url }}) to correlate 206 responses, file revisions and distinct byte coverage.
+
+## Trace HTTP/2 connection reuse
+
+[Follow HTTP/2 authority, stream IDs and 421]({{ '/wiki/http2-connection-reuse-evidence/' | relative_url }}) to compare connection-level TLS evidence with per-request routing.

@@ -129,3 +129,7 @@ Use [HSTS evidence]({{ '/wiki/http-hsts-evidence/' | relative_url }}) to disting
 ## Follow TLS resumption and early data
 
 [Investigate TLS 1.3 Resumption and 0-RTT]({{ '/wiki/tls-resumption-evidence/' | relative_url }}) distinguishes PSK offers, successful resumption and evidence of application processing.
+
+## Trace HTTP/2 connection reuse
+
+[Follow HTTP/2 authority, stream IDs and 421]({{ '/wiki/http2-connection-reuse-evidence/' | relative_url }}) to compare connection-level TLS evidence with per-request routing.
