@@ -90,3 +90,5 @@ python3 kubernetes-quota-evidence.py
 - [어드미션 컨트롤러](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)와 [API dry-run 및 인가](https://kubernetes.io/docs/reference/using-api/api-concepts/#dry-run)
 - [컨테이너 리소스 관리](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)와 [실행 중인 Pod 디버깅](https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/)
 - [감사 단계와 정책](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
+
+[어드미션 웹훅의 정책 거부, 호출 오류, Fail-open 증거 구분하기]({{ '/ko/wiki/kubernetes-admission-webhook-evidence/' | relative_url }})

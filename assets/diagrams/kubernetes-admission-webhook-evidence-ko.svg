@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="350" viewBox="0 0 560 350" lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">API 요청과 별도의 어드미션 호출</title>
+  <desc id="desc">클라이언트가 Kubernetes API를 호출하고 API 서버는 웹훅을 별도로 부릅니다. 정상 HTTP 200은 허용 또는 거부를 전달합니다. 호출 오류에는 실패 정책이 적용됩니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#92dfca"/>
+    </marker>
+  </defs>
+  <rect width="560" height="350" rx="14" fill="#111e30"/>
+  <g fill="#1c3048" stroke="#92dfca" stroke-width="1.5">
+    <rect x="103" y="16" width="354" height="43" rx="9"/>
+    <rect x="103" y="81" width="354" height="55" rx="9"/>
+    <rect x="20" y="163" width="252" height="73" rx="9"/>
+    <rect x="288" y="163" width="252" height="73" rx="9"/>
+    <rect x="103" y="268" width="354" height="61" rx="9"/>
+  </g>
+  <g fill="none" stroke="#92dfca" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M280 59V78"/>
+    <path d="M222 136L146 160"/>
+    <path d="M338 136L414 160"/>
+    <path d="M148 236L222 265"/>
+    <path d="M412 236L338 265"/>
+  </g>
+  <g fill="#f3f8fc" text-anchor="middle" font-family="system-ui, sans-serif">
+    <g font-size="18" font-weight="700">
+      <text x="280" y="43">클라이언트가 Kubernetes API 호출</text>
+      <text x="280" y="105">API 서버가 일치하는 웹훅 호출</text>
+      <text x="146" y="187">정상 웹훅 응답</text>
+      <text x="414" y="187">웹훅 호출 실패</text>
+      <text x="280" y="293">API 서버가 최종 상태 반환</text>
+    </g>
+    <g font-size="15">
+      <text x="280" y="124">HTTPS로 AdmissionReview 전달</text>
+      <text x="146" y="210">HTTP 200, allowed=true</text><text x="146" y="228">또는 allowed=false</text>
+      <text x="414" y="210">유효 정책 Fail이면 거부</text><text x="414" y="228">유효 정책 Ignore이면 계속</text>
+      <text x="280" y="315">이후 검사와 저장은 별도 증거로 확인</text>
+    </g>
+  </g>
+</svg>

@@ -90,3 +90,5 @@ Reviewed 2026-11-26. Policy definitions use the Kubernetes v1.36 documentation s
 - [Admission controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) and [API dry-run and authorization](https://kubernetes.io/docs/reference/using-api/api-concepts/#dry-run)
 - [Container resource management](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) and [Debug Running Pods](https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/)
 - [Audit stages and policies](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
+
+[Distinguish admission webhook denials, transport failures, and fail-open evidence]({{ '/wiki/kubernetes-admission-webhook-evidence/' | relative_url }})

@@ -105,3 +105,5 @@ Reviewed 2026-11-22. PSA is stable since Kubernetes v1.25. Behavior was checked 
 - Workload Events command and options. [Kubernetes · kubectl events](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/)
 
 [Previous · Kubernetes audit evidence]({{ '/wiki/kubernetes-audit-evidence/' | relative_url }}) · [Next · Kubernetes NetworkPolicy evidence]({{ '/wiki/kubernetes-network-policy-evidence/' | relative_url }})
+
+[Distinguish admission webhook denials, transport failures, and fail-open evidence]({{ '/wiki/kubernetes-admission-webhook-evidence/' | relative_url }})

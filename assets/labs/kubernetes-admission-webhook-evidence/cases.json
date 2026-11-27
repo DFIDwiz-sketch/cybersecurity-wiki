@@ -1,0 +1,308 @@
+{
+  "description": "Fictional audit-shaped records and normalized diagnostic evidence; diagnostic links are explicit for the exercise.",
+  "cases": [
+    {
+      "id": "normal-create",
+      "cluster": "fictional-training-cluster",
+      "audit_event": {
+        "kind": "Event",
+        "apiVersion": "audit.k8s.io/v1",
+        "level": "Metadata",
+        "auditID": "00000000-0000-4000-8000-000000000001",
+        "stage": "ResponseComplete",
+        "verb": "create",
+        "requestURI": "/api/v1/namespaces/training/configmaps",
+        "user": {
+          "username": "system:serviceaccount:training:deploy"
+        },
+        "objectRef": {
+          "resource": "configmaps",
+          "namespace": "training",
+          "name": "demo-1",
+          "apiVersion": "v1"
+        },
+        "responseStatus": {
+          "code": 201
+        },
+        "requestReceivedTimestamp": "2026-11-27T03:25:01.000000Z",
+        "stageTimestamp": "2026-11-27T03:25:01.100000Z",
+        "annotations": {
+          "mutation.webhook.admission.k8s.io/round_0_index_0": "{\"configuration\":\"fictional-owner-label\",\"webhook\":\"owner-label.example.invalid\",\"mutated\":true}"
+        }
+      },
+      "diagnostic": {
+        "cluster": "fictional-training-cluster",
+        "audit_id": "00000000-0000-4000-8000-000000000001",
+        "webhook": "policy-check.example.invalid",
+        "review_uid": "00000000-0000-4000-8000-000000000101",
+        "webhook_http": 200,
+        "response": {
+          "uid": "00000000-0000-4000-8000-000000000101",
+          "allowed": true
+        }
+      },
+      "expected": {
+        "api_status": 201,
+        "diagnostic_outcome": "allowed",
+        "failed_open_webhooks": [],
+        "mutating_invocations": 1,
+        "mutations_observed": 1,
+        "patches_observed": 0,
+        "dry_run": false
+      }
+    },
+    {
+      "id": "valid-policy-denial",
+      "cluster": "fictional-training-cluster",
+      "audit_event": {
+        "kind": "Event",
+        "apiVersion": "audit.k8s.io/v1",
+        "level": "Metadata",
+        "auditID": "00000000-0000-4000-8000-000000000002",
+        "stage": "ResponseComplete",
+        "verb": "create",
+        "requestURI": "/api/v1/namespaces/training/configmaps",
+        "user": {
+          "username": "system:serviceaccount:training:deploy"
+        },
+        "objectRef": {
+          "resource": "configmaps",
+          "namespace": "training",
+          "name": "demo-2",
+          "apiVersion": "v1"
+        },
+        "responseStatus": {
+          "code": 403
+        },
+        "requestReceivedTimestamp": "2026-11-27T03:25:02.000000Z",
+        "stageTimestamp": "2026-11-27T03:25:02.100000Z"
+      },
+      "diagnostic": {
+        "cluster": "fictional-training-cluster",
+        "audit_id": "00000000-0000-4000-8000-000000000002",
+        "webhook": "policy-check.example.invalid",
+        "review_uid": "00000000-0000-4000-8000-000000000102",
+        "webhook_http": 200,
+        "response": {
+          "uid": "00000000-0000-4000-8000-000000000102",
+          "allowed": false
+        }
+      },
+      "expected": {
+        "api_status": 403,
+        "diagnostic_outcome": "explicit-denial",
+        "failed_open_webhooks": [],
+        "mutating_invocations": 0,
+        "mutations_observed": 0,
+        "patches_observed": 0,
+        "dry_run": false
+      }
+    },
+    {
+      "id": "timeout-rejects-api",
+      "cluster": "fictional-training-cluster",
+      "audit_event": {
+        "kind": "Event",
+        "apiVersion": "audit.k8s.io/v1",
+        "level": "Metadata",
+        "auditID": "00000000-0000-4000-8000-000000000003",
+        "stage": "ResponseComplete",
+        "verb": "create",
+        "requestURI": "/api/v1/namespaces/training/configmaps",
+        "user": {
+          "username": "system:serviceaccount:training:deploy"
+        },
+        "objectRef": {
+          "resource": "configmaps",
+          "namespace": "training",
+          "name": "demo-3",
+          "apiVersion": "v1"
+        },
+        "responseStatus": {
+          "code": 500
+        },
+        "requestReceivedTimestamp": "2026-11-27T03:25:03.000000Z",
+        "stageTimestamp": "2026-11-27T03:25:04.100000Z"
+      },
+      "diagnostic": {
+        "cluster": "fictional-training-cluster",
+        "audit_id": "00000000-0000-4000-8000-000000000003",
+        "webhook": "policy-check.example.invalid",
+        "call_error": "timeout",
+        "effective_failure_policy": "Fail"
+      },
+      "expected": {
+        "api_status": 500,
+        "diagnostic_outcome": "call-error-rejected",
+        "failed_open_webhooks": [],
+        "mutating_invocations": 0,
+        "mutations_observed": 0,
+        "patches_observed": 0,
+        "dry_run": false
+      }
+    },
+    {
+      "id": "fail-open-final-create",
+      "cluster": "fictional-training-cluster",
+      "audit_event": {
+        "kind": "Event",
+        "apiVersion": "audit.k8s.io/v1",
+        "level": "Metadata",
+        "auditID": "00000000-0000-4000-8000-000000000004",
+        "stage": "ResponseComplete",
+        "verb": "create",
+        "requestURI": "/api/v1/namespaces/training/configmaps",
+        "user": {
+          "username": "system:serviceaccount:training:deploy"
+        },
+        "objectRef": {
+          "resource": "configmaps",
+          "namespace": "training",
+          "name": "demo-4",
+          "apiVersion": "v1"
+        },
+        "responseStatus": {
+          "code": 201
+        },
+        "requestReceivedTimestamp": "2026-11-27T03:25:04.000000Z",
+        "stageTimestamp": "2026-11-27T03:25:04.100000Z",
+        "annotations": {
+          "failed-open.validating.webhook.admission.k8s.io/round_0_index_0": "policy-check.example.invalid"
+        }
+      },
+      "expected": {
+        "api_status": 201,
+        "diagnostic_outcome": "fail-open-observed",
+        "failed_open_webhooks": [
+          "policy-check.example.invalid"
+        ],
+        "mutating_invocations": 0,
+        "mutations_observed": 0,
+        "patches_observed": 0,
+        "dry_run": false
+      }
+    },
+    {
+      "id": "fail-open-final-denial",
+      "cluster": "fictional-training-cluster",
+      "audit_event": {
+        "kind": "Event",
+        "apiVersion": "audit.k8s.io/v1",
+        "level": "Metadata",
+        "auditID": "00000000-0000-4000-8000-000000000005",
+        "stage": "ResponseComplete",
+        "verb": "create",
+        "requestURI": "/api/v1/namespaces/training/configmaps",
+        "user": {
+          "username": "system:serviceaccount:training:deploy"
+        },
+        "objectRef": {
+          "resource": "configmaps",
+          "namespace": "training",
+          "name": "demo-5",
+          "apiVersion": "v1"
+        },
+        "responseStatus": {
+          "code": 403
+        },
+        "requestReceivedTimestamp": "2026-11-27T03:25:05.000000Z",
+        "stageTimestamp": "2026-11-27T03:25:05.100000Z",
+        "annotations": {
+          "failed-open.validating.webhook.admission.k8s.io/round_0_index_0": "policy-check.example.invalid"
+        }
+      },
+      "expected": {
+        "api_status": 403,
+        "diagnostic_outcome": "fail-open-observed",
+        "failed_open_webhooks": [
+          "policy-check.example.invalid"
+        ],
+        "mutating_invocations": 0,
+        "mutations_observed": 0,
+        "patches_observed": 0,
+        "dry_run": false
+      }
+    },
+    {
+      "id": "aggregate-signal-only",
+      "cluster": "fictional-training-cluster",
+      "audit_event": {
+        "kind": "Event",
+        "apiVersion": "audit.k8s.io/v1",
+        "level": "Metadata",
+        "auditID": "00000000-0000-4000-8000-000000000006",
+        "stage": "ResponseComplete",
+        "verb": "create",
+        "requestURI": "/api/v1/namespaces/training/configmaps",
+        "user": {
+          "username": "system:serviceaccount:training:deploy"
+        },
+        "objectRef": {
+          "resource": "configmaps",
+          "namespace": "training",
+          "name": "demo-6",
+          "apiVersion": "v1"
+        },
+        "responseStatus": {
+          "code": 201
+        },
+        "requestReceivedTimestamp": "2026-11-27T03:25:06.000000Z",
+        "stageTimestamp": "2026-11-27T03:25:06.100000Z"
+      },
+      "aggregate_metric": {
+        "name": "apiserver_admission_webhook_fail_open_count",
+        "webhook": "policy-check.example.invalid",
+        "delta": 3
+      },
+      "expected": {
+        "api_status": 201,
+        "diagnostic_outcome": "unknown",
+        "failed_open_webhooks": [],
+        "mutating_invocations": 0,
+        "mutations_observed": 0,
+        "patches_observed": 0,
+        "dry_run": false
+      }
+    },
+    {
+      "id": "dry-run-mutation",
+      "cluster": "fictional-training-cluster",
+      "audit_event": {
+        "kind": "Event",
+        "apiVersion": "audit.k8s.io/v1",
+        "level": "Request",
+        "auditID": "00000000-0000-4000-8000-000000000007",
+        "stage": "ResponseComplete",
+        "verb": "create",
+        "requestURI": "/api/v1/namespaces/training/configmaps?dryRun=All",
+        "user": {
+          "username": "system:serviceaccount:training:deploy"
+        },
+        "objectRef": {
+          "resource": "configmaps",
+          "namespace": "training",
+          "name": "demo-7",
+          "apiVersion": "v1"
+        },
+        "responseStatus": {
+          "code": 201
+        },
+        "requestReceivedTimestamp": "2026-11-27T03:25:07.000000Z",
+        "stageTimestamp": "2026-11-27T03:25:07.100000Z",
+        "annotations": {
+          "mutation.webhook.admission.k8s.io/round_0_index_0": "{\"configuration\":\"fictional-owner-label\",\"webhook\":\"owner-label.example.invalid\",\"mutated\":true}",
+          "patch.webhook.admission.k8s.io/round_0_index_0": "{\"configuration\":\"fictional-owner-label\",\"webhook\":\"owner-label.example.invalid\",\"patch\":[{\"op\":\"add\",\"path\":\"/metadata/labels\",\"value\":{\"owner\":\"training\"}}],\"patchType\":\"JSONPatch\"}"
+        }
+      },
+      "expected": {
+        "api_status": 201,
+        "diagnostic_outcome": "unknown",
+        "failed_open_webhooks": [],
+        "mutating_invocations": 1,
+        "mutations_observed": 1,
+        "patches_observed": 1,
+        "dry_run": true
+      }
+    }
+  ]
+}

@@ -141,3 +141,5 @@ Use [Kubernetes RBAC evidence]({{ '/wiki/kubernetes-rbac-evidence/' | relative_u
 ## Check quota and scheduling evidence
 
 If a rollout stalls, use [Kubernetes ResourceQuota]({{ '/wiki/kubernetes-quota-evidence/' | relative_url }}) to locate policy refusals and distinguish them from scheduler fit.
+
+[Distinguish admission webhook denials, transport failures, and fail-open evidence]({{ '/wiki/kubernetes-admission-webhook-evidence/' | relative_url }})

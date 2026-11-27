@@ -105,3 +105,5 @@ partial_event: outcome_unobserved
 - 워크로드 이벤트 명령과 옵션. [Kubernetes · kubectl events](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/)
 
 [이전 학습 · Kubernetes 감사 증거]({{ '/ko/wiki/kubernetes-audit-evidence/' | relative_url }}) · [다음 학습 · Kubernetes NetworkPolicy 증거]({{ '/ko/wiki/kubernetes-network-policy-evidence/' | relative_url }})
+
+[어드미션 웹훅의 정책 거부, 호출 오류, Fail-open 증거 구분하기]({{ '/ko/wiki/kubernetes-admission-webhook-evidence/' | relative_url }})

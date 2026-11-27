@@ -141,3 +141,5 @@ UTC, 호출자, 컨텍스트, 대상과 결과를 기록하세요. 정책이 해
 ## 할당량과 배치 증거 확인하기
 
 배포가 멈췄다면 [Kubernetes 리소스 할당량]({{ '/ko/wiki/kubernetes-quota-evidence/' | relative_url }})에서 정책에 따른 생성 거부와 노드 배치 실패를 구분해 보세요.
+
+[어드미션 웹훅의 정책 거부, 호출 오류, Fail-open 증거 구분하기]({{ '/ko/wiki/kubernetes-admission-webhook-evidence/' | relative_url }})
