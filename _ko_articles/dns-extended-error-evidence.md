@@ -90,3 +90,5 @@ python3 dns-extended-error-evidence.py
 - [RFC 6891 · EDNS(0)](https://datatracker.ietf.org/doc/html/rfc6891), [RFC 8914 · 확장 DNS 오류, 2–4절과 6절](https://datatracker.ietf.org/doc/html/rfc8914)
 - [IANA · 확장 DNS 오류 코드 등록부](https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#extended-dns-error-codes)
 - [ISC · BIND 9.20.16 dig 매뉴얼](https://bind9.readthedocs.io/en/v9.20.16/manpages.html#dig-dns-lookup-utility), [Cloudflare · 1.1.1.1 확장 DNS 오류 코드](https://developers.cloudflare.com/1.1.1.1/infrastructure/extended-dns-error-codes/)
+
+상위 서버 오류 뒤 리졸버가 재시도하는 사례는 [DNS QNAME 최소화]({{ '/ko/wiki/dns-qname-minimisation-evidence/' | relative_url }})에서 확인하세요.

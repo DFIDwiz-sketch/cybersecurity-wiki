@@ -90,3 +90,5 @@ Reviewed 2026-11-26. The packet format follows the 2013 EDNS standard and the Oc
 - [RFC 6891 · EDNS(0)](https://datatracker.ietf.org/doc/html/rfc6891) and [RFC 8914 · Extended DNS Errors, §§ 2–4 and § 6](https://datatracker.ietf.org/doc/html/rfc8914)
 - [IANA · Extended DNS Error Codes registry](https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#extended-dns-error-codes)
 - [ISC · BIND 9.20.16 dig manual](https://bind9.readthedocs.io/en/v9.20.16/manpages.html#dig-dns-lookup-utility) and [Cloudflare · 1.1.1.1 Extended DNS error codes](https://developers.cloudflare.com/1.1.1.1/infrastructure/extended-dns-error-codes/)
+
+For an example of resolver retries after an upstream error, compare [DNS QNAME minimisation]({{ '/wiki/dns-qname-minimisation-evidence/' | relative_url }}).

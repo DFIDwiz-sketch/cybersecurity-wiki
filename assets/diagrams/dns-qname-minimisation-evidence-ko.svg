@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 358" width="560" height="358" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">DNS 이름 최소화 · 주요 질의</title>
+  <desc id="desc">전체 질문은 재귀 리졸버로 들어갑니다. 리졸버는 루트 및 상위 서버에 짧은 이름을, 권한 서버에 전체 질문을 보냅니다.</desc>
+  <style>text{fill:#eefbf8;font:16px system-ui,sans-serif;text-anchor:middle}.label{font-weight:700}.detail{fill:#bbd8de;font-size:14px}.heading{font-size:20px;font-weight:700}</style>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#84dfcc"/></marker></defs>
+  <rect width="560" height="358" rx="16" fill="#0c1821"/>
+  <text x="280" y="36" class="heading">DNS 이름 최소화 · 주요 질의</text>
+  <rect x="150" y="56" width="260" height="60" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="280" y="80" class="label">클라이언트</text>
+  <text x="280" y="102" class="detail">MX mail.lab.test.</text>
+  <rect x="150" y="148" width="260" height="60" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="280" y="172" class="label">재귀 리졸버</text>
+  <text x="280" y="194" class="detail">위임 정보를 따라 별도 질문</text>
+  <rect x="14" y="254" width="166" height="63" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="97" y="278" class="label">루트 서버</text>
+  <text x="97" y="300" class="detail">A test.</text>
+  <rect x="197" y="254" width="166" height="63" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="280" y="278" class="label">test. 상위 서버</text>
+  <text x="280" y="300" class="detail">A lab.test.</text>
+  <rect x="380" y="254" width="166" height="63" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="463" y="278" class="label">lab.test. 권한 서버</text>
+  <text x="463" y="300" class="detail">MX mail.lab.test.</text>
+  <g fill="none" stroke="#84dfcc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M280 117V143"/>
+    <path d="M200 210V230H97V249"/>
+    <path d="M280 210V249"/>
+    <path d="M360 210V230H463V249"/>
+  </g>
+  <text x="280" y="341" class="detail">루트와 상위 서버는 위임 응답을 반환합니다.</text>
+</svg>

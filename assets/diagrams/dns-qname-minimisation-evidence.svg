@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 358" width="560" height="358" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">DNS QNAME minimisation</title>
+  <desc id="desc">The client sends its full question to the resolver. The resolver asks the root and parent shorter questions and sends the full question to the final authority.</desc>
+  <style>text{fill:#eefbf8;font:16px system-ui,sans-serif;text-anchor:middle}.label{font-weight:700}.detail{fill:#bbd8de;font-size:14px}.heading{font-size:20px;font-weight:700}</style>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#84dfcc"/></marker></defs>
+  <rect width="560" height="358" rx="16" fill="#0c1821"/>
+  <text x="280" y="36" class="heading">DNS QNAME minimisation</text>
+  <rect x="150" y="56" width="260" height="60" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="280" y="80" class="label">Client</text>
+  <text x="280" y="102" class="detail">MX mail.lab.test.</text>
+  <rect x="150" y="148" width="260" height="60" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="280" y="172" class="label">Recursive resolver</text>
+  <text x="280" y="194" class="detail">Asks separate questions</text>
+  <rect x="14" y="254" width="166" height="63" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="97" y="278" class="label">Root server</text>
+  <text x="97" y="300" class="detail">A test.</text>
+  <rect x="197" y="254" width="166" height="63" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="280" y="278" class="label">test. parent</text>
+  <text x="280" y="300" class="detail">A lab.test.</text>
+  <rect x="380" y="254" width="166" height="63" rx="9" fill="#132f3a" stroke="#74c8b9"/>
+  <text x="463" y="278" class="label">lab.test. authority</text>
+  <text x="463" y="300" class="detail">MX mail.lab.test.</text>
+  <g fill="none" stroke="#84dfcc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M280 117V143"/>
+    <path d="M200 210V230H97V249"/>
+    <path d="M280 210V249"/>
+    <path d="M360 210V230H463V249"/>
+  </g>
+  <text x="280" y="341" class="detail">The root and parent return referrals.</text>
+</svg>

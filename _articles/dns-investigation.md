@@ -248,3 +248,5 @@ Use [DNS over HTTPS Evidence]({{ '/wiki/doh-resolution-evidence/' | relative_url
 ## Distinguish filtering from request refusal with Extended DNS Errors
 
 [Extended DNS Errors evidence]({{ '/wiki/dns-extended-error-evidence/' | relative_url }}) compares optional EDE codes on the same response code and traces reported reasons to resolver policy or client access controls.
+
+For an upstream trace with different names at each hop, continue to [DNS QNAME minimisation]({{ '/wiki/dns-qname-minimisation-evidence/' | relative_url }}).

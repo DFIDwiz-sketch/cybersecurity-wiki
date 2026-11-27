@@ -96,3 +96,5 @@ Reviewed 2026-11-22. The RFCs define interoperable behavior. Verify vendor contr
 ## Investigate Encrypted Client Hello
 
 Read [TLS Encrypted Client Hello evidence]({{ '/wiki/tls-ech-evidence/' | relative_url }}) to distinguish the visible name, ECH acceptance and the resulting application request.
+
+To distinguish encrypted transport from reduced name disclosure during delegation, see [DNS QNAME minimisation]({{ '/wiki/dns-qname-minimisation-evidence/' | relative_url }}).

@@ -248,3 +248,5 @@ status·question·answer·authority·flags·응답 서버·시각을 비교합�
 ## 확장 DNS 오류로 필터링과 질의 거부 구분하기
 
 [확장 DNS 오류 조사]({{ '/ko/wiki/dns-extended-error-evidence/' | relative_url }})에서는 같은 응답 코드에 담긴 EDE를 비교하고 정책과 클라이언트 접근 제어를 각각 확인합니다.
+
+서버마다 다른 이름이 보이는 상위 질의 예시는 [DNS QNAME 최소화]({{ '/ko/wiki/dns-qname-minimisation-evidence/' | relative_url }})에서 확인하세요.

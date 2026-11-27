@@ -96,3 +96,5 @@ correlated_retry: linked_system_retry
 ## Encrypted Client Hello 조사 이어가기
 
 [TLS Encrypted Client Hello 조사]({{ '/ko/wiki/tls-ech-evidence/' | relative_url }})에서 패킷에 보이는 이름, ECH 수락 여부와 실제 애플리케이션 요청을 구분합니다.
+
+전송 암호화와 위임 과정의 이름 노출 최소화를 구분하려면 [DNS QNAME 최소화]({{ '/ko/wiki/dns-qname-minimisation-evidence/' | relative_url }})에서 확인하세요.
