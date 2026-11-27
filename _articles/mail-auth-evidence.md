@@ -184,3 +184,5 @@ Reviewed 19 November 2026. Use standards for protocol behavior and the deployed 
 ## Investigate ARC and Forwarding
 
 [Read ARC chain and delivery evidence]({{ '/wiki/arc-forwarding-evidence/' | relative_url }}) · Separate direct authentication from receiver policy and delivery.
+
+[Read DMARC aggregate reports for alignment, volume, and policy overrides]({{ '/wiki/dmarc-aggregate-report-evidence/' | relative_url }})

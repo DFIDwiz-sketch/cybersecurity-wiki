@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feedback>
+  <version>1.0</version>
+  <report_metadata>
+    <org_name>Fictional Receiver</org_name>
+    <email>reports@example.org</email>
+    <report_id>fictional-25@example.org</report_id>
+    <date_range>
+      <begin>1795564800</begin>
+      <end>1795651199</end>
+    </date_range>
+  </report_metadata>
+  <policy_published>
+    <domain>example.com</domain>
+    <adkim>r</adkim>
+    <aspf>r</aspf>
+    <p>none</p>
+    <sp>none</sp>
+    <pct>100</pct>
+    <fo>0</fo>
+  </policy_published>
+  <record>
+    <row>
+      <source_ip>192.0.2.10</source_ip>
+      <count>20</count>
+      <policy_evaluated>
+        <disposition>none</disposition>
+        <dkim>pass</dkim>
+        <spf>fail</spf>
+      </policy_evaluated>
+    </row>
+    <identifiers>
+      <envelope_from>bounce.vendor.example.net</envelope_from>
+      <header_from>orders.example.com</header_from>
+    </identifiers>
+    <auth_results>
+      <dkim>
+        <domain>orders.example.com</domain>
+        <result>pass</result>
+      </dkim>
+      <spf>
+        <domain>bounce.vendor.example.net</domain>
+        <scope>mfrom</scope>
+        <result>pass</result>
+      </spf>
+    </auth_results>
+  </record>
+</feedback>

@@ -93,3 +93,5 @@ Reviewed 2026-11-22. RFC 8617 is an Experimental specification from July 2019. R
 - [Microsoft Learn · Validate a trusted ARC sealer](https://learn.microsoft.com/en-us/defender-office-365/email-authentication-arc-configure#validate-a-trusted-arc-sealer)
 
 [Previous · Mail authentication evidence]({{ '/wiki/mail-auth-evidence/' | relative_url }}) · [Next · SMTP delivery evidence]({{ '/wiki/smtp-delivery-evidence/' | relative_url }})
+
+[Read DMARC aggregate reports for alignment, volume, and policy overrides]({{ '/wiki/dmarc-aggregate-report-evidence/' | relative_url }})

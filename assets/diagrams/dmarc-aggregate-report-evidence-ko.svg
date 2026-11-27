@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 338" width="560" height="338" lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">메일 인증에서 집계 증거까지</title>
+  <desc id="desc">수신기는 SPF와 DKIM을 검증하고 From 도메인과 정렬되는지 확인한 뒤 DMARC와 로컬 정책을 적용합니다. 집계 XML과 개별 배달 추적 자료는 서로 다른 내용을 보여 줍니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#90decb"/>
+    </marker>
+  </defs>
+  <rect width="560" height="338" rx="14" fill="#111d30"/>
+  <g fill="#1b3046" stroke="#90decb" stroke-width="1.5">
+    <rect x="18" y="17" width="250" height="59" rx="9"/>
+    <rect x="292" y="17" width="250" height="59" rx="9"/>
+    <rect x="94" y="105" width="372" height="58" rx="9"/>
+    <rect x="94" y="187" width="372" height="57" rx="9"/>
+    <rect x="18" y="270" width="250" height="54" rx="9"/>
+    <rect x="292" y="270" width="250" height="54" rx="9"/>
+  </g>
+  <g fill="none" stroke="#90decb" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M143 76L201 103"/>
+    <path d="M417 76L359 103"/>
+    <path d="M280 163V184"/>
+    <path d="M226 244L145 267"/>
+    <path d="M334 244L415 267" stroke-dasharray="5 3"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" fill="#f0f5fc">
+    <g font-size="19" font-weight="700">
+      <text x="143" y="42">SPF 검증</text><text x="417" y="42">DKIM 검증</text>
+      <text x="280" y="130">From과 정렬 확인</text><text x="280" y="211">수신기 결정</text>
+      <text x="143" y="293">집계 XML</text><text x="417" y="293">메시지 추적</text>
+    </g>
+    <g font-size="15">
+      <text x="143" y="62">접속 IP와 봉투 발신자 도메인</text><text x="417" y="62">서명과 서명 도메인</text>
+      <text x="280" y="151">인증된 도메인 중 정렬 결과를 기록</text><text x="280" y="232">DMARC 처분과 로컬 정책 예외</text>
+      <text x="143" y="313">묶음별 건수와 결과</text><text x="417" y="313">개별 배달 증거</text>
+    </g>
+  </g>
+</svg>
