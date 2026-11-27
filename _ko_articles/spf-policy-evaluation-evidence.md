@@ -59,7 +59,87 @@ translation_url: /wiki/spf-policy-evaluation-evidence/
 
 ## 5. 오프라인 실습 · 열한 가지 결과 재현하기
 
-본인 소유 또는 사용 승인을 받은 폴더에서 Python 3을 사용합니다. <a href="{{ '/assets/labs/spf-policy-evaluation-evidence/spf-cases.json' | relative_url }}" download="spf-cases.json">spf-cases.json</a>와 <a href="{{ '/assets/labs/spf-policy-evaluation-evidence/review_spf.py' | relative_url }}" download="review_spf.py">review_spf.py</a>를 같은 폴더에 내려받고 `python3 review_spf.py`를 실행하세요. 가상의 SMTP 정보와 문서용 IP, 이미 선별한 TXT 정책을 입력으로 사용합니다. 네트워크나 실제 메일 발송은 필요 없습니다. 구현은 `ip4`, `ip6`, `include`, `all`의 평가에 한정합니다. JSON의 `null`은 일시적 DNS 오류를 나타냅니다. 실제 DNS 응답에서 레코드를 선별하는 과정, DMARC 정책 탐색, SMTP 배달은 이 실습의 검증 범위 밖입니다.
+본인 소유 또는 사용 승인을 받은 폴더에서 Python 3을 사용합니다. <a href="{{ '/assets/labs/spf-policy-evaluation-evidence/spf-cases.json' | relative_url }}" download="spf-cases.json">spf-cases.json</a>를 내려받으세요. 아래 코드를 같은 폴더의 `review_spf.py`로 저장한 뒤 `python3 review_spf.py`를 실행하세요. 가상의 SMTP 정보와 문서용 IP, 이미 선별한 TXT 정책을 입력으로 사용합니다. 네트워크나 실제 메일 발송은 필요 없습니다. 구현은 `ip4`, `ip6`, `include`, `all`의 평가에 한정합니다. JSON의 `null`은 일시적 DNS 오류를 나타냅니다. 실제 DNS 응답에서 레코드를 선별하는 과정, DMARC 정책 탐색, SMTP 배달은 이 실습의 검증 범위 밖입니다.
+
+```python
+import ipaddress
+import json
+from pathlib import Path
+import sys
+
+QUALIFIERS = {"+": "pass", "-": "fail", "~": "softfail", "?": "neutral"}
+LIMIT = 10
+
+
+def evaluate(domain, address, txt, trace):
+    records = txt.get(domain, [])
+    if records is None:
+        return "temperror"
+    if not records:
+        return "none"
+    if len(records) > 1:
+        return "permerror"
+
+    version, *terms = records[0].split()
+    if version != "v=spf1":
+        raise ValueError(f"Fixture needs a selected SPF record for {domain}")
+
+    for term in terms:
+        qualifier = term[0] if term[0] in QUALIFIERS else "+"
+        if term[0] in QUALIFIERS:
+            term = term[1:]
+        mechanism, _, value = term.partition(":")
+
+        if mechanism == "all" and not value:
+            return QUALIFIERS[qualifier]
+        if mechanism in {"ip4", "ip6"}:
+            network = ipaddress.ip_network(value, strict=False)
+            if network.version != int(mechanism[-1]):
+                raise ValueError(f"Address family mismatch in {term}")
+            if address in network:
+                return QUALIFIERS[qualifier]
+        elif mechanism == "include" and value:
+            trace.append(f"{domain} -> {value}")
+            if len(trace) > LIMIT:
+                return "permerror"
+            child = evaluate(value, address, txt, trace)
+            if child == "pass":
+                return QUALIFIERS[qualifier]
+            if child in {"temperror", "permerror"}:
+                return child
+            if child == "none":
+                return "permerror"
+        else:
+            raise ValueError(f"Unsupported fixture mechanism: {term}")
+    return "neutral"
+
+
+def main(path):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    failures = 0
+    for case in data["cases"]:
+        sender = case["mail_from"]
+        domain = case["helo"] if sender == "<>" else sender.rsplit("@", 1)[1]
+        trace = []
+        result = evaluate(domain, ipaddress.ip_address(case["ip"]), data["txt"], trace)
+        observed = {"domain": domain, "result": result, "include_terms": len(trace)}
+        expected = case["expected"]
+        label = "OK" if observed == expected else "MISMATCH"
+        print(f"{label} {case['case_id']}: {domain} {result} includes={len(trace)}")
+        if observed != expected:
+            failures += 1
+            print(f"  expected: {expected}")
+        if case["case_id"] == "over-limit":
+            for count, step in enumerate(trace, 1):
+                extra = " (limit exceeded before lookup)" if count > LIMIT else ""
+                print(f"  {count:2} {step}{extra}")
+    return int(failures != 0)
+
+
+if __name__ == "__main__":
+    fixture = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("spf-cases.json")
+    raise SystemExit(main(fixture))
+```
 
 | 사례 | 기대 결과 |
 | --- | --- |
