@@ -90,3 +90,5 @@ Reviewed **2026-11-27**. RFC 7301 describes ALPN's original TLS framing. RFC 984
 - IETF HTTP · [RFC 9113, HTTP/2 (2022)](https://www.rfc-editor.org/rfc/rfc9113.html), [RFC 9114, HTTP/3 (2022)](https://www.rfc-editor.org/rfc/rfc9114.html).
 - OpenSSL 3.5 · [s_client](https://docs.openssl.org/3.5/man1/openssl-s_client/), [s_server](https://docs.openssl.org/3.5/man1/openssl-s_server/).
 - [Wireshark TLS display-filter reference](https://www.wireshark.org/docs/dfref/t/tls.html).
+
+[Compare TLS group selection with ALPN on each connection leg]({{ '/wiki/tls-hybrid-key-agreement-evidence/' | relative_url }})

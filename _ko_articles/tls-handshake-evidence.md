@@ -137,3 +137,5 @@ python3 tls-handshake-evidence.py
 ## TLS에서 프로토콜을 어떻게 골랐는지 확인하기
 
 [TLS ALPN 조사]({{ '/ko/wiki/tls-alpn-evidence/' | relative_url }})에서 제안과 선택, 프록시 구간을 대조하세요. [RFC 9846(2026년 7월)](https://www.rfc-editor.org/rfc/rfc9846.html)이 초기 TLS 1.3 명세인 RFC 8446을 대체했으며, ALPN 선택은 계속 EncryptedExtensions에 들어갑니다.
+
+[TLS 1.3 하이브리드 그룹의 제안, 재요청, 최종 선택 비교하기]({{ '/ko/wiki/tls-hybrid-key-agreement-evidence/' | relative_url }})

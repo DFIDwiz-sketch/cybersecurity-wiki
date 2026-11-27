@@ -195,3 +195,5 @@ OpenSSL이 없으면 정상적인 시스템 설치 절차로 지원 버전을 �
 [비밀번호 저장과 검증 조사]({{ '/ko/wiki/password-storage-evidence/' | relative_url }})에서 저장된 비밀번호 검증값과 공개키 자격 증명의 차이를 확인합니다.
 
 [Authenticode 서명, 전체 파일 해시, App Control 증거 대조하기]({{ '/ko/wiki/windows-authenticode-evidence/' | relative_url }})
+
+[TLS 1.3에서 실제로 선택된 하이브리드 그룹 확인하기]({{ '/ko/wiki/tls-hybrid-key-agreement-evidence/' | relative_url }})

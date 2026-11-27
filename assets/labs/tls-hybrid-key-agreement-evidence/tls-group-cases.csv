@@ -1,0 +1,5 @@
+case,server_groups,client_groups,expected_group,hello_retry
+hybrid,X25519MLKEM768,X25519MLKEM768,X25519MLKEM768,no
+classical,X25519,X25519,X25519,no
+retry,X25519MLKEM768,*X25519:X25519MLKEM768,X25519MLKEM768,yes
+no-overlap,X25519MLKEM768,X25519,none,no

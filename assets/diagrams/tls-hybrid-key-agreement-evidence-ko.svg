@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="357" viewBox="0 0 560 357" role="img" aria-labelledby="flow-title flow-desc" xml:lang="ko">
+  <title id="flow-title">TLS 1.3 하이브리드 키 합의 흐름</title>
+  <desc id="flow-desc">클라이언트가 그룹과 키 재료를 제안합니다. 서버가 키 재료를 재요청하면 클라이언트는 다시 보냅니다. 최종 ServerHello에서 선택한 하이브리드 그룹의 두 비밀값을 트래픽 키 파생에 사용합니다. 인증서 검증도 확인합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#446377"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="558" height="355" rx="16" fill="#f5f9fc" stroke="#93a9b6" stroke-width="2"/>
+  <g fill="none" stroke="#446377" stroke-width="2.2" marker-end="url(#arrow)">
+    <path d="M161 82 V111"/>
+    <path d="M289 50 H327" stroke-dasharray="4 3"/>
+    <path d="M430 108 V145 H291" stroke-dasharray="4 3"/>
+    <path d="M161 177 V203"/>
+    <path d="M280 266 V285"/>
+  </g>
+  <g stroke-width="1.5">
+    <rect x="33" y="20" width="256" height="62" rx="10" fill="#ddedf8" stroke="#6e97b0"/>
+    <rect x="327" y="20" width="206" height="88" rx="10" fill="#fff2d6" stroke="#a38b59"/>
+    <rect x="33" y="112" width="256" height="65" rx="10" fill="#ddedf8" stroke="#6e97b0"/>
+    <rect x="33" y="204" width="494" height="62" rx="10" fill="#d9eeee" stroke="#609693"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#123247">
+    <g font-size="21" font-weight="700">
+      <text x="161" y="47">ClientHello</text>
+      <text x="161" y="139">최종 ServerHello</text>
+      <text x="280" y="231">4588 · X25519MLKEM768</text>
+    </g>
+    <g font-size="16">
+      <text x="161" y="69">지원 그룹과 초기 키 재료</text>
+      <text x="161" y="161">선택한 그룹과 서버 키 재료</text>
+      <text x="280" y="253">ML-KEM 비밀값 + X25519 비밀값</text>
+      <text x="405" y="168">두 번째 ClientHello</text>
+      <text x="430" y="50" font-weight="700" font-size="19">HelloRetryRequest</text>
+      <text x="430" y="75" font-size="13">필요 시 새 키 재료 요청</text>
+    </g>
+    <text x="280" y="308" font-size="21" font-weight="700">TLS 트래픽 키 파생</text>
+    <text x="280" y="334" font-size="15">인증서 검증과 핸드셰이크 완료도 확인</text>
+  </g>
+</svg>

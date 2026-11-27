@@ -195,3 +195,5 @@ Use [Git SSH commit signature evidence]({{ '/wiki/git-ssh-commit-signature-evide
 Read [Password Storage Evidence]({{ '/wiki/password-storage-evidence/' | relative_url }}) to distinguish stored password verifiers from public-key credentials.
 
 [Investigate Authenticode signature, exact file hash, and App Control evidence]({{ '/wiki/windows-authenticode-evidence/' | relative_url }})
+
+[Verify which TLS 1.3 hybrid group was actually selected]({{ '/wiki/tls-hybrid-key-agreement-evidence/' | relative_url }})

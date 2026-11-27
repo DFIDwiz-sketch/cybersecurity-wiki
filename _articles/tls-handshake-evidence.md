@@ -137,3 +137,5 @@ Use [HSTS evidence]({{ '/wiki/http-hsts-evidence/' | relative_url }}) to disting
 ## Follow ALPN negotiation evidence
 
 Continue with [TLS ALPN evidence]({{ '/wiki/tls-alpn-evidence/' | relative_url }}) to compare offers, selections and proxy legs. The newer TLS 1.3 specification, [RFC 9846 (July 2026)](https://www.rfc-editor.org/rfc/rfc9846.html), supersedes RFC 8446 and retains ALPN in EncryptedExtensions.
+
+[Compare offers, retries and the final TLS 1.3 hybrid group selection]({{ '/wiki/tls-hybrid-key-agreement-evidence/' | relative_url }})

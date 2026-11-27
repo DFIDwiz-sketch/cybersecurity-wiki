@@ -90,3 +90,5 @@ python3 alpn_loopback.py --trace
 - IETF HTTP · [RFC 9113 HTTP/2 (2022)](https://www.rfc-editor.org/rfc/rfc9113.html), [RFC 9114 HTTP/3 (2022)](https://www.rfc-editor.org/rfc/rfc9114.html).
 - OpenSSL 3.5 · [s_client](https://docs.openssl.org/3.5/man1/openssl-s_client/), [s_server](https://docs.openssl.org/3.5/man1/openssl-s_server/).
 - [Wireshark TLS 표시 필터 참조](https://www.wireshark.org/docs/dfref/t/tls.html).
+
+[구간별 TLS 그룹 선택과 ALPN 대조하기]({{ '/ko/wiki/tls-hybrid-key-agreement-evidence/' | relative_url }})
