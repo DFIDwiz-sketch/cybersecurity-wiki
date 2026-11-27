@@ -155,3 +155,5 @@ AWS product documentation reviewed 20 November 2026. Verify collection and reten
 ## Investigate the AWS Organizations policy path
 
 [AWS SCP evaluation evidence]({{ '/wiki/aws-scp-evaluation-evidence/' | relative_url }}) follows the caller's account through the organization and explains how to confirm an SCP denial.
+
+Follow the credential chain and assess the label in [AWS STS SourceIdentity evidence]({{ '/wiki/aws-sts-source-identity-evidence/' | relative_url }}).

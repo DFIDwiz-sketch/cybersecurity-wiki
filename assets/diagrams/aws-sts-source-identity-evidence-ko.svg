@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 326" width="560" height="326" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">AWS STS 역할 연쇄와 CloudTrail 증거</title>
+  <desc id="desc">두 번의 역할 발급에는 다른 키가 연결되며 출처 식별 값은 이어집니다.</desc>
+  <style>text{fill:#eefbf8;font:16px system-ui,sans-serif;text-anchor:middle}.label{font-size:17px;font-weight:700}.detail{fill:#bfdae2;font-size:14px}</style>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#84dfcc"/></marker></defs>
+  <rect width="560" height="326" rx="16" fill="#0c1821"/>
+  <text x="280" y="33" class="label">AWS STS 역할 연쇄와 CloudTrail 증거</text>
+  <rect x="23" y="55" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="142" y="82" class="label">인증된 브로커</text>
+  <text x="142" y="103" class="detail">최초 값의 근거 확인</text>
+  <rect x="299" y="55" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="418" y="82" class="label">Entry 역할 · 계정 A</text>
+  <text x="418" y="103" class="detail">STS 발급 키 A</text>
+  <rect x="299" y="157" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="418" y="184" class="label">Reader 역할 · 계정 B</text>
+  <text x="418" y="205" class="detail">STS 발급 키 B</text>
+  <rect x="23" y="157" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="142" y="184" class="label">GetObject 요청</text>
+  <text x="142" y="205" class="detail">Reader 키 B 사용</text>
+  <g fill="none" stroke="#84dfcc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M265 88H294"/>
+    <path d="M418 125V152"/>
+    <path d="M295 190H266"/>
+  </g>
+  <rect x="23" y="243" width="514" height="43" rx="9" fill="#173e3c"/>
+  <text x="280" y="269" class="label">이어지는 값 · SourceIdentity</text>
+  <text x="280" y="308" class="detail">역추적 · B 발급 → A 발급 → 브로커</text>
+</svg>

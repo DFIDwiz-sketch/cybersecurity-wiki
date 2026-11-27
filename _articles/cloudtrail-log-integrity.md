@@ -112,3 +112,5 @@ Reviewed 21 November 2026. These sources cover S3 delivery by AWS CloudTrail tra
 ## Compare Google Cloud Storage read evidence
 
 [Google Cloud Storage object read evidence]({{ '/wiki/gcs-object-read-evidence/' | relative_url }}) compares listing, metadata, actual content delivery and audit coverage in Google Cloud.
+
+For a worked identity investigation after verifying coverage, see [AWS STS SourceIdentity evidence]({{ '/wiki/aws-sts-source-identity-evidence/' | relative_url }}).

@@ -155,3 +155,5 @@ lab-04와 lab-06의 발급 주체를 각각 찾고, lab-07을 왜 연결하지 �
 ## AWS Organizations 정책 경로 확인하기
 
 [AWS 서비스 제어 정책 증거]({{ '/ko/wiki/aws-scp-evaluation-evidence/' | relative_url }})에서 실제 호출자 계정의 조직 경로와 SCP 거부를 조사하는 방법을 살펴보세요.
+
+발급 연쇄와 출처 식별 값을 더 자세히 조사하려면 [AWS STS SourceIdentity 문서]({{ '/ko/wiki/aws-sts-source-identity-evidence/' | relative_url }})를 참고하세요.

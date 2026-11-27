@@ -1,0 +1,657 @@
+[
+  {
+    "name": "two-hop",
+    "expected": "chain-complete",
+    "issuances": [
+      {
+        "eventID": "synthetic-entry",
+        "eventTime": "2026-11-27T09:00:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::111111111111:role/Entry",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-ENTRY",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:03:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "accessKeyId": "SIM-READER",
+        "sessionContext": {
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  },
+  {
+    "name": "reused-session-name",
+    "expected": "chain-complete",
+    "issuances": [
+      {
+        "eventID": "synthetic-entry",
+        "eventTime": "2026-11-27T09:00:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::111111111111:role/Entry",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-ENTRY",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-issuer-other",
+        "eventTime": "2026-11-27T09:01:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-OTHER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:03:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "accessKeyId": "SIM-READER",
+        "sessionContext": {
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  },
+  {
+    "name": "parent-issuance-missing",
+    "expected": "unlinked-hop",
+    "issuances": [
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:03:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "accessKeyId": "SIM-READER",
+        "sessionContext": {
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  },
+  {
+    "name": "leaf-key-unavailable",
+    "expected": "unlinked-hop",
+    "issuances": [
+      {
+        "eventID": "synthetic-entry",
+        "eventTime": "2026-11-27T09:00:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::111111111111:role/Entry",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-ENTRY",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:03:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "sessionContext": {
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  },
+  {
+    "name": "expired-credential",
+    "expected": "unlinked-hop",
+    "issuances": [
+      {
+        "eventID": "synthetic-entry",
+        "eventTime": "2026-11-27T09:00:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::111111111111:role/Entry",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-ENTRY",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:40:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "accessKeyId": "SIM-READER",
+        "sessionContext": {
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  },
+  {
+    "name": "source-conflict",
+    "expected": "source-conflict",
+    "issuances": [
+      {
+        "eventID": "synthetic-entry",
+        "eventTime": "2026-11-27T09:00:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::111111111111:role/Entry",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-ENTRY",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:03:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "accessKeyId": "SIM-READER",
+        "sessionContext": {
+          "sourceIdentity": "different-claim"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  },
+  {
+    "name": "denied-assume-role",
+    "expected": "unlinked-hop",
+    "issuances": [
+      {
+        "eventID": "synthetic-entry",
+        "eventTime": "2026-11-27T09:00:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::111111111111:role/Entry",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-ENTRY",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": null,
+        "errorCode": "AccessDenied"
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:03:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "accessKeyId": "SIM-READER",
+        "sessionContext": {
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  },
+  {
+    "name": "unreconciled-issuance-views",
+    "expected": "ambiguous-hop",
+    "issuances": [
+      {
+        "eventID": "synthetic-entry",
+        "eventTime": "2026-11-27T09:00:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "IAMUser",
+          "arn": "arn:aws:iam::111111111111:user/example-broker"
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::111111111111:role/Entry",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-ENTRY",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      {
+        "eventID": "synthetic-reader",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        },
+        "sharedEventID": "synthetic-shared-action"
+      },
+      {
+        "eventID": "synthetic-reader-owner-view",
+        "eventTime": "2026-11-27T09:02:00Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "arn": "arn:aws:sts::111111111111:assumed-role/Entry/report-job",
+          "accessKeyId": "SIM-ENTRY",
+          "sessionContext": {
+            "sourceIdentity": "example-workload-417"
+          }
+        },
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::222222222222:role/Reader",
+          "roleSessionName": "report-job",
+          "sourceIdentity": "example-workload-417"
+        },
+        "responseElements": {
+          "assumedRoleUser": {
+            "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job"
+          },
+          "credentials": {
+            "accessKeyId": "SIM-READER",
+            "expiration": "2026-11-27T09:40:00Z"
+          },
+          "sourceIdentity": "example-workload-417"
+        },
+        "sharedEventID": "synthetic-shared-action",
+        "recipientAccountId": "222222222222"
+      }
+    ],
+    "activity": {
+      "eventID": "synthetic-object",
+      "eventTime": "2026-11-27T09:03:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "arn": "arn:aws:sts::222222222222:assumed-role/Reader/report-job",
+        "accessKeyId": "SIM-READER",
+        "sessionContext": {
+          "sourceIdentity": "example-workload-417"
+        }
+      },
+      "recipientAccountId": "222222222222",
+      "requestParameters": {
+        "bucketName": "example-lab-reports",
+        "key": "report-417.txt"
+      }
+    }
+  }
+]

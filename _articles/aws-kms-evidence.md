@@ -121,3 +121,5 @@ Reviewed 2026-11-21. The links describe current AWS cloud-service documentation 
 ## Compare a cloud secret value response
 
 Continue with [Azure Key Vault secret-read evidence]({{ '/wiki/azure-key-vault-read-evidence/' | relative_url }}) to investigate secret values and metadata through the vault API and its audit trail.
+
+To trace an assumed-role caller back through issuances, use [AWS STS SourceIdentity evidence]({{ '/wiki/aws-sts-source-identity-evidence/' | relative_url }}).

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 326" width="560" height="326" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">AWS STS role chain and CloudTrail evidence</title>
+  <desc id="desc">Two role issuances have distinct keys and carry one source identity value.</desc>
+  <style>text{fill:#eefbf8;font:16px system-ui,sans-serif;text-anchor:middle}.label{font-size:17px;font-weight:700}.detail{fill:#bfdae2;font-size:14px}</style>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#84dfcc"/></marker></defs>
+  <rect width="560" height="326" rx="16" fill="#0c1821"/>
+  <text x="280" y="33" class="label">AWS STS role chain and CloudTrail evidence</text>
+  <rect x="23" y="55" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="142" y="82" class="label">Authenticated broker</text>
+  <text x="142" y="103" class="detail">Check the original mapping</text>
+  <rect x="299" y="55" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="418" y="82" class="label">Entry role · account A</text>
+  <text x="418" y="103" class="detail">STS issues key A</text>
+  <rect x="299" y="157" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="418" y="184" class="label">Reader role · account B</text>
+  <text x="418" y="205" class="detail">STS issues key B</text>
+  <rect x="23" y="157" width="238" height="66" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="142" y="184" class="label">GetObject request</text>
+  <text x="142" y="205" class="detail">Uses Reader key B</text>
+  <g fill="none" stroke="#84dfcc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M265 88H294"/>
+    <path d="M418 125V152"/>
+    <path d="M295 190H266"/>
+  </g>
+  <rect x="23" y="243" width="514" height="43" rx="9" fill="#173e3c"/>
+  <text x="280" y="269" class="label">SourceIdentity persists in the chain</text>
+  <text x="280" y="308" class="detail">Trace backward · issuance B → issuance A → broker</text>
+</svg>

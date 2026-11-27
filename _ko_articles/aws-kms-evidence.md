@@ -121,3 +121,5 @@ python3 kms-cloudtrail-review.py kms-cloudtrail-cases.json --check
 ## 클라우드 비밀 값 응답 조사하기
 
 [Azure Key Vault 비밀 조회 조사]({{ '/ko/wiki/azure-key-vault-read-evidence/' | relative_url }})에서 볼트 API와 감사 기록으로 비밀 값 응답과 메타데이터 조회를 구분합니다.
+
+역할 세션 호출자를 발급 단계까지 거슬러 올라가려면 [AWS STS SourceIdentity 문서]({{ '/ko/wiki/aws-sts-source-identity-evidence/' | relative_url }})를 참고하세요.
