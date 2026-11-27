@@ -106,3 +106,5 @@ Next · [Linux Audit file evidence]({{ '/wiki/linux-audit-file-evidence/' | rela
 ## Trace the directory view behind an open file
 
 Use [Linux mount namespace evidence]({{ '/wiki/linux-mount-view-evidence/' | relative_url }}) to compare the process root, mountinfo and the mount ID of an open descriptor.
+
+[Follow file replacement, renewed watches, and inotify coverage]({{ '/wiki/linux-inotify-watch-evidence/' | relative_url }})

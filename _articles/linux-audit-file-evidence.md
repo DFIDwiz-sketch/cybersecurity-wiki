@@ -128,3 +128,5 @@ Follow [Linux capabilities]({{ '/wiki/linux-capability-evidence/' | relative_url
 ## Follow syscall filter evidence
 
 For syscall filtering, [Linux seccomp evidence]({{ '/wiki/linux-seccomp-evidence/' | relative_url }}) explains when a filter action changes the result and when SECCOMP records are optional.
+
+[Follow file replacement, renewed watches, and inotify coverage]({{ '/wiki/linux-inotify-watch-evidence/' | relative_url }})

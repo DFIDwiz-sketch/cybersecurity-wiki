@@ -106,3 +106,5 @@ python3 linux-open-file-lab.py
 ## 열린 파일 뒤의 마운트 뷰 확인하기
 
 [Linux 마운트 네임스페이스 조사]({{ '/ko/wiki/linux-mount-view-evidence/' | relative_url }})에서 프로세스 루트, mountinfo, 열린 FD의 마운트 ID를 대조합니다.
+
+[파일 교체와 inotify 감시 재등록, 수집 범위 확인하기]({{ '/ko/wiki/linux-inotify-watch-evidence/' | relative_url }})

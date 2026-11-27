@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="330" viewBox="0 0 560 330" lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">경로는 그대로지만 감시 대상 inode는 달라집니다</title>
+  <desc id="desc">상위 디렉터리 감시에서 이름 변경의 양쪽을 볼 수 있습니다. 교체 전에 파일 이름은 inode A를 가리키고, 교체 뒤에는 별도로 감시할 수 있는 inode B를 가리킵니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#91dfca"/>
+    </marker>
+  </defs>
+  <rect width="560" height="330" rx="14" fill="#111d30"/>
+  <g fill="#1b3048" stroke="#91dfca" stroke-width="1.5">
+    <rect x="25" y="20" width="510" height="50" rx="9"/>
+    <rect x="25" y="107" width="220" height="56" rx="9"/>
+    <rect x="315" y="107" width="220" height="56" rx="9"/>
+    <rect x="25" y="192" width="220" height="51" rx="9"/>
+    <rect x="315" y="192" width="220" height="51" rx="9"/>
+    <rect x="25" y="270" width="510" height="40" rx="9"/>
+  </g>
+  <g fill="none" stroke="#91dfca" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M135 70V104"/>
+    <path d="M425 70V104"/>
+    <path d="M245 135H312"/>
+    <path d="M135 163V189"/>
+    <path d="M425 163V189"/>
+  </g>
+  <g fill="#f3f7fc" font-family="system-ui, sans-serif" text-anchor="middle">
+    <g font-size="19" font-weight="700">
+      <text x="280" y="51">상위 디렉터리 감시로 이름의 변화를 관측</text>
+      <text x="135" y="131">교체 전</text>
+      <text x="425" y="131">교체 후</text>
+      <text x="135" y="223">A에 대한 직접 감시</text>
+      <text x="425" y="223">B의 새 직접 감시</text>
+    </g>
+    <g font-size="15">
+      <text x="135" y="151">app.conf가 inode A를 가리킴</text>
+      <text x="425" y="151">app.conf가 inode B를 가리킴</text>
+      <text x="280" y="123">rename</text>
+      <text x="280" y="295">직접 감시는 등록할 때 경로가 가리켰던 객체를 관측합니다.</text>
+    </g>
+  </g>
+</svg>

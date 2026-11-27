@@ -128,3 +128,5 @@ python3 linux-audit-file-review.py linux-audit-file-sample.log --check
 ## 시스템 호출 필터 증거 확인하기
 
 [Linux seccomp 조사]({{ '/ko/wiki/linux-seccomp-evidence/' | relative_url }})에서 필터가 호출 결과를 바꾸는 경우와 SECCOMP 기록이 남는 조건을 확인하세요.
+
+[파일 교체와 inotify 감시 재등록, 수집 범위 확인하기]({{ '/ko/wiki/linux-inotify-watch-evidence/' | relative_url }})
