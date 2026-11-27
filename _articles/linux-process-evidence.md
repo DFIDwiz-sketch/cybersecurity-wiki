@@ -139,3 +139,5 @@ Reviewed November 20, 2026. Source versions below describe the documented covera
 [Investigate Linux Open Files and Deleted Paths]({{ '/wiki/linux-open-file-evidence/' | relative_url }}) follows an open descriptor across rotation and unlink.
 
 [Related · Investigate cgroup memory pressure and OOM kills]({{ '/wiki/linux-cgroup-memory-evidence/' | relative_url }})
+
+To connect process evidence to a supervised runtime cycle, see [systemd service invocation evidence]({{ '/wiki/systemd-service-invocation-evidence/' | relative_url }}).

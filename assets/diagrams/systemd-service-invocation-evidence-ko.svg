@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 326" width="560" height="326" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">서비스 실행을 두 호출로 분리</title>
+  <desc id="desc">호출 A와 B를 분리하고 수신 기록을 별도로 확인합니다.</desc>
+  <style>text{fill:#eefbf8;font:16px system-ui,sans-serif;text-anchor:middle}.label{font-size:18px;font-weight:700}.detail{fill:#bfdae2;font-size:14px}</style>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#84dfcc"/></marker></defs>
+  <rect width="560" height="326" rx="15" fill="#0c1821"/>
+  <rect x="105" y="21" width="350" height="48" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="280" y="51" class="label">reports.service · 같은 유닛 이름</text>
+  <rect x="24" y="108" width="246" height="128" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="147" y="135" class="label">호출 A</text>
+  <text x="147" y="159" class="detail">08:01 UTC · 첫 실행</text>
+  <text x="147" y="188">관리자 · 종료 상태 1</text>
+  <text x="147" y="214">서비스 · API 시간 초과</text>
+  <rect x="290" y="108" width="246" height="128" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="413" y="135" class="label">호출 B</text>
+  <text x="413" y="159" class="detail">08:02 UTC · 재시작</text>
+  <text x="413" y="188">관리자 · 새 실행 시작</text>
+  <text x="413" y="214">서비스 · R-417 전송 보고</text>
+  <rect x="185" y="269" width="351" height="37" rx="10" fill="#142d39" stroke="#74c8b9"/>
+  <text x="360" y="293">수신 시스템 · R-417 수락 확인</text>
+  <g fill="none" stroke="#84dfcc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M185 70V87H147V104"/>
+    <path d="M375 70V87H413V104"/>
+    <path d="M413 237V265" stroke-dasharray="4 4"/>
+  </g>
+</svg>

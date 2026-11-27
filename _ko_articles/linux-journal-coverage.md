@@ -108,3 +108,5 @@ systemd 257에서 `Storage=volatile`은 `/run/log/journal`에 저장합니다. �
 ## Linux Audit 유실과 전달 공백 확인하기
 
 [Linux Audit 유실 조사]({{ '/ko/wiki/linux-audit-loss-evidence/' | relative_url }})에서 커널 대기열과 auditd 상태를 읽고 로컬 및 수집기의 이벤트를 대조하는 방법을 익힙니다.
+
+수집 범위를 확인한 다음 기록을 실행별로 나누려면 [systemd 서비스 호출 조사]({{ '/ko/wiki/systemd-service-invocation-evidence/' | relative_url }})를 참고하세요.

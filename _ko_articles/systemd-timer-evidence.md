@@ -126,3 +126,5 @@ UTC 결과는 `2026-11-21 02:00:00`과 `2026-11-22 02:00:00`입니다. “From n
 
 이전 학습 · [Linux 저널 수집 조사]({{ '/ko/wiki/linux-journal-coverage/' | relative_url }})  
 다음 학습 · [Linux 프로세스 조사]({{ '/ko/wiki/linux-process-evidence/' | relative_url }})
+
+한 번의 실행을 더 자세히 추적하려면 [systemd 서비스 호출 조사]({{ '/ko/wiki/systemd-service-invocation-evidence/' | relative_url }})를 참고하세요.

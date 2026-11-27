@@ -126,3 +126,5 @@ Reviewed **2026-11-21** against upstream systemd **262** manuals. The exercise c
 
 Previous · [Linux Journal Coverage]({{ '/wiki/linux-journal-coverage/' | relative_url }})  
 Next · [Linux Process Investigation]({{ '/wiki/linux-process-evidence/' | relative_url }})
+
+Continue with [systemd service invocation evidence]({{ '/wiki/systemd-service-invocation-evidence/' | relative_url }}).
