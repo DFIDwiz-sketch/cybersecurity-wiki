@@ -1,0 +1,287 @@
+{
+  "description": "All records are fictional and normalized for the lab. The trace inventory denotes only observed, stored trace IDs.",
+  "gateway_records": [
+    {
+      "environment": "classroom-prod",
+      "gateway": "fictional-edge",
+      "request_id": "R17-retry",
+      "route": "/reports/summary",
+      "status": 200,
+      "timestamp": "2026-11-27T02:30:00Z",
+      "incoming_traceparent": null,
+      "internal_traceparent": "00-00000000000000000000000000000011-000000000000eeee-01",
+      "attempts": [
+        {
+          "attempt": 1,
+          "peer": "reports-a",
+          "timestamp": "2026-11-27T02:30:00Z",
+          "outbound_traceparent": "00-00000000000000000000000000000011-0000000000001011-01"
+        },
+        {
+          "attempt": 2,
+          "peer": "reports-b",
+          "timestamp": "2026-11-27T02:30:02Z",
+          "outbound_traceparent": "00-00000000000000000000000000000011-0000000000001012-01"
+        }
+      ]
+    },
+    {
+      "environment": "classroom-prod",
+      "gateway": "fictional-edge",
+      "request_id": "R19-reused-a",
+      "route": "/reports/summary",
+      "status": 200,
+      "timestamp": "2026-11-27T02:30:10Z",
+      "incoming_traceparent": "00-0000000000000000000000000000af12-000000000000fefe-01",
+      "internal_traceparent": "00-00000000000000000000000000000013-000000000000eeee-01",
+      "attempts": [
+        {
+          "attempt": 1,
+          "peer": "reports-a",
+          "timestamp": "2026-11-27T02:30:10Z",
+          "outbound_traceparent": "00-00000000000000000000000000000013-0000000000001011-01"
+        }
+      ]
+    },
+    {
+      "environment": "classroom-prod",
+      "gateway": "fictional-edge",
+      "request_id": "R20-reused-b",
+      "route": "/reports/summary",
+      "status": 404,
+      "timestamp": "2026-11-27T02:30:11Z",
+      "incoming_traceparent": "00-0000000000000000000000000000af12-000000000000fefe-01",
+      "internal_traceparent": "00-00000000000000000000000000000014-000000000000eeee-01",
+      "attempts": [
+        {
+          "attempt": 1,
+          "peer": "reports-a",
+          "timestamp": "2026-11-27T02:30:11Z",
+          "outbound_traceparent": "00-00000000000000000000000000000014-0000000000001011-01"
+        }
+      ]
+    },
+    {
+      "environment": "classroom-prod",
+      "gateway": "fictional-edge",
+      "request_id": "R21-unsampled",
+      "route": "/reports/summary",
+      "status": 200,
+      "timestamp": "2026-11-27T02:30:20Z",
+      "incoming_traceparent": null,
+      "internal_traceparent": "00-00000000000000000000000000000015-000000000000eeee-00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "peer": "reports-a",
+          "timestamp": "2026-11-27T02:30:20Z",
+          "outbound_traceparent": "00-00000000000000000000000000000015-0000000000001011-00"
+        }
+      ]
+    },
+    {
+      "environment": "classroom-prod",
+      "gateway": "fictional-edge",
+      "request_id": "R22-missing",
+      "route": "/reports/summary",
+      "status": 502,
+      "timestamp": "2026-11-27T02:30:23Z",
+      "incoming_traceparent": null,
+      "internal_traceparent": "00-00000000000000000000000000000016-000000000000eeee-01",
+      "attempts": [
+        {
+          "attempt": 1,
+          "peer": "reports-a",
+          "timestamp": "2026-11-27T02:30:23Z",
+          "outbound_traceparent": "00-00000000000000000000000000000016-0000000000001011-01"
+        }
+      ]
+    },
+    {
+      "environment": "classroom-prod",
+      "gateway": "fictional-edge",
+      "request_id": "R23-accepted-job",
+      "route": "/reports/export",
+      "status": 202,
+      "timestamp": "2026-11-27T02:30:29Z",
+      "incoming_traceparent": null,
+      "internal_traceparent": "00-00000000000000000000000000000017-000000000000eeee-01",
+      "attempts": [
+        {
+          "attempt": 1,
+          "peer": "reports-b",
+          "timestamp": "2026-11-27T02:30:29Z",
+          "outbound_traceparent": "00-00000000000000000000000000000017-0000000000001011-01"
+        }
+      ],
+      "enqueued_job": {
+        "queue": "fictional-exports",
+        "job_id": "job-081",
+        "timestamp": "2026-11-27T02:30:30Z"
+      }
+    }
+  ],
+  "application_records": [
+    {
+      "environment": "classroom-prod",
+      "route": "/reports/summary",
+      "peer": "reports-a",
+      "timestamp": "2026-11-27T02:30:01Z",
+      "trace_id": "00000000000000000000000000000011",
+      "span_id": "000000000000b001",
+      "parent_span_id": "0000000000001011",
+      "status": 503
+    },
+    {
+      "environment": "classroom-prod",
+      "route": "/reports/summary",
+      "peer": "reports-b",
+      "timestamp": "2026-11-27T02:30:03Z",
+      "trace_id": "00000000000000000000000000000011",
+      "span_id": "000000000000b003",
+      "parent_span_id": "0000000000001012",
+      "status": 200
+    },
+    {
+      "environment": "classroom-prod",
+      "route": "/reports/summary",
+      "peer": "reports-a",
+      "timestamp": "2026-11-27T02:30:11Z",
+      "trace_id": "00000000000000000000000000000013",
+      "span_id": "000000000000b00b",
+      "parent_span_id": "0000000000001011",
+      "status": 200
+    },
+    {
+      "environment": "classroom-prod",
+      "route": "/reports/summary",
+      "peer": "reports-a",
+      "timestamp": "2026-11-27T02:30:12Z",
+      "trace_id": "00000000000000000000000000000014",
+      "span_id": "000000000000b00c",
+      "parent_span_id": "0000000000001011",
+      "status": 404
+    },
+    {
+      "environment": "classroom-prod",
+      "route": "/reports/summary",
+      "peer": "reports-a",
+      "timestamp": "2026-11-27T02:30:21Z",
+      "trace_id": "00000000000000000000000000000015",
+      "span_id": "000000000000b015",
+      "parent_span_id": "0000000000001011",
+      "status": 200
+    },
+    {
+      "environment": "classroom-staging",
+      "route": "/reports/summary",
+      "peer": "reports-a",
+      "timestamp": "2026-11-27T02:30:24Z",
+      "trace_id": "00000000000000000000000000000016",
+      "span_id": "000000000000b018",
+      "parent_span_id": "0000000000001011",
+      "status": 200
+    },
+    {
+      "environment": "classroom-prod",
+      "route": "/reports/export",
+      "peer": "reports-b",
+      "timestamp": "2026-11-27T02:30:30Z",
+      "trace_id": "00000000000000000000000000000017",
+      "span_id": "000000000000b01e",
+      "parent_span_id": "0000000000001011",
+      "status": 202
+    }
+  ],
+  "trace_inventory": [
+    {
+      "environment": "classroom-prod",
+      "trace_id": "00000000000000000000000000000011"
+    },
+    {
+      "environment": "classroom-prod",
+      "trace_id": "00000000000000000000000000000013"
+    },
+    {
+      "environment": "classroom-prod",
+      "trace_id": "00000000000000000000000000000014"
+    },
+    {
+      "environment": "classroom-prod",
+      "trace_id": "00000000000000000000000000000017"
+    }
+  ],
+  "worker_records": [
+    {
+      "environment": "classroom-prod",
+      "queue": "fictional-exports",
+      "job_id": "job-081",
+      "timestamp": "2026-11-27T02:30:36Z",
+      "trace_id": "00000000000000000000000000000062",
+      "outcome": "completed"
+    }
+  ],
+  "expected": {
+    "classroom-prod/fictional-edge/R17-retry": {
+      "edge_status": 200,
+      "app_statuses": [
+        503,
+        200
+      ],
+      "other_requests_with_incoming_trace": 0,
+      "edge_sampled": true,
+      "trace_in_inventory": true,
+      "job_outcome": null
+    },
+    "classroom-prod/fictional-edge/R19-reused-a": {
+      "edge_status": 200,
+      "app_statuses": [
+        200
+      ],
+      "other_requests_with_incoming_trace": 1,
+      "edge_sampled": true,
+      "trace_in_inventory": true,
+      "job_outcome": null
+    },
+    "classroom-prod/fictional-edge/R20-reused-b": {
+      "edge_status": 404,
+      "app_statuses": [
+        404
+      ],
+      "other_requests_with_incoming_trace": 1,
+      "edge_sampled": true,
+      "trace_in_inventory": true,
+      "job_outcome": null
+    },
+    "classroom-prod/fictional-edge/R21-unsampled": {
+      "edge_status": 200,
+      "app_statuses": [
+        200
+      ],
+      "other_requests_with_incoming_trace": 0,
+      "edge_sampled": false,
+      "trace_in_inventory": false,
+      "job_outcome": null
+    },
+    "classroom-prod/fictional-edge/R22-missing": {
+      "edge_status": 502,
+      "app_statuses": [
+        null
+      ],
+      "other_requests_with_incoming_trace": 0,
+      "edge_sampled": true,
+      "trace_in_inventory": false,
+      "job_outcome": null
+    },
+    "classroom-prod/fictional-edge/R23-accepted-job": {
+      "edge_status": 202,
+      "app_statuses": [
+        202
+      ],
+      "other_requests_with_incoming_trace": 0,
+      "edge_sampled": true,
+      "trace_in_inventory": true,
+      "job_outcome": "completed"
+    }
+  }
+}

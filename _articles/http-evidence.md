@@ -128,3 +128,5 @@ Use [HTTP Range Requests and Partial Download Evidence]({{ '/wiki/http-range-evi
 ## Trace the layer that sent HTTP 429
 
 [HTTP rate limit evidence]({{ '/wiki/http-rate-limit-evidence/' | relative_url }}) compares gateway and origin throttles and explains how to interpret Retry-After.
+
+[Connect HTTP requests, retries, and audit evidence with Trace Context]({{ '/wiki/http-trace-context-evidence/' | relative_url }})

@@ -128,3 +128,5 @@ PASS와 일곱 사례 출력이 예상 결과입니다. 파일 오류가 나면 
 ## HTTP 429를 보낸 계층 찾기
 
 [HTTP 요청 제한 증거]({{ '/ko/wiki/http-rate-limit-evidence/' | relative_url }})에서 게이트웨이 자체 제한과 원본 응답 전달을 구분하고 Retry-After를 해석합니다.
+
+[Trace Context로 HTTP 요청, 재시도, 감사 증거 연결하기]({{ '/ko/wiki/http-trace-context-evidence/' | relative_url }})

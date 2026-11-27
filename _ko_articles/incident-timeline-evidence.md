@@ -106,3 +106,5 @@ python3 time-correlation.py
 ## NTP로 장비 시계의 오차 확인하기
 
 [시각 네 개로 오프셋을 계산하고 선택된 시간원을 확인합니다]({{ '/ko/wiki/ntp-clock-evidence/' | relative_url }})
+
+[Trace Context로 HTTP 요청, 재시도, 감사 증거 연결하기]({{ '/ko/wiki/http-trace-context-evidence/' | relative_url }})

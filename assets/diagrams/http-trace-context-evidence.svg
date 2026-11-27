@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="338" viewBox="0 0 560 338" lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">One inbound request and two upstream attempts</title>
+  <desc id="desc">A gateway assigns request R17 and internal trace T17. Attempt A1 has app child span B1 and status 503. Attempt A2 has app child span B2 and status 200. The gateway records final status 200.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#96e1d0"/>
+    </marker>
+  </defs>
+  <rect width="560" height="338" rx="14" fill="#111e30"/>
+  <g fill="#1b3048" stroke="#96e1d0" stroke-width="1.5">
+    <rect x="110" y="16" width="340" height="46" rx="9"/>
+    <rect x="105" y="85" width="350" height="56" rx="9"/>
+    <rect x="21" y="166" width="244" height="60" rx="9"/>
+    <rect x="295" y="166" width="244" height="60" rx="9"/>
+    <rect x="105" y="254" width="350" height="64" rx="9"/>
+  </g>
+  <g fill="none" stroke="#96e1d0" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M280 62V82"/>
+    <path d="M219 141L146 163"/>
+    <path d="M341 141L414 163"/>
+    <path d="M145 226L215 251"/>
+    <path d="M415 226L345 251"/>
+  </g>
+  <g fill="#f2f7fc" text-anchor="middle" font-family="system-ui, sans-serif">
+    <g font-size="18" font-weight="700">
+      <text x="280" y="45">Incoming client request</text>
+      <text x="280" y="110">Gateway receives request</text>
+      <text x="143" y="191">Attempt 1 · reports-a</text>
+      <text x="417" y="191">Retry · reports-b</text>
+      <text x="280" y="280">Gateway records final 200</text>
+    </g>
+    <g font-size="15">
+      <text x="280" y="131">Issues R17 and starts internal trace T17</text>
+      <text x="143" y="212">A1 → B1, app records 503</text>
+      <text x="417" y="212">A2 → B2, app records 200</text>
+      <text x="280" y="301">Attempt and final status come from separate records</text>
+    </g>
+  </g>
+</svg>
