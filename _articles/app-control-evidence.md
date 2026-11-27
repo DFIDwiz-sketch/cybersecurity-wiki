@@ -98,3 +98,5 @@ Reviewed 21 November 2026. Microsoft lists Windows 10, Windows 11 and Windows Se
 - [Microsoft Code Integrity and script event IDs](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/event-id-explanations) · [Windows Event XML correlation fields](https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-correlation-systempropertiestype-element)
 - [Audit policy review and deployment](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/deployment/audit-appcontrol-policies) · [CiTool technical reference](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/citool-commands)
 - [PowerShell Get-WinEvent filtering](https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-get-winevent-queries-with-filterhashtable)
+
+[Investigate Authenticode signature, exact file hash, and App Control evidence]({{ '/wiki/windows-authenticode-evidence/' | relative_url }})

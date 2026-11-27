@@ -114,3 +114,5 @@ python3 windows-motw-evidence.py
 - 읽기 전용 명령. [Get-Item](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-item) · [Get-Content](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content) · [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash) · [Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent)
 
 [이전 · NTFS USN 조사]({{ '/ko/wiki/ntfs-usn-evidence/' | relative_url }}) · [다음 · Sysmon 조사]({{ '/ko/wiki/sysmon-investigation/' | relative_url }})
+
+[Authenticode 서명, 전체 파일 해시, App Control 증거 대조하기]({{ '/ko/wiki/windows-authenticode-evidence/' | relative_url }})

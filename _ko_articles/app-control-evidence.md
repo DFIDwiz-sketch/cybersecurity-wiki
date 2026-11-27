@@ -98,3 +98,5 @@ $events | ForEach-Object { $_.ToXml() }
 - [코드 무결성과 스크립트 이벤트 ID](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/event-id-explanations) · [Windows 이벤트 XML Correlation 필드](https://learn.microsoft.com/en-us/windows/win32/wes/eventschema-correlation-systempropertiestype-element)
 - [감사 정책 분석과 배포](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/deployment/audit-appcontrol-policies) · [CiTool 기술 문서](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/citool-commands)
 - [PowerShell Get-WinEvent 필터](https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-get-winevent-queries-with-filterhashtable)
+
+[Authenticode 서명, 전체 파일 해시, App Control 증거 대조하기]({{ '/ko/wiki/windows-authenticode-evidence/' | relative_url }})

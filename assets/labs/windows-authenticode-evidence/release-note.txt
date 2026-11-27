@@ -1,0 +1,3 @@
+Fictional release note for the Authenticode evidence lab.
+Release: training-2026.11
+This text file is used only for whole-file SHA-256 comparison.

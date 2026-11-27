@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="334" viewBox="0 0 560 334" lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">수집한 Windows 파일의 세 가지 증거 경로</title>
+  <desc id="desc">전체 파일 SHA-256은 신뢰하는 기준과 일치하는지 확인합니다. 서명과 타임스탬프는 검증 정책에 따른 신뢰를 평가합니다. 원래 호스트의 App Control 기록은 정책 결정을 보여 줍니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#91dfca"/>
+    </marker>
+  </defs>
+  <rect width="560" height="334" rx="14" fill="#111d30"/>
+  <g fill="#1b3048" stroke="#91dfca" stroke-width="1.5">
+    <rect x="91" y="17" width="378" height="48" rx="9"/>
+    <rect x="16" y="96" width="168" height="76" rx="9"/>
+    <rect x="196" y="96" width="168" height="76" rx="9"/>
+    <rect x="376" y="96" width="168" height="76" rx="9"/>
+    <rect x="16" y="202" width="168" height="71" rx="9"/>
+    <rect x="196" y="202" width="168" height="71" rx="9"/>
+    <rect x="376" y="202" width="168" height="71" rx="9"/>
+  </g>
+  <g fill="none" stroke="#91dfca" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M166 65L101 93"/><path d="M280 65V93"/><path d="M394 65L459 93"/>
+    <path d="M100 172V199"/><path d="M280 172V199"/><path d="M460 172V199"/>
+  </g>
+  <g fill="#f4f7fc" font-family="system-ui, sans-serif" text-anchor="middle">
+    <g font-size="18" font-weight="700">
+      <text x="280" y="47">수집한 Windows 파일</text>
+      <text x="100" y="123">배포본 식별</text><text x="280" y="123">서명 신뢰</text><text x="460" y="123">로드 정책</text>
+    </g>
+    <g font-size="15">
+      <text x="100" y="144">전체 파일 SHA-256</text><text x="100" y="162">신뢰하는 배포 기록</text>
+      <text x="280" y="144">내장 또는 카탈로그</text><text x="280" y="162">체인과 타임스탬프</text>
+      <text x="460" y="144">원래 호스트와</text><text x="460" y="162">정책 적용 시도</text>
+      <text x="100" y="231">배포본과 바이트가</text><text x="100" y="252">모두 같은가?</text>
+      <text x="280" y="231">검증기는 무엇을</text><text x="280" y="252">신뢰했는가?</text>
+      <text x="460" y="231">정책에는 무엇이</text><text x="460" y="252">기록됐는가?</text>
+      <text x="280" y="306">각 결론은 해당 근거와 연결합니다.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="334" viewBox="0 0 560 334" lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">Three evidence paths for a collected Windows file</title>
+  <desc id="desc">Whole-file SHA-256 checks identity with a trusted reference. Signature and timestamp evaluation checks trust under a verifier policy. Original-host App Control events describe policy enforcement.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#91dfca"/>
+    </marker>
+  </defs>
+  <rect width="560" height="334" rx="14" fill="#111d30"/>
+  <g fill="#1b3048" stroke="#91dfca" stroke-width="1.5">
+    <rect x="91" y="17" width="378" height="48" rx="9"/>
+    <rect x="16" y="96" width="168" height="76" rx="9"/>
+    <rect x="196" y="96" width="168" height="76" rx="9"/>
+    <rect x="376" y="96" width="168" height="76" rx="9"/>
+    <rect x="16" y="202" width="168" height="71" rx="9"/>
+    <rect x="196" y="202" width="168" height="71" rx="9"/>
+    <rect x="376" y="202" width="168" height="71" rx="9"/>
+  </g>
+  <g fill="none" stroke="#91dfca" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M166 65L101 93"/><path d="M280 65V93"/><path d="M394 65L459 93"/>
+    <path d="M100 172V199"/><path d="M280 172V199"/><path d="M460 172V199"/>
+  </g>
+  <g fill="#f4f7fc" font-family="system-ui, sans-serif" text-anchor="middle">
+    <g font-size="18" font-weight="700">
+      <text x="280" y="47">Collected Windows artifact</text>
+      <text x="100" y="123">Release identity</text><text x="280" y="123">Signature trust</text><text x="460" y="123">Load policy</text>
+    </g>
+    <g font-size="15">
+      <text x="100" y="144">Whole-file SHA-256</text><text x="100" y="162">Trusted release record</text>
+      <text x="280" y="144">Embedded or catalog</text><text x="280" y="162">Chain and timestamp</text>
+      <text x="460" y="144">Original host and</text><text x="460" y="162">policy attempt</text>
+      <text x="100" y="231">Exact bytes</text><text x="100" y="252">match the release?</text>
+      <text x="280" y="231">What did the</text><text x="280" y="252">verifier trust?</text>
+      <text x="460" y="231">What did the</text><text x="460" y="252">policy record?</text>
+      <text x="280" y="306">Keep each conclusion tied to its own source.</text>
+    </g>
+  </g>
+</svg>

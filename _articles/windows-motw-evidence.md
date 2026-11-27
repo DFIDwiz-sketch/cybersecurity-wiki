@@ -114,3 +114,5 @@ Reviewed 2026-11-26. The Windows and Office behavior described here follows curr
 - Read-only commands. [Get-Item](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-item) · [Get-Content](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content) · [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash) · [Get-WinEvent](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent)
 
 [Previous · NTFS USN evidence]({{ '/wiki/ntfs-usn-evidence/' | relative_url }}) · [Next · Sysmon investigation]({{ '/wiki/sysmon-investigation/' | relative_url }})
+
+[Investigate Authenticode signature, exact file hash, and App Control evidence]({{ '/wiki/windows-authenticode-evidence/' | relative_url }})

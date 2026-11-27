@@ -1,0 +1,225 @@
+{
+  "description": "Fictional normalized Windows records. sample_sha256 is the actual digest of the harmless text fixture.",
+  "sample_sha256": "d847a2ef8d48d403acc868df516e2484502a29d0bc7f73f11fdcdd19c2c3a83c",
+  "cases": [
+    {
+      "id": "approved-embedded",
+      "collected_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "release_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "verification": {
+        "path": "embedded",
+        "status": "Valid",
+        "timestamp": "verified",
+        "signer_subject": "Fictional Training Publisher"
+      },
+      "policy_attempt": {
+        "computer": "fictional-win-01",
+        "activity_id": "ade10700-0000-4000-8000-000000000001"
+      },
+      "events": [],
+      "expected": {
+        "release_hash_matches": true,
+        "verification_path": "embedded",
+        "verifier_status": "Valid",
+        "embedded_check": null,
+        "timestamp_evidence": "verified",
+        "policy_evidence": "no-matching-decision",
+        "related_signature_details": 0
+      }
+    },
+    {
+      "id": "catalog-member",
+      "collected_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "release_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "verification": {
+        "path": "catalog",
+        "status": "Valid",
+        "timestamp": "none-observed",
+        "signer_subject": "Fictional Training Publisher",
+        "embedded_check": "NotSigned"
+      },
+      "policy_attempt": {
+        "computer": "fictional-win-01",
+        "activity_id": "ade10700-0000-4000-8000-000000000002"
+      },
+      "events": [
+        {
+          "computer": "fictional-win-01",
+          "activity_id": "ade10700-0000-4000-8000-000000000002",
+          "provider": "Microsoft-Windows-CodeIntegrity",
+          "channel": "Microsoft-Windows-CodeIntegrity/Operational",
+          "event_id": 3076
+        },
+        {
+          "computer": "fictional-win-01",
+          "activity_id": "ade10700-0000-4000-8000-000000000002",
+          "provider": "Microsoft-Windows-CodeIntegrity",
+          "channel": "Microsoft-Windows-CodeIntegrity/Operational",
+          "event_id": 3089,
+          "signature_index": 0,
+          "total_signature_count": 1
+        }
+      ],
+      "expected": {
+        "release_hash_matches": true,
+        "verification_path": "catalog",
+        "verifier_status": "Valid",
+        "embedded_check": "NotSigned",
+        "timestamp_evidence": "none-observed",
+        "policy_evidence": "audit-would-block-observed",
+        "related_signature_details": 1
+      }
+    },
+    {
+      "id": "digest-mismatch",
+      "collected_sha256": "54f7cc0df6f04f06a0bd6bfd3c71042d481711db4590077c287cd606894e4662",
+      "release_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "verification": {
+        "path": "embedded",
+        "status": "HashMismatch",
+        "timestamp": "unconfirmed",
+        "signer_subject": null
+      },
+      "policy_attempt": {
+        "computer": "fictional-win-01",
+        "activity_id": "ade10700-0000-4000-8000-000000000003"
+      },
+      "events": [],
+      "expected": {
+        "release_hash_matches": false,
+        "verification_path": "embedded",
+        "verifier_status": "HashMismatch",
+        "embedded_check": null,
+        "timestamp_evidence": "unconfirmed",
+        "policy_evidence": "no-matching-decision",
+        "related_signature_details": 0
+      }
+    },
+    {
+      "id": "historical-timestamp",
+      "collected_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "release_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "verification": {
+        "path": "embedded",
+        "status": "Valid",
+        "timestamp": "verified",
+        "signer_subject": "Fictional Training Publisher",
+        "notes": {
+          "validated_timestamp_utc": "2024-04-02T12:00:00Z",
+          "publisher_certificate_not_after_utc": "2025-04-02T23:59:59Z",
+          "verification_utc": "2026-11-27T04:44:00Z"
+        }
+      },
+      "policy_attempt": {
+        "computer": "fictional-win-01",
+        "activity_id": "ade10700-0000-4000-8000-000000000004"
+      },
+      "events": [],
+      "expected": {
+        "release_hash_matches": true,
+        "verification_path": "embedded",
+        "verifier_status": "Valid",
+        "embedded_check": null,
+        "timestamp_evidence": "verified",
+        "policy_evidence": "no-matching-decision",
+        "related_signature_details": 0
+      }
+    },
+    {
+      "id": "valid-but-blocked",
+      "collected_sha256": "54f7cc0df6f04f06a0bd6bfd3c71042d481711db4590077c287cd606894e4662",
+      "release_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "verification": {
+        "path": "embedded",
+        "status": "Valid",
+        "timestamp": "verified",
+        "signer_subject": "Fictional Training Publisher"
+      },
+      "policy_attempt": {
+        "computer": "fictional-win-01",
+        "activity_id": "ade10700-0000-4000-8000-000000000005"
+      },
+      "events": [
+        {
+          "computer": "fictional-win-01",
+          "activity_id": "ade10700-0000-4000-8000-000000000005",
+          "provider": "Microsoft-Windows-CodeIntegrity",
+          "channel": "Microsoft-Windows-CodeIntegrity/Operational",
+          "event_id": 3077
+        },
+        {
+          "computer": "fictional-win-01",
+          "activity_id": "ade10700-0000-4000-8000-000000000005",
+          "provider": "Microsoft-Windows-CodeIntegrity",
+          "channel": "Microsoft-Windows-CodeIntegrity/Operational",
+          "event_id": 3089,
+          "signature_index": 0,
+          "total_signature_count": 2
+        },
+        {
+          "computer": "fictional-win-01",
+          "activity_id": "ade10700-0000-4000-8000-000000000005",
+          "provider": "Microsoft-Windows-CodeIntegrity",
+          "channel": "Microsoft-Windows-CodeIntegrity/Operational",
+          "event_id": 3089,
+          "signature_index": 1,
+          "total_signature_count": 2
+        }
+      ],
+      "expected": {
+        "release_hash_matches": false,
+        "verification_path": "embedded",
+        "verifier_status": "Valid",
+        "embedded_check": null,
+        "timestamp_evidence": "verified",
+        "policy_evidence": "enforced-block-observed",
+        "related_signature_details": 2
+      }
+    },
+    {
+      "id": "trust-unconfirmed",
+      "collected_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "release_sha256": "94cc2b28966d6f157222eeaa813031e13b322ed014961689e98dcd0c55a7843b",
+      "verification": {
+        "path": "embedded",
+        "status": "UnknownError",
+        "timestamp": "unconfirmed",
+        "signer_subject": null,
+        "notes": {
+          "diagnostic": "Fictional verifier could not complete the trust check."
+        }
+      },
+      "policy_attempt": {
+        "computer": "fictional-win-01",
+        "activity_id": "ade10700-0000-4000-8000-000000000006"
+      },
+      "events": [
+        {
+          "computer": "fictional-win-02",
+          "activity_id": "ade10700-0000-4000-8000-000000000006",
+          "provider": "Microsoft-Windows-CodeIntegrity",
+          "channel": "Microsoft-Windows-CodeIntegrity/Operational",
+          "event_id": 3077
+        },
+        {
+          "computer": "fictional-win-02",
+          "activity_id": "ade10700-0000-4000-8000-000000000006",
+          "provider": "Microsoft-Windows-CodeIntegrity",
+          "channel": "Microsoft-Windows-CodeIntegrity/Operational",
+          "event_id": 3089,
+          "signature_index": 0,
+          "total_signature_count": 1
+        }
+      ],
+      "expected": {
+        "release_hash_matches": true,
+        "verification_path": "embedded",
+        "verifier_status": "UnknownError",
+        "embedded_check": null,
+        "timestamp_evidence": "unconfirmed",
+        "policy_evidence": "no-matching-decision",
+        "related_signature_details": 0
+      }
+    }
+  ]
+}
