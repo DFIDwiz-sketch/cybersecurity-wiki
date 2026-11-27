@@ -100,3 +100,5 @@ Reviewed November 20, 2026. Protocol documents define their respective versions.
 - January 2001 relay agent information and trust scope. [RFC 3046](https://www.rfc-editor.org/rfc/rfc3046.html)
 - Product scope at review, Windows Server 2025 DhcpServer cmdlet and Zeek 9.0.1 analyzer schema. [Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/dhcpserver/get-dhcpserverv4lease?view=windowsserver2025-ps) · [Zeek DHCP log](https://docs.zeek.org/en/current/scripts/base/protocols/dhcp/main.zeek.html)
 - Catalyst 9300 with Cisco IOS XE 17.16.x, DHCP snooping and trusted interfaces. [Cisco IP Addressing Services Configuration Guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-16/configuration_guide/ip/b_1716_ip_9300_cg.pdf)
+
+[Correlate IPv6 addresses and delegated prefixes with DHCPv6 lease history]({{ '/wiki/dhcpv6-lease-evidence/' | relative_url }})

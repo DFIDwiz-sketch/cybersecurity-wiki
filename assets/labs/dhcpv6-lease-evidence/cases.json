@@ -1,0 +1,333 @@
+{
+  "description": "All observations and normalized binding intervals are fictional. A binding link for prefix cases is supplied by the exercise's assumed routing evidence.",
+  "cases": [
+    {
+      "id": "on-time",
+      "observation": {
+        "source": "2001:0db8:0010:0:0:0:0:0025",
+        "timestamp": "2026-11-27T14:10:00Z",
+        "site": "training-east",
+        "binding_link": "training-a"
+      },
+      "bindings": [
+        {
+          "id": "first-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        },
+        {
+          "id": "router-delegation",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_PD",
+          "iaid": 7,
+          "resource": "2001:db8:2200::/56",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [
+          {
+            "binding": "first-binding",
+            "address_lifetime": "preferred"
+          }
+        ],
+        "delegations": []
+      }
+    },
+    {
+      "id": "past-preferred-still-valid",
+      "observation": {
+        "source": "2001:db8:10::25",
+        "timestamp": "2026-11-27T14:22:00Z",
+        "site": "training-east",
+        "binding_link": "training-a"
+      },
+      "bindings": [
+        {
+          "id": "first-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        },
+        {
+          "id": "router-delegation",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_PD",
+          "iaid": 7,
+          "resource": "2001:db8:2200::/56",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [
+          {
+            "binding": "first-binding",
+            "address_lifetime": "deprecated"
+          }
+        ],
+        "delegations": []
+      }
+    },
+    {
+      "id": "reassigned-address",
+      "observation": {
+        "source": "2001:db8:10::25",
+        "timestamp": "2026-11-27T14:15:00Z",
+        "site": "training-east",
+        "binding_link": "training-a"
+      },
+      "bindings": [
+        {
+          "id": "older-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:10:00Z",
+          "valid_until": "2026-11-27T14:12:00Z"
+        },
+        {
+          "id": "later-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:02",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:12:00Z",
+          "preferred_until": "2026-11-27T14:25:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [
+          {
+            "binding": "later-binding",
+            "address_lifetime": "preferred"
+          }
+        ],
+        "delegations": []
+      }
+    },
+    {
+      "id": "delegated-prefix-only",
+      "observation": {
+        "source": "2001:db8:2200:44::321",
+        "timestamp": "2026-11-27T14:15:00Z",
+        "site": "training-east",
+        "binding_link": "training-a"
+      },
+      "bindings": [
+        {
+          "id": "first-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        },
+        {
+          "id": "router-delegation",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_PD",
+          "iaid": 7,
+          "resource": "2001:db8:2200::/56",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [],
+        "delegations": [
+          "router-delegation"
+        ]
+      }
+    },
+    {
+      "id": "advertise-only",
+      "observation": {
+        "source": "2001:db8:10::25",
+        "timestamp": "2026-11-27T14:15:00Z",
+        "site": "training-east",
+        "binding_link": "training-a"
+      },
+      "bindings": [
+        {
+          "id": "offered-only",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "offered",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [],
+        "delegations": []
+      }
+    },
+    {
+      "id": "wrong-link",
+      "observation": {
+        "source": "2001:db8:10::25",
+        "timestamp": "2026-11-27T14:15:00Z",
+        "site": "training-east",
+        "binding_link": "training-b"
+      },
+      "bindings": [
+        {
+          "id": "first-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [],
+        "delegations": []
+      }
+    },
+    {
+      "id": "at-valid-expiry",
+      "observation": {
+        "source": "2001:db8:10::25",
+        "timestamp": "2026-11-27T14:30:00Z",
+        "site": "training-east",
+        "binding_link": "training-a"
+      },
+      "bindings": [
+        {
+          "id": "first-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [],
+        "delegations": []
+      }
+    },
+    {
+      "id": "overlapping-assignment",
+      "observation": {
+        "source": "2001:db8:10::25",
+        "timestamp": "2026-11-27T14:17:00Z",
+        "site": "training-east",
+        "binding_link": "training-a"
+      },
+      "bindings": [
+        {
+          "id": "first-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:01",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        },
+        {
+          "id": "overlapping-binding",
+          "server": "fictional-dhcp6-01",
+          "site": "training-east",
+          "link": "training-a",
+          "client_duid": "00:04:10:20:30:40:50:60:40:80:80:a0:b0:c0:d0:e0:f0:03",
+          "ia_type": "IA_NA",
+          "iaid": 7,
+          "resource": "2001:db8:10::25",
+          "state": "committed",
+          "valid_from": "2026-11-27T14:00:00Z",
+          "preferred_until": "2026-11-27T14:20:00Z",
+          "valid_until": "2026-11-27T14:30:00Z"
+        }
+      ],
+      "expected": {
+        "exact": [
+          {
+            "binding": "first-binding",
+            "address_lifetime": "preferred"
+          },
+          {
+            "binding": "overlapping-binding",
+            "address_lifetime": "preferred"
+          }
+        ],
+        "delegations": []
+      }
+    }
+  ]
+}

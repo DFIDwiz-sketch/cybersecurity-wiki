@@ -87,3 +87,5 @@ Router Lifetime은 기본 라우터에 적용됩니다. PIO와 RDNSS에는 별�
 - [Wireshark · ICMPv6 표시 필드, 4.6.10까지](https://www.wireshark.org/docs/dfref/i/icmpv6.html)
 
 [다음 글 · IPv6 이웃 요청과 광고 조사]({{ '/ko/wiki/ipv6-neighbor-discovery-evidence/' | relative_url }})
+
+[DHCPv6 임대 이력으로 IPv6 주소와 위임 프리픽스 대조하기]({{ '/ko/wiki/dhcpv6-lease-evidence/' | relative_url }})

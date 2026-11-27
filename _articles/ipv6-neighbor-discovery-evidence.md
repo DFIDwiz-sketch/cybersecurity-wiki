@@ -109,3 +109,5 @@ Reviewed November 26, 2026. The primary standards are from 2007–2021. Use the 
 - Operational security, Linux states and Wireshark fields. [RFC 9099](https://www.rfc-editor.org/rfc/rfc9099.html) · [ip-neighbour(8)](https://man7.org/linux/man-pages/man8/ip-neighbour.8.html) · [Wireshark ICMPv6 display fields](https://www.wireshark.org/docs/dfref/i/icmpv6.html)
 
 [Previous · IPv6 router advertisements]({{ '/wiki/ipv6-router-advertisement-evidence/' | relative_url }}) · [Compare · ARP and IPv4 conflicts]({{ '/wiki/arp-address-evidence/' | relative_url }}) · [Related · VLAN capture evidence]({{ '/wiki/vlan-capture-evidence/' | relative_url }})
+
+[Correlate IPv6 addresses and delegated prefixes with DHCPv6 lease history]({{ '/wiki/dhcpv6-lease-evidence/' | relative_url }})

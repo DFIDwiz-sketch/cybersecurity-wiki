@@ -109,3 +109,5 @@ Python 사례는 클라우드 작업 공간에서 실행했습니다. Linux 명�
 - IPv6 운영 보안, Linux 상태, Wireshark 필드. [RFC 9099](https://www.rfc-editor.org/rfc/rfc9099.html) · [ip-neighbour(8)](https://man7.org/linux/man-pages/man8/ip-neighbour.8.html) · [Wireshark ICMPv6 표시 필드](https://www.wireshark.org/docs/dfref/i/icmpv6.html)
 
 [이전 글 · IPv6 라우터 광고 조사]({{ '/ko/wiki/ipv6-router-advertisement-evidence/' | relative_url }}) · [비교 · ARP와 IPv4 주소 충돌]({{ '/ko/wiki/arp-address-evidence/' | relative_url }}) · [관련 글 · VLAN 태그와 센서 가시성]({{ '/ko/wiki/vlan-capture-evidence/' | relative_url }})
+
+[DHCPv6 임대 이력으로 IPv6 주소와 위임 프리픽스 대조하기]({{ '/ko/wiki/dhcpv6-lease-evidence/' | relative_url }})

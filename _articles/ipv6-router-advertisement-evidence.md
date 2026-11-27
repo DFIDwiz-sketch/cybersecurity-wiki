@@ -87,3 +87,5 @@ Reviewed 21 November 2026. Match product features to deployed hardware and softw
 - [Wireshark · ICMPv6 display fields through 4.6.10](https://www.wireshark.org/docs/dfref/i/icmpv6.html)
 
 [Next · Investigate IPv6 Neighbor Solicitations and Advertisements]({{ '/wiki/ipv6-neighbor-discovery-evidence/' | relative_url }})
+
+[Correlate IPv6 addresses and delegated prefixes with DHCPv6 lease history]({{ '/wiki/dhcpv6-lease-evidence/' | relative_url }})

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="340" viewBox="0 0 560 340" lang="ko" role="img" aria-labelledby="title desc">
+  <title id="title">DHCPv6 주소, 위임 프리픽스, 설정</title>
+  <desc id="desc">클라이언트는 서버에 직접 또는 릴레이로 도달합니다. 응답의 목적은 여러 가지이며 기본 라우터 발견은 별도 기능입니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#91dfcb"/>
+    </marker>
+  </defs>
+  <rect width="560" height="340" rx="14" fill="#111d30"/>
+  <g fill="#1c3047" stroke="#91dfcb" stroke-width="1.5">
+    <rect x="109" y="18" width="342" height="45" rx="9"/>
+    <rect x="109" y="89" width="342" height="56" rx="9"/>
+    <rect x="17" y="183" width="170" height="70" rx="9"/>
+    <rect x="195" y="183" width="170" height="70" rx="9"/>
+    <rect x="373" y="183" width="170" height="70" rx="9"/>
+    <rect x="63" y="282" width="434" height="41" rx="9"/>
+  </g>
+  <g fill="none" stroke="#91dfcb" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M280 63V86"/>
+    <path d="M211 145L105 180"/>
+    <path d="M280 145V180"/>
+    <path d="M349 145L455 180"/>
+  </g>
+  <g fill="#f2f7fc" text-anchor="middle" font-family="system-ui, sans-serif">
+    <g font-size="18" font-weight="700">
+      <text x="280" y="46">DHCPv6 클라이언트</text>
+      <text x="280" y="113">DHCPv6 서버</text>
+      <text x="102" y="209">IA_NA</text><text x="280" y="209">IA_PD</text><text x="458" y="209">설정만 제공</text>
+    </g>
+    <g font-size="15">
+      <text x="280" y="134">직접 연결 또는 릴레이 경유</text>
+      <text x="102" y="229">할당된 IPv6 주소</text><text x="102" y="247">개별 주소 증거</text>
+      <text x="280" y="229">위임 프리픽스</text><text x="280" y="247">라우터 바인딩 증거</text>
+      <text x="458" y="229">Information-request</text><text x="458" y="247">해당 교환에 임대 없음</text>
+      <text x="280" y="308">기본 라우터는 별도의 Router Advertisement에서 확인합니다.</text>
+    </g>
+  </g>
+</svg>

@@ -102,3 +102,5 @@ F02·F03·F08을 손으로 대조해 결과를 확인하세요. 판단의 근거
 - 2001년 1월 릴레이 정보와 신뢰 범위. [RFC 3046](https://www.rfc-editor.org/rfc/rfc3046.html)
 - 검토 당시 제품 범위인 Windows Server 2025의 DHCP 조회와 Zeek 9.0.1의 분석기 필드. [Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/dhcpserver/get-dhcpserverv4lease?view=windowsserver2025-ps) · [Zeek DHCP 로그](https://docs.zeek.org/en/current/scripts/base/protocols/dhcp/main.zeek.html)
 - Catalyst 9300의 Cisco IOS XE 17.16.x 기준 DHCP 스누핑과 신뢰 인터페이스. [Cisco IP Addressing Services Configuration Guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-16/configuration_guide/ip/b_1716_ip_9300_cg.pdf)
+
+[DHCPv6 임대 이력으로 IPv6 주소와 위임 프리픽스 대조하기]({{ '/ko/wiki/dhcpv6-lease-evidence/' | relative_url }})
