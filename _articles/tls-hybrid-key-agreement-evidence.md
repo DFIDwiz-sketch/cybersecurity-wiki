@@ -18,8 +18,8 @@ A **named group** tells TLS peers how to exchange key material. **X25519** uses 
 
 The motivation includes **harvest now, decrypt later**. Someone can record encrypted traffic today in the hope that future advances let them recover the key material. Hybrid agreement adds a post-quantum component while retaining a traditional exchange. The deployment still needs a trusted peer identity, sound implementations and protected endpoints.
 
-<figure>
-  <img src="{{ '/assets/diagrams/tls-hybrid-key-agreement-evidence.svg' | relative_url }}" width="560" height="357" alt="The client offers groups and shares. The server can request a new share, or select a group in the final ServerHello. The hybrid group feeds X25519 and ML-KEM secrets into TLS key derivation. Certificate authentication is a separate check." />
+<figure style="margin-inline: 0">
+  <img src="{{ '/assets/diagrams/tls-hybrid-key-agreement-evidence.svg' | relative_url }}" width="360" height="440" alt="The client offers groups and shares. The server can request a new share, or select a group in the final ServerHello. The hybrid group feeds X25519 and ML-KEM secrets into TLS key derivation. Certificate authentication is a separate check." />
   <figcaption>Follow the final group selection, then check handshake completion and endpoint authentication.</figcaption>
 </figure>
 

@@ -18,8 +18,8 @@ translation_url: /wiki/tls-hybrid-key-agreement-evidence/
 
 도입 배경에는 **지금 수집해 나중에 복호화하는 위협**이 있습니다. 누군가 오늘 암호화된 트래픽을 저장하고, 미래의 계산 기술로 당시의 키 재료를 복구할 수 있기를 기대하는 상황입니다. 하이브리드 방식은 기존 방식에 양자내성 요소를 함께 사용합니다. 배포 시에는 상대의 신원, 구현의 안전성, 단말과 서버의 보호 상태도 각각 확인합니다.
 
-<figure>
-  <img src="{{ '/assets/diagrams/tls-hybrid-key-agreement-evidence-ko.svg' | relative_url }}" width="560" height="357" alt="클라이언트가 그룹과 키 재료를 제안합니다. 서버는 새 키 재료를 요청하거나 최종 ServerHello에서 그룹을 선택합니다. 하이브리드 그룹은 두 비밀값을 TLS 키 파생에 쓰며, 인증서 검증은 별도로 진행됩니다." />
+<figure style="margin-inline: 0">
+  <img src="{{ '/assets/diagrams/tls-hybrid-key-agreement-evidence-ko.svg' | relative_url }}" width="360" height="440" alt="클라이언트가 그룹과 키 재료를 제안합니다. 서버는 새 키 재료를 요청하거나 최종 ServerHello에서 그룹을 선택합니다. 하이브리드 그룹은 두 비밀값을 TLS 키 파생에 쓰며, 인증서 검증은 별도로 진행됩니다." />
   <figcaption>최종 ServerHello에서 선택된 그룹을 확인한 뒤, 핸드셰이크 완료 여부와 상대 인증 결과를 확인합니다.</figcaption>
 </figure>
 
