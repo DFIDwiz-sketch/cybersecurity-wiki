@@ -100,3 +100,5 @@ Reviewed 21 November 2026. Internet standards below describe the SMTP exchange a
 ## Investigate SMTP transport policy and reporting
 
 Use [MTA-STS and TLS-RPT evidence]({{ '/wiki/smtp-mta-sts-evidence/' | relative_url }}) to correlate MX selection, certificate checks and TLS failure reports on an SMTP hop.
+
+[Investigate the SPF decision for the receiving SMTP hop]({{ '/wiki/spf-policy-evaluation-evidence/' | relative_url }})

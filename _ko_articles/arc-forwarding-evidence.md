@@ -95,3 +95,5 @@ JSONL은 조사에 필요한 일부 필드만 담은 가상 내보내기 자료�
 [이전 · 메일 인증 증거]({{ '/ko/wiki/mail-auth-evidence/' | relative_url }}) · [다음 · SMTP 배달 증거]({{ '/ko/wiki/smtp-delivery-evidence/' | relative_url }})
 
 [DMARC 집계 보고서에서 정렬, 발송량, 정책 예외 읽기]({{ '/ko/wiki/dmarc-aggregate-report-evidence/' | relative_url }})
+
+[직접 발송과 전달 구간의 SPF 결과 재현하기]({{ '/ko/wiki/spf-policy-evaluation-evidence/' | relative_url }})

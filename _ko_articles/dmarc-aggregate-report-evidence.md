@@ -96,3 +96,5 @@ python3 review.py daily.xml daily.xml legacy.xml
 - Google [Gmail 발신자 지침 · 인증과 DMARC](https://support.google.com/mail/answer/81126).
 
 [이전 · 발신자 인증과 메시지 헤더]({{ '/ko/wiki/mail-auth-evidence/' | relative_url }}) · [다음 · ARC와 전달 메일]({{ '/ko/wiki/arc-forwarding-evidence/' | relative_url }}) · [개별 수신자의 SMTP 배달 추적]({{ '/ko/wiki/smtp-delivery-evidence/' | relative_url }})
+
+[보고서의 SPF 결과를 검사 도메인과 DNS 정책으로 추적하기]({{ '/ko/wiki/spf-policy-evaluation-evidence/' | relative_url }})

@@ -100,3 +100,5 @@ translation_url: /wiki/smtp-delivery-evidence/
 ## 메일 서버 간 TLS 정책 확인하기
 
 [MTA-STS와 TLS-RPT 조사]({{ '/ko/wiki/smtp-mta-sts-evidence/' | relative_url }})에서 SMTP의 MX 선택, 인증서 검사와 TLS 실패 보고를 연결해 보세요.
+
+[수신 SMTP 구간에서 SPF 판정 근거 확인하기]({{ '/ko/wiki/spf-policy-evaluation-evidence/' | relative_url }})

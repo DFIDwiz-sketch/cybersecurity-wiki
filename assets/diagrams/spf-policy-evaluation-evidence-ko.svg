@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="395" viewBox="0 0 360 395" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">SPF 정책 평가 흐름</title>
+  <desc id="desc">접속 IP와 SMTP 봉투에서 검사 도메인을 고릅니다. DNS TXT 정책과 참조 경로를 평가한 뒤 SPF 결과와 도메인을 기록합니다. DMARC는 표시 From과의 정렬을 확인합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#335468"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="358" height="393" rx="16" fill="#f5f9fc" stroke="#93a9b6" stroke-width="2"/>
+  <g stroke-width="1.5">
+    <rect x="18" y="20" width="324" height="68" rx="10" fill="#deedf8" stroke="#6e97b0"/>
+    <rect x="18" y="111" width="324" height="68" rx="10" fill="#fff1d4" stroke="#a38b59"/>
+    <rect x="18" y="202" width="324" height="68" rx="10" fill="#d9eeee" stroke="#609693"/>
+    <rect x="18" y="307" width="324" height="62" rx="10" fill="#edf0f9" stroke="#7786aa" stroke-dasharray="4 3"/>
+  </g>
+  <g stroke="#335468" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M180 88 V110"/>
+    <path d="M180 179 V201"/>
+    <path d="M180 270 V306" stroke-dasharray="4 3"/>
+  </g>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#123247">
+    <g font-size="18" font-weight="700">
+      <text x="180" y="47">1. 수신 SMTP 구간</text>
+      <text x="180" y="138">2. 도메인의 DNS TXT 정책</text>
+      <text x="180" y="229">3. 수신기의 SPF 결과</text>
+    </g>
+    <g font-size="15">
+      <text x="180" y="71">접속 IP + 검사할 발신 도메인</text>
+      <text x="180" y="162">조건 순서 · 중첩 include · 조회 한도</text>
+      <text x="180" y="253">검사한 도메인 + 판단 근거</text>
+      <text x="180" y="344" font-weight="600">DMARC · 표시 From과 정렬 확인</text>
+    </g>
+  </g>
+</svg>

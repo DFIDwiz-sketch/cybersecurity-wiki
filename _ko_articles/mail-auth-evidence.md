@@ -186,3 +186,5 @@ python3 mail-auth.py
 [ARC 체인과 배달 증거 확인하기]({{ '/ko/wiki/arc-forwarding-evidence/' | relative_url }}) · 직접 인증과 수신 정책, 실제 배달을 구분합니다.
 
 [DMARC 집계 보고서에서 정렬, 발송량, 정책 예외 읽기]({{ '/ko/wiki/dmarc-aggregate-report-evidence/' | relative_url }})
+
+[SPF의 include 평가 경로, DNS 오류와 검사한 봉투 도메인 조사하기]({{ '/ko/wiki/spf-policy-evaluation-evidence/' | relative_url }})

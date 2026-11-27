@@ -1,0 +1,183 @@
+{
+  "txt": {
+    "orders.example.test": [
+      "v=spf1 include:relay.provider.test -all"
+    ],
+    "relay.provider.test": [
+      "v=spf1 ip4:192.0.2.25 ip6:2001:db8::25 -all"
+    ],
+    "mx.bounce.test": [
+      "v=spf1 ip4:192.0.2.40 -all"
+    ],
+    "duplicate.example.test": [
+      "v=spf1 ip4:192.0.2.25 -all",
+      "v=spf1 -all"
+    ],
+    "broken.example.test": [
+      "v=spf1 include:missing.example.test -all"
+    ],
+    "delayed.example.test": [
+      "v=spf1 include:timeout.provider.test -all"
+    ],
+    "timeout.provider.test": null,
+    "budget.example.test": [
+      "v=spf1 include:relay.provider.test include:n1.budget.test -all"
+    ],
+    "limit.example.test": [
+      "v=spf1 include:n1.budget.test -all"
+    ],
+    "n1.budget.test": [
+      "v=spf1 include:n2.budget.test -all"
+    ],
+    "n2.budget.test": [
+      "v=spf1 include:n3.budget.test -all"
+    ],
+    "n3.budget.test": [
+      "v=spf1 include:n4.budget.test -all"
+    ],
+    "n4.budget.test": [
+      "v=spf1 include:n5.budget.test -all"
+    ],
+    "n5.budget.test": [
+      "v=spf1 include:n6.budget.test -all"
+    ],
+    "n6.budget.test": [
+      "v=spf1 include:n7.budget.test -all"
+    ],
+    "n7.budget.test": [
+      "v=spf1 include:n8.budget.test -all"
+    ],
+    "n8.budget.test": [
+      "v=spf1 include:n9.budget.test -all"
+    ],
+    "n9.budget.test": [
+      "v=spf1 include:n10.budget.test -all"
+    ],
+    "n10.budget.test": [
+      "v=spf1 ip4:192.0.2.77 -all"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "direct",
+      "ip": "192.0.2.25",
+      "mail_from": "notify@orders.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "orders.example.test",
+        "result": "pass",
+        "include_terms": 1
+      }
+    },
+    {
+      "case_id": "direct-ipv6",
+      "ip": "2001:db8::25",
+      "mail_from": "notify@orders.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "orders.example.test",
+        "result": "pass",
+        "include_terms": 1
+      }
+    },
+    {
+      "case_id": "forwarded",
+      "ip": "198.51.100.7",
+      "mail_from": "notify@orders.example.test",
+      "helo": "forward.receiver.test",
+      "expected": {
+        "domain": "orders.example.test",
+        "result": "fail",
+        "include_terms": 1
+      }
+    },
+    {
+      "case_id": "null-sender",
+      "ip": "192.0.2.40",
+      "mail_from": "<>",
+      "helo": "mx.bounce.test",
+      "expected": {
+        "domain": "mx.bounce.test",
+        "result": "pass",
+        "include_terms": 0
+      }
+    },
+    {
+      "case_id": "missing-root",
+      "ip": "192.0.2.25",
+      "mail_from": "test@missing.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "missing.example.test",
+        "result": "none",
+        "include_terms": 0
+      }
+    },
+    {
+      "case_id": "missing-include",
+      "ip": "192.0.2.25",
+      "mail_from": "test@broken.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "broken.example.test",
+        "result": "permerror",
+        "include_terms": 1
+      }
+    },
+    {
+      "case_id": "duplicate-txt",
+      "ip": "192.0.2.25",
+      "mail_from": "test@duplicate.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "duplicate.example.test",
+        "result": "permerror",
+        "include_terms": 0
+      }
+    },
+    {
+      "case_id": "transient-dns",
+      "ip": "192.0.2.25",
+      "mail_from": "test@delayed.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "delayed.example.test",
+        "result": "temperror",
+        "include_terms": 1
+      }
+    },
+    {
+      "case_id": "early-match",
+      "ip": "192.0.2.25",
+      "mail_from": "test@budget.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "budget.example.test",
+        "result": "pass",
+        "include_terms": 1
+      }
+    },
+    {
+      "case_id": "at-limit",
+      "ip": "192.0.2.77",
+      "mail_from": "test@limit.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "limit.example.test",
+        "result": "pass",
+        "include_terms": 10
+      }
+    },
+    {
+      "case_id": "over-limit",
+      "ip": "192.0.2.77",
+      "mail_from": "test@budget.example.test",
+      "helo": "relay.provider.test",
+      "expected": {
+        "domain": "budget.example.test",
+        "result": "permerror",
+        "include_terms": 11
+      }
+    }
+  ]
+}

@@ -94,3 +94,5 @@ Reviewed 2026-11-27. Standards scope is the May 2026 DMARC suite, with legacy re
 - Google [Gmail sender guidelines · Authentication and DMARC](https://support.google.com/mail/answer/81126).
 
 [Previous · Sender authentication and message headers]({{ '/wiki/mail-auth-evidence/' | relative_url }}) · [Next · ARC and forwarded mail]({{ '/wiki/arc-forwarding-evidence/' | relative_url }}) · [Trace delivery for an individual recipient]({{ '/wiki/smtp-delivery-evidence/' | relative_url }})
+
+[Trace a reported SPF result to its evaluated domain and DNS policy]({{ '/wiki/spf-policy-evaluation-evidence/' | relative_url }})
