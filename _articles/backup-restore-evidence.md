@@ -93,3 +93,5 @@ Reviewed 20 November 2026. NIST provides recovery planning and metrics. CISA cov
 - [CISA and partners · StopRansomware Guide, October 2023 edition](https://www.cisa.gov/sites/default/files/2025-03/StopRansomware-Guide%20508.pdf)
 - [SQLite · Online Backup API](https://www.sqlite.org/backup.html) · [Integrity and foreign-key checks](https://www.sqlite.org/pragma.html#pragma_integrity_check)
 - [Python 3.12 · sqlite3.Connection.backup](https://docs.python.org/3.12/library/sqlite3.html#sqlite3.Connection.backup)
+
+[Check S3 Object Lock event holds for a protected backup version]({{ '/wiki/s3-object-lock-event-hold-evidence/' | relative_url }})

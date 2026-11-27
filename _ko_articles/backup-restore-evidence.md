@@ -93,3 +93,5 @@ B, C, D가 서로 다른 이유로 실패하는지 설명하세요. 한 사례�
 - [CISA와 협력 기관 · StopRansomware 가이드, 2023년 10월판](https://www.cisa.gov/sites/default/files/2025-03/StopRansomware-Guide%20508.pdf)
 - [SQLite · 온라인 백업 API](https://www.sqlite.org/backup.html) · [무결성과 외래 키 검사](https://www.sqlite.org/pragma.html#pragma_integrity_check)
 - [Python 3.12 · sqlite3.Connection.backup](https://docs.python.org/3.12/library/sqlite3.html#sqlite3.Connection.backup)
+
+[백업 버전의 S3 Object Lock 이벤트 홀드 확인하기]({{ '/ko/wiki/s3-object-lock-event-hold-evidence/' | relative_url }})

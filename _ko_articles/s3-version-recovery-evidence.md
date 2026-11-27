@@ -95,3 +95,5 @@ python3 s3-version-recovery.py
 - [AWS S3 · 객체 잠금의 보존 기간과 법적 보존](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) · [수명 주기 만료](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-expire-general-considerations.html)
 - [AWS S3 · CloudTrail 이벤트](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html) · [CloudTrail · 발표 내용과 전달 시작 예정일](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html)
 - [AWS S3 · 액세스 로그 형식과 작업 이름](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html) · [최선형 로그 전달](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html)
+
+[S3 버전의 이벤트 홀드 해제와 보존 종료 시각 확인하기]({{ '/ko/wiki/s3-object-lock-event-hold-evidence/' | relative_url }})

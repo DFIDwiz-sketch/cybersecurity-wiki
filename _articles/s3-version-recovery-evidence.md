@@ -95,3 +95,5 @@ Reviewed 2026-11-22. The S3 documentation covers general purpose bucket behavior
 - [AWS S3 · Object Lock retention and legal holds](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) · [Lifecycle expiration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-expire-general-considerations.html)
 - [AWS S3 · CloudTrail events](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html) · [CloudTrail · Announcement and delivery date](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html)
 - [AWS S3 · Access log format and operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html) · [Best-effort log delivery](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html)
+
+[Follow event-hold release and the retain-until date for an S3 version]({{ '/wiki/s3-object-lock-event-hold-evidence/' | relative_url }})

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="413" viewBox="0 0 360 413" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">S3 Object Lock event hold and retention dates</title>
+  <desc id="desc">The retain-until date moves while the event hold is on. On release, the later of release time plus duration and the existing date applies. An independent legal hold can continue.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#315367"/></marker></defs>
+  <rect x="1" y="1" width="358" height="411" rx="16" fill="#f5f9fc" stroke="#93a9b6" stroke-width="2"/>
+  <g stroke-width="1.5">
+    <rect x="19" y="18" width="322" height="84" rx="10" fill="#deedf8" stroke="#6e97b0"/>
+    <rect x="19" y="127" width="322" height="84" rx="10" fill="#fff1d4" stroke="#a38b59"/>
+    <rect x="19" y="236" width="322" height="71" rx="10" fill="#d9eeee" stroke="#609693"/>
+    <rect x="19" y="345" width="322" height="49" rx="10" fill="#edf0f9" stroke="#7786aa" stroke-dasharray="4 3"/>
+  </g>
+  <g stroke="#315367" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M180 102 V125"/>
+    <path d="M180 211 V234"/>
+  </g>
+  <path d="M32 328 H328" stroke="#7786aa" stroke-dasharray="4 3"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#123247">
+    <g font-size="20" font-weight="700">
+      <text x="180" y="45">1. Event hold ON</text>
+      <text x="180" y="154">2. Release the event hold</text>
+      <text x="180" y="264">3. Fix the retain-until date</text>
+    </g>
+    <g font-size="16">
+      <text x="180" y="69">Observation time + duration</text>
+      <text x="180" y="89">Retain-until date moves forward</text>
+      <text x="180" y="178">Calculate release time + duration</text>
+      <text x="180" y="198">Compare with the existing date</text>
+      <text x="180" y="289">Apply the later date</text>
+      <text x="180" y="376" font-weight="600">Check legal hold status separately</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="413" viewBox="0 0 360 413" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">S3 Object Lock 이벤트 홀드의 보존 시각</title>
+  <desc id="desc">홀드가 활성 상태인 동안 종료 시각이 이동합니다. 해제 시에는 해제 시각에 기간을 더한 값과 기존 종료 시각 중 더 늦은 값이 적용됩니다. 법적 보존은 독립적으로 유지될 수 있습니다.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#315367"/></marker></defs>
+  <rect x="1" y="1" width="358" height="411" rx="16" fill="#f5f9fc" stroke="#93a9b6" stroke-width="2"/>
+  <g stroke-width="1.5">
+    <rect x="19" y="18" width="322" height="84" rx="10" fill="#deedf8" stroke="#6e97b0"/>
+    <rect x="19" y="127" width="322" height="84" rx="10" fill="#fff1d4" stroke="#a38b59"/>
+    <rect x="19" y="236" width="322" height="71" rx="10" fill="#d9eeee" stroke="#609693"/>
+    <rect x="19" y="345" width="322" height="49" rx="10" fill="#edf0f9" stroke="#7786aa" stroke-dasharray="4 3"/>
+  </g>
+  <g stroke="#315367" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M180 102 V125"/>
+    <path d="M180 211 V234"/>
+  </g>
+  <path d="M32 328 H328" stroke="#7786aa" stroke-dasharray="4 3"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#123247">
+    <g font-size="20" font-weight="700">
+      <text x="180" y="45">1. 이벤트 홀드 ON</text>
+      <text x="180" y="154">2. 이벤트 홀드 해제</text>
+      <text x="180" y="264">3. 종료 시각 고정</text>
+    </g>
+    <g font-size="16">
+      <text x="180" y="69">관측 시각 + 보존 기간</text>
+      <text x="180" y="89">종료 시각이 앞으로 이동</text>
+      <text x="180" y="178">해제 시각 + 보존 기간 계산</text>
+      <text x="180" y="198">기존 종료 시각과 대조</text>
+      <text x="180" y="289">두 시각 중 늦은 값을 적용</text>
+      <text x="180" y="376" font-weight="600">법적 보존 상태는 따로 확인</text>
+    </g>
+  </g>
+</svg>

@@ -114,3 +114,5 @@ aws cloudtrail validate-logs \
 [Google Cloud Storage 객체 읽기 조사]({{ '/ko/wiki/gcs-object-read-evidence/' | relative_url }})에서 목록·메타데이터·본문 전송과 감사 로그 수집 범위를 비교합니다.
 
 수집 범위를 확인한 뒤 역할 세션을 조사하는 예시는 [AWS STS SourceIdentity 문서]({{ '/ko/wiki/aws-sts-source-identity-evidence/' | relative_url }})를 참고하세요.
+
+[CloudTrail에서 S3 Object Lock 이벤트 홀드 해제 추적하기]({{ '/ko/wiki/s3-object-lock-event-hold-evidence/' | relative_url }})
