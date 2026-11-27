@@ -110,3 +110,5 @@ Reviewed November 26, 2026. Event versions and fields follow Microsoft's Windows
 ## Correlate a registry write with its writer
 
 Read [Windows registry change evidence]({{ '/wiki/windows-registry-change-evidence/' | relative_url }}) to compare Security 4657 with Sysmon registry and process-lifetime records.
+
+Practice independent execution corroboration in [Defender ASR rule evidence]({{ '/wiki/windows-asr-rule-evidence/' | relative_url }}).

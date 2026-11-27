@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 332" width="560" height="332" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">ASR decision and execution evidence</title>
+  <desc id="desc">The endpoint evaluates the attempted activity under effective settings. Compare its Defender decision with independent process creation evidence.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#79e3ce"/></marker></defs>
+  <style>text{fill:#f0faf8;font:16px system-ui,sans-serif;text-anchor:middle}.muted{fill:#c3d8de;font-size:14px}.heading{font-size:20px;font-weight:700}</style>
+  <rect width="560" height="332" rx="16" fill="#0c1821"/>
+  <text x="280" y="35" class="heading">ASR decision and execution evidence</text>
+  <rect x="23" y="54" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="145.5" y="76" font-weight="700">Effective rule settings</text>
+  <text x="145.5" y="96" class="muted">Policy, platform, exclusions</text>
+  <rect x="292" y="54" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="414.5" y="76" font-weight="700">Attempted activity</text>
+  <text x="414.5" y="96" class="muted">Parent, target, time</text>
+  <rect x="172" y="132" width="216" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="280" y="154" font-weight="700">Rule evaluation</text>
+  <text x="280" y="174" class="muted">Audit, Block, Warn</text>
+  <rect x="23" y="220" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="145.5" y="242" font-weight="700">Defender decision record</text>
+  <text x="145.5" y="262" class="muted">1122, 1121, 1129 (override)</text>
+  <rect x="292" y="220" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="414.5" y="242" font-weight="700">Independent evidence</text>
+  <text x="414.5" y="262" class="muted">Look for a matching child start</text>
+  <g fill="none" stroke="#79e3ce" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M146 109V120H223V129"/>
+    <path d="M414 109V120H337V129"/>
+    <path d="M223 187V203H146V217"/>
+    <path d="M501 109V217" stroke-dasharray="5 5"/>
+  </g>
+  <text x="280" y="307" class="muted">Correlate the device and attempt. Check telemetry coverage.</text>
+</svg>

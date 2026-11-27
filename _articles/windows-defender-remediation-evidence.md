@@ -98,3 +98,5 @@ Reviewed 2026-11-26. Scope is current Microsoft documentation for Defender Antiv
 - [Review Defender Antivirus scan results](https://learn.microsoft.com/en-us/defender-endpoint/review-scan-results-microsoft-defender-antivirus) and [Get-MpThreatDetection reference](https://learn.microsoft.com/en-us/powershell/module/defender/get-mpthreatdetection)
 - [Microsoft Defender Antivirus for Windows and operating modes](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-windows) and [Get-WinEvent reference](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.5)
 - [Security 4688 and Audit Process Creation](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4688) and [Sysmon process creation](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon#event-id-1-process-creation)
+
+For rule decisions about behaviors, compare [Defender ASR audit, block and Warn evidence]({{ '/wiki/windows-asr-rule-evidence/' | relative_url }}).

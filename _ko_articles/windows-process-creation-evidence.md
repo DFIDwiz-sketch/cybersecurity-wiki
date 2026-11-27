@@ -110,3 +110,5 @@ python3 windows-process-creation-evidence.py windows-process-creation-cases.xml
 ## 레지스트리 쓰기와 변경한 프로세스 연결하기
 
 [Windows 레지스트리 변경 조사]({{ '/ko/wiki/windows-registry-change-evidence/' | relative_url }})에서 Security 4657과 Sysmon의 레지스트리·프로세스 수명 기록을 대조하는 방법을 확인하세요.
+
+실행 여부를 독립된 로그와 대조하는 연습은 [Defender ASR 규칙 기록]({{ '/ko/wiki/windows-asr-rule-evidence/' | relative_url }})에서 확인하세요.

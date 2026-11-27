@@ -100,3 +100,5 @@ $events | ForEach-Object { $_.ToXml() }
 - [PowerShell Get-WinEvent 필터](https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-get-winevent-queries-with-filterhashtable)
 
 [Authenticode 서명, 전체 파일 해시, App Control 증거 대조하기]({{ '/ko/wiki/windows-authenticode-evidence/' | relative_url }})
+
+위험 행동을 평가하는 별도 통제의 사례는 [Defender ASR 규칙 기록]({{ '/ko/wiki/windows-asr-rule-evidence/' | relative_url }})에서 확인하세요.

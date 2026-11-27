@@ -98,3 +98,5 @@ python3 windows-defender-remediation-evidence.py
 - [Defender Antivirus 검사 결과 확인](https://learn.microsoft.com/en-us/defender-endpoint/review-scan-results-microsoft-defender-antivirus), [Get-MpThreatDetection 명령](https://learn.microsoft.com/en-us/powershell/module/defender/get-mpthreatdetection)
 - [Windows용 Defender Antivirus와 동작 모드](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-windows), [Get-WinEvent 명령](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.5)
 - [Security 4688과 프로세스 생성 감사](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4688), [Sysmon 프로세스 생성](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon#event-id-1-process-creation)
+
+행동 단위 규칙의 결정은 [Defender ASR 감사·차단·경고 해제 기록]({{ '/ko/wiki/windows-asr-rule-evidence/' | relative_url }})에서 확인하세요.

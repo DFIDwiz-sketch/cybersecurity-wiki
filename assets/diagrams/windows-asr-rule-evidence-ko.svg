@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 332" width="560" height="332" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">ASR 판정과 실행 증거</title>
+  <desc id="desc">단말이 정책과 요구 조건에 따라 행동을 평가합니다. Defender 판정 기록과 별도의 프로세스 시작 기록을 대조합니다.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#79e3ce"/></marker></defs>
+  <style>text{fill:#f0faf8;font:16px system-ui,sans-serif;text-anchor:middle}.muted{fill:#c3d8de;font-size:14px}.heading{font-size:20px;font-weight:700}</style>
+  <rect width="560" height="332" rx="16" fill="#0c1821"/>
+  <text x="280" y="35" class="heading">ASR 판정과 실행 증거</text>
+  <rect x="23" y="54" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="145.5" y="76" font-weight="700">적용된 규칙 설정</text>
+  <text x="145.5" y="96" class="muted">정책 · 플랫폼 · 예외</text>
+  <rect x="292" y="54" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="414.5" y="76" font-weight="700">행동 시도</text>
+  <text x="414.5" y="96" class="muted">부모 · 대상 · 시각</text>
+  <rect x="172" y="132" width="216" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="280" y="154" font-weight="700">규칙 평가</text>
+  <text x="280" y="174" class="muted">감사 · 차단 · 경고</text>
+  <rect x="23" y="220" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="145.5" y="242" font-weight="700">Defender 판정 기록</text>
+  <text x="145.5" y="262" class="muted">1122 · 1121 · 1129(해제)</text>
+  <rect x="292" y="220" width="245" height="54" rx="9" fill="#152937" stroke="#57bca9"/>
+  <text x="414.5" y="242" font-weight="700">독립 실행 증거</text>
+  <text x="414.5" y="262" class="muted">일치하는 자식 시작 확인</text>
+  <g fill="none" stroke="#79e3ce" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M146 109V120H223V129"/>
+    <path d="M414 109V120H337V129"/>
+    <path d="M223 187V203H146V217"/>
+    <path d="M501 109V217" stroke-dasharray="5 5"/>
+  </g>
+  <text x="280" y="307" class="muted">같은 단말·시도로 연결하고 수집 범위를 확인합니다.</text>
+</svg>

@@ -1,0 +1,14 @@
+case,host,source,attempt,event_id,detail
+audit-and-start,lab-a,defender-operational,a1,1122,office-child
+audit-and-start,lab-a,process,a1,1,child-start
+block,lab-b,defender-operational,b1,1121,office-child
+warn-only,lab-c,defender-operational,c1,1129,office-child
+warn-and-start,lab-d,defender-operational,d1,1129,office-child
+warn-and-start,lab-d,process,d1,1,child-start
+other-host,lab-e,defender-operational,e1,1122,office-child
+other-host,lab-f,process,e1,1,child-start
+different-attempt,lab-g,defender-operational,g1,1121,office-child
+different-attempt,lab-g,process,g2,1,child-start
+config-only,lab-h,defender-operational,,5007,confirmed-asr-setting
+no-rule-evidence,lab-i,defender-operational,,5007,unrelated-setting
+no-rule-evidence,lab-i,other-channel,i1,1121,unrelated-provider

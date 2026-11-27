@@ -100,3 +100,5 @@ Reviewed 21 November 2026. Microsoft lists Windows 10, Windows 11 and Windows Se
 - [PowerShell Get-WinEvent filtering](https://learn.microsoft.com/en-us/powershell/scripting/samples/creating-get-winevent-queries-with-filterhashtable)
 
 [Investigate Authenticode signature, exact file hash, and App Control evidence]({{ '/wiki/windows-authenticode-evidence/' | relative_url }})
+
+For a separate control that evaluates selected risky behaviors, see [Defender ASR rule evidence]({{ '/wiki/windows-asr-rule-evidence/' | relative_url }}).
