@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 350" width="560" height="350" role="img" aria-labelledby="title desc" xml:lang="en">
+  <title id="title">Domain join evidence</title>
+  <desc id="desc">The DC creates an object or evaluates reuse. The member records the join result. Verify current trust separately.</desc>
+  <style>text{fill:#eefbf8;font:15px system-ui,sans-serif;text-anchor:middle}.label{font-weight:700}.detail{fill:#c3dbdf;font-size:13px}.heading{font-size:20px;font-weight:700}</style>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#84dfcc"/></marker></defs>
+  <rect width="560" height="350" rx="16" fill="#0c1821"/>
+  <text x="280" y="31" class="heading">Domain join evidence</text>
+  <rect x="116" y="44" width="328" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="280" y="65" class="label">Client requests a domain join</text>
+  <text x="280" y="84" class="detail">Record the device, domain and contacted DC</text>
+  <rect x="20" y="124" width="250" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="145" y="145" class="label">New computer object</text>
+  <text x="145" y="164" class="detail">DC Security 4741</text>
+  <rect x="290" y="124" width="250" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="415" y="145" class="label">Existing computer object</text>
+  <text x="415" y="164" class="detail">Netjoin 4100 allows / 4101 blocks</text>
+  <rect x="116" y="204" width="328" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="280" y="225" class="label">Client's final join status</text>
+  <text x="280" y="244" class="detail">Read Netsetup.log for the same attempt</text>
+  <rect x="116" y="278" width="328" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="280" y="299" class="label">Current trust after join</text>
+  <text x="280" y="318" class="detail">Check the member's secure channel</text>
+  <g fill="none" stroke="#84dfcc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M205 99V108H145V120"/>
+    <path d="M355 99V108H415V120"/>
+    <path d="M145 179V188H205V200"/>
+    <path d="M415 179V188H355V200"/>
+    <path d="M280 259V274" stroke-dasharray="4 4"/>
+  </g>
+</svg>

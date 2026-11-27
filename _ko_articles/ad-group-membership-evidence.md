@@ -98,3 +98,5 @@ python3 ad-membership-review.py
 ## 그룹 정책 적용 조사
 
 [그룹 정책 적용 조사]({{ '/ko/wiki/gpo-application-evidence/' | relative_url }}). AD와 SYSVOL 버전을 비교하고 실제 단말 적용을 확인합니다.
+
+계정 변경과 단말의 신뢰 상태를 별도로 확인하는 예시는 [Active Directory 도메인 가입 조사]({{ '/ko/wiki/ad-computer-domain-join-evidence/' | relative_url }})에서 확인하세요.

@@ -108,3 +108,5 @@ incomplete_stamp: metadata_missing
 - 복제 파트너와 실패 진단. [Get-ADReplicationPartnerMetadata](https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-adreplicationpartnermetadata?view=windowsserver2025-ps) · [Microsoft Learn · AD 복제 실패 진단](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/diagnose-replication-failures)
 
 [이전 학습 · Active Directory 기초]({{ '/ko/wiki/active-directory-fundamentals/' | relative_url }}) · [다음 학습 · 그룹 정책 적용 조사]({{ '/ko/wiki/gpo-application-evidence/' | relative_url }})
+
+복제를 조사하기 전에 컴퓨터 객체와 단말 가입을 구분하는 방법은 [Active Directory 도메인 가입 조사]({{ '/ko/wiki/ad-computer-domain-join-evidence/' | relative_url }})에서 확인하세요.

@@ -460,3 +460,5 @@ gpresult /r
 ## 도메인 컨트롤러의 LDAP bind 증거 읽기
 
 [AD LDAP 서명과 채널 바인딩 조사]({{ '/ko/wiki/ad-ldap-session-evidence/' | relative_url }})에서 정책으로 인한 거부, 호환성 감사 이벤트와 후속 디렉터리 권한 판정을 구분합니다.
+
+계정 생성과 재사용, 단말 결과를 더 자세히 보려면 [Active Directory 도메인 가입 조사]({{ '/ko/wiki/ad-computer-domain-join-evidence/' | relative_url }})에서 확인하세요.

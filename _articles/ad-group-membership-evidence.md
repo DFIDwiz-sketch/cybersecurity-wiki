@@ -98,3 +98,5 @@ Reviewed 20 November 2026. The Windows Server guidance covers AD group scopes an
 ## Investigate Group Policy Application
 
 [Investigate Group Policy Application]({{ '/wiki/gpo-application-evidence/' | relative_url }}). Compare directory and SYSVOL versions and verify the client result.
+
+For a parallel investigation that separates an account change from a working machine trust, see [Active Directory domain join evidence]({{ '/wiki/ad-computer-domain-join-evidence/' | relative_url }}).

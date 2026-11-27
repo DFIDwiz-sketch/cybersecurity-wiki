@@ -108,3 +108,5 @@ Reviewed 2026-11-22. The cmdlets referenced use the Windows Server 2025 view. Th
 - Partner metadata and replication failures. [Get-ADReplicationPartnerMetadata](https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-adreplicationpartnermetadata?view=windowsserver2025-ps) · [Microsoft Learn · Diagnose AD replication failures](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/diagnose-replication-failures)
 
 [Previous · Active Directory fundamentals]({{ '/wiki/active-directory-fundamentals/' | relative_url }}) · [Next · Group Policy application evidence]({{ '/wiki/gpo-application-evidence/' | relative_url }})
+
+To scope the computer object and client attempt before reviewing replication, see [Active Directory domain join evidence]({{ '/wiki/ad-computer-domain-join-evidence/' | relative_url }}).

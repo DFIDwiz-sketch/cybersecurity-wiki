@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 350" width="560" height="350" role="img" aria-labelledby="title desc" xml:lang="ko">
+  <title id="title">도메인 가입 · 증거를 나눠 읽기</title>
+  <desc id="desc">DC에서 객체 생성 또는 기존 객체 재사용 판단이 이루어집니다. 단말이 가입 결과를 기록하고 이후 신뢰를 별도로 확인합니다.</desc>
+  <style>text{fill:#eefbf8;font:15px system-ui,sans-serif;text-anchor:middle}.label{font-weight:700}.detail{fill:#c3dbdf;font-size:13px}.heading{font-size:20px;font-weight:700}</style>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#84dfcc"/></marker></defs>
+  <rect width="560" height="350" rx="16" fill="#0c1821"/>
+  <text x="280" y="31" class="heading">도메인 가입 · 증거를 나눠 읽기</text>
+  <rect x="116" y="44" width="328" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="280" y="65" class="label">가입 단말이 AD DS에 요청</text>
+  <text x="280" y="84" class="detail">단말 · 도메인 · 조회한 DC 기록</text>
+  <rect x="20" y="124" width="250" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="145" y="145" class="label">새 컴퓨터 객체</text>
+  <text x="145" y="164" class="detail">DC Security 4741</text>
+  <rect x="290" y="124" width="250" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="415" y="145" class="label">기존 컴퓨터 객체</text>
+  <text x="415" y="164" class="detail">Netjoin 4100 허용 / 4101 차단</text>
+  <rect x="116" y="204" width="328" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="280" y="225" class="label">가입 단말의 최종 상태</text>
+  <text x="280" y="244" class="detail">Netsetup.log에서 같은 시도를 확인</text>
+  <rect x="116" y="278" width="328" height="53" rx="9" fill="#142d39" stroke="#74c8b9"/>
+  <text x="280" y="299" class="label">가입 후 현재 신뢰</text>
+  <text x="280" y="318" class="detail">멤버에서 보안 채널 확인</text>
+  <g fill="none" stroke="#84dfcc" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M205 99V108H145V120"/>
+    <path d="M355 99V108H415V120"/>
+    <path d="M145 179V188H205V200"/>
+    <path d="M415 179V188H355V200"/>
+    <path d="M280 259V274" stroke-dasharray="4 4"/>
+  </g>
+</svg>
